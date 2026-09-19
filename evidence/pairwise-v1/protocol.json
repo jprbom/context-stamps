@@ -1,0 +1,12 @@
+{
+  "status": "prospective fresh-entity follow-up after spherical-v2 analysis",
+  "training": "same counterbalanced training and validation as spherical-v2; positive-negative pairs; nonnegative weights",
+  "objective": "pairwise logistic ranking with L2 regularization",
+  "hyperparameters": {"penalties": [0, 0.001, 0.01], "epochs": 400, "learning_rate": 0.1},
+  "selection": "validation top1 then MRR; first trial on ties; no test tuning",
+  "seeds": [17, 41, 83],
+  "fresh_test": {"queries": 200, "seed": 719381},
+  "fresh_ood": {"queries": 200, "seed": 819381},
+  "comparators": ["uniform", "frozen v2 ridge", "monotone pairwise"],
+  "limitations": "same procedural grammar; supplied exact fields; a held-out entity is not a held-out natural-language domain; known exact-field ceiling is 100%"
+}
