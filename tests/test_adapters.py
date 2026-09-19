@@ -43,6 +43,21 @@ class EncoderTests(unittest.TestCase):
 
 @unittest.skipUnless(importlib.util.find_spec("mcp"), "optional MCP SDK not installed")
 class MCPTests(unittest.IsolatedAsyncioTestCase):
+    async def test_default_server_has_no_write_tools(self):
+        from mcp import ClientSession, StdioServerParameters
+        from mcp.client.stdio import stdio_client
+
+        config = StdioServerParameters(
+            command=sys.executable, args=["-m", "context_stamps", "--db", ":memory:", "serve"]
+        )
+        async with stdio_client(config) as (read, write):
+            async with ClientSession(read, write) as session:
+                await session.initialize()
+                listing = await session.list_tools()
+                self.assertEqual({tool.name for tool in listing.tools}, {"recall", "pack", "inspect_source"})
+                result = await session.call_tool("forget", {"source": "manual"})
+                self.assertTrue(result.isError)
+
     async def test_real_stdio_roundtrip(self):
         from mcp import ClientSession, StdioServerParameters
         from mcp.client.stdio import stdio_client
@@ -50,7 +65,14 @@ class MCPTests(unittest.IsolatedAsyncioTestCase):
         with tempfile.TemporaryDirectory() as folder:
             config = StdioServerParameters(
                 command=sys.executable,
-                args=["-m", "context_stamps", "--db", str(Path(folder) / "m.sqlite"), "serve"],
+                args=[
+                    "-m",
+                    "context_stamps",
+                    "--db",
+                    str(Path(folder) / "m.sqlite"),
+                    "serve",
+                    "--allow-writes",
+                ],
             )
             async with stdio_client(config) as (read, write):
                 async with ClientSession(read, write) as session:

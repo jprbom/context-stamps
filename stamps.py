@@ -52,6 +52,8 @@ class Family:
             raise ValueError("dimension must be between 1 and 16384")
         if not isinstance(self.bits, int) or not 8 <= self.bits <= 512 or self.bits % 8:
             raise ValueError("bits must be a multiple of 8 between 8 and 512")
+        if self.dim * self.bits > 1048576:
+            raise ValueError("projection exceeds 1048576 coefficients")
         if self.version != FORMAT_VERSION:
             raise ValueError("unsupported family version")
         if self.method not in {"gaussian-v1", "centered-v1", "itq-v1"}:
@@ -76,6 +78,8 @@ class Family:
 
     @classmethod
     def from_json(cls, value: str) -> Family:
+        if len(value) > 33554432:
+            raise ValueError("family JSON exceeds 32 MiB")
         data = json.loads(value)
         data["mean"] = tuple(data.get("mean", ()))
         data["planes"] = tuple(tuple(row) for row in data.get("planes", ()))
@@ -86,7 +90,8 @@ class Family:
 
     @classmethod
     def load(cls, path: str | Path) -> Family:
-        return cls.from_json(Path(path).read_text(encoding="utf-8"))
+        with Path(path).open("r", encoding="utf-8") as stream:
+            return cls.from_json(stream.read(33554433))
 
 
 @lru_cache(maxsize=8)
@@ -94,7 +99,8 @@ def _planes(family: Family) -> tuple[tuple[float, ...], ...]:
     if family.planes:
         return family.planes
     # Gaussian normals are rotationally symmetric, unlike uniform coordinates.
-    rng = random.Random(family.seed)
+    # Reproducible projections; this RNG is not used for cryptography.
+    rng = random.Random(family.seed)  # nosec B311
     return tuple(tuple(rng.gauss(0, 1) for _ in range(family.dim)) for _ in range(family.bits))
 
 

@@ -7,7 +7,7 @@
   "dim": 32,
   "bits": 16,
   "data_sha256": "8ea0c9c4288d4e2efc563e74cace863c167097340b57ffd84618d86127463e34",
-  "code_sha256": "1a6e8051ddae7a6f68d27d26dd6f596ad9fd2c8c8c1955452a8f2e9398683c66",
+  "code_sha256": "449a5e11c5da965c8adc8ea8d7d9dd2ccf34e5210f17988c27046f1d1fc3f80a",
   "python": "3.13.13",
   "numpy": "2.5.3",
   "os": "Windows",
@@ -20,24 +20,24 @@
       "family_id": "c17435e8cab953ed67b6c710f1549361a974dae693437e4d896ecca15fb630bb",
       "recall_at_10": 0.17031249999999998,
       "hybrid_recall_at_10_shortlist_50": 0.5562500000000001,
-      "stamping_ms": 9.154,
-      "query_and_rerank_ms": 3.749
+      "stamping_ms": 8.5,
+      "query_and_rerank_ms": 4.644
     },
     {
       "method": "centered-v1",
       "family_id": "32dc65a9514481bc917ada30affc62ed594080f753bfd023afa7a6ac9f0019e3",
       "recall_at_10": 0.1796875,
       "hybrid_recall_at_10_shortlist_50": 0.584375,
-      "stamping_ms": 9.31,
-      "query_and_rerank_ms": 3.542
+      "stamping_ms": 8.894,
+      "query_and_rerank_ms": 3.445
     },
     {
       "method": "itq-v1",
       "family_id": "e4c4fdd28061ca1570d65ee0d52f7c6552ad8c449b627bdf860cae812caf9c43",
       "recall_at_10": 0.1921875,
       "hybrid_recall_at_10_shortlist_50": 0.5734375,
-      "stamping_ms": 9.109,
-      "query_and_rerank_ms": 3.797
+      "stamping_ms": 10.277,
+      "query_and_rerank_ms": 3.523
     }
   ]
 }

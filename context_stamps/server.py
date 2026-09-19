@@ -1,14 +1,13 @@
 """Optional MCP stdio tools. Explicit calls only; no host transcript interception."""
 
 
-def serve(memory) -> None:
+def serve(memory, *, allow_writes: bool = False) -> None:
     from mcp.server.fastmcp import FastMCP
 
     server = FastMCP("Context Stamps")
 
     # Async handlers run these short local operations on the owning event-loop thread.
     # This preserves SQLite connection affinity. Large indexes need a worker-owned store.
-    @server.tool()
     async def remember(source: str, text: str, dependencies: dict[str, str] | None = None) -> dict:
         """Store a text chunk with a stable source ID and optional dependency versions."""
         return memory.add(text, source=source, dependencies=dependencies)
@@ -28,14 +27,16 @@ def serve(memory) -> None:
         """Fetch the stored source text and its metadata; check the stale flag before reuse."""
         return memory.get(source) or {"error": "source not found"}
 
-    @server.tool()
     async def invalidate(source: str) -> dict:
         """Mark a source and declared dependents stale without deleting the original text."""
         return {"invalidated": memory.invalidate(source)}
 
-    @server.tool()
     async def forget(source: str) -> dict:
         """Delete one source and invalidate declared dependents. Not forensic secure erasure."""
         return {"deleted": memory.forget(source)}
+
+    if allow_writes:
+        for operation in (remember, invalidate, forget):
+            server.tool()(operation)
 
     server.run(transport="stdio")

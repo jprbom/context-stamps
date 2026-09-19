@@ -9,6 +9,8 @@ from typing import Callable, Mapping, Protocol
 
 from stamps import Family, HashingEncoder, Stamp, content_digest, similarity, stamp_vector
 
+from .security import MAX_RECORDS, bounded_text, identifier, prepare_database, version_map
+
 
 class Encoder(Protocol):
     identity: str
@@ -41,9 +43,18 @@ class ContextMemory:
         self, path: str = ":memory:", *, encoder: Encoder | None = None, family: Family | None = None
     ) -> None:
         self.encoder = encoder or HashingEncoder()
+        prepare_database(path)
         self.db = sqlite3.connect(str(path))
         self.db.row_factory = sqlite3.Row
         try:
+            self.db.execute("PRAGMA trusted_schema=OFF")
+            self.db.execute("PRAGMA secure_delete=ON")
+            self.db.execute("PRAGMA mmap_size=0")
+            self.db.execute("PRAGMA cell_size_check=ON")
+            if self.db.execute(
+                "SELECT 1 FROM sqlite_master WHERE type IN ('trigger','view') OR upper(sql) LIKE '%CREATE VIRTUAL TABLE%'"
+            ).fetchone():
+                raise ValueError("database contains unsupported executable schema objects")
             self.db.executescript("""
                 CREATE TABLE IF NOT EXISTS metadata (key TEXT PRIMARY KEY, value TEXT NOT NULL);
                 CREATE TABLE IF NOT EXISTS items (
@@ -88,8 +99,13 @@ class ContextMemory:
         deps = dict(dependencies or {})
         if any(not isinstance(k, str) or not isinstance(v, str) or not k or not v for k, v in deps.items()):
             raise ValueError("dependencies must map nonempty names to version strings")
+        identifier(source)
+        bounded_text(text)
+        version_map(deps)
         digest = content_digest(text)
         previous = self.db.execute("SELECT * FROM items WHERE source=?", (source,)).fetchone()
+        if not previous and self.db.execute("SELECT count(*) FROM items").fetchone()[0] >= MAX_RECORDS:
+            raise ValueError("store capacity reached; partition into separate stores")
         encoded_deps = json.dumps(deps, sort_keys=True)
         # A re-observation can restore an invalidated record, without another embedding.
         if previous and previous["digest"] == digest:
@@ -161,6 +177,10 @@ class ContextMemory:
         return "current"
 
     def _rank(self, query: str, revisions: Mapping[str, str] | None) -> list[dict]:
+        bounded_text(query, 16384)
+        version_map(revisions, MAX_RECORDS)
+        if self.db.execute("SELECT count(*) FROM items").fetchone()[0] > MAX_RECORDS:
+            raise ValueError("store exceeds supported capacity")
         q = stamp_vector(self.encoder.encode(query), self.family)
         result = []
         for row in self.db.execute("SELECT * FROM items"):
@@ -171,8 +191,8 @@ class ContextMemory:
         return sorted(result, key=lambda r: (-r["score"], r["source"]))
 
     def recall(self, query: str, *, limit: int = 5, revisions: Mapping[str, str] | None = None) -> list[dict]:
-        if limit < 0:
-            raise ValueError("limit must be nonnegative")
+        if not isinstance(limit, int) or not 0 <= limit <= 100:
+            raise ValueError("limit must be an integer between 0 and 100")
         return [
             {k: item[k] for k in ("source", "text", "digest", "score", "freshness")}
             for item in self._rank(query, revisions)
@@ -188,8 +208,8 @@ class ContextMemory:
         revisions: Mapping[str, str] | None = None,
         min_score: float = 0.0,
     ) -> Packet:
-        if token_budget < 0 or not 0 <= min_score <= 1:
-            raise ValueError("budget must be nonnegative; min_score must be in [0, 1]")
+        if not isinstance(token_budget, int) or not 0 <= token_budget <= 1048576 or not 0 <= min_score <= 1:
+            raise ValueError("budget must be an integer between 0 and 1048576; min_score must be in [0, 1]")
         # Byte count is a conservative surrogate for conventional byte-based tokenizers.
         # The caller's tokenizer is required for a model-specific token guarantee.
         counter = token_counter or (lambda s: len(s.encode("utf-8")))

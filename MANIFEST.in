@@ -1,4 +1,4 @@
-include stamps.py LICENSE CITATION.cff CONTEXT_STAMPS.md program.md CONTRIBUTING.md
+include stamps.py LICENSE CITATION.cff CONTEXT_STAMPS.md program.md CONTRIBUTING.md SECURITY.md
 recursive-include docs *.md *.svg *.png *.html *.json *.txt
 recursive-include examples *.py
 recursive-include tests *.py

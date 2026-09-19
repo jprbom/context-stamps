@@ -6,17 +6,17 @@ import argparse
 import json
 import sqlite3
 import sys
-from pathlib import Path
 
 from stamps import Family, HashingEncoder, demo
 
 from .memory import ContextMemory
+from .security import read_text
 
 
 def _mapping(path: str | None) -> dict | None:
     if path is None:
         return None
-    value = json.loads(Path(path).read_text(encoding="utf-8"))
+    value = json.loads(read_text(path, 1048576))
     if not isinstance(value, dict) or any(
         not isinstance(k, str) or not isinstance(v, str) for k, v in value.items()
     ):
@@ -58,7 +58,10 @@ def main(argv: list[str] | None = None) -> int:
     fit.add_argument("--out", required=True)
     fit.add_argument("--bits", type=int, default=128)
     fit.add_argument("--method", choices=["centered", "itq"], default="itq")
-    sub.add_parser("serve", help="serve local memory tools over MCP stdio (optional dependency)")
+    server = sub.add_parser("serve", help="serve local read tools over MCP stdio")
+    server.add_argument(
+        "--allow-writes", action="store_true", help="explicitly enable remember, invalidate and forget"
+    )
     args = parser.parse_args(argv)
     try:
         if args.command == "demo":
@@ -69,7 +72,7 @@ def main(argv: list[str] | None = None) -> int:
             from .learning import fit_family
 
             family = fit_family(
-                np.load(args.vectors, allow_pickle=False),
+                np.load(args.vectors, allow_pickle=False, mmap_mode="r"),
                 encoder=args.encoder_id,
                 bits=args.bits,
                 method=args.method,
@@ -88,10 +91,10 @@ def main(argv: list[str] | None = None) -> int:
                 if args.command == "serve":
                     from .server import serve
 
-                    serve(memory)
+                    serve(memory, allow_writes=args.allow_writes)
                     return 0
                 if args.command == "add":
-                    text = Path(args.file).read_text(encoding="utf-8") if args.file else args.text
+                    text = read_text(args.file) if args.file else args.text
                     result = memory.add(text, source=args.source, dependencies=_mapping(args.dependencies))
                 elif args.command == "get":
                     result = memory.get(args.source)

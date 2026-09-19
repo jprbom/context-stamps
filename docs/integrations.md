@@ -43,7 +43,7 @@ A typical client configuration is:
 }
 ```
 
-On Windows, use the full path to `venv\Scripts\cstamps.exe` and JSON-escape backslashes. Match your client's configuration format. The server provides `remember`, `recall`, `pack`, `inspect_source`, `invalidate` and `forget`. `pack` uses a byte budget. No HTTP port or hosted account is required.
+On Windows, use the full path to `venv\Scripts\cstamps.exe` and JSON-escape backslashes. Match your client's configuration format. The server provides `recall`, `pack` and `inspect_source` by default. Explicit `--allow-writes` adds `remember`, `invalidate` and `forget`. `pack` uses a byte budget. No HTTP port or hosted account is required.
 
 Use the CLI's `--model` and `--revision` before `serve` if using a neural encoder. These must match any existing store. First-time neural initialization may download weights; the default lexical server does not.
 
@@ -64,3 +64,5 @@ The example uses a lexical encoder to avoid downloading another model. Change th
 The standard-library core requires a Python runtime. It has no accelerator requirement. A neural encoder contributes most of the model memory and may dominate latency. Reuse cached content digests to avoid re-embedding unchanged sources.
 
 This release does not include browser/WASM, mobile-native, microcontroller, ONNX or quantized weight artifacts. A future export must benchmark memory, cold/warm latency and retrieval quality on named hardware and assign an appropriate encoder identity. Smaller fingerprints alone do not make a neural encoder smaller.
+
+MCP exposes read tools by default. Add `--allow-writes` after `serve` only to enable remember, invalidate and forget for a trusted client. See [security guidance](../SECURITY.md).

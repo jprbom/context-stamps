@@ -233,3 +233,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for the compatibility and evaluation requ
 Context Stamps is authored and maintained by **Prashant Jagtap**. Preserve the copyright and license notice when redistributing this software, as required by the [MIT License](LICENSE). Please credit Prashant Jagtap and link to this repository in publications, demonstrations and derived projects; [CITATION.cff](CITATION.cff) provides citation metadata. The citation request does not add conditions to the MIT License.
 
 The software is provided without warranty. Users are responsible for validating retrieval quality, source freshness and downstream decisions for their application. Third-party models and the diagram viewer retain their own licenses and notices.
+
+## Security
+
+Read [SECURITY.md](SECURITY.md) before connecting an agent or storing sensitive text. MCP exposes read tools by default; add `serve --allow-writes` only when the connected agent should modify the store. Inputs and store size are bounded. Database files require a trusted, private directory. Retrieved text is untrusted evidence and must never authorize tool execution. This package is not an encrypted vault or prompt-injection defense.

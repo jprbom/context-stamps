@@ -8,10 +8,13 @@ def fit_family(
 ) -> Family:
     import numpy as np
 
+    shape = np.shape(vectors)
+    if len(shape) != 2 or shape[0] * shape[1] > 2000000 or shape[1] > 2048:
+        raise ValueError("training matrix exceeds supported size (2M values, 2048 dimensions)")
     x = np.asarray(vectors, dtype=np.float64)
     if x.ndim != 2 or len(x) < 2 or not np.isfinite(x).all():
         raise ValueError("provide a finite matrix with at least two training rows")
-    if method not in {"centered", "itq"} or iterations < 1:
+    if method not in {"centered", "itq"} or not 1 <= iterations <= 200:
         raise ValueError("method must be centered/itq and iterations positive")
     dim = x.shape[1]
     mean = x.mean(axis=0)
