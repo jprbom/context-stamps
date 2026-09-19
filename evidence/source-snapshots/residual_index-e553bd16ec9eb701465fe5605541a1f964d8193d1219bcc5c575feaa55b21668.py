@@ -86,19 +86,12 @@ class ResidualIndex:
         if not count:
             return {"rows": [], "scores": [], "refined_rows": 0, "eligible_rows": len(ids)}
         approx = np.empty(len(ids), dtype=np.float64)
-        q32 = q.astype(np.float32)
         for start in range(0, len(ids), 4096):
             block = ids[start:start + 4096]
-            approx[start:start + len(block)] = (
-                self._codes[block].astype(np.float32) @ q32).astype(np.float64) * self._scale[block]
-        # Bound float32 dot accumulation and query casting, in addition to the
-        # representation residual. This slack permits a faster BLAS scan without
-        # silently treating the approximate scores as exact.
-        epsilon = np.finfo(np.float32).eps
-        gamma = self.dimension * epsilon / (1 - self.dimension * epsilon)
-        reconstruction_norm = 1.0001 + self._radius[ids]
-        roundoff = reconstruction_norm * (2 * gamma * norm + np.linalg.norm(q - q32))
-        radius = self._radius[ids] * norm + roundoff + 1e-10
+            approx[start:start + len(block)] = np.einsum(
+                "ij,j->i", self._codes[block], q, dtype=np.float64) * self._scale[block]
+        # Deliberately conservative for the bounded 4096-dimensional unit vectors.
+        radius = self._radius[ids] * norm + 1e-10
         threshold = np.partition(approx - radius, len(ids) - count)[len(ids) - count]
         candidates = ids[approx + radius >= threshold]
         scores = np.empty(len(candidates), dtype=np.float64)

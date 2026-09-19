@@ -1,0 +1,50 @@
+[
+  {
+    "dataset": "scifact",
+    "rows": 5183,
+    "build_ms": {
+      "residual_int8_exact": 68.9847,
+      "faiss_flat_ip": 3.3605,
+      "faiss_sq8": 6.5332
+    },
+    "index_bytes": {
+      "dense_float64_reference": 7961088,
+      "faiss_flat_ip": 7961133,
+      "faiss_sq8": 1993425,
+      "residual_int8_exact": 2239056
+    },
+    "residual_external_backing_bytes": 7961088
+  },
+  {
+    "dataset": "nfcorpus",
+    "rows": 3633,
+    "build_ms": {
+      "residual_int8_exact": 41.9894,
+      "faiss_flat_ip": 1.7941,
+      "faiss_sq8": 2.1791
+    },
+    "index_bytes": {
+      "dense_float64_reference": 5580288,
+      "faiss_flat_ip": 5580333,
+      "faiss_sq8": 1398225,
+      "residual_int8_exact": 1569456
+    },
+    "residual_external_backing_bytes": 5580288
+  },
+  {
+    "dataset": "arguana",
+    "rows": 8674,
+    "build_ms": {
+      "residual_int8_exact": 214.8569,
+      "faiss_flat_ip": 7.8299,
+      "faiss_sq8": 16.301
+    },
+    "index_bytes": {
+      "dense_float64_reference": 13323264,
+      "faiss_flat_ip": 13323309,
+      "faiss_sq8": 3333969,
+      "residual_int8_exact": 3747168
+    },
+    "residual_external_backing_bytes": 13323264
+  }
+]

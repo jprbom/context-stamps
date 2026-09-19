@@ -1,0 +1,30 @@
+{
+  "status": "follow-up frozen after v1 diagnostic before new evaluation",
+  "objective": "recover dense ranking while reducing resident vector bytes and full-vector access; no promised latency win",
+  "datasets": [
+    "scifact",
+    "nfcorpus",
+    "arguana"
+  ],
+  "queries": "all official test queries; same cached pinned embeddings and self-exclusion as spherical-public-v1",
+  "methods": [
+    "dense_float64_reference",
+    "faiss_flat_ip",
+    "faiss_sq8",
+    "residual_int8_exact"
+  ],
+  "parameters": "rowwise symmetric int8, residual L2 radius, conservative numerical slack; all overlapping intervals refined; no test tuning",
+  "metrics": [
+    "nDCG@10",
+    "top10 identity versus dense",
+    "median/p95 search ms",
+    "refined row fraction",
+    "resident array/index bytes",
+    "backing vector bytes",
+    "build ms"
+  ],
+  "timing": "one CPU thread, warmed indexes, method order randomized seed81471; cached query encoding and common eligibility list construction excluded equally; includes per-index eligibility validation, digest checks and refinement",
+  "limits": "new representation uses more than 256 bits and retains full vectors externally; scalar quantization/refinement and Cauchy-Schwarz are established methods; linear scan, not production distributed scalability",
+  "scale": "separate seeded normalized random vectors at 1000,10000,100000 rows, dimension384, 30 queries each; concurrency1 and4; exact ranking oracle; throughput not extrapolated beyond measured sizes",
+  "changes": "float32 BLAS scan with explicit conservative roundoff radius; SQ8 full-vector-refinement count corrected to zero; original v1 retained"
+}

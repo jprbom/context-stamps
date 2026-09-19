@@ -1,0 +1,122 @@
+[
+  {
+    "dataset": "scifact",
+    "method": "dense_float64_reference",
+    "queries": 300,
+    "ndcg10": 0.6450816521455776,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 3.5819,
+    "p95_ms": 4.98939
+  },
+  {
+    "dataset": "scifact",
+    "method": "faiss_flat_ip",
+    "queries": 300,
+    "ndcg10": 0.6450816521455776,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 0.56535,
+    "p95_ms": 0.9201150000000002
+  },
+  {
+    "dataset": "scifact",
+    "method": "faiss_sq8",
+    "queries": 300,
+    "ndcg10": 0.6442140282114939,
+    "same_order_fraction": 0.7933333333333333,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 1.1085,
+    "p95_ms": 1.248335
+  },
+  {
+    "dataset": "scifact",
+    "method": "residual_int8_exact",
+    "queries": 300,
+    "ndcg10": 0.6450816521455776,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 0.0027776705897485368,
+    "median_ms": 1.716,
+    "p95_ms": 2.0719749999999997
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "dense_float64_reference",
+    "queries": 323,
+    "ndcg10": 0.31667312754717797,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 6.4781,
+    "p95_ms": 7.861119999999999
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "faiss_flat_ip",
+    "queries": 323,
+    "ndcg10": 0.3159407492486187,
+    "same_order_fraction": 0.8699690402476781,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 0.6712,
+    "p95_ms": 1.0695700000000001
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "faiss_sq8",
+    "queries": 323,
+    "ndcg10": 0.3155537337977027,
+    "same_order_fraction": 0.631578947368421,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 2.6686,
+    "p95_ms": 3.1002099999999997
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "residual_int8_exact",
+    "queries": 323,
+    "ndcg10": 0.31667312754717797,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 0.003933669604136148,
+    "median_ms": 4.0648,
+    "p95_ms": 5.060209999999998
+  },
+  {
+    "dataset": "arguana",
+    "method": "dense_float64_reference",
+    "queries": 1406,
+    "ndcg10": 0.5040631158034715,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 15.34755,
+    "p95_ms": 20.3214
+  },
+  {
+    "dataset": "arguana",
+    "method": "faiss_flat_ip",
+    "queries": 1406,
+    "ndcg10": 0.5014117645943661,
+    "same_order_fraction": 0.9182076813655761,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 1.47595,
+    "p95_ms": 2.3774
+  },
+  {
+    "dataset": "arguana",
+    "method": "faiss_sq8",
+    "queries": 1406,
+    "ndcg10": 0.501319393848524,
+    "same_order_fraction": 0.7304409672830725,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 6.5412,
+    "p95_ms": 8.840675000000001
+  },
+  {
+    "dataset": "arguana",
+    "method": "residual_int8_exact",
+    "queries": 1406,
+    "ndcg10": 0.5040631158034715,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 0.0014319749195495246,
+    "median_ms": 9.8431,
+    "p95_ms": 12.8726
+  }
+]
