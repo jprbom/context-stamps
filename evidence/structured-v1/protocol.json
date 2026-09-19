@@ -1,0 +1,10 @@
+{
+  "seed": 270931,
+  "historical_evaluation": "all 90 test and 60 OOD fixtures; regression after inspection, not a fresh generalization claim",
+  "prospective_evaluation": "240 typed-JSON cases; six predetermined scenarios, 40 cases each; no fitting or tuning",
+  "method": "exact subject/attribute requirements, current digest-bound claims, conflict rejection, minimum-byte complete packet",
+  "scenarios": ["complete", "missing", "budget", "conflict", "stale_metadata", "stale_source"],
+  "success": "complete requested values when answerable; empty insufficient-evidence packet otherwise",
+  "metadata": "requirements supplied by caller; claims extracted from typed JSON or disclosed historical fixture grammar; no gold source IDs or gold fact annotations supplied to selection",
+  "original_results": "retain unchanged; do not relabel this as improved learned or neural generalization"
+}
