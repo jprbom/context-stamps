@@ -1,0 +1,7 @@
+include stamps.py LICENSE CITATION.cff CONTEXT_STAMPS.md program.md CONTRIBUTING.md
+recursive-include docs *.md *.svg *.png *.html *.json *.txt
+recursive-include examples *.py
+recursive-include tests *.py
+recursive-include benchmarks *.py *.md *.json
+recursive-include skills *.md
+global-exclude *.visual-check*

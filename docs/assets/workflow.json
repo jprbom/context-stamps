@@ -1,0 +1,26 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {"title": "Context Stamps · from source to evidence", "quality_profile": "showcase", "animation": "none", "locale": "en"},
+  "lanes": [{"id": "capture", "label": "Store context"}, {"id": "retrieve", "label": "Select evidence"}],
+  "mainPath": ["source", "encode", "store", "rank", "pack", "model"],
+  "nodes": [
+    {"id": "source", "lane": "capture", "col": 0, "type": "external", "label": "Source text", "sublabel": "content + dependencies", "width": 160},
+    {"id": "encode", "lane": "capture", "col": 1, "type": "backend", "label": "Fingerprint", "sublabel": "SHA-256 + binary stamp", "width": 160},
+    {"id": "store", "lane": "capture", "col": 2, "type": "database", "label": "Local memory", "sublabel": "SQLite + original text", "width": 160},
+    {"id": "rank", "lane": "retrieve", "col": 2, "type": "backend", "label": "Rank candidates", "sublabel": "compatible family only", "width": 160},
+    {"id": "pack", "lane": "retrieve", "col": 3, "type": "security", "label": "Pack context", "sublabel": "freshness + token budget", "width": 160},
+    {"id": "model", "lane": "retrieve", "col": 4, "type": "external", "label": "Any generator", "sublabel": "text + source references", "width": 160}
+  ],
+  "edges": [
+    {"from": "source", "to": "encode"},
+    {"from": "encode", "to": "store"},
+    {"from": "store", "to": "rank"},
+    {"from": "rank", "to": "pack"},
+    {"from": "pack", "to": "model"}
+  ],
+  "cards": [
+    {"dot": "cyan", "title": "Similarity is a shortlist", "items": ["Binary codes rank related items.", "Exact digests identify repeated content."]},
+    {"dot": "rose", "title": "Evidence remains readable", "items": ["Stale dependencies are excluded when supplied.", "Every packing decision is inspectable."]}
+  ]
+}

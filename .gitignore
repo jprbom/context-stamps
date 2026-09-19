@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.ruff_cache/
+.pytest_cache/
+build/
+dist/
+*.sqlite*
+*.npy
+family.json
+results.json
+.env
+.env.*
+docs/assets/*.visual-check*
+docs/assets/*.delivery*

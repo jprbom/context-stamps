@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="450" viewBox="0 0 1200 450" role="img" aria-labelledby="title desc">
+<title id="title">Context Stamps: four distinct decisions</title>
+<desc id="desc">Binary similarity finds related text. SHA-256 checks identity. Supplied source versions check freshness. A budget selects original evidence. Similar code can still be different.</desc>
+<rect width="1200" height="450" rx="20" fill="#f4f7f6"/>
+<path d="M40 48H80" stroke="#13756c" stroke-width="5"/>
+<g font-family="Segoe UI,Arial,sans-serif">
+<text x="96" y="56" font-size="24" font-weight="650" fill="#153d39">Context Stamps</text>
+<text x="40" y="116" font-size="34" font-weight="650" fill="#142e2b">Select evidence. Preserve changes.</text>
+<text x="40" y="151" font-size="18" fill="#526b66">Local context for coding agents, document retrieval and small language models.</text>
+<g fill="#fff" stroke="#d4e0dc"><rect x="40" y="186" width="265" height="125" rx="12"/><rect x="325" y="186" width="265" height="125" rx="12"/><rect x="610" y="186" width="265" height="125" rx="12"/><rect x="895" y="186" width="265" height="125" rx="12"/></g>
+<g font-size="13" font-weight="650" fill="#13756c"><text x="60" y="214">01 / RELATED</text><text x="345" y="214">02 / IDENTICAL</text><text x="630" y="214">03 / CURRENT</text><text x="915" y="214">04 / SELECTED</text></g>
+<g font-size="21" font-weight="600" fill="#142e2b"><text x="60" y="247">Binary fingerprint</text><text x="345" y="247">Exact digest</text><text x="630" y="247">Source versions</text><text x="915" y="247">Evidence packet</text></g>
+<g font-size="16" fill="#526b66"><text x="60" y="281">Rank compatible context</text><text x="345" y="281">Keep meaningful edits</text><text x="630" y="281">Check supplied revisions</text><text x="915" y="281">Text + decision report</text></g>
+<rect x="40" y="337" width="1120" height="73" rx="10" fill="#153d39"/>
+<g font-family="Consolas,monospace" font-size="17" fill="#fff"><text x="62" y="368">balance &gt;= amount</text><text x="340" y="368">balance &gt; amount</text></g>
+<text x="640" y="368" fill="#a1e1ce" font-size="18" font-weight="600">Similar meaning. Different behavior.</text>
+<text x="62" y="393" fill="#c0d7d0" font-size="14">Approximate similarity never authorizes exact duplicate removal.</text>
+</g></svg>
