@@ -1,5 +1,8 @@
+# ruff: noqa: E402
+# Offline/cache environment must be configured before importing model libraries.
 """Actual local generation parity pilot; does not estimate perceptual quality."""
 
+import argparse
 import gc
 import hashlib
 import json
@@ -82,11 +85,19 @@ def model_path(model_id, revision):
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--modality", choices=("image", "speech", "video"))
+    args = parser.parse_args()
     MEDIA.mkdir(exist_ok=True)
     protocol = json.loads((OUT / "protocol.json").read_text())
-    rows, failures = [], []
+    rows = json.loads((OUT / "results.json").read_text()) if (OUT / "results.json").exists() else []
+    failures = json.loads((OUT / "failures.json").read_text()) if (OUT / "failures.json").exists() else []
     rng = random.Random(95013)
     for modality, (model_id, revision) in protocol["models"].items():
+        if args.modality and modality != args.modality:
+            continue
+        if any(row["modality"] == modality for row in rows):
+            raise ValueError("existing modality results must be reviewed; refusing to overwrite")
         pipe = tokenizer = None
         try:
             path = model_path(model_id, revision)

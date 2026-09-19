@@ -10,6 +10,7 @@ dist/
 *.npy
 family.json
 results.json
+!evidence/**/results.json
 .env
 .env.*
 docs/assets/*.visual-check*

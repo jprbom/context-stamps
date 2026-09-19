@@ -1,0 +1,74 @@
+[
+  {
+    "dataset": "historical_regression",
+    "group": "ood",
+    "n": 60,
+    "complete": 40,
+    "abstained": 20,
+    "correct_action": 60,
+    "feasible": 40
+  },
+  {
+    "dataset": "historical_regression",
+    "group": "test",
+    "n": 90,
+    "complete": 60,
+    "abstained": 30,
+    "correct_action": 90,
+    "feasible": 60
+  },
+  {
+    "dataset": "prospective_structured",
+    "group": "budget",
+    "n": 40,
+    "complete": 0,
+    "abstained": 40,
+    "correct_action": 40,
+    "feasible": 0
+  },
+  {
+    "dataset": "prospective_structured",
+    "group": "complete",
+    "n": 40,
+    "complete": 40,
+    "abstained": 0,
+    "correct_action": 40,
+    "feasible": 40
+  },
+  {
+    "dataset": "prospective_structured",
+    "group": "conflict",
+    "n": 40,
+    "complete": 0,
+    "abstained": 40,
+    "correct_action": 40,
+    "feasible": 0
+  },
+  {
+    "dataset": "prospective_structured",
+    "group": "missing",
+    "n": 40,
+    "complete": 0,
+    "abstained": 40,
+    "correct_action": 40,
+    "feasible": 0
+  },
+  {
+    "dataset": "prospective_structured",
+    "group": "stale_metadata",
+    "n": 40,
+    "complete": 0,
+    "abstained": 40,
+    "correct_action": 40,
+    "feasible": 0
+  },
+  {
+    "dataset": "prospective_structured",
+    "group": "stale_source",
+    "n": 40,
+    "complete": 0,
+    "abstained": 40,
+    "correct_action": 40,
+    "feasible": 0
+  }
+]

@@ -26,3 +26,9 @@ Report vulnerabilities privately to the repository owner, Prashant Jagtap, throu
 
 - [SQLite security guidance](https://www.sqlite.org/security.html)
 - [MCP security practices](https://modelcontextprotocol.io/docs/2025-11-25/tutorials/security/security_best_practices)
+
+## Spherical candidate boundaries
+
+Compact stamps expose approximate similarity and are not encryption or authentication. Only trusted hosts should provide role labels, source revisions, exact facet metadata and dependency edges. `ContextGraph.affected()` is an administrative API and does not filter node identifiers by role. `PackedStampIndex.search()` requires explicit eligible row indices; the host must derive them from current authorization and freshness rules. Do not expose an arbitrary client-supplied role or eligible-row list directly over a network. Exported model coefficients use JSON, not executable serialization.
+
+Do not publish raw experiment manifests without reviewing local model-cache paths. No prompt-injection prevention, secret classifier or adversarial multi-tenant guarantee is claimed.

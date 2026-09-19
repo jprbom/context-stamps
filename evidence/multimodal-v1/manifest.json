@@ -1,0 +1,32 @@
+{
+  "python": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:12:50) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "torch": "2.11.0+cu128",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "models": {
+    "image": [
+      "stabilityai/sd-turbo",
+      "b261bac6fd2cf515557d5d0707481eafa0485ec2"
+    ],
+    "speech": [
+      "facebook/mms-tts-eng",
+      "c71de0fe7204c83f1c10820a7d696d0b450048ba"
+    ],
+    "video": [
+      "ali-vilab/text-to-video-ms-1.7b",
+      "8227dddca75a8561bf858d604cc5dae52b954d01"
+    ]
+  },
+  "media_storage": "local work directory only",
+  "source_sha256": {
+    "experiments/run_multimodal.py": "74cb8e37f147d17c37f2e669f09ef92bc8feb39d2e0d6698dfa48cb68c0b28de",
+    "context_stamps/guarded_activation.py": "ad397115e9bbdf73f8ce37b900fb8c8501152482da9e3dc90f36d14e350df7b8",
+    "context_stamps/activation.py": "9684e74cce435b313728052ebdb6d368d3352ce45354a50e719ee115127aa30e",
+    "context_stamps/spherical.py": "322a75ed65ef3a5481ec70db7ee262fb1d34b9530bf431201e2b9325dce617b1",
+    "evidence/source-snapshots/workflow-554d988db35f0b4a071978adba7b89ed34673f08a77b310ac65cc1f67ff08916.py": "554d988db35f0b4a071978adba7b89ed34673f08a77b310ac65cc1f67ff08916"
+  },
+  "recorded_source_paths": {
+    "evidence/source-snapshots/workflow-554d988db35f0b4a071978adba7b89ed34673f08a77b310ac65cc1f67ff08916.py": "context_stamps/workflow.py"
+  },
+  "source_snapshot_note": "Preserved exact original workflow source before the capacity-boundary revalidation fix. Current regression tests cover the fixed implementation."
+}

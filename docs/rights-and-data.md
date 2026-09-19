@@ -18,6 +18,12 @@ Private Cortex research, chat transcripts, private corpus content, user database
 
 SciFact is a third-party dataset, identified as CC-BY-SA-4.0 by its [BEIR dataset card](https://huggingface.co/datasets/BeIR/scifact). Users must obtain it separately and respect its terms. MiniLM's [model card](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) specifies Apache-2.0; its pretrained weights are not republished. Third-party data and model terms are not replaced by this repository's MIT license.
 
-The public repository is the reviewed standalone component. Publication does not include the wider private Cortex workspace. Release packages provide the source, tests and reproducible evidence rather than attempting to hide Python source in a wheel.
+The standalone repository is currently private pending validation; only this reviewed component is a future public-release candidate. Publication does not include the wider private Cortex workspace. Release packages provide the source, tests and reproducible evidence rather than attempting to hide Python source in a wheel.
 
 The follow-up NFCorpus/ArguAna benchmark has [separate attribution and CC-BY-SA-4.0 terms](../evidence/replication-v1/ATTRIBUTION.md). Original fictional local-SLM fixtures and their generated outputs remain MIT; the public Qwen model is identified in the run manifest and its weights are not redistributed. No external participant responses are included. The usability kit asks for separate publication permission before sharing participant feedback.
+
+## Multimodal evaluation models
+
+The multimodal pilot uses pinned external model revisions for inference only. SD-Turbo retains its model-specific Stability AI license; MMS English TTS uses CC-BY-NC-4.0. The ModelScope video card contains inconsistent NC and NC-ND labels; treat redistribution and commercial use as unresolved until its terms are clarified. No weights or generated media from these models are included in this repository. Their use in a local research test does not make them part of the MIT-licensed core.
+
+Model cards: [SD-Turbo](https://huggingface.co/stabilityai/sd-turbo), [MMS English](https://huggingface.co/facebook/mms-tts-eng), [ModelScope video](https://huggingface.co/ali-vilab/text-to-video-ms-1.7b). The model metadata in spherical manifests has its generated Modelfile removed to avoid publishing a local cache path; the redaction is recorded.

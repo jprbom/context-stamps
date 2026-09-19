@@ -64,6 +64,13 @@ def main(argv: list[str] | None = None) -> int:
     select.add_argument("--revisions")
     select.add_argument("--required", action="append", default=[])
     select.add_argument("--selector", help="optional experimental JSON reranker")
+    structured = sub.add_parser(
+        "select-structured", help="select exact requirements from trusted claim metadata"
+    )
+    structured.add_argument("query")
+    structured.add_argument("--request", required=True, help="JSON with requirements and digest-bound claims")
+    structured.add_argument("--revisions", required=True)
+    structured.add_argument("--budget", type=int, default=2048, help="UTF-8 bytes including source headers")
     fit = sub.add_parser("fit", help="fit a projection on a training-only NumPy embedding matrix")
     fit.add_argument("vectors")
     fit.add_argument("--encoder-id", required=True)
@@ -124,6 +131,27 @@ def main(argv: list[str] | None = None) -> int:
                         revisions=_mapping(args.revisions),
                         required=args.required,
                         reranker=selector.score if selector else None,
+                    ).to_dict()
+                elif args.command == "select-structured":
+                    from .requirements import Claim, Requirement, select_structured
+
+                    request = json.loads(read_text(args.request, 1048576))
+                    if not isinstance(request, dict) or set(request) != {"requirements", "claims"}:
+                        raise ValueError("request must contain requirements and claims")
+                    if (
+                        not isinstance(request["requirements"], list)
+                        or not 1 <= len(request["requirements"]) <= 12
+                        or not isinstance(request["claims"], list)
+                        or len(request["claims"]) > 4096
+                    ):
+                        raise ValueError("invalid requirements or claims count")
+                    result = select_structured(
+                        memory,
+                        args.query,
+                        requirements=[Requirement(**row) for row in request["requirements"]],
+                        claims=[Claim(**row) for row in request["claims"]],
+                        revisions=_mapping(args.revisions),
+                        budget_bytes=args.budget,
                     ).to_dict()
                 elif args.command == "add":
                     text = read_text(args.file) if args.file else args.text

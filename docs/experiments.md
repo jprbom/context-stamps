@@ -1,5 +1,7 @@
 # Recorded experiments
 
+> Historical v0.2 evidence. For the private spherical v0.3 candidate, see [current results](spherical-results.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
+
 These are executed measurements, including negative results. They are not claims of general agent correctness, prompt-injection resistance or superiority over complete memory platforms. [Reproduction](#reproduce) and [model cards](models.md) explain the scope.
 
 **Follow-up:** the frozen coverage/diversity settings lost to dense retrieval on both [NFCorpus and ArguAna](replication.md). A separate [live local SLM experiment](local-tasks.md) measured token use and correctness on small fictional tasks. Read these alongside the initial SciFact result.

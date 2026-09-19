@@ -1,5 +1,7 @@
 # Frozen selector replication
 
+> Historical v0.2 evidence. For the private spherical v0.3 candidate, see [current results](spherical-results.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
+
 The coverage/diversity gain on SciFact did **not** generalize to the two additional datasets. We recommend keeping a retrieval baseline and validating any reranking on the intended domain.
 
 The selector was frozen at release commit `9b1900923de28bce3633bb9138e929db5405cc85`. The [protocol](../evidence/replication-v1/protocol.json) was committed before reviewing results. No new model fitting, parameter search or dataset-specific tuning was performed. The [runner](../experiments/run_replication.py), [manifest](../evidence/replication-v1/manifest.json), [summary](../evidence/replication-v1/summary.json) and [per-query rankings](../evidence/replication-v1/per-query.jsonl) are available.

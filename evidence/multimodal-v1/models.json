@@ -1,0 +1,178 @@
+[
+  {
+    "id": "stabilityai/sd-turbo",
+    "revision": "b261bac6fd2cf515557d5d0707481eafa0485ec2",
+    "files": [
+      {
+        "name": "model_index.json",
+        "bytes": 616
+      },
+      {
+        "name": "scheduler/scheduler_config.json",
+        "bytes": 553
+      },
+      {
+        "name": "sd_turbo.safetensors",
+        "bytes": 5214561328,
+        "sha256": "3f067a1b943cf162f2b8f8588f6cf5824bd5b4c7d1d88d87164b9ca123616549"
+      },
+      {
+        "name": "text_encoder/config.json",
+        "bytes": 618
+      },
+      {
+        "name": "text_encoder/model.fp16.safetensors",
+        "bytes": 680820392,
+        "sha256": "bc1827c465450322616f06dea41596eac7d493f4e95904dcb51f0fc745c4e13f"
+      },
+      {
+        "name": "text_encoder/model.safetensors",
+        "bytes": 1361596304,
+        "sha256": "67e013543d4fac905c882e2993d86a2d454ee69dc9e8f37c0c23d33a48959d15"
+      },
+      {
+        "name": "tokenizer/merges.txt",
+        "bytes": 524619
+      },
+      {
+        "name": "tokenizer/special_tokens_map.json",
+        "bytes": 574
+      },
+      {
+        "name": "tokenizer/tokenizer_config.json",
+        "bytes": 855
+      },
+      {
+        "name": "tokenizer/vocab.json",
+        "bytes": 1059962
+      },
+      {
+        "name": "unet/config.json",
+        "bytes": 1867
+      },
+      {
+        "name": "unet/diffusion_pytorch_model.fp16.safetensors",
+        "bytes": 1731904736,
+        "sha256": "40ec400881e27d1376c7c95c5bd495f407b33756e80eb6365e301c33a07af6e5"
+      },
+      {
+        "name": "unet/diffusion_pytorch_model.safetensors",
+        "bytes": 3463726504,
+        "sha256": "438da6db739c8651ec4152341b8133d6896db452ea27afdb6b9b0344f0c40532"
+      },
+      {
+        "name": "vae/config.json",
+        "bytes": 655
+      },
+      {
+        "name": "vae/diffusion_pytorch_model.fp16.safetensors",
+        "bytes": 167335342,
+        "sha256": "3e4c08995484ee61270175e9e7a072b66a6e4eeb5f0c266667fe1f45b90daf9a"
+      },
+      {
+        "name": "vae/diffusion_pytorch_model.safetensors",
+        "bytes": 334643268,
+        "sha256": "2aa1f43011b553a4cba7f37456465cdbd48aab7b54b9348b890e8058ea7683ec"
+      }
+    ]
+  },
+  {
+    "id": "facebook/mms-tts-eng",
+    "revision": "c71de0fe7204c83f1c10820a7d696d0b450048ba",
+    "files": [
+      {
+        "name": "config.json",
+        "bytes": 1641
+      },
+      {
+        "name": "model.safetensors",
+        "bytes": 145227512,
+        "sha256": "69cf8b651c1493f1801dfd2311c298d694a38357bc9a1e41f410491ea6f0e1be"
+      },
+      {
+        "name": "special_tokens_map.json",
+        "bytes": 47
+      },
+      {
+        "name": "tokenizer_config.json",
+        "bytes": 287
+      },
+      {
+        "name": "vocab.json",
+        "bytes": 413
+      }
+    ]
+  },
+  {
+    "id": "ali-vilab/text-to-video-ms-1.7b",
+    "revision": "8227dddca75a8561bf858d604cc5dae52b954d01",
+    "files": [
+      {
+        "name": "model_index.json",
+        "bytes": 384
+      },
+      {
+        "name": "scheduler/scheduler_config.json",
+        "bytes": 465
+      },
+      {
+        "name": "text_encoder/config.json",
+        "bytes": 644
+      },
+      {
+        "name": "text_encoder/model.fp16.safetensors",
+        "bytes": 680821102,
+        "sha256": "6ab158327d06ce861b5c78843672c78433ea82fcf03f142097ba204b81251cd2"
+      },
+      {
+        "name": "text_encoder/model.safetensors",
+        "bytes": 1361597016,
+        "sha256": "1e4aa519f64dc6386f88221a66c106a09fa027b47a20cc0e126687695f2a6669"
+      },
+      {
+        "name": "tokenizer/merges.txt",
+        "bytes": 524619
+      },
+      {
+        "name": "tokenizer/special_tokens_map.json",
+        "bytes": 460
+      },
+      {
+        "name": "tokenizer/tokenizer_config.json",
+        "bytes": 755
+      },
+      {
+        "name": "tokenizer/vocab.json",
+        "bytes": 1059962
+      },
+      {
+        "name": "unet/config.json",
+        "bytes": 787
+      },
+      {
+        "name": "unet/diffusion_pytorch_model.fp16.safetensors",
+        "bytes": 2822650226,
+        "sha256": "f972e78d39735baa09aab1cf60dd19f213e32f1c5a89382385e1a7f647b2e537"
+      },
+      {
+        "name": "unet/diffusion_pytorch_model.safetensors",
+        "bytes": 5645118394,
+        "sha256": "1296dbed3928b7ecf7da12dda03c4ff10f1cdf7303ff86993529fe8388a3e333"
+      },
+      {
+        "name": "vae/config.json",
+        "bytes": 657
+      },
+      {
+        "name": "vae/diffusion_pytorch_model.fp16.safetensors",
+        "bytes": 167335350,
+        "sha256": "c8b011e5a18c53888d51a81aa28223ddec87b450c14dc9650d9c3ebbcd17624e"
+      },
+      {
+        "name": "vae/diffusion_pytorch_model.safetensors",
+        "bytes": 334643276,
+        "sha256": "a1d993488569e928462932c8c38a0760b874d166399b14414135bd9c42df5815"
+      }
+    ]
+  }
+]

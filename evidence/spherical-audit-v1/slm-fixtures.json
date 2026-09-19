@@ -1,0 +1,170 @@
+[
+  {
+    "case": "test-0",
+    "query": {
+      "content": "Inspect schema behavior and make required changes",
+      "entity": "test_component_66878837",
+      "intent": "review",
+      "task": "schema"
+    },
+    "expected": {
+      "setting": 741,
+      "limit": 7094
+    },
+    "index_setup_ms": 11.5377
+  },
+  {
+    "case": "test-1",
+    "query": {
+      "content": "Inspect timeout behavior and make required changes",
+      "entity": "test_component_33050531",
+      "intent": "measure",
+      "task": "timeout"
+    },
+    "expected": {
+      "setting": 217,
+      "limit": 2660
+    },
+    "index_setup_ms": 6.724
+  },
+  {
+    "case": "test-2",
+    "query": {
+      "content": "Inspect timeout behavior and make required changes",
+      "entity": "test_component_70816300",
+      "intent": "review",
+      "task": "timeout"
+    },
+    "expected": {
+      "setting": 928,
+      "limit": 4989
+    },
+    "index_setup_ms": 6.022
+  },
+  {
+    "case": "test-3",
+    "query": {
+      "content": "Inspect timeout behavior and make required changes",
+      "entity": "test_component_5930574",
+      "intent": "measure",
+      "task": "timeout"
+    },
+    "expected": {
+      "setting": 161,
+      "limit": 8640
+    },
+    "index_setup_ms": 6.3175
+  },
+  {
+    "case": "test-4",
+    "query": {
+      "content": "Inspect timeout behavior and make required changes",
+      "entity": "test_component_72969347",
+      "intent": "implement",
+      "task": "timeout"
+    },
+    "expected": {
+      "setting": 770,
+      "limit": 1207
+    },
+    "index_setup_ms": 6.0115
+  },
+  {
+    "case": "test-5",
+    "query": {
+      "content": "Inspect retry behavior and make required changes",
+      "entity": "test_component_54617678",
+      "intent": "review",
+      "task": "retry"
+    },
+    "expected": {
+      "setting": 342,
+      "limit": 4322
+    },
+    "index_setup_ms": 6.0875
+  },
+  {
+    "case": "test-6",
+    "query": {
+      "content": "Inspect timeout behavior and make required changes",
+      "entity": "test_component_34065417",
+      "intent": "implement",
+      "task": "timeout"
+    },
+    "expected": {
+      "setting": 121,
+      "limit": 6581
+    },
+    "index_setup_ms": 6.5975
+  },
+  {
+    "case": "test-7",
+    "query": {
+      "content": "Inspect retry behavior and make required changes",
+      "entity": "test_component_18038230",
+      "intent": "measure",
+      "task": "retry"
+    },
+    "expected": {
+      "setting": 727,
+      "limit": 5520
+    },
+    "index_setup_ms": 6.6169
+  },
+  {
+    "case": "test-8",
+    "query": {
+      "content": "Inspect timeout behavior and make required changes",
+      "entity": "test_component_72699210",
+      "intent": "review",
+      "task": "timeout"
+    },
+    "expected": {
+      "setting": 634,
+      "limit": 9457
+    },
+    "index_setup_ms": 7.3754
+  },
+  {
+    "case": "test-9",
+    "query": {
+      "content": "Inspect timeout behavior and make required changes",
+      "entity": "test_component_49459336",
+      "intent": "measure",
+      "task": "timeout"
+    },
+    "expected": {
+      "setting": 532,
+      "limit": 7002
+    },
+    "index_setup_ms": 6.106
+  },
+  {
+    "case": "test-10",
+    "query": {
+      "content": "Inspect retry behavior and make required changes",
+      "entity": "test_component_50736733",
+      "intent": "measure",
+      "task": "retry"
+    },
+    "expected": {
+      "setting": 891,
+      "limit": 7100
+    },
+    "index_setup_ms": 6.7231
+  },
+  {
+    "case": "test-11",
+    "query": {
+      "content": "Inspect retry behavior and make required changes",
+      "entity": "test_component_86684770",
+      "intent": "measure",
+      "task": "retry"
+    },
+    "expected": {
+      "setting": 129,
+      "limit": 9241
+    },
+    "index_setup_ms": 10.5019
+  }
+]

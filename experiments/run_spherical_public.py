@@ -105,8 +105,8 @@ def main():
         def scores(qid):
             i = positions[qid]
             s = agreement(sem_q[i, :16], sem_d[:, :16], 128)
-            l = agreement(lex_q[i], lex_d, 128)
-            return s, l
+            lexical_scores = agreement(lex_q[i], lex_d, 128)
+            return s, lexical_scores
         def rank(values, qid):
             values = values.copy()
             if qid in doc_positions:
@@ -117,15 +117,15 @@ def main():
             for weight in (0.0, .25, .5, .75, 1.0):
                 vals = []
                 for qid in val:
-                    s, l = scores(qid)
-                    vals.append(ndcg(rank(weight * s + (1 - weight) * l, qid), validation_labels[qid], ids))
+                    s, lexical_scores = scores(qid)
+                    vals.append(ndcg(rank(weight * s + (1 - weight) * lexical_scores, qid), validation_labels[qid], ids))
                 validation.append({"semantic_weight": weight, "queries": len(vals), "ndcg10": statistics.mean(vals)})
             chosen_weight = max(validation, key=lambda r: r["ndcg10"])["semantic_weight"]
         for qid in sorted(labels):
             i = positions[qid]
-            s, l = scores(qid)
+            s, lexical_scores = scores(qid)
             variants = {"dense": d @ q[i], "semantic_256": agreement(sem_q[i], sem_d, 256),
-                        "semantic_128_lexical_128": chosen_weight * s + (1 - chosen_weight) * l}
+                        "semantic_128_lexical_128": chosen_weight * s + (1 - chosen_weight) * lexical_scores}
             for method, values in variants.items():
                 order = rank(values, qid)
                 all_rows.append({"dataset": dataset, "query_id": qid, "method": method,

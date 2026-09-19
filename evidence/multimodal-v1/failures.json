@@ -1,0 +1,8 @@
+[
+  {
+    "modality": "image",
+    "error_type": "RuntimeError",
+    "error": "Failed to import diffusers.pipelines.stable_diffusion.pipeline_stable_diffusion because of the following error (look up to see its traceback):\ncannot import name 'get_cached_repo_tree' from 'huggingface_hub' (<USER_HOME>\\diallel-rag-research\\.venv\\Lib\\site-packages\\huggingface_hub\\__init__.py)",
+    "privacy_redaction": "User home path removed; error type and missing API retained."
+  }
+]

@@ -1,7 +1,11 @@
 import itertools
 import json
 import random
+import subprocess
+import sys
+import tempfile
 import unittest
+from pathlib import Path
 
 from context_stamps import Claim, ContextMemory, Requirement, rank_candidates_safe, select_structured
 
@@ -104,6 +108,45 @@ class RequirementTests(unittest.TestCase):
             rank_candidates_safe("q", ["a"], [float("nan")])
         with self.assertRaises(ValueError):
             rank_candidates_safe("q", ["a"], [0.5], coverage_weight=0.3)
+
+    def test_cli_roundtrip_and_bad_schema(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder)
+            with ContextMemory(root / "store.sqlite") as memory:
+                row = memory.add("node timeout 3", source="config")
+            request = {
+                "requirements": [{"subject": "node", "attribute": "timeout"}],
+                "claims": [
+                    {
+                        "source": "config",
+                        "digest": row["digest"],
+                        "subject": "node",
+                        "attribute": "timeout",
+                        "value": "3",
+                    }
+                ],
+            }
+            (root / "request.json").write_text(json.dumps(request))
+            (root / "versions.json").write_text(json.dumps({"config": row["digest"]}))
+            args = [
+                sys.executable,
+                "-m",
+                "context_stamps",
+                "--db",
+                str(root / "store.sqlite"),
+                "select-structured",
+                "timeout",
+                "--request",
+                str(root / "request.json"),
+                "--revisions",
+                str(root / "versions.json"),
+            ]
+            result = subprocess.run(args, capture_output=True, text=True, check=True)
+            self.assertEqual(json.loads(result.stdout)["selected"], ["config"])
+            (root / "request.json").write_text('{"requirements": 3, "claims": []}')
+            result = subprocess.run(args, capture_output=True, text=True)
+            self.assertEqual(result.returncode, 2)
+            self.assertIn("error", json.loads(result.stderr))
 
 
 if __name__ == "__main__":

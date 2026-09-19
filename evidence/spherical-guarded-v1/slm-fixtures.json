@@ -1,0 +1,170 @@
+[
+  {
+    "case": "test-0",
+    "query": {
+      "content": "Inspect timeout behavior and make required changes",
+      "entity": "test_component_52135978",
+      "intent": "implement",
+      "task": "timeout"
+    },
+    "expected": {
+      "setting": 844,
+      "limit": 2031
+    },
+    "index_setup_ms": 13.1572
+  },
+  {
+    "case": "test-1",
+    "query": {
+      "content": "Inspect schema behavior and make required changes",
+      "entity": "test_component_88163294",
+      "intent": "implement",
+      "task": "schema"
+    },
+    "expected": {
+      "setting": 743,
+      "limit": 1296
+    },
+    "index_setup_ms": 8.0354
+  },
+  {
+    "case": "test-2",
+    "query": {
+      "content": "Inspect timeout behavior and make required changes",
+      "entity": "test_component_18187111",
+      "intent": "measure",
+      "task": "timeout"
+    },
+    "expected": {
+      "setting": 939,
+      "limit": 1507
+    },
+    "index_setup_ms": 6.578
+  },
+  {
+    "case": "test-3",
+    "query": {
+      "content": "Inspect schema behavior and make required changes",
+      "entity": "test_component_69010936",
+      "intent": "measure",
+      "task": "schema"
+    },
+    "expected": {
+      "setting": 161,
+      "limit": 8640
+    },
+    "index_setup_ms": 6.8823
+  },
+  {
+    "case": "test-4",
+    "query": {
+      "content": "Inspect schema behavior and make required changes",
+      "entity": "test_component_71756631",
+      "intent": "measure",
+      "task": "schema"
+    },
+    "expected": {
+      "setting": 192,
+      "limit": 2715
+    },
+    "index_setup_ms": 6.4445
+  },
+  {
+    "case": "test-5",
+    "query": {
+      "content": "Inspect retry behavior and make required changes",
+      "entity": "test_component_85471755",
+      "intent": "implement",
+      "task": "retry"
+    },
+    "expected": {
+      "setting": 805,
+      "limit": 8804
+    },
+    "index_setup_ms": 7.3401
+  },
+  {
+    "case": "test-6",
+    "query": {
+      "content": "Inspect schema behavior and make required changes",
+      "entity": "test_component_81776415",
+      "intent": "measure",
+      "task": "schema"
+    },
+    "expected": {
+      "setting": 121,
+      "limit": 6581
+    },
+    "index_setup_ms": 7.292
+  },
+  {
+    "case": "test-7",
+    "query": {
+      "content": "Inspect retry behavior and make required changes",
+      "entity": "test_component_75397155",
+      "intent": "implement",
+      "task": "retry"
+    },
+    "expected": {
+      "setting": 727,
+      "limit": 5520
+    },
+    "index_setup_ms": 6.5313
+  },
+  {
+    "case": "test-8",
+    "query": {
+      "content": "Inspect schema behavior and make required changes",
+      "entity": "test_component_273789",
+      "intent": "review",
+      "task": "schema"
+    },
+    "expected": {
+      "setting": 634,
+      "limit": 9457
+    },
+    "index_setup_ms": 7.2495
+  },
+  {
+    "case": "test-9",
+    "query": {
+      "content": "Inspect schema behavior and make required changes",
+      "entity": "test_component_78983760",
+      "intent": "measure",
+      "task": "schema"
+    },
+    "expected": {
+      "setting": 396,
+      "limit": 6690
+    },
+    "index_setup_ms": 7.061
+  },
+  {
+    "case": "test-10",
+    "query": {
+      "content": "Inspect retry behavior and make required changes",
+      "entity": "test_component_63373913",
+      "intent": "review",
+      "task": "retry"
+    },
+    "expected": {
+      "setting": 749,
+      "limit": 4745
+    },
+    "index_setup_ms": 7.0959
+  },
+  {
+    "case": "test-11",
+    "query": {
+      "content": "Inspect retry behavior and make required changes",
+      "entity": "test_component_77552659",
+      "intent": "review",
+      "task": "retry"
+    },
+    "expected": {
+      "setting": 205,
+      "limit": 4564
+    },
+    "index_setup_ms": 6.568
+  }
+]

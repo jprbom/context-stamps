@@ -1,0 +1,10 @@
+{
+  "device": "CPU",
+  "source_sha256": {
+    "context_stamps/training.py": "f5734434d4230967ec2ea9ac2dce8554705948495e86be00b6f923f3fd47eaef",
+    "context_stamps/facet_model.py": "74172d0ed169303037ee01c9fec3cf9edd1dc718d52095fd3f977b2ff362e421",
+    "experiments/train_pairwise.py": "946fcecbdd218ecd3806e373e20ba9e8861c795635c3309201d814884846469f",
+    "experiments/run_spherical_v2.py": "3dc0b47ba90e4c1fc3a9e77f871ac16b860418f93b3a962e145b83fd1ff6c8ac",
+    "experiments/run_spherical.py": "a0dc6fc3a62a0dcf2c24b0f28593f5be1f1d650286307869a5ddf84158439579"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "full_authorized": {
+    "cases": 60,
+    "complete": 1,
+    "tokens": 2848.9333333333334,
+    "packet_tokens": 2848.9333333333334,
+    "handoff_ms": 0.08086666666666667,
+    "graph_setup_ms": 0.11335333333333333
+  },
+  "graph_known_root": {
+    "cases": 60,
+    "complete": 1,
+    "tokens": 352.96666666666664,
+    "packet_tokens": 352.96666666666664,
+    "handoff_ms": 0.021871666666666668,
+    "graph_setup_ms": 0.11335333333333333
+  },
+  "stamp_only": {
+    "cases": 60,
+    "complete": 0,
+    "tokens": 511.48333333333335,
+    "packet_tokens": 284.6666666666667,
+    "handoff_ms": 0.01206,
+    "graph_setup_ms": 0.11335333333333333
+  },
+  "stamp_plus_graph": {
+    "cases": 60,
+    "complete": 0.95,
+    "tokens": 580.2666666666667,
+    "packet_tokens": 353.45,
+    "handoff_ms": 0.01891,
+    "graph_setup_ms": 0.11335333333333333
+  },
+  "stale_revision": {
+    "cases": 60,
+    "correct_abstention": 1
+  },
+  "changed_dependency": {
+    "cases": 60,
+    "correct_abstention": 1
+  },
+  "unauthorized_dependency": {
+    "cases": 60,
+    "correct_abstention": 1
+  },
+  "budget": {
+    "cases": 60,
+    "correct_abstention": 1
+  },
+  "conflict": {
+    "cases": 60,
+    "correct_abstention": 1
+  }
+}

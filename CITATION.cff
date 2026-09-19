@@ -1,12 +1,11 @@
 cff-version: 1.2.0
 message: "Please cite this software when using it in research or derived work."
-title: "Context Stamps: Portable context fingerprints and local evidence selection"
+title: "Context Stamps: Spherical Context QR and evidence handoffs"
 type: software
 authors:
   - family-names: Jagtap
     given-names: Prashant
-version: 0.2.0
-date-released: 2026-09-19
+version: 0.3.0
 license: MIT
 repository-code: "https://github.com/jprbom/context-stamps"
 url: "https://github.com/jprbom/context-stamps"

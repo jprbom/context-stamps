@@ -66,3 +66,7 @@ The standard-library core requires a Python runtime. It has no accelerator requi
 This release does not include browser/WASM, mobile-native, microcontroller, ONNX or quantized weight artifacts. A future export must benchmark memory, cold/warm latency and retrieval quality on named hardware and assign an appropriate encoder identity. Smaller fingerprints alone do not make a neural encoder smaller.
 
 MCP exposes read tools by default. Add `--allow-writes` after `serve` only to enable remember, invalidate and forget for a trusted client. See [security guidance](../SECURITY.md).
+
+## Spherical candidate integration
+
+`scqr encode examples/facets.json` produces portable and compact payloads plus a shared schema. The spherical Python API is exported from `context_stamps`; run `examples/spherical_workflow.py` for a full local handoff. The existing MCP and historical `cstamps` tools retain their documented scope. For agent instructions, require the host to authenticate roles, supply current exact facets, resolve evidence after activation, and abstain on incomplete packets. Never instruct a model to treat a hash as reconstructed source knowledge.

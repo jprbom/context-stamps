@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "cortex-context-stamps"
 version = "0.3.0"
-description = "Portable context fingerprints and local, version-aware evidence selection"
+description = "Spherical multi-facet context stamps, constrained activation and evidence handoffs"
 readme = "README.md"
 requires-python = ">=3.10"
 license = "MIT"
@@ -25,14 +25,18 @@ dev = ["build>=1.2", "ruff>=0.9", "numpy>=1.24,<3"]
 
 [project.scripts]
 cstamps = "context_stamps.cli:main"
+scqr = "context_stamps.spherical_cli:main"
 
 [project.urls]
 Repository = "https://github.com/jprbom/context-stamps"
 Issues = "https://github.com/jprbom/context-stamps/issues"
 
 [tool.setuptools]
-packages = ["context_stamps"]
+packages = ["context_stamps", "context_stamps.models"]
 py-modules = ["stamps"]
+
+[tool.setuptools.package-data]
+context_stamps = ["models/*.json", "models/*.md"]
 
 [tool.ruff]
 line-length = 110

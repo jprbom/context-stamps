@@ -1,5 +1,7 @@
 # Validation record
 
+> Historical v0.2 evidence. For the private spherical v0.3 candidate, see [current results](spherical-results.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
+
 Release 0.2.0, local Windows Python 3.13.13, 2026-09-19.
 
 - 38 automated tests passed. They cover source updates/deletion, path traversal rejection, hard required-source guards, stale evidence, budget accounting, trained coefficient validation, MMR/diallel-related identities, transactional rollback and real MCP stdio sessions with default write-tool denial.
@@ -25,3 +27,20 @@ No independent penetration test, generative-model fine-tune, production-readines
 - The cross-dataset figure was generated directly from committed metrics and visually checked. The developer kit contains an invitation, three tasks, neutral facilitator instructions, privacy/consent guidance and a feedback template. No one has been contacted and no participant response is claimed.
 
 `python experiments/verify_followup.py` verifies artifact and source hashes, frozen weights/protocol, query counts, self-match exclusion, recorded bootstrap intervals, all generated-output grades and aggregate metrics. CI runs it alongside the original evidence checks. Raw public corpora and downloaded model weights remain outside the repository. The follow-up changes documentation and experiment tooling; it does not retune or change the released selector.
+
+## Private v0.3 candidate verification
+
+- 72 unit tests pass locally, including 100 seeded random graph comparisons with an independent fixed-point oracle and a geometry control against known angular distances.
+- The spherical verifier retrains six ridge models, repeats validation selection and replays 3,840 recorded query/seed/method rankings. The pairwise verifier retrains three selected models with all nine validation trials and replays another 3,600 rankings. Projection seeds are not independent task samples.
+- The exact-facet guard passes 480 positive and 480 missing-answer regression cases. The unguarded failures remain recorded.
+- Historical source/artifact checks continue to pass. No original public-data benchmark outcome was overwritten by a new synthetic result.
+- All current README Python snippets, the spherical example and the `scqr encode` CLI passed local smoke checks. Wheel and source distribution builds succeeded.
+- Ruff and core Bandit passed. pip-audit reported no known vulnerabilities in the local core/research environment, skipping the editable package. This does not audit every external model runtime or establish exploit resistance.
+- Gitleaks reports the same nine previously reviewed public ArguAna ID false positives and no new matches. Local-cache paths were removed from the new Ollama manifests with the redaction recorded.
+- The multimodal pilot reports each completed modality separately. Local generated media and external weights are excluded from the repository; hashes and model revisions support reproduction. Output parity is not perceptual-quality validation.
+- The completed v2 multimodal run contains 36 generations and 18 identical direct/routed output pairs across image, speech and video. The verifier checks pair completeness, hashes, token equality and timing arithmetic.
+- The new public spherical retrieval run covers 2,029 queries and 6,087 method/query records. Both compact methods underperform dense retrieval on every dataset. Its verifier checks provenance, aggregates and self-exclusion; full metric replay requires external corpora and caches.
+
+Remote CI status must be checked on the pushed candidate commit. The repository remains private; no public-release readiness is implied by local checks.
+
+A clean wheel installation with no optional dependencies loaded the bundled experimental scorer and ran `scqr encode` successfully. Historical workflow source is preserved under `evidence/source-snapshots` when a later capacity fix changes its file hash. Source manifests identify the original runtime path and its exact snapshot; current regression tests exercise the patched implementation.

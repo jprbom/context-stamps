@@ -1,0 +1,34 @@
+{
+  "protocol": {
+    "seed": 270931,
+    "historical_evaluation": "all 90 test and 60 OOD fixtures; regression after inspection, not a fresh generalization claim",
+    "prospective_evaluation": "240 typed-JSON cases; six predetermined scenarios, 40 cases each; no fitting or tuning",
+    "method": "exact subject/attribute requirements, current digest-bound claims, conflict rejection, minimum-byte complete packet",
+    "scenarios": [
+      "complete",
+      "missing",
+      "budget",
+      "conflict",
+      "stale_metadata",
+      "stale_source"
+    ],
+    "success": "complete requested values when answerable; empty insufficient-evidence packet otherwise",
+    "metadata": "requirements supplied by caller; claims extracted from typed JSON or disclosed historical fixture grammar; no gold source IDs or gold fact annotations supplied to selection",
+    "original_results": "retain unchanged; do not relabel this as improved learned or neural generalization"
+  },
+  "source_sha256": {
+    "context_stamps/requirements.py": "a68a877ec4d7ee7381791644966c5747547a914b0faba48ce52c5fffa239acd7",
+    "experiments/run_structured.py": "f0aa478985361cdb146aa4168e4e29bb520069e96f67a729dc3847e4f2e3db91",
+    "context_stamps/memory.py": "c5b3313dbc8b55e3c8485eb534acf4a125eab2bc0b81e535f575e5fd6d9f4626"
+  },
+  "historical_fixture_sha256": "e4960cf3559fb7b26e02a93ff0737b7b3f441ef47bf6a3248e7de534d476c931",
+  "prospective_scenarios": {
+    "complete": 40,
+    "missing": 40,
+    "budget": 40,
+    "conflict": 40,
+    "stale_metadata": 40,
+    "stale_source": 40
+  },
+  "limitations": "schema/claim metadata is additional structure; no new model training; historical fixtures are regression only; fresh procedural validation is not independent natural-language or external-user validation"
+}

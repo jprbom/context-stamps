@@ -1,0 +1,1370 @@
+[
+  {
+    "case": "test-0",
+    "mode": "full",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"068a5680b3a3fafd21cfa5b0408329f2257e9f17b7977935608c4d766749da28\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 2031.\n\n{\"revision\": \"1\", \"sha256\": \"1eead91e12e417d89f1a544984df0c3b7f1daeab9b8d3c094d7e25a521052512\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 1528.\n\n{\"revision\": \"1\", \"sha256\": \"2e03b7878c0934c4b6bf28e477ff3c631e97628b7dfde307898ac81162066a81\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 7094.\n\n{\"revision\": \"1\", \"sha256\": \"61902efa8d18fff4ea7d1072cf6e67505f4b6aab66788e0dc31c2d108df1f484\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 2917.\n\n{\"revision\": \"1\", \"sha256\": \"36d058c30c464c60d8a1bac9966baccba5b12219576f121362505afb140ec40e\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 1637.\n\n{\"revision\": \"1\", \"sha256\": \"96c71dd08a94e9e6c8ae890bfb454c548040d6fb1962967b8b32c75cc5f9d5bb\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7894.\n\n{\"revision\": \"1\", \"sha256\": \"31356e3c7b8986c3afa3bea15373f6f2708ea5eb97657fd4d798aa7ec7fc2e1a\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 2205.\n\n{\"revision\": \"1\", \"sha256\": \"6aefb97c64491f3ab08db52801aa1e100d1414367a8c8e5f3d66cf5914efe2ff\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 1800.\n\n{\"revision\": \"1\", \"sha256\": \"643868e49957060cad1bc39cb2c4159f0dca7cea14fa43286e3c9ec55e441511\", \"source\": \"root-0\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"unrelated_task_2\", \"setting\": 844}\n\n{\"revision\": \"1\", \"sha256\": \"c6bdb8711891c7b41156103ea7dcdc50ee3149d336dd0afd71c9dd4d67a34858\", \"source\": \"root-1\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_other_18886974\", \"intent\": \"review\", \"task\": \"schema\", \"setting\": 271}\n\n{\"revision\": \"1\", \"sha256\": \"12fcbd64d8ea127c0ab062f0379dea93a0033a3200c6274585121b785469e886\", \"source\": \"root-2\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"schema\", \"setting\": 741}\n\n{\"revision\": \"1\", \"sha256\": \"5930fc349c6513944fc87b9e74f6847a67be7c818c74dd91b26ce8d0de00c0b6\", \"source\": \"root-3\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_other_93394214\", \"intent\": \"review\", \"task\": \"schema\", \"setting\": 579}\n\n{\"revision\": \"1\", \"sha256\": \"80357be48e96e7e44f787a4fbf9d29ac15d3e9e02d397be919854cfd3faca5d3\", \"source\": \"root-4\"}\n{\"content\": \"Record findings from the schema experiment\", \"entity\": \"test_component_66878837\", \"intent\": \"unrelated_intent_1\", \"task\": \"schema\", \"setting\": 387}\n\n{\"revision\": \"1\", \"sha256\": \"76438ca838d1c1a38b5e80cd05a074e437f08927d77a6082f35ce48209e6a5cf\", \"source\": \"root-5\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"unrelated_intent_4\", \"task\": \"schema\", \"setting\": 139}\n\n{\"revision\": \"1\", \"sha256\": \"726f736825b98d3fed1df60c94d65370f6379885b732590e7b7e07d086e2aee7\", \"source\": \"root-6\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"unrelated_intent_7\", \"task\": \"schema\", \"setting\": 470}\n\n{\"revision\": \"1\", \"sha256\": \"e2b50a96df2a7e47572e0361b635b3915f16af9c15f95b54acdbb969ee3d7aa1\", \"source\": \"root-7\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"unrelated_task_5\", \"setting\": 974}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"schema\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 741,\n  \"limit\": 2031\n}",
+    "expected": {
+      "setting": 741,
+      "limit": 7094
+    },
+    "correct": false,
+    "prompt_tokens": 1915,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1896,
+    "request_ms": 3416.199,
+    "end_to_end_ms": 3416.3886,
+    "index_setup_ms": 11.5377
+  },
+  {
+    "case": "test-0",
+    "mode": "activated_graph",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"2e03b7878c0934c4b6bf28e477ff3c631e97628b7dfde307898ac81162066a81\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 7094.\n\n{\"revision\": \"1\", \"sha256\": \"12fcbd64d8ea127c0ab062f0379dea93a0033a3200c6274585121b785469e886\", \"source\": \"root-2\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"schema\", \"setting\": 741}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"schema\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 741,\n  \"limit\": 7094\n}",
+    "expected": {
+      "setting": 741,
+      "limit": 7094
+    },
+    "correct": true,
+    "prompt_tokens": 348,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.1136,
+    "request_ms": 159.1037,
+    "end_to_end_ms": 160.2173,
+    "index_setup_ms": 11.5377
+  },
+  {
+    "case": "test-0",
+    "mode": "stamp_only",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"12fcbd64d8ea127c0ab062f0379dea93a0033a3200c6274585121b785469e886\", \"source\": \"root-2\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"schema\", \"setting\": 741}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"schema\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 741,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 741,
+      "limit": 7094
+    },
+    "correct": false,
+    "prompt_tokens": 252,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.1303,
+    "request_ms": 121.5547,
+    "end_to_end_ms": 122.685,
+    "index_setup_ms": 11.5377
+  },
+  {
+    "case": "test-1",
+    "mode": "full",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"14fb1e5756275271dc4ccf045a77b0a5331bc76a2fd69550ec7f2a716540ebf5\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 6042.\n\n{\"revision\": \"1\", \"sha256\": \"4654eb930c11f4a87a841777af37d939541605aead73dae2b54eb06316f340c4\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 2660.\n\n{\"revision\": \"1\", \"sha256\": \"f9431f2d3704deb0640975813ed5ae354a076a9377cbb4b1804168fd5fd0828c\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 7569.\n\n{\"revision\": \"1\", \"sha256\": \"b329a519043026d0ef82d0ea6faf4bf6a2a26b726394dfef6b5edb0c1a97d9a3\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 2099.\n\n{\"revision\": \"1\", \"sha256\": \"04f8bf7b44f250718af8e2193e2aafa854a5548212a85c18577a591e1428e47f\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 8320.\n\n{\"revision\": \"1\", \"sha256\": \"78250d05fc7f5cb996c0c674ea2df0a13fb923acdb0b575eb307fb2f5517d6c1\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 3889.\n\n{\"revision\": \"1\", \"sha256\": \"efe96abb9b6e09952c253088f3c7a324d0116ad6f402ad9a2151973f5ebd9a0d\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 4739.\n\n{\"revision\": \"1\", \"sha256\": \"827cdd4e4369c4732d1e5b261d71385f22aa24dc3a80270affa8159505b664d6\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 1296.\n\n{\"revision\": \"1\", \"sha256\": \"f4237ab2a3bbb419f90e85baceff472c219450d96b71a4a29cb284647c77b63d\", \"source\": \"root-0\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 232}\n\n{\"revision\": \"1\", \"sha256\": \"ce5926cfef77133e50b1e1a6373994d9582f14a0aa8c775046716178b5a7da76\", \"source\": \"root-1\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 217}\n\n{\"revision\": \"1\", \"sha256\": \"cdae566e036be89c8319018bc81ea972c4f4dfa416d9a05ea9f2ebc07a5d61fd\", \"source\": \"root-2\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_42506946\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 318}\n\n{\"revision\": \"1\", \"sha256\": \"d2605324f9ebd253cf19b6c8627b3bfccd27bff9b8efb14c142859b50f592d21\", \"source\": \"root-3\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 475}\n\n{\"revision\": \"1\", \"sha256\": \"a6ae34a039328e205cf5db8d3366cfdf4db87ff3b83f99adf7ba20afe2cffda5\", \"source\": \"root-4\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"unrelated_task_2\", \"setting\": 523}\n\n{\"revision\": \"1\", \"sha256\": \"4bd9cfaac6df8830de9dfec0de0c36fcac065cbdaaed08c1146f6e885c0e1e27\", \"source\": \"root-5\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 688}\n\n{\"revision\": \"1\", \"sha256\": \"8bbde10002a556dff0b01b2eebf095ddcd83ebea60e5b196205c45072134c9e6\", \"source\": \"root-6\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"unrelated_task_5\", \"setting\": 658}\n\n{\"revision\": \"1\", \"sha256\": \"186baf3bfb289256ce600b472a8bb795b1a9bc4b3b16225605b593aeeebe4159\", \"source\": \"root-7\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_11390493\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 743}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 217,\n  \"limit\": 2660\n}",
+    "expected": {
+      "setting": 217,
+      "limit": 2660
+    },
+    "correct": true,
+    "prompt_tokens": 1890,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1746,
+    "request_ms": 254.3728,
+    "end_to_end_ms": 254.5474,
+    "index_setup_ms": 6.724
+  },
+  {
+    "case": "test-1",
+    "mode": "stamp_only",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"ce5926cfef77133e50b1e1a6373994d9582f14a0aa8c775046716178b5a7da76\", \"source\": \"root-1\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 217}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 217,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 217,
+      "limit": 2660
+    },
+    "correct": false,
+    "prompt_tokens": 253,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 72,
+    "assembly_ms": 1.0969,
+    "request_ms": 190.6988,
+    "end_to_end_ms": 191.7957,
+    "index_setup_ms": 6.724
+  },
+  {
+    "case": "test-1",
+    "mode": "activated_graph",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"4654eb930c11f4a87a841777af37d939541605aead73dae2b54eb06316f340c4\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 2660.\n\n{\"revision\": \"1\", \"sha256\": \"ce5926cfef77133e50b1e1a6373994d9582f14a0aa8c775046716178b5a7da76\", \"source\": \"root-1\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 217}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 217,\n  \"limit\": 2660\n}",
+    "expected": {
+      "setting": 217,
+      "limit": 2660
+    },
+    "correct": true,
+    "prompt_tokens": 347,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 72,
+    "assembly_ms": 1.2207,
+    "request_ms": 148.4687,
+    "end_to_end_ms": 149.6894,
+    "index_setup_ms": 6.724
+  },
+  {
+    "case": "test-2",
+    "mode": "full",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"2ae83250cdfcd143d4b0dc47ca6599ec16634a5afc83e17a026621cef33ca388\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 5421.\n\n{\"revision\": \"1\", \"sha256\": \"91c2d6c934e1d79d0fa14ae22dbb388671e8548bc807749b67d27663b5c8cbc5\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 4542.\n\n{\"revision\": \"1\", \"sha256\": \"738fbfb1f008dfed85bd0b8563dcd837d9a784f99544ff5c7ed2a7988afed931\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 4393.\n\n{\"revision\": \"1\", \"sha256\": \"43c29a87707628efd8cda832443bd95890abf931afd642bd1c0d42ea64e2a0e1\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 5102.\n\n{\"revision\": \"1\", \"sha256\": \"003e5a8d06ac15b96d8826e6876294a304c297c246e0e8ef049a4ecc0040e531\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 4989.\n\n{\"revision\": \"1\", \"sha256\": \"a8b647046d5de999f84105a8496fbfeeec4473a8d0da4e41bdd80a6bd6f4528a\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7451.\n\n{\"revision\": \"1\", \"sha256\": \"5a7400f1153b0495b27587af0f3e53d67b807398f41e75dfc15bcbd45bc48322\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 7031.\n\n{\"revision\": \"1\", \"sha256\": \"07a9e2fc3b500b68771017b93f6e16f8cae0489fd77ebb00b07086a364fceb2e\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 1507.\n\n{\"revision\": \"1\", \"sha256\": \"6355bab6396432399aff467bf9fd6a183807f09ec2c049a0d089ac2acc9f60ab\", \"source\": \"root-0\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_other_65871309\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 347}\n\n{\"revision\": \"1\", \"sha256\": \"a7e7804c4c0f9a8613c038f3b7e82e16e001a72d1841c70ae9abd7ac780a2537\", \"source\": \"root-1\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_70816300\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 652}\n\n{\"revision\": \"1\", \"sha256\": \"e35b648e09294e69e21c190b9ec92ffd65dbd13d1f5111aa76c13a31d47f8479\", \"source\": \"root-2\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"unrelated_task_5\", \"setting\": 223}\n\n{\"revision\": \"1\", \"sha256\": \"1ffafd431ce4705e57c76dea12d60556c052b101d0175cd9a42b049a43181ea4\", \"source\": \"root-3\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_other_67500375\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 858}\n\n{\"revision\": \"1\", \"sha256\": \"c620cba09b02f3c41d3360733dcbcc5169a805a91cdecd3e739aadcb01ab7826\", \"source\": \"root-4\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 928}\n\n{\"revision\": \"1\", \"sha256\": \"51ef412786af0a0a9729199b339ce0273032ec11c103f1936974deba9ea4e2aa\", \"source\": \"root-5\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_70816300\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 395}\n\n{\"revision\": \"1\", \"sha256\": \"86d9e9b5e2e304420e5b20c6bafa2d6aa7cebb5734f6ebb0d94dba9b1e7b724d\", \"source\": \"root-6\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_70816300\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 226}\n\n{\"revision\": \"1\", \"sha256\": \"83c0ccebf4121850d06cdc0b9d927feaa5cb1223096fe33c9e1d49f00e8ec74e\", \"source\": \"root-7\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"unrelated_task_2\", \"setting\": 939}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 939,\n  \"limit\": 7451\n}",
+    "expected": {
+      "setting": 928,
+      "limit": 4989
+    },
+    "correct": false,
+    "prompt_tokens": 1894,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1324,
+    "request_ms": 318.8096,
+    "end_to_end_ms": 318.942,
+    "index_setup_ms": 6.022
+  },
+  {
+    "case": "test-2",
+    "mode": "activated_graph",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"003e5a8d06ac15b96d8826e6876294a304c297c246e0e8ef049a4ecc0040e531\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 4989.\n\n{\"revision\": \"1\", \"sha256\": \"c620cba09b02f3c41d3360733dcbcc5169a805a91cdecd3e739aadcb01ab7826\", \"source\": \"root-4\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 928}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 928,\n  \"limit\": 4989\n}",
+    "expected": {
+      "setting": 928,
+      "limit": 4989
+    },
+    "correct": true,
+    "prompt_tokens": 345,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.3226,
+    "request_ms": 140.9752,
+    "end_to_end_ms": 142.2978,
+    "index_setup_ms": 6.022
+  },
+  {
+    "case": "test-2",
+    "mode": "stamp_only",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"c620cba09b02f3c41d3360733dcbcc5169a805a91cdecd3e739aadcb01ab7826\", \"source\": \"root-4\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 928}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 928,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 928,
+      "limit": 4989
+    },
+    "correct": false,
+    "prompt_tokens": 248,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.0788,
+    "request_ms": 131.8533,
+    "end_to_end_ms": 132.9321,
+    "index_setup_ms": 6.022
+  },
+  {
+    "case": "test-3",
+    "mode": "full",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"165f8745f8085d08b92c27ef938317f68f58a6b0cdc5f59305d724caff67cb16\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 8271.\n\n{\"revision\": \"1\", \"sha256\": \"87ed3d4c563838643a1a112605e1d63527ba5c105754fcf556de35b87db27673\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 4837.\n\n{\"revision\": \"1\", \"sha256\": \"68de5cf50de1ba71d7a0000b808f4f8b9980e317547c29cd8c80c36762f89e43\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 4236.\n\n{\"revision\": \"1\", \"sha256\": \"2ffacba5b612b2863ba9935b96a1d26eafacccd979a28fef895a34eaf7900918\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 6283.\n\n{\"revision\": \"1\", \"sha256\": \"e64ddbce5da6eecdb38daf363679d42d6745255df1f5a055c35429a239e12d69\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 3034.\n\n{\"revision\": \"1\", \"sha256\": \"143a31717e306317a8e2ebe1a4d79e5e5fd3c04e291a13f28396b2ade89fc8b3\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 6969.\n\n{\"revision\": \"1\", \"sha256\": \"adac3df1c42e5bd01f16b587bed5ec156053bda6faf8268504b89f6194a84c5b\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 8640.\n\n{\"revision\": \"1\", \"sha256\": \"193046a6629ecbeb997538ef53d2cd0b57f36182d3e9e08953ecacea72e14b3b\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 1483.\n\n{\"revision\": \"1\", \"sha256\": \"3ee2bb0c6777e2609fdc77b0e6f31b4a2897da2248c2559ad378caac35d10af1\", \"source\": \"root-0\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_5930574\", \"intent\": \"measure\", \"task\": \"unrelated_task_5\", \"setting\": 306}\n\n{\"revision\": \"1\", \"sha256\": \"346157201a32e37da0c3dc8b6cfcc1381aefbbd49c75aad4390590b3f6ed0702\", \"source\": \"root-1\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_other_3003459\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 107}\n\n{\"revision\": \"1\", \"sha256\": \"336d6c8757b5521353c0439ed6cf9a5f711b19184242216768156febef2d3556\", \"source\": \"root-2\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_64411355\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 807}\n\n{\"revision\": \"1\", \"sha256\": \"fa6cd45cbd827ad06dc815af554dae8b2109a0f4e9e42f6e5101e4deba7ce477\", \"source\": \"root-3\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_5930574\", \"intent\": \"measure\", \"task\": \"unrelated_task_2\", \"setting\": 668}\n\n{\"revision\": \"1\", \"sha256\": \"2ab06c4dafc41b4a200b7817de1a845e069a78e6ad3ba0e6731ab352b554a17d\", \"source\": \"root-4\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_5930574\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 727}\n\n{\"revision\": \"1\", \"sha256\": \"d6123cd1b485a397e540a4af18bab4055952a244d0819d3ccae7f2aeb77d0de6\", \"source\": \"root-5\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_5930574\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 108}\n\n{\"revision\": \"1\", \"sha256\": \"a298ce59796a9494171d2ffcdbd7843fe67c79341a153dfc4591be647f1d4c9e\", \"source\": \"root-6\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_5930574\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 161}\n\n{\"revision\": \"1\", \"sha256\": \"a0026eda045d1f21623627cc5202af9210f695339a6a68f59b1c116d87d4fdc6\", \"source\": \"root-7\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_5930574\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 237}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_5930574\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 161,\n  \"limit\": 8271\n}",
+    "expected": {
+      "setting": 161,
+      "limit": 8640
+    },
+    "correct": false,
+    "prompt_tokens": 1888,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1288,
+    "request_ms": 323.4021,
+    "end_to_end_ms": 323.53090000000003,
+    "index_setup_ms": 6.3175
+  },
+  {
+    "case": "test-3",
+    "mode": "stamp_only",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"336d6c8757b5521353c0439ed6cf9a5f711b19184242216768156febef2d3556\", \"source\": \"root-2\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_64411355\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 807}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_5930574\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 807,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 161,
+      "limit": 8640
+    },
+    "correct": false,
+    "prompt_tokens": 251,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 74,
+    "assembly_ms": 1.1639,
+    "request_ms": 129.7578,
+    "end_to_end_ms": 130.92170000000002,
+    "index_setup_ms": 6.3175
+  },
+  {
+    "case": "test-3",
+    "mode": "activated_graph",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"68de5cf50de1ba71d7a0000b808f4f8b9980e317547c29cd8c80c36762f89e43\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 4236.\n\n{\"revision\": \"1\", \"sha256\": \"336d6c8757b5521353c0439ed6cf9a5f711b19184242216768156febef2d3556\", \"source\": \"root-2\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_64411355\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 807}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_5930574\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 807,\n  \"limit\": 4236\n}",
+    "expected": {
+      "setting": 161,
+      "limit": 8640
+    },
+    "correct": false,
+    "prompt_tokens": 347,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 74,
+    "assembly_ms": 1.3495,
+    "request_ms": 167.5158,
+    "end_to_end_ms": 168.86530000000002,
+    "index_setup_ms": 6.3175
+  },
+  {
+    "case": "test-4",
+    "mode": "stamp_only",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"542cdb6fa1b1dd5a14759cdc0437428ed2527c989098f0583072c278136e5721\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 770}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 770,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 770,
+      "limit": 1207
+    },
+    "correct": false,
+    "prompt_tokens": 250,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 73,
+    "assembly_ms": 1.2872,
+    "request_ms": 127.0427,
+    "end_to_end_ms": 128.3299,
+    "index_setup_ms": 6.0115
+  },
+  {
+    "case": "test-4",
+    "mode": "activated_graph",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"0361dbc69234d81d4ac91026469216fd88f1e291d18065c5755381c3d0cf6db7\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 1207.\n\n{\"revision\": \"1\", \"sha256\": \"542cdb6fa1b1dd5a14759cdc0437428ed2527c989098f0583072c278136e5721\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 770}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 770,\n  \"limit\": 1207\n}",
+    "expected": {
+      "setting": 770,
+      "limit": 1207
+    },
+    "correct": true,
+    "prompt_tokens": 345,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 73,
+    "assembly_ms": 1.1071,
+    "request_ms": 150.5222,
+    "end_to_end_ms": 151.6293,
+    "index_setup_ms": 6.0115
+  },
+  {
+    "case": "test-4",
+    "mode": "full",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"0f87c0b28f5726004584a0fc99f36a8d2e3e4f0f2f7ae90e141f42bb8bff8496\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 2715.\n\n{\"revision\": \"1\", \"sha256\": \"6ca79f07b840b45f93eb838ab1af9d894c421f479c983696430694e35c1b2798\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 9966.\n\n{\"revision\": \"1\", \"sha256\": \"0361dbc69234d81d4ac91026469216fd88f1e291d18065c5755381c3d0cf6db7\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 1207.\n\n{\"revision\": \"1\", \"sha256\": \"5fc42a0410f75eb6535269add955298e4c0779807cd32965467627589d39d68f\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 6327.\n\n{\"revision\": \"1\", \"sha256\": \"efaa3b22b420bcc209c654199a5964df8cafdf1d146307e4c562d7183b3601e0\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 4318.\n\n{\"revision\": \"1\", \"sha256\": \"a67d1bd9f92c89c8dec01f662c9ed2c202e33151047365812f401cecbea99b69\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7538.\n\n{\"revision\": \"1\", \"sha256\": \"ac9c903a8a618494eeae6fea6d289d4e8a6267ffde23736f2cadfe294462628f\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 3967.\n\n{\"revision\": \"1\", \"sha256\": \"ed150120cc94a7af6be6258d2f1b8ec282ace9f7c4881f17684b8a3d8a444c2c\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 2443.\n\n{\"revision\": \"1\", \"sha256\": \"efb6158327296e4dbe66f7216624185c6e1b509a073777d406aca833734ebcb0\", \"source\": \"root-0\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_38574193\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 192}\n\n{\"revision\": \"1\", \"sha256\": \"0465b7097e05a913df68c1058d4031ab60c1ba82afa0609531333f34297e7d85\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"unrelated_task_5\", \"setting\": 642}\n\n{\"revision\": \"1\", \"sha256\": \"542cdb6fa1b1dd5a14759cdc0437428ed2527c989098f0583072c278136e5721\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 770}\n\n{\"revision\": \"1\", \"sha256\": \"8954691ed70d8b4bcb97cce5b71d948238410282b3a3e80c8e23ea53e8922fae\", \"source\": \"root-3\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_72969347\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 420}\n\n{\"revision\": \"1\", \"sha256\": \"b474e2024beb3bdac2ba31038580541e06bd98fce31be8b2c6b9419221f004ed\", \"source\": \"root-4\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72969347\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 866}\n\n{\"revision\": \"1\", \"sha256\": \"4bb0ff8c297b4d6369390e6b5b9f4d8efcf9ca02dcec3cfb5a54cad277736ce6\", \"source\": \"root-5\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72969347\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 987}\n\n{\"revision\": \"1\", \"sha256\": \"16d22991d01208d2dd5a9bfa560c39257a47448ccba46bbba9ebce2a7b4c6e10\", \"source\": \"root-6\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_81198657\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 372}\n\n{\"revision\": \"1\", \"sha256\": \"672748b6d08f469e6d6d995d2bb5e66a9780d9ee212718c0d23854b22644df57\", \"source\": \"root-7\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"unrelated_task_2\", \"setting\": 733}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 770,\n  \"limit\": 3967\n}",
+    "expected": {
+      "setting": 770,
+      "limit": 1207
+    },
+    "correct": false,
+    "prompt_tokens": 1908,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1798,
+    "request_ms": 275.1871,
+    "end_to_end_ms": 275.3669,
+    "index_setup_ms": 6.0115
+  },
+  {
+    "case": "test-5",
+    "mode": "full",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"5a578fe6a5d23cc1a5f9a984d8494b45be8b398c067aa5a71ec858ece1c3c079\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 8804.\n\n{\"revision\": \"1\", \"sha256\": \"1edab1fcc53e894fc6fea693a00da1053d200fd2fdcf553d720fc4f977db22aa\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 7500.\n\n{\"revision\": \"1\", \"sha256\": \"1112a96d8ea3459e36ec134f3b745095cc0e09c59fbc45ef13b129adbe5a2cb8\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 3556.\n\n{\"revision\": \"1\", \"sha256\": \"6d64ba7be92cce0786b31f9c9305e465ecee358ec9c88855714f76528a76b4a9\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 2409.\n\n{\"revision\": \"1\", \"sha256\": \"76968e2f3381ed9f1828cd9d4c3334654f7353e9286280bbed77ea7765d9d28f\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 1980.\n\n{\"revision\": \"1\", \"sha256\": \"93d958f0fd7a96bef39233aa7dad544a876e433981d6339d9bc2a432c50347e8\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7795.\n\n{\"revision\": \"1\", \"sha256\": \"f33f54e265f2d09d44e0c6a0fce91a621e9731abec894f4dcb4b72fb22dd5d5f\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 6207.\n\n{\"revision\": \"1\", \"sha256\": \"6b763883f7094c961fa4e58a171d2559343c4744e651233fc51b1d835cc12a88\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 4322.\n\n{\"revision\": \"1\", \"sha256\": \"d352d421173f384889e9f54777bf2169b8259994581a797f2bb8a35cd0bb3add\", \"source\": \"root-0\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"unrelated_task_2\", \"setting\": 805}\n\n{\"revision\": \"1\", \"sha256\": \"f40fab52ab46a6e33754bf630a4f9ea10701ee7bb7fee3af3b389afee8ab7804\", \"source\": \"root-1\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"unrelated_task_5\", \"setting\": 345}\n\n{\"revision\": \"1\", \"sha256\": \"9a33d9ef07c1ff444b486a478c5f0585e45f3e7fb80e7b733527596763894250\", \"source\": \"root-2\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_54617678\", \"intent\": \"unrelated_intent_7\", \"task\": \"retry\", \"setting\": 966}\n\n{\"revision\": \"1\", \"sha256\": \"9edeffda72f2c33f6393d565ed9911c04f4fcd6c5f0078bb476aaa2b4c88a06a\", \"source\": \"root-3\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_other_6309643\", \"intent\": \"review\", \"task\": \"retry\", \"setting\": 711}\n\n{\"revision\": \"1\", \"sha256\": \"5b12941fe195722d01de72f36bc8fc68de01b7646668de77d9116d7ec1066696\", \"source\": \"root-4\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_54617678\", \"intent\": \"unrelated_intent_1\", \"task\": \"retry\", \"setting\": 504}\n\n{\"revision\": \"1\", \"sha256\": \"b318631ad5972a75ad4b5a75c78956e66cfaad48f83cf440f79a36382f7743d7\", \"source\": \"root-5\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_other_64164222\", \"intent\": \"review\", \"task\": \"retry\", \"setting\": 832}\n\n{\"revision\": \"1\", \"sha256\": \"bf35ec8f12446a1e44725b97f2bc0d16f73ada2a8983dcd5eda9d80ff0c92e42\", \"source\": \"root-6\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_54617678\", \"intent\": \"unrelated_intent_4\", \"task\": \"retry\", \"setting\": 852}\n\n{\"revision\": \"1\", \"sha256\": \"ab17b39748a7956518f20efc166013a8632fe84536608e02cf9c8cc40223f5af\", \"source\": \"root-7\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"retry\", \"setting\": 342}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 342,\n  \"limit\": 8804\n}",
+    "expected": {
+      "setting": 342,
+      "limit": 4322
+    },
+    "correct": false,
+    "prompt_tokens": 1903,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1836,
+    "request_ms": 329.2274,
+    "end_to_end_ms": 329.411,
+    "index_setup_ms": 6.0875
+  },
+  {
+    "case": "test-5",
+    "mode": "activated_graph",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"6b763883f7094c961fa4e58a171d2559343c4744e651233fc51b1d835cc12a88\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 4322.\n\n{\"revision\": \"1\", \"sha256\": \"ab17b39748a7956518f20efc166013a8632fe84536608e02cf9c8cc40223f5af\", \"source\": \"root-7\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"retry\", \"setting\": 342}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 342,\n  \"limit\": 4322\n}",
+    "expected": {
+      "setting": 342,
+      "limit": 4322
+    },
+    "correct": true,
+    "prompt_tokens": 350,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 78,
+    "assembly_ms": 1.4428,
+    "request_ms": 176.3113,
+    "end_to_end_ms": 177.7541,
+    "index_setup_ms": 6.0875
+  },
+  {
+    "case": "test-5",
+    "mode": "stamp_only",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"ab17b39748a7956518f20efc166013a8632fe84536608e02cf9c8cc40223f5af\", \"source\": \"root-7\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"retry\", \"setting\": 342}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 342,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 342,
+      "limit": 4322
+    },
+    "correct": false,
+    "prompt_tokens": 252,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 78,
+    "assembly_ms": 1.1902,
+    "request_ms": 128.9023,
+    "end_to_end_ms": 130.0925,
+    "index_setup_ms": 6.0875
+  },
+  {
+    "case": "test-6",
+    "mode": "stamp_only",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"da364634e825d0f2edb336df9f788f86062a394b2df36c4cf9cce4e4d52166df\", \"source\": \"root-3\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 121}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 121,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 121,
+      "limit": 6581
+    },
+    "correct": false,
+    "prompt_tokens": 248,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 72,
+    "assembly_ms": 1.365,
+    "request_ms": 119.0087,
+    "end_to_end_ms": 120.3737,
+    "index_setup_ms": 6.5975
+  },
+  {
+    "case": "test-6",
+    "mode": "full",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"fada633209fb9d3caa2affee0a9c312fc4e818292135ed81f96d204b2cea8d8e\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 8631.\n\n{\"revision\": \"1\", \"sha256\": \"62071a84f074bb5cb039adb50f3b809974583ee4307dc44178965e9440e4b926\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 6183.\n\n{\"revision\": \"1\", \"sha256\": \"95e2b12eac77ab47a6557745795bbcb6835335c66fa793002bec372f40f86e1c\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 3002.\n\n{\"revision\": \"1\", \"sha256\": \"f7db3c5b8e3f9a2a1bf82a88d377b37dc33124585e740cc5520274818ba0b158\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 6581.\n\n{\"revision\": \"1\", \"sha256\": \"c1b86a5347c0bad39f06687d1754898ef439172b3ee5fdfdf39d0b9e221af30c\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 8702.\n\n{\"revision\": \"1\", \"sha256\": \"975f63b0330e8da5b515fc62c2703db661dda7fa37acb32b5844a352ef12d172\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7987.\n\n{\"revision\": \"1\", \"sha256\": \"dff98ae4ca8e645fc573900925699fd332ca54aa652c8975513a7d62fab061a7\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 7165.\n\n{\"revision\": \"1\", \"sha256\": \"af3c1e361bd1f457a31c5158d7d5f7b5198610f1681cf1972673cdbf5cfee024\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 3904.\n\n{\"revision\": \"1\", \"sha256\": \"fc0377a76133a760ab0e3b639f8f3b7946e5f1306640e0749557f84d1e72f93b\", \"source\": \"root-0\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_47606171\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 391}\n\n{\"revision\": \"1\", \"sha256\": \"431e8b7fe5973ae4ce2325c71e8dfd3286d56a4ff4f89a991975456b87576afa\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_34065417\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 189}\n\n{\"revision\": \"1\", \"sha256\": \"6c81da10886ff8f5c1a3da35463d095e29800f49dfad3297a6f18b98c0828f67\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"unrelated_task_2\", \"setting\": 225}\n\n{\"revision\": \"1\", \"sha256\": \"da364634e825d0f2edb336df9f788f86062a394b2df36c4cf9cce4e4d52166df\", \"source\": \"root-3\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 121}\n\n{\"revision\": \"1\", \"sha256\": \"89382264fcdcbbbdd1de520676e393ea8f31fa983a572fd3f8411c5e256216f6\", \"source\": \"root-4\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_34065417\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 798}\n\n{\"revision\": \"1\", \"sha256\": \"f8fbca92ce3805ad7f354c65d13cbca66599cf04d0182a8d8521447c1cd2467f\", \"source\": \"root-5\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_other_53677110\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 344}\n\n{\"revision\": \"1\", \"sha256\": \"c4c7e00c2628e9ea8b7af11eb7967c3bc11f9d21857e7635d25d98390adeaf20\", \"source\": \"root-6\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_34065417\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 638}\n\n{\"revision\": \"1\", \"sha256\": \"c69fbc3b81672ee6e3cb4dd994956599e3f035769465ca63a01cfbb356a7797a\", \"source\": \"root-7\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"unrelated_task_5\", \"setting\": 838}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 189,\n  \"limit\": 6183\n}",
+    "expected": {
+      "setting": 121,
+      "limit": 6581
+    },
+    "correct": false,
+    "prompt_tokens": 1897,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1316,
+    "request_ms": 299.9559,
+    "end_to_end_ms": 300.0875,
+    "index_setup_ms": 6.5975
+  },
+  {
+    "case": "test-6",
+    "mode": "activated_graph",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"f7db3c5b8e3f9a2a1bf82a88d377b37dc33124585e740cc5520274818ba0b158\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 6581.\n\n{\"revision\": \"1\", \"sha256\": \"da364634e825d0f2edb336df9f788f86062a394b2df36c4cf9cce4e4d52166df\", \"source\": \"root-3\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 121}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 121,\n  \"limit\": 6581\n}",
+    "expected": {
+      "setting": 121,
+      "limit": 6581
+    },
+    "correct": true,
+    "prompt_tokens": 344,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 72,
+    "assembly_ms": 1.277,
+    "request_ms": 176.3789,
+    "end_to_end_ms": 177.65589999999997,
+    "index_setup_ms": 6.5975
+  },
+  {
+    "case": "test-7",
+    "mode": "full",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"b6a4dc21b9ed9d36fc0ea3eb605e49cbebe06e48494c51b959fcc4f3103be796\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 9779.\n\n{\"revision\": \"1\", \"sha256\": \"a0e0b5420f81529cda251d9d400c79d7eaa76baac0451b442e4d35db1c95ce7f\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 3018.\n\n{\"revision\": \"1\", \"sha256\": \"eed47af4018d57f6c40707d4bb973a1f74b03ac9a92e7bf126d94a121672c2a7\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 7518.\n\n{\"revision\": \"1\", \"sha256\": \"f5860f60fb7a9aea1591c7e28ac5b158aa75af5a4664653fdc341f9eac69a84a\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 6076.\n\n{\"revision\": \"1\", \"sha256\": \"78d0413c7829750bb5ee1ce0840411f93c6251575cfe7bcd5e9ec17523972827\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 7332.\n\n{\"revision\": \"1\", \"sha256\": \"329959198a822f33c8a35df055d4ce69b3cd8528236e1c9cfb3270f8052afa68\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 5520.\n\n{\"revision\": \"1\", \"sha256\": \"f510cf06bb9ee208cfc16d3467f19d121aaf10762bb3c0ae525ecb2cc6cd8d21\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 6189.\n\n{\"revision\": \"1\", \"sha256\": \"775bbed3815e806bb3c5ae4a8fd39ae5375d0b4a124a626117ac05891bf25dd2\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 5270.\n\n{\"revision\": \"1\", \"sha256\": \"db772bdf4b041d470c2c28497c02c7a3ecd7f0eece85d5e5c8c8fb0a0d3d039c\", \"source\": \"root-0\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_18038230\", \"intent\": \"unrelated_intent_4\", \"task\": \"retry\", \"setting\": 388}\n\n{\"revision\": \"1\", \"sha256\": \"5707cf5118fb6f7769ed82e85c796f1dccfb8cad3ccea8f29804002f29262667\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_other_71303610\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 396}\n\n{\"revision\": \"1\", \"sha256\": \"290848a5536d0c2967e987a58a29e95e6ed185a1be2551a39e5e2b8115bd18c6\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_other_88449204\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 642}\n\n{\"revision\": \"1\", \"sha256\": \"f15996390fffd4fa96b42c5b79733e5769ab81f1e297883ec257ffe42de462b4\", \"source\": \"root-3\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"unrelated_task_5\", \"setting\": 317}\n\n{\"revision\": \"1\", \"sha256\": \"709961624d64f5282151f7ca1a7b08d3b399c80b386e8f6bf10b740e901ee68c\", \"source\": \"root-4\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_18038230\", \"intent\": \"unrelated_intent_1\", \"task\": \"retry\", \"setting\": 636}\n\n{\"revision\": \"1\", \"sha256\": \"02b86e95d727a377ec7c4617f38c4840960bc272691e12bbfc6e9720be09b832\", \"source\": \"root-5\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 727}\n\n{\"revision\": \"1\", \"sha256\": \"26d280a5d043b06e5d278439a5cd3bfa90be7a6cdd5d67df0624555f2156ccd2\", \"source\": \"root-6\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"unrelated_task_2\", \"setting\": 214}\n\n{\"revision\": \"1\", \"sha256\": \"d9c36dbf274af3c6ed196f6c77ac00e7101546eecfd682dcbaef64cdafc61ffa\", \"source\": \"root-7\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_18038230\", \"intent\": \"unrelated_intent_7\", \"task\": \"retry\", \"setting\": 615}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 636,\n  \"limit\": 7332\n}",
+    "expected": {
+      "setting": 727,
+      "limit": 5520
+    },
+    "correct": false,
+    "prompt_tokens": 1897,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1734,
+    "request_ms": 311.9309,
+    "end_to_end_ms": 312.1043,
+    "index_setup_ms": 6.6169
+  },
+  {
+    "case": "test-7",
+    "mode": "activated_graph",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"329959198a822f33c8a35df055d4ce69b3cd8528236e1c9cfb3270f8052afa68\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 5520.\n\n{\"revision\": \"1\", \"sha256\": \"02b86e95d727a377ec7c4617f38c4840960bc272691e12bbfc6e9720be09b832\", \"source\": \"root-5\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 727}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 727,\n  \"limit\": 5520\n}",
+    "expected": {
+      "setting": 727,
+      "limit": 5520
+    },
+    "correct": true,
+    "prompt_tokens": 347,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 76,
+    "assembly_ms": 1.3952,
+    "request_ms": 194.5452,
+    "end_to_end_ms": 195.94039999999998,
+    "index_setup_ms": 6.6169
+  },
+  {
+    "case": "test-7",
+    "mode": "stamp_only",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"02b86e95d727a377ec7c4617f38c4840960bc272691e12bbfc6e9720be09b832\", \"source\": \"root-5\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 727}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 727,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 727,
+      "limit": 5520
+    },
+    "correct": false,
+    "prompt_tokens": 252,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 76,
+    "assembly_ms": 1.1824,
+    "request_ms": 123.768,
+    "end_to_end_ms": 124.9504,
+    "index_setup_ms": 6.6169
+  },
+  {
+    "case": "test-8",
+    "mode": "stamp_only",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"23cebfbeaaea5da1bbeade6d57f1425c7ec7da45e8ebeacc8d65e202450f2853\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 634}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 634,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 634,
+      "limit": 9457
+    },
+    "correct": false,
+    "prompt_tokens": 242,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.0685,
+    "request_ms": 114.065,
+    "end_to_end_ms": 115.1335,
+    "index_setup_ms": 7.3754
+  },
+  {
+    "case": "test-8",
+    "mode": "activated_graph",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"5148c32adf038bd8f0d07b930529f88b611b2956475523a6a32bec62728ccafd\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 9457.\n\n{\"revision\": \"1\", \"sha256\": \"23cebfbeaaea5da1bbeade6d57f1425c7ec7da45e8ebeacc8d65e202450f2853\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 634}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 634,\n  \"limit\": 9457\n}",
+    "expected": {
+      "setting": 634,
+      "limit": 9457
+    },
+    "correct": true,
+    "prompt_tokens": 335,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.081,
+    "request_ms": 150.5863,
+    "end_to_end_ms": 151.66729999999998,
+    "index_setup_ms": 7.3754
+  },
+  {
+    "case": "test-8",
+    "mode": "full",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"844b67e4c2bebec34c7bc09447cbfd6f8009cd900d805a2a40ca8663063d2770\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 7276.\n\n{\"revision\": \"1\", \"sha256\": \"5148c32adf038bd8f0d07b930529f88b611b2956475523a6a32bec62728ccafd\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 9457.\n\n{\"revision\": \"1\", \"sha256\": \"58924b055c24bd7a086d723daf422ad9a65bcac1ded53f8cf5a949d9ba5de112\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 3438.\n\n{\"revision\": \"1\", \"sha256\": \"b8e7f6d5837512d0e6bb7a06ac848325321f56a1b501de28758504d129d628cc\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 7599.\n\n{\"revision\": \"1\", \"sha256\": \"c7cf753101db67ba2ecfc28e36cf03aa4128f1eef85d5e2c8e89717945420420\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 4970.\n\n{\"revision\": \"1\", \"sha256\": \"799f79676ae2157633fc6532e33e8226efaf3c0edf108f47dd93bf832346eb19\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 6312.\n\n{\"revision\": \"1\", \"sha256\": \"5c64c0bd922c0f92fcd36ff9bd422a17cf07c1802a448364e5ef4d6d70aea9d0\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 6454.\n\n{\"revision\": \"1\", \"sha256\": \"790863cbfafaf9d15d1d15a6f26353469af954877b64a840a30ebc9505a43f81\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 4431.\n\n{\"revision\": \"1\", \"sha256\": \"21c4afee084030891887944e0de97ed8093eb893aac6eccf997cdc80f00affcc\", \"source\": \"root-0\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_72699210\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 715}\n\n{\"revision\": \"1\", \"sha256\": \"23cebfbeaaea5da1bbeade6d57f1425c7ec7da45e8ebeacc8d65e202450f2853\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 634}\n\n{\"revision\": \"1\", \"sha256\": \"a9b3a3c3af8488a51abd4dec4f0b44f6556fa33344fcbfb8b7c223efd4c5c211\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_other_17563126\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 358}\n\n{\"revision\": \"1\", \"sha256\": \"892d714574f47a56da76d43b2f31fb24566c6072f53f7ef01ad8b4329aecfec9\", \"source\": \"root-3\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72699210\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 365}\n\n{\"revision\": \"1\", \"sha256\": \"28d17d717573f922f8ebe2ec836963d85f60ef395962207b928b304090fa035d\", \"source\": \"root-4\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"unrelated_task_2\", \"setting\": 432}\n\n{\"revision\": \"1\", \"sha256\": \"861c847fdf97dff9fbe658040b6c18461cbf43e191d377e535b06ceab898d5f8\", \"source\": \"root-5\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_72699210\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 286}\n\n{\"revision\": \"1\", \"sha256\": \"f9260236e91dfaf6f59b4bcb6208d2b46217f94eef5feabb34fdcacf03a477af\", \"source\": \"root-6\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_other_85351290\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 401}\n\n{\"revision\": \"1\", \"sha256\": \"fed97d2988db1a629d2e8b6efd108042c5d121d9818254cd97547f59a2cc30fd\", \"source\": \"root-7\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"unrelated_task_5\", \"setting\": 276}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 634,\n  \"limit\": 9457\n}",
+    "expected": {
+      "setting": 634,
+      "limit": 9457
+    },
+    "correct": true,
+    "prompt_tokens": 1877,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1343,
+    "request_ms": 269.0289,
+    "end_to_end_ms": 269.1632,
+    "index_setup_ms": 7.3754
+  },
+  {
+    "case": "test-9",
+    "mode": "activated_graph",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"727be4936995c1d569ed91dc18cf166fa1bd6ac7b8573f41ed96506d331b0abf\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 8897.\n\n{\"revision\": \"1\", \"sha256\": \"03a6eaecff74f54c3da79fb75aa3713d69bafac58972855e0917a74f83e33d58\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_other_21530293\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 107}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_49459336\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 107,\n  \"limit\": 8897\n}",
+    "expected": {
+      "setting": 532,
+      "limit": 7002
+    },
+    "correct": false,
+    "prompt_tokens": 341,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 76,
+    "assembly_ms": 1.1576,
+    "request_ms": 175.7227,
+    "end_to_end_ms": 176.8803,
+    "index_setup_ms": 6.106
+  },
+  {
+    "case": "test-9",
+    "mode": "stamp_only",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"03a6eaecff74f54c3da79fb75aa3713d69bafac58972855e0917a74f83e33d58\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_other_21530293\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 107}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_49459336\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 107,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 532,
+      "limit": 7002
+    },
+    "correct": false,
+    "prompt_tokens": 249,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 76,
+    "assembly_ms": 1.2474,
+    "request_ms": 148.7661,
+    "end_to_end_ms": 150.0135,
+    "index_setup_ms": 6.106
+  },
+  {
+    "case": "test-9",
+    "mode": "full",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"7ab646b39cef10c0d95d86bf1a3e90680e095641c4cbe599ce8545cc53eefdf8\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 2865.\n\n{\"revision\": \"1\", \"sha256\": \"dae607108c2e1d9dea6252dfeba8f946e1e016a95b6c36599927d10c967a3caf\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 5765.\n\n{\"revision\": \"1\", \"sha256\": \"727be4936995c1d569ed91dc18cf166fa1bd6ac7b8573f41ed96506d331b0abf\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 8897.\n\n{\"revision\": \"1\", \"sha256\": \"e610640ab445a44cd722c04fef62016a39add42bcfe465f0ad835c4f496ceb76\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 6690.\n\n{\"revision\": \"1\", \"sha256\": \"f7450fb2dfb276b93b6b9e21875c2d07a615dbbad8c24eaa698dace88c55f514\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 6590.\n\n{\"revision\": \"1\", \"sha256\": \"92fcffd95a37cac2b28c56c47929b2fbdb755dd1d8a2ca18e0ddeb541bccee0f\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7002.\n\n{\"revision\": \"1\", \"sha256\": \"76acfdfb8011f043e87479151b36fff8211cee7a4ffbea51fa9ae452a33501b1\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 6297.\n\n{\"revision\": \"1\", \"sha256\": \"850ddb09c045b346a1e34d82624199c7b57c97b5f194f94e95b65e0cb7e4ad2e\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 6441.\n\n{\"revision\": \"1\", \"sha256\": \"e5d9358c0e77307c5bf90c17279a5bb618f4d798c3f7e66d5c6f9bde5769b623\", \"source\": \"root-0\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_49459336\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 806}\n\n{\"revision\": \"1\", \"sha256\": \"44e79d527c5584ecc721499a34c0b52ae4e7b7e7e068f93f8ace36a9c989e467\", \"source\": \"root-1\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_49459336\", \"intent\": \"measure\", \"task\": \"unrelated_task_2\", \"setting\": 752}\n\n{\"revision\": \"1\", \"sha256\": \"03a6eaecff74f54c3da79fb75aa3713d69bafac58972855e0917a74f83e33d58\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_other_21530293\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 107}\n\n{\"revision\": \"1\", \"sha256\": \"1fdb777c07536752ae6c069253e3904e1bb4c2fb8bb025259baec4e3563ad6f4\", \"source\": \"root-3\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_other_66541919\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 396}\n\n{\"revision\": \"1\", \"sha256\": \"babffb158ac927456be090249cbe7a0d5e0a7bff98a639ce42d8d15e924aae6d\", \"source\": \"root-4\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_49459336\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 421}\n\n{\"revision\": \"1\", \"sha256\": \"534da01b34d0f918f379af480510f8dd5125163247f5aeb9cd9ce33fc3b84bbf\", \"source\": \"root-5\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_49459336\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 532}\n\n{\"revision\": \"1\", \"sha256\": \"07c02e5e8d3088c9f031db289402ad1b06a173806f6425426bf8c6e18527e073\", \"source\": \"root-6\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_49459336\", \"intent\": \"measure\", \"task\": \"unrelated_task_5\", \"setting\": 470}\n\n{\"revision\": \"1\", \"sha256\": \"da945552bbf3703c9ffbc2ec88ce7f17c50db336bab428991bc44602753dc2df\", \"source\": \"root-7\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_49459336\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 533}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_49459336\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 421,\n  \"limit\": 6590\n}",
+    "expected": {
+      "setting": 532,
+      "limit": 7002
+    },
+    "correct": false,
+    "prompt_tokens": 1886,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1365,
+    "request_ms": 267.4657,
+    "end_to_end_ms": 267.60220000000004,
+    "index_setup_ms": 6.106
+  },
+  {
+    "case": "test-10",
+    "mode": "full",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"769f0ab28b4ad0ca4425fe1a2b387d675c2e51a126de8ed4606c08752a67bc66\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 7307.\n\n{\"revision\": \"1\", \"sha256\": \"0ec6a725f8ac47af842c887102877b154862bd878aa47fe508595e74aca47389\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 6442.\n\n{\"revision\": \"1\", \"sha256\": \"a818f92d9169fd70400328a722e19cf1004d9f67476c0873aade9b4e754c9d90\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 4901.\n\n{\"revision\": \"1\", \"sha256\": \"27befa28efb4e9f484a22ceed3a3dc43f334381a28d4f1014be5aa3472100ef0\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 4745.\n\n{\"revision\": \"1\", \"sha256\": \"c5eb318fc3d0e4a2c6620bea903e6b52ba793232d6ef77fd07fda5569eed66e4\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 9094.\n\n{\"revision\": \"1\", \"sha256\": \"d04e6b27774b5064920636b95f54dbef3ab39672439a8a5563f54bf9780989a9\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7100.\n\n{\"revision\": \"1\", \"sha256\": \"b8de528e5f1b773c8329a84076c5fe002d91fc3e8d965a05e8f2cc9071f9931c\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 9908.\n\n{\"revision\": \"1\", \"sha256\": \"03253d300b512361cc745e0068eb382863d00606c4be9e65929fd2a77c19ef9b\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 9262.\n\n{\"revision\": \"1\", \"sha256\": \"720e930c8a664fe38654f3d18e123852c1941a4d6db300dfd75ddea891698132\", \"source\": \"root-0\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_other_97605802\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 497}\n\n{\"revision\": \"1\", \"sha256\": \"0c087dd77931883c7f1a317d199ae0229978be16d2c0e2edec7ea63d611e5520\", \"source\": \"root-1\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_50736733\", \"intent\": \"unrelated_intent_4\", \"task\": \"retry\", \"setting\": 630}\n\n{\"revision\": \"1\", \"sha256\": \"f9f51e800d06424c6b8e92a97d1d3f335022421141ea0368ffb7b26b17920eb9\", \"source\": \"root-2\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_50736733\", \"intent\": \"unrelated_intent_7\", \"task\": \"retry\", \"setting\": 347}\n\n{\"revision\": \"1\", \"sha256\": \"2b78d5ee071f352a98b3d5375a04618e9f93a368a01b8c39c57277f66cb03101\", \"source\": \"root-3\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_50736733\", \"intent\": \"unrelated_intent_1\", \"task\": \"retry\", \"setting\": 749}\n\n{\"revision\": \"1\", \"sha256\": \"5c9b6b99eada11a65fce000daaf7361a95de8d2df66aec21a89ce9a525703a15\", \"source\": \"root-4\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"unrelated_task_2\", \"setting\": 563}\n\n{\"revision\": \"1\", \"sha256\": \"c099110f2677bc3e5cb0a8310ddd1cff12e7ad7082f3b5b3882d9c8cf33911d2\", \"source\": \"root-5\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 891}\n\n{\"revision\": \"1\", \"sha256\": \"99a6752d890e8d54ed6b04f46542b3b9537fb9d5856f977e0818c6648017872c\", \"source\": \"root-6\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_other_41525913\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 380}\n\n{\"revision\": \"1\", \"sha256\": \"6ca07c45f5ddc0395b735a6acb8faf7d73878fcaabc96daa3ea062494024058f\", \"source\": \"root-7\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"unrelated_task_5\", \"setting\": 294}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 347,\n  \"limit\": 9908\n}",
+    "expected": {
+      "setting": 891,
+      "limit": 7100
+    },
+    "correct": false,
+    "prompt_tokens": 1919,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1541,
+    "request_ms": 293.0318,
+    "end_to_end_ms": 293.1859,
+    "index_setup_ms": 6.7231
+  },
+  {
+    "case": "test-10",
+    "mode": "stamp_only",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"c099110f2677bc3e5cb0a8310ddd1cff12e7ad7082f3b5b3882d9c8cf33911d2\", \"source\": \"root-5\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 891}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 891,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 891,
+      "limit": 7100
+    },
+    "correct": false,
+    "prompt_tokens": 249,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 76,
+    "assembly_ms": 1.0737,
+    "request_ms": 175.8775,
+    "end_to_end_ms": 176.9512,
+    "index_setup_ms": 6.7231
+  },
+  {
+    "case": "test-10",
+    "mode": "activated_graph",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"d04e6b27774b5064920636b95f54dbef3ab39672439a8a5563f54bf9780989a9\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7100.\n\n{\"revision\": \"1\", \"sha256\": \"c099110f2677bc3e5cb0a8310ddd1cff12e7ad7082f3b5b3882d9c8cf33911d2\", \"source\": \"root-5\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 891}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 891,\n  \"limit\": 7100\n}",
+    "expected": {
+      "setting": 891,
+      "limit": 7100
+    },
+    "correct": true,
+    "prompt_tokens": 346,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 76,
+    "assembly_ms": 1.293,
+    "request_ms": 169.1881,
+    "end_to_end_ms": 170.4811,
+    "index_setup_ms": 6.7231
+  },
+  {
+    "case": "test-11",
+    "mode": "activated_graph",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"05d82ce4e1aec050464b223b55315290563d7d03a3d3f65ca60dc236b0fd8efd\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 9241.\n\n{\"revision\": \"1\", \"sha256\": \"d95c51525374f4f3f0558c213bf34b661c168f407315a5902d23fa285def6b28\", \"source\": \"root-3\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 129}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 129,\n  \"limit\": 9241\n}",
+    "expected": {
+      "setting": 129,
+      "limit": 9241
+    },
+    "correct": true,
+    "prompt_tokens": 346,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.173,
+    "request_ms": 165.3538,
+    "end_to_end_ms": 166.5268,
+    "index_setup_ms": 10.5019
+  },
+  {
+    "case": "test-11",
+    "mode": "full",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"61649bed227b17ac78f0aa68aa5caca13931cb5a4eb96af2437749f120a3902c\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 4564.\n\n{\"revision\": \"1\", \"sha256\": \"0108d59651227f9047e3395872ca958f2420b0d6eafb5d770a5f9ef03895123c\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 8330.\n\n{\"revision\": \"1\", \"sha256\": \"7a8231920af949deecc0833efe05123aecd49730aa6a994e6681a15b476b1c39\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 6988.\n\n{\"revision\": \"1\", \"sha256\": \"05d82ce4e1aec050464b223b55315290563d7d03a3d3f65ca60dc236b0fd8efd\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 9241.\n\n{\"revision\": \"1\", \"sha256\": \"6d8258fd082edb09b78c81f8d9ee30afb80353856211997ec3d234b6ffd4ec39\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 3613.\n\n{\"revision\": \"1\", \"sha256\": \"568da41a24a8fb3302b93c47b4478998f57c77e063a0f88306f99ed08bc1a69f\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 2927.\n\n{\"revision\": \"1\", \"sha256\": \"9650492e780ca4dda0388ff222c8c30b9b46df41e5e992e1e694b1fbf12e5ce1\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 3853.\n\n{\"revision\": \"1\", \"sha256\": \"cb5355e3de550f323525a16e30fc43a11e933154d24be45e3d5cae16715d34eb\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 6117.\n\n{\"revision\": \"1\", \"sha256\": \"d52805eca7c96d3b46d93624d3803c3bb967b0b1b97c84ab986407288110a2ab\", \"source\": \"root-0\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_other_64258905\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 205}\n\n{\"revision\": \"1\", \"sha256\": \"4e9da3312e7cb3fceaec2a3f254ee4f274f1cae5ac4d39ef0ba5a0a1b1d102f8\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_86684770\", \"intent\": \"unrelated_intent_4\", \"task\": \"retry\", \"setting\": 728}\n\n{\"revision\": \"1\", \"sha256\": \"35acd122902ad7210fdfa03adf1e7327cbacf96d4ab5c625918272f86d5c55d7\", \"source\": \"root-2\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_86684770\", \"intent\": \"unrelated_intent_1\", \"task\": \"retry\", \"setting\": 105}\n\n{\"revision\": \"1\", \"sha256\": \"d95c51525374f4f3f0558c213bf34b661c168f407315a5902d23fa285def6b28\", \"source\": \"root-3\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 129}\n\n{\"revision\": \"1\", \"sha256\": \"9254f130d2178c4a4fdb27ff5ecc0c9c8e6013124a191e2850a2a943e1fb3835\", \"source\": \"root-4\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_86684770\", \"intent\": \"unrelated_intent_7\", \"task\": \"retry\", \"setting\": 265}\n\n{\"revision\": \"1\", \"sha256\": \"79c690f70bba245525e1360b43e5cf6840bbc8dfe19c05f7f848519cc2c91ab9\", \"source\": \"root-5\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"unrelated_task_5\", \"setting\": 487}\n\n{\"revision\": \"1\", \"sha256\": \"3e90ec1cc1edf02163780fa55ebe3aeb00f1d8dc394c1e5e11dcb2d9e4dc4c96\", \"source\": \"root-6\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_other_64156858\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 976}\n\n{\"revision\": \"1\", \"sha256\": \"32e75a257f486a21bdd86878307224aa64a18f854458f07e1c8eab3995ef01a0\", \"source\": \"root-7\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"unrelated_task_2\", \"setting\": 998}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 129,\n  \"limit\": 9241\n}",
+    "expected": {
+      "setting": 129,
+      "limit": 9241
+    },
+    "correct": true,
+    "prompt_tokens": 1902,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1339,
+    "request_ms": 282.9089,
+    "end_to_end_ms": 283.0428,
+    "index_setup_ms": 10.5019
+  },
+  {
+    "case": "test-11",
+    "mode": "stamp_only",
+    "repetition": 0,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"d95c51525374f4f3f0558c213bf34b661c168f407315a5902d23fa285def6b28\", \"source\": \"root-3\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 129}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 129,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 129,
+      "limit": 9241
+    },
+    "correct": false,
+    "prompt_tokens": 253,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.2644,
+    "request_ms": 168.1536,
+    "end_to_end_ms": 169.418,
+    "index_setup_ms": 10.5019
+  },
+  {
+    "case": "test-0",
+    "mode": "stamp_only",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"12fcbd64d8ea127c0ab062f0379dea93a0033a3200c6274585121b785469e886\", \"source\": \"root-2\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"schema\", \"setting\": 741}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"schema\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 741,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 741,
+      "limit": 7094
+    },
+    "correct": false,
+    "prompt_tokens": 252,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.1032,
+    "request_ms": 136.3443,
+    "end_to_end_ms": 137.4475,
+    "index_setup_ms": 11.5377
+  },
+  {
+    "case": "test-0",
+    "mode": "activated_graph",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"2e03b7878c0934c4b6bf28e477ff3c631e97628b7dfde307898ac81162066a81\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 7094.\n\n{\"revision\": \"1\", \"sha256\": \"12fcbd64d8ea127c0ab062f0379dea93a0033a3200c6274585121b785469e886\", \"source\": \"root-2\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"schema\", \"setting\": 741}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"schema\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 741,\n  \"limit\": 7094\n}",
+    "expected": {
+      "setting": 741,
+      "limit": 7094
+    },
+    "correct": true,
+    "prompt_tokens": 348,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.3584,
+    "request_ms": 132.8866,
+    "end_to_end_ms": 134.24499999999998,
+    "index_setup_ms": 11.5377
+  },
+  {
+    "case": "test-0",
+    "mode": "full",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"068a5680b3a3fafd21cfa5b0408329f2257e9f17b7977935608c4d766749da28\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 2031.\n\n{\"revision\": \"1\", \"sha256\": \"1eead91e12e417d89f1a544984df0c3b7f1daeab9b8d3c094d7e25a521052512\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 1528.\n\n{\"revision\": \"1\", \"sha256\": \"2e03b7878c0934c4b6bf28e477ff3c631e97628b7dfde307898ac81162066a81\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 7094.\n\n{\"revision\": \"1\", \"sha256\": \"61902efa8d18fff4ea7d1072cf6e67505f4b6aab66788e0dc31c2d108df1f484\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 2917.\n\n{\"revision\": \"1\", \"sha256\": \"36d058c30c464c60d8a1bac9966baccba5b12219576f121362505afb140ec40e\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 1637.\n\n{\"revision\": \"1\", \"sha256\": \"96c71dd08a94e9e6c8ae890bfb454c548040d6fb1962967b8b32c75cc5f9d5bb\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7894.\n\n{\"revision\": \"1\", \"sha256\": \"31356e3c7b8986c3afa3bea15373f6f2708ea5eb97657fd4d798aa7ec7fc2e1a\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 2205.\n\n{\"revision\": \"1\", \"sha256\": \"6aefb97c64491f3ab08db52801aa1e100d1414367a8c8e5f3d66cf5914efe2ff\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 1800.\n\n{\"revision\": \"1\", \"sha256\": \"643868e49957060cad1bc39cb2c4159f0dca7cea14fa43286e3c9ec55e441511\", \"source\": \"root-0\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"unrelated_task_2\", \"setting\": 844}\n\n{\"revision\": \"1\", \"sha256\": \"c6bdb8711891c7b41156103ea7dcdc50ee3149d336dd0afd71c9dd4d67a34858\", \"source\": \"root-1\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_other_18886974\", \"intent\": \"review\", \"task\": \"schema\", \"setting\": 271}\n\n{\"revision\": \"1\", \"sha256\": \"12fcbd64d8ea127c0ab062f0379dea93a0033a3200c6274585121b785469e886\", \"source\": \"root-2\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"schema\", \"setting\": 741}\n\n{\"revision\": \"1\", \"sha256\": \"5930fc349c6513944fc87b9e74f6847a67be7c818c74dd91b26ce8d0de00c0b6\", \"source\": \"root-3\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_other_93394214\", \"intent\": \"review\", \"task\": \"schema\", \"setting\": 579}\n\n{\"revision\": \"1\", \"sha256\": \"80357be48e96e7e44f787a4fbf9d29ac15d3e9e02d397be919854cfd3faca5d3\", \"source\": \"root-4\"}\n{\"content\": \"Record findings from the schema experiment\", \"entity\": \"test_component_66878837\", \"intent\": \"unrelated_intent_1\", \"task\": \"schema\", \"setting\": 387}\n\n{\"revision\": \"1\", \"sha256\": \"76438ca838d1c1a38b5e80cd05a074e437f08927d77a6082f35ce48209e6a5cf\", \"source\": \"root-5\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"unrelated_intent_4\", \"task\": \"schema\", \"setting\": 139}\n\n{\"revision\": \"1\", \"sha256\": \"726f736825b98d3fed1df60c94d65370f6379885b732590e7b7e07d086e2aee7\", \"source\": \"root-6\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"unrelated_intent_7\", \"task\": \"schema\", \"setting\": 470}\n\n{\"revision\": \"1\", \"sha256\": \"e2b50a96df2a7e47572e0361b635b3915f16af9c15f95b54acdbb969ee3d7aa1\", \"source\": \"root-7\"}\n{\"content\": \"Inspect schema behavior and make required changes\", \"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"unrelated_task_5\", \"setting\": 974}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_66878837\", \"intent\": \"review\", \"task\": \"schema\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 741,\n  \"limit\": 2031\n}",
+    "expected": {
+      "setting": 741,
+      "limit": 7094
+    },
+    "correct": false,
+    "prompt_tokens": 1915,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1781,
+    "request_ms": 163.394,
+    "end_to_end_ms": 163.5721,
+    "index_setup_ms": 11.5377
+  },
+  {
+    "case": "test-1",
+    "mode": "full",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"14fb1e5756275271dc4ccf045a77b0a5331bc76a2fd69550ec7f2a716540ebf5\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 6042.\n\n{\"revision\": \"1\", \"sha256\": \"4654eb930c11f4a87a841777af37d939541605aead73dae2b54eb06316f340c4\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 2660.\n\n{\"revision\": \"1\", \"sha256\": \"f9431f2d3704deb0640975813ed5ae354a076a9377cbb4b1804168fd5fd0828c\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 7569.\n\n{\"revision\": \"1\", \"sha256\": \"b329a519043026d0ef82d0ea6faf4bf6a2a26b726394dfef6b5edb0c1a97d9a3\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 2099.\n\n{\"revision\": \"1\", \"sha256\": \"04f8bf7b44f250718af8e2193e2aafa854a5548212a85c18577a591e1428e47f\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 8320.\n\n{\"revision\": \"1\", \"sha256\": \"78250d05fc7f5cb996c0c674ea2df0a13fb923acdb0b575eb307fb2f5517d6c1\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 3889.\n\n{\"revision\": \"1\", \"sha256\": \"efe96abb9b6e09952c253088f3c7a324d0116ad6f402ad9a2151973f5ebd9a0d\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 4739.\n\n{\"revision\": \"1\", \"sha256\": \"827cdd4e4369c4732d1e5b261d71385f22aa24dc3a80270affa8159505b664d6\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 1296.\n\n{\"revision\": \"1\", \"sha256\": \"f4237ab2a3bbb419f90e85baceff472c219450d96b71a4a29cb284647c77b63d\", \"source\": \"root-0\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 232}\n\n{\"revision\": \"1\", \"sha256\": \"ce5926cfef77133e50b1e1a6373994d9582f14a0aa8c775046716178b5a7da76\", \"source\": \"root-1\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 217}\n\n{\"revision\": \"1\", \"sha256\": \"cdae566e036be89c8319018bc81ea972c4f4dfa416d9a05ea9f2ebc07a5d61fd\", \"source\": \"root-2\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_42506946\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 318}\n\n{\"revision\": \"1\", \"sha256\": \"d2605324f9ebd253cf19b6c8627b3bfccd27bff9b8efb14c142859b50f592d21\", \"source\": \"root-3\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 475}\n\n{\"revision\": \"1\", \"sha256\": \"a6ae34a039328e205cf5db8d3366cfdf4db87ff3b83f99adf7ba20afe2cffda5\", \"source\": \"root-4\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"unrelated_task_2\", \"setting\": 523}\n\n{\"revision\": \"1\", \"sha256\": \"4bd9cfaac6df8830de9dfec0de0c36fcac065cbdaaed08c1146f6e885c0e1e27\", \"source\": \"root-5\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 688}\n\n{\"revision\": \"1\", \"sha256\": \"8bbde10002a556dff0b01b2eebf095ddcd83ebea60e5b196205c45072134c9e6\", \"source\": \"root-6\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"unrelated_task_5\", \"setting\": 658}\n\n{\"revision\": \"1\", \"sha256\": \"186baf3bfb289256ce600b472a8bb795b1a9bc4b3b16225605b593aeeebe4159\", \"source\": \"root-7\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_11390493\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 743}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 217,\n  \"limit\": 2660\n}",
+    "expected": {
+      "setting": 217,
+      "limit": 2660
+    },
+    "correct": true,
+    "prompt_tokens": 1890,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1877,
+    "request_ms": 171.4535,
+    "end_to_end_ms": 171.6412,
+    "index_setup_ms": 6.724
+  },
+  {
+    "case": "test-1",
+    "mode": "activated_graph",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"4654eb930c11f4a87a841777af37d939541605aead73dae2b54eb06316f340c4\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 2660.\n\n{\"revision\": \"1\", \"sha256\": \"ce5926cfef77133e50b1e1a6373994d9582f14a0aa8c775046716178b5a7da76\", \"source\": \"root-1\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 217}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 217,\n  \"limit\": 2660\n}",
+    "expected": {
+      "setting": 217,
+      "limit": 2660
+    },
+    "correct": true,
+    "prompt_tokens": 347,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 72,
+    "assembly_ms": 1.8676,
+    "request_ms": 160.98,
+    "end_to_end_ms": 162.8476,
+    "index_setup_ms": 6.724
+  },
+  {
+    "case": "test-1",
+    "mode": "stamp_only",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"ce5926cfef77133e50b1e1a6373994d9582f14a0aa8c775046716178b5a7da76\", \"source\": \"root-1\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 217}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_33050531\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 217,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 217,
+      "limit": 2660
+    },
+    "correct": false,
+    "prompt_tokens": 253,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 72,
+    "assembly_ms": 1.6373,
+    "request_ms": 108.4588,
+    "end_to_end_ms": 110.09609999999999,
+    "index_setup_ms": 6.724
+  },
+  {
+    "case": "test-2",
+    "mode": "activated_graph",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"003e5a8d06ac15b96d8826e6876294a304c297c246e0e8ef049a4ecc0040e531\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 4989.\n\n{\"revision\": \"1\", \"sha256\": \"c620cba09b02f3c41d3360733dcbcc5169a805a91cdecd3e739aadcb01ab7826\", \"source\": \"root-4\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 928}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 928,\n  \"limit\": 4989\n}",
+    "expected": {
+      "setting": 928,
+      "limit": 4989
+    },
+    "correct": true,
+    "prompt_tokens": 345,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.0984,
+    "request_ms": 126.9452,
+    "end_to_end_ms": 128.0436,
+    "index_setup_ms": 6.022
+  },
+  {
+    "case": "test-2",
+    "mode": "full",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"2ae83250cdfcd143d4b0dc47ca6599ec16634a5afc83e17a026621cef33ca388\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 5421.\n\n{\"revision\": \"1\", \"sha256\": \"91c2d6c934e1d79d0fa14ae22dbb388671e8548bc807749b67d27663b5c8cbc5\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 4542.\n\n{\"revision\": \"1\", \"sha256\": \"738fbfb1f008dfed85bd0b8563dcd837d9a784f99544ff5c7ed2a7988afed931\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 4393.\n\n{\"revision\": \"1\", \"sha256\": \"43c29a87707628efd8cda832443bd95890abf931afd642bd1c0d42ea64e2a0e1\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 5102.\n\n{\"revision\": \"1\", \"sha256\": \"003e5a8d06ac15b96d8826e6876294a304c297c246e0e8ef049a4ecc0040e531\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 4989.\n\n{\"revision\": \"1\", \"sha256\": \"a8b647046d5de999f84105a8496fbfeeec4473a8d0da4e41bdd80a6bd6f4528a\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7451.\n\n{\"revision\": \"1\", \"sha256\": \"5a7400f1153b0495b27587af0f3e53d67b807398f41e75dfc15bcbd45bc48322\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 7031.\n\n{\"revision\": \"1\", \"sha256\": \"07a9e2fc3b500b68771017b93f6e16f8cae0489fd77ebb00b07086a364fceb2e\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 1507.\n\n{\"revision\": \"1\", \"sha256\": \"6355bab6396432399aff467bf9fd6a183807f09ec2c049a0d089ac2acc9f60ab\", \"source\": \"root-0\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_other_65871309\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 347}\n\n{\"revision\": \"1\", \"sha256\": \"a7e7804c4c0f9a8613c038f3b7e82e16e001a72d1841c70ae9abd7ac780a2537\", \"source\": \"root-1\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_70816300\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 652}\n\n{\"revision\": \"1\", \"sha256\": \"e35b648e09294e69e21c190b9ec92ffd65dbd13d1f5111aa76c13a31d47f8479\", \"source\": \"root-2\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"unrelated_task_5\", \"setting\": 223}\n\n{\"revision\": \"1\", \"sha256\": \"1ffafd431ce4705e57c76dea12d60556c052b101d0175cd9a42b049a43181ea4\", \"source\": \"root-3\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_other_67500375\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 858}\n\n{\"revision\": \"1\", \"sha256\": \"c620cba09b02f3c41d3360733dcbcc5169a805a91cdecd3e739aadcb01ab7826\", \"source\": \"root-4\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 928}\n\n{\"revision\": \"1\", \"sha256\": \"51ef412786af0a0a9729199b339ce0273032ec11c103f1936974deba9ea4e2aa\", \"source\": \"root-5\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_70816300\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 395}\n\n{\"revision\": \"1\", \"sha256\": \"86d9e9b5e2e304420e5b20c6bafa2d6aa7cebb5734f6ebb0d94dba9b1e7b724d\", \"source\": \"root-6\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_70816300\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 226}\n\n{\"revision\": \"1\", \"sha256\": \"83c0ccebf4121850d06cdc0b9d927feaa5cb1223096fe33c9e1d49f00e8ec74e\", \"source\": \"root-7\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"unrelated_task_2\", \"setting\": 939}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 928,\n  \"limit\": 5421\n}",
+    "expected": {
+      "setting": 928,
+      "limit": 4989
+    },
+    "correct": false,
+    "prompt_tokens": 1894,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1838,
+    "request_ms": 132.4583,
+    "end_to_end_ms": 132.6421,
+    "index_setup_ms": 6.022
+  },
+  {
+    "case": "test-2",
+    "mode": "stamp_only",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"c620cba09b02f3c41d3360733dcbcc5169a805a91cdecd3e739aadcb01ab7826\", \"source\": \"root-4\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 928}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_70816300\", \"intent\": \"review\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 928,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 928,
+      "limit": 4989
+    },
+    "correct": false,
+    "prompt_tokens": 248,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.1707,
+    "request_ms": 158.7629,
+    "end_to_end_ms": 159.9336,
+    "index_setup_ms": 6.022
+  },
+  {
+    "case": "test-3",
+    "mode": "activated_graph",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"68de5cf50de1ba71d7a0000b808f4f8b9980e317547c29cd8c80c36762f89e43\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 4236.\n\n{\"revision\": \"1\", \"sha256\": \"336d6c8757b5521353c0439ed6cf9a5f711b19184242216768156febef2d3556\", \"source\": \"root-2\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_64411355\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 807}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_5930574\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 807,\n  \"limit\": 4236\n}",
+    "expected": {
+      "setting": 161,
+      "limit": 8640
+    },
+    "correct": false,
+    "prompt_tokens": 347,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 74,
+    "assembly_ms": 1.2199,
+    "request_ms": 119.3594,
+    "end_to_end_ms": 120.57929999999999,
+    "index_setup_ms": 6.3175
+  },
+  {
+    "case": "test-3",
+    "mode": "stamp_only",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"336d6c8757b5521353c0439ed6cf9a5f711b19184242216768156febef2d3556\", \"source\": \"root-2\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_64411355\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 807}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_5930574\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 807,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 161,
+      "limit": 8640
+    },
+    "correct": false,
+    "prompt_tokens": 251,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 74,
+    "assembly_ms": 1.4821,
+    "request_ms": 145.1262,
+    "end_to_end_ms": 146.6083,
+    "index_setup_ms": 6.3175
+  },
+  {
+    "case": "test-3",
+    "mode": "full",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"165f8745f8085d08b92c27ef938317f68f58a6b0cdc5f59305d724caff67cb16\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 8271.\n\n{\"revision\": \"1\", \"sha256\": \"87ed3d4c563838643a1a112605e1d63527ba5c105754fcf556de35b87db27673\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 4837.\n\n{\"revision\": \"1\", \"sha256\": \"68de5cf50de1ba71d7a0000b808f4f8b9980e317547c29cd8c80c36762f89e43\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 4236.\n\n{\"revision\": \"1\", \"sha256\": \"2ffacba5b612b2863ba9935b96a1d26eafacccd979a28fef895a34eaf7900918\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 6283.\n\n{\"revision\": \"1\", \"sha256\": \"e64ddbce5da6eecdb38daf363679d42d6745255df1f5a055c35429a239e12d69\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 3034.\n\n{\"revision\": \"1\", \"sha256\": \"143a31717e306317a8e2ebe1a4d79e5e5fd3c04e291a13f28396b2ade89fc8b3\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 6969.\n\n{\"revision\": \"1\", \"sha256\": \"adac3df1c42e5bd01f16b587bed5ec156053bda6faf8268504b89f6194a84c5b\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 8640.\n\n{\"revision\": \"1\", \"sha256\": \"193046a6629ecbeb997538ef53d2cd0b57f36182d3e9e08953ecacea72e14b3b\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 1483.\n\n{\"revision\": \"1\", \"sha256\": \"3ee2bb0c6777e2609fdc77b0e6f31b4a2897da2248c2559ad378caac35d10af1\", \"source\": \"root-0\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_5930574\", \"intent\": \"measure\", \"task\": \"unrelated_task_5\", \"setting\": 306}\n\n{\"revision\": \"1\", \"sha256\": \"346157201a32e37da0c3dc8b6cfcc1381aefbbd49c75aad4390590b3f6ed0702\", \"source\": \"root-1\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_other_3003459\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 107}\n\n{\"revision\": \"1\", \"sha256\": \"336d6c8757b5521353c0439ed6cf9a5f711b19184242216768156febef2d3556\", \"source\": \"root-2\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_64411355\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 807}\n\n{\"revision\": \"1\", \"sha256\": \"fa6cd45cbd827ad06dc815af554dae8b2109a0f4e9e42f6e5101e4deba7ce477\", \"source\": \"root-3\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_5930574\", \"intent\": \"measure\", \"task\": \"unrelated_task_2\", \"setting\": 668}\n\n{\"revision\": \"1\", \"sha256\": \"2ab06c4dafc41b4a200b7817de1a845e069a78e6ad3ba0e6731ab352b554a17d\", \"source\": \"root-4\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_5930574\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 727}\n\n{\"revision\": \"1\", \"sha256\": \"d6123cd1b485a397e540a4af18bab4055952a244d0819d3ccae7f2aeb77d0de6\", \"source\": \"root-5\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_5930574\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 108}\n\n{\"revision\": \"1\", \"sha256\": \"a298ce59796a9494171d2ffcdbd7843fe67c79341a153dfc4591be647f1d4c9e\", \"source\": \"root-6\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_5930574\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 161}\n\n{\"revision\": \"1\", \"sha256\": \"a0026eda045d1f21623627cc5202af9210f695339a6a68f59b1c116d87d4fdc6\", \"source\": \"root-7\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_5930574\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 237}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_5930574\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 161,\n  \"limit\": 8271\n}",
+    "expected": {
+      "setting": 161,
+      "limit": 8640
+    },
+    "correct": false,
+    "prompt_tokens": 1888,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1689,
+    "request_ms": 133.1869,
+    "end_to_end_ms": 133.35580000000002,
+    "index_setup_ms": 6.3175
+  },
+  {
+    "case": "test-4",
+    "mode": "activated_graph",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"0361dbc69234d81d4ac91026469216fd88f1e291d18065c5755381c3d0cf6db7\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 1207.\n\n{\"revision\": \"1\", \"sha256\": \"542cdb6fa1b1dd5a14759cdc0437428ed2527c989098f0583072c278136e5721\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 770}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 770,\n  \"limit\": 1207\n}",
+    "expected": {
+      "setting": 770,
+      "limit": 1207
+    },
+    "correct": true,
+    "prompt_tokens": 345,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 73,
+    "assembly_ms": 1.9422,
+    "request_ms": 147.8441,
+    "end_to_end_ms": 149.7863,
+    "index_setup_ms": 6.0115
+  },
+  {
+    "case": "test-4",
+    "mode": "full",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"0f87c0b28f5726004584a0fc99f36a8d2e3e4f0f2f7ae90e141f42bb8bff8496\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 2715.\n\n{\"revision\": \"1\", \"sha256\": \"6ca79f07b840b45f93eb838ab1af9d894c421f479c983696430694e35c1b2798\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 9966.\n\n{\"revision\": \"1\", \"sha256\": \"0361dbc69234d81d4ac91026469216fd88f1e291d18065c5755381c3d0cf6db7\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 1207.\n\n{\"revision\": \"1\", \"sha256\": \"5fc42a0410f75eb6535269add955298e4c0779807cd32965467627589d39d68f\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 6327.\n\n{\"revision\": \"1\", \"sha256\": \"efaa3b22b420bcc209c654199a5964df8cafdf1d146307e4c562d7183b3601e0\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 4318.\n\n{\"revision\": \"1\", \"sha256\": \"a67d1bd9f92c89c8dec01f662c9ed2c202e33151047365812f401cecbea99b69\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7538.\n\n{\"revision\": \"1\", \"sha256\": \"ac9c903a8a618494eeae6fea6d289d4e8a6267ffde23736f2cadfe294462628f\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 3967.\n\n{\"revision\": \"1\", \"sha256\": \"ed150120cc94a7af6be6258d2f1b8ec282ace9f7c4881f17684b8a3d8a444c2c\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 2443.\n\n{\"revision\": \"1\", \"sha256\": \"efb6158327296e4dbe66f7216624185c6e1b509a073777d406aca833734ebcb0\", \"source\": \"root-0\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_38574193\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 192}\n\n{\"revision\": \"1\", \"sha256\": \"0465b7097e05a913df68c1058d4031ab60c1ba82afa0609531333f34297e7d85\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"unrelated_task_5\", \"setting\": 642}\n\n{\"revision\": \"1\", \"sha256\": \"542cdb6fa1b1dd5a14759cdc0437428ed2527c989098f0583072c278136e5721\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 770}\n\n{\"revision\": \"1\", \"sha256\": \"8954691ed70d8b4bcb97cce5b71d948238410282b3a3e80c8e23ea53e8922fae\", \"source\": \"root-3\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_72969347\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 420}\n\n{\"revision\": \"1\", \"sha256\": \"b474e2024beb3bdac2ba31038580541e06bd98fce31be8b2c6b9419221f004ed\", \"source\": \"root-4\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72969347\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 866}\n\n{\"revision\": \"1\", \"sha256\": \"4bb0ff8c297b4d6369390e6b5b9f4d8efcf9ca02dcec3cfb5a54cad277736ce6\", \"source\": \"root-5\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72969347\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 987}\n\n{\"revision\": \"1\", \"sha256\": \"16d22991d01208d2dd5a9bfa560c39257a47448ccba46bbba9ebce2a7b4c6e10\", \"source\": \"root-6\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_81198657\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 372}\n\n{\"revision\": \"1\", \"sha256\": \"672748b6d08f469e6d6d995d2bb5e66a9780d9ee212718c0d23854b22644df57\", \"source\": \"root-7\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"unrelated_task_2\", \"setting\": 733}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 770,\n  \"limit\": 3967\n}",
+    "expected": {
+      "setting": 770,
+      "limit": 1207
+    },
+    "correct": false,
+    "prompt_tokens": 1908,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1488,
+    "request_ms": 156.3445,
+    "end_to_end_ms": 156.4933,
+    "index_setup_ms": 6.0115
+  },
+  {
+    "case": "test-4",
+    "mode": "stamp_only",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"542cdb6fa1b1dd5a14759cdc0437428ed2527c989098f0583072c278136e5721\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 770}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_72969347\", \"intent\": \"implement\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 770,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 770,
+      "limit": 1207
+    },
+    "correct": false,
+    "prompt_tokens": 250,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 73,
+    "assembly_ms": 1.8328,
+    "request_ms": 153.7374,
+    "end_to_end_ms": 155.5702,
+    "index_setup_ms": 6.0115
+  },
+  {
+    "case": "test-5",
+    "mode": "activated_graph",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"6b763883f7094c961fa4e58a171d2559343c4744e651233fc51b1d835cc12a88\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 4322.\n\n{\"revision\": \"1\", \"sha256\": \"ab17b39748a7956518f20efc166013a8632fe84536608e02cf9c8cc40223f5af\", \"source\": \"root-7\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"retry\", \"setting\": 342}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 342,\n  \"limit\": 4322\n}",
+    "expected": {
+      "setting": 342,
+      "limit": 4322
+    },
+    "correct": true,
+    "prompt_tokens": 350,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 78,
+    "assembly_ms": 1.1377,
+    "request_ms": 130.4296,
+    "end_to_end_ms": 131.5673,
+    "index_setup_ms": 6.0875
+  },
+  {
+    "case": "test-5",
+    "mode": "stamp_only",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"ab17b39748a7956518f20efc166013a8632fe84536608e02cf9c8cc40223f5af\", \"source\": \"root-7\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"retry\", \"setting\": 342}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 342,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 342,
+      "limit": 4322
+    },
+    "correct": false,
+    "prompt_tokens": 252,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 78,
+    "assembly_ms": 1.1064,
+    "request_ms": 130.6122,
+    "end_to_end_ms": 131.7186,
+    "index_setup_ms": 6.0875
+  },
+  {
+    "case": "test-5",
+    "mode": "full",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"5a578fe6a5d23cc1a5f9a984d8494b45be8b398c067aa5a71ec858ece1c3c079\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 8804.\n\n{\"revision\": \"1\", \"sha256\": \"1edab1fcc53e894fc6fea693a00da1053d200fd2fdcf553d720fc4f977db22aa\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 7500.\n\n{\"revision\": \"1\", \"sha256\": \"1112a96d8ea3459e36ec134f3b745095cc0e09c59fbc45ef13b129adbe5a2cb8\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 3556.\n\n{\"revision\": \"1\", \"sha256\": \"6d64ba7be92cce0786b31f9c9305e465ecee358ec9c88855714f76528a76b4a9\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 2409.\n\n{\"revision\": \"1\", \"sha256\": \"76968e2f3381ed9f1828cd9d4c3334654f7353e9286280bbed77ea7765d9d28f\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 1980.\n\n{\"revision\": \"1\", \"sha256\": \"93d958f0fd7a96bef39233aa7dad544a876e433981d6339d9bc2a432c50347e8\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7795.\n\n{\"revision\": \"1\", \"sha256\": \"f33f54e265f2d09d44e0c6a0fce91a621e9731abec894f4dcb4b72fb22dd5d5f\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 6207.\n\n{\"revision\": \"1\", \"sha256\": \"6b763883f7094c961fa4e58a171d2559343c4744e651233fc51b1d835cc12a88\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 4322.\n\n{\"revision\": \"1\", \"sha256\": \"d352d421173f384889e9f54777bf2169b8259994581a797f2bb8a35cd0bb3add\", \"source\": \"root-0\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"unrelated_task_2\", \"setting\": 805}\n\n{\"revision\": \"1\", \"sha256\": \"f40fab52ab46a6e33754bf630a4f9ea10701ee7bb7fee3af3b389afee8ab7804\", \"source\": \"root-1\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"unrelated_task_5\", \"setting\": 345}\n\n{\"revision\": \"1\", \"sha256\": \"9a33d9ef07c1ff444b486a478c5f0585e45f3e7fb80e7b733527596763894250\", \"source\": \"root-2\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_54617678\", \"intent\": \"unrelated_intent_7\", \"task\": \"retry\", \"setting\": 966}\n\n{\"revision\": \"1\", \"sha256\": \"9edeffda72f2c33f6393d565ed9911c04f4fcd6c5f0078bb476aaa2b4c88a06a\", \"source\": \"root-3\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_other_6309643\", \"intent\": \"review\", \"task\": \"retry\", \"setting\": 711}\n\n{\"revision\": \"1\", \"sha256\": \"5b12941fe195722d01de72f36bc8fc68de01b7646668de77d9116d7ec1066696\", \"source\": \"root-4\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_54617678\", \"intent\": \"unrelated_intent_1\", \"task\": \"retry\", \"setting\": 504}\n\n{\"revision\": \"1\", \"sha256\": \"b318631ad5972a75ad4b5a75c78956e66cfaad48f83cf440f79a36382f7743d7\", \"source\": \"root-5\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_other_64164222\", \"intent\": \"review\", \"task\": \"retry\", \"setting\": 832}\n\n{\"revision\": \"1\", \"sha256\": \"bf35ec8f12446a1e44725b97f2bc0d16f73ada2a8983dcd5eda9d80ff0c92e42\", \"source\": \"root-6\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_54617678\", \"intent\": \"unrelated_intent_4\", \"task\": \"retry\", \"setting\": 852}\n\n{\"revision\": \"1\", \"sha256\": \"ab17b39748a7956518f20efc166013a8632fe84536608e02cf9c8cc40223f5af\", \"source\": \"root-7\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"retry\", \"setting\": 342}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_54617678\", \"intent\": \"review\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 342,\n  \"limit\": 8804\n}",
+    "expected": {
+      "setting": 342,
+      "limit": 4322
+    },
+    "correct": false,
+    "prompt_tokens": 1903,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1351,
+    "request_ms": 160.1447,
+    "end_to_end_ms": 160.2798,
+    "index_setup_ms": 6.0875
+  },
+  {
+    "case": "test-6",
+    "mode": "full",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"fada633209fb9d3caa2affee0a9c312fc4e818292135ed81f96d204b2cea8d8e\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 8631.\n\n{\"revision\": \"1\", \"sha256\": \"62071a84f074bb5cb039adb50f3b809974583ee4307dc44178965e9440e4b926\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 6183.\n\n{\"revision\": \"1\", \"sha256\": \"95e2b12eac77ab47a6557745795bbcb6835335c66fa793002bec372f40f86e1c\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 3002.\n\n{\"revision\": \"1\", \"sha256\": \"f7db3c5b8e3f9a2a1bf82a88d377b37dc33124585e740cc5520274818ba0b158\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 6581.\n\n{\"revision\": \"1\", \"sha256\": \"c1b86a5347c0bad39f06687d1754898ef439172b3ee5fdfdf39d0b9e221af30c\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 8702.\n\n{\"revision\": \"1\", \"sha256\": \"975f63b0330e8da5b515fc62c2703db661dda7fa37acb32b5844a352ef12d172\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7987.\n\n{\"revision\": \"1\", \"sha256\": \"dff98ae4ca8e645fc573900925699fd332ca54aa652c8975513a7d62fab061a7\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 7165.\n\n{\"revision\": \"1\", \"sha256\": \"af3c1e361bd1f457a31c5158d7d5f7b5198610f1681cf1972673cdbf5cfee024\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 3904.\n\n{\"revision\": \"1\", \"sha256\": \"fc0377a76133a760ab0e3b639f8f3b7946e5f1306640e0749557f84d1e72f93b\", \"source\": \"root-0\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_other_47606171\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 391}\n\n{\"revision\": \"1\", \"sha256\": \"431e8b7fe5973ae4ce2325c71e8dfd3286d56a4ff4f89a991975456b87576afa\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_34065417\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 189}\n\n{\"revision\": \"1\", \"sha256\": \"6c81da10886ff8f5c1a3da35463d095e29800f49dfad3297a6f18b98c0828f67\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"unrelated_task_2\", \"setting\": 225}\n\n{\"revision\": \"1\", \"sha256\": \"da364634e825d0f2edb336df9f788f86062a394b2df36c4cf9cce4e4d52166df\", \"source\": \"root-3\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 121}\n\n{\"revision\": \"1\", \"sha256\": \"89382264fcdcbbbdd1de520676e393ea8f31fa983a572fd3f8411c5e256216f6\", \"source\": \"root-4\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_34065417\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 798}\n\n{\"revision\": \"1\", \"sha256\": \"f8fbca92ce3805ad7f354c65d13cbca66599cf04d0182a8d8521447c1cd2467f\", \"source\": \"root-5\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_other_53677110\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 344}\n\n{\"revision\": \"1\", \"sha256\": \"c4c7e00c2628e9ea8b7af11eb7967c3bc11f9d21857e7635d25d98390adeaf20\", \"source\": \"root-6\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_34065417\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 638}\n\n{\"revision\": \"1\", \"sha256\": \"c69fbc3b81672ee6e3cb4dd994956599e3f035769465ca63a01cfbb356a7797a\", \"source\": \"root-7\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"unrelated_task_5\", \"setting\": 838}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 189,\n  \"limit\": 6183\n}",
+    "expected": {
+      "setting": 121,
+      "limit": 6581
+    },
+    "correct": false,
+    "prompt_tokens": 1897,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1416,
+    "request_ms": 166.4836,
+    "end_to_end_ms": 166.6252,
+    "index_setup_ms": 6.5975
+  },
+  {
+    "case": "test-6",
+    "mode": "activated_graph",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"f7db3c5b8e3f9a2a1bf82a88d377b37dc33124585e740cc5520274818ba0b158\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 6581.\n\n{\"revision\": \"1\", \"sha256\": \"da364634e825d0f2edb336df9f788f86062a394b2df36c4cf9cce4e4d52166df\", \"source\": \"root-3\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 121}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 121,\n  \"limit\": 6581\n}",
+    "expected": {
+      "setting": 121,
+      "limit": 6581
+    },
+    "correct": true,
+    "prompt_tokens": 344,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 72,
+    "assembly_ms": 1.6769,
+    "request_ms": 140.7707,
+    "end_to_end_ms": 142.4476,
+    "index_setup_ms": 6.5975
+  },
+  {
+    "case": "test-6",
+    "mode": "stamp_only",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"da364634e825d0f2edb336df9f788f86062a394b2df36c4cf9cce4e4d52166df\", \"source\": \"root-3\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"timeout\", \"setting\": 121}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_34065417\", \"intent\": \"implement\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 121,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 121,
+      "limit": 6581
+    },
+    "correct": false,
+    "prompt_tokens": 248,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 72,
+    "assembly_ms": 1.0739,
+    "request_ms": 134.7804,
+    "end_to_end_ms": 135.8543,
+    "index_setup_ms": 6.5975
+  },
+  {
+    "case": "test-7",
+    "mode": "activated_graph",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"329959198a822f33c8a35df055d4ce69b3cd8528236e1c9cfb3270f8052afa68\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 5520.\n\n{\"revision\": \"1\", \"sha256\": \"02b86e95d727a377ec7c4617f38c4840960bc272691e12bbfc6e9720be09b832\", \"source\": \"root-5\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 727}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 727,\n  \"limit\": 5520\n}",
+    "expected": {
+      "setting": 727,
+      "limit": 5520
+    },
+    "correct": true,
+    "prompt_tokens": 347,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 76,
+    "assembly_ms": 1.3968,
+    "request_ms": 137.9506,
+    "end_to_end_ms": 139.34740000000002,
+    "index_setup_ms": 6.6169
+  },
+  {
+    "case": "test-7",
+    "mode": "full",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"b6a4dc21b9ed9d36fc0ea3eb605e49cbebe06e48494c51b959fcc4f3103be796\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 9779.\n\n{\"revision\": \"1\", \"sha256\": \"a0e0b5420f81529cda251d9d400c79d7eaa76baac0451b442e4d35db1c95ce7f\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 3018.\n\n{\"revision\": \"1\", \"sha256\": \"eed47af4018d57f6c40707d4bb973a1f74b03ac9a92e7bf126d94a121672c2a7\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 7518.\n\n{\"revision\": \"1\", \"sha256\": \"f5860f60fb7a9aea1591c7e28ac5b158aa75af5a4664653fdc341f9eac69a84a\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 6076.\n\n{\"revision\": \"1\", \"sha256\": \"78d0413c7829750bb5ee1ce0840411f93c6251575cfe7bcd5e9ec17523972827\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 7332.\n\n{\"revision\": \"1\", \"sha256\": \"329959198a822f33c8a35df055d4ce69b3cd8528236e1c9cfb3270f8052afa68\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 5520.\n\n{\"revision\": \"1\", \"sha256\": \"f510cf06bb9ee208cfc16d3467f19d121aaf10762bb3c0ae525ecb2cc6cd8d21\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 6189.\n\n{\"revision\": \"1\", \"sha256\": \"775bbed3815e806bb3c5ae4a8fd39ae5375d0b4a124a626117ac05891bf25dd2\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 5270.\n\n{\"revision\": \"1\", \"sha256\": \"db772bdf4b041d470c2c28497c02c7a3ecd7f0eece85d5e5c8c8fb0a0d3d039c\", \"source\": \"root-0\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_18038230\", \"intent\": \"unrelated_intent_4\", \"task\": \"retry\", \"setting\": 388}\n\n{\"revision\": \"1\", \"sha256\": \"5707cf5118fb6f7769ed82e85c796f1dccfb8cad3ccea8f29804002f29262667\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_other_71303610\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 396}\n\n{\"revision\": \"1\", \"sha256\": \"290848a5536d0c2967e987a58a29e95e6ed185a1be2551a39e5e2b8115bd18c6\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_other_88449204\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 642}\n\n{\"revision\": \"1\", \"sha256\": \"f15996390fffd4fa96b42c5b79733e5769ab81f1e297883ec257ffe42de462b4\", \"source\": \"root-3\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"unrelated_task_5\", \"setting\": 317}\n\n{\"revision\": \"1\", \"sha256\": \"709961624d64f5282151f7ca1a7b08d3b399c80b386e8f6bf10b740e901ee68c\", \"source\": \"root-4\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_18038230\", \"intent\": \"unrelated_intent_1\", \"task\": \"retry\", \"setting\": 636}\n\n{\"revision\": \"1\", \"sha256\": \"02b86e95d727a377ec7c4617f38c4840960bc272691e12bbfc6e9720be09b832\", \"source\": \"root-5\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 727}\n\n{\"revision\": \"1\", \"sha256\": \"26d280a5d043b06e5d278439a5cd3bfa90be7a6cdd5d67df0624555f2156ccd2\", \"source\": \"root-6\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"unrelated_task_2\", \"setting\": 214}\n\n{\"revision\": \"1\", \"sha256\": \"d9c36dbf274af3c6ed196f6c77ac00e7101546eecfd682dcbaef64cdafc61ffa\", \"source\": \"root-7\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_18038230\", \"intent\": \"unrelated_intent_7\", \"task\": \"retry\", \"setting\": 615}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 636,\n  \"limit\": 7332\n}",
+    "expected": {
+      "setting": 727,
+      "limit": 5520
+    },
+    "correct": false,
+    "prompt_tokens": 1897,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1322,
+    "request_ms": 156.2078,
+    "end_to_end_ms": 156.34,
+    "index_setup_ms": 6.6169
+  },
+  {
+    "case": "test-7",
+    "mode": "stamp_only",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"02b86e95d727a377ec7c4617f38c4840960bc272691e12bbfc6e9720be09b832\", \"source\": \"root-5\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 727}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_18038230\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 727,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 727,
+      "limit": 5520
+    },
+    "correct": false,
+    "prompt_tokens": 252,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 76,
+    "assembly_ms": 1.2334,
+    "request_ms": 149.0102,
+    "end_to_end_ms": 150.2436,
+    "index_setup_ms": 6.6169
+  },
+  {
+    "case": "test-8",
+    "mode": "activated_graph",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"5148c32adf038bd8f0d07b930529f88b611b2956475523a6a32bec62728ccafd\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 9457.\n\n{\"revision\": \"1\", \"sha256\": \"23cebfbeaaea5da1bbeade6d57f1425c7ec7da45e8ebeacc8d65e202450f2853\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 634}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 634,\n  \"limit\": 9457\n}",
+    "expected": {
+      "setting": 634,
+      "limit": 9457
+    },
+    "correct": true,
+    "prompt_tokens": 335,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.1324,
+    "request_ms": 130.4921,
+    "end_to_end_ms": 131.62449999999998,
+    "index_setup_ms": 7.3754
+  },
+  {
+    "case": "test-8",
+    "mode": "full",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"844b67e4c2bebec34c7bc09447cbfd6f8009cd900d805a2a40ca8663063d2770\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 7276.\n\n{\"revision\": \"1\", \"sha256\": \"5148c32adf038bd8f0d07b930529f88b611b2956475523a6a32bec62728ccafd\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 9457.\n\n{\"revision\": \"1\", \"sha256\": \"58924b055c24bd7a086d723daf422ad9a65bcac1ded53f8cf5a949d9ba5de112\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 3438.\n\n{\"revision\": \"1\", \"sha256\": \"b8e7f6d5837512d0e6bb7a06ac848325321f56a1b501de28758504d129d628cc\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 7599.\n\n{\"revision\": \"1\", \"sha256\": \"c7cf753101db67ba2ecfc28e36cf03aa4128f1eef85d5e2c8e89717945420420\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 4970.\n\n{\"revision\": \"1\", \"sha256\": \"799f79676ae2157633fc6532e33e8226efaf3c0edf108f47dd93bf832346eb19\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 6312.\n\n{\"revision\": \"1\", \"sha256\": \"5c64c0bd922c0f92fcd36ff9bd422a17cf07c1802a448364e5ef4d6d70aea9d0\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 6454.\n\n{\"revision\": \"1\", \"sha256\": \"790863cbfafaf9d15d1d15a6f26353469af954877b64a840a30ebc9505a43f81\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 4431.\n\n{\"revision\": \"1\", \"sha256\": \"21c4afee084030891887944e0de97ed8093eb893aac6eccf997cdc80f00affcc\", \"source\": \"root-0\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_72699210\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 715}\n\n{\"revision\": \"1\", \"sha256\": \"23cebfbeaaea5da1bbeade6d57f1425c7ec7da45e8ebeacc8d65e202450f2853\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 634}\n\n{\"revision\": \"1\", \"sha256\": \"a9b3a3c3af8488a51abd4dec4f0b44f6556fa33344fcbfb8b7c223efd4c5c211\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_other_17563126\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 358}\n\n{\"revision\": \"1\", \"sha256\": \"892d714574f47a56da76d43b2f31fb24566c6072f53f7ef01ad8b4329aecfec9\", \"source\": \"root-3\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72699210\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 365}\n\n{\"revision\": \"1\", \"sha256\": \"28d17d717573f922f8ebe2ec836963d85f60ef395962207b928b304090fa035d\", \"source\": \"root-4\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"unrelated_task_2\", \"setting\": 432}\n\n{\"revision\": \"1\", \"sha256\": \"861c847fdf97dff9fbe658040b6c18461cbf43e191d377e535b06ceab898d5f8\", \"source\": \"root-5\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_72699210\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 286}\n\n{\"revision\": \"1\", \"sha256\": \"f9260236e91dfaf6f59b4bcb6208d2b46217f94eef5feabb34fdcacf03a477af\", \"source\": \"root-6\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_other_85351290\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 401}\n\n{\"revision\": \"1\", \"sha256\": \"fed97d2988db1a629d2e8b6efd108042c5d121d9818254cd97547f59a2cc30fd\", \"source\": \"root-7\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"unrelated_task_5\", \"setting\": 276}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 634,\n  \"limit\": 9457\n}",
+    "expected": {
+      "setting": 634,
+      "limit": 9457
+    },
+    "correct": true,
+    "prompt_tokens": 1877,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1577,
+    "request_ms": 159.5164,
+    "end_to_end_ms": 159.6741,
+    "index_setup_ms": 7.3754
+  },
+  {
+    "case": "test-8",
+    "mode": "stamp_only",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"23cebfbeaaea5da1bbeade6d57f1425c7ec7da45e8ebeacc8d65e202450f2853\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"timeout\", \"setting\": 634}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_72699210\", \"intent\": \"review\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 634,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 634,
+      "limit": 9457
+    },
+    "correct": false,
+    "prompt_tokens": 242,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.1048,
+    "request_ms": 138.7494,
+    "end_to_end_ms": 139.85420000000002,
+    "index_setup_ms": 7.3754
+  },
+  {
+    "case": "test-9",
+    "mode": "full",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"7ab646b39cef10c0d95d86bf1a3e90680e095641c4cbe599ce8545cc53eefdf8\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 2865.\n\n{\"revision\": \"1\", \"sha256\": \"dae607108c2e1d9dea6252dfeba8f946e1e016a95b6c36599927d10c967a3caf\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 5765.\n\n{\"revision\": \"1\", \"sha256\": \"727be4936995c1d569ed91dc18cf166fa1bd6ac7b8573f41ed96506d331b0abf\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 8897.\n\n{\"revision\": \"1\", \"sha256\": \"e610640ab445a44cd722c04fef62016a39add42bcfe465f0ad835c4f496ceb76\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 6690.\n\n{\"revision\": \"1\", \"sha256\": \"f7450fb2dfb276b93b6b9e21875c2d07a615dbbad8c24eaa698dace88c55f514\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 6590.\n\n{\"revision\": \"1\", \"sha256\": \"92fcffd95a37cac2b28c56c47929b2fbdb755dd1d8a2ca18e0ddeb541bccee0f\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7002.\n\n{\"revision\": \"1\", \"sha256\": \"76acfdfb8011f043e87479151b36fff8211cee7a4ffbea51fa9ae452a33501b1\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 6297.\n\n{\"revision\": \"1\", \"sha256\": \"850ddb09c045b346a1e34d82624199c7b57c97b5f194f94e95b65e0cb7e4ad2e\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 6441.\n\n{\"revision\": \"1\", \"sha256\": \"e5d9358c0e77307c5bf90c17279a5bb618f4d798c3f7e66d5c6f9bde5769b623\", \"source\": \"root-0\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_49459336\", \"intent\": \"unrelated_intent_1\", \"task\": \"timeout\", \"setting\": 806}\n\n{\"revision\": \"1\", \"sha256\": \"44e79d527c5584ecc721499a34c0b52ae4e7b7e7e068f93f8ace36a9c989e467\", \"source\": \"root-1\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_component_49459336\", \"intent\": \"measure\", \"task\": \"unrelated_task_2\", \"setting\": 752}\n\n{\"revision\": \"1\", \"sha256\": \"03a6eaecff74f54c3da79fb75aa3713d69bafac58972855e0917a74f83e33d58\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_other_21530293\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 107}\n\n{\"revision\": \"1\", \"sha256\": \"1fdb777c07536752ae6c069253e3904e1bb4c2fb8bb025259baec4e3563ad6f4\", \"source\": \"root-3\"}\n{\"content\": \"Inspect timeout behavior and make required changes\", \"entity\": \"test_other_66541919\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 396}\n\n{\"revision\": \"1\", \"sha256\": \"babffb158ac927456be090249cbe7a0d5e0a7bff98a639ce42d8d15e924aae6d\", \"source\": \"root-4\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_49459336\", \"intent\": \"unrelated_intent_7\", \"task\": \"timeout\", \"setting\": 421}\n\n{\"revision\": \"1\", \"sha256\": \"534da01b34d0f918f379af480510f8dd5125163247f5aeb9cd9ce33fc3b84bbf\", \"source\": \"root-5\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_49459336\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 532}\n\n{\"revision\": \"1\", \"sha256\": \"07c02e5e8d3088c9f031db289402ad1b06a173806f6425426bf8c6e18527e073\", \"source\": \"root-6\"}\n{\"content\": \"Procedure and evidence for timeout modification\", \"entity\": \"test_component_49459336\", \"intent\": \"measure\", \"task\": \"unrelated_task_5\", \"setting\": 470}\n\n{\"revision\": \"1\", \"sha256\": \"da945552bbf3703c9ffbc2ec88ce7f17c50db336bab428991bc44602753dc2df\", \"source\": \"root-7\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_component_49459336\", \"intent\": \"unrelated_intent_4\", \"task\": \"timeout\", \"setting\": 533}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_49459336\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 421,\n  \"limit\": 6590\n}",
+    "expected": {
+      "setting": 532,
+      "limit": 7002
+    },
+    "correct": false,
+    "prompt_tokens": 1886,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1483,
+    "request_ms": 145.4691,
+    "end_to_end_ms": 145.6174,
+    "index_setup_ms": 6.106
+  },
+  {
+    "case": "test-9",
+    "mode": "activated_graph",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"727be4936995c1d569ed91dc18cf166fa1bd6ac7b8573f41ed96506d331b0abf\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 8897.\n\n{\"revision\": \"1\", \"sha256\": \"03a6eaecff74f54c3da79fb75aa3713d69bafac58972855e0917a74f83e33d58\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_other_21530293\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 107}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_49459336\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 107,\n  \"limit\": 8897\n}",
+    "expected": {
+      "setting": 532,
+      "limit": 7002
+    },
+    "correct": false,
+    "prompt_tokens": 341,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 76,
+    "assembly_ms": 1.3216,
+    "request_ms": 133.753,
+    "end_to_end_ms": 135.07459999999998,
+    "index_setup_ms": 6.106
+  },
+  {
+    "case": "test-9",
+    "mode": "stamp_only",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"03a6eaecff74f54c3da79fb75aa3713d69bafac58972855e0917a74f83e33d58\", \"source\": \"root-2\"}\n{\"content\": \"Record findings from the timeout experiment\", \"entity\": \"test_other_21530293\", \"intent\": \"measure\", \"task\": \"timeout\", \"setting\": 107}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_49459336\", \"intent\": \"measure\", \"task\": \"timeout\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 107,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 532,
+      "limit": 7002
+    },
+    "correct": false,
+    "prompt_tokens": 249,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 76,
+    "assembly_ms": 1.0695,
+    "request_ms": 151.0022,
+    "end_to_end_ms": 152.0717,
+    "index_setup_ms": 6.106
+  },
+  {
+    "case": "test-10",
+    "mode": "activated_graph",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"d04e6b27774b5064920636b95f54dbef3ab39672439a8a5563f54bf9780989a9\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7100.\n\n{\"revision\": \"1\", \"sha256\": \"c099110f2677bc3e5cb0a8310ddd1cff12e7ad7082f3b5b3882d9c8cf33911d2\", \"source\": \"root-5\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 891}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 891,\n  \"limit\": 7100\n}",
+    "expected": {
+      "setting": 891,
+      "limit": 7100
+    },
+    "correct": true,
+    "prompt_tokens": 346,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 76,
+    "assembly_ms": 1.1235,
+    "request_ms": 119.5355,
+    "end_to_end_ms": 120.65899999999999,
+    "index_setup_ms": 6.7231
+  },
+  {
+    "case": "test-10",
+    "mode": "full",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"769f0ab28b4ad0ca4425fe1a2b387d675c2e51a126de8ed4606c08752a67bc66\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 7307.\n\n{\"revision\": \"1\", \"sha256\": \"0ec6a725f8ac47af842c887102877b154862bd878aa47fe508595e74aca47389\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 6442.\n\n{\"revision\": \"1\", \"sha256\": \"a818f92d9169fd70400328a722e19cf1004d9f67476c0873aade9b4e754c9d90\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 4901.\n\n{\"revision\": \"1\", \"sha256\": \"27befa28efb4e9f484a22ceed3a3dc43f334381a28d4f1014be5aa3472100ef0\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 4745.\n\n{\"revision\": \"1\", \"sha256\": \"c5eb318fc3d0e4a2c6620bea903e6b52ba793232d6ef77fd07fda5569eed66e4\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 9094.\n\n{\"revision\": \"1\", \"sha256\": \"d04e6b27774b5064920636b95f54dbef3ab39672439a8a5563f54bf9780989a9\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 7100.\n\n{\"revision\": \"1\", \"sha256\": \"b8de528e5f1b773c8329a84076c5fe002d91fc3e8d965a05e8f2cc9071f9931c\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 9908.\n\n{\"revision\": \"1\", \"sha256\": \"03253d300b512361cc745e0068eb382863d00606c4be9e65929fd2a77c19ef9b\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 9262.\n\n{\"revision\": \"1\", \"sha256\": \"720e930c8a664fe38654f3d18e123852c1941a4d6db300dfd75ddea891698132\", \"source\": \"root-0\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_other_97605802\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 497}\n\n{\"revision\": \"1\", \"sha256\": \"0c087dd77931883c7f1a317d199ae0229978be16d2c0e2edec7ea63d611e5520\", \"source\": \"root-1\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_50736733\", \"intent\": \"unrelated_intent_4\", \"task\": \"retry\", \"setting\": 630}\n\n{\"revision\": \"1\", \"sha256\": \"f9f51e800d06424c6b8e92a97d1d3f335022421141ea0368ffb7b26b17920eb9\", \"source\": \"root-2\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_50736733\", \"intent\": \"unrelated_intent_7\", \"task\": \"retry\", \"setting\": 347}\n\n{\"revision\": \"1\", \"sha256\": \"2b78d5ee071f352a98b3d5375a04618e9f93a368a01b8c39c57277f66cb03101\", \"source\": \"root-3\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_50736733\", \"intent\": \"unrelated_intent_1\", \"task\": \"retry\", \"setting\": 749}\n\n{\"revision\": \"1\", \"sha256\": \"5c9b6b99eada11a65fce000daaf7361a95de8d2df66aec21a89ce9a525703a15\", \"source\": \"root-4\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"unrelated_task_2\", \"setting\": 563}\n\n{\"revision\": \"1\", \"sha256\": \"c099110f2677bc3e5cb0a8310ddd1cff12e7ad7082f3b5b3882d9c8cf33911d2\", \"source\": \"root-5\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 891}\n\n{\"revision\": \"1\", \"sha256\": \"99a6752d890e8d54ed6b04f46542b3b9537fb9d5856f977e0818c6648017872c\", \"source\": \"root-6\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_other_41525913\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 380}\n\n{\"revision\": \"1\", \"sha256\": \"6ca07c45f5ddc0395b735a6acb8faf7d73878fcaabc96daa3ea062494024058f\", \"source\": \"root-7\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"unrelated_task_5\", \"setting\": 294}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 347,\n  \"limit\": 9908\n}",
+    "expected": {
+      "setting": 891,
+      "limit": 7100
+    },
+    "correct": false,
+    "prompt_tokens": 1919,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1355,
+    "request_ms": 130.7339,
+    "end_to_end_ms": 130.8694,
+    "index_setup_ms": 6.7231
+  },
+  {
+    "case": "test-10",
+    "mode": "stamp_only",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"c099110f2677bc3e5cb0a8310ddd1cff12e7ad7082f3b5b3882d9c8cf33911d2\", \"source\": \"root-5\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 891}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_50736733\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 891,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 891,
+      "limit": 7100
+    },
+    "correct": false,
+    "prompt_tokens": 249,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 76,
+    "assembly_ms": 1.0534,
+    "request_ms": 172.4686,
+    "end_to_end_ms": 173.52200000000002,
+    "index_setup_ms": 6.7231
+  },
+  {
+    "case": "test-11",
+    "mode": "full",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"61649bed227b17ac78f0aa68aa5caca13931cb5a4eb96af2437749f120a3902c\", \"source\": \"contract-0\"}\nContract for root-0. Approved limit: 4564.\n\n{\"revision\": \"1\", \"sha256\": \"0108d59651227f9047e3395872ca958f2420b0d6eafb5d770a5f9ef03895123c\", \"source\": \"contract-1\"}\nContract for root-1. Approved limit: 8330.\n\n{\"revision\": \"1\", \"sha256\": \"7a8231920af949deecc0833efe05123aecd49730aa6a994e6681a15b476b1c39\", \"source\": \"contract-2\"}\nContract for root-2. Approved limit: 6988.\n\n{\"revision\": \"1\", \"sha256\": \"05d82ce4e1aec050464b223b55315290563d7d03a3d3f65ca60dc236b0fd8efd\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 9241.\n\n{\"revision\": \"1\", \"sha256\": \"6d8258fd082edb09b78c81f8d9ee30afb80353856211997ec3d234b6ffd4ec39\", \"source\": \"contract-4\"}\nContract for root-4. Approved limit: 3613.\n\n{\"revision\": \"1\", \"sha256\": \"568da41a24a8fb3302b93c47b4478998f57c77e063a0f88306f99ed08bc1a69f\", \"source\": \"contract-5\"}\nContract for root-5. Approved limit: 2927.\n\n{\"revision\": \"1\", \"sha256\": \"9650492e780ca4dda0388ff222c8c30b9b46df41e5e992e1e694b1fbf12e5ce1\", \"source\": \"contract-6\"}\nContract for root-6. Approved limit: 3853.\n\n{\"revision\": \"1\", \"sha256\": \"cb5355e3de550f323525a16e30fc43a11e933154d24be45e3d5cae16715d34eb\", \"source\": \"contract-7\"}\nContract for root-7. Approved limit: 6117.\n\n{\"revision\": \"1\", \"sha256\": \"d52805eca7c96d3b46d93624d3803c3bb967b0b1b97c84ab986407288110a2ab\", \"source\": \"root-0\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_other_64258905\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 205}\n\n{\"revision\": \"1\", \"sha256\": \"4e9da3312e7cb3fceaec2a3f254ee4f274f1cae5ac4d39ef0ba5a0a1b1d102f8\", \"source\": \"root-1\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_86684770\", \"intent\": \"unrelated_intent_4\", \"task\": \"retry\", \"setting\": 728}\n\n{\"revision\": \"1\", \"sha256\": \"35acd122902ad7210fdfa03adf1e7327cbacf96d4ab5c625918272f86d5c55d7\", \"source\": \"root-2\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_86684770\", \"intent\": \"unrelated_intent_1\", \"task\": \"retry\", \"setting\": 105}\n\n{\"revision\": \"1\", \"sha256\": \"d95c51525374f4f3f0558c213bf34b661c168f407315a5902d23fa285def6b28\", \"source\": \"root-3\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 129}\n\n{\"revision\": \"1\", \"sha256\": \"9254f130d2178c4a4fdb27ff5ecc0c9c8e6013124a191e2850a2a943e1fb3835\", \"source\": \"root-4\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_component_86684770\", \"intent\": \"unrelated_intent_7\", \"task\": \"retry\", \"setting\": 265}\n\n{\"revision\": \"1\", \"sha256\": \"79c690f70bba245525e1360b43e5cf6840bbc8dfe19c05f7f848519cc2c91ab9\", \"source\": \"root-5\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"unrelated_task_5\", \"setting\": 487}\n\n{\"revision\": \"1\", \"sha256\": \"3e90ec1cc1edf02163780fa55ebe3aeb00f1d8dc394c1e5e11dcb2d9e4dc4c96\", \"source\": \"root-6\"}\n{\"content\": \"Inspect retry behavior and make required changes\", \"entity\": \"test_other_64156858\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 976}\n\n{\"revision\": \"1\", \"sha256\": \"32e75a257f486a21bdd86878307224aa64a18f854458f07e1c8eab3995ef01a0\", \"source\": \"root-7\"}\n{\"content\": \"Record findings from the retry experiment\", \"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"unrelated_task_2\", \"setting\": 998}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 129,\n  \"limit\": 9241\n}",
+    "expected": {
+      "setting": 129,
+      "limit": 9241
+    },
+    "correct": true,
+    "prompt_tokens": 1902,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.1256,
+    "request_ms": 148.6876,
+    "end_to_end_ms": 148.8132,
+    "index_setup_ms": 10.5019
+  },
+  {
+    "case": "test-11",
+    "mode": "stamp_only",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"d95c51525374f4f3f0558c213bf34b661c168f407315a5902d23fa285def6b28\", \"source\": \"root-3\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 129}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 129,\n  \"limit\": null\n}",
+    "expected": {
+      "setting": 129,
+      "limit": 9241
+    },
+    "correct": false,
+    "prompt_tokens": 253,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.1724,
+    "request_ms": 147.2414,
+    "end_to_end_ms": 148.4138,
+    "index_setup_ms": 10.5019
+  },
+  {
+    "case": "test-11",
+    "mode": "activated_graph",
+    "repetition": 1,
+    "prompt": "EVIDENCE\n{\"revision\": \"1\", \"sha256\": \"05d82ce4e1aec050464b223b55315290563d7d03a3d3f65ca60dc236b0fd8efd\", \"source\": \"contract-3\"}\nContract for root-3. Approved limit: 9241.\n\n{\"revision\": \"1\", \"sha256\": \"d95c51525374f4f3f0558c213bf34b661c168f407315a5902d23fa285def6b28\", \"source\": \"root-3\"}\n{\"content\": \"Procedure and evidence for retry modification\", \"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"retry\", \"setting\": 129}\nTASK\nFind the record matching these exact facets: {\"entity\": \"test_component_86684770\", \"intent\": \"measure\", \"task\": \"retry\"}. Return JSON {\"setting\": number, \"limit\": number} using its setting and its dependent contract. Use null for any missing value.",
+    "output": "{\n  \"setting\": 129,\n  \"limit\": 9241\n}",
+    "expected": {
+      "setting": 129,
+      "limit": 9241
+    },
+    "correct": true,
+    "prompt_tokens": 346,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 75,
+    "assembly_ms": 1.1496,
+    "request_ms": 125.9266,
+    "end_to_end_ms": 127.0762,
+    "index_setup_ms": 10.5019
+  }
+]

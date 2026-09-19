@@ -1,0 +1,28 @@
+[
+  {
+    "split": "test",
+    "query_seed_pairs": 240,
+    "recall": 1,
+    "false_activations": 0.0625,
+    "no_answer_false_activation": 0.0625,
+    "exact_field_correct": 1,
+    "compact_bytes": 115,
+    "json_bytes": 427,
+    "compact_tokens": 72.42916666666666,
+    "json_tokens": 227.9625,
+    "bootstrap_tokens": 224.66666666666666
+  },
+  {
+    "split": "ood",
+    "query_seed_pairs": 240,
+    "recall": 1,
+    "false_activations": 0.041666666666666664,
+    "no_answer_false_activation": 0.041666666666666664,
+    "exact_field_correct": 1,
+    "compact_bytes": 115,
+    "json_bytes": 427,
+    "compact_tokens": 72.52916666666667,
+    "json_tokens": 228.125,
+    "bootstrap_tokens": 224.66666666666666
+  }
+]

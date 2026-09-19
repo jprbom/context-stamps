@@ -1,5 +1,7 @@
 # Method, evidence and research scope
 
+> Historical v0.2 evidence. For the private spherical v0.3 candidate, see [current results](spherical-results.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
+
 Author: Prashant Jagtap
 
 ## Implemented method

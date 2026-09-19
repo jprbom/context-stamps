@@ -1,0 +1,7242 @@
+[
+  {
+    "case": "complete-0",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-36acf2ae45\", \"sha256\": \"e61f4d07d61d461a79010f3837c99d9f1836af8b8446cbafd27638a48ad82049\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-915358dc39\", \"values\": {\"batch_size\": \"3101\"}}\n\n{\"source\": \"record-de36342e82\", \"sha256\": \"0efc946192be2908367f444138aee6bb4fabb1046f2f13824b70c3cfc587ef1d\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-915358dc39\", \"values\": {\"queue_depth\": \"796\"}}\n\n{\"source\": \"record-e70d1c927b\", \"sha256\": \"195ff15a2afda2e0df01632ff503cf9792381e92def283c8aa6c7f9700f4dc10\"}\n{\"padding\": \"xxxxx\", \"subject\": \"node-915358dc39\", \"values\": {\"sample_hz\": \"1197\"}}",
+      "selected": [
+        "record-36acf2ae45",
+        "record-de36342e82",
+        "record-e70d1c927b"
+      ],
+      "units": 695,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-36acf2ae45",
+          "reason": "selected"
+        },
+        {
+          "source": "record-021af9a8da",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-de36342e82",
+          "reason": "selected"
+        },
+        {
+          "source": "record-e70d1c927b",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-1",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-1cf225d309\", \"sha256\": \"dd2255c694eccdd58e9e69af9a8f8117c5fff1fb9db700c70095e5bd013b0701\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-73ed1bad25\", \"values\": {\"queue_depth\": \"2527\"}}\n\n{\"source\": \"record-59ff63539b\", \"sha256\": \"7235f9d86dc0fe1a3a998a68ac3a2d2efd08c7ac915d8b49ea81692b37cdce49\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-73ed1bad25\", \"values\": {\"cache_ttl\": \"1894\"}}\n\n{\"source\": \"record-d2b21b64cb\", \"sha256\": \"c64fb0c7101b80dd7a20f75e8f88f7c04a7cec33dc082d3fa055651fd30d699e\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-73ed1bad25\", \"values\": {\"retry_cap\": \"3337\"}}",
+      "selected": [
+        "record-1cf225d309",
+        "record-59ff63539b",
+        "record-d2b21b64cb"
+      ],
+      "units": 715,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-d2b21b64cb",
+          "reason": "selected"
+        },
+        {
+          "source": "record-59ff63539b",
+          "reason": "selected"
+        },
+        {
+          "source": "record-877823674e",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-1cf225d309",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-2",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-1e0d2801de\", \"sha256\": \"400b4f6829b6788c9ee216ed6d094f4321f138f02bab94ea7d352e5f07bdad56\"}\n{\"padding\": \"xxxxxxxxxxxxxx\", \"subject\": \"node-d686e5514f\", \"values\": {\"queue_depth\": \"1754\"}}\n\n{\"source\": \"record-6f3524d19d\", \"sha256\": \"7a2a5762c86c19e5576e696de671e50adfb37a3dfb4d2d0f89d73955cfc624ba\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-d686e5514f\", \"values\": {\"cache_ttl\": \"257\"}}\n\n{\"source\": \"record-76e541772b\", \"sha256\": \"998f1092bfeba0f94ab6390a58fafbdfd800b1057d93e2c4e40910f0a88029fe\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-d686e5514f\", \"values\": {\"window_ms\": \"1935\"}}",
+      "selected": [
+        "record-1e0d2801de",
+        "record-6f3524d19d",
+        "record-76e541772b"
+      ],
+      "units": 666,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-6f3524d19d",
+          "reason": "selected"
+        },
+        {
+          "source": "record-99f0b9d371",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-1e0d2801de",
+          "reason": "selected"
+        },
+        {
+          "source": "record-76e541772b",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-3",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-96aa4e6ca8\", \"sha256\": \"3b85a6a54ea76dfebac18de4e7556adf5da56b5aaab361cfb12f85e3ff7c71b2\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-c9aa32f992\", \"values\": {\"sample_hz\": \"2587\"}}\n\n{\"source\": \"record-b7cb3b54c8\", \"sha256\": \"d0d08f00f696f90c60d92cb59afac593b5ee22a06f5b9c3547f94216412567e4\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-c9aa32f992\", \"values\": {\"cache_ttl\": \"2399\"}}\n\n{\"source\": \"record-c0f09c7be9\", \"sha256\": \"bfc27393b6e7b9490417e14a91daaa3418a31f6fe0c8fdc25dacb8207677d065\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-c9aa32f992\", \"values\": {\"retry_cap\": \"1827\"}}",
+      "selected": [
+        "record-96aa4e6ca8",
+        "record-b7cb3b54c8",
+        "record-c0f09c7be9"
+      ],
+      "units": 736,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-96aa4e6ca8",
+          "reason": "selected"
+        },
+        {
+          "source": "record-b7cb3b54c8",
+          "reason": "selected"
+        },
+        {
+          "source": "record-c0f09c7be9",
+          "reason": "selected"
+        },
+        {
+          "source": "record-0c5d434d37",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-4",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-704ac878ea\", \"sha256\": \"32860303b22beef3b46f5122d2ad12885120f12468b26deb8162dc5c358c686d\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-f0f081680b\", \"values\": {\"queue_depth\": \"1057\"}}\n\n{\"source\": \"record-ae1cbdddb0\", \"sha256\": \"8845709e9f3ebf4983e7b5191ea4fbca495a08b3fec9e174d58e88543454e17a\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-f0f081680b\", \"values\": {\"cache_ttl\": \"2575\"}}\n\n{\"source\": \"record-b5de9a33f3\", \"sha256\": \"5a7d169d99f61e605ef2aacdb028fb689b23bab3b42c6e484c9e6ec7fb96f88b\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-f0f081680b\", \"values\": {\"batch_size\": \"340\"}}",
+      "selected": [
+        "record-704ac878ea",
+        "record-ae1cbdddb0",
+        "record-b5de9a33f3"
+      ],
+      "units": 728,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-ae1cbdddb0",
+          "reason": "selected"
+        },
+        {
+          "source": "record-b5de9a33f3",
+          "reason": "selected"
+        },
+        {
+          "source": "record-704ac878ea",
+          "reason": "selected"
+        },
+        {
+          "source": "record-77cb985cd7",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-5",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-19f3015c22\", \"sha256\": \"095957382a38be2d5ab8f6cd1230fe9ec5c48a4b19cb7c57f768b6a16a747e6a\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-4b06c3f70c\", \"values\": {\"sample_hz\": \"2805\"}}\n\n{\"source\": \"record-1c1deaf8a9\", \"sha256\": \"b3b938f063f559112bd87ae6cfda0bb0652cfe2944b5e3e78c8f4e66fc5c2b1f\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-4b06c3f70c\", \"values\": {\"cache_ttl\": \"2149\"}}\n\n{\"source\": \"record-80aacc5db5\", \"sha256\": \"b6fe38d346b7a826d1e137651c592203a1935e73836ae71d552aa7d785f9bab7\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-4b06c3f70c\", \"values\": {\"batch_size\": \"36\"}}",
+      "selected": [
+        "record-19f3015c22",
+        "record-1c1deaf8a9",
+        "record-80aacc5db5"
+      ],
+      "units": 709,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-80aacc5db5",
+          "reason": "selected"
+        },
+        {
+          "source": "record-a1b66b84b4",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-1c1deaf8a9",
+          "reason": "selected"
+        },
+        {
+          "source": "record-19f3015c22",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-6",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-267e473572\", \"sha256\": \"4d67a33344c74180701cb568ab6ee742574cadfaa006b8013067fe06c9e7c74d\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-d3dad1b31c\", \"values\": {\"sample_hz\": \"4032\"}}\n\n{\"source\": \"record-58a28e1efc\", \"sha256\": \"548c28bd81a72c1349d24b1eb603506ba83b0926e2526a2cf6f144c250619181\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-d3dad1b31c\", \"values\": {\"window_ms\": \"4008\"}}\n\n{\"source\": \"record-703e612ca4\", \"sha256\": \"8e67fa724190a7b2d71bea1f38d7582d69c1dcccdb27f19c7db9638a03388352\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-d3dad1b31c\", \"values\": {\"retry_cap\": \"414\"}}",
+      "selected": [
+        "record-267e473572",
+        "record-58a28e1efc",
+        "record-703e612ca4"
+      ],
+      "units": 706,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-58a28e1efc",
+          "reason": "selected"
+        },
+        {
+          "source": "record-cc9ba1a76f",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-703e612ca4",
+          "reason": "selected"
+        },
+        {
+          "source": "record-267e473572",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-7",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-116a28326e\", \"sha256\": \"408e08acf6515a25e4444fc5bc09791f4a6f28401e06a5ce7c907edc58bc7e24\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-7bb1995aa4\", \"values\": {\"queue_depth\": \"3656\"}}\n\n{\"source\": \"record-5b92ee1eeb\", \"sha256\": \"161fa8b4106c31f28dc009c253dc64005cdafac48df715543c58ac047ad8c2c0\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-7bb1995aa4\", \"values\": {\"retry_cap\": \"1035\"}}\n\n{\"source\": \"record-ce63b50b73\", \"sha256\": \"12f511c574bc4ba249b65a51587a9c45e7ce9690fcd9bae3eb6468aeb807fb77\"}\n{\"padding\": \"xxxxxxx\", \"subject\": \"node-7bb1995aa4\", \"values\": {\"window_ms\": \"2809\"}}",
+      "selected": [
+        "record-116a28326e",
+        "record-5b92ee1eeb",
+        "record-ce63b50b73"
+      ],
+      "units": 635,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-ce63b50b73",
+          "reason": "selected"
+        },
+        {
+          "source": "record-116a28326e",
+          "reason": "selected"
+        },
+        {
+          "source": "record-b0095214e9",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-5b92ee1eeb",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-8",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-087f1843b4\", \"sha256\": \"428c56c270a65a9e50f74d6fab017a096577c3c6449ee17b6faa0995ab92bd54\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-24fb3f3d19\", \"values\": {\"retry_cap\": \"4085\"}}\n\n{\"source\": \"record-665961309d\", \"sha256\": \"f92c16a1fe8cbec3c34e3b282f44737ed51e7b82a40a6481fa9e52ed33066742\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-24fb3f3d19\", \"values\": {\"window_ms\": \"1738\"}}\n\n{\"source\": \"record-c926f3eafa\", \"sha256\": \"21c6ed7b4bfd4ed381edec16e028018b75afa77b8c00a29ed847ae8e2737e41e\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-24fb3f3d19\", \"values\": {\"cache_ttl\": \"3361\"}}",
+      "selected": [
+        "record-087f1843b4",
+        "record-665961309d",
+        "record-c926f3eafa"
+      ],
+      "units": 657,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-c926f3eafa",
+          "reason": "selected"
+        },
+        {
+          "source": "record-087f1843b4",
+          "reason": "selected"
+        },
+        {
+          "source": "record-691dfe033f",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-665961309d",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-9",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-4fbabebd80\", \"sha256\": \"84baff36596da34e14e5d0926eafed49cc556af6d79afba1fb97f78bf349f320\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-4d71aaedb9\", \"values\": {\"sample_hz\": \"927\"}}\n\n{\"source\": \"record-8076d4f683\", \"sha256\": \"ca7234f9b6c88acbb3d33ce2ed875397a94157445982cd9bbada2f3c4a5438ba\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-4d71aaedb9\", \"values\": {\"retry_cap\": \"3790\"}}\n\n{\"source\": \"record-d82363ae2a\", \"sha256\": \"350eafa5482b2079ef5c893ef85927b0d48f6acbea0a8cab5b7aac4af6a3ecde\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-4d71aaedb9\", \"values\": {\"batch_size\": \"848\"}}",
+      "selected": [
+        "record-4fbabebd80",
+        "record-8076d4f683",
+        "record-d82363ae2a"
+      ],
+      "units": 694,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-8076d4f683",
+          "reason": "selected"
+        },
+        {
+          "source": "record-d82363ae2a",
+          "reason": "selected"
+        },
+        {
+          "source": "record-be4a382078",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-4fbabebd80",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-10",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-689fa1a031\", \"sha256\": \"e927add8cf8869e29a4d9f798387a7127bd6ca5f3604b4679ff17e035514490d\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-c88f8634c2\", \"values\": {\"batch_size\": \"3079\"}}\n\n{\"source\": \"record-939605cab1\", \"sha256\": \"61a4fddbebb4b3294a7ed1faad24ac626f5a35f4cf75049966789748672eb1f1\"}\n{\"padding\": \"x\", \"subject\": \"node-c88f8634c2\", \"values\": {\"queue_depth\": \"733\"}}\n\n{\"source\": \"record-e3f843580b\", \"sha256\": \"16fa4fcc13cb1f0c682dc543bbdcb5ed1e155762f36d31fd7bafaee145fb91eb\"}\n{\"padding\": \"xxxxxxxx\", \"subject\": \"node-c88f8634c2\", \"values\": {\"retry_cap\": \"1648\"}}",
+      "selected": [
+        "record-689fa1a031",
+        "record-939605cab1",
+        "record-e3f843580b"
+      ],
+      "units": 668,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-689fa1a031",
+          "reason": "selected"
+        },
+        {
+          "source": "record-dbf4881ab5",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-e3f843580b",
+          "reason": "selected"
+        },
+        {
+          "source": "record-939605cab1",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-11",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-132a14c99f\", \"sha256\": \"a0945827367d18ea5c60eba24483535f4f6c7f81683c551d85b5c9a89bb7fbe3\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-ce02eb630d\", \"values\": {\"cache_ttl\": \"3972\"}}\n\n{\"source\": \"record-690ee4e900\", \"sha256\": \"6873c8f5e27361af1a1aa53d5a5a2e86d709d3ff5c27c54b587cc86860e66efd\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-ce02eb630d\", \"values\": {\"queue_depth\": \"421\"}}\n\n{\"source\": \"record-d1ecf21f0f\", \"sha256\": \"8a4be69c66a84a89d68f64087cb7ff9b1d52feaa712c787595b0fbfa80a7a514\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-ce02eb630d\", \"values\": {\"window_ms\": \"2784\"}}",
+      "selected": [
+        "record-132a14c99f",
+        "record-690ee4e900",
+        "record-d1ecf21f0f"
+      ],
+      "units": 709,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-690ee4e900",
+          "reason": "selected"
+        },
+        {
+          "source": "record-d1ecf21f0f",
+          "reason": "selected"
+        },
+        {
+          "source": "record-9bced14780",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-132a14c99f",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-12",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-2b20235ea1\", \"sha256\": \"f208163ecd11e9513781d8938d5e0309e52a62f60b22d0b0b6bf2e42e6227126\"}\n{\"padding\": \"x\", \"subject\": \"node-4b23bd5487\", \"values\": {\"sample_hz\": \"1052\"}}\n\n{\"source\": \"record-3b7c30c357\", \"sha256\": \"eedc00700d1afcce7bb5b1bd1c4df5230c96414c285c717263258382aef598f0\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-4b23bd5487\", \"values\": {\"batch_size\": \"187\"}}\n\n{\"source\": \"record-bd74ef0b50\", \"sha256\": \"7fc02557e72b49fe8d924bc1dd3fb1d397a9d1a611bf40a59cf03f1cf89a4c32\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-4b23bd5487\", \"values\": {\"cache_ttl\": \"1516\"}}",
+      "selected": [
+        "record-2b20235ea1",
+        "record-3b7c30c357",
+        "record-bd74ef0b50"
+      ],
+      "units": 649,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-3b7c30c357",
+          "reason": "selected"
+        },
+        {
+          "source": "record-2b20235ea1",
+          "reason": "selected"
+        },
+        {
+          "source": "record-bd74ef0b50",
+          "reason": "selected"
+        },
+        {
+          "source": "record-af90428f0d",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-13",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-083d70fb68\", \"sha256\": \"5f37f039583c46c57c30fb8269b6a3c5dd3ce71d4490eb3e1b5f382f22e7b385\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxx\", \"subject\": \"node-a4bb33b784\", \"values\": {\"batch_size\": \"934\"}}\n\n{\"source\": \"record-72d424aa50\", \"sha256\": \"2810dc7f3c6dbcc302a4653fcaee0decb47ff13f4c28830040944196ec0c28eb\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-a4bb33b784\", \"values\": {\"cache_ttl\": \"1882\"}}\n\n{\"source\": \"record-9907be968b\", \"sha256\": \"dc8a62bea49d5c220ba6b7612bc3ca2fd41e86ea5304074a2b892d0cc70f8efa\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-a4bb33b784\", \"values\": {\"retry_cap\": \"1412\"}}",
+      "selected": [
+        "record-083d70fb68",
+        "record-72d424aa50",
+        "record-9907be968b"
+      ],
+      "units": 666,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-9907be968b",
+          "reason": "selected"
+        },
+        {
+          "source": "record-a4db77bb55",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-72d424aa50",
+          "reason": "selected"
+        },
+        {
+          "source": "record-083d70fb68",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-14",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-43ad777056\", \"sha256\": \"52e934d720a6a919cff6ef2bfd81cdcbcba7378c8b1f1356415f26d1b9889bea\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-fcbb041fd4\", \"values\": {\"window_ms\": \"2336\"}}\n\n{\"source\": \"record-caea170d37\", \"sha256\": \"4e8d7e93ff3098a20e763329d2fc95fe31de1bfd5577f7a59fd063b902e3d0e8\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-fcbb041fd4\", \"values\": {\"retry_cap\": \"180\"}}\n\n{\"source\": \"record-f55b63b330\", \"sha256\": \"5d8849733075eb6e78153951f4479b9b51d2238a2448c2d7edfeafd81914455d\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-fcbb041fd4\", \"values\": {\"batch_size\": \"2222\"}}",
+      "selected": [
+        "record-43ad777056",
+        "record-caea170d37",
+        "record-f55b63b330"
+      ],
+      "units": 700,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-f55b63b330",
+          "reason": "selected"
+        },
+        {
+          "source": "record-43ad777056",
+          "reason": "selected"
+        },
+        {
+          "source": "record-caea170d37",
+          "reason": "selected"
+        },
+        {
+          "source": "record-13816336e8",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-15",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-45915cc272\", \"sha256\": \"8bbdc99475543ec0d1898cfeff914841294c2775599b43c10c2129b7632caca2\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-778d9b754a\", \"values\": {\"batch_size\": \"257\"}}\n\n{\"source\": \"record-f2aa4679f1\", \"sha256\": \"443cc17bd85a3d4f522b508c1d273db126f0673e7c57f31345e92f396e0e6440\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-778d9b754a\", \"values\": {\"window_ms\": \"2409\"}}\n\n{\"source\": \"record-f64ffefa77\", \"sha256\": \"b43e4eb50cdcbc0c581e41a62742c26b5e20067cc779f1f32d2424128bfdb9ae\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-778d9b754a\", \"values\": {\"queue_depth\": \"3238\"}}",
+      "selected": [
+        "record-45915cc272",
+        "record-f2aa4679f1",
+        "record-f64ffefa77"
+      ],
+      "units": 683,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-f2aa4679f1",
+          "reason": "selected"
+        },
+        {
+          "source": "record-3ac4e3dc07",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-45915cc272",
+          "reason": "selected"
+        },
+        {
+          "source": "record-f64ffefa77",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-16",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-5df23b7a12\", \"sha256\": \"e6cca5dfc794a876b760a2a034a65234c9e34b4f559a53eb25d90300aedd0618\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxx\", \"subject\": \"node-3b2748b16e\", \"values\": {\"window_ms\": \"427\"}}\n\n{\"source\": \"record-8c73af40c7\", \"sha256\": \"0d3258eac45b7a7f869b71e31bdc62980d6b8d3b421abb7ed6a41c3bf285f10e\"}\n{\"padding\": \"xxxxxxxxxx\", \"subject\": \"node-3b2748b16e\", \"values\": {\"retry_cap\": \"2365\"}}\n\n{\"source\": \"record-c6b761dfe3\", \"sha256\": \"e16c8021d8dc7c4b30f111abbd2bf1d0828c2eebc3d4f85f10782efc6382d40c\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-3b2748b16e\", \"values\": {\"cache_ttl\": \"202\"}}",
+      "selected": [
+        "record-5df23b7a12",
+        "record-8c73af40c7",
+        "record-c6b761dfe3"
+      ],
+      "units": 602,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-5df23b7a12",
+          "reason": "selected"
+        },
+        {
+          "source": "record-b364b8d2be",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-8c73af40c7",
+          "reason": "selected"
+        },
+        {
+          "source": "record-c6b761dfe3",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-17",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-062cedc65a\", \"sha256\": \"c9d369b9b887e936fdf0e469c08fae038f3f852c928ee8742be112b626e53679\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-553d797b3c\", \"values\": {\"cache_ttl\": \"2243\"}}\n\n{\"source\": \"record-6b5af2b30e\", \"sha256\": \"cf651b4154fa7c212bd1c19c434e9fa95e07c09a55afcd6cf544a827bbda7a44\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-553d797b3c\", \"values\": {\"retry_cap\": \"3341\"}}\n\n{\"source\": \"record-89a10002b5\", \"sha256\": \"8bd594b5e145519ab1af0112710054ccf6713abc24da370655c1bce8b7b77d33\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-553d797b3c\", \"values\": {\"window_ms\": \"559\"}}",
+      "selected": [
+        "record-062cedc65a",
+        "record-6b5af2b30e",
+        "record-89a10002b5"
+      ],
+      "units": 689,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-062cedc65a",
+          "reason": "selected"
+        },
+        {
+          "source": "record-89a10002b5",
+          "reason": "selected"
+        },
+        {
+          "source": "record-6b5af2b30e",
+          "reason": "selected"
+        },
+        {
+          "source": "record-178e4c3fe2",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-18",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-44ad52c74b\", \"sha256\": \"f74fae1d000e39f211c568d89f083d702ab31a376954d1ba5f661d846e13038a\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-10a95396c4\", \"values\": {\"sample_hz\": \"1416\"}}\n\n{\"source\": \"record-d3e1538b14\", \"sha256\": \"91025e344c6555125c17261e7048703d3a2818099f766d60b2154c78355e6933\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-10a95396c4\", \"values\": {\"retry_cap\": \"284\"}}\n\n{\"source\": \"record-f3b8b3a103\", \"sha256\": \"d7ef908f2f9331b4ced559795ae163abc1c76411d20b631ab55aa2f4c5db1faa\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-10a95396c4\", \"values\": {\"cache_ttl\": \"2126\"}}",
+      "selected": [
+        "record-44ad52c74b",
+        "record-d3e1538b14",
+        "record-f3b8b3a103"
+      ],
+      "units": 665,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-44ad52c74b",
+          "reason": "selected"
+        },
+        {
+          "source": "record-5970a0de9f",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-d3e1538b14",
+          "reason": "selected"
+        },
+        {
+          "source": "record-f3b8b3a103",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-19",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-2a78e6598f\", \"sha256\": \"3c2a69049e9050045eac627b4b0bdac21a3a23f2f835bd123e1c5473cbec5371\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-02bb1d2d1c\", \"values\": {\"queue_depth\": \"320\"}}\n\n{\"source\": \"record-58c937b4be\", \"sha256\": \"b6d59ec9672d95f103a61d9be7b23319d26ebd51daf362d36ec82abce9711773\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-02bb1d2d1c\", \"values\": {\"sample_hz\": \"1125\"}}\n\n{\"source\": \"record-dddd404f6e\", \"sha256\": \"826f1d511888f57307098931928c13c8d2fb341e9788d481af3f600bf72efe25\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-02bb1d2d1c\", \"values\": {\"retry_cap\": \"1938\"}}",
+      "selected": [
+        "record-2a78e6598f",
+        "record-58c937b4be",
+        "record-dddd404f6e"
+      ],
+      "units": 699,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-dddd404f6e",
+          "reason": "selected"
+        },
+        {
+          "source": "record-dc6afb23da",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-2a78e6598f",
+          "reason": "selected"
+        },
+        {
+          "source": "record-58c937b4be",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-20",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-d81e151f2d\", \"sha256\": \"d8e1d720b4bc0d619494d01e55aab6910b96b0d9654a40f3c24cdb72ee8fdc9a\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-62930f0e13\", \"values\": {\"retry_cap\": \"2466\"}}\n\n{\"source\": \"record-d9a11f0c42\", \"sha256\": \"55791c6a4b767c25f0c15d8c56b5388dc24be55192f0fdabe30a662443d3fee8\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-62930f0e13\", \"values\": {\"sample_hz\": \"465\"}}\n\n{\"source\": \"record-f042eb1cb5\", \"sha256\": \"94e5bca87360306931dbbb2be8af286c6180348e1c77f7223cbc9dfeee88ebd6\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-62930f0e13\", \"values\": {\"window_ms\": \"3427\"}}",
+      "selected": [
+        "record-d81e151f2d",
+        "record-d9a11f0c42",
+        "record-f042eb1cb5"
+      ],
+      "units": 669,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-d9a11f0c42",
+          "reason": "selected"
+        },
+        {
+          "source": "record-f042eb1cb5",
+          "reason": "selected"
+        },
+        {
+          "source": "record-e9c5ceffd7",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-d81e151f2d",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-21",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-36ce35bea7\", \"sha256\": \"fe5d9053221a27ac6ade05bde225552d7c5fb0325b4c4eedbc8fdf4b7b88e22f\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-89a77cc489\", \"values\": {\"cache_ttl\": \"2791\"}}\n\n{\"source\": \"record-44854798b2\", \"sha256\": \"560b9de9fbae34210827b3b84a6e9b3feb2cdfa29aac7cd363b6316399a9d64e\"}\n{\"padding\": \"xxxxxxxxxxxxxxx\", \"subject\": \"node-89a77cc489\", \"values\": {\"queue_depth\": \"601\"}}\n\n{\"source\": \"record-973ab836c5\", \"sha256\": \"8c0fa6451bd0088bed31036e41f3beb471da3f542336f4e33269cdbd61fca926\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-89a77cc489\", \"values\": {\"sample_hz\": \"2371\"}}",
+      "selected": [
+        "record-36ce35bea7",
+        "record-44854798b2",
+        "record-973ab836c5"
+      ],
+      "units": 643,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-81a495c3e5",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-36ce35bea7",
+          "reason": "selected"
+        },
+        {
+          "source": "record-44854798b2",
+          "reason": "selected"
+        },
+        {
+          "source": "record-973ab836c5",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-22",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-0ff29a69f0\", \"sha256\": \"67559df10ff9e57ca78ddc19c0b33fc7b555d846baf4724e3abffebca0366ad7\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-4e8390ca1c\", \"values\": {\"retry_cap\": \"3208\"}}\n\n{\"source\": \"record-650db04864\", \"sha256\": \"4ac2c9129f63ca72e6eb725b5c79dcff3e0e63c79202b6b4f86b3db64fd7d276\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-4e8390ca1c\", \"values\": {\"window_ms\": \"530\"}}\n\n{\"source\": \"record-7838ff6a3f\", \"sha256\": \"2dfa12d32942b9426a1256475949de1c721210bbb2df389db6ffc26641edca55\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-4e8390ca1c\", \"values\": {\"queue_depth\": \"3665\"}}",
+      "selected": [
+        "record-0ff29a69f0",
+        "record-650db04864",
+        "record-7838ff6a3f"
+      ],
+      "units": 636,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-147d928f51",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-0ff29a69f0",
+          "reason": "selected"
+        },
+        {
+          "source": "record-7838ff6a3f",
+          "reason": "selected"
+        },
+        {
+          "source": "record-650db04864",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-23",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-6906ed1c28\", \"sha256\": \"689945ec46a23b9289aa214cbef8caec19846fa9f06f473edb9e953862db2bb0\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-25317ac4ab\", \"values\": {\"sample_hz\": \"176\"}}\n\n{\"source\": \"record-a0d39871b8\", \"sha256\": \"49e516b8bb08c858732c097e4a3ec13e66487baddd073340b094d3a1872afa53\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxx\", \"subject\": \"node-25317ac4ab\", \"values\": {\"queue_depth\": \"3142\"}}\n\n{\"source\": \"record-f5364a933b\", \"sha256\": \"ceb86c41dd5b73831a282ec2a2dbc1d16138f18c8f718e32c25693b1577a934e\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-25317ac4ab\", \"values\": {\"window_ms\": \"3594\"}}",
+      "selected": [
+        "record-6906ed1c28",
+        "record-a0d39871b8",
+        "record-f5364a933b"
+      ],
+      "units": 675,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-6906ed1c28",
+          "reason": "selected"
+        },
+        {
+          "source": "record-d08538810d",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-f5364a933b",
+          "reason": "selected"
+        },
+        {
+          "source": "record-a0d39871b8",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-24",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-3c116b4592\", \"sha256\": \"6a492a4f3ac3d5ef9e818e21836f7af4d349a03deef921daaaef90f41b81a3c9\"}\n{\"padding\": \"xxxxx\", \"subject\": \"node-12d60d9da0\", \"values\": {\"queue_depth\": \"3299\"}}\n\n{\"source\": \"record-795529a661\", \"sha256\": \"db5b516869c571c9ba12243a3ff701785a51d447aa558983a1ca524ac469672a\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-12d60d9da0\", \"values\": {\"batch_size\": \"2808\"}}\n\n{\"source\": \"record-96756d5031\", \"sha256\": \"9e271d2f53f1c3c557f1f917dea44863d991144f2fc84ff59c5d2cee589642b7\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-12d60d9da0\", \"values\": {\"window_ms\": \"1360\"}}",
+      "selected": [
+        "record-3c116b4592",
+        "record-795529a661",
+        "record-96756d5031"
+      ],
+      "units": 638,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-795529a661",
+          "reason": "selected"
+        },
+        {
+          "source": "record-96756d5031",
+          "reason": "selected"
+        },
+        {
+          "source": "record-8110663cff",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-3c116b4592",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-25",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-366394f685\", \"sha256\": \"b4dc6a2daa8f6e2edf18ed983780568b189f2a291dc91fa4a89808ebd58a3805\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-38e9110876\", \"values\": {\"sample_hz\": \"73\"}}\n\n{\"source\": \"record-5a75e762ba\", \"sha256\": \"a06f41a548e142ea919622ba4dae1c11ed828588b879fffeaac35975fc1c3333\"}\n{\"padding\": \"x\", \"subject\": \"node-38e9110876\", \"values\": {\"retry_cap\": \"1411\"}}\n\n{\"source\": \"record-758bda0237\", \"sha256\": \"c244eee2b6d91ef8108030e3f7e0c6ca93ba249fe67ed287e4f0e0499137c2e3\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-38e9110876\", \"values\": {\"batch_size\": \"70\"}}",
+      "selected": [
+        "record-366394f685",
+        "record-5a75e762ba",
+        "record-758bda0237"
+      ],
+      "units": 646,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-758bda0237",
+          "reason": "selected"
+        },
+        {
+          "source": "record-7b28069530",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-366394f685",
+          "reason": "selected"
+        },
+        {
+          "source": "record-5a75e762ba",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-26",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-1f7d0367e8\", \"sha256\": \"c89e32fca693afb25c05239f8848689cd3aea988bab4a84c17e7f965bcfc87f9\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-e412372f28\", \"values\": {\"queue_depth\": \"1755\"}}\n\n{\"source\": \"record-361319bd04\", \"sha256\": \"e1d019879b5038ee52227581a84663415933525a04a5a7786f43f076f9062aa2\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-e412372f28\", \"values\": {\"window_ms\": \"637\"}}\n\n{\"source\": \"record-61286242b5\", \"sha256\": \"6ef422f7b57f235f4780a1522f0911e7bf8c3f9306ac517611f69be429a4bf51\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-e412372f28\", \"values\": {\"cache_ttl\": \"1873\"}}",
+      "selected": [
+        "record-1f7d0367e8",
+        "record-361319bd04",
+        "record-61286242b5"
+      ],
+      "units": 685,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-1f7d0367e8",
+          "reason": "selected"
+        },
+        {
+          "source": "record-361319bd04",
+          "reason": "selected"
+        },
+        {
+          "source": "record-61286242b5",
+          "reason": "selected"
+        },
+        {
+          "source": "record-06dc9f8f1a",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-27",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-8132dad2c2\", \"sha256\": \"8eb0aeb33ce114f1959ebfd88f8f6f402169ccdacd1ac99dbe250f8b3bb104cd\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-4a50e4007e\", \"values\": {\"window_ms\": \"1906\"}}\n\n{\"source\": \"record-829645c10e\", \"sha256\": \"cf9756cf8fb168e598bb9f6b6e208da4f86d74609b46fd4802b4a0c243b8666e\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-4a50e4007e\", \"values\": {\"sample_hz\": \"2379\"}}\n\n{\"source\": \"record-f1af567d16\", \"sha256\": \"a5f02328557e8df333a6c4c2e87d8cc1953b65aa3f994a5cdc70ca32afc695c4\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-4a50e4007e\", \"values\": {\"queue_depth\": \"3471\"}}",
+      "selected": [
+        "record-8132dad2c2",
+        "record-829645c10e",
+        "record-f1af567d16"
+      ],
+      "units": 638,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-f1af567d16",
+          "reason": "selected"
+        },
+        {
+          "source": "record-0ee823e086",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-8132dad2c2",
+          "reason": "selected"
+        },
+        {
+          "source": "record-829645c10e",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-28",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-39fb70ee57\", \"sha256\": \"06fb9fecd006896eaebbc5c2e165bb070b2558cf307068bb6366edea24bb5edb\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-765853a819\", \"values\": {\"sample_hz\": \"2826\"}}\n\n{\"source\": \"record-73b29790a1\", \"sha256\": \"a00fac1fe37576e45d098748f5d2bc224f40a2949e05d672fe2357c4d53ba5ee\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-765853a819\", \"values\": {\"retry_cap\": \"3233\"}}\n\n{\"source\": \"record-aa322b404b\", \"sha256\": \"f29d7fd9c07b395b5f96f083d191db5304e7c43bcbcb54bce88ab4d8431954f5\"}\n{\"padding\": \"xxxx\", \"subject\": \"node-765853a819\", \"values\": {\"window_ms\": \"1485\"}}",
+      "selected": [
+        "record-39fb70ee57",
+        "record-73b29790a1",
+        "record-aa322b404b"
+      ],
+      "units": 637,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-e6cc4f25a2",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-73b29790a1",
+          "reason": "selected"
+        },
+        {
+          "source": "record-aa322b404b",
+          "reason": "selected"
+        },
+        {
+          "source": "record-39fb70ee57",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-29",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-4388eb785e\", \"sha256\": \"c77e503f9407f47b76b7de524eac199fbee0325c78f5fdc9cb2b4d1023a98414\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-fbb5f7b78f\", \"values\": {\"cache_ttl\": \"3220\"}}\n\n{\"source\": \"record-780cdca955\", \"sha256\": \"4c58bcad743f560f7ce25260ee6dc69e1f43ce361b35277efbd38d5220efe3db\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-fbb5f7b78f\", \"values\": {\"queue_depth\": \"2177\"}}\n\n{\"source\": \"record-9416da9da5\", \"sha256\": \"487599d09884f0538b5456e748a5fc345908467d07e603b593f8d47ef132b775\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-fbb5f7b78f\", \"values\": {\"window_ms\": \"1928\"}}",
+      "selected": [
+        "record-4388eb785e",
+        "record-780cdca955",
+        "record-9416da9da5"
+      ],
+      "units": 721,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-9416da9da5",
+          "reason": "selected"
+        },
+        {
+          "source": "record-eba1b064dc",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-4388eb785e",
+          "reason": "selected"
+        },
+        {
+          "source": "record-780cdca955",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-30",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-03af17eb0d\", \"sha256\": \"c929e37d89deb342a4b9efc5bd35225ae1e0de9496a056db20776c9500e769ad\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-ed4c337822\", \"values\": {\"sample_hz\": \"553\"}}\n\n{\"source\": \"record-36a58ced1b\", \"sha256\": \"5f37d90086a1221c87bfb1002c0d070be1255375e521772e74b2ed44889cd33e\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-ed4c337822\", \"values\": {\"cache_ttl\": \"1799\"}}\n\n{\"source\": \"record-f17138008c\", \"sha256\": \"6c54bd3a7dbea6f2baf1df4d511010562be74e5a7057e0cdbf7ffe72f8eb5a08\"}\n{\"padding\": \"xxxxxxxxxxxxxx\", \"subject\": \"node-ed4c337822\", \"values\": {\"batch_size\": \"2631\"}}",
+      "selected": [
+        "record-03af17eb0d",
+        "record-36a58ced1b",
+        "record-f17138008c"
+      ],
+      "units": 680,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-f17138008c",
+          "reason": "selected"
+        },
+        {
+          "source": "record-36a58ced1b",
+          "reason": "selected"
+        },
+        {
+          "source": "record-98a85f86cd",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-03af17eb0d",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-31",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-65b643a11c\", \"sha256\": \"893911a1f42cdb10e7dd29c035ac037ed3193e6f5f39739c8c15c575b2d87748\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-3b56f0e4e6\", \"values\": {\"sample_hz\": \"1314\"}}\n\n{\"source\": \"record-8d77524b46\", \"sha256\": \"61100191edaec75c61ab491c23bedd5e15bbb34f289ed0045d152fb33350684a\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-3b56f0e4e6\", \"values\": {\"window_ms\": \"814\"}}\n\n{\"source\": \"record-f6243b5c77\", \"sha256\": \"86eb8010ebf2342913f4b6239332a292ea91c748c6a34eb2035c1bcfdf48a9b5\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-3b56f0e4e6\", \"values\": {\"queue_depth\": \"912\"}}",
+      "selected": [
+        "record-65b643a11c",
+        "record-8d77524b46",
+        "record-f6243b5c77"
+      ],
+      "units": 714,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-7847137828",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-f6243b5c77",
+          "reason": "selected"
+        },
+        {
+          "source": "record-8d77524b46",
+          "reason": "selected"
+        },
+        {
+          "source": "record-65b643a11c",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-32",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-016534ca99\", \"sha256\": \"486c27d39b2e6b5dd9ed7f61b78f559ba2f13ee806294d5554bbd782cf4004dd\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-ca0fc4d376\", \"values\": {\"retry_cap\": \"916\"}}\n\n{\"source\": \"record-c9b8d3f662\", \"sha256\": \"354a380e641238fb4c5566202bfb21c8ccbfa1199cf70e5b7cc6126429277de4\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-ca0fc4d376\", \"values\": {\"window_ms\": \"4093\"}}\n\n{\"source\": \"record-efe3a7e1d2\", \"sha256\": \"052e0ef7c3876ad2f7d3f34da06a357b67749d94697976bc8caa2b13e65743c0\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-ca0fc4d376\", \"values\": {\"batch_size\": \"1792\"}}",
+      "selected": [
+        "record-016534ca99",
+        "record-c9b8d3f662",
+        "record-efe3a7e1d2"
+      ],
+      "units": 697,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-efe3a7e1d2",
+          "reason": "selected"
+        },
+        {
+          "source": "record-016534ca99",
+          "reason": "selected"
+        },
+        {
+          "source": "record-1d18eb8072",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-c9b8d3f662",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-33",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-15d9d116b3\", \"sha256\": \"972d9aafd4a6cdcf60384cfcc63a503bb3b688262fefb0793517579a3878b6b6\"}\n{\"padding\": \"xxxxxxxxxxx\", \"subject\": \"node-395df4a6c1\", \"values\": {\"cache_ttl\": \"1670\"}}\n\n{\"source\": \"record-8a09ec790f\", \"sha256\": \"f6449861cd3780439d58bc88b4002ee679e5fae84575ea6849f20a04a9bda4c4\"}\n{\"padding\": \"xxxxxxxxx\", \"subject\": \"node-395df4a6c1\", \"values\": {\"batch_size\": \"1623\"}}\n\n{\"source\": \"record-e9240d94fe\", \"sha256\": \"bc1eb7e5c3b15f9054851547da536f332bc368c127710534c320b036e90b1067\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-395df4a6c1\", \"values\": {\"retry_cap\": \"3035\"}}",
+      "selected": [
+        "record-15d9d116b3",
+        "record-8a09ec790f",
+        "record-e9240d94fe"
+      ],
+      "units": 619,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-15d9d116b3",
+          "reason": "selected"
+        },
+        {
+          "source": "record-8a09ec790f",
+          "reason": "selected"
+        },
+        {
+          "source": "record-f1ad816211",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-e9240d94fe",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-34",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-33198b01b4\", \"sha256\": \"b3080f2efcb100a454021cad7812184a270f8d2658cfc6562dc5808aa3236c3e\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-36c7f921da\", \"values\": {\"retry_cap\": \"2142\"}}\n\n{\"source\": \"record-a473d58ec3\", \"sha256\": \"724c682fc0f0d54161e243ce67f7fc401c59527b971831c3071e139f60ce4f66\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-36c7f921da\", \"values\": {\"cache_ttl\": \"4051\"}}\n\n{\"source\": \"record-c6782383b0\", \"sha256\": \"e9e32289b8aec72b3963e9c3c9dc478f930056936d1a5135dd725a8869ae7163\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-36c7f921da\", \"values\": {\"window_ms\": \"2416\"}}",
+      "selected": [
+        "record-33198b01b4",
+        "record-a473d58ec3",
+        "record-c6782383b0"
+      ],
+      "units": 657,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-a473d58ec3",
+          "reason": "selected"
+        },
+        {
+          "source": "record-33198b01b4",
+          "reason": "selected"
+        },
+        {
+          "source": "record-bb15ab2444",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-c6782383b0",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-35",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-4cae881449\", \"sha256\": \"afa2776a98e2a415764d63bf64276486b1b1dc5963199925117728b016c690f7\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-2776b2a94f\", \"values\": {\"cache_ttl\": \"1644\"}}\n\n{\"source\": \"record-b5f983a89f\", \"sha256\": \"603a517d206cfbad269aa3057ea09e24fb69b886627b37b879ea315e718781ed\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-2776b2a94f\", \"values\": {\"sample_hz\": \"1568\"}}\n\n{\"source\": \"record-c61402bdfc\", \"sha256\": \"24aca5b69cd4b0ebc9e728043d600c14448ac20e653b1d044c90f9435f3b3a3b\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-2776b2a94f\", \"values\": {\"retry_cap\": \"3043\"}}",
+      "selected": [
+        "record-4cae881449",
+        "record-b5f983a89f",
+        "record-c61402bdfc"
+      ],
+      "units": 713,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-82309039e5",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-b5f983a89f",
+          "reason": "selected"
+        },
+        {
+          "source": "record-4cae881449",
+          "reason": "selected"
+        },
+        {
+          "source": "record-c61402bdfc",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-36",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-267df2e1f8\", \"sha256\": \"583895d4b644683bcc6bad6d9a9ba8c28ba1aefa84e80f01532249ee8df2fb6d\"}\n{\"padding\": \"xxxxxxx\", \"subject\": \"node-77c89c4349\", \"values\": {\"queue_depth\": \"2822\"}}\n\n{\"source\": \"record-781ab91e50\", \"sha256\": \"f0b0e90e5514389d2d9cf781b973f03a1f989ba05f0fb4e019a03b8f7c7bcbb9\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-77c89c4349\", \"values\": {\"cache_ttl\": \"3094\"}}\n\n{\"source\": \"record-960a392935\", \"sha256\": \"af5b0768ec618fa9c7a661999d7cc6090d92d2f3b027907befa7dd1275fe2b76\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-77c89c4349\", \"values\": {\"batch_size\": \"1270\"}}",
+      "selected": [
+        "record-267df2e1f8",
+        "record-781ab91e50",
+        "record-960a392935"
+      ],
+      "units": 648,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-267df2e1f8",
+          "reason": "selected"
+        },
+        {
+          "source": "record-781ab91e50",
+          "reason": "selected"
+        },
+        {
+          "source": "record-960a392935",
+          "reason": "selected"
+        },
+        {
+          "source": "record-b5f39dfe5b",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-37",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-02b27a034e\", \"sha256\": \"69dd5b693f877550214029ab3ec7178b768819927ac2abc87c9dd4857aea3eae\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-a7f4ee3150\", \"values\": {\"retry_cap\": \"2178\"}}\n\n{\"source\": \"record-1c8338e834\", \"sha256\": \"47450d88882896cf6611b3baf0200162e045c7f53c9d4fb4e94c3854e743d288\"}\n{\"padding\": \"xxxxxxxxx\", \"subject\": \"node-a7f4ee3150\", \"values\": {\"queue_depth\": \"677\"}}\n\n{\"source\": \"record-a4ac4f0922\", \"sha256\": \"5bc6ac1074605c63bfdeb7d4ff9543815f489d80f590387809e1f16eac44fe0b\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-a7f4ee3150\", \"values\": {\"batch_size\": \"1195\"}}",
+      "selected": [
+        "record-02b27a034e",
+        "record-1c8338e834",
+        "record-a4ac4f0922"
+      ],
+      "units": 652,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-a4ac4f0922",
+          "reason": "selected"
+        },
+        {
+          "source": "record-02b27a034e",
+          "reason": "selected"
+        },
+        {
+          "source": "record-1c8338e834",
+          "reason": "selected"
+        },
+        {
+          "source": "record-8eb836a387",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-38",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-1ecab107d5\", \"sha256\": \"3864bf38eb5d4d567900e6e6ef4eb511d405dc915bd97f1b21c6ffb0c41a4884\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-c27bafee6c\", \"values\": {\"batch_size\": \"1071\"}}\n\n{\"source\": \"record-528256c410\", \"sha256\": \"361470ee855a352d14dd671fa21bb38137734a9e59fd3c5a23a2361c85b8171e\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxxxxxxxxxxxxxx\", \"subject\": \"node-c27bafee6c\", \"values\": {\"cache_ttl\": \"1852\"}}\n\n{\"source\": \"record-5e78507583\", \"sha256\": \"c48ceffbcdbfe5f56b5b8f6ce45635ee0114b3c814e5ce9ab4a7c72a957a6719\"}\n{\"padding\": \"xxxxxxxxxxxxxxxxx\", \"subject\": \"node-c27bafee6c\", \"values\": {\"retry_cap\": \"3590\"}}",
+      "selected": [
+        "record-1ecab107d5",
+        "record-528256c410",
+        "record-5e78507583"
+      ],
+      "units": 624,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-528256c410",
+          "reason": "selected"
+        },
+        {
+          "source": "record-5e78507583",
+          "reason": "selected"
+        },
+        {
+          "source": "record-1ecab107d5",
+          "reason": "selected"
+        },
+        {
+          "source": "record-674f042e9a",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "complete-39",
+    "scenario": "complete",
+    "expected_answer": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"record-2dfe7d08ff\", \"sha256\": \"a05ad91f6b66ba6e7d2fd9e3c84872847323317d22e011789f5a018aeadee0de\"}\n{\"padding\": \"xx\", \"subject\": \"node-e90a3b08c5\", \"values\": {\"window_ms\": \"3197\"}}\n\n{\"source\": \"record-7211d7bad4\", \"sha256\": \"1fdb113880e861e38925c7c6cf85f2aa516b5681e364845238d0056e95de2e5c\"}\n{\"padding\": \"xxxxxxx\", \"subject\": \"node-e90a3b08c5\", \"values\": {\"sample_hz\": \"1950\"}}\n\n{\"source\": \"record-f9cb9e53f0\", \"sha256\": \"018031834720fb7ca04a3776364ad69522b175fb38108ae7fa3abbd7720f8dcd\"}\n{\"padding\": \"duplicate\", \"subject\": \"node-e90a3b08c5\", \"values\": {\"queue_depth\": \"755\"}}",
+      "selected": [
+        "record-2dfe7d08ff",
+        "record-7211d7bad4",
+        "record-f9cb9e53f0"
+      ],
+      "units": 587,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-7211d7bad4",
+          "reason": "selected"
+        },
+        {
+          "source": "record-2dfe7d08ff",
+          "reason": "selected"
+        },
+        {
+          "source": "record-bb1c732371",
+          "reason": "not_needed"
+        },
+        {
+          "source": "record-f9cb9e53f0",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-0",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-601c9081cd",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-1",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-b3822b4ac9",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-2",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-2772581894",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-3",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-5a1f303a69",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-4",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-36fc08e996",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-5",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-8274b0550d",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-6",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-620e5f48b4",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-7",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-fc4f3d6bf7",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-8",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-696ce510d3",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-9",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-0f645450a6",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-10",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-7193c26769",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-11",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-63ef2eab82",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-12",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-c5855f5ac4",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-13",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-63d86b672a",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-14",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-f5ea06091d",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-15",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-923825f5c5",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-16",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-7ac9a82548",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-17",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-05826a4a6e",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-18",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-f2e62c57bf",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-19",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-2ba5e1108c",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-20",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-3d99958a94",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-21",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-9d299b92cf",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-22",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-d3ff9b8533",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-23",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-613277efdc",
+          "attribute": "retry_cap"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-24",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-d365b2a11b",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-25",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-5408bcee02",
+          "attribute": "retry_cap"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-26",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-ee73eb3b83",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-27",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-e12830c3e9",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-28",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-f7d4437be7",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-29",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-b9e7af7e0f",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-30",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-ae0c1871a0",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-31",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-19635e2d77",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-32",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-2cc1480b7b",
+          "attribute": "retry_cap"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-33",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-c6f96831ab",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-34",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-0a325da83f",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-35",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-701e4b7b69",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-36",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-45b34f91e7",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-37",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-90930aed2c",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-38",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-06d9f48aa4",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "missing-39",
+    "scenario": "missing",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-ba84c469b7",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-0",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-1",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-2",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-3",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-4",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-5",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-6",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-7",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-8",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-9",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-10",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-11",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-12",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-13",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-14",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-15",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-16",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-17",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-18",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-19",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-20",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-21",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-22",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-23",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-24",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-25",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-26",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-27",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-28",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-29",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-30",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-31",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-32",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-33",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-34",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-35",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-36",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-37",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-38",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "budget-39",
+    "scenario": "budget",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 10,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-0",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-3bb06d1685",
+          "attribute": "queue_depth",
+          "values": [
+            "3186",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-1",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-7557105a55",
+          "attribute": "window_ms",
+          "values": [
+            "746",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-2",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-61709f2a19",
+          "attribute": "retry_cap",
+          "values": [
+            "186",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-3",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-eff6bde51a",
+          "attribute": "cache_ttl",
+          "values": [
+            "3123",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-4",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-b389431310",
+          "attribute": "retry_cap",
+          "values": [
+            "2563",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-5",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-4c8d5a0460",
+          "attribute": "window_ms",
+          "values": [
+            "3302",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-6",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-d8f9802208",
+          "attribute": "batch_size",
+          "values": [
+            "401",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-7",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-bf026052bf",
+          "attribute": "batch_size",
+          "values": [
+            "2283",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-8",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-e6dc536a30",
+          "attribute": "window_ms",
+          "values": [
+            "807",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-9",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-e87479913a",
+          "attribute": "sample_hz",
+          "values": [
+            "4069",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-10",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-e82a722e1a",
+          "attribute": "queue_depth",
+          "values": [
+            "304",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-11",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-face9e4d23",
+          "attribute": "queue_depth",
+          "values": [
+            "3530",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-12",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-c8a95beba3",
+          "attribute": "retry_cap",
+          "values": [
+            "1518",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-13",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-6efe12ba2e",
+          "attribute": "queue_depth",
+          "values": [
+            "476",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-14",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-5335b3f72f",
+          "attribute": "window_ms",
+          "values": [
+            "2274",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-15",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-361b1d532e",
+          "attribute": "cache_ttl",
+          "values": [
+            "2387",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-16",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-89f5f56e4f",
+          "attribute": "retry_cap",
+          "values": [
+            "3",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-17",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-85c431ad1d",
+          "attribute": "queue_depth",
+          "values": [
+            "3223",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-18",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-134392044b",
+          "attribute": "window_ms",
+          "values": [
+            "942",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-19",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-335f17b774",
+          "attribute": "batch_size",
+          "values": [
+            "936",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-20",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-1426400c4a",
+          "attribute": "cache_ttl",
+          "values": [
+            "2108",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-21",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-a443d32260",
+          "attribute": "sample_hz",
+          "values": [
+            "1565",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-22",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-7e027cac61",
+          "attribute": "sample_hz",
+          "values": [
+            "2646",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-23",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-677f37fb66",
+          "attribute": "queue_depth",
+          "values": [
+            "2799",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-24",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-5130e42ed4",
+          "attribute": "queue_depth",
+          "values": [
+            "802",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-25",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-30ca89863a",
+          "attribute": "cache_ttl",
+          "values": [
+            "2009",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-26",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-0cad80cae2",
+          "attribute": "batch_size",
+          "values": [
+            "3182",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-27",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-646f91e8df",
+          "attribute": "queue_depth",
+          "values": [
+            "3561",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-28",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-3aeb3e73f0",
+          "attribute": "retry_cap",
+          "values": [
+            "928",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-29",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-04dc05325d",
+          "attribute": "cache_ttl",
+          "values": [
+            "908",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-30",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-e6c63118b1",
+          "attribute": "window_ms",
+          "values": [
+            "1736",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-31",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-6cf7a9bb75",
+          "attribute": "retry_cap",
+          "values": [
+            "2352",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-32",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-496c7fa22b",
+          "attribute": "queue_depth",
+          "values": [
+            "177",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-33",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-2d564970c5",
+          "attribute": "queue_depth",
+          "values": [
+            "141",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-34",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-51f835b77b",
+          "attribute": "sample_hz",
+          "values": [
+            "3457",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-35",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-9c6f40cbc9",
+          "attribute": "queue_depth",
+          "values": [
+            "3299",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-36",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-dff946c18e",
+          "attribute": "cache_ttl",
+          "values": [
+            "2824",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-37",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-4c17d02fc2",
+          "attribute": "window_ms",
+          "values": [
+            "87",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-38",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-e4ade99b6d",
+          "attribute": "batch_size",
+          "values": [
+            "2070",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "conflict-39",
+    "scenario": "conflict",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [],
+      "conflicts": [
+        {
+          "subject": "node-f602567aea",
+          "attribute": "window_ms",
+          "values": [
+            "218",
+            "different"
+          ]
+        }
+      ],
+      "decisions": [
+        {
+          "reason": "conflicting_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-0",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-371dd68df4",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-7d4b56c6ab",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-1",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-b11e0b7be1",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-4df9b1a8a9",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-2",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-5475d91485",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-4ff50ac1cf",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-3",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-d7fe09133e",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-c773ffee55",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-4",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-45e5f04653",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-b3d2fffd57",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-5",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-f7d457578c",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-9b1bd92e01",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-6",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-e3f3eda4e9",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-137d43525d",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-7",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-45b8dea8e5",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-033ca232e8",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-8",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-e353069cbc",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-fbc172bed5",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-9",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-f999944d6c",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-6ff8928cec",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-10",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-fc5c46a34b",
+          "attribute": "retry_cap"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-49a8cfe851",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-11",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-0adf1a49fd",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-9938fd4d26",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-12",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-d2883e2158",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-93f7938c5f",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-13",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-8de1f68e26",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-42e3113b47",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-14",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-2b0237e04f",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-03342b84a6",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-15",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-46082b4ed3",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-c512d9c6d7",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-16",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-9101e2d4aa",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-a433f3b152",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-17",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-6ff41af0bd",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-407f0ecbbd",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-18",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-269b63004e",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-2a3fa89abd",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-19",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-6a1e16d8bf",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-0a19e47045",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-20",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-131ed89d48",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-659f57bbe2",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-21",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-1e6fcba4a0",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-b544ba0974",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-22",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-0ea6a5e70b",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-6cd2e96d8a",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-23",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-20927601ae",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-24c5507341",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-24",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-92be4bcb40",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-ab18d29532",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-25",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-844635fcfa",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-55387b8cf1",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-26",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-d8b437d010",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-ba657bff6a",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-27",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-4bc762cf20",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-ec0bc2d30e",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-28",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-42931351c3",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-c4782ef893",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-29",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-aa9b418c29",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-b128fde2e3",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-30",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-0b84199aa9",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-c2123ed611",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-31",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-a38a8a711f",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-dbca262964",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-32",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-201cfa1f22",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-f430ca5358",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-33",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-c23a3465d8",
+          "attribute": "retry_cap"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-a6c09c3985",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-34",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-4dcf9f7865",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-efa8f69d3c",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-35",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-bd0ff42724",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-8d379af5ff",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-36",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-bf61b78230",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-229145630a",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-37",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-71ae43ed3b",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-caf0226d08",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-38",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-08701ec44f",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-413d4c96ad",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_metadata-39",
+    "scenario": "stale_metadata",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-099102bfe5",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-2f1b6a2087",
+          "reason": "claim_digest_mismatch"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-0",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-1fb85a6103",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-525731b8e1",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-1",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-c5775ed418",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-b15a1625d4",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-2",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-f19ac60692",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-bdbb5ad69c",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-3",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-479c80090b",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-f075ab91f3",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-4",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-cae5c0c810",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-1e88735968",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-5",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-71586eaea9",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-834f7c88d7",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-6",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-7f3467fac8",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-cedf68d9c9",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-7",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-215ad8963e",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-ae79243a48",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-8",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-6cec09c164",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-6f1647de15",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-9",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-302acd9c60",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-55c964e432",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-10",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-31c08e53ea",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-86717721e1",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-11",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-1bf4d6a6c9",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-2cae0ba9d6",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-12",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-9952ab7031",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-29c6900cf5",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-13",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-5e753cfa6a",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-e496c950e5",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-14",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-f043566dbb",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-39e60f327c",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-15",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-788fe1c574",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-26164b7348",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-16",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-c560dd2e95",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-8bbff3ecc4",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-17",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-e7500e4e10",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-0aebf7d448",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-18",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-77658d0ec1",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-4e7addd40a",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-19",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-970ca4668f",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-1e02c5de1e",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-20",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-70059a4e8f",
+          "attribute": "retry_cap"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-88d6a15920",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-21",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-919efa9055",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-0a61ef91f2",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-22",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-e82c134de9",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-c275c3f3db",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-23",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-7116c06dd3",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-11ea324f5b",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-24",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-68dac1dd6b",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-248ceba4d5",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-25",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-9e4f362642",
+          "attribute": "retry_cap"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-07447a096a",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-26",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-47764a8d0c",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-b491dbb200",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-27",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-acf3230570",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-603f00a861",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-28",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-2dca753a49",
+          "attribute": "retry_cap"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-9bcc917103",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-29",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-02dd352576",
+          "attribute": "window_ms"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-a349d73507",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-30",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-ee8be7a7dc",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-32c26cfadc",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-31",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-3ad75989a6",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-88b130b260",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-32",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-cdfee7658b",
+          "attribute": "sample_hz"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-dfcf863e1b",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-33",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-dd8d4b4aef",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-ce205a9c85",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-34",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-d3448e850b",
+          "attribute": "queue_depth"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-b1d5da43ca",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-35",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-90301ee53d",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-802dbb9881",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-36",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-47de24ef68",
+          "attribute": "cache_ttl"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-4d1df01b84",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-37",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-7c48992f3f",
+          "attribute": "retry_cap"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-540355eb30",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-38",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-47cf454171",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-68e4be7a0a",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "stale_source-39",
+    "scenario": "stale_source",
+    "expected_answer": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 1800,
+      "missing": [
+        {
+          "subject": "node-ac5395ecb1",
+          "attribute": "batch_size"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "record-34af44ccf2",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  }
+]

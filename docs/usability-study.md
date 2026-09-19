@@ -54,3 +54,14 @@ For each task report the participant count, unassisted completions, assisted com
 Ask for explicit permission before publishing a quote or individual response. The default is a short aggregate report containing no identifying details. Keep private feedback only as long as needed for this study and honor deletion requests. Prefer privately supplied feedback over a public issue when confidentiality is uncertain.
 
 Prioritize fixes that unblock task completion. Repeat affected tasks with new participants after changes. Do not claim “easy to use” from the maintainer's own installation test alone.
+
+## Private spherical-candidate extension
+
+Use a clean environment and an authorized checkout. Do not invite or contact anyone automatically; the owner will invite developers.
+
+1. Install the package, run `scqr encode examples/facets.json`, and explain which bytes require a shared schema.
+2. Run `examples/spherical_workflow.py`. Change a contract's text without changing its declared revision and observe whether a dependent handoff refuses stale relationship bindings.
+3. Create two candidates with the same stamp but different entity metadata. Use `activate_constrained` and record whether only the requested entity is selected.
+4. Compare the same task using exact-field filtering alone. Record implementation time, mistakes, unresolved questions and whether spherical scores added any useful information.
+
+Record task completion, time, errors and a short explanation in the existing feedback template. Distinguish a documentation problem from a model/retrieval failure. No external participant results have been collected.

@@ -1,0 +1,10 @@
+{
+  "activation-summary.json": "a26d626d6e6f958f58e14496c062fc1c867f8d55cbb1cdc5fec2806edd5c37ad",
+  "activation.json": "ed35b944463bd445b3130125dee85eab19febb2c059c8bdd1bedb414730e6065",
+  "calibration.json": "a920fabda7d7f26a4820847630da15336eb6abc96ea395d30fe4ab5901993754",
+  "manifest.json": "2aa4da3336535f4ddae7c818d8b0e622a9bff9d48a0751542099c28137e9eecb",
+  "protocol.json": "e913eff2c80b8c288cab04f6f72ec752fb6508f7f3ab925d689a310506b686ca",
+  "slm-fixtures.json": "cccadda65bc3a63b6c64ddd0317304a781a6b2bfdad572992f5977886cca5b06",
+  "slm-results.json": "7e5a2aad7dab21e6fc5977da5322b32f2aa33ef2e481a79a01c9d1646d9353fa",
+  "slm-summary.json": "e727e73a71cd7fce40c166996d93764e950e1f36f2f1f6e63b2abf834ac01517"
+}

@@ -1,0 +1,9 @@
+{
+  "status": "diagnostic pilot superseded by multimodal-v2",
+  "completed_calls": 24,
+  "video": "not run in v1",
+  "issues": [
+    "Image pipeline import failed before generation due to missing get_cached_repo_tree in older inherited Hugging Face runtime; fixed only in isolated test environment.",
+    "v1 routing_ms excluded per-call candidate/graph preparation. Do not label its sum with generation_ms as complete end-to-end time. v2 starts the timer before all preparation."
+  ]
+}

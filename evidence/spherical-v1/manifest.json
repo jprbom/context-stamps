@@ -61,9 +61,13 @@
   "git_parent": "71363b8a70d35f2fe188e5bdebe6796beb0874ce",
   "source_sha256": {
     "context_stamps/spherical.py": "322a75ed65ef3a5481ec70db7ee262fb1d34b9530bf431201e2b9325dce617b1",
-    "context_stamps/workflow.py": "554d988db35f0b4a071978adba7b89ed34673f08a77b310ac65cc1f67ff08916",
     "context_stamps/facet_model.py": "74172d0ed169303037ee01c9fec3cf9edd1dc718d52095fd3f977b2ff362e421",
     "experiments/run_spherical.py": "a0dc6fc3a62a0dcf2c24b0f28593f5be1f1d650286307869a5ddf84158439579",
-    "stamps.py": "1eff83406ee64c45aba5916231f6af22404683ee93d9dfbf51ca44b53c1ee87f"
-  }
+    "stamps.py": "1eff83406ee64c45aba5916231f6af22404683ee93d9dfbf51ca44b53c1ee87f",
+    "evidence/source-snapshots/workflow-554d988db35f0b4a071978adba7b89ed34673f08a77b310ac65cc1f67ff08916.py": "554d988db35f0b4a071978adba7b89ed34673f08a77b310ac65cc1f67ff08916"
+  },
+  "recorded_source_paths": {
+    "evidence/source-snapshots/workflow-554d988db35f0b4a071978adba7b89ed34673f08a77b310ac65cc1f67ff08916.py": "context_stamps/workflow.py"
+  },
+  "source_snapshot_note": "Preserved exact original workflow source before the capacity-boundary revalidation fix. Current regression tests cover the fixed implementation."
 }

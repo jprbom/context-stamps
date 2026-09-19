@@ -1,0 +1,5427 @@
+[
+  {
+    "case": "code-test-000",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"0addf87ddfb671f51dc8aa679f0e494b120fe9ae0a3b40f2a1b361dcb01d07b7\"}\nFor service_511666, configure timeout: 47 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"403869be49f6d09c32f9a466d476f3c98d328a579b2535d967f5fdb9150f85ef\"}\nFor service_511666, configure retries: 37 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-001",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"977b58ef4258fb70b934f6ee7583a52c0b458319c5a25c2f22e955afadb03e8f\"}\nFor service_482348, configure timeout: 71 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"bff5abf9e39fcaafd7c50f3348b4c7706d97bac5e588f758872c0a8211ddacdc\"}\nFor service_482348, configure retries: 77 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-002",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-003",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "service_976089",
+          "attribute": "retries"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-004",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"8c0c3dbdfe853a6e8c0300997c1d18bbfe834d6292c77f7a0c7c6c61f3830781\"}\nFor service_880529, configure timeout: 16 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"a4a84490df65334dcd30de0df91cb4352fcc6ebd049dff2b9fa928586a74cb42\"}\nFor service_880529, configure retries: 54 attempts.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-005",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"7ebf7168ffa0e3d5a0627d1a0c3ab61bb4988e2f5754d00c722265c4ef3bfed6\"}\nFor service_114521, configure timeout: 23 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"82d8fecf54d38299a80bb491cc098b18447d193de185d1bd9846dc2f001dbacd\"}\nFor service_114521, configure retries: 72 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-006",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"702a26e2f33396b0dfc35e9ff6b689cd0805984fdc248cf58085e0f65be97992\"}\nFor service_695327, configure timeout: 44 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"33793ceff999e71d262a7113f90e5b76b5404efe8801ebba5d1171e07c3085d5\"}\nFor service_695327, configure retries: 47 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-007",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"aff5c0ea75c3de64cfd20d22c93313b94cf2aef233eb7958cdf50e9dc674fda2\"}\nFor service_445026, configure timeout: 42 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"939479259cf05318a87ee81e9de055fd9d30a631184e2354a6be13a1341dd0cc\"}\nFor service_445026, configure retries: 41 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-008",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-009",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "service_228800",
+          "attribute": "retries"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-010",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"d761ee5d2ac6b21fe4588cc9d036ac825b43698b670cc113f675003b6fe11ce4\"}\nFor service_519436, configure timeout: 29 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"a2640018518bc4c1ea5885081816b3447700ecb911beff3d22952a92a49319ce\"}\nFor service_519436, configure retries: 48 attempts.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-011",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"b318c9c3daad0d5e6d16b21e4ad956c4d3af7111684526809a4a18341645c3b4\"}\nFor service_344905, configure timeout: 74 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"5cd3619e4c54f5808ed360edae6125b3434583d4e71387d8d5dd4b11ed071fec\"}\nFor service_344905, configure retries: 73 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-012",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"cc6c04256ef7890652c260449c7072826902344785cf52afac35ed36d7c896e1\"}\nFor service_151003, configure timeout: 8 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"e38c557f70d2a1ac756301942557d9425e55429d315dcc5437bba7d277979a70\"}\nFor service_151003, configure retries: 20 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 315,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-013",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"34a878432db7419784dedf6c12ed7bb7923cc3ab4d336ad22edcf8b3bdb64cb9\"}\nFor service_960154, configure timeout: 2 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"071a40319ba92e7727071480d1e1813896a48d1e7b84b70e545e5c98b62b44a9\"}\nFor service_960154, configure retries: 45 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 315,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-014",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-015",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "service_409313",
+          "attribute": "retries"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-016",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"e8b917e2e4dadd86f099d69b3742074685dfbeab6d1a5aa6ac2888686a76c59f\"}\nFor service_856800, configure timeout: 61 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"16236e5aa5797a1dc421e2388723c6fd3900aeadc81166b16fc318f839b240f0\"}\nFor service_856800, configure retries: 66 attempts.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-017",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"d4e6b66e612e5bc9789d0ccfb2242e90c647c0c56bca22ee4cfe5a7d97da916a\"}\nFor service_177309, configure timeout: 18 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"10fb00d4e2807dc0e9dbcfa44e63f4aec04e0ec2fef5a20eb0c99626d153e705\"}\nFor service_177309, configure retries: 2 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 315,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-018",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"04d7eea03d1c55e26f2bcdb051ed7d462dc836479754462f4a4de55c7dbc1085\"}\nFor service_875077, configure timeout: 13 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"3a72f75a237da6317907862e4a1eac3ac9c8c679b7bc400c6862f77ef59576f5\"}\nFor service_875077, configure retries: 4 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 315,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-019",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"13ede61fce63f504f7c54f7c0f30e561b9550c2dcdf53f85b8d52d71b75b145e\"}\nFor service_899045, configure timeout: 53 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"ea0c754beb72a147bf6a248ac4c1ce271f5ce833c1742ca292d8273914c581f6\"}\nFor service_899045, configure retries: 60 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-020",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-021",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "service_143682",
+          "attribute": "retries"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-022",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"9320636dc7ec9888138ec1b0bb2683d65ff4cdd924e852a6cbe621288cfa6f1f\"}\nFor service_552500, configure timeout: 31 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"970e638ce57acbd62c97ec8fd856e5b35a8f01ea8c079c034a2d36a0dcd23730\"}\nFor service_552500, configure retries: 5 attempts.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 315,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-023",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"3377d7973c81e073bdd194ca412fb9df70796e55bae3574b72f6b40695f03c2c\"}\nFor service_481386, configure timeout: 68 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"3bc08e5b8975c401a6ea1b9c1e858132c1b1f094dc43817adb973b8b4f2f0f8a\"}\nFor service_481386, configure retries: 62 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-024",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"609066578d013fb622b9ae2b46ee05ecca793edc4d247339ed655309c7b316da\"}\nFor service_453191, configure timeout: 48 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"234ccb7d55c895f23e9ffbae033164f239a08cf47938b8b66f5dd18b6ebbb6e9\"}\nFor service_453191, configure retries: 71 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-025",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"30a5364eb8b390f64944f8df2bfb0c4fade89b0deb7150259b78a507a1fb067b\"}\nFor service_448985, configure timeout: 68 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"fd156693b31ba5ce26688509d2d5ac803298e80e86c67d95b1d237b164058301\"}\nFor service_448985, configure retries: 69 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-026",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-027",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "service_441793",
+          "attribute": "retries"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-028",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"1e0898ddee8e4760c98c4afb3c24614243606fc5f1478d225949d0a468f5c7da\"}\nFor service_808426, configure timeout: 51 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"32287ec86bbb77aef1e4da40591e309691d4c65337c6308243db682bc5e48e8d\"}\nFor service_808426, configure retries: 51 attempts.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "code-test-029",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"ad77516426ab5fd6e6b8f27008ac1f8100e78764575de62dbf93ce6e2f98d18d\"}\nFor service_628921, configure timeout: 73 milliseconds.\n\n{\"source\": \"document-03\", \"sha256\": \"492a899dad368c92070d74968f0d088d6acca8acc4d14215a5441d2470697723\"}\nFor service_628921, configure retries: 18 attempts.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 316,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-000",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"32d3bd5a0c5dc9d2d7f40d3b35919b6e2e304db49db330ca8656ce8c0a70f10b\"}\nFor product_551510, configure warranty: 20 months.\n\n{\"source\": \"document-03\", \"sha256\": \"223df2bb95fbdcff0d2d3b66737d92d69e2587be763e451ef35f0b7989e24b97\"}\nFor product_551510, configure returns: 5 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 306,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-001",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"a12c8fd299c38b60c9eb85b8c0b02355589e32a6f79f24723e31f517456cd9a1\"}\nFor product_835914, configure warranty: 22 months.\n\n{\"source\": \"document-03\", \"sha256\": \"28132ac595f7064bd332bf381b94bc9515d607141abd412d30d828414e35aac0\"}\nFor product_835914, configure returns: 38 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-002",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-003",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "product_818652",
+          "attribute": "returns"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-004",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"383b5298d99c197cd934a0636b5b99356f72324d8f92f235758c1a9ffd4a0ed0\"}\nFor product_693980, configure warranty: 26 months.\n\n{\"source\": \"document-03\", \"sha256\": \"5f6aa530386331834d675aae18e359b4e0445ef80649ff693295244bd2840f28\"}\nFor product_693980, configure returns: 71 days.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-005",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"a8a58841f18ff57f18ac5a707cac2d3e85f4273afa4ecdc95a3e6df5d5992c19\"}\nFor product_173974, configure warranty: 59 months.\n\n{\"source\": \"document-03\", \"sha256\": \"0554baaee89e3753d5ec6467b656584460242ba9ab3ea8dd1280d84f759708cc\"}\nFor product_173974, configure returns: 38 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-006",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"4bbc1cecd7a9bd0ce302458c49aeeb26f97c23b43f2372855be0f5547a475d28\"}\nFor product_173110, configure warranty: 59 months.\n\n{\"source\": \"document-03\", \"sha256\": \"d8e3ff2873727234271bec0b95169bd9d5f97a68ef961bde70d58e7715f31d64\"}\nFor product_173110, configure returns: 4 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 306,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-007",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"7d689b207c051e7553f88372aae7b9aef78ff70219de898a08069635fae886d9\"}\nFor product_842848, configure warranty: 18 months.\n\n{\"source\": \"document-03\", \"sha256\": \"e3fae30c46528b0b29ba6c6245788a0464005b4e887a77bb1df129dd48542e6e\"}\nFor product_842848, configure returns: 73 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-008",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-009",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "product_959299",
+          "attribute": "returns"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-010",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"b9cbbdb93abe7686fe1f73d8cba184bd3c25bf0529ac86e58158b2e56e18f8f8\"}\nFor product_429142, configure warranty: 71 months.\n\n{\"source\": \"document-03\", \"sha256\": \"2350bf18440ecdae295893c4c5dcff71a0661b06c7925992d770f3900e4ab0cf\"}\nFor product_429142, configure returns: 16 days.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-011",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"d73edd2051e255f94533ec78fc11c3ef5b954db35b09f03d1d452e9b188e4cee\"}\nFor product_664430, configure warranty: 21 months.\n\n{\"source\": \"document-03\", \"sha256\": \"d9ea59b3552dff5e9cef1d376aca9d0aa904bf2d1af9bf64e8f4725468bfb6ce\"}\nFor product_664430, configure returns: 47 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-012",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"895fcf7b3b3dc0e8506dca0fa520df79c66b52618a5399b329a2343387a600f3\"}\nFor product_641660, configure warranty: 32 months.\n\n{\"source\": \"document-03\", \"sha256\": \"510bd4d2b7b82e5eb0fe8d04f1805eec360d08c1def7297b47bcc3ea99830255\"}\nFor product_641660, configure returns: 28 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-013",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"068aaa11c3050679bc8754848aaf240a36d80e503c24ecc8c4188991de6a7273\"}\nFor product_692514, configure warranty: 77 months.\n\n{\"source\": \"document-03\", \"sha256\": \"53f3c0d2c86b23c38c3f3c2ab2735bcf450ea5d0a683c877a5e15eb9445279e4\"}\nFor product_692514, configure returns: 45 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-014",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-015",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "product_739125",
+          "attribute": "returns"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-016",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"ae9d807a09d5242bb1176a72eec48365997317f78fa90c55f95888905f97ce04\"}\nFor product_690177, configure warranty: 73 months.\n\n{\"source\": \"document-03\", \"sha256\": \"1207f2150a783b09261f3b1b91edbf25aa07d733709a007fda1d8bee9990d6f4\"}\nFor product_690177, configure returns: 77 days.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-017",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"40fd6b970e7c8abe43c566c7af3f563a3d4d6e06b514c1a0bf3e3e51e20940f1\"}\nFor product_325879, configure warranty: 64 months.\n\n{\"source\": \"document-03\", \"sha256\": \"dbee6f09cf17aca854f317af510808b002dbe1b15fc824219b03d94bcdf24a5b\"}\nFor product_325879, configure returns: 4 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 306,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-018",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"76ef127a9e6fba5e010c27cce5f23ad2dc39f118f39c24732857726caf96cf4f\"}\nFor product_505543, configure warranty: 65 months.\n\n{\"source\": \"document-03\", \"sha256\": \"ba3f80da9de69bed63c02c2a7e1aebb4045926dba442f8e9638ae24f9932d40a\"}\nFor product_505543, configure returns: 20 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-019",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"6b303ee1f70f4f041501272d6d1ef772689a638ba55e0a9cbb486c357ff0cdec\"}\nFor product_635929, configure warranty: 63 months.\n\n{\"source\": \"document-03\", \"sha256\": \"f99fe31c7dcc0fb90788c9cbe23a77099b6a38e563e4af3849fe37883aad5e3b\"}\nFor product_635929, configure returns: 71 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-020",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-021",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "product_228503",
+          "attribute": "returns"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-022",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"2208319e9d1c65c0d92368354ae211177011174f1d4cf984603831110947983a\"}\nFor product_550304, configure warranty: 57 months.\n\n{\"source\": \"document-03\", \"sha256\": \"a3a0997878fd3b02c5fe9e62bcd6f93a4b7148a1082d2ddb8831a4369bfd8410\"}\nFor product_550304, configure returns: 39 days.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-023",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"721d9d436535823338bc3fef1040f161cef9b3faaee6cf2155e84f3abe2dcf35\"}\nFor product_113980, configure warranty: 70 months.\n\n{\"source\": \"document-03\", \"sha256\": \"9c6c8074f796d5fee4a3c1611dee5311f097656e9fd78cb037be026f8c8901e5\"}\nFor product_113980, configure returns: 81 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-024",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"e2c8ee15151423b960ca98729386675655a9e81f8fac8ad300ad43bc6112d53e\"}\nFor product_599255, configure warranty: 67 months.\n\n{\"source\": \"document-03\", \"sha256\": \"9282bfd3ecffef928eae72f1db2fb26bf5b37a83c0fd170a3bc4e144faee544c\"}\nFor product_599255, configure returns: 33 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-025",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"78c7de65a5c91b4c82aa146936445ab6384cd835e782a537de43681428b36644\"}\nFor product_557107, configure warranty: 64 months.\n\n{\"source\": \"document-03\", \"sha256\": \"cf6e684621f9b04ea75036a800063eeef0931b17c3de5453c6d13eef1a4d3f8f\"}\nFor product_557107, configure returns: 43 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-026",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-027",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "product_186751",
+          "attribute": "returns"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-028",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"e9b1e0bc5f161d593faccd2aad185fe12f25dc887b96bfd8d741200debe8edd2\"}\nFor product_233375, configure warranty: 17 months.\n\n{\"source\": \"document-03\", \"sha256\": \"0c4e06cf7c1303ff756712dbb1e94d28cb0adb206d0720d10f542073f67a4501\"}\nFor product_233375, configure returns: 5 days.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 306,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "support-test-029",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"f6b4968a8a26129836d21774a804839d722d7b268f5a9d3466aa87c2fd08f63a\"}\nFor product_736028, configure warranty: 73 months.\n\n{\"source\": \"document-03\", \"sha256\": \"a1c99ea9f358f8eb4c2d324a7bc7dcfa2f292a0217d6ec03fde4974f7f823e15\"}\nFor product_736028, configure returns: 21 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-000",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"0ce0c5825ae224f4201c4b9010dde748b6af6276597ad3c1f51a717ac654f1d2\"}\nFor sensor_198448, configure sampling: 25 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"e3c40586e28693dfc3cf2b0ccf6f284633c5a3e9be3048fde671fbbfa5ed006d\"}\nFor sensor_198448, configure retention: 70 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-001",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"afd6d931f7cb25ee0dbf2bdc312c7ff52c8ac10b43f4378a481ff9febd1d2638\"}\nFor sensor_128592, configure sampling: 8 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"55522c4b75db8eb335c28cd1bfc866d140c944a3f1db04cfe581b6077522ca4c\"}\nFor sensor_128592, configure retention: 62 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 308,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-002",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-003",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "sensor_410085",
+          "attribute": "retention"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-004",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"a6ed923d49905c47860be2d5b9ad700258099e0462f0e5e0af06b43a4b186276\"}\nFor sensor_520527, configure sampling: 44 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"dc7c645996cac426b5aaae4806131abfd8c31cc4b05c055fd6d328e4c7b9fd84\"}\nFor sensor_520527, configure retention: 25 hours.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-005",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"22e4bf247947d43fd71485cd40dd888c8a48e85efac7d8ba2b234feed176a646\"}\nFor sensor_932516, configure sampling: 54 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"86f1342ff65df6f2d4ad0d0b2325c331fce0747481e7d8f7624cdb4c0bd44f69\"}\nFor sensor_932516, configure retention: 59 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-006",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"7f0f4399edeae6bf9afb84e9031608c4488d4bfcf7b1a507eefd03b4a9bb64cb\"}\nFor sensor_947183, configure sampling: 73 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"f2dd1d1274fea1245b7fc74a7e8b12530a7aed03426a2daa93e2c4a6d4cb5828\"}\nFor sensor_947183, configure retention: 20 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-007",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"5160d396f3255b0de8c43873ac9fc688c544deb40d22df782924a40acd6817ab\"}\nFor sensor_806774, configure sampling: 10 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"4da7cda3d80047a9aed7a0cff29e838174b52ea3c76c8975b6ef0cfd064a784f\"}\nFor sensor_806774, configure retention: 47 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-008",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-009",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "sensor_604345",
+          "attribute": "retention"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-010",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"4d54386c863e5808030de319567db3a474f641bcebc155cace6e668d133fa251\"}\nFor sensor_929914, configure sampling: 14 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"74365bc6ed8989b1649054676f5156ea5038ac9bb096a061d68793576a42ba37\"}\nFor sensor_929914, configure retention: 61 hours.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-011",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"ad2440d64c47249f5d3b8c7b78a1aba808582a4301e19b4b054e2beaee15ff3b\"}\nFor sensor_890714, configure sampling: 77 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"1060e4104c51d5545a5b35e47455c7130ac68e3bc06f98efa1d6f3007e9c02e0\"}\nFor sensor_890714, configure retention: 15 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-012",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"1acf7c07f79b9d1ff1e980ffeaf2d73f3e6197762325a7fa6302b8bcf1c86155\"}\nFor sensor_155843, configure sampling: 65 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"fe2198875d34dd3b7e4f498fea23bb0d647e366c3ab2726b4ae665355a58a4b4\"}\nFor sensor_155843, configure retention: 78 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-013",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"aa32a417a081f373c27b481966f9886ad3e2f848fac9d8634ad87f25f50f8561\"}\nFor sensor_138219, configure sampling: 79 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"1e7d1d469e37b537f8f71bd13128a115b4163a42e64c25c4d32fe0c0b741fb2c\"}\nFor sensor_138219, configure retention: 45 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-014",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-015",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "sensor_534410",
+          "attribute": "retention"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-016",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"6e6318bdfb967169c422c71d71e774bb1cfbb63cd70a7469bfecc7347d82803e\"}\nFor sensor_263136, configure sampling: 81 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"e5076fe5015cf76db15b5118a3ce79a8794b862a92bbfc488fe1992b078d78da\"}\nFor sensor_263136, configure retention: 33 hours.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-017",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"05c0d4bd1ac749c4f3cc6fe5a3751dcfc878e18e0b69c495ec8f7c61e918b3f0\"}\nFor sensor_232017, configure sampling: 82 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"139602e4a705457328511650793446d54f3300cabee5acf4f6171e909c4c4b1d\"}\nFor sensor_232017, configure retention: 57 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-018",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"e25a41188d08328c47a3cff370c877d559b8e46adce00f01d6fec7885cb0262b\"}\nFor sensor_726553, configure sampling: 2 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"b15d15014d3eca078156240bb0b6261da0177eae86d5f3f4c04fd49c5b7751ea\"}\nFor sensor_726553, configure retention: 82 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 308,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-019",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"fa063d5d9929aa4e40dbe77a21852d8e7fdf731862aec3c34990fbcba4a5b982\"}\nFor sensor_450983, configure sampling: 59 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"8c3b85a2bca6689b06f18aefbfdd3a64ad2af8024ac415b47e82a2dd350a94b2\"}\nFor sensor_450983, configure retention: 24 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-020",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-021",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "sensor_472440",
+          "attribute": "retention"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-022",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"428ffcff9e36931d31b002f8475c90373b4e2210c35c5bb6a7860c6c85e3bc70\"}\nFor sensor_774748, configure sampling: 72 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"30acda7a179b8687325ee4ccc8d51e22c7969d598a6c4dd5fd29c6b47565f5d4\"}\nFor sensor_774748, configure retention: 17 hours.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-023",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"d9303cbbe9e127ea878ea3c5b0c7582215f8ed21077b21316284bc4db3bc8c1b\"}\nFor sensor_212427, configure sampling: 64 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"07491799b892b4289bdce1154892a016f3d609941d0217d0d331f0820aa703b5\"}\nFor sensor_212427, configure retention: 58 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-024",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"2d8d09f82449efda3bbebd652953a3453700e9a67a9e4a7c2f42c943d5fd5287\"}\nFor sensor_693030, configure sampling: 69 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"d364c9189ad68815ffb1903bcdbd99d572fd1be4c74a5e960bf08ea45f0d3744\"}\nFor sensor_693030, configure retention: 22 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-025",
+    "split": "test",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"75ddc3ef9a214046a289d2aa7b720c9966aa7d8c6e1af007c4785b863e658f74\"}\nFor sensor_612127, configure sampling: 56 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"de256224462c54bdeb72ba62c1a39ecc0daa158949742e6d6145b4a7a8ae55fe\"}\nFor sensor_612127, configure retention: 18 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-026",
+    "split": "test",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-027",
+    "split": "test",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "sensor_760340",
+          "attribute": "retention"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-028",
+    "split": "test",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"abdac78a07a68e6d4bb2dcff61c3df2abc58621734cc72f537fd4343b5cb18c1\"}\nFor sensor_741625, configure sampling: 75 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"1762295f0a01f8f4a6d6c2e13562f6038a7dfde85a3ec006a7f07209ad2ec2cd\"}\nFor sensor_741625, configure retention: 88 hours.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 309,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "edge-test-029",
+    "split": "test",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"82d5c1ea6905571af4ad28121f1333687691a1874584e56a33b3dcbe46fe2a6e\"}\nFor sensor_445768, configure sampling: 5 seconds.\n\n{\"source\": \"document-03\", \"sha256\": \"a54302e0d4baa34cce56ce7a479e25618bc2aea8e2ec8da92f34e7e2a69dcb97\"}\nFor sensor_445768, configure retention: 50 hours.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 308,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-000",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"fee3eabf7b7bf154ab198f703921a9782c471e0c505f8683acfaddf74742500e\"}\nFor workspace_975882, configure access: 8 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"ec8c58e31bb1d9deb5313113f24d5984a080fd36397663e8f4161cb289c9d30d\"}\nFor workspace_975882, configure expiry: 74 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 306,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-001",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"8e2e854febf37bde433d03d45f0d19843aea806c76688a708962659ad4e62819\"}\nFor workspace_929149, configure access: 12 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"2ee32ea814f444f5e783f6d729bee313b0774484d23fa8ad593ac5d04f7ce640\"}\nFor workspace_929149, configure expiry: 23 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-002",
+    "split": "ood",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-003",
+    "split": "ood",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "workspace_123169",
+          "attribute": "expiry"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-004",
+    "split": "ood",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"2d8389fb58d327487be856c504cd4e2732bb5b9c6734fbecb5c852e4ee0af6c4\"}\nFor workspace_539169, configure access: 62 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"5a15000f2147a09bd5bd0809e64cdf0134c3bad4a4b989e7d6ad1210cc4b2c8d\"}\nFor workspace_539169, configure expiry: 52 days.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-005",
+    "split": "ood",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"355b05bcdf49e018af070d9a1e6fd537ee398b46bc772b999f54099a1047fc29\"}\nFor workspace_241901, configure access: 16 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"a2b50ded7db30bb8f00bdb2c447c00aac0b3daba55ce5383a36d58f135970fab\"}\nFor workspace_241901, configure expiry: 38 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-006",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"c3698fcfd617b42ba8d15ccbd0aeea118be0ee5ac2cb024a7f4d5ff9b6b51eab\"}\nFor workspace_766993, configure access: 10 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"f8529cf5c804aafb15e86e37d4edadd0213208c2d7bc082cbd1f4abfb7a7edab\"}\nFor workspace_766993, configure expiry: 69 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-007",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"ef8b34b9d7eba763681cc6cb86021996c94448c88f3718b9b28e66907cba21c1\"}\nFor workspace_569808, configure access: 67 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"b86ed9efb771ae1c87ddb13982855be990080e2befb38e62513abc28e424d79e\"}\nFor workspace_569808, configure expiry: 5 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 306,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-008",
+    "split": "ood",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-009",
+    "split": "ood",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "workspace_878173",
+          "attribute": "expiry"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-010",
+    "split": "ood",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"7929430fadda911067d6d9dcdfe66075676002dcba90be64ad29e4fc18be794a\"}\nFor workspace_558008, configure access: 20 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"f79cc4f21abf5f8e2f097950922768f2cc9b061aa179ad08f8b3a551abda0d62\"}\nFor workspace_558008, configure expiry: 18 days.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-011",
+    "split": "ood",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"e6d738779fe7d2787dcae47d2d8fd6e857d58a37c39a4e5a39e87e8f1f13685d\"}\nFor workspace_257144, configure access: 89 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"696cb91e49eea1e4bdd3e7bebebecc1638b71a58161753ffb68b29bcb403d198\"}\nFor workspace_257144, configure expiry: 63 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-012",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"efdc406098b35bf7d2d67014dd1f6509f356d4aff25bd438f980f8d01ad15942\"}\nFor workspace_907669, configure access: 72 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"438df1e1eb28ff3af753f80496e5e96cf819a8495901471bd5edf27ea4952bd3\"}\nFor workspace_907669, configure expiry: 73 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-013",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"26a9ca2901a272399e9302adf6ac5a607bce58478774241a1d25b5a4893c5691\"}\nFor workspace_641143, configure access: 12 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"11180af43e077c7e6ad8cd3abccdd660e62e3ab1771bf3e9b17fbbce7ad1bef5\"}\nFor workspace_641143, configure expiry: 31 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-014",
+    "split": "ood",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-015",
+    "split": "ood",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "workspace_478614",
+          "attribute": "expiry"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-016",
+    "split": "ood",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"a19ad10a02d9c710eb08aea1e8e6f668bdbc15b2ac4f8994c4831551bcb16e81\"}\nFor workspace_218514, configure access: 59 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"2d5819cbd463f754a01fd4b493c8ce935ad2e097a5bf07c8a4e2003298cb3481\"}\nFor workspace_218514, configure expiry: 85 days.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-017",
+    "split": "ood",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"43cb9b9b60bdf68d6ca7f2b79890aa98f7a9db969f66f27614479ff2d11da6f4\"}\nFor workspace_998601, configure access: 80 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"5fbe7cf8c8952dba66ca50b5affc97e93d87acaa3658d6ab330f443cba289716\"}\nFor workspace_998601, configure expiry: 58 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-018",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"cf6b2ba589f894937bf2531e0a30c0f379beec1d53746b319e65094a14ee5f52\"}\nFor workspace_498838, configure access: 74 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"6966eb012d53f50443a7fef22f93e54a21fbfded3566714afa4878c88a66804c\"}\nFor workspace_498838, configure expiry: 38 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-019",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"3e162aeac09e76a463fe578e64bee9b8eb18abf8a94c7d590a9cbf689ef51157\"}\nFor workspace_229484, configure access: 35 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"a597d426a9ca8bf12b2f101afa0c3065f1695dfdc87dce47ef7be5a7eaefa564\"}\nFor workspace_229484, configure expiry: 64 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-020",
+    "split": "ood",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-021",
+    "split": "ood",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "workspace_757037",
+          "attribute": "expiry"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-022",
+    "split": "ood",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"ae420d8a72b493318744b04e0c28bcf510c3a2cb93f6a805f44e16993c4ae18b\"}\nFor workspace_796698, configure access: 45 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"1ec2e1501a6395922abe32e28a83f860a5a8916924bae9ff368eb100ffe23fa3\"}\nFor workspace_796698, configure expiry: 28 days.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-023",
+    "split": "ood",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"890943962e758d4cbfa80940fb9f0d1b642e10d35d8bc7367d2d38bb36c70997\"}\nFor workspace_321617, configure access: 48 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"a65a2422767099cfc3aa84dd867dbfe32aeeb354df22e5255a6acc65cc89f778\"}\nFor workspace_321617, configure expiry: 47 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-024",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"2d4b82cd134a5a6a832d5f27dccb61b3233a081241edcc16226b05513d47ef92\"}\nFor workspace_944370, configure access: 21 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"8fad190433de05bd9c9f07c74c3c7de5e63397cf2c9ba1e093abf26aeb4c1047\"}\nFor workspace_944370, configure expiry: 4 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 306,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-025",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"cc3f52450232be65549c7ba9b9d7ca652bc09a90f96fe44f05bed7132ec4d065\"}\nFor workspace_549106, configure access: 37 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"1ef6ac71a970f4a3c5b35c983344a16f0bc5cb9f057d37a88ea6f976321e1b2f\"}\nFor workspace_549106, configure expiry: 53 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-026",
+    "split": "ood",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-027",
+    "split": "ood",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "workspace_467551",
+          "attribute": "expiry"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-028",
+    "split": "ood",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"f9c73fabbf2b7c6e94a21f9f555a8d4cf6f441cd2c3e8e80b106035397018c8f\"}\nFor workspace_290800, configure access: 46 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"4c3c55493ff26d7884c439b95b6c22d61d2a5a4f766994f2c291620eea1cc166\"}\nFor workspace_290800, configure expiry: 66 days.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 307,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "policy-ood-029",
+    "split": "ood",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"e2b4eb52df2aa12f0a63d6ce060eecf6c2b653776c05a757a560ad2647664fc8\"}\nFor workspace_550649, configure access: 4 roles.\n\n{\"source\": \"document-03\", \"sha256\": \"c9cd6e6b88f359a9ab022e878cf82b7b11e6214de67cacc4464ddf7c49763eb7\"}\nFor workspace_550649, configure expiry: 75 days.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 306,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-000",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"057acedfa0343eb87abaf231b75a7b91ab9df8cdf2e6e67f0b9615b50f3a1e9a\"}\nFor endpoint_967568, configure quota: 89 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"f0eb30dc066dbcc481895fc4e612aafeb28bf199dcf33d054847a15016e77605\"}\nFor endpoint_967568, configure pagination: 30 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-001",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"0182ed2ad15f3050ec94cd4668c493deb4767dc114025ba50de4abc3764a39bd\"}\nFor endpoint_500587, configure quota: 3 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"d4808501a8c3b8d9d05dcf3da6b0d93f4429b8dd855c229675aecba5ce069963\"}\nFor endpoint_500587, configure pagination: 3 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 310,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-002",
+    "split": "ood",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-003",
+    "split": "ood",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "endpoint_354786",
+          "attribute": "pagination"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-004",
+    "split": "ood",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"37b31c52948e8160185db3813fa55545823f41e778e5cfad3c0bef2427a53474\"}\nFor endpoint_290092, configure quota: 59 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"5fada9492474ae6510449bca06bc7f1d3c0fe99ef0f472c1e0c64e2479e8a0e0\"}\nFor endpoint_290092, configure pagination: 79 items.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-005",
+    "split": "ood",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"00dc18566d50ef2a7e32f7b7402d0ad48b1fee827830574f54ab9721bf9eb5c4\"}\nFor endpoint_893627, configure quota: 9 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"9e05a38950d18a6d581a638b67d0a4fe918c4e5af8c95a4443bcb52923436d28\"}\nFor endpoint_893627, configure pagination: 11 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 311,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-006",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"decd1678246c2bcef9c9d5626ec83250042a163d7f6466066f241b3d19dc4bef\"}\nFor endpoint_947459, configure quota: 48 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"39289547baa26fe207f21a27c258ac1c653ae788372a64fb71a7ef2d4f8f7366\"}\nFor endpoint_947459, configure pagination: 86 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-007",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"99e4fdbbc894533db170a6d3b989a34fed1ece8805dfe2be64f771805d4ea347\"}\nFor endpoint_721499, configure quota: 12 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"632dcff27c8a91945b85f12d66c0644f829310bbd70de85ce0769e7aba3dd414\"}\nFor endpoint_721499, configure pagination: 32 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-008",
+    "split": "ood",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-009",
+    "split": "ood",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "endpoint_768625",
+          "attribute": "pagination"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-010",
+    "split": "ood",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"767ea314c6a08d5b1b798056550b90f2c0595fac1b96d74b952d1ecf182e2355\"}\nFor endpoint_380995, configure quota: 61 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"6ba7b2c4a8a5151025b6e89429858a7ecdc289f8257177fe0b8dbe19f3658031\"}\nFor endpoint_380995, configure pagination: 55 items.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-011",
+    "split": "ood",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"57d2d15083d2b062d40e971ea0f48db539cdfe0f3a1ea40102dc5d8c7ff06d31\"}\nFor endpoint_301614, configure quota: 28 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"43dfa7c705026da32766782d8b64bc491d2b81a5c93352793209f03995215745\"}\nFor endpoint_301614, configure pagination: 78 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-012",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"e046b3c9744c8f7cdcb59f58a7321f8887dedcc30af31288e36ebd625c1b3756\"}\nFor endpoint_514376, configure quota: 62 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"3757e06f71c6ea6d89db28390dc8aa726b0b1e5680dc1b1dee5aaee32137bb39\"}\nFor endpoint_514376, configure pagination: 73 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-013",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"051be74cf6609cbcc8076c4fd6448de3d945225b0e0f448f3c3bdbf929d29ab6\"}\nFor endpoint_584695, configure quota: 22 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"08749cf641314feeff711479da06ad7aea52ff1f607f1e21e022ee3784820849\"}\nFor endpoint_584695, configure pagination: 15 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-014",
+    "split": "ood",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-015",
+    "split": "ood",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "endpoint_254292",
+          "attribute": "pagination"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-016",
+    "split": "ood",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"c58805cdf5bf5afcf1c53c233e34a46fd8f13c3df67db06b45cdaa5d1493b4b2\"}\nFor endpoint_922241, configure quota: 19 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"e56c0e0341e9b8231ae15a6118968129f17f2a914b7909ac34fdfa5d787ace69\"}\nFor endpoint_922241, configure pagination: 66 items.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-017",
+    "split": "ood",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"5c9f15456c9744733819f2216118949dbaa0a918c8104a1e0b9f0b7c415b083d\"}\nFor endpoint_556770, configure quota: 22 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"8d50a376047c04673b3aac5814f2f4b38789a3c0d92c273ea85ea82322bb1ced\"}\nFor endpoint_556770, configure pagination: 19 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-018",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"a3e99d1ced1e9a2915eb339f4df94b811c5358d97c5b58ebc1437bc56c726638\"}\nFor endpoint_296299, configure quota: 39 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"45e953dabe91bc99058d278e7a16bb6f1af3976d5b73472cfe22997b65669c36\"}\nFor endpoint_296299, configure pagination: 69 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-019",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"8b33bc3c6a4c7fa9c51826d5ccb663231dddf2c36d8cc55503454b7cc8d8f8b2\"}\nFor endpoint_973930, configure quota: 29 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"6b3879cb6a226dc3e09eefa284027aec9e3ccf9162a82d73082750f3f1daa1d2\"}\nFor endpoint_973930, configure pagination: 3 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 311,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-020",
+    "split": "ood",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-021",
+    "split": "ood",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "endpoint_404275",
+          "attribute": "pagination"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-022",
+    "split": "ood",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"746aa35d1a0adf4f07e28071b3df9f3d26b528fa20046d3ee9b18fba60f53f26\"}\nFor endpoint_425615, configure quota: 70 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"4543f68d8b53640af46b1af19c4215c1e5b76c7cc6f0c920daa3b8cc2b9b9974\"}\nFor endpoint_425615, configure pagination: 23 items.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-023",
+    "split": "ood",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"3966011972ab53f85fbb121c8fa39def70b88986dad8fcefffcca3df6a1d8599\"}\nFor endpoint_317150, configure quota: 45 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"8cfd63e34f2d273ca534fe020a55bbe2c6d4c6e547a3d0b3f608a90fa4d5f912\"}\nFor endpoint_317150, configure pagination: 27 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-024",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"56b96c476911835f3d4e387f8c65b1e5c9fd47d6f4b997392daff4ec85cf3184\"}\nFor endpoint_866767, configure quota: 24 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"d0a9f980af00c681db543fbd18cba77ade9964b756d8166f9e6573b2189cb9af\"}\nFor endpoint_866767, configure pagination: 54 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-025",
+    "split": "ood",
+    "scenario": "normal",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"cf371625becf92866aa0d037c999f0a76d5214ad7ac7cef521254ac7162275b4\"}\nFor endpoint_575972, configure quota: 86 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"90d2274196f4cdb7aa44671dcc54ca80d3f277e4a248a185718bf249ef7a946d\"}\nFor endpoint_575972, configure pagination: 77 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-02",
+          "reason": "not_needed"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-026",
+    "split": "ood",
+    "scenario": "tight_budget",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 160,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "budget"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-027",
+    "split": "ood",
+    "scenario": "missing",
+    "feasible": false,
+    "complete": false,
+    "abstained": true,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "insufficient_evidence",
+      "text": "",
+      "selected": [],
+      "units": 0,
+      "budget": 430,
+      "missing": [
+        {
+          "subject": "endpoint_955014",
+          "attribute": "pagination"
+        }
+      ],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "reason": "missing_claims"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-028",
+    "split": "ood",
+    "scenario": "negation",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-02\", \"sha256\": \"ed831db59aeb620573a1c4a0b43a5f1f548ee7304cbbe2924837c98e1e533b87\"}\nFor endpoint_593205, configure quota: 36 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"74e510092012b84f192ca0e128ee077e3f710f66e79c20c0e5feeb5e252d5d01\"}\nFor endpoint_593205, configure pagination: 15 items.",
+      "selected": [
+        "document-02",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-02",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "not_needed"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        }
+      ]
+    }
+  },
+  {
+    "case": "api-ood-029",
+    "split": "ood",
+    "scenario": "low_repetition",
+    "feasible": true,
+    "complete": true,
+    "abstained": false,
+    "correct_action": true,
+    "stale_selected": false,
+    "packet": {
+      "status": "current",
+      "text": "{\"source\": \"document-01\", \"sha256\": \"104719f02551098b4cdb6d6b14114abbae9fad2e2b1dc09c64e980ce2d7b66fb\"}\nFor endpoint_320355, configure quota: 79 requests.\n\n{\"source\": \"document-03\", \"sha256\": \"5748593a12a1a5037da2230d940310157a28b419a638c6cd9c64ceec1d6d0e57\"}\nFor endpoint_320355, configure pagination: 81 items.",
+      "selected": [
+        "document-01",
+        "document-03"
+      ],
+      "units": 312,
+      "budget": 430,
+      "missing": [],
+      "conflicts": [],
+      "decisions": [
+        {
+          "source": "document-00",
+          "reason": "stale_version"
+        },
+        {
+          "source": "document-03",
+          "reason": "selected"
+        },
+        {
+          "source": "document-01",
+          "reason": "selected"
+        }
+      ]
+    }
+  }
+]

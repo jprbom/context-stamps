@@ -1,0 +1,41 @@
+[
+  {
+    "mode": "full",
+    "calls": 24,
+    "unique_cases": 12,
+    "correct": 0.25,
+    "prompt_tokens": 1898,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 0,
+    "assembly_ms": 0.15399583333333333,
+    "request_ms": 352.73335000000003,
+    "end_to_end_ms": 352.88734583333337,
+    "index_setup_ms": 7.218416666666666
+  },
+  {
+    "mode": "stamp_only",
+    "calls": 24,
+    "unique_cases": 12,
+    "correct": 0,
+    "prompt_tokens": 249.91666666666666,
+    "output_tokens": 18,
+    "transport_tokens_cl100k": 74.75,
+    "assembly_ms": 1.2161916666666666,
+    "request_ms": 141.9059375,
+    "end_to_end_ms": 143.12212916666667,
+    "index_setup_ms": 7.218416666666666
+  },
+  {
+    "mode": "activated_graph",
+    "calls": 24,
+    "unique_cases": 12,
+    "correct": 0.8333333333333334,
+    "prompt_tokens": 345.0833333333333,
+    "output_tokens": 22,
+    "transport_tokens_cl100k": 74.75,
+    "assembly_ms": 1.3065875,
+    "request_ms": 149.23105416666667,
+    "end_to_end_ms": 150.53764166666667,
+    "index_setup_ms": 7.218416666666666
+  }
+]

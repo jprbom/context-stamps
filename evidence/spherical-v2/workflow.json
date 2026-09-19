@@ -1,0 +1,7442 @@
+[
+  {
+    "case": "test-0",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2855,
+    "packet_tokens": 2855,
+    "handoff_ms": 0.1363,
+    "graph_setup_ms": 0.3276,
+    "bytes": 17071
+  },
+  {
+    "case": "test-0",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 357,
+    "packet_tokens": 357,
+    "handoff_ms": 0.0486,
+    "graph_setup_ms": 0.3276,
+    "bytes": 2127
+  },
+  {
+    "case": "test-0",
+    "mode": "stamp_only",
+    "sources": [
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 508,
+    "packet_tokens": 285,
+    "handoff_ms": 0.0139,
+    "graph_setup_ms": 0.3276,
+    "bytes": 2364
+  },
+  {
+    "case": "test-0",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 580,
+    "packet_tokens": 357,
+    "handoff_ms": 0.0178,
+    "graph_setup_ms": 0.3276,
+    "bytes": 2555
+  },
+  {
+    "case": "test-0",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-0",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-0",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-0",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-0",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-1",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2847,
+    "packet_tokens": 2847,
+    "handoff_ms": 0.0735,
+    "graph_setup_ms": 0.113,
+    "bytes": 17084
+  },
+  {
+    "case": "test-1",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 355,
+    "packet_tokens": 355,
+    "handoff_ms": 0.0157,
+    "graph_setup_ms": 0.113,
+    "bytes": 2130
+  },
+  {
+    "case": "test-1",
+    "mode": "stamp_only",
+    "sources": [
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 513,
+    "packet_tokens": 286,
+    "handoff_ms": 0.0098,
+    "graph_setup_ms": 0.113,
+    "bytes": 2367
+  },
+  {
+    "case": "test-1",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 582,
+    "packet_tokens": 355,
+    "handoff_ms": 0.0143,
+    "graph_setup_ms": 0.113,
+    "bytes": 2558
+  },
+  {
+    "case": "test-1",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-1",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-1",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-1",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-1",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-2",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2870,
+    "packet_tokens": 2870,
+    "handoff_ms": 0.0696,
+    "graph_setup_ms": 0.1054,
+    "bytes": 17082
+  },
+  {
+    "case": "test-2",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-4",
+      "root-4"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 355,
+    "packet_tokens": 355,
+    "handoff_ms": 0.0147,
+    "graph_setup_ms": 0.1054,
+    "bytes": 2129
+  },
+  {
+    "case": "test-2",
+    "mode": "stamp_only",
+    "sources": [
+      "root-4"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 514,
+    "packet_tokens": 286,
+    "handoff_ms": 0.0088,
+    "graph_setup_ms": 0.1054,
+    "bytes": 2366
+  },
+  {
+    "case": "test-2",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-4",
+      "root-4"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 583,
+    "packet_tokens": 355,
+    "handoff_ms": 0.0134,
+    "graph_setup_ms": 0.1054,
+    "bytes": 2557
+  },
+  {
+    "case": "test-2",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-2",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-2",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-2",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-2",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-3",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2857,
+    "packet_tokens": 2857,
+    "handoff_ms": 0.0701,
+    "graph_setup_ms": 0.1038,
+    "bytes": 17077
+  },
+  {
+    "case": "test-3",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 353,
+    "packet_tokens": 353,
+    "handoff_ms": 0.0146,
+    "graph_setup_ms": 0.1038,
+    "bytes": 2122
+  },
+  {
+    "case": "test-3",
+    "mode": "stamp_only",
+    "sources": [
+      "root-2"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 516,
+    "packet_tokens": 286,
+    "handoff_ms": 0.009,
+    "graph_setup_ms": 0.1038,
+    "bytes": 2360
+  },
+  {
+    "case": "test-3",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 588,
+    "packet_tokens": 358,
+    "handoff_ms": 0.0133,
+    "graph_setup_ms": 0.1038,
+    "bytes": 2551
+  },
+  {
+    "case": "test-3",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-3",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-3",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-3",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-3",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-4",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2857,
+    "packet_tokens": 2857,
+    "handoff_ms": 0.0672,
+    "graph_setup_ms": 0.1044,
+    "bytes": 17078
+  },
+  {
+    "case": "test-4",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 359,
+    "packet_tokens": 359,
+    "handoff_ms": 0.051,
+    "graph_setup_ms": 0.1044,
+    "bytes": 2125
+  },
+  {
+    "case": "test-4",
+    "mode": "stamp_only",
+    "sources": [
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 517,
+    "packet_tokens": 287,
+    "handoff_ms": 0.0145,
+    "graph_setup_ms": 0.1044,
+    "bytes": 2362
+  },
+  {
+    "case": "test-4",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 589,
+    "packet_tokens": 359,
+    "handoff_ms": 0.0173,
+    "graph_setup_ms": 0.1044,
+    "bytes": 2553
+  },
+  {
+    "case": "test-4",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-4",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-4",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-4",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-4",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-5",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2846,
+    "packet_tokens": 2846,
+    "handoff_ms": 0.0719,
+    "graph_setup_ms": 0.1117,
+    "bytes": 17043
+  },
+  {
+    "case": "test-5",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 353,
+    "packet_tokens": 353,
+    "handoff_ms": 0.0697,
+    "graph_setup_ms": 0.1117,
+    "bytes": 2125
+  },
+  {
+    "case": "test-5",
+    "mode": "stamp_only",
+    "sources": [
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 510,
+    "packet_tokens": 286,
+    "handoff_ms": 0.0182,
+    "graph_setup_ms": 0.1117,
+    "bytes": 2362
+  },
+  {
+    "case": "test-5",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 577,
+    "packet_tokens": 353,
+    "handoff_ms": 0.0224,
+    "graph_setup_ms": 0.1117,
+    "bytes": 2553
+  },
+  {
+    "case": "test-5",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-5",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-5",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-5",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-5",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-6",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2853,
+    "packet_tokens": 2853,
+    "handoff_ms": 0.075,
+    "graph_setup_ms": 0.1161,
+    "bytes": 17067
+  },
+  {
+    "case": "test-6",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 354,
+    "packet_tokens": 354,
+    "handoff_ms": 0.0173,
+    "graph_setup_ms": 0.1161,
+    "bytes": 2125
+  },
+  {
+    "case": "test-6",
+    "mode": "stamp_only",
+    "sources": [
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 513,
+    "packet_tokens": 285,
+    "handoff_ms": 0.0199,
+    "graph_setup_ms": 0.1161,
+    "bytes": 2362
+  },
+  {
+    "case": "test-6",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 582,
+    "packet_tokens": 354,
+    "handoff_ms": 0.0151,
+    "graph_setup_ms": 0.1161,
+    "bytes": 2553
+  },
+  {
+    "case": "test-6",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-6",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-6",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-6",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-6",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-7",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2847,
+    "packet_tokens": 2847,
+    "handoff_ms": 0.0722,
+    "graph_setup_ms": 0.1054,
+    "bytes": 17035
+  },
+  {
+    "case": "test-7",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-5",
+      "root-5"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 348,
+    "packet_tokens": 348,
+    "handoff_ms": 0.0163,
+    "graph_setup_ms": 0.1054,
+    "bytes": 2123
+  },
+  {
+    "case": "test-7",
+    "mode": "stamp_only",
+    "sources": [
+      "root-5"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 506,
+    "packet_tokens": 280,
+    "handoff_ms": 0.0098,
+    "graph_setup_ms": 0.1054,
+    "bytes": 2360
+  },
+  {
+    "case": "test-7",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-5",
+      "root-5"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 574,
+    "packet_tokens": 348,
+    "handoff_ms": 0.0143,
+    "graph_setup_ms": 0.1054,
+    "bytes": 2551
+  },
+  {
+    "case": "test-7",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-7",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-7",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-7",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-7",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-8",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2833,
+    "packet_tokens": 2833,
+    "handoff_ms": 0.0712,
+    "graph_setup_ms": 0.1048,
+    "bytes": 17062
+  },
+  {
+    "case": "test-8",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 352,
+    "packet_tokens": 352,
+    "handoff_ms": 0.0157,
+    "graph_setup_ms": 0.1048,
+    "bytes": 2126
+  },
+  {
+    "case": "test-8",
+    "mode": "stamp_only",
+    "sources": [
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 511,
+    "packet_tokens": 283,
+    "handoff_ms": 0.0095,
+    "graph_setup_ms": 0.1048,
+    "bytes": 2363
+  },
+  {
+    "case": "test-8",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 580,
+    "packet_tokens": 352,
+    "handoff_ms": 0.0134,
+    "graph_setup_ms": 0.1048,
+    "bytes": 2554
+  },
+  {
+    "case": "test-8",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-8",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-8",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-8",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-8",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-9",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2870,
+    "packet_tokens": 2870,
+    "handoff_ms": 0.0694,
+    "graph_setup_ms": 0.1051,
+    "bytes": 17066
+  },
+  {
+    "case": "test-9",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-5",
+      "root-5"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 353,
+    "packet_tokens": 353,
+    "handoff_ms": 0.0147,
+    "graph_setup_ms": 0.1051,
+    "bytes": 2123
+  },
+  {
+    "case": "test-9",
+    "mode": "stamp_only",
+    "sources": [
+      "root-2"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 523,
+    "packet_tokens": 292,
+    "handoff_ms": 0.0094,
+    "graph_setup_ms": 0.1051,
+    "bytes": 2356
+  },
+  {
+    "case": "test-9",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 595,
+    "packet_tokens": 364,
+    "handoff_ms": 0.0145,
+    "graph_setup_ms": 0.1051,
+    "bytes": 2547
+  },
+  {
+    "case": "test-9",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-9",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-9",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-9",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-9",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-10",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2848,
+    "packet_tokens": 2848,
+    "handoff_ms": 0.0693,
+    "graph_setup_ms": 0.1039,
+    "bytes": 17045
+  },
+  {
+    "case": "test-10",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-5",
+      "root-5"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 352,
+    "packet_tokens": 352,
+    "handoff_ms": 0.0164,
+    "graph_setup_ms": 0.1039,
+    "bytes": 2119
+  },
+  {
+    "case": "test-10",
+    "mode": "stamp_only",
+    "sources": [
+      "root-5"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 514,
+    "packet_tokens": 284,
+    "handoff_ms": 0.0101,
+    "graph_setup_ms": 0.1039,
+    "bytes": 2356
+  },
+  {
+    "case": "test-10",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-5",
+      "root-5"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 582,
+    "packet_tokens": 352,
+    "handoff_ms": 0.0147,
+    "graph_setup_ms": 0.1039,
+    "bytes": 2547
+  },
+  {
+    "case": "test-10",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-10",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-10",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-10",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-10",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-11",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2846,
+    "packet_tokens": 2846,
+    "handoff_ms": 0.0684,
+    "graph_setup_ms": 0.1028,
+    "bytes": 17053
+  },
+  {
+    "case": "test-11",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 352,
+    "packet_tokens": 352,
+    "handoff_ms": 0.015,
+    "graph_setup_ms": 0.1028,
+    "bytes": 2123
+  },
+  {
+    "case": "test-11",
+    "mode": "stamp_only",
+    "sources": [
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 512,
+    "packet_tokens": 283,
+    "handoff_ms": 0.0094,
+    "graph_setup_ms": 0.1028,
+    "bytes": 2360
+  },
+  {
+    "case": "test-11",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 581,
+    "packet_tokens": 352,
+    "handoff_ms": 0.0151,
+    "graph_setup_ms": 0.1028,
+    "bytes": 2551
+  },
+  {
+    "case": "test-11",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-11",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-11",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-11",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-11",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-12",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2848,
+    "packet_tokens": 2848,
+    "handoff_ms": 0.069,
+    "graph_setup_ms": 0.1061,
+    "bytes": 17062
+  },
+  {
+    "case": "test-12",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 354,
+    "packet_tokens": 354,
+    "handoff_ms": 0.0147,
+    "graph_setup_ms": 0.1061,
+    "bytes": 2128
+  },
+  {
+    "case": "test-12",
+    "mode": "stamp_only",
+    "sources": [
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 509,
+    "packet_tokens": 285,
+    "handoff_ms": 0.0094,
+    "graph_setup_ms": 0.1061,
+    "bytes": 2365
+  },
+  {
+    "case": "test-12",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 578,
+    "packet_tokens": 354,
+    "handoff_ms": 0.0144,
+    "graph_setup_ms": 0.1061,
+    "bytes": 2556
+  },
+  {
+    "case": "test-12",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-12",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-12",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-12",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-12",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-13",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2862,
+    "packet_tokens": 2862,
+    "handoff_ms": 0.0685,
+    "graph_setup_ms": 0.1043,
+    "bytes": 17074
+  },
+  {
+    "case": "test-13",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-5",
+      "root-5"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 359,
+    "packet_tokens": 359,
+    "handoff_ms": 0.0204,
+    "graph_setup_ms": 0.1043,
+    "bytes": 2129
+  },
+  {
+    "case": "test-13",
+    "mode": "stamp_only",
+    "sources": [
+      "root-5"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 519,
+    "packet_tokens": 291,
+    "handoff_ms": 0.0097,
+    "graph_setup_ms": 0.1043,
+    "bytes": 2366
+  },
+  {
+    "case": "test-13",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-5",
+      "root-5"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 587,
+    "packet_tokens": 359,
+    "handoff_ms": 0.0139,
+    "graph_setup_ms": 0.1043,
+    "bytes": 2557
+  },
+  {
+    "case": "test-13",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-13",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-13",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-13",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-13",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-14",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2843,
+    "packet_tokens": 2843,
+    "handoff_ms": 0.072,
+    "graph_setup_ms": 0.112,
+    "bytes": 17070
+  },
+  {
+    "case": "test-14",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 349,
+    "packet_tokens": 349,
+    "handoff_ms": 0.0164,
+    "graph_setup_ms": 0.112,
+    "bytes": 2129
+  },
+  {
+    "case": "test-14",
+    "mode": "stamp_only",
+    "sources": [
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 512,
+    "packet_tokens": 283,
+    "handoff_ms": 0.0092,
+    "graph_setup_ms": 0.112,
+    "bytes": 2366
+  },
+  {
+    "case": "test-14",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 578,
+    "packet_tokens": 349,
+    "handoff_ms": 0.0164,
+    "graph_setup_ms": 0.112,
+    "bytes": 2557
+  },
+  {
+    "case": "test-14",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-14",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-14",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-14",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-14",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-15",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2856,
+    "packet_tokens": 2856,
+    "handoff_ms": 0.258,
+    "graph_setup_ms": 0.1175,
+    "bytes": 17086
+  },
+  {
+    "case": "test-15",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 351,
+    "packet_tokens": 351,
+    "handoff_ms": 0.0569,
+    "graph_setup_ms": 0.1175,
+    "bytes": 2132
+  },
+  {
+    "case": "test-15",
+    "mode": "stamp_only",
+    "sources": [
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 510,
+    "packet_tokens": 282,
+    "handoff_ms": 0.0161,
+    "graph_setup_ms": 0.1175,
+    "bytes": 2369
+  },
+  {
+    "case": "test-15",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 579,
+    "packet_tokens": 351,
+    "handoff_ms": 0.0181,
+    "graph_setup_ms": 0.1175,
+    "bytes": 2560
+  },
+  {
+    "case": "test-15",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-15",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-15",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-15",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-15",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-16",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2842,
+    "packet_tokens": 2842,
+    "handoff_ms": 0.0738,
+    "graph_setup_ms": 0.115,
+    "bytes": 17043
+  },
+  {
+    "case": "test-16",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 350,
+    "packet_tokens": 350,
+    "handoff_ms": 0.0368,
+    "graph_setup_ms": 0.115,
+    "bytes": 2123
+  },
+  {
+    "case": "test-16",
+    "mode": "stamp_only",
+    "sources": [
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 511,
+    "packet_tokens": 281,
+    "handoff_ms": 0.0141,
+    "graph_setup_ms": 0.115,
+    "bytes": 2360
+  },
+  {
+    "case": "test-16",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 580,
+    "packet_tokens": 350,
+    "handoff_ms": 0.0169,
+    "graph_setup_ms": 0.115,
+    "bytes": 2551
+  },
+  {
+    "case": "test-16",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-16",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-16",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-16",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-16",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-17",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2843,
+    "packet_tokens": 2843,
+    "handoff_ms": 0.0715,
+    "graph_setup_ms": 0.1103,
+    "bytes": 17081
+  },
+  {
+    "case": "test-17",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 354,
+    "packet_tokens": 354,
+    "handoff_ms": 0.0161,
+    "graph_setup_ms": 0.1103,
+    "bytes": 2127
+  },
+  {
+    "case": "test-17",
+    "mode": "stamp_only",
+    "sources": [
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 510,
+    "packet_tokens": 285,
+    "handoff_ms": 0.0096,
+    "graph_setup_ms": 0.1103,
+    "bytes": 2364
+  },
+  {
+    "case": "test-17",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 579,
+    "packet_tokens": 354,
+    "handoff_ms": 0.0372,
+    "graph_setup_ms": 0.1103,
+    "bytes": 2555
+  },
+  {
+    "case": "test-17",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-17",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-17",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-17",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-17",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-18",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2859,
+    "packet_tokens": 2859,
+    "handoff_ms": 0.077,
+    "graph_setup_ms": 0.1127,
+    "bytes": 17080
+  },
+  {
+    "case": "test-18",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 358,
+    "packet_tokens": 358,
+    "handoff_ms": 0.0152,
+    "graph_setup_ms": 0.1127,
+    "bytes": 2125
+  },
+  {
+    "case": "test-18",
+    "mode": "stamp_only",
+    "sources": [
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 512,
+    "packet_tokens": 286,
+    "handoff_ms": 0.0096,
+    "graph_setup_ms": 0.1127,
+    "bytes": 2362
+  },
+  {
+    "case": "test-18",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 584,
+    "packet_tokens": 358,
+    "handoff_ms": 0.0136,
+    "graph_setup_ms": 0.1127,
+    "bytes": 2553
+  },
+  {
+    "case": "test-18",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-18",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-18",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-18",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-18",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-19",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2839,
+    "packet_tokens": 2839,
+    "handoff_ms": 0.069,
+    "graph_setup_ms": 0.1033,
+    "bytes": 17036
+  },
+  {
+    "case": "test-19",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 350,
+    "packet_tokens": 350,
+    "handoff_ms": 0.015,
+    "graph_setup_ms": 0.1033,
+    "bytes": 2123
+  },
+  {
+    "case": "test-19",
+    "mode": "stamp_only",
+    "sources": [
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 507,
+    "packet_tokens": 281,
+    "handoff_ms": 0.009,
+    "graph_setup_ms": 0.1033,
+    "bytes": 2360
+  },
+  {
+    "case": "test-19",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 576,
+    "packet_tokens": 350,
+    "handoff_ms": 0.014,
+    "graph_setup_ms": 0.1033,
+    "bytes": 2551
+  },
+  {
+    "case": "test-19",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-19",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-19",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-19",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-19",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-20",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2847,
+    "packet_tokens": 2847,
+    "handoff_ms": 0.0729,
+    "graph_setup_ms": 0.1082,
+    "bytes": 17060
+  },
+  {
+    "case": "test-20",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-5",
+      "root-5"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 350,
+    "packet_tokens": 350,
+    "handoff_ms": 0.0163,
+    "graph_setup_ms": 0.1082,
+    "bytes": 2121
+  },
+  {
+    "case": "test-20",
+    "mode": "stamp_only",
+    "sources": [
+      "root-5"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 509,
+    "packet_tokens": 282,
+    "handoff_ms": 0.009,
+    "graph_setup_ms": 0.1082,
+    "bytes": 2358
+  },
+  {
+    "case": "test-20",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-5",
+      "root-5"
+    ],
+    "expected": [
+      "dependency-5",
+      "root-5"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 577,
+    "packet_tokens": 350,
+    "handoff_ms": 0.0142,
+    "graph_setup_ms": 0.1082,
+    "bytes": 2549
+  },
+  {
+    "case": "test-20",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-20",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-20",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-20",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-20",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-21",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2843,
+    "packet_tokens": 2843,
+    "handoff_ms": 0.0679,
+    "graph_setup_ms": 0.101,
+    "bytes": 17043
+  },
+  {
+    "case": "test-21",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 352,
+    "packet_tokens": 352,
+    "handoff_ms": 0.0151,
+    "graph_setup_ms": 0.101,
+    "bytes": 2123
+  },
+  {
+    "case": "test-21",
+    "mode": "stamp_only",
+    "sources": [
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 510,
+    "packet_tokens": 282,
+    "handoff_ms": 0.0087,
+    "graph_setup_ms": 0.101,
+    "bytes": 2360
+  },
+  {
+    "case": "test-21",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 580,
+    "packet_tokens": 352,
+    "handoff_ms": 0.0133,
+    "graph_setup_ms": 0.101,
+    "bytes": 2551
+  },
+  {
+    "case": "test-21",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-21",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-21",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-21",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-21",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-22",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2846,
+    "packet_tokens": 2846,
+    "handoff_ms": 0.068,
+    "graph_setup_ms": 0.0996,
+    "bytes": 17056
+  },
+  {
+    "case": "test-22",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 348,
+    "packet_tokens": 348,
+    "handoff_ms": 0.017,
+    "graph_setup_ms": 0.0996,
+    "bytes": 2121
+  },
+  {
+    "case": "test-22",
+    "mode": "stamp_only",
+    "sources": [
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 511,
+    "packet_tokens": 282,
+    "handoff_ms": 0.0093,
+    "graph_setup_ms": 0.0996,
+    "bytes": 2358
+  },
+  {
+    "case": "test-22",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 577,
+    "packet_tokens": 348,
+    "handoff_ms": 0.0137,
+    "graph_setup_ms": 0.0996,
+    "bytes": 2549
+  },
+  {
+    "case": "test-22",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-22",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-22",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-22",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-22",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-23",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2848,
+    "packet_tokens": 2848,
+    "handoff_ms": 0.0704,
+    "graph_setup_ms": 0.1088,
+    "bytes": 17066
+  },
+  {
+    "case": "test-23",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 355,
+    "packet_tokens": 355,
+    "handoff_ms": 0.0146,
+    "graph_setup_ms": 0.1088,
+    "bytes": 2125
+  },
+  {
+    "case": "test-23",
+    "mode": "stamp_only",
+    "sources": [
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 517,
+    "packet_tokens": 288,
+    "handoff_ms": 0.009,
+    "graph_setup_ms": 0.1088,
+    "bytes": 2362
+  },
+  {
+    "case": "test-23",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 584,
+    "packet_tokens": 355,
+    "handoff_ms": 0.0136,
+    "graph_setup_ms": 0.1088,
+    "bytes": 2553
+  },
+  {
+    "case": "test-23",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-23",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-23",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-23",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-23",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-24",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2861,
+    "packet_tokens": 2861,
+    "handoff_ms": 0.0703,
+    "graph_setup_ms": 0.1061,
+    "bytes": 17062
+  },
+  {
+    "case": "test-24",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 354,
+    "packet_tokens": 354,
+    "handoff_ms": 0.015,
+    "graph_setup_ms": 0.1061,
+    "bytes": 2128
+  },
+  {
+    "case": "test-24",
+    "mode": "stamp_only",
+    "sources": [
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 511,
+    "packet_tokens": 285,
+    "handoff_ms": 0.0089,
+    "graph_setup_ms": 0.1061,
+    "bytes": 2365
+  },
+  {
+    "case": "test-24",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 580,
+    "packet_tokens": 354,
+    "handoff_ms": 0.0141,
+    "graph_setup_ms": 0.1061,
+    "bytes": 2556
+  },
+  {
+    "case": "test-24",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-24",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-24",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-24",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-24",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-25",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2845,
+    "packet_tokens": 2845,
+    "handoff_ms": 0.0683,
+    "graph_setup_ms": 0.1035,
+    "bytes": 17059
+  },
+  {
+    "case": "test-25",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 358,
+    "packet_tokens": 358,
+    "handoff_ms": 0.0497,
+    "graph_setup_ms": 0.1035,
+    "bytes": 2123
+  },
+  {
+    "case": "test-25",
+    "mode": "stamp_only",
+    "sources": [
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 513,
+    "packet_tokens": 288,
+    "handoff_ms": 0.0313,
+    "graph_setup_ms": 0.1035,
+    "bytes": 2360
+  },
+  {
+    "case": "test-25",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 583,
+    "packet_tokens": 358,
+    "handoff_ms": 0.0209,
+    "graph_setup_ms": 0.1035,
+    "bytes": 2551
+  },
+  {
+    "case": "test-25",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-25",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-25",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-25",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-25",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-26",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2841,
+    "packet_tokens": 2841,
+    "handoff_ms": 0.0751,
+    "graph_setup_ms": 0.1119,
+    "bytes": 17067
+  },
+  {
+    "case": "test-26",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-4",
+      "root-4"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 351,
+    "packet_tokens": 351,
+    "handoff_ms": 0.0186,
+    "graph_setup_ms": 0.1119,
+    "bytes": 2127
+  },
+  {
+    "case": "test-26",
+    "mode": "stamp_only",
+    "sources": [
+      "root-4"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 514,
+    "packet_tokens": 282,
+    "handoff_ms": 0.0095,
+    "graph_setup_ms": 0.1119,
+    "bytes": 2364
+  },
+  {
+    "case": "test-26",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-4",
+      "root-4"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 583,
+    "packet_tokens": 351,
+    "handoff_ms": 0.0147,
+    "graph_setup_ms": 0.1119,
+    "bytes": 2555
+  },
+  {
+    "case": "test-26",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-26",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-26",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-26",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-26",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-27",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2856,
+    "packet_tokens": 2856,
+    "handoff_ms": 0.0707,
+    "graph_setup_ms": 0.1062,
+    "bytes": 17047
+  },
+  {
+    "case": "test-27",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 354,
+    "packet_tokens": 354,
+    "handoff_ms": 0.015,
+    "graph_setup_ms": 0.1062,
+    "bytes": 2123
+  },
+  {
+    "case": "test-27",
+    "mode": "stamp_only",
+    "sources": [
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 511,
+    "packet_tokens": 284,
+    "handoff_ms": 0.0095,
+    "graph_setup_ms": 0.1062,
+    "bytes": 2360
+  },
+  {
+    "case": "test-27",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 581,
+    "packet_tokens": 354,
+    "handoff_ms": 0.0577,
+    "graph_setup_ms": 0.1062,
+    "bytes": 2551
+  },
+  {
+    "case": "test-27",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-27",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-27",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-27",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-27",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-28",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2841,
+    "packet_tokens": 2841,
+    "handoff_ms": 0.0783,
+    "graph_setup_ms": 0.1137,
+    "bytes": 17041
+  },
+  {
+    "case": "test-28",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 360,
+    "packet_tokens": 360,
+    "handoff_ms": 0.0158,
+    "graph_setup_ms": 0.1137,
+    "bytes": 2121
+  },
+  {
+    "case": "test-28",
+    "mode": "stamp_only",
+    "sources": [
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 513,
+    "packet_tokens": 290,
+    "handoff_ms": 0.01,
+    "graph_setup_ms": 0.1137,
+    "bytes": 2358
+  },
+  {
+    "case": "test-28",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 583,
+    "packet_tokens": 360,
+    "handoff_ms": 0.0138,
+    "graph_setup_ms": 0.1137,
+    "bytes": 2549
+  },
+  {
+    "case": "test-28",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-28",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-28",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-28",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-28",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-29",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2863,
+    "packet_tokens": 2863,
+    "handoff_ms": 0.0703,
+    "graph_setup_ms": 0.1032,
+    "bytes": 17067
+  },
+  {
+    "case": "test-29",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-4",
+      "root-4"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 357,
+    "packet_tokens": 357,
+    "handoff_ms": 0.0151,
+    "graph_setup_ms": 0.1032,
+    "bytes": 2129
+  },
+  {
+    "case": "test-29",
+    "mode": "stamp_only",
+    "sources": [
+      "root-4"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 514,
+    "packet_tokens": 288,
+    "handoff_ms": 0.0094,
+    "graph_setup_ms": 0.1032,
+    "bytes": 2366
+  },
+  {
+    "case": "test-29",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-4",
+      "root-4"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 583,
+    "packet_tokens": 357,
+    "handoff_ms": 0.0141,
+    "graph_setup_ms": 0.1032,
+    "bytes": 2557
+  },
+  {
+    "case": "test-29",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-29",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-29",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-29",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-29",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-30",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2840,
+    "packet_tokens": 2840,
+    "handoff_ms": 0.0713,
+    "graph_setup_ms": 0.1063,
+    "bytes": 17035
+  },
+  {
+    "case": "test-30",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 348,
+    "packet_tokens": 348,
+    "handoff_ms": 0.0158,
+    "graph_setup_ms": 0.1063,
+    "bytes": 2121
+  },
+  {
+    "case": "test-30",
+    "mode": "stamp_only",
+    "sources": [
+      "root-2"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 515,
+    "packet_tokens": 289,
+    "handoff_ms": 0.0094,
+    "graph_setup_ms": 0.1063,
+    "bytes": 2354
+  },
+  {
+    "case": "test-30",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 587,
+    "packet_tokens": 361,
+    "handoff_ms": 0.0142,
+    "graph_setup_ms": 0.1063,
+    "bytes": 2545
+  },
+  {
+    "case": "test-30",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-30",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-30",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-30",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-30",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-31",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2847,
+    "packet_tokens": 2847,
+    "handoff_ms": 0.0733,
+    "graph_setup_ms": 0.1095,
+    "bytes": 17046
+  },
+  {
+    "case": "test-31",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 356,
+    "packet_tokens": 356,
+    "handoff_ms": 0.0161,
+    "graph_setup_ms": 0.1095,
+    "bytes": 2121
+  },
+  {
+    "case": "test-31",
+    "mode": "stamp_only",
+    "sources": [
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 514,
+    "packet_tokens": 286,
+    "handoff_ms": 0.0096,
+    "graph_setup_ms": 0.1095,
+    "bytes": 2358
+  },
+  {
+    "case": "test-31",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 584,
+    "packet_tokens": 356,
+    "handoff_ms": 0.015,
+    "graph_setup_ms": 0.1095,
+    "bytes": 2549
+  },
+  {
+    "case": "test-31",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-31",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-31",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-31",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-31",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-32",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2842,
+    "packet_tokens": 2842,
+    "handoff_ms": 0.0694,
+    "graph_setup_ms": 0.1074,
+    "bytes": 17073
+  },
+  {
+    "case": "test-32",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 353,
+    "packet_tokens": 353,
+    "handoff_ms": 0.0204,
+    "graph_setup_ms": 0.1074,
+    "bytes": 2125
+  },
+  {
+    "case": "test-32",
+    "mode": "stamp_only",
+    "sources": [
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 514,
+    "packet_tokens": 286,
+    "handoff_ms": 0.0099,
+    "graph_setup_ms": 0.1074,
+    "bytes": 2362
+  },
+  {
+    "case": "test-32",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 581,
+    "packet_tokens": 353,
+    "handoff_ms": 0.0134,
+    "graph_setup_ms": 0.1074,
+    "bytes": 2553
+  },
+  {
+    "case": "test-32",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-32",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-32",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-32",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-32",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-33",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2850,
+    "packet_tokens": 2850,
+    "handoff_ms": 0.0694,
+    "graph_setup_ms": 0.1075,
+    "bytes": 17063
+  },
+  {
+    "case": "test-33",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 350,
+    "packet_tokens": 350,
+    "handoff_ms": 0.0156,
+    "graph_setup_ms": 0.1075,
+    "bytes": 2125
+  },
+  {
+    "case": "test-33",
+    "mode": "stamp_only",
+    "sources": [
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 511,
+    "packet_tokens": 284,
+    "handoff_ms": 0.0099,
+    "graph_setup_ms": 0.1075,
+    "bytes": 2362
+  },
+  {
+    "case": "test-33",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 577,
+    "packet_tokens": 350,
+    "handoff_ms": 0.0136,
+    "graph_setup_ms": 0.1075,
+    "bytes": 2553
+  },
+  {
+    "case": "test-33",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-33",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-33",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-33",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-33",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-34",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2853,
+    "packet_tokens": 2853,
+    "handoff_ms": 0.07,
+    "graph_setup_ms": 0.1086,
+    "bytes": 17052
+  },
+  {
+    "case": "test-34",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 351,
+    "packet_tokens": 351,
+    "handoff_ms": 0.0183,
+    "graph_setup_ms": 0.1086,
+    "bytes": 2121
+  },
+  {
+    "case": "test-34",
+    "mode": "stamp_only",
+    "sources": [
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 510,
+    "packet_tokens": 284,
+    "handoff_ms": 0.01,
+    "graph_setup_ms": 0.1086,
+    "bytes": 2358
+  },
+  {
+    "case": "test-34",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 577,
+    "packet_tokens": 351,
+    "handoff_ms": 0.014,
+    "graph_setup_ms": 0.1086,
+    "bytes": 2549
+  },
+  {
+    "case": "test-34",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-34",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-34",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-34",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-34",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-35",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2858,
+    "packet_tokens": 2858,
+    "handoff_ms": 0.0695,
+    "graph_setup_ms": 0.1057,
+    "bytes": 17051
+  },
+  {
+    "case": "test-35",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 351,
+    "packet_tokens": 351,
+    "handoff_ms": 0.0236,
+    "graph_setup_ms": 0.1057,
+    "bytes": 2121
+  },
+  {
+    "case": "test-35",
+    "mode": "stamp_only",
+    "sources": [
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 511,
+    "packet_tokens": 284,
+    "handoff_ms": 0.0099,
+    "graph_setup_ms": 0.1057,
+    "bytes": 2358
+  },
+  {
+    "case": "test-35",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 578,
+    "packet_tokens": 351,
+    "handoff_ms": 0.0175,
+    "graph_setup_ms": 0.1057,
+    "bytes": 2549
+  },
+  {
+    "case": "test-35",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-35",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-35",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-35",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-35",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-36",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2852,
+    "packet_tokens": 2852,
+    "handoff_ms": 0.0839,
+    "graph_setup_ms": 0.1589,
+    "bytes": 17079
+  },
+  {
+    "case": "test-36",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 356,
+    "packet_tokens": 356,
+    "handoff_ms": 0.091,
+    "graph_setup_ms": 0.1589,
+    "bytes": 2125
+  },
+  {
+    "case": "test-36",
+    "mode": "stamp_only",
+    "sources": [
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 512,
+    "packet_tokens": 284,
+    "handoff_ms": 0.034,
+    "graph_setup_ms": 0.1589,
+    "bytes": 2362
+  },
+  {
+    "case": "test-36",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 584,
+    "packet_tokens": 356,
+    "handoff_ms": 0.1483,
+    "graph_setup_ms": 0.1589,
+    "bytes": 2553
+  },
+  {
+    "case": "test-36",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-36",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-36",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-36",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-36",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-37",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2844,
+    "packet_tokens": 2844,
+    "handoff_ms": 0.0743,
+    "graph_setup_ms": 0.1215,
+    "bytes": 17065
+  },
+  {
+    "case": "test-37",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 349,
+    "packet_tokens": 349,
+    "handoff_ms": 0.0177,
+    "graph_setup_ms": 0.1215,
+    "bytes": 2122
+  },
+  {
+    "case": "test-37",
+    "mode": "stamp_only",
+    "sources": [
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 513,
+    "packet_tokens": 282,
+    "handoff_ms": 0.0106,
+    "graph_setup_ms": 0.1215,
+    "bytes": 2359
+  },
+  {
+    "case": "test-37",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 580,
+    "packet_tokens": 349,
+    "handoff_ms": 0.0152,
+    "graph_setup_ms": 0.1215,
+    "bytes": 2550
+  },
+  {
+    "case": "test-37",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-37",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-37",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-37",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-37",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-38",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2839,
+    "packet_tokens": 2839,
+    "handoff_ms": 0.0718,
+    "graph_setup_ms": 0.1144,
+    "bytes": 17048
+  },
+  {
+    "case": "test-38",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 355,
+    "packet_tokens": 355,
+    "handoff_ms": 0.0161,
+    "graph_setup_ms": 0.1144,
+    "bytes": 2120
+  },
+  {
+    "case": "test-38",
+    "mode": "stamp_only",
+    "sources": [
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 509,
+    "packet_tokens": 285,
+    "handoff_ms": 0.0097,
+    "graph_setup_ms": 0.1144,
+    "bytes": 2357
+  },
+  {
+    "case": "test-38",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 579,
+    "packet_tokens": 355,
+    "handoff_ms": 0.0151,
+    "graph_setup_ms": 0.1144,
+    "bytes": 2548
+  },
+  {
+    "case": "test-38",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-38",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-38",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-38",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-38",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-39",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2834,
+    "packet_tokens": 2834,
+    "handoff_ms": 0.0703,
+    "graph_setup_ms": 0.1047,
+    "bytes": 17062
+  },
+  {
+    "case": "test-39",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 349,
+    "packet_tokens": 349,
+    "handoff_ms": 0.0307,
+    "graph_setup_ms": 0.1047,
+    "bytes": 2126
+  },
+  {
+    "case": "test-39",
+    "mode": "stamp_only",
+    "sources": [
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 508,
+    "packet_tokens": 282,
+    "handoff_ms": 0.0118,
+    "graph_setup_ms": 0.1047,
+    "bytes": 2363
+  },
+  {
+    "case": "test-39",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 575,
+    "packet_tokens": 349,
+    "handoff_ms": 0.0163,
+    "graph_setup_ms": 0.1047,
+    "bytes": 2554
+  },
+  {
+    "case": "test-39",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-39",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-39",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-39",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-39",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-40",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2843,
+    "packet_tokens": 2843,
+    "handoff_ms": 0.0748,
+    "graph_setup_ms": 0.1168,
+    "bytes": 17053
+  },
+  {
+    "case": "test-40",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 352,
+    "packet_tokens": 352,
+    "handoff_ms": 0.0171,
+    "graph_setup_ms": 0.1168,
+    "bytes": 2126
+  },
+  {
+    "case": "test-40",
+    "mode": "stamp_only",
+    "sources": [
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 514,
+    "packet_tokens": 286,
+    "handoff_ms": 0.0104,
+    "graph_setup_ms": 0.1168,
+    "bytes": 2363
+  },
+  {
+    "case": "test-40",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 580,
+    "packet_tokens": 352,
+    "handoff_ms": 0.015,
+    "graph_setup_ms": 0.1168,
+    "bytes": 2554
+  },
+  {
+    "case": "test-40",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-40",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-40",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-40",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-40",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-41",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2842,
+    "packet_tokens": 2842,
+    "handoff_ms": 0.0706,
+    "graph_setup_ms": 0.1146,
+    "bytes": 17070
+  },
+  {
+    "case": "test-41",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 351,
+    "packet_tokens": 351,
+    "handoff_ms": 0.0166,
+    "graph_setup_ms": 0.1146,
+    "bytes": 2129
+  },
+  {
+    "case": "test-41",
+    "mode": "stamp_only",
+    "sources": [
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 508,
+    "packet_tokens": 282,
+    "handoff_ms": 0.0093,
+    "graph_setup_ms": 0.1146,
+    "bytes": 2366
+  },
+  {
+    "case": "test-41",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 577,
+    "packet_tokens": 351,
+    "handoff_ms": 0.0139,
+    "graph_setup_ms": 0.1146,
+    "bytes": 2557
+  },
+  {
+    "case": "test-41",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-41",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-41",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-41",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-41",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-42",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2863,
+    "packet_tokens": 2863,
+    "handoff_ms": 0.0692,
+    "graph_setup_ms": 0.1046,
+    "bytes": 17065
+  },
+  {
+    "case": "test-42",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 351,
+    "packet_tokens": 351,
+    "handoff_ms": 0.0144,
+    "graph_setup_ms": 0.1046,
+    "bytes": 2129
+  },
+  {
+    "case": "test-42",
+    "mode": "stamp_only",
+    "sources": [
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 510,
+    "packet_tokens": 285,
+    "handoff_ms": 0.009,
+    "graph_setup_ms": 0.1046,
+    "bytes": 2366
+  },
+  {
+    "case": "test-42",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 576,
+    "packet_tokens": 351,
+    "handoff_ms": 0.0133,
+    "graph_setup_ms": 0.1046,
+    "bytes": 2557
+  },
+  {
+    "case": "test-42",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-42",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-42",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-42",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-42",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-43",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2862,
+    "packet_tokens": 2862,
+    "handoff_ms": 0.0678,
+    "graph_setup_ms": 0.1036,
+    "bytes": 17071
+  },
+  {
+    "case": "test-43",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 353,
+    "packet_tokens": 353,
+    "handoff_ms": 0.0144,
+    "graph_setup_ms": 0.1036,
+    "bytes": 2127
+  },
+  {
+    "case": "test-43",
+    "mode": "stamp_only",
+    "sources": [
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 513,
+    "packet_tokens": 287,
+    "handoff_ms": 0.0088,
+    "graph_setup_ms": 0.1036,
+    "bytes": 2364
+  },
+  {
+    "case": "test-43",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 579,
+    "packet_tokens": 353,
+    "handoff_ms": 0.0136,
+    "graph_setup_ms": 0.1036,
+    "bytes": 2555
+  },
+  {
+    "case": "test-43",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-43",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-43",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-43",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-43",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-44",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2830,
+    "packet_tokens": 2830,
+    "handoff_ms": 0.0683,
+    "graph_setup_ms": 0.1038,
+    "bytes": 17063
+  },
+  {
+    "case": "test-44",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 349,
+    "packet_tokens": 349,
+    "handoff_ms": 0.0143,
+    "graph_setup_ms": 0.1038,
+    "bytes": 2125
+  },
+  {
+    "case": "test-44",
+    "mode": "stamp_only",
+    "sources": [
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 511,
+    "packet_tokens": 282,
+    "handoff_ms": 0.0088,
+    "graph_setup_ms": 0.1038,
+    "bytes": 2362
+  },
+  {
+    "case": "test-44",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 578,
+    "packet_tokens": 349,
+    "handoff_ms": 0.0136,
+    "graph_setup_ms": 0.1038,
+    "bytes": 2553
+  },
+  {
+    "case": "test-44",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-44",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-44",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-44",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-44",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-45",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2863,
+    "packet_tokens": 2863,
+    "handoff_ms": 0.0828,
+    "graph_setup_ms": 0.1218,
+    "bytes": 17073
+  },
+  {
+    "case": "test-45",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 360,
+    "packet_tokens": 360,
+    "handoff_ms": 0.0362,
+    "graph_setup_ms": 0.1218,
+    "bytes": 2130
+  },
+  {
+    "case": "test-45",
+    "mode": "stamp_only",
+    "sources": [
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 514,
+    "packet_tokens": 290,
+    "handoff_ms": 0.0125,
+    "graph_setup_ms": 0.1218,
+    "bytes": 2367
+  },
+  {
+    "case": "test-45",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 584,
+    "packet_tokens": 360,
+    "handoff_ms": 0.0168,
+    "graph_setup_ms": 0.1218,
+    "bytes": 2558
+  },
+  {
+    "case": "test-45",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-45",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-45",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-45",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-45",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-46",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2855,
+    "packet_tokens": 2855,
+    "handoff_ms": 0.0731,
+    "graph_setup_ms": 0.1379,
+    "bytes": 17028
+  },
+  {
+    "case": "test-46",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 353,
+    "packet_tokens": 353,
+    "handoff_ms": 0.0197,
+    "graph_setup_ms": 0.1379,
+    "bytes": 2122
+  },
+  {
+    "case": "test-46",
+    "mode": "stamp_only",
+    "sources": [
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 507,
+    "packet_tokens": 283,
+    "handoff_ms": 0.0143,
+    "graph_setup_ms": 0.1379,
+    "bytes": 2359
+  },
+  {
+    "case": "test-46",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 577,
+    "packet_tokens": 353,
+    "handoff_ms": 0.0171,
+    "graph_setup_ms": 0.1379,
+    "bytes": 2550
+  },
+  {
+    "case": "test-46",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-46",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-46",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-46",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-46",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-47",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2849,
+    "packet_tokens": 2849,
+    "handoff_ms": 0.0739,
+    "graph_setup_ms": 0.1074,
+    "bytes": 17062
+  },
+  {
+    "case": "test-47",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 355,
+    "packet_tokens": 355,
+    "handoff_ms": 0.0222,
+    "graph_setup_ms": 0.1074,
+    "bytes": 2122
+  },
+  {
+    "case": "test-47",
+    "mode": "stamp_only",
+    "sources": [
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 512,
+    "packet_tokens": 286,
+    "handoff_ms": 0.0091,
+    "graph_setup_ms": 0.1074,
+    "bytes": 2359
+  },
+  {
+    "case": "test-47",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 581,
+    "packet_tokens": 355,
+    "handoff_ms": 0.0144,
+    "graph_setup_ms": 0.1074,
+    "bytes": 2550
+  },
+  {
+    "case": "test-47",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-47",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-47",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-47",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-47",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-48",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2861,
+    "packet_tokens": 2861,
+    "handoff_ms": 0.0708,
+    "graph_setup_ms": 0.1025,
+    "bytes": 17090
+  },
+  {
+    "case": "test-48",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 354,
+    "packet_tokens": 354,
+    "handoff_ms": 0.0184,
+    "graph_setup_ms": 0.1025,
+    "bytes": 2132
+  },
+  {
+    "case": "test-48",
+    "mode": "stamp_only",
+    "sources": [
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 514,
+    "packet_tokens": 287,
+    "handoff_ms": 0.0571,
+    "graph_setup_ms": 0.1025,
+    "bytes": 2369
+  },
+  {
+    "case": "test-48",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-7",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-7",
+      "root-7"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 581,
+    "packet_tokens": 354,
+    "handoff_ms": 0.025,
+    "graph_setup_ms": 0.1025,
+    "bytes": 2560
+  },
+  {
+    "case": "test-48",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-48",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-48",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-48",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-48",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-49",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2842,
+    "packet_tokens": 2842,
+    "handoff_ms": 0.0789,
+    "graph_setup_ms": 0.1161,
+    "bytes": 17071
+  },
+  {
+    "case": "test-49",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 348,
+    "packet_tokens": 348,
+    "handoff_ms": 0.0172,
+    "graph_setup_ms": 0.1161,
+    "bytes": 2122
+  },
+  {
+    "case": "test-49",
+    "mode": "stamp_only",
+    "sources": [
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 506,
+    "packet_tokens": 282,
+    "handoff_ms": 0.0098,
+    "graph_setup_ms": 0.1161,
+    "bytes": 2359
+  },
+  {
+    "case": "test-49",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 572,
+    "packet_tokens": 348,
+    "handoff_ms": 0.015,
+    "graph_setup_ms": 0.1161,
+    "bytes": 2550
+  },
+  {
+    "case": "test-49",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-49",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-49",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-49",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-49",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-50",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2845,
+    "packet_tokens": 2845,
+    "handoff_ms": 0.0706,
+    "graph_setup_ms": 0.1046,
+    "bytes": 17073
+  },
+  {
+    "case": "test-50",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 349,
+    "packet_tokens": 349,
+    "handoff_ms": 0.0147,
+    "graph_setup_ms": 0.1046,
+    "bytes": 2132
+  },
+  {
+    "case": "test-50",
+    "mode": "stamp_only",
+    "sources": [
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 509,
+    "packet_tokens": 283,
+    "handoff_ms": 0.0095,
+    "graph_setup_ms": 0.1046,
+    "bytes": 2369
+  },
+  {
+    "case": "test-50",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 575,
+    "packet_tokens": 349,
+    "handoff_ms": 0.0135,
+    "graph_setup_ms": 0.1046,
+    "bytes": 2560
+  },
+  {
+    "case": "test-50",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-50",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-50",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-50",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-50",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-51",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2841,
+    "packet_tokens": 2841,
+    "handoff_ms": 0.0691,
+    "graph_setup_ms": 0.1031,
+    "bytes": 17047
+  },
+  {
+    "case": "test-51",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 362,
+    "packet_tokens": 362,
+    "handoff_ms": 0.0153,
+    "graph_setup_ms": 0.1031,
+    "bytes": 2124
+  },
+  {
+    "case": "test-51",
+    "mode": "stamp_only",
+    "sources": [
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 516,
+    "packet_tokens": 293,
+    "handoff_ms": 0.0089,
+    "graph_setup_ms": 0.1031,
+    "bytes": 2361
+  },
+  {
+    "case": "test-51",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 585,
+    "packet_tokens": 362,
+    "handoff_ms": 0.0139,
+    "graph_setup_ms": 0.1031,
+    "bytes": 2552
+  },
+  {
+    "case": "test-51",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-51",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-51",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-51",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-51",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-52",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2851,
+    "packet_tokens": 2851,
+    "handoff_ms": 0.0697,
+    "graph_setup_ms": 0.1011,
+    "bytes": 17048
+  },
+  {
+    "case": "test-52",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 355,
+    "packet_tokens": 355,
+    "handoff_ms": 0.0151,
+    "graph_setup_ms": 0.1011,
+    "bytes": 2126
+  },
+  {
+    "case": "test-52",
+    "mode": "stamp_only",
+    "sources": [
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 512,
+    "packet_tokens": 283,
+    "handoff_ms": 0.0093,
+    "graph_setup_ms": 0.1011,
+    "bytes": 2363
+  },
+  {
+    "case": "test-52",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 584,
+    "packet_tokens": 355,
+    "handoff_ms": 0.0142,
+    "graph_setup_ms": 0.1011,
+    "bytes": 2554
+  },
+  {
+    "case": "test-52",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-52",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-52",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-52",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-52",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-53",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2831,
+    "packet_tokens": 2831,
+    "handoff_ms": 0.0699,
+    "graph_setup_ms": 0.1024,
+    "bytes": 17060
+  },
+  {
+    "case": "test-53",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 354,
+    "packet_tokens": 354,
+    "handoff_ms": 0.0178,
+    "graph_setup_ms": 0.1024,
+    "bytes": 2125
+  },
+  {
+    "case": "test-53",
+    "mode": "stamp_only",
+    "sources": [
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 510,
+    "packet_tokens": 285,
+    "handoff_ms": 0.0098,
+    "graph_setup_ms": 0.1024,
+    "bytes": 2362
+  },
+  {
+    "case": "test-53",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 579,
+    "packet_tokens": 354,
+    "handoff_ms": 0.0135,
+    "graph_setup_ms": 0.1024,
+    "bytes": 2553
+  },
+  {
+    "case": "test-53",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-53",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-53",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-53",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-53",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-54",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2847,
+    "packet_tokens": 2847,
+    "handoff_ms": 0.0697,
+    "graph_setup_ms": 0.1039,
+    "bytes": 17056
+  },
+  {
+    "case": "test-54",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 351,
+    "packet_tokens": 351,
+    "handoff_ms": 0.0147,
+    "graph_setup_ms": 0.1039,
+    "bytes": 2125
+  },
+  {
+    "case": "test-54",
+    "mode": "stamp_only",
+    "sources": [
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 510,
+    "packet_tokens": 282,
+    "handoff_ms": 0.0087,
+    "graph_setup_ms": 0.1039,
+    "bytes": 2362
+  },
+  {
+    "case": "test-54",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-3",
+      "root-3"
+    ],
+    "expected": [
+      "dependency-3",
+      "root-3"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 579,
+    "packet_tokens": 351,
+    "handoff_ms": 0.0146,
+    "graph_setup_ms": 0.1039,
+    "bytes": 2553
+  },
+  {
+    "case": "test-54",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-54",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-54",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-54",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-54",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-55",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2850,
+    "packet_tokens": 2850,
+    "handoff_ms": 0.0689,
+    "graph_setup_ms": 0.1024,
+    "bytes": 17064
+  },
+  {
+    "case": "test-55",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 352,
+    "packet_tokens": 352,
+    "handoff_ms": 0.0144,
+    "graph_setup_ms": 0.1024,
+    "bytes": 2125
+  },
+  {
+    "case": "test-55",
+    "mode": "stamp_only",
+    "sources": [
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 510,
+    "packet_tokens": 283,
+    "handoff_ms": 0.0094,
+    "graph_setup_ms": 0.1024,
+    "bytes": 2362
+  },
+  {
+    "case": "test-55",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-1",
+      "root-1"
+    ],
+    "expected": [
+      "dependency-1",
+      "root-1"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 579,
+    "packet_tokens": 352,
+    "handoff_ms": 0.0458,
+    "graph_setup_ms": 0.1024,
+    "bytes": 2553
+  },
+  {
+    "case": "test-55",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-55",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-55",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-55",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-55",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-56",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2844,
+    "packet_tokens": 2844,
+    "handoff_ms": 0.076,
+    "graph_setup_ms": 0.115,
+    "bytes": 17041
+  },
+  {
+    "case": "test-56",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-4",
+      "root-4"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 348,
+    "packet_tokens": 348,
+    "handoff_ms": 0.0207,
+    "graph_setup_ms": 0.115,
+    "bytes": 2121
+  },
+  {
+    "case": "test-56",
+    "mode": "stamp_only",
+    "sources": [
+      "root-4"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 504,
+    "packet_tokens": 279,
+    "handoff_ms": 0.0116,
+    "graph_setup_ms": 0.115,
+    "bytes": 2358
+  },
+  {
+    "case": "test-56",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-4",
+      "root-4"
+    ],
+    "expected": [
+      "dependency-4",
+      "root-4"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 573,
+    "packet_tokens": 348,
+    "handoff_ms": 0.0168,
+    "graph_setup_ms": 0.115,
+    "bytes": 2549
+  },
+  {
+    "case": "test-56",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-56",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-56",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-56",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-56",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-57",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2847,
+    "packet_tokens": 2847,
+    "handoff_ms": 0.3601,
+    "graph_setup_ms": 0.1096,
+    "bytes": 17064
+  },
+  {
+    "case": "test-57",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 352,
+    "packet_tokens": 352,
+    "handoff_ms": 0.0195,
+    "graph_setup_ms": 0.1096,
+    "bytes": 2129
+  },
+  {
+    "case": "test-57",
+    "mode": "stamp_only",
+    "sources": [
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 508,
+    "packet_tokens": 280,
+    "handoff_ms": 0.0092,
+    "graph_setup_ms": 0.1096,
+    "bytes": 2366
+  },
+  {
+    "case": "test-57",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-2",
+      "root-2"
+    ],
+    "expected": [
+      "dependency-2",
+      "root-2"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 580,
+    "packet_tokens": 352,
+    "handoff_ms": 0.014,
+    "graph_setup_ms": 0.1096,
+    "bytes": 2557
+  },
+  {
+    "case": "test-57",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-57",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-57",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-57",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-57",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-58",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2848,
+    "packet_tokens": 2848,
+    "handoff_ms": 0.089,
+    "graph_setup_ms": 0.1285,
+    "bytes": 17041
+  },
+  {
+    "case": "test-58",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 354,
+    "packet_tokens": 354,
+    "handoff_ms": 0.0164,
+    "graph_setup_ms": 0.1285,
+    "bytes": 2125
+  },
+  {
+    "case": "test-58",
+    "mode": "stamp_only",
+    "sources": [
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 508,
+    "packet_tokens": 284,
+    "handoff_ms": 0.0206,
+    "graph_setup_ms": 0.1285,
+    "bytes": 2362
+  },
+  {
+    "case": "test-58",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-0",
+      "root-0"
+    ],
+    "expected": [
+      "dependency-0",
+      "root-0"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 578,
+    "packet_tokens": 354,
+    "handoff_ms": 0.0143,
+    "graph_setup_ms": 0.1285,
+    "bytes": 2553
+  },
+  {
+    "case": "test-58",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-58",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-58",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-58",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-58",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-59",
+    "mode": "full_authorized",
+    "sources": [
+      "dependency-0",
+      "dependency-1",
+      "dependency-2",
+      "dependency-3",
+      "dependency-4",
+      "dependency-5",
+      "dependency-6",
+      "dependency-7",
+      "root-0",
+      "root-1",
+      "root-2",
+      "root-3",
+      "root-4",
+      "root-5",
+      "root-6",
+      "root-7"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 2851,
+    "packet_tokens": 2851,
+    "handoff_ms": 0.0705,
+    "graph_setup_ms": 0.1096,
+    "bytes": 17055
+  },
+  {
+    "case": "test-59",
+    "mode": "graph_known_root",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 350,
+    "packet_tokens": 350,
+    "handoff_ms": 0.0145,
+    "graph_setup_ms": 0.1096,
+    "bytes": 2124
+  },
+  {
+    "case": "test-59",
+    "mode": "stamp_only",
+    "sources": [
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 0,
+    "status": "complete",
+    "tokens": 506,
+    "packet_tokens": 284,
+    "handoff_ms": 0.0091,
+    "graph_setup_ms": 0.1096,
+    "bytes": 2361
+  },
+  {
+    "case": "test-59",
+    "mode": "stamp_plus_graph",
+    "sources": [
+      "dependency-6",
+      "root-6"
+    ],
+    "expected": [
+      "dependency-6",
+      "root-6"
+    ],
+    "complete": 1,
+    "status": "complete",
+    "tokens": 572,
+    "packet_tokens": 350,
+    "handoff_ms": 0.0135,
+    "graph_setup_ms": 0.1096,
+    "bytes": 2552
+  },
+  {
+    "case": "test-59",
+    "mode": "stale_revision",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-59",
+    "mode": "changed_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-59",
+    "mode": "unauthorized_dependency",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-59",
+    "mode": "budget",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  },
+  {
+    "case": "test-59",
+    "mode": "conflict",
+    "status": "insufficient",
+    "empty": true,
+    "correct_abstention": true
+  }
+]

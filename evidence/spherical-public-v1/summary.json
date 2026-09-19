@@ -1,0 +1,56 @@
+[
+  {
+    "dataset": "scifact",
+    "method": "dense",
+    "queries": 300,
+    "ndcg10": 0.6450816521455776
+  },
+  {
+    "dataset": "scifact",
+    "method": "semantic_256",
+    "queries": 300,
+    "ndcg10": 0.5008214150756954
+  },
+  {
+    "dataset": "scifact",
+    "method": "semantic_128_lexical_128",
+    "queries": 300,
+    "ndcg10": 0.3975815154992734
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "dense",
+    "queries": 323,
+    "ndcg10": 0.31667312754717797
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "semantic_256",
+    "queries": 323,
+    "ndcg10": 0.2236378186321064
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "semantic_128_lexical_128",
+    "queries": 323,
+    "ndcg10": 0.18072160698755824
+  },
+  {
+    "dataset": "arguana",
+    "method": "dense",
+    "queries": 1406,
+    "ndcg10": 0.5040631158034715
+  },
+  {
+    "dataset": "arguana",
+    "method": "semantic_256",
+    "queries": 1406,
+    "ndcg10": 0.41520362872838296
+  },
+  {
+    "dataset": "arguana",
+    "method": "semantic_128_lexical_128",
+    "queries": 1406,
+    "ndcg10": 0.3253908073168928
+  }
+]

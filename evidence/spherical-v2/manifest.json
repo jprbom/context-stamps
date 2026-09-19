@@ -1,0 +1,77 @@
+{
+  "protocol": {
+    "name": "spherical-context-qr-v2",
+    "status": "follow-up protocol frozen after v1 audit, before v2 run",
+    "representation": "lexical hashing per supplied facet; Gaussian angular fingerprints",
+    "views": [
+      "content",
+      "entity",
+      "intent",
+      "task"
+    ],
+    "total_bits": 256,
+    "comparison": [
+      "single_content_256",
+      "directions_4x64",
+      "views_4x64_uniform",
+      "views_4x64_learned"
+    ],
+    "seeds": [
+      17,
+      41,
+      83
+    ],
+    "splits": {
+      "train": 120,
+      "validation": 40,
+      "test": 80,
+      "ood": 80
+    },
+    "split_seeds": {
+      "train": 35044,
+      "validation": 45044,
+      "test": 55044,
+      "ood": 65044
+    },
+    "training": "ridge relevance regression on four view-agreement features; intercept; training standardization",
+    "tuning": "choose ridge penalty from [0.01, 1.0, 100.0] by validation top-1, then MRR; fixed tie order",
+    "heldout_policy": "no parameter changes using test or OOD results",
+    "workflow_ablations": [
+      "full_authorized",
+      "graph_known_root",
+      "stamp_only",
+      "stamp_plus_graph"
+    ],
+    "workflow_count": 60,
+    "negative_workflows": [
+      "stale_revision",
+      "changed_dependency",
+      "unauthorized_dependency",
+      "budget",
+      "conflict"
+    ],
+    "tokenizer": "cl100k_base; count entire packet including headers; no LLM call in this experiment",
+    "limits": "procedural supplied facets and explicit edges, no automatic extraction, no semantic neural encoder training, no real software execution, no infrastructure-cost or energy inference",
+    "change": "Counterbalance candidate wording independently of relevance to remove the v1 inverse-overlap shortcut. Supplied entity/intent/task remain exact labels; include exact-field control in supplemental audit.",
+    "additional_sources": [
+      "experiments/run_spherical_v2.py"
+    ]
+  },
+  "python": "3.13.13 | packaged by Anaconda, Inc. | (main, Apr 14 2026, 06:12:50) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "numpy": "2.5.3",
+  "tokenizer": "0.14.0",
+  "device": "CPU; no GPU training in this run",
+  "git_parent": "9d3cba7db038b853277af6f17fc79e72529b0c56",
+  "source_sha256": {
+    "context_stamps/spherical.py": "322a75ed65ef3a5481ec70db7ee262fb1d34b9530bf431201e2b9325dce617b1",
+    "context_stamps/facet_model.py": "74172d0ed169303037ee01c9fec3cf9edd1dc718d52095fd3f977b2ff362e421",
+    "experiments/run_spherical.py": "a0dc6fc3a62a0dcf2c24b0f28593f5be1f1d650286307869a5ddf84158439579",
+    "stamps.py": "1eff83406ee64c45aba5916231f6af22404683ee93d9dfbf51ca44b53c1ee87f",
+    "evidence/source-snapshots/workflow-554d988db35f0b4a071978adba7b89ed34673f08a77b310ac65cc1f67ff08916.py": "554d988db35f0b4a071978adba7b89ed34673f08a77b310ac65cc1f67ff08916"
+  },
+  "recorded_source_paths": {
+    "evidence/source-snapshots/workflow-554d988db35f0b4a071978adba7b89ed34673f08a77b310ac65cc1f67ff08916.py": "context_stamps/workflow.py"
+  },
+  "source_snapshot_note": "Preserved exact original workflow source before the capacity-boundary revalidation fix. Current regression tests cover the fixed implementation."
+}
