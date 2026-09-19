@@ -1,0 +1,7 @@
+{
+  "cpu": "Intel Core Ultra 9 275HX",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "os": "Windows",
+  "concurrent_workload": "CPU retrieval replication overlapped local SLM run",
+  "controlled_latency_benchmark": false
+}

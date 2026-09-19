@@ -46,11 +46,20 @@ Use it for small local collections, changing project files and evidence packets 
 
 ## Measured results, including failures
 
-On BEIR SciFact's 300 test queries, our optional coverage/diversity candidate selector achieved **0.6912 nDCG@10**, compared with **0.6451** for Faiss dense retrieval using the same pinned MiniLM encoder. A raw diallel control reproduced the dense ranking. Small trained linear selectors scored **0.6174**, so they remain experimental and are not enabled by default.
+The optional coverage/diversity selector improved SciFact retrieval, but **the frozen settings lost to dense retrieval on both independent datasets**. These results use the same pinned MiniLM encoder and report nDCG@10:
 
-This is a retrieval result on one dataset, not a general agent-quality or cost-saving claim. [Full comparison, training evidence and reproduction](docs/experiments.md) · [model cards](docs/models.md) · [diallel assessment](docs/diallel.md).
+| Method | SciFact: 300 queries | NFCorpus: 323 queries | ArguAna: 1,406 queries |
+|---|---:|---:|---:|
+| Dense retrieval | 0.6451 | 0.3159 | 0.5014 |
+| Coverage/diversity | 0.6912 | 0.3038 | 0.4906 |
 
-![Executed SciFact comparison](docs/assets/scifact-results.png)
+Keep your retrieval baseline and validate optional reranking on your domain. Trained linear selectors also failed to generalize reliably. [Full comparisons and training evidence](docs/experiments.md) · [frozen replication](docs/replication.md) · [model cards](docs/models.md) · [diallel assessment](docs/diallel.md).
+
+In **144 local Qwen2.5-1.5B calls** on short fictional QA and restricted code-edit tasks, selected context used about **75% fewer input tokens** and matched the full-current-context baseline's correctness. Latency was mixed. Required source IDs were supplied by the caller; this is not an autonomous coding benchmark or evidence of general robustness. [Prompts, outputs, grading and limitations](docs/local-tasks.md).
+
+![Frozen selector results across three datasets](docs/assets/replication-results.png)
+
+Want to test the integration? The [developer study kit](docs/usability-study.md) provides three tasks and a feedback form. Outside-user results are still pending.
 
 ## Python: remember, retrieve and pack
 

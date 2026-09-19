@@ -1,0 +1,69 @@
+{
+  "protocol": {
+    "frozen_commit": "9b1900923de28bce3633bb9138e929db5405cc85",
+    "selector_sha256": "1af31c766a0e8be5332966c6a3bdeb951683fbca069af62218acd2b573656607",
+    "datasets": [
+      "nfcorpus",
+      "arguana"
+    ],
+    "test_queries": "all official test qrels",
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "candidate_pool": 100,
+    "coverage_weight": 0.3,
+    "diversity_weight": 0.15,
+    "mmr_relevance_weight": 0.8,
+    "bm25_k1": 1.5,
+    "bm25_b": 0.75,
+    "cutoff": 10,
+    "graded_ndcg_gain": "linear relevance, trec_eval default",
+    "exclude_identical_query_document_ids": true,
+    "low_lexical_stratum": "maximum Jaccard(query, positive document) <= 0.1",
+    "bootstrap_seed": 20260919,
+    "bootstrap_samples": 2000,
+    "retuning": false,
+    "rule": "Report both datasets and low-overlap strata, including regressions. No parameter changes after outcomes."
+  },
+  "datasets": [
+    {
+      "dataset": "nfcorpus",
+      "documents": 3633,
+      "queries": 323,
+      "data_sha256": {
+        "corpus.jsonl": "10cc83ef1826b1425e6a87090b5140b39b27755d5a27e48215a88611c899991f",
+        "queries.jsonl": "d024e6621b84925d485ae473d316a0c3af31c62c8068a59fb29d22f7613aef2a",
+        "qrels/test.tsv": "f8fba6ef3d4dd9c3a242a8ba4ae38276fc3622fce7dcbae764766d564542fd2a"
+      },
+      "encoding_seconds_or_cache_load": 0.003272399999332265,
+      "cache_hit": true,
+      "index_build_seconds": 0.49159449999933713
+    },
+    {
+      "dataset": "arguana",
+      "documents": 8674,
+      "queries": 1406,
+      "data_sha256": {
+        "corpus.jsonl": "0627982cec4ee896df6dc98604ef6b499c83fd87a19eaaeb3f23b88bbef6cbce",
+        "queries.jsonl": "f8b7c903f95d9a2d291de3915a8fac25085e9db679f19f59fea4145bfd1df618",
+        "qrels/test.tsv": "0c47b481fa8b47fb9ca5e74bc8a017bdea14518c0e4a5d21345291180b3aca76"
+      },
+      "encoding_seconds_or_cache_load": 0.007115100001101382,
+      "cache_hit": true,
+      "index_build_seconds": 1.033296199999313
+    }
+  ],
+  "python": "3.13.13",
+  "packages": {
+    "numpy": "2.5.3",
+    "faiss-cpu": "1.15.1",
+    "sentence-transformers": "5.7.0",
+    "torch": "2.14.0"
+  },
+  "source_sha256": {
+    "experiments/run_replication.py": "93be587ae28da232ce3861138d680eee46a7ee4231741a91f5b2dc4c6164861f",
+    "context_stamps/selection.py": "1af31c766a0e8be5332966c6a3bdeb951683fbca069af62218acd2b573656607",
+    "context_stamps/baselines.py": "782958d7bb8ccdaee3ee13bb43c3299ea9b2d9843f48606abb33c51c0a9786fb"
+  },
+  "selector_weights_sha256": "ac9268746a2caab2e51efa63af05aa60097033c0d656e11e0e189ad29b6b148c",
+  "notes": "CPU; encoder cost excluded from per-query latency; no new fitting or tuning; query-bootstrap intervals are exploratory and not multiplicity adjusted"
+}

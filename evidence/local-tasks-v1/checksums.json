@@ -1,0 +1,8 @@
+{
+  "environment.json": "e4fcc02427e1a771dc9bbece9dbec2daa1d76828d5ecb3a1edd4c897104fe3b6",
+  "fixtures.json": "8c32c2ec74aba6b66907b42d59f86c69824bd6791063a9eaac8935e26c1520c4",
+  "manifest.json": "df0232b38f62d1e6654e56e4e5a7132891a70101f387d15f6644eae5cf54bcc0",
+  "per-call.jsonl": "ecd961873f037cafbdccca626a0a6fe9d199202a9d022bf83f065238f1058e50",
+  "protocol.json": "5ca143d601a6c2cc0b980facb2980adc6070766b907eecf12292f018d0db6354",
+  "summary.json": "65e148694a34068705117c7764eb3f9a4a4964ff4866d7001a2f693c2ae4b470"
+}

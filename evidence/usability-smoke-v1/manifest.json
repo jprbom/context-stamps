@@ -1,0 +1,24 @@
+{
+  "kind": "maintainer installation smoke test, not an external usability study",
+  "python": "3.13.13",
+  "os": "Windows",
+  "release_url": "https://github.com/jprbom/context-stamps/releases/download/v0.2.0/cortex_context_stamps-0.2.0-py3-none-any.whl",
+  "sha256": "298e6a60ef2ff7a8522e624b64586854dbb9509a299d4b0a79e8e120af7a38af",
+  "install_seconds_including_venv_and_download": 9.848183500000232,
+  "import_from_fresh_venv_confirmed": true,
+  "checks": [
+    {
+      "check": "cli_help",
+      "seconds": 0.1064741000009235,
+      "exit_code": 0,
+      "stdout": "usage: __main__.py [-h] [--db DB] [--family FAMILY] [--model MODEL]\n                   [--revision REVISION]\n                   {demo,add,recall,pack,get,invalidate,forget,observe,explain,select,fit,serve} ...\n\nLocal context fingerprints and evidence selection\n\npositional arguments:\n  {demo,add,recall,pack,get,invalidate,forget,observe,explain,select,fit,serve}\n    demo                run without a database or model download\n    add                 store one text chunk; use stable source IDs\n    observe             observe only explicitly listed files under a trusted\n                        root\n    explain             explain changed or missing source versions\n    select              select evidence with freshness and required-source\n                        guards\n    fit                 fit a projection on a training-only NumPy embedding\n                        matrix\n    serve               serve local read tools over MCP stdio\n\noptions:\n  -h, --help            show this help message and exit\n  --db DB               SQLite store (default: context.sqlite)\n  --family FAMILY       projection family JSON; required only when creating a\n                        trained store\n  --model MODEL         optional sentence-transformers model identifier\n  --revision REVISION   immutable model commit SHA\n"
+    },
+    {
+      "check": "changing_evidence",
+      "seconds": 0.13004240000009304,
+      "exit_code": 0,
+      "stdout": "{\n  \"changed\": {\n    \"revisions\": {\n      \"transfer.py\": \"33e0632772d00206822e0ba55a0bbd5f04b6216d683f8111e60c2ea99a0771c4\"\n    },\n    \"events\": [\n      {\n        \"source\": \"transfer.py\",\n        \"digest\": \"33e0632772d00206822e0ba55a0bbd5f04b6216d683f8111e60c2ea99a0771c4\",\n        \"stamp\": \"cs1:c50b2a0849aa7db0a1c984a26114282d7378eda6daff36096d50326cf2e9eaec:128:4019fcb68bbbc95654e32a6c4f1065a7\",\n        \"status\": \"updated\"\n      }\n    ]\n  },\n  \"why_plan_is_stale\": {\n    \"source\": \"plan\",\n    \"status\": \"stale\",\n    \"changes\": [\n      {\n        \"source\": \"transfer.py\",\n        \"expected\": \"f52f0214e8e34ed564565f8826147c1ebf52ff2f774647d925eefd0e3c7d229e\",\n        \"observed\": \"33e0632772d00206822e0ba55a0bbd5f04b6216d683f8111e60c2ea99a0771c4\",\n        \"reason\": \"changed\"\n      }\n    ]\n  },\n  \"before_refresh\": {\n    \"text\": \"\",\n    \"units\": 0,\n    \"budget\": 1024,\n    \"status\": \"insufficient_evidence\",\n    \"selected\": [],\n    \"missing_required\": [\n      \"plan\"\n    ],\n    \"decisions\": [\n      {\n        \"source\": \"plan\",\n        \"reason\": \"invalidated\"\n      },\n      {\n        \"source\": \"transfer.py\",\n        \"reason\": \"selected\",\n        \"freshness\": \"current\",\n        \"score\": 0.6015625\n      }\n    ],\n    \"reranked\": false,\n    \"next_action\": \"refresh_sources_or_increase_budget\"\n  },\n  \"after_refresh\": {\n    \"text\": \"{\\\"source\\\": \\\"transfer.py\\\", \\\"sha256\\\": \\\"33e0632772d00206822e0ba55a0bbd5f04b6216d683f8111e60c2ea99a0771c4\\\"}\\nif balance > amount: transfer(amount)\\n\\n{\\\"source\\\": \\\"plan\\\", \\\"sha256\\\": \\\"03e768ea8d887ee86afad2156ae3c47c84d982a78566a80fca67ac3b602be975\\\"}\\nTest that exact-balance transfers are rejected.\",\n    \"units\": 287,\n    \"budget\": 1024,\n    \"status\": \"current\",\n    \"selected\": [\n      \"transfer.py\",\n      \"plan\"\n    ],\n    \"missing_required\": [],\n    \"decisions\": [\n      {\n        \"source\": \"transfer.py\",\n        \"reason\": \"selected\",\n        \"freshness\": \"current\",\n        \"score\": 0.6015625\n      },\n      {\n        \"source\": \"plan\",\n        \"reason\": \"selected\",\n        \"freshness\": \"current\",\n        \"score\": 0.5859375\n      }\n    ],\n    \"reranked\": false,\n    \"next_action\": \"review_evidence\"\n  }\n}\n"
+    }
+  ],
+  "limitations": "one Windows host; network download time is included; no human participant results"
+}

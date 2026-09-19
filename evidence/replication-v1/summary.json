@@ -1,0 +1,282 @@
+[
+  {
+    "dataset": "nfcorpus",
+    "stratum": "all",
+    "method": "dense",
+    "n": 323,
+    "ndcg10": 0.31594074924861876,
+    "recall10": 0.15498797328057845,
+    "retrieval_selection_ms": 0.6274421052257934,
+    "paired_delta_vs_dense": 0.0,
+    "paired_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "dataset": "nfcorpus",
+    "stratum": "all",
+    "method": "bm25",
+    "n": 323,
+    "ndcg10": 0.3110580725979795,
+    "recall10": 0.15260195457322656,
+    "retrieval_selection_ms": 0.22425479878465668,
+    "paired_delta_vs_dense": -0.004882676650639206,
+    "paired_ci95": [
+      -0.026497022082959943,
+      0.017280489547076335
+    ]
+  },
+  {
+    "dataset": "nfcorpus",
+    "stratum": "all",
+    "method": "coverage_diversity",
+    "n": 323,
+    "ndcg10": 0.30376923587535193,
+    "recall10": 0.1479571860537638,
+    "retrieval_selection_ms": 11.04908823529882,
+    "paired_delta_vs_dense": -0.012171513373266761,
+    "paired_ci95": [
+      -0.021111884667394866,
+      -0.0016794318222678305
+    ]
+  },
+  {
+    "dataset": "nfcorpus",
+    "stratum": "all",
+    "method": "mmr",
+    "n": 323,
+    "ndcg10": 0.28182482965147715,
+    "recall10": 0.13943329125384607,
+    "retrieval_selection_ms": 5.043280804877365,
+    "paired_delta_vs_dense": -0.03411591959714156,
+    "paired_ci95": [
+      -0.04208995978722519,
+      -0.02630493613276863
+    ]
+  },
+  {
+    "dataset": "nfcorpus",
+    "stratum": "all",
+    "method": "frozen_linear",
+    "n": 323,
+    "ndcg10": 0.3193609983508914,
+    "recall10": 0.15470005257810235,
+    "retrieval_selection_ms": 6.169070588183456,
+    "paired_delta_vs_dense": 0.0034202491022726406,
+    "paired_ci95": [
+      -0.013545780216487495,
+      0.021238359922805386
+    ]
+  },
+  {
+    "dataset": "nfcorpus",
+    "stratum": "low_lexical_overlap",
+    "method": "dense",
+    "n": 321,
+    "ndcg10": 0.313619708815261,
+    "recall10": 0.15493375207864762,
+    "retrieval_selection_ms": 0.6268990653841463,
+    "paired_delta_vs_dense": 0.0,
+    "paired_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "dataset": "nfcorpus",
+    "stratum": "low_lexical_overlap",
+    "method": "bm25",
+    "n": 321,
+    "ndcg10": 0.31006353390342545,
+    "recall10": 0.152996448282183,
+    "retrieval_selection_ms": 0.22306884737451224,
+    "paired_delta_vs_dense": -0.0035561749118356556,
+    "paired_ci95": [
+      -0.02614070267949776,
+      0.019128736220085645
+    ]
+  },
+  {
+    "dataset": "nfcorpus",
+    "stratum": "low_lexical_overlap",
+    "method": "coverage_diversity",
+    "n": 321,
+    "ndcg10": 0.30137236046770605,
+    "recall10": 0.14785915932394006,
+    "retrieval_selection_ms": 11.051255763245493,
+    "paired_delta_vs_dense": -0.012247348347555028,
+    "paired_ci95": [
+      -0.02150590591515199,
+      -0.0018941806375284433
+    ]
+  },
+  {
+    "dataset": "nfcorpus",
+    "stratum": "low_lexical_overlap",
+    "method": "mmr",
+    "n": 321,
+    "ndcg10": 0.2793181021581247,
+    "recall10": 0.13928215614520661,
+    "retrieval_selection_ms": 5.047673831702532,
+    "paired_delta_vs_dense": -0.03430160665713637,
+    "paired_ci95": [
+      -0.04300480641791299,
+      -0.026378637100996194
+    ]
+  },
+  {
+    "dataset": "nfcorpus",
+    "stratum": "low_lexical_overlap",
+    "method": "frozen_linear",
+    "n": 321,
+    "ndcg10": 0.317259278215785,
+    "recall10": 0.15464403747771374,
+    "retrieval_selection_ms": 6.171236448548897,
+    "paired_delta_vs_dense": 0.003639569400523977,
+    "paired_ci95": [
+      -0.013742159704026076,
+      0.021317677486013004
+    ]
+  },
+  {
+    "dataset": "arguana",
+    "stratum": "all",
+    "method": "dense",
+    "n": 1406,
+    "ndcg10": 0.5014117645943661,
+    "recall10": 0.7908961593172119,
+    "retrieval_selection_ms": 1.4366285917441999,
+    "paired_delta_vs_dense": 0.0,
+    "paired_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "dataset": "arguana",
+    "stratum": "all",
+    "method": "bm25",
+    "n": 1406,
+    "ndcg10": 0.4191011540097513,
+    "recall10": 0.6877667140825036,
+    "retrieval_selection_ms": 5.770999146509222,
+    "paired_delta_vs_dense": -0.08231061058461488,
+    "paired_ci95": [
+      -0.10091696198361373,
+      -0.062278531542386086
+    ]
+  },
+  {
+    "dataset": "arguana",
+    "stratum": "all",
+    "method": "coverage_diversity",
+    "n": 1406,
+    "ndcg10": 0.4906111005272004,
+    "recall10": 0.7809388335704125,
+    "retrieval_selection_ms": 25.045321337097352,
+    "paired_delta_vs_dense": -0.010800664067165715,
+    "paired_ci95": [
+      -0.01782759149193914,
+      -0.0038810810455850832
+    ]
+  },
+  {
+    "dataset": "arguana",
+    "stratum": "all",
+    "method": "mmr",
+    "n": 1406,
+    "ndcg10": 0.48324355461600943,
+    "recall10": 0.748221906116643,
+    "retrieval_selection_ms": 9.99538321476894,
+    "paired_delta_vs_dense": -0.018168209978356685,
+    "paired_ci95": [
+      -0.02432578698543815,
+      -0.011811545151589642
+    ]
+  },
+  {
+    "dataset": "arguana",
+    "stratum": "all",
+    "method": "frozen_linear",
+    "n": 1406,
+    "ndcg10": 0.2167948714551989,
+    "recall10": 0.39829302987197723,
+    "retrieval_selection_ms": 17.364006116628946,
+    "paired_delta_vs_dense": -0.2846168931391672,
+    "paired_ci95": [
+      -0.3023066775890141,
+      -0.26592680762662574
+    ]
+  },
+  {
+    "dataset": "arguana",
+    "stratum": "low_lexical_overlap",
+    "method": "dense",
+    "n": 34,
+    "ndcg10": 0.3644825957455765,
+    "recall10": 0.6470588235294118,
+    "retrieval_selection_ms": 1.407802940989581,
+    "paired_delta_vs_dense": 0.0,
+    "paired_ci95": [
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "dataset": "arguana",
+    "stratum": "low_lexical_overlap",
+    "method": "bm25",
+    "n": 34,
+    "ndcg10": 0.0088538234018818,
+    "recall10": 0.029411764705882353,
+    "retrieval_selection_ms": 5.982438235257766,
+    "paired_delta_vs_dense": -0.35562877234369467,
+    "paired_ci95": [
+      -0.4656855428096173,
+      -0.25202606738050637
+    ]
+  },
+  {
+    "dataset": "arguana",
+    "stratum": "low_lexical_overlap",
+    "method": "coverage_diversity",
+    "n": 34,
+    "ndcg10": 0.30733415601990194,
+    "recall10": 0.6176470588235294,
+    "retrieval_selection_ms": 26.575032352732652,
+    "paired_delta_vs_dense": -0.05714843972567456,
+    "paired_ci95": [
+      -0.10568910751092983,
+      -0.01945952239396062
+    ]
+  },
+  {
+    "dataset": "arguana",
+    "stratum": "low_lexical_overlap",
+    "method": "mmr",
+    "n": 34,
+    "ndcg10": 0.3278783039690416,
+    "recall10": 0.6176470588235294,
+    "retrieval_selection_ms": 11.340161764457983,
+    "paired_delta_vs_dense": -0.036604291776534875,
+    "paired_ci95": [
+      -0.06699674628706737,
+      -0.008159004138428762
+    ]
+  },
+  {
+    "dataset": "arguana",
+    "stratum": "low_lexical_overlap",
+    "method": "frozen_linear",
+    "n": 34,
+    "ndcg10": 0.0,
+    "recall10": 0.0,
+    "retrieval_selection_ms": 18.58167941142764,
+    "paired_delta_vs_dense": -0.3644825957455765,
+    "paired_ci95": [
+      -0.4830101157226468,
+      -0.2544611603957257
+    ]
+  }
+]

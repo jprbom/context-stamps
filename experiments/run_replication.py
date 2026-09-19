@@ -169,12 +169,15 @@ def run(data, out, cache):
                 "frozen_linear": (learned, learned_ms),
             }
             qw = words(query)
+            missing_positive_ids = [
+                did for did, rel in qrels[qid].items() if rel > 0 and did not in positions
+            ]
             overlap = max(
                 (
                     len(qw & words(documents[positions[did]]))
                     / max(1, len(qw | words(documents[positions[did]])))
                     for did, rel in qrels[qid].items()
-                    if rel > 0
+                    if rel > 0 and did in positions
                 ),
                 default=0,
             )
@@ -186,8 +189,9 @@ def run(data, out, cache):
                         "method": method,
                         **graded_metrics(order, qrels[qid], ids),
                         "retrieval_selection_ms": elapsed,
-                        "low_lexical_overlap": overlap <= 0.1,
-                        "max_positive_jaccard": overlap,
+                        "low_lexical_overlap": not missing_positive_ids and overlap <= 0.1,
+                        "max_positive_jaccard": None if missing_positive_ids else overlap,
+                        "missing_positive_ids": missing_positive_ids,
                         "ranked_ids": [ids[i] for i in order],
                     }
                 )

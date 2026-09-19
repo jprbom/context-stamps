@@ -2,6 +2,8 @@
 
 These are executed measurements, including negative results. They are not claims of general agent correctness, prompt-injection resistance or superiority over complete memory platforms. [Reproduction](#reproduce) and [model cards](models.md) explain the scope.
 
+**Follow-up:** the frozen coverage/diversity settings lost to dense retrieval on both [NFCorpus and ArguAna](replication.md). A separate [live local SLM experiment](local-tasks.md) measured token use and correctness on small fictional tasks. Read these alongside the initial SciFact result.
+
 ## Public data: BEIR SciFact
 
 5,183 documents and all 300 official test queries. Pinned MiniLM, CPU execution. Trained selectors use official training labels with relevant-document group separation from test. Coverage weight is selected on a separate validation split. Neural rerankers and selection methods use the top 100 dense candidates; binary reranking uses the top 100 binary candidates. See the [run manifest](../evidence/scifact-v1/manifest.json).
@@ -91,4 +93,4 @@ Obtain SciFact separately from the [BEIR source](https://huggingface.co/datasets
 
 ## Remaining validation
 
-Real coding-agent task completion, live SLM answer faithfulness, large stores, independent datasets, calibrated uncertainty and edge-device energy measurements remain unestablished. Changes should be evaluated against these records without selecting only favorable methods or seeds.
+Full coding-agent task completion, open-ended answer faithfulness, large stores, calibrated uncertainty and edge-device energy measurements remain unestablished. Independent retrieval datasets and constrained local SLM tasks now have follow-up records linked above. Changes should be evaluated against all records without selecting only favorable methods or seeds. Human usability evaluation is pending; the [study kit](usability-study.md) is ready.
