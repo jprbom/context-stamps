@@ -1,0 +1,37 @@
+{
+  "status": "frozen before final 32-byte transport follow-up; preceding runs retained",
+  "seed": 20260923,
+  "model": "qwen2.5:1.5b",
+  "workflows": 8,
+  "repeats": 2,
+  "stages": [
+    "planner JSON extraction",
+    "typed model extraction plus deterministic configuration-code rendering",
+    "stale dependency or revoked access: abstain",
+    "revalidated current evidence JSON extraction"
+  ],
+  "methods": [
+    "full_current",
+    "exact_graph",
+    "spherical_guarded"
+  ],
+  "budget": "192 stage attempts, normally 144 model calls plus one warmup; local existing model, no downloads",
+  "fixtures": "original fictional components with explicit dependency contracts, 8 candidate entities; half workflows stale-edge change, half permission revocation; supplied facets and roots used equally by controls",
+  "metrics": [
+    "complete workflow success",
+    "stage correctness",
+    "abstention correctness",
+    "stale-value errors",
+    "actual input/output model tokens",
+    "total stage latency",
+    "setup and update latency",
+    "prefill/decode duration",
+    "context bytes",
+    "compact transport bytes"
+  ],
+  "timing": "method order shuffled per workflow stage, warmup excluded and reported, model calls sequential; setup/update costs included in workflow totals; no simulated network or provider billing",
+  "controls": "exact graph baseline does not construct stamps; no artificial extra stamp overhead on baseline; all receive same source data; full context shares fail-closed validation",
+  "limits": "8 unique procedural workflows; repeats not independent samples; no autonomous tool planning or real repository issue claim; token counts from actual local model, zero API spend is not estimated commercial savings",
+  "changes": "Fresh values/entities. Same validated deterministic renderer. Replace 115-byte textual envelope with exactly32 raw bytes under a shared schema. Warmup matches system, schema, context length and generation options. Preserve v3 latency outlier rather than deleting it.",
+  "transport": "schema bootstrap stored separately; raw32 bytes not passed to LLM; original resolved evidence is passed to LLM; no simulated network"
+}
