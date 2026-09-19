@@ -1,0 +1,54 @@
+{
+  "status": "follow-up frozen before inference after partial-timer issue in v1; same generation settings",
+  "budget": "up to 20 GB additional weights and four hours local inference",
+  "models": {
+    "image": [
+      "stabilityai/sd-turbo",
+      "b261bac6fd2cf515557d5d0707481eafa0485ec2"
+    ],
+    "speech": [
+      "facebook/mms-tts-eng",
+      "c71de0fe7204c83f1c10820a7d696d0b450048ba"
+    ],
+    "video": [
+      "ali-vilab/text-to-video-ms-1.7b",
+      "8227dddca75a8561bf858d604cc5dae52b954d01"
+    ]
+  },
+  "seeds": [
+    11,
+    29
+  ],
+  "unique_prompts_per_modality": 3,
+  "conditions": [
+    "direct_oracle_prompt",
+    "spherical_route_and_resolve"
+  ],
+  "total_calls_if_all_complete": 36,
+  "routing": "supplied content/entity/intent/task facets; exact entity guard; uniform spherical activation; explicit one-dependency closure; generator consumes original resolved prompt",
+  "image_settings": "512x512, 1 step, guidance_scale 0, fp16",
+  "speech_settings": "English VITS, model default rate and sampling; set seed before every call",
+  "video_settings": "256x256, 8 frames, 10 steps, fp16, guidance_scale 9",
+  "metrics": [
+    "resolved prompt identity",
+    "finite nonempty output",
+    "paired output max absolute error",
+    "paired output SHA256",
+    "generator time",
+    "routing time",
+    "peak allocated GPU bytes",
+    "model input tokens",
+    "compact reference bytes including shared-schema bootstrap separately"
+  ],
+  "failure_policy": "record exceptions and OOM without silently changing model or resolution; no external paid service",
+  "claims_excluded": [
+    "image aesthetic improvement",
+    "speech intelligibility improvement",
+    "video temporal quality improvement",
+    "neural attention modification",
+    "generation token savings when resolved prompt is unchanged"
+  ],
+  "data": "original fictional prompts only; model weights and generated media remain local, evidence records hashes and settings",
+  "license_note": "model-specific licenses remain separate; MMS and video models have noncommercial restrictions and video card contains inconsistent NC/ND labeling; no model weights redistributed",
+  "timing_correction": "routing_ms includes per-call encoder/family construction, candidate stamping, graph preparation, query stamping, compact serialization, activation and resolution; model load excluded and first generation retained"
+}

@@ -84,8 +84,7 @@ class ContextGraph:
             raise ValueError("invalid relationship")
         if source not in self._nodes or target not in self._nodes:
             raise ValueError("relationship endpoints must exist")
-        existing = any((e.source, e.target, e.kind) == (source, target, kind) for e in self._edges)
-        if len(self._edges) >= 4096 and not existing:
+        if len(self._edges) >= 4096:
             raise ValueError("relationship limit reached")
         a, b = self._nodes[source], self._nodes[target]
         edge = Relationship(source, target, kind, provenance, a.digest, b.digest, a.revision, b.revision)

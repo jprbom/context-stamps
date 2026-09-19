@@ -1,4 +1,6 @@
 import json
+import math
+import random
 import unittest
 
 from context_stamps.facet_model import FacetModel
@@ -16,6 +18,20 @@ class SphericalTests(unittest.TestCase):
         self.assertEqual(a, self.stamp((10, 20)))
         self.assertEqual(a.score(self.stamp((-1, -2))), 0)
         self.assertEqual(a.bits, 64)
+
+    def test_angular_estimator_against_known_vector_geometry(self):
+        rng = random.Random(51571)
+        family = Family("geometry-control", 3, 512, 739)
+        errors = []
+        for _ in range(120):
+            a = [rng.gauss(0, 1) for _ in range(3)]
+            b = [rng.gauss(0, 1) for _ in range(3)]
+            cosine = sum(x * y for x, y in zip(a, b)) / (math.hypot(*a) * math.hypot(*b))
+            expected = 1 - math.acos(max(-1, min(1, cosine))) / math.pi
+            first = SphericalStamp.encode({"view": a}, {"view": family})
+            second = SphericalStamp.encode({"view": b}, {"view": family})
+            errors.append(abs(first.score(second) - expected))
+        self.assertLess(sum(errors) / len(errors), .05)
 
     def test_payload(self):
         a = self.stamp()
@@ -66,6 +82,19 @@ class WorkflowTests(unittest.TestCase):
     def test_cycle_terminates(self):
         self.graph.link("c", "a", "depends_on", provenance="test")
         self.assertEqual(self.handoff().status, "complete")
+
+    def test_capacity_allows_revalidation_but_not_a_new_edge(self):
+        graph = ContextGraph()
+        keys = [str(i) for i in range(65)]
+        for key in keys:
+            graph.put(ContextNode(key, key, "1", frozenset({"worker"})))
+        pairs = [(a, b) for a in keys for b in keys if a != b]
+        for a, b in pairs[:4096]:
+            graph.link(a, b, "depends_on", provenance="initial")
+        graph.link(*pairs[0], "depends_on", provenance="revalidated")
+        self.assertEqual(len(graph._edges), 4096)
+        with self.assertRaises(ValueError):
+            graph.link(*pairs[4096], "depends_on", provenance="new")
 
     def test_changed_content_same_revision_rejected(self):
         self.graph.put(ContextNode("c", "changed", "1", frozenset({"engineer"})))
