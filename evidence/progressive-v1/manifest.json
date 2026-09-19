@@ -29,6 +29,10 @@
   },
   "input_sha256": {
     "evidence/spherical-public-v1/manifest.json": "b1e2c2e1fdfa2087e988805f3909ac912b569bb79b6fd9156a3a5d5ea0d7f0e7",
-    "evidence/scifact-v1/manifest.json": "cffa8bbb395eba92e9bcbb1b3daae6ba39c071e52225de1be20c75c0cd31fe54"
+    "evidence/scifact-v1/manifest.json": "0fd2b9132fa8aa3a150a7daefce5e2efbc5fb8d1da9e54dbcd4b718d1ffdb610"
+  },
+  "input_hash_correction": {
+    "reason": "Use committed LF text bytes, replacing Windows CRLF-only digest; benchmark content and results unchanged",
+    "original_scifact_manifest_sha256": "cffa8bbb395eba92e9bcbb1b3daae6ba39c071e52225de1be20c75c0cd31fe54"
   }
 }

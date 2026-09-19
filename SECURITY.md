@@ -1,5 +1,11 @@
 # Security policy and threat model
 
+## Secret scanning
+
+CI runs Gitleaks 8.30.1 from a version- and SHA256-pinned archive with all default rules enabled. `.gitleaks.toml` excludes seven exact adjacent public ArguAna identifier pairs which caused nine `generic-api-key` findings, and only in `evidence/replication-v1/per-query.jsonl`. The rule, path and entire matched pair must agree. No directory, line or whole rule is excluded. The underlying evidence stays unchanged.
+
+`experiments/verify_secret_scan.py` checks the original finding, its scoped exclusion, a generated fake credential on the same line, the public pair at another path and a changed neighboring value. Positive controls must remain detectable. See [Gitleaks configuration semantics](https://github.com/gitleaks/gitleaks#configuration). For local checks, run `gitleaks dir . --config .gitleaks.toml --redact` and `python experiments/verify_secret_scan.py --gitleaks /path/to/gitleaks`. Findings outside these exact exclusions require review. Clean scanning is not a guarantee of absence of secrets or application vulnerabilities.
+
 ## Progressive routing and receipts
 
 The host authenticates callers and supplies current eligible IDs, roles and revisions. `RoutingPolicy` is a local configuration, not a credential. Scope must identify the actual domain, encoder and schema; undeclared distribution changes are not detected. Returned IDs never authorize tool execution.

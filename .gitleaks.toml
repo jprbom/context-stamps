@@ -1,0 +1,22 @@
+title = "Context Stamps: narrow public ArguAna identifier exceptions"
+
+[extend]
+useDefault = true
+
+# Seven exact adjacent public-ID pairs account for nine findings. Both the
+# path and complete matched text must agree. No rule or directory is disabled.
+[[allowlists]]
+description = "Reviewed ArguAna IDs in the immutable replication-v1 ranking records"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]replication-v1[\\/]per-query\.jsonl$''']
+regexes = [
+  '''^validation-science-ihbrapisbpl-con01b\", \"test-law-tahglcphsld-pro02a\"$''',
+  '''^validation-science-ihbrapisbpl-con01b\", \"validation-international-atwhwatw-con02a\"$''',
+  '''^validation-science-ihbrapisbpl-con03a\", \"test-society-cpisydfphwj-con03b\"$''',
+  '''^validation-science-ihbrapisbpl-pro01a\", \"test-law-sdiflhrdffe-con03a\"$''',
+  '''^validation-science-ihbrapisbpl-pro02a\", \"test-health-hgwhwbjfs-con04b\"$''',
+  '''^validation-science-ihbrapisbpl-pro02b\", \"test-culture-mmctghwbsa-con01b\"$''',
+  '''^validation-science-ihbrapisbpl-pro02b\", \"test-international-bldimehbn-pro01a\"$''',
+]
