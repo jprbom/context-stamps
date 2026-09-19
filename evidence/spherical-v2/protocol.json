@@ -1,0 +1,58 @@
+{
+  "name": "spherical-context-qr-v2",
+  "status": "follow-up protocol frozen after v1 audit, before v2 run",
+  "representation": "lexical hashing per supplied facet; Gaussian angular fingerprints",
+  "views": [
+    "content",
+    "entity",
+    "intent",
+    "task"
+  ],
+  "total_bits": 256,
+  "comparison": [
+    "single_content_256",
+    "directions_4x64",
+    "views_4x64_uniform",
+    "views_4x64_learned"
+  ],
+  "seeds": [
+    17,
+    41,
+    83
+  ],
+  "splits": {
+    "train": 120,
+    "validation": 40,
+    "test": 80,
+    "ood": 80
+  },
+  "split_seeds": {
+    "train": 35044,
+    "validation": 45044,
+    "test": 55044,
+    "ood": 65044
+  },
+  "training": "ridge relevance regression on four view-agreement features; intercept; training standardization",
+  "tuning": "choose ridge penalty from [0.01, 1.0, 100.0] by validation top-1, then MRR; fixed tie order",
+  "heldout_policy": "no parameter changes using test or OOD results",
+  "workflow_ablations": [
+    "full_authorized",
+    "graph_known_root",
+    "stamp_only",
+    "stamp_plus_graph"
+  ],
+  "workflow_count": 60,
+  "negative_workflows": [
+    "stale_revision",
+    "changed_dependency",
+    "unauthorized_dependency",
+    "budget",
+    "conflict"
+  ],
+  "tokenizer": "cl100k_base; count entire packet including headers; no LLM call in this experiment",
+  "limits": "procedural supplied facets and explicit edges, no automatic extraction, no semantic neural encoder training, no real software execution, no infrastructure-cost or energy inference",
+  "change": "Counterbalance candidate wording independently of relevance to remove the v1 inverse-overlap shortcut. Supplied entity/intent/task remain exact labels; include exact-field control in supplemental audit.",
+  "additional_sources": [
+    "experiments/run_spherical_v2.py"
+  ]
+}
