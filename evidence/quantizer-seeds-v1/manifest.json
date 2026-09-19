@@ -1,0 +1,26 @@
+{
+  "protocol": {
+    "seeds": [
+      17,
+      41,
+      83
+    ],
+    "bits": 256,
+    "iterations": 50,
+    "training": "391 original SciFact train query embeddings only; frozen MiniLM",
+    "selection": "No model/seed selection. Report all seeds and aggregate.",
+    "status": "Exploratory replication after seed-17 test results were inspected. No hyperparameter change.",
+    "limits": "Existing ITQ baseline, single-view; no base-model fine-tuning or independent new dataset."
+  },
+  "numpy": "2.5.3",
+  "source_sha256": {
+    "experiments/run_quantizer_seeds.py": "8d179ada62c3406122b51ab4f0f7d48eae48e53f28fb04db732ec1d874feda66",
+    "experiments/run_progressive.py": "c895869d9336631173444f2fa7a747a533c1902974c332c6bf73d8f83c2fcf48",
+    "context_stamps/learning.py": "9746f074063ad86a7c7f4ab10b5c36be19a7205a69299cfdb29dffdef081f78c",
+    "stamps.py": "1eff83406ee64c45aba5916231f6af22404683ee93d9dfbf51ca44b53c1ee87f"
+  },
+  "input_sha256": {
+    "evidence/spherical-public-v1/manifest.json": "b1e2c2e1fdfa2087e988805f3909ac912b569bb79b6fd9156a3a5d5ea0d7f0e7",
+    "evidence/scifact-v1/manifest.json": "cffa8bbb395eba92e9bcbb1b3daae6ba39c071e52225de1be20c75c0cd31fe54"
+  }
+}

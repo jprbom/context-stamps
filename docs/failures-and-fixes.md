@@ -1,5 +1,11 @@
 # Failure ledger and release gates
 
+## v0.3.2: trained compression, routing and reuse
+
+The trained 32-byte ITQ baseline improves all three recorded public datasets but still trails dense retrieval. The compact confidence policy failed qualification and remains disabled. `ProgressiveRouter` uses exact IDs when available and a precise backend otherwise; all 2,029 public rankings match dense by fallback. This does not repair information loss inside the stamp.
+
+The initial session cache added CPU overhead. Restricting version checks to cached dependencies, while invalidating globally on every mutation, reduced that overhead in the follow-up replay. Both runs and original source snapshots are retained. Reuse reduces repeated transfer payloads in a shared-resolver scenario, not model evidence tokens. [Details and remaining research gates](progressive-routing.md).
+
 Private research candidate. Passing a controlled fixture is not proof of general robustness.
 
 | Failure or gap | Response | Evidence / remaining limitation |

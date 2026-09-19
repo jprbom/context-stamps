@@ -1,0 +1,3228 @@
+{
+  "train": [
+    {
+      "query_id": "10",
+      "score": 0.6015625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1003",
+      "score": 0.69140625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1004",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1005",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1006",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1008",
+      "score": 0.59765625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1025",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1026",
+      "score": 0.6328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1027",
+      "score": 0.6328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1030",
+      "score": 0.734375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1032",
+      "score": 0.6171875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1033",
+      "score": 0.6171875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1034",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1035",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1036",
+      "score": 0.6640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1042",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1043",
+      "score": 0.66015625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1046",
+      "score": 0.6875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1047",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1052",
+      "score": 0.66796875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1053",
+      "score": 0.671875,
+      "margin": 0.01171875,
+      "correct": false
+    },
+    {
+      "query_id": "1054",
+      "score": 0.71484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1056",
+      "score": 0.66015625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1058",
+      "score": 0.63671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1069",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1072",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1073",
+      "score": 0.66015625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1074",
+      "score": 0.6875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1075",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1081",
+      "score": 0.66796875,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "1084",
+      "score": 0.7109375,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "1085",
+      "score": 0.69140625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "109",
+      "score": 0.6875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1091",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1096",
+      "score": 0.734375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1098",
+      "score": 0.59375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "11",
+      "score": 0.6015625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1105",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1106",
+      "score": 0.62109375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1111",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1112",
+      "score": 0.66796875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1114",
+      "score": 0.6640625,
+      "margin": 0.01171875,
+      "correct": false
+    },
+    {
+      "query_id": "1115",
+      "score": 0.6328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1118",
+      "score": 0.65234375,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "1119",
+      "score": 0.68359375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1120",
+      "score": 0.67578125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1125",
+      "score": 0.640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1126",
+      "score": 0.640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1127",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1138",
+      "score": 0.64453125,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "1142",
+      "score": 0.66796875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1148",
+      "score": 0.640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1156",
+      "score": 0.66015625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1157",
+      "score": 0.59375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1158",
+      "score": 0.59765625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1159",
+      "score": 0.60546875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1164",
+      "score": 0.68359375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1165",
+      "score": 0.6875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1166",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1168",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1169",
+      "score": 0.70703125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1170",
+      "score": 0.68359375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1171",
+      "score": 0.68359375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1176",
+      "score": 0.640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1177",
+      "score": 0.63671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1181",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1182",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1186",
+      "score": 0.6640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1188",
+      "score": 0.6328125,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "119",
+      "score": 0.73828125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1195",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "12",
+      "score": 0.6953125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "120",
+      "score": 0.7421875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1205",
+      "score": 0.6640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "121",
+      "score": 0.63671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1212",
+      "score": 0.68359375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1215",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1219",
+      "score": 0.640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "122",
+      "score": 0.640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1220",
+      "score": 0.6640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1224",
+      "score": 0.7265625,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "1227",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1228",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1229",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1247",
+      "score": 0.625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1248",
+      "score": 0.66015625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1249",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1254",
+      "score": 0.671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1255",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1257",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1258",
+      "score": 0.6015625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1261",
+      "score": 0.66015625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1263",
+      "score": 0.66015625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1268",
+      "score": 0.69921875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1284",
+      "score": 0.67578125,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "1289",
+      "score": 0.609375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1293",
+      "score": 0.61328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1294",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1295",
+      "score": 0.60546875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1297",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1307",
+      "score": 0.61328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1308",
+      "score": 0.59765625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1309",
+      "score": 0.6171875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1310",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1311",
+      "score": 0.671875,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "1312",
+      "score": 0.67578125,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "1323",
+      "score": 0.64453125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1324",
+      "score": 0.640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1325",
+      "score": 0.62109375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1327",
+      "score": 0.6796875,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "1330",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1331",
+      "score": 0.68359375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1333",
+      "score": 0.63671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "134",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1342",
+      "score": 0.69140625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1346",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1353",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1355",
+      "score": 0.6328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1356",
+      "score": 0.62890625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1372",
+      "score": 0.63671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1373",
+      "score": 0.640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1374",
+      "score": 0.66015625,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "1375",
+      "score": 0.6640625,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "1378",
+      "score": 0.640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1381",
+      "score": 0.66015625,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "139",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1390",
+      "score": 0.625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1391",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1392",
+      "score": 0.6796875,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "1393",
+      "score": 0.7265625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "14",
+      "score": 0.61328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1400",
+      "score": 0.61328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1401",
+      "score": 0.68359375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1402",
+      "score": 0.65234375,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "1406",
+      "score": 0.62890625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1407",
+      "score": 0.6953125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "149",
+      "score": 0.671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "15",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "153",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "154",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "157",
+      "score": 0.65625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "159",
+      "score": 0.65625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "160",
+      "score": 0.66015625,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "173",
+      "score": 0.5859375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "174",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "175",
+      "score": 0.66796875,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "176",
+      "score": 0.61328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "18",
+      "score": 0.6640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "186",
+      "score": 0.61328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "187",
+      "score": 0.609375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "19",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "196",
+      "score": 0.62109375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "20",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "200",
+      "score": 0.67578125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "201",
+      "score": 0.68359375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "203",
+      "score": 0.66796875,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "204",
+      "score": 0.62109375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "205",
+      "score": 0.62109375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "209",
+      "score": 0.61328125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "21",
+      "score": 0.640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "210",
+      "score": 0.625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "211",
+      "score": 0.6328125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "22",
+      "score": 0.66796875,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "220",
+      "score": 0.65625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "221",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "222",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "227",
+      "score": 0.67578125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "24",
+      "score": 0.66015625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "241",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "242",
+      "score": 0.6640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "243",
+      "score": 0.703125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "244",
+      "score": 0.6796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "245",
+      "score": 0.7265625,
+      "margin": 0.01171875,
+      "correct": false
+    },
+    {
+      "query_id": "246",
+      "score": 0.65234375,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "247",
+      "score": 0.6328125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "25",
+      "score": 0.6796875,
+      "margin": 0.015625,
+      "correct": false
+    },
+    {
+      "query_id": "253",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "254",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "255",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "256",
+      "score": 0.65625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "258",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "26",
+      "score": 0.65625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "266",
+      "score": 0.62890625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "27",
+      "score": 0.65625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "285",
+      "score": 0.6171875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "290",
+      "score": 0.68359375,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "292",
+      "score": 0.66015625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "296",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "317",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "32",
+      "score": 0.625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "330",
+      "score": 0.5859375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "331",
+      "score": 0.58984375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "332",
+      "score": 0.6953125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "333",
+      "score": 0.6953125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "334",
+      "score": 0.6640625,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "335",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "336",
+      "score": 0.6328125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "337",
+      "score": 0.6328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "340",
+      "score": 0.6875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "341",
+      "score": 0.69140625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "345",
+      "score": 0.6328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "346",
+      "score": 0.66796875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "347",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "349",
+      "score": 0.6796875,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "351",
+      "score": 0.65625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "352",
+      "score": 0.640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "355",
+      "score": 0.69140625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "356",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "357",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "358",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "363",
+      "score": 0.640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "364",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "365",
+      "score": 0.66796875,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "367",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "368",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "369",
+      "score": 0.7265625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "370",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "371",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "375",
+      "score": 0.67578125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "39",
+      "score": 0.67578125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "394",
+      "score": 0.6953125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "396",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "397",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "4",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "40",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "401",
+      "score": 0.59765625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "403",
+      "score": 0.66796875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "404",
+      "score": 0.6796875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "406",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "407",
+      "score": 0.69140625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "418",
+      "score": 0.6640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "429",
+      "score": 0.66796875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "43",
+      "score": 0.703125,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "434",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "435",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "449",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "453",
+      "score": 0.65625,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "454",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "456",
+      "score": 0.63671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "458",
+      "score": 0.68359375,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "46",
+      "score": 0.62109375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "466",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "47",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "470",
+      "score": 0.70703125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "472",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "473",
+      "score": 0.609375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "474",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "479",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "480",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "481",
+      "score": 0.640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "483",
+      "score": 0.7109375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "488",
+      "score": 0.66796875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "489",
+      "score": 0.67578125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "499",
+      "score": 0.625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "504",
+      "score": 0.62109375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "505",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "529",
+      "score": 0.71875,
+      "margin": 0.01171875,
+      "correct": false
+    },
+    {
+      "query_id": "530",
+      "score": 0.71484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "531",
+      "score": 0.7265625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "548",
+      "score": 0.66796875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "562",
+      "score": 0.609375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "563",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "564",
+      "score": 0.6796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "565",
+      "score": 0.6796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "566",
+      "score": 0.6796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "570",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "571",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "572",
+      "score": 0.625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "576",
+      "score": 0.68359375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "579",
+      "score": 0.6640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "582",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "584",
+      "score": 0.69921875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "585",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "591",
+      "score": 0.7109375,
+      "margin": 0.01171875,
+      "correct": false
+    },
+    {
+      "query_id": "592",
+      "score": 0.703125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "595",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "6",
+      "score": 0.67578125,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "60",
+      "score": 0.66015625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "600",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "601",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "603",
+      "score": 0.625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "607",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "61",
+      "score": 0.68359375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "611",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "616",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "617",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "618",
+      "score": 0.6171875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "62",
+      "score": 0.62109375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "626",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "632",
+      "score": 0.69921875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "633",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "635",
+      "score": 0.67578125,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "643",
+      "score": 0.69140625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "645",
+      "score": 0.7421875,
+      "margin": 0.01171875,
+      "correct": false
+    },
+    {
+      "query_id": "646",
+      "score": 0.7421875,
+      "margin": 0.015625,
+      "correct": false
+    },
+    {
+      "query_id": "653",
+      "score": 0.68359375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "658",
+      "score": 0.68359375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "66",
+      "score": 0.62109375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "661",
+      "score": 0.63671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "662",
+      "score": 0.61328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "663",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "666",
+      "score": 0.66015625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "667",
+      "score": 0.68359375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "668",
+      "score": 0.6640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "669",
+      "score": 0.640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "670",
+      "score": 0.625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "671",
+      "score": 0.6328125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "676",
+      "score": 0.59375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "677",
+      "score": 0.5859375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "689",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "696",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "698",
+      "score": 0.61328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "704",
+      "score": 0.71875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "730",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "736",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "737",
+      "score": 0.69921875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "738",
+      "score": 0.70703125,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "739",
+      "score": 0.6640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "745",
+      "score": 0.6171875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "746",
+      "score": 0.6171875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "747",
+      "score": 0.59765625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "748",
+      "score": 0.59765625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "749",
+      "score": 0.71484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "751",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "752",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "753",
+      "score": 0.73828125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "755",
+      "score": 0.6640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "757",
+      "score": 0.6640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "758",
+      "score": 0.625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "761",
+      "score": 0.66015625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "762",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "767",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "778",
+      "score": 0.6953125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "779",
+      "score": 0.69921875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "78",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "782",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "787",
+      "score": 0.625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "788",
+      "score": 0.62109375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "789",
+      "score": 0.69140625,
+      "margin": 0.01171875,
+      "correct": false
+    },
+    {
+      "query_id": "79",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "790",
+      "score": 0.6875,
+      "margin": 0.01171875,
+      "correct": false
+    },
+    {
+      "query_id": "791",
+      "score": 0.71875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "792",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "799",
+      "score": 0.68359375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "80",
+      "score": 0.62109375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "81",
+      "score": 0.66015625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "815",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "816",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "82",
+      "score": 0.6953125,
+      "margin": 0.015625,
+      "correct": false
+    },
+    {
+      "query_id": "846",
+      "score": 0.671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "855",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "856",
+      "score": 0.6328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "857",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "863",
+      "score": 0.71875,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "867",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "890",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "891",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "893",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "894",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "9",
+      "score": 0.64453125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "90",
+      "score": 0.66796875,
+      "margin": 0.01171875,
+      "correct": false
+    },
+    {
+      "query_id": "901",
+      "score": 0.60546875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "916",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "917",
+      "score": 0.640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "919",
+      "score": 0.671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "926",
+      "score": 0.6796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "927",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "93",
+      "score": 0.6640625,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "933",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "934",
+      "score": 0.63671875,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "938",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "939",
+      "score": 0.6484375,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "940",
+      "score": 0.68359375,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "941",
+      "score": 0.68359375,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "945",
+      "score": 0.6875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "946",
+      "score": 0.71875,
+      "margin": 0.02734375,
+      "correct": false
+    },
+    {
+      "query_id": "949",
+      "score": 0.59765625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "951",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "952",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "953",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "954",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "955",
+      "score": 0.68359375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "962",
+      "score": 0.68359375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "963",
+      "score": 0.75390625,
+      "margin": 0.01953125,
+      "correct": false
+    },
+    {
+      "query_id": "964",
+      "score": 0.75390625,
+      "margin": 0.01953125,
+      "correct": false
+    },
+    {
+      "query_id": "977",
+      "score": 0.6796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "978",
+      "score": 0.68359375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "98",
+      "score": 0.6171875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "980",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "988",
+      "score": 0.625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "989",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    }
+  ],
+  "validation": [
+    {
+      "query_id": "1001",
+      "score": 0.67578125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1037",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1038",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "104",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1044",
+      "score": 0.640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1045",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1050",
+      "score": 0.62890625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "106",
+      "score": 0.67578125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1065",
+      "score": 0.60546875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1067",
+      "score": 0.6171875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1068",
+      "score": 0.625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "108",
+      "score": 0.71484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1101",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1102",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "111",
+      "score": 0.69921875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1161",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1183",
+      "score": 0.609375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1208",
+      "score": 0.625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1210",
+      "score": 0.63671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1211",
+      "score": 0.609375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1218",
+      "score": 0.6328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1235",
+      "score": 0.6796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1236",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1237",
+      "score": 0.62890625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1238",
+      "score": 0.625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1244",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1253",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1306",
+      "score": 0.6484375,
+      "margin": 0.01171875,
+      "correct": false
+    },
+    {
+      "query_id": "1314",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1315",
+      "score": 0.66015625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1349",
+      "score": 0.609375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1350",
+      "score": 0.609375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1351",
+      "score": 0.6953125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1361",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1376",
+      "score": 0.67578125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "1387",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "1405",
+      "score": 0.65625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "152",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "161",
+      "score": 0.6328125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "164",
+      "score": 0.66796875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "165",
+      "score": 0.68359375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "168",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "169",
+      "score": 0.68359375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "177",
+      "score": 0.64453125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "189",
+      "score": 0.640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "224",
+      "score": 0.6953125,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "225",
+      "score": 0.6875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "226",
+      "score": 0.7109375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "228",
+      "score": 0.62109375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "259",
+      "score": 0.6796875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "262",
+      "score": 0.6640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "263",
+      "score": 0.65625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "264",
+      "score": 0.66015625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "265",
+      "score": 0.65625,
+      "margin": 0.01171875,
+      "correct": false
+    },
+    {
+      "query_id": "280",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "281",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "283",
+      "score": 0.67578125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "304",
+      "score": 0.61328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "305",
+      "score": 0.63671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "306",
+      "score": 0.62109375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "308",
+      "score": 0.6171875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "309",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "315",
+      "score": 0.62109375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "316",
+      "score": 0.625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "325",
+      "score": 0.59765625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "326",
+      "score": 0.59375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "366",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "372",
+      "score": 0.68359375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "376",
+      "score": 0.7109375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "382",
+      "score": 0.63671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "398",
+      "score": 0.66796875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "420",
+      "score": 0.6640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "423",
+      "score": 0.7265625,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "425",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "426",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "428",
+      "score": 0.671875,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "432",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "447",
+      "score": 0.73046875,
+      "margin": 0.01171875,
+      "correct": false
+    },
+    {
+      "query_id": "448",
+      "score": 0.72265625,
+      "margin": 0.01171875,
+      "correct": false
+    },
+    {
+      "query_id": "455",
+      "score": 0.75,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "469",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "492",
+      "score": 0.6171875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "493",
+      "score": 0.625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "506",
+      "score": 0.6640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "542",
+      "score": 0.60546875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "568",
+      "score": 0.66796875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "602",
+      "score": 0.62109375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "606",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "624",
+      "score": 0.640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "625",
+      "score": 0.640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "63",
+      "score": 0.6640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "631",
+      "score": 0.640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "64",
+      "score": 0.62890625,
+      "margin": 0.0078125,
+      "correct": false
+    },
+    {
+      "query_id": "640",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "647",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "648",
+      "score": 0.66015625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "654",
+      "score": 0.62890625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "655",
+      "score": 0.63671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "657",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "67",
+      "score": 0.62109375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "672",
+      "score": 0.6796875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "68",
+      "score": 0.63671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "680",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "681",
+      "score": 0.65234375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "682",
+      "score": 0.65234375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "683",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "685",
+      "score": 0.63671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "686",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "687",
+      "score": 0.6328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "688",
+      "score": 0.60546875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "694",
+      "score": 0.671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "705",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "709",
+      "score": 0.6171875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "71",
+      "score": 0.640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "710",
+      "score": 0.65625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "732",
+      "score": 0.6015625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "733",
+      "score": 0.609375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "740",
+      "score": 0.6328125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "764",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "765",
+      "score": 0.6640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "766",
+      "score": 0.671875,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "772",
+      "score": 0.6640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "810",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "817",
+      "score": 0.6484375,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "818",
+      "score": 0.640625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "826",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "828",
+      "score": 0.6171875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "848",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "853",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "854",
+      "score": 0.703125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "860",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "861",
+      "score": 0.625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "866",
+      "score": 0.69921875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "877",
+      "score": 0.671875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "885",
+      "score": 0.64453125,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "886",
+      "score": 0.64453125,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "896",
+      "score": 0.60546875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "897",
+      "score": 0.60546875,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "898",
+      "score": 0.62890625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "899",
+      "score": 0.62890625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "942",
+      "score": 0.62890625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "96",
+      "score": 0.6640625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "965",
+      "score": 0.65625,
+      "margin": 0.0,
+      "correct": false
+    },
+    {
+      "query_id": "969",
+      "score": 0.6484375,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "970",
+      "score": 0.65625,
+      "margin": 0.00390625,
+      "correct": false
+    },
+    {
+      "query_id": "979",
+      "score": 0.63671875,
+      "margin": 0.0,
+      "correct": false
+    }
+  ]
+}

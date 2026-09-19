@@ -1,0 +1,10 @@
+{
+  "status": "Written before this run; historical public test sets previously inspected",
+  "training": "Existing ITQ implementation, 256 bits, seed 17, 50 iterations, SciFact training query embeddings only. No labels or test documents used in projection fitting. Established quantization baseline, not a new algorithm or spherical encoder.",
+  "encoder": "Reuse SHA256-pinned MiniLM embeddings from spherical-public-v1; no base encoder fine-tuning",
+  "comparisons": ["dense float64", "Gaussian 128 bits", "Gaussian 256 bits", "Gaussian 512 bits", "trained ITQ 256 bits", "progressive router"],
+  "gate": "Fixed threshold grid selected on training query exact top-10 agreement; one disjoint validation check, exact one-sided 95% binomial upper error bound <= 5%, at least 30 accepted. Failure disables compact exit, including its runtime work. No test retuning.",
+  "shift": "Policy bound to SciFact domain, encoder, representation and limit; NFCorpus and ArguAna always use precise backend",
+  "test": "All 2029 official test queries, self-document excluded, missing positives retained",
+  "limits": "Routing correctness is baseline agreement, not answer correctness. IID bound does not cover correlated queries or distribution shift. Timings are diagnostic, no randomized speed comparison. Projection model and sources outside 32 bytes. No agent-model or GPU execution in this run."
+}

@@ -4,7 +4,9 @@
 
 By **Prashant Jagtap** · Python 3.10+ · MIT-licensed core
 
-**Private research candidate, v0.3.1.** This repository remains private while validation continues. No PyPI release is available. Historical results and unsuccessful experiments are retained.
+**Private research candidate, v0.3.2.** This repository remains private while validation continues. No PyPI release is available. Historical results and unsuccessful experiments are retained.
+
+**New: exact-first routing and version-checked context reuse.** A trained 32-byte quantizer improved the binary baseline on all three public datasets but still trails dense retrieval. The router defaults to precise retrieval when compact confidence is not validated. A separate session API reuses evidence through revocable 32-byte receipts. [Usage, results and remaining gaps](docs/progressive-routing.md).
 
 **Zip Spherical QR uses exactly 256 bits / 32 bytes**, with a shared schema and source store outside the code. A separate residual-bound retrieval index matched every dense-reference top-10 ranking across 2,029 public queries. It uses more than 256 bits plus backing vectors; it is not a lossless binary hash. [Measured benefits, costs and failures](docs/retrieval-repair.md).
 
@@ -47,6 +49,7 @@ cd context-stamps
 python -m pip install -e .
 python examples/spherical_workflow.py
 python examples/zip_spherical_qr.py
+python examples/progressive_context.py
 scqr encode examples/facets.json
 ```
 

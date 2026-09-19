@@ -5,7 +5,7 @@ type: software
 authors:
   - family-names: Jagtap
     given-names: Prashant
-version: 0.3.1
+version: 0.3.2
 license: MIT
 repository-code: "https://github.com/jprbom/context-stamps"
 url: "https://github.com/jprbom/context-stamps"

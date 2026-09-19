@@ -1,0 +1,43 @@
+{
+  "protocol": {
+    "workload": "20 sorted existing context_stamps Python files excluding new routing/session modules",
+    "iterations": 20,
+    "methods": [
+      "exact_graph",
+      "session_cache"
+    ],
+    "seed": 9381,
+    "measurement": "Two source files per packet; declared paired-file dependency. Time includes authorization/version checks and packet construction/cache lookup, excludes ingestion and network.",
+    "transfer": "First delivery sends full packet plus a 32-byte receipt; subsequent deliveries send receipt only to an already populated shared resolver. Receipt metadata, protocol headers and authorization traffic are external.",
+    "limits": "A repeated-context replay using real code text, not real user tasks or agent completions. No model token, network latency or production scale claim."
+  },
+  "platform": "Windows-11-10.0.26200-SP0",
+  "combined_setup_ms": 1.9629,
+  "source_sha256": {
+    "experiments/run_context_reuse.py": "58aad121a38ad18bdaff1f9dd6a14d2488e2ec7ed465bf1b4e740858a89e3b77",
+    "context_stamps/session.py": "3973e527a95587dd4cd4294cd1dbf75a093add14c0aa15a6a98092eaba3875cf",
+    "context_stamps/workflow.py": "a0fbaf563f7e60a2d42bd602b169300adf8ecce9f356ee88c58ae5d44dab83f3"
+  },
+  "input_sha256": {
+    "context_stamps/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "context_stamps/activation.py": "9684e74cce435b313728052ebdb6d368d3352ce45354a50e719ee115127aa30e",
+    "context_stamps/baselines.py": "782958d7bb8ccdaee3ee13bb43c3299ea9b2d9843f48606abb33c51c0a9786fb",
+    "context_stamps/cli.py": "cd1ed3864deed32bdda8e13f05523124df6a39b9bac237fb68c9dcd527bbda50",
+    "context_stamps/contracts.py": "d8187ed9428a4d7da3b8b0e1bace688f7a1367ec62ffcff79679c3e39897733b",
+    "context_stamps/encoders.py": "cff7af891eb9a2822980c207525be803770cd596eefd95a99dea0c533dfca62d",
+    "context_stamps/facet_model.py": "74172d0ed169303037ee01c9fec3cf9edd1dc718d52095fd3f977b2ff362e421",
+    "context_stamps/guarded_activation.py": "ad397115e9bbdf73f8ce37b900fb8c8501152482da9e3dc90f36d14e350df7b8",
+    "context_stamps/learning.py": "9746f074063ad86a7c7f4ab10b5c36be19a7205a69299cfdb29dffdef081f78c",
+    "context_stamps/memory.py": "c5b3313dbc8b55e3c8485eb534acf4a125eab2bc0b81e535f575e5fd6d9f4626",
+    "context_stamps/packed_index.py": "f8810b3719304bf4b38a0cc296287b0a297ef91f4cc0365b091c1f8e2e498d6e",
+    "context_stamps/pretrained.py": "ef5601da082ca2105ec3a24baaef0efd37ada837a3af3e8ccc949e5d1b900856",
+    "context_stamps/requirements.py": "a68a877ec4d7ee7381791644966c5747547a914b0faba48ce52c5fffa239acd7",
+    "context_stamps/residual_index.py": "ececb567598eaa57edda5ec20c2bb6bd4cb4f1c3d35443b6897c5ef0b3229b95",
+    "context_stamps/security.py": "2e38aa395acf61abe39f5fa7b0b506996425afb136860969ec7df12fb52e9b34",
+    "context_stamps/selection.py": "1af31c766a0e8be5332966c6a3bdeb951683fbca069af62218acd2b573656607",
+    "context_stamps/server.py": "5a7f595a623cd96de4b939a1e042f4348cb4d86e505189b2add9289776df4c47",
+    "context_stamps/sources.py": "b0e0f8bc5e410b36635b7993fd8af01b45a1420229f7a45feccae07bf6a5f3d3",
+    "context_stamps/spherical.py": "322a75ed65ef3a5481ec70db7ee262fb1d34b9530bf431201e2b9325dce617b1",
+    "context_stamps/spherical_cli.py": "3bd78cdd827b615e9ab95d10d5171b11e2bccab6b5df95949e4bedf0d81e17ac"
+  }
+}

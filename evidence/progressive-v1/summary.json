@@ -1,0 +1,128 @@
+[
+  {
+    "dataset": "scifact",
+    "method": "dense",
+    "queries": 300,
+    "ndcg10": 0.6450816521455776,
+    "same_order_fraction": 1
+  },
+  {
+    "dataset": "scifact",
+    "method": "gaussian_128",
+    "queries": 300,
+    "ndcg10": 0.38430417716665705,
+    "same_order_fraction": 0
+  },
+  {
+    "dataset": "scifact",
+    "method": "gaussian_256",
+    "queries": 300,
+    "ndcg10": 0.5008214150756954,
+    "same_order_fraction": 0
+  },
+  {
+    "dataset": "scifact",
+    "method": "gaussian_512",
+    "queries": 300,
+    "ndcg10": 0.5909997401705229,
+    "same_order_fraction": 0
+  },
+  {
+    "dataset": "scifact",
+    "method": "trained_itq_256",
+    "queries": 300,
+    "ndcg10": 0.5534945950093183,
+    "same_order_fraction": 0
+  },
+  {
+    "dataset": "scifact",
+    "method": "progressive",
+    "queries": 300,
+    "ndcg10": 0.6450816521455776,
+    "same_order_fraction": 1
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "dense",
+    "queries": 323,
+    "ndcg10": 0.31667312754717797,
+    "same_order_fraction": 1
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "gaussian_128",
+    "queries": 323,
+    "ndcg10": 0.169781995863503,
+    "same_order_fraction": 0
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "gaussian_256",
+    "queries": 323,
+    "ndcg10": 0.2236378186321064,
+    "same_order_fraction": 0
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "gaussian_512",
+    "queries": 323,
+    "ndcg10": 0.2602186265462959,
+    "same_order_fraction": 0
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "trained_itq_256",
+    "queries": 323,
+    "ndcg10": 0.24902934993542225,
+    "same_order_fraction": 0
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "progressive",
+    "queries": 323,
+    "ndcg10": 0.31667312754717797,
+    "same_order_fraction": 1
+  },
+  {
+    "dataset": "arguana",
+    "method": "dense",
+    "queries": 1406,
+    "ndcg10": 0.5040631158034715,
+    "same_order_fraction": 1
+  },
+  {
+    "dataset": "arguana",
+    "method": "gaussian_128",
+    "queries": 1406,
+    "ndcg10": 0.3502624831789826,
+    "same_order_fraction": 0
+  },
+  {
+    "dataset": "arguana",
+    "method": "gaussian_256",
+    "queries": 1406,
+    "ndcg10": 0.41520362872838296,
+    "same_order_fraction": 0
+  },
+  {
+    "dataset": "arguana",
+    "method": "gaussian_512",
+    "queries": 1406,
+    "ndcg10": 0.44521772106830687,
+    "same_order_fraction": 0
+  },
+  {
+    "dataset": "arguana",
+    "method": "trained_itq_256",
+    "queries": 1406,
+    "ndcg10": 0.423173507156642,
+    "same_order_fraction": 0
+  },
+  {
+    "dataset": "arguana",
+    "method": "progressive",
+    "queries": 1406,
+    "ndcg10": 0.5040631158034715,
+    "same_order_fraction": 1
+  }
+]

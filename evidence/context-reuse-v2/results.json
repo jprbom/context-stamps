@@ -1,0 +1,3602 @@
+[
+  {
+    "root": "file0",
+    "iteration": 0,
+    "method": "session_cache",
+    "milliseconds": 0.0693,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3504,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 0,
+    "method": "exact_graph",
+    "milliseconds": 0.0218,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 0,
+    "method": "exact_graph",
+    "milliseconds": 0.0398,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 0,
+    "method": "session_cache",
+    "milliseconds": 0.0363,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11236,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 0,
+    "method": "session_cache",
+    "milliseconds": 0.0227,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2383,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 0,
+    "method": "exact_graph",
+    "milliseconds": 0.0139,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 0,
+    "method": "session_cache",
+    "milliseconds": 0.0213,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4381,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 0,
+    "method": "exact_graph",
+    "milliseconds": 0.0142,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 0,
+    "method": "exact_graph",
+    "milliseconds": 0.0278,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 0,
+    "method": "session_cache",
+    "milliseconds": 0.031,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13501,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 0,
+    "method": "session_cache",
+    "milliseconds": 0.0223,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4731,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 0,
+    "method": "exact_graph",
+    "milliseconds": 0.0142,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 0,
+    "method": "exact_graph",
+    "milliseconds": 0.018,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 0,
+    "method": "session_cache",
+    "milliseconds": 0.0294,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13235,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 0,
+    "method": "session_cache",
+    "milliseconds": 0.0222,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11528,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 0,
+    "method": "exact_graph",
+    "milliseconds": 0.0162,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 0,
+    "method": "exact_graph",
+    "milliseconds": 0.0144,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 0,
+    "method": "session_cache",
+    "milliseconds": 0.0186,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5815,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 0,
+    "method": "session_cache",
+    "milliseconds": 0.0197,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6678,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 0,
+    "method": "exact_graph",
+    "milliseconds": 0.0139,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 1,
+    "method": "session_cache",
+    "milliseconds": 0.007,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 1,
+    "method": "exact_graph",
+    "milliseconds": 0.0142,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 1,
+    "method": "exact_graph",
+    "milliseconds": 0.0298,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 1,
+    "method": "session_cache",
+    "milliseconds": 0.0059,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 1,
+    "method": "exact_graph",
+    "milliseconds": 0.0138,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 1,
+    "method": "session_cache",
+    "milliseconds": 0.0055,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 1,
+    "method": "exact_graph",
+    "milliseconds": 0.0145,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 1,
+    "method": "session_cache",
+    "milliseconds": 0.0044,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 1,
+    "method": "exact_graph",
+    "milliseconds": 0.0183,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 1,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 1,
+    "method": "exact_graph",
+    "milliseconds": 0.0134,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 1,
+    "method": "session_cache",
+    "milliseconds": 0.0043,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 1,
+    "method": "exact_graph",
+    "milliseconds": 0.0177,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 1,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 1,
+    "method": "exact_graph",
+    "milliseconds": 0.0789,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 1,
+    "method": "session_cache",
+    "milliseconds": 0.012,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 1,
+    "method": "session_cache",
+    "milliseconds": 0.006,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 1,
+    "method": "exact_graph",
+    "milliseconds": 0.0213,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 1,
+    "method": "exact_graph",
+    "milliseconds": 0.018,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 1,
+    "method": "session_cache",
+    "milliseconds": 0.0058,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 2,
+    "method": "session_cache",
+    "milliseconds": 0.0045,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 2,
+    "method": "exact_graph",
+    "milliseconds": 0.0155,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 2,
+    "method": "session_cache",
+    "milliseconds": 0.0052,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file2",
+    "iteration": 2,
+    "method": "exact_graph",
+    "milliseconds": 0.019,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 2,
+    "method": "session_cache",
+    "milliseconds": 0.0082,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 2,
+    "method": "exact_graph",
+    "milliseconds": 0.0138,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 2,
+    "method": "session_cache",
+    "milliseconds": 0.0043,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 2,
+    "method": "exact_graph",
+    "milliseconds": 0.0146,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 2,
+    "method": "session_cache",
+    "milliseconds": 0.0042,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 2,
+    "method": "exact_graph",
+    "milliseconds": 0.0186,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 2,
+    "method": "exact_graph",
+    "milliseconds": 0.0147,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 2,
+    "method": "session_cache",
+    "milliseconds": 0.0044,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 2,
+    "method": "exact_graph",
+    "milliseconds": 0.0191,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 2,
+    "method": "session_cache",
+    "milliseconds": 0.0043,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 2,
+    "method": "exact_graph",
+    "milliseconds": 0.0179,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 2,
+    "method": "session_cache",
+    "milliseconds": 0.0043,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 2,
+    "method": "exact_graph",
+    "milliseconds": 0.0147,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 2,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 2,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 2,
+    "method": "exact_graph",
+    "milliseconds": 0.0148,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 3,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 3,
+    "method": "exact_graph",
+    "milliseconds": 0.0127,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 3,
+    "method": "exact_graph",
+    "milliseconds": 0.0301,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 3,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 3,
+    "method": "exact_graph",
+    "milliseconds": 0.0129,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 3,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 3,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 3,
+    "method": "exact_graph",
+    "milliseconds": 0.0143,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 3,
+    "method": "exact_graph",
+    "milliseconds": 0.0187,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 3,
+    "method": "session_cache",
+    "milliseconds": 0.0051,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 3,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 3,
+    "method": "exact_graph",
+    "milliseconds": 0.0143,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 3,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 3,
+    "method": "exact_graph",
+    "milliseconds": 0.018,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 3,
+    "method": "exact_graph",
+    "milliseconds": 0.0204,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 3,
+    "method": "session_cache",
+    "milliseconds": 0.0042,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 3,
+    "method": "exact_graph",
+    "milliseconds": 0.0138,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 3,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 3,
+    "method": "exact_graph",
+    "milliseconds": 0.0143,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 3,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 4,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 4,
+    "method": "exact_graph",
+    "milliseconds": 0.0129,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 4,
+    "method": "exact_graph",
+    "milliseconds": 0.0226,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 4,
+    "method": "session_cache",
+    "milliseconds": 0.0051,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 4,
+    "method": "exact_graph",
+    "milliseconds": 0.0115,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 4,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 4,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 4,
+    "method": "exact_graph",
+    "milliseconds": 0.0129,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 4,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 4,
+    "method": "exact_graph",
+    "milliseconds": 0.0202,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 4,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 4,
+    "method": "exact_graph",
+    "milliseconds": 0.0126,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 4,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 4,
+    "method": "exact_graph",
+    "milliseconds": 0.0173,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 4,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 4,
+    "method": "exact_graph",
+    "milliseconds": 0.0164,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 4,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 4,
+    "method": "exact_graph",
+    "milliseconds": 0.0134,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 4,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 4,
+    "method": "exact_graph",
+    "milliseconds": 0.0136,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 5,
+    "method": "exact_graph",
+    "milliseconds": 0.0124,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 5,
+    "method": "session_cache",
+    "milliseconds": 0.0043,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file2",
+    "iteration": 5,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file2",
+    "iteration": 5,
+    "method": "exact_graph",
+    "milliseconds": 0.0181,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 5,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 5,
+    "method": "exact_graph",
+    "milliseconds": 0.0116,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 5,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 5,
+    "method": "exact_graph",
+    "milliseconds": 0.0124,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 5,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 5,
+    "method": "exact_graph",
+    "milliseconds": 0.0166,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 5,
+    "method": "exact_graph",
+    "milliseconds": 0.013,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 5,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 5,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 5,
+    "method": "exact_graph",
+    "milliseconds": 0.0173,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 5,
+    "method": "exact_graph",
+    "milliseconds": 0.0195,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 5,
+    "method": "session_cache",
+    "milliseconds": 0.0042,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 5,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 5,
+    "method": "exact_graph",
+    "milliseconds": 0.0142,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 5,
+    "method": "exact_graph",
+    "milliseconds": 0.0139,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 5,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 6,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 6,
+    "method": "exact_graph",
+    "milliseconds": 0.0129,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 6,
+    "method": "exact_graph",
+    "milliseconds": 0.016,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 6,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 6,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 6,
+    "method": "exact_graph",
+    "milliseconds": 0.0111,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 6,
+    "method": "exact_graph",
+    "milliseconds": 0.0125,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 6,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 6,
+    "method": "exact_graph",
+    "milliseconds": 0.0165,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 6,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 6,
+    "method": "exact_graph",
+    "milliseconds": 0.0137,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 6,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 6,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 6,
+    "method": "exact_graph",
+    "milliseconds": 0.017,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 6,
+    "method": "exact_graph",
+    "milliseconds": 0.016,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 6,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 6,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 6,
+    "method": "exact_graph",
+    "milliseconds": 0.0163,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 6,
+    "method": "exact_graph",
+    "milliseconds": 0.014,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 6,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 7,
+    "method": "exact_graph",
+    "milliseconds": 0.0119,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 7,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file2",
+    "iteration": 7,
+    "method": "session_cache",
+    "milliseconds": 0.0046,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file2",
+    "iteration": 7,
+    "method": "exact_graph",
+    "milliseconds": 0.0159,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 7,
+    "method": "exact_graph",
+    "milliseconds": 0.0114,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 7,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 7,
+    "method": "exact_graph",
+    "milliseconds": 0.0124,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 7,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 7,
+    "method": "exact_graph",
+    "milliseconds": 0.0166,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 7,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 7,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 7,
+    "method": "exact_graph",
+    "milliseconds": 0.0123,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 7,
+    "method": "exact_graph",
+    "milliseconds": 0.0165,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 7,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 7,
+    "method": "exact_graph",
+    "milliseconds": 0.016,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 7,
+    "method": "session_cache",
+    "milliseconds": 0.0047,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 7,
+    "method": "exact_graph",
+    "milliseconds": 0.0136,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 7,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 7,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 7,
+    "method": "exact_graph",
+    "milliseconds": 0.0135,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 8,
+    "method": "exact_graph",
+    "milliseconds": 0.013,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 8,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file2",
+    "iteration": 8,
+    "method": "exact_graph",
+    "milliseconds": 0.0228,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 8,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 8,
+    "method": "session_cache",
+    "milliseconds": 0.0034,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 8,
+    "method": "exact_graph",
+    "milliseconds": 0.0113,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 8,
+    "method": "exact_graph",
+    "milliseconds": 0.0127,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 8,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 8,
+    "method": "exact_graph",
+    "milliseconds": 0.0176,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 8,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 8,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 8,
+    "method": "exact_graph",
+    "milliseconds": 0.0127,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 8,
+    "method": "exact_graph",
+    "milliseconds": 0.0169,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 8,
+    "method": "session_cache",
+    "milliseconds": 0.0042,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 8,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 8,
+    "method": "exact_graph",
+    "milliseconds": 0.0161,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 8,
+    "method": "exact_graph",
+    "milliseconds": 0.0135,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 8,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 8,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 8,
+    "method": "exact_graph",
+    "milliseconds": 0.0136,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 9,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 9,
+    "method": "exact_graph",
+    "milliseconds": 0.0133,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 9,
+    "method": "exact_graph",
+    "milliseconds": 0.0159,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 9,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 9,
+    "method": "session_cache",
+    "milliseconds": 0.0034,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 9,
+    "method": "exact_graph",
+    "milliseconds": 0.0111,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 9,
+    "method": "exact_graph",
+    "milliseconds": 0.0124,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 9,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 9,
+    "method": "exact_graph",
+    "milliseconds": 0.0163,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 9,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 9,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 9,
+    "method": "exact_graph",
+    "milliseconds": 0.0179,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 9,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 9,
+    "method": "exact_graph",
+    "milliseconds": 0.017,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 9,
+    "method": "exact_graph",
+    "milliseconds": 0.0202,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 9,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 9,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 9,
+    "method": "exact_graph",
+    "milliseconds": 0.0134,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 9,
+    "method": "exact_graph",
+    "milliseconds": 0.0137,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 9,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 10,
+    "method": "session_cache",
+    "milliseconds": 0.0047,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 10,
+    "method": "exact_graph",
+    "milliseconds": 0.0121,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 10,
+    "method": "exact_graph",
+    "milliseconds": 0.0159,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 10,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 10,
+    "method": "exact_graph",
+    "milliseconds": 0.0112,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 10,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 10,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 10,
+    "method": "exact_graph",
+    "milliseconds": 0.0122,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 10,
+    "method": "exact_graph",
+    "milliseconds": 0.0165,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 10,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 10,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 10,
+    "method": "exact_graph",
+    "milliseconds": 0.0122,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 10,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 10,
+    "method": "exact_graph",
+    "milliseconds": 0.017,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 10,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 10,
+    "method": "exact_graph",
+    "milliseconds": 0.0159,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 10,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 10,
+    "method": "exact_graph",
+    "milliseconds": 0.0129,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 10,
+    "method": "exact_graph",
+    "milliseconds": 0.0137,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 10,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 11,
+    "method": "session_cache",
+    "milliseconds": 0.0046,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 11,
+    "method": "exact_graph",
+    "milliseconds": 0.0122,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 11,
+    "method": "exact_graph",
+    "milliseconds": 0.0275,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 11,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 11,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 11,
+    "method": "exact_graph",
+    "milliseconds": 0.0128,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 11,
+    "method": "exact_graph",
+    "milliseconds": 0.0129,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 11,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 11,
+    "method": "session_cache",
+    "milliseconds": 0.0034,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 11,
+    "method": "exact_graph",
+    "milliseconds": 0.0177,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 11,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 11,
+    "method": "exact_graph",
+    "milliseconds": 0.0132,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 11,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 11,
+    "method": "exact_graph",
+    "milliseconds": 0.0173,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 11,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 11,
+    "method": "exact_graph",
+    "milliseconds": 0.0166,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 11,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 11,
+    "method": "exact_graph",
+    "milliseconds": 0.0147,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 11,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 11,
+    "method": "exact_graph",
+    "milliseconds": 0.0161,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 12,
+    "method": "exact_graph",
+    "milliseconds": 0.0127,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 12,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file2",
+    "iteration": 12,
+    "method": "exact_graph",
+    "milliseconds": 0.0163,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 12,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 12,
+    "method": "exact_graph",
+    "milliseconds": 0.0115,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 12,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 12,
+    "method": "exact_graph",
+    "milliseconds": 0.0124,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 12,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 12,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 12,
+    "method": "exact_graph",
+    "milliseconds": 0.0168,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 12,
+    "method": "exact_graph",
+    "milliseconds": 0.02,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 12,
+    "method": "session_cache",
+    "milliseconds": 0.0043,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 12,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 12,
+    "method": "exact_graph",
+    "milliseconds": 0.0178,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 12,
+    "method": "exact_graph",
+    "milliseconds": 0.0164,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 12,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 12,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 12,
+    "method": "exact_graph",
+    "milliseconds": 0.014,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 12,
+    "method": "exact_graph",
+    "milliseconds": 0.0148,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 12,
+    "method": "session_cache",
+    "milliseconds": 0.0051,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 13,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 13,
+    "method": "exact_graph",
+    "milliseconds": 0.0125,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 13,
+    "method": "exact_graph",
+    "milliseconds": 0.0162,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 13,
+    "method": "session_cache",
+    "milliseconds": 0.0042,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 13,
+    "method": "exact_graph",
+    "milliseconds": 0.0117,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 13,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 13,
+    "method": "exact_graph",
+    "milliseconds": 0.0132,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 13,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 13,
+    "method": "session_cache",
+    "milliseconds": 0.0034,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 13,
+    "method": "exact_graph",
+    "milliseconds": 0.0172,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 13,
+    "method": "exact_graph",
+    "milliseconds": 0.0126,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 13,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 13,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 13,
+    "method": "exact_graph",
+    "milliseconds": 0.017,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 13,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 13,
+    "method": "exact_graph",
+    "milliseconds": 0.0163,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 13,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 13,
+    "method": "exact_graph",
+    "milliseconds": 0.015,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 13,
+    "method": "session_cache",
+    "milliseconds": 0.0055,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 13,
+    "method": "exact_graph",
+    "milliseconds": 0.014,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 14,
+    "method": "exact_graph",
+    "milliseconds": 0.0116,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 14,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file2",
+    "iteration": 14,
+    "method": "exact_graph",
+    "milliseconds": 0.0165,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 14,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 14,
+    "method": "exact_graph",
+    "milliseconds": 0.012,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 14,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 14,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 14,
+    "method": "exact_graph",
+    "milliseconds": 0.0135,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 14,
+    "method": "exact_graph",
+    "milliseconds": 0.0172,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 14,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 14,
+    "method": "exact_graph",
+    "milliseconds": 0.0122,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 14,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 14,
+    "method": "exact_graph",
+    "milliseconds": 0.0174,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 14,
+    "method": "session_cache",
+    "milliseconds": 0.0044,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 14,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 14,
+    "method": "exact_graph",
+    "milliseconds": 0.0166,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 14,
+    "method": "session_cache",
+    "milliseconds": 0.0042,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 14,
+    "method": "exact_graph",
+    "milliseconds": 0.0136,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 14,
+    "method": "exact_graph",
+    "milliseconds": 0.0162,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 14,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 15,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 15,
+    "method": "exact_graph",
+    "milliseconds": 0.0125,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 15,
+    "method": "exact_graph",
+    "milliseconds": 0.0166,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 15,
+    "method": "session_cache",
+    "milliseconds": 0.0042,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 15,
+    "method": "exact_graph",
+    "milliseconds": 0.0121,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 15,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 15,
+    "method": "exact_graph",
+    "milliseconds": 0.0129,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 15,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 15,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 15,
+    "method": "exact_graph",
+    "milliseconds": 0.0175,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 15,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 15,
+    "method": "exact_graph",
+    "milliseconds": 0.013,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 15,
+    "method": "exact_graph",
+    "milliseconds": 0.0173,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 15,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 15,
+    "method": "exact_graph",
+    "milliseconds": 0.0168,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 15,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 15,
+    "method": "exact_graph",
+    "milliseconds": 0.0129,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 15,
+    "method": "session_cache",
+    "milliseconds": 0.0049,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 15,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 15,
+    "method": "exact_graph",
+    "milliseconds": 0.0138,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 16,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 16,
+    "method": "exact_graph",
+    "milliseconds": 0.0118,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 16,
+    "method": "exact_graph",
+    "milliseconds": 0.0221,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 16,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 16,
+    "method": "exact_graph",
+    "milliseconds": 0.0117,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 16,
+    "method": "session_cache",
+    "milliseconds": 0.0045,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 16,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 16,
+    "method": "exact_graph",
+    "milliseconds": 0.0146,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 16,
+    "method": "session_cache",
+    "milliseconds": 0.0043,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 16,
+    "method": "exact_graph",
+    "milliseconds": 0.0173,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 16,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 16,
+    "method": "exact_graph",
+    "milliseconds": 0.013,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 16,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 16,
+    "method": "exact_graph",
+    "milliseconds": 0.0168,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 16,
+    "method": "exact_graph",
+    "milliseconds": 0.0162,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 16,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 16,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 16,
+    "method": "exact_graph",
+    "milliseconds": 0.0138,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 16,
+    "method": "session_cache",
+    "milliseconds": 0.004,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 16,
+    "method": "exact_graph",
+    "milliseconds": 0.014,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 17,
+    "method": "exact_graph",
+    "milliseconds": 0.0125,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 17,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file2",
+    "iteration": 17,
+    "method": "exact_graph",
+    "milliseconds": 0.0166,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 17,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 17,
+    "method": "exact_graph",
+    "milliseconds": 0.0115,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 17,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 17,
+    "method": "session_cache",
+    "milliseconds": 0.0034,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 17,
+    "method": "exact_graph",
+    "milliseconds": 0.0123,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 17,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 17,
+    "method": "exact_graph",
+    "milliseconds": 0.0162,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 17,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 17,
+    "method": "exact_graph",
+    "milliseconds": 0.0119,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 17,
+    "method": "exact_graph",
+    "milliseconds": 0.0165,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 17,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 17,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 17,
+    "method": "exact_graph",
+    "milliseconds": 0.0155,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 17,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 17,
+    "method": "exact_graph",
+    "milliseconds": 0.0131,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 17,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 17,
+    "method": "exact_graph",
+    "milliseconds": 0.0132,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 18,
+    "method": "exact_graph",
+    "milliseconds": 0.0116,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file0",
+    "iteration": 18,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file2",
+    "iteration": 18,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file2",
+    "iteration": 18,
+    "method": "exact_graph",
+    "milliseconds": 0.0162,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 18,
+    "method": "exact_graph",
+    "milliseconds": 0.0112,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 18,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file6",
+    "iteration": 18,
+    "method": "exact_graph",
+    "milliseconds": 0.0126,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 18,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 18,
+    "method": "exact_graph",
+    "milliseconds": 0.0162,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 18,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 18,
+    "method": "exact_graph",
+    "milliseconds": 0.0123,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file10",
+    "iteration": 18,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 18,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file12",
+    "iteration": 18,
+    "method": "exact_graph",
+    "milliseconds": 0.0166,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 18,
+    "method": "exact_graph",
+    "milliseconds": 0.0157,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 18,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 18,
+    "method": "exact_graph",
+    "milliseconds": 0.0132,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 18,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 18,
+    "method": "exact_graph",
+    "milliseconds": 0.0131,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  },
+  {
+    "root": "file18",
+    "iteration": 18,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 19,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file0",
+    "iteration": 19,
+    "method": "exact_graph",
+    "milliseconds": 0.0114,
+    "evidence_bytes": 3472,
+    "transfer_payload_bytes": 3472,
+    "cache_hit": false
+  },
+  {
+    "root": "file2",
+    "iteration": 19,
+    "method": "session_cache",
+    "milliseconds": 0.0039,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file2",
+    "iteration": 19,
+    "method": "exact_graph",
+    "milliseconds": 0.0155,
+    "evidence_bytes": 11204,
+    "transfer_payload_bytes": 11204,
+    "cache_hit": false
+  },
+  {
+    "root": "file4",
+    "iteration": 19,
+    "method": "session_cache",
+    "milliseconds": 0.0038,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file4",
+    "iteration": 19,
+    "method": "exact_graph",
+    "milliseconds": 0.0149,
+    "evidence_bytes": 2351,
+    "transfer_payload_bytes": 2351,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 19,
+    "method": "exact_graph",
+    "milliseconds": 0.0126,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 4349,
+    "cache_hit": false
+  },
+  {
+    "root": "file6",
+    "iteration": 19,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 4349,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file8",
+    "iteration": 19,
+    "method": "exact_graph",
+    "milliseconds": 0.0164,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 13469,
+    "cache_hit": false
+  },
+  {
+    "root": "file8",
+    "iteration": 19,
+    "method": "session_cache",
+    "milliseconds": 0.0036,
+    "evidence_bytes": 13469,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 19,
+    "method": "session_cache",
+    "milliseconds": 0.0035,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file10",
+    "iteration": 19,
+    "method": "exact_graph",
+    "milliseconds": 0.0124,
+    "evidence_bytes": 4699,
+    "transfer_payload_bytes": 4699,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 19,
+    "method": "exact_graph",
+    "milliseconds": 0.0174,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 13203,
+    "cache_hit": false
+  },
+  {
+    "root": "file12",
+    "iteration": 19,
+    "method": "session_cache",
+    "milliseconds": 0.0042,
+    "evidence_bytes": 13203,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file14",
+    "iteration": 19,
+    "method": "exact_graph",
+    "milliseconds": 0.0162,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 11496,
+    "cache_hit": false
+  },
+  {
+    "root": "file14",
+    "iteration": 19,
+    "method": "session_cache",
+    "milliseconds": 0.0041,
+    "evidence_bytes": 11496,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file16",
+    "iteration": 19,
+    "method": "exact_graph",
+    "milliseconds": 0.0131,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 5783,
+    "cache_hit": false
+  },
+  {
+    "root": "file16",
+    "iteration": 19,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 5783,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 19,
+    "method": "session_cache",
+    "milliseconds": 0.0037,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 32,
+    "cache_hit": true
+  },
+  {
+    "root": "file18",
+    "iteration": 19,
+    "method": "exact_graph",
+    "milliseconds": 0.0146,
+    "evidence_bytes": 6646,
+    "transfer_payload_bytes": 6646,
+    "cache_hit": false
+  }
+]

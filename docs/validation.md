@@ -1,5 +1,9 @@
 # Validation record
 
+## Private v0.3.2 follow-up
+
+93 local unit tests pass. The new offline verifier checks 18,261 public ranking records (six methods and three-seed replication over 2,029 queries), disjoint policy calibration, 800 recorded context handoffs across two implementations and source hashes. Full quantizer retraining requires the external pinned embeddings. [Usage, metrics and limitations](progressive-routing.md).
+
 ## Private v0.3.1 follow-up
 
 - 82 automated tests pass locally, including maximum-dimension near-tie retrieval, stale backing vectors, exact 32-byte round trips and bounded configuration rendering.

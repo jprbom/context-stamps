@@ -1,0 +1,34 @@
+{
+  "protocol": {
+    "status": "Written before this run; historical public test sets previously inspected",
+    "training": "Existing ITQ implementation, 256 bits, seed 17, 50 iterations, SciFact training query embeddings only. No labels or test documents used in projection fitting. Established quantization baseline, not a new algorithm or spherical encoder.",
+    "encoder": "Reuse SHA256-pinned MiniLM embeddings from spherical-public-v1; no base encoder fine-tuning",
+    "comparisons": [
+      "dense float64",
+      "Gaussian 128 bits",
+      "Gaussian 256 bits",
+      "Gaussian 512 bits",
+      "trained ITQ 256 bits",
+      "progressive router"
+    ],
+    "gate": "Fixed threshold grid selected on training query exact top-10 agreement; one disjoint validation check, exact one-sided 95% binomial upper error bound <= 5%, at least 30 accepted. Failure disables compact exit, including its runtime work. No test retuning.",
+    "shift": "Policy bound to SciFact domain, encoder, representation and limit; NFCorpus and ArguAna always use precise backend",
+    "test": "All 2029 official test queries, self-document excluded, missing positives retained",
+    "limits": "Routing correctness is baseline agreement, not answer correctness. IID bound does not cover correlated queries or distribution shift. Timings are diagnostic, no randomized speed comparison. Projection model and sources outside 32 bytes. No agent-model or GPU execution in this run."
+  },
+  "numpy": "2.5.3",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "training_seconds": 0.5825258000004396,
+  "training_queries": 391,
+  "model_bytes": 2068736,
+  "source_sha256": {
+    "experiments/run_progressive.py": "c895869d9336631173444f2fa7a747a533c1902974c332c6bf73d8f83c2fcf48",
+    "context_stamps/routing.py": "686457d4d6f40612ccadefa3f0e8547180fcd745a8e7f70903f97c87a53a5787",
+    "context_stamps/learning.py": "9746f074063ad86a7c7f4ab10b5c36be19a7205a69299cfdb29dffdef081f78c",
+    "stamps.py": "1eff83406ee64c45aba5916231f6af22404683ee93d9dfbf51ca44b53c1ee87f"
+  },
+  "input_sha256": {
+    "evidence/spherical-public-v1/manifest.json": "b1e2c2e1fdfa2087e988805f3909ac912b569bb79b6fd9156a3a5d5ea0d7f0e7",
+    "evidence/scifact-v1/manifest.json": "cffa8bbb395eba92e9bcbb1b3daae6ba39c071e52225de1be20c75c0cd31fe54"
+  }
+}

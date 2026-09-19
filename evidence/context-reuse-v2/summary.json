@@ -1,0 +1,20 @@
+[
+  {
+    "method": "exact_graph",
+    "handoffs": 200,
+    "cache_hits": 0,
+    "total_ms": 3.1212,
+    "median_ms": 0.014450000000000001,
+    "transfer_payload_bytes": 1533440,
+    "resolved_evidence_bytes": 1533440
+  },
+  {
+    "method": "session_cache",
+    "handoffs": 200,
+    "cache_hits": 190,
+    "total_ms": 1.0589,
+    "median_ms": 0.0039,
+    "transfer_payload_bytes": 83072,
+    "resolved_evidence_bytes": 1533440
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "seeds": [
+    17,
+    41,
+    83
+  ],
+  "bits": 256,
+  "iterations": 50,
+  "training": "391 original SciFact train query embeddings only; frozen MiniLM",
+  "selection": "No model/seed selection. Report all seeds and aggregate.",
+  "status": "Exploratory replication after seed-17 test results were inspected. No hyperparameter change.",
+  "limits": "Existing ITQ baseline, single-view; no base-model fine-tuning or independent new dataset."
+}

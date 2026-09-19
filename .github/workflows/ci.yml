@@ -25,12 +25,14 @@ jobs:
       - run: python experiments/verify_candidate.py
       - run: python experiments/verify_public_spherical.py
       - run: python experiments/verify_improvements.py
+      - run: python experiments/verify_progressive.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py
       - run: python examples/spherical_workflow.py
       - run: python examples/zip_spherical_qr.py
       - run: python examples/residual_retrieval.py
+      - run: python examples/progressive_context.py
       - run: scqr encode examples/facets.json
       - run: python examples/local_slm.py --dry-run
       - run: python benchmarks/retrieval.py --out results.json

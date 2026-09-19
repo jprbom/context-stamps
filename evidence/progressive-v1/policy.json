@@ -1,0 +1,18 @@
+{
+  "policy": {
+    "scope": "scifact:minilm-pinned:itq256:v1",
+    "limit": 10,
+    "minimum_score": 1.0,
+    "minimum_margin": 1.0,
+    "enabled": false
+  },
+  "report": {
+    "training_accepted": 0,
+    "validation_accepted": 0,
+    "validation_errors": 0,
+    "error_upper_bound": 1.0,
+    "max_error": 0.05,
+    "delta": 0.05,
+    "enabled": false
+  }
+}

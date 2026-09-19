@@ -1,0 +1,12 @@
+{
+  "workload": "20 sorted existing context_stamps Python files excluding new routing/session modules",
+  "iterations": 20,
+  "methods": [
+    "exact_graph",
+    "session_cache"
+  ],
+  "seed": 9381,
+  "measurement": "Two source files per packet; declared paired-file dependency. Time includes authorization/version checks and packet construction/cache lookup, excludes ingestion and network.",
+  "transfer": "First delivery sends full packet plus a 32-byte receipt; subsequent deliveries send receipt only to an already populated shared resolver. Receipt metadata, protocol headers and authorization traffic are external.",
+  "limits": "A repeated-context replay using real code text, not real user tasks or agent completions. No model token, network latency or production scale claim."
+}
