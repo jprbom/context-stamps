@@ -1,0 +1,14 @@
+{
+  "status": "Frozen before guarded follow-up; follows observed wrong-entity activation failures",
+  "training_source": "spherical-v2; no refitting beyond its frozen validation protocol",
+  "activation_threshold": "choose among [0.25,0.5,0.75,1.0] by validation F1 on positive candidates versus remaining candidates; break ties by lower threshold",
+  "evaluation": "test and OOD; true-positive activation recall and false activations, including no-answer candidate sets",
+  "control": "exact equality of supplied entity, intent and task fields; same fields as multi-view representation",
+  "transport": "full JSON versus schema-referenced compact payload; include schema bootstrap and resolved text separately; token counts use cl100k_base",
+  "live_slm": "12 fresh procedural contexts x 5 conditions x 2 repeats = 120 calls; qwen2.5:1.5b",
+  "live_grading": "exact JSON root and dependency values; no generated code execution",
+  "latency": "wall clock from request-side query stamping and activation through assembly and local generation; prebuilt index setup measured separately; one warmup, no cold-start claim",
+  "limits": "fictional controlled tasks, caller-provided facets and edges; no attention-weight modification, neural model fine-tuning, energy or dollar-cost measurement",
+  "change": "Exact entity/intent/task constraints before approximate activation; compare exact-field graph control; fresh test entity seed 98127; OOD is a regression rerun",
+  "timing_caveat": "Exact-field control shares query stamp preparation in this evaluator; cannot establish speed advantage over an optimized exact-field implementation"
+}
