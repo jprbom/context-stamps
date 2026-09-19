@@ -1,0 +1,11 @@
+{
+  "status": "frozen before comparative scale run; earlier residual-only timings known",
+  "seed": 90361,
+  "rows": [1000,10000,100000],
+  "dimension": 384,
+  "queries_per_size": 30,
+  "concurrency": [1,4],
+  "methods": ["faiss_flat_ip","faiss_sq8","residual_int8_exact"],
+  "timing": "one native thread per worker; prebuilt indexes, warmup, same normalized random float32 vectors and queries, eligible snapshot includes every row; measured wall throughput and per-request median/p95; build excluded",
+  "limits": "in-process read-only synthetic load, not a production service; no update contention, authentication service, disk/network latency, GPU or energy measurement"
+}
