@@ -4,6 +4,7 @@ Private research candidate. Passing a controlled fixture is not proof of general
 
 | Failure or gap | Response | Evidence / remaining limitation |
 |---|---|---|
+| Windows manifest separators prevented Linux evidence replay | Normalize recorded relative path separators in the verifier | Original manifests and numerical results retained; cross-platform CI rerun |
 | Public 256-bit retrieval loses dense semantic information | Preserve all 2,029 query comparisons; recommend dense retrieval for general search | Two-view lexical fusion worsened results; compression loss remains unresolved |
 | Pairwise scorer appears better on procedural fixtures | Paired task bootstrap and exact-field control | Intervals do not establish a reliable gain over ridge; no broad generalization claim |
 | Standalone API lost the multidimensional design | Added normalized multi-view spherical stamps and per-facet scores | Scale invariance, antipodes, strict encoder schemas; `tests/test_spherical.py` |

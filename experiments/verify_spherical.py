@@ -31,7 +31,10 @@ def verify():
         manifest = read(folder / "manifest.json")
         for key in ("source_sha256", "input_sha256"):
             for filename, expected in manifest.get(key, {}).items():
-                assert hashlib.sha256((ROOT / filename).read_bytes()).hexdigest() == expected, filename
+                # Historical manifests were emitted on Windows. Preserve their
+                # recorded keys while resolving separators on every supported OS.
+                path = ROOT / filename.replace("\\", "/")
+                assert hashlib.sha256(path.read_bytes()).hexdigest() == expected, filename
         if name in {"spherical-v1", "spherical-v2"}:
             cases = read(folder / "fixtures.json")
             records = read(folder / "retrieval.json")
