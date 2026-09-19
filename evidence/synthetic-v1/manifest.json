@@ -1,0 +1,48 @@
+{
+  "scope": "synthetic evidence coverage, not generated answer correctness or prompt-injection resistance",
+  "python": "3.13.13",
+  "numpy": "2.5.3",
+  "platform": "Windows",
+  "data_sha256": "e4960cf3559fb7b26e02a93ff0737b7b3f441ef47bf6a3248e7de534d476c931",
+  "source_sha256": {
+    "stamps.py": "1eff83406ee64c45aba5916231f6af22404683ee93d9dfbf51ca44b53c1ee87f",
+    "context_stamps/selection.py": "1af31c766a0e8be5332966c6a3bdeb951683fbca069af62218acd2b573656607",
+    "context_stamps/memory.py": "c5b3313dbc8b55e3c8485eb534acf4a125eab2bc0b81e535f575e5fd6d9f4626",
+    "context_stamps/security.py": "2e38aa395acf61abe39f5fa7b0b506996425afb136860969ec7df12fb52e9b34",
+    "context_stamps/baselines.py": "782958d7bb8ccdaee3ee13bb43c3299ea9b2d9843f48606abb33c51c0a9786fb",
+    "experiments/fixtures.py": "541b5b875d706c7b877569be594c561bff0e34579f0a63d2ac80504d6d0a15fa",
+    "experiments/run_evidence.py": "185e818f8fc1ccbfcdaf1439954dffae91c757e11c5e0c5d5d7a265147069514"
+  },
+  "split_counts": {
+    "train": 150,
+    "validation": 45,
+    "test": 90,
+    "ood": 60
+  },
+  "training_examples": 1002,
+  "training_seconds": 0.0539067999998224,
+  "python_peak_traced_bytes_evaluation": 3572842,
+  "seeds": [
+    7,
+    19,
+    43
+  ],
+  "epochs": 400,
+  "validation": [
+    {
+      "coverage_weight": 0.0,
+      "fact_coverage_success": 0.0
+    },
+    {
+      "coverage_weight": 0.2,
+      "fact_coverage_success": 0.0
+    },
+    {
+      "coverage_weight": 0.5,
+      "fact_coverage_success": 0.0
+    }
+  ],
+  "selected_coverage_weight": 0.0,
+  "license": "MIT",
+  "data_origin": "original fictional procedural fixtures"
+}

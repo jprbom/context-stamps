@@ -52,6 +52,18 @@ def main(argv: list[str] | None = None) -> int:
             command.add_argument("--min-score", type=float, default=0.0)
     for name in ("get", "invalidate", "forget"):
         sub.add_parser(name).add_argument("source")
+    observe = sub.add_parser("observe", help="observe only explicitly listed files under a trusted root")
+    observe.add_argument("--root", required=True)
+    observe.add_argument("paths", nargs="+")
+    explain = sub.add_parser("explain", help="explain changed or missing source versions")
+    explain.add_argument("source")
+    explain.add_argument("--revisions", required=True)
+    select = sub.add_parser("select", help="select evidence with freshness and required-source guards")
+    select.add_argument("query")
+    select.add_argument("--budget", type=int, default=2048)
+    select.add_argument("--revisions")
+    select.add_argument("--required", action="append", default=[])
+    select.add_argument("--selector", help="optional experimental JSON reranker")
     fit = sub.add_parser("fit", help="fit a projection on a training-only NumPy embedding matrix")
     fit.add_argument("vectors")
     fit.add_argument("--encoder-id", required=True)
@@ -93,7 +105,27 @@ def main(argv: list[str] | None = None) -> int:
 
                     serve(memory, allow_writes=args.allow_writes)
                     return 0
-                if args.command == "add":
+                if args.command == "observe":
+                    from .sources import observe_files
+
+                    result = observe_files(memory, args.root, args.paths)
+                elif args.command == "explain":
+                    from .sources import explain_versions
+
+                    result = explain_versions(memory, args.source, _mapping(args.revisions))
+                elif args.command == "select":
+                    from .selection import LinearSelector, select_evidence
+
+                    selector = LinearSelector.load(args.selector) if args.selector else None
+                    result = select_evidence(
+                        memory,
+                        args.query,
+                        budget=args.budget,
+                        revisions=_mapping(args.revisions),
+                        required=args.required,
+                        reranker=selector.score if selector else None,
+                    ).to_dict()
+                elif args.command == "add":
                     text = read_text(args.file) if args.file else args.text
                     result = memory.add(text, source=args.source, dependencies=_mapping(args.dependencies))
                 elif args.command == "get":

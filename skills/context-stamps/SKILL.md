@@ -3,7 +3,7 @@ name: context-stamps
 description: Store, retrieve and pack local project evidence with the Context Stamps CLI. Use when the user asks to reuse project context, inspect memory, or select evidence for an agent task. Requires the installed cstamps runtime.
 metadata:
   author: Prashant Jagtap
-  version: "0.1.0"
+  version: "0.2.0"
 ---
 
 # Context Stamps
@@ -11,6 +11,11 @@ metadata:
 Use `cstamps` with an explicit project-local `--db` path. If it is unavailable, explain that the runtime is required; do not fabricate memory results.
 
 ## Workflow
+
+- Observe only requested files with `observe --root <trusted-directory> <relative-paths>`. Use the returned `revisions` map; refresh before selection. No recursive crawling is performed.
+- Use `select "query" --required <source> --revisions <json-file>` when a source is essential. If status is `insufficient_evidence`, refresh the indicated sources or increase the budget within the task limits; do not proceed as if an empty packet is sufficient.
+- `explain <source> --revisions <json-file>` identifies changed or missing dependencies.
+
 
 - Add bounded, relevant text with `cstamps --db <path> add --source <stable-id> --file <utf8-file>`. Reuse the source ID for updates.
 - Retrieve candidates with `recall "task query" --limit 5`, or select evidence with `pack "task query" --budget 2048`.

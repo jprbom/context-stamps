@@ -43,7 +43,7 @@ A typical client configuration is:
 }
 ```
 
-On Windows, use the full path to `venv\Scripts\cstamps.exe` and JSON-escape backslashes. Match your client's configuration format. The server provides `recall`, `pack` and `inspect_source` by default. Explicit `--allow-writes` adds `remember`, `invalidate` and `forget`. `pack` uses a byte budget. No HTTP port or hosted account is required.
+On Windows, use the full path to `venv\Scripts\cstamps.exe` and JSON-escape backslashes. Match your client's configuration format. The server provides `recall`, `pack`, `inspect_source`, `select` and `explain` by default. Explicit `--allow-writes` adds `remember`, `invalidate` and `forget`. `pack` uses a byte budget. No HTTP port or hosted account is required.
 
 Use the CLI's `--model` and `--revision` before `serve` if using a neural encoder. These must match any existing store. First-time neural initialization may download weights; the default lexical server does not.
 

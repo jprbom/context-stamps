@@ -2,7 +2,7 @@
 
 **Compact fingerprints and local context selection for agents and small language models.**
 
-By **Prashant Jagtap** · Python 3.10+ · MIT License
+By **Prashant Jagtap** · Python 3.10+ · MIT-licensed code
 
 ![Context Stamps: related, identical, current and selected context](docs/assets/overview.svg)
 
@@ -10,7 +10,7 @@ Context Stamps stores text with a binary fingerprint, an exact content digest an
 
 Use it for repeated tool output, local document retrieval, or evidence selection before a small model call. The core runs on the Python standard library. Neural embeddings, learned projections and MCP are optional.
 
-**Status:** private development release, v0.1.0. Installation is from this repository; no public package or trained model is published.
+**Status:** research release v0.2.0. Install from source or the GitHub release wheel; no PyPI package is published. Small experimental selector models and complete evaluation records are included.
 
 ## Start in one minute
 
@@ -22,7 +22,7 @@ python -m pip install -e .
 python examples/offline_memory.py
 ```
 
-Access to the private repository is required. The first demo needs no installation, network access or model download. It compares a repeated code fragment with a changed condition and reports:
+The first demo needs no installation, network access or model download. It compares a repeated code fragment with a changed condition and reports:
 
 ```json
 {
@@ -34,20 +34,42 @@ Access to the private repository is required. The first demo needs no installati
 
 The default encoder is a **lexical baseline**, not a semantic language model. Use the optional neural adapter or your own embeddings when semantic retrieval is needed.
 
+## Why use it
+
+- **Start with one file:** the offline demo has no dependencies or model download.
+- **Keep material changes visible:** exact identity and declared source versions are separate from similarity.
+- **Make missing evidence explicit:** required sources that are stale, absent or over budget produce an insufficient-evidence result.
+- **Inspect every decision:** original chunks, source identifiers and selection/omission reasons remain available.
+- **Use your existing stack:** Python, CLI, agent instructions, MCP, or an external retrieval shortlist. The core needs no database server.
+
+Use it for small local collections, changing project files and evidence packets for an SLM. Choose a larger retrieval or memory platform when you need large indexes, automatic fact extraction or multi-tenant infrastructure. [Comparison with existing solutions](docs/comparison.md).
+
+## Measured results, including failures
+
+On BEIR SciFact's 300 test queries, our optional coverage/diversity candidate selector achieved **0.6912 nDCG@10**, compared with **0.6451** for Faiss dense retrieval using the same pinned MiniLM encoder. A raw diallel control reproduced the dense ranking. Small trained linear selectors scored **0.6174**, so they remain experimental and are not enabled by default.
+
+This is a retrieval result on one dataset, not a general agent-quality or cost-saving claim. [Full comparison, training evidence and reproduction](docs/experiments.md) · [model cards](docs/models.md) · [diallel assessment](docs/diallel.md).
+
+![Executed SciFact comparison](docs/assets/scifact-results.png)
+
 ## Python: remember, retrieve and pack
 
 ```python
 from context_stamps import ContextMemory
 
+
 with ContextMemory("notes.sqlite") as memory:
     memory.add("Stop the pump before cleaning its filter.", source="manual/filter")
+
     memory.add("The warranty lasts two years.", source="manual/warranty")
 
     for result in memory.recall("cleaning the pump filter", limit=1):
         print(result["source"], result["text"])
 
     packet = memory.pack("cleaning the pump filter", token_budget=600)
+
     print(packet.text)
+
     print(packet.decisions)
 ```
 
@@ -61,16 +83,21 @@ python -m pip install -e ".[tokens]"
 
 ```python
 import tiktoken
+
 from context_stamps import ContextMemory
 
+
 encoding = tiktoken.get_encoding("cl100k_base")
+
 with ContextMemory("notes.sqlite") as memory:
     packet = memory.pack(
         "cleaning the filter",
         token_budget=256,
         token_counter=lambda text: len(encoding.encode(text, disallowed_special=())),
     )
+
     assert packet.tokens <= 256
+
     print(packet.text)
 ```
 
@@ -83,16 +110,21 @@ An approximate similarity score never establishes that code is unchanged. Exact 
 ```python
 from context_stamps import ContextMemory, content_digest
 
+
 before = "if balance >= amount: transfer(amount)"
+
 after = "if balance > amount: transfer(amount)"
+
 
 with ContextMemory() as memory:
     memory.add(before, source="ledger.py")
+
     memory.add(
         "Test the exact-balance transfer case.",
         source="test-plan",
         dependencies={"ledger.py": content_digest(before)},
     )
+
     memory.add(after, source="ledger.py")
 
     packet = memory.pack(
@@ -100,11 +132,64 @@ with ContextMemory() as memory:
         token_budget=1000,
         revisions={"ledger.py": content_digest(after)},
     )
+
     assert after in packet.text
+
     assert memory.get("test-plan")["stale"]
 ```
 
 Provide a complete `revisions` map to check source and dependency versions. Missing or mismatched versions are excluded. Without that map, freshness is reported as `unchecked`. There is no background file watcher or automatic dependency discovery. See [usage guidelines](docs/usage.md).
+
+## Observe changed files and require essential evidence
+
+```bash
+python examples/changing_evidence.py
+cstamps --db project.sqlite observe --root ./project transfer.py
+cstamps --db project.sqlite select "transfer rules" --required transfer.py --budget 1024
+```
+
+The demonstration creates temporary fictional files, changes a condition, shows why a derived plan is stale, refuses an incomplete packet, and refreshes the plan. `observe` returns a `revisions` object; save that object as JSON and pass it through `--revisions` to check current versions. Without a map, status remains `unchecked`. Observe again immediately before selection. File lists are explicit; the tool does not crawl your project.
+
+```python
+from context_stamps import ContextMemory, observe_files, select_evidence
+
+
+with ContextMemory("project.sqlite") as memory:
+    observed = observe_files(memory, "./project", ["transfer.py"])
+
+    packet = select_evidence(
+        memory,
+        "transfer rules",
+        revisions=observed["revisions"],
+        required=["transfer.py"],
+        budget=1024,
+    )
+
+    if packet.status == "insufficient_evidence":
+        print(packet.next_action, packet.missing_required)
+
+    else:
+        print(packet.text)
+```
+
+The example expects your `./project/transfer.py`; the temporary-file demonstration above is self-contained. Essential source IDs come from the application, not a promise that the selector discovers every necessary fact. `current` means supplied versions match, not that the packet answers the question correctly.
+
+## Reorder an existing retrieval shortlist
+
+```python
+from context_stamps import rank_candidates
+
+
+chunks = ["Timeout is 30 seconds.", "Timeout remains 30 seconds.", "Retries are limited to 2."]
+
+relevance = [0.90, 0.89, 0.80]
+
+order = rank_candidates("timeout retries", chunks, relevance, limit=2)
+
+print([chunks[i] for i in order])
+```
+
+For normalized dense embeddings, pass `pair_similarity=lambda i, j: float(vectors[i] @ vectors[j])`. This is the shared candidate-selection API evaluated on SciFact. Check freshness before supplying the shortlist. Coverage and diversity are configurable; validate them for your corpus.
 
 ## Use existing or neural embeddings
 
@@ -113,11 +198,17 @@ The low-level API accepts vectors from any encoder. Keep the encoder revision, p
 ```python
 from context_stamps import Family, hamming, stamp_vector
 
+
 family = Family(encoder="my-encoder@revision-1:normalized", dim=3, bits=128)
+
 a = stamp_vector([0.2, 0.7, 0.1], family)
+
 b = stamp_vector([0.3, 0.6, 0.1], family)
+
 print(hamming(a, b))
+
 print(str(a))
+
 family.save("family.json")
 ```
 
@@ -129,15 +220,19 @@ python -m pip install -e ".[semantic]"
 
 ```python
 from context_stamps import ContextMemory
+
 from context_stamps.encoders import SentenceTransformerEncoder
+
 
 encoder = SentenceTransformerEncoder(
     "sentence-transformers/all-MiniLM-L6-v2",
     revision="1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
     device="cpu",
 )
+
 with ContextMemory("semantic.sqlite", encoder=encoder) as memory:
     memory.add("Shut down the motor before maintenance.", source="manual/motor")
+
     print(memory.recall("How do I safely service the motor?", limit=1))
 ```
 
@@ -177,7 +272,7 @@ python examples/local_slm.py --model YOUR_INSTALLED_OLLAMA_MODEL
 
 The first command prints a complete evidence packet and request. The second sends it to Ollama on `127.0.0.1:11434`; the named model must already be installed. Context selection is independent of the generator.
 
-Context Stamps is a software layer, not a generative SLM. The core and lexical encoder run on CPU. The semantic adapter can also run on CPU, with additional model memory. Device-specific quantized exports and trained context-selection models are research work, not shipped capabilities.
+Context Stamps is a software layer, not a generative SLM. The core and lexical encoder run on CPU. The semantic adapter can also run on CPU, with additional model memory. Small experimental linear selector exports run with standard-library inference. Device-specific quantized encoders, generative SLM training and edge-device performance are not established.
 
 ## Fit a projection and reproduce the benchmark
 
@@ -215,7 +310,7 @@ Binary codes are lossy. They are neither cryptographic proofs nor a replacement 
 - Treat retrieved content as data, not executable instructions. This package is not a prompt-injection defense.
 - Begin with exact deduplication and measure quality as well as tokens. Extra encoding and tool calls can outweigh savings.
 - The index scans all stored items. This first version targets small local collections, not large vector databases.
-- No trained model, universal savings claim or application-correctness guarantee is included. See [research scope and prior work](docs/research.md).
+- The included tiny trained rerankers are experimental; no universal savings claim or application-correctness guarantee is included. See [research scope and prior work](docs/research.md).
 
 ## Development
 
@@ -226,9 +321,11 @@ python -m ruff check .
 python -m build
 ```
 
-See [CONTRIBUTING.md](CONTRIBUTING.md) for the compatibility and evaluation requirements.
+See [rights and data boundaries](docs/rights-and-data.md), [release verification](docs/validation.md), and [CONTRIBUTING.md](CONTRIBUTING.md) for the compatibility and evaluation requirements.
 
 ## Ownership, credit and disclaimer
+
+Code and original synthetic fixtures use MIT. SciFact-derived evidence and selector exports carry CC-BY-SA-4.0 attribution in their directory. See [rights and data boundaries](docs/rights-and-data.md).
 
 Context Stamps is authored and maintained by **Prashant Jagtap**. Preserve the copyright and license notice when redistributing this software, as required by the [MIT License](LICENSE). Please credit Prashant Jagtap and link to this repository in publications, demonstrations and derived projects; [CITATION.cff](CITATION.cff) provides citation metadata. The citation request does not add conditions to the MIT License.
 

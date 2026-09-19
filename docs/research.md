@@ -39,7 +39,7 @@ This standalone release is derived from the Cortex research direction. Historica
 4. Explore a small context-selection model using matched omission/restoration experiments. Do not label every response or context item positive because its overall run passed.
 5. Evaluate progressive binary widths and edge quantization separately, against equal memory/latency baselines. Ordinary ITQ truncation is not an established nested code.
 
-No generative SLM fine-tune or learned controller is shipped. Projection fitting is the supported training operation. Any future model release must include data provenance, model license, complete recipe, independent test outcomes and negative results. Use `program.md` for bounded experiments; use a fresh final test set after model selection.
+No generative SLM fine-tune is shipped. Projection fitting and experimental linear-selector fitting are supported. Executed public-data and synthetic training results, including failures, are recorded in [experiments.md](experiments.md). Any future model release must include data provenance, model license, complete recipe, independent test outcomes and negative results. Use `program.md` for bounded experiments; use a fresh final test set after model selection.
 
 ## Prior work
 

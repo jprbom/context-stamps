@@ -1,0 +1,21 @@
+# License, attribution and data boundaries
+
+Context Stamps remains **MIT licensed**, copyright 2026 Prashant Jagtap. This allows use, modification, redistribution and commercial use while requiring preservation of the copyright and permission notice. The warranty disclaimer is retained. See [the complete license](../LICENSE) and [MIT's published terms](https://opensource.org/license/mit).
+
+Please credit Prashant Jagtap and cite [CITATION.cff](../CITATION.cff) in research. Citation is requested, not an extra license restriction. Forks and competing products are permitted. No claim of exclusive control over the underlying algorithms is made. No permission to imply endorsement by Prashant Jagtap is provided. This document does not add a noncommercial restriction or a mandatory service dependency.
+
+## Included
+
+- Authored source, tests, documentation and examples under MIT.
+- Original fictional fixtures and their generated training records under MIT.
+- Small selector coefficients trained in the disclosed experiments (synthetic: MIT; SciFact-derived exports and evidence: CC-BY-SA-4.0, with attribution in that directory). Model cards describe their data and limitations; they are experimental, not general-purpose language models.
+- Public benchmark document/query IDs, rankings, aggregate metrics, file hashes and run configuration. The SciFact corpus and claims are not bundled.
+- Third-party diagram viewer code with its original MIT notice.
+
+## Excluded
+
+Private Cortex research, chat transcripts, private corpus content, user databases, downloaded embedding weights, API keys, absolute local paths, personal documents and cached embeddings are not release inputs. A user's runtime database remains that user's data; installing this package does not upload it.
+
+SciFact is a third-party dataset, identified as CC-BY-SA-4.0 by its [BEIR dataset card](https://huggingface.co/datasets/BeIR/scifact). Users must obtain it separately and respect its terms. MiniLM's [model card](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) specifies Apache-2.0; its pretrained weights are not republished. Third-party data and model terms are not replaced by this repository's MIT license.
+
+The public repository is the reviewed standalone component. Publication does not include the wider private Cortex workspace. Release packages provide the source, tests and reproducible evidence rather than attempting to hide Python source in a wheel.

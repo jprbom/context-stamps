@@ -1,13 +1,16 @@
 # Validation record
 
-Local validation on 2026-09-19, Windows, Python 3.13.13:
+Release 0.2.0, local Windows Python 3.13.13, 2026-09-19.
 
-- 31 automated tests passed, including actual MCP stdio sessions, default write-tool denial, source freshness, exact-text retention, budget accounting, transaction rollback, projection parity and resource bounds.
-- Ruff passed. Bandit reported no issues in `stamps.py` and `context_stamps/`.
-- pip-audit reported no known vulnerabilities in the isolated environment after updating pip to 26.2.1. The editable project itself has no advisory identifier and is skipped by this dependency audit. The optional semantic encoder dependencies were installed in this environment. Advisory coverage is not proof of security.
-- All five README Python examples executed successfully, including the pinned neural encoder. The SLM example passed its dry run; a live generation request and edge-device performance were not tested.
-- Wheel and source distribution built successfully. A clean environment exercised the dependency-free wheel and command entry point before the security changes; CI builds the current source on Windows and Linux with Python 3.10 and 3.13.
-- The synthetic benchmark was rerun after projection validation changes. Results include dataset and code hashes; these are not real-world semantic quality measurements.
-- Workflow diagram passed all nine Archify validation stages with zero errors or warnings. Light/dark rendering and four desktop sizes were inspected. The static overview infographic was visually checked.
+- 38 automated tests passed. They cover source updates/deletion, path traversal rejection, hard required-source guards, stale evidence, budget accounting, trained coefficient validation, MMR/diallel-related identities, transactional rollback and real MCP stdio sessions with default write-tool denial.
+- All seven README Python examples executed. The file-observation example was supplied its documented fictional project file. The pinned neural encoder ran on CPU. The Ollama example was dry-run only; no live generator or edge hardware benchmark is claimed.
+- Ruff and Bandit passed. pip-audit found no known vulnerabilities in the isolated environment, including installed neural dependencies. The editable package itself is skipped by advisory lookup. Audit coverage is not a security guarantee.
+- Gitleaks 8.30.1 was obtained from its official release and checked against its published SHA-256 checksum. Full existing Git history and the working directory scans reported no secrets. The final committed history is scanned again before publication.
+- Seven small selectors were trained: three synthetic relevance seeds, one synthetic restoration-label model, and three SciFact relevance seeds. JSON weights, losses, splits, fixtures/interventions, per-case or per-query results, hashes and limitations are included. Negative outcomes are retained.
+- SciFact evaluated all 300 official test queries over 5,183 documents. A shared-library replication reproduced all aggregate nDCG values exactly. The initial and final summaries are retained. These are retrieval and evidence-coverage experiments, not generated-answer evaluation.
+- The release wheel and source archive are built from the release commit. SHA-256 checksums and a build manifest accompany the GitHub release. Checksums detect changes; they are not an independent code-signing attestation.
+- Workflow diagram validation from 0.1 remains applicable; the new results plot was generated from measured JSON and visually checked.
 
-No independent penetration test, trained language-model release, production readiness claim or public package release is implied. See [SECURITY.md](../SECURITY.md) for deployment boundaries. GitHub Actions provides validation tied to each pushed commit.
+Run `python experiments/verify_evidence.py` to check experiment source hashes, fixture bytes, split separation and metric aggregation. CI repeats this check on Windows/Linux and Python 3.10/3.13. Source changes require rerunning the affected experiments rather than silently relabeling old evidence.
+
+No independent penetration test, generative-model fine-tune, production-readiness certification, mobile/ARM latency or energy measurement is claimed. [Security boundaries](../SECURITY.md) and [experimental limits](experiments.md) remain part of the release.

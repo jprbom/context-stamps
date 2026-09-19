@@ -5,3 +5,6 @@ recursive-include tests *.py
 recursive-include benchmarks *.py *.md *.json
 recursive-include skills *.md
 global-exclude *.visual-check*
+
+recursive-include experiments *.py
+recursive-include evidence *.json *.jsonl *.md *.txt

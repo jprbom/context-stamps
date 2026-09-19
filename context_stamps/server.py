@@ -27,6 +27,29 @@ def serve(memory, *, allow_writes: bool = False) -> None:
         """Fetch the stored source text and its metadata; check the stale flag before reuse."""
         return memory.get(source) or {"error": "source not found"}
 
+    @server.tool()
+    async def select(
+        query: str,
+        byte_budget: int = 2048,
+        revisions: dict[str, str] | None = None,
+        required: list[str] | None = None,
+    ) -> dict:
+        """Select evidence; return insufficient_evidence if any required source cannot be supplied."""
+        from .selection import select_evidence
+
+        return select_evidence(
+            memory, query, budget=byte_budget, revisions=revisions, required=required or []
+        ).to_dict()
+
+    @server.tool()
+    async def explain(source: str, revisions: dict[str, str]) -> dict:
+        """Explain missing or changed source/dependency versions without modifying the store."""
+        from .security import version_map
+        from .sources import explain_versions
+
+        version_map(revisions, 1000)
+        return explain_versions(memory, source, revisions)
+
     async def invalidate(source: str) -> dict:
         """Mark a source and declared dependents stale without deleting the original text."""
         return {"invalidated": memory.invalidate(source)}

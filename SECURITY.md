@@ -1,14 +1,14 @@
 # Security policy and threat model
 
-Context Stamps is a local, single-user context store. It is not a sandbox, access-control system, encrypted vault, or public network service. No software can promise immunity from exploitation. Version 0.1 is an early implementation; independent security review has not been performed.
+Context Stamps is a local, single-user context store. It is not a sandbox, access-control system, encrypted vault, or public network service. No software can promise immunity from exploitation. Version 0.2 is an early implementation; independent security review has not been performed.
 
 ## Protections
 
-- MCP uses stdio and opens no network listener. Only recall, pack and inspect_source are exposed by default. `cstamps --db context.sqlite serve --allow-writes` explicitly adds remember, invalidate and forget. Grant this only to a trusted agent with appropriate host permissions.
+- MCP uses stdio and opens no network listener. Only recall, pack, inspect_source, select and explain are exposed by default. `cstamps --db context.sqlite serve --allow-writes` explicitly adds remember, invalidate and forget. Grant this only to a trusted agent with appropriate host permissions.
 - SQL values are bound parameters. Stores reject triggers, views and virtual tables on opening; SQLite trusted schemas and memory mapping are disabled, cell checking and secure deletion enabled. No SQL or shell execution tool is exposed.
 - Text is limited to 64 KiB per record, queries to 16 KiB, source IDs to 512 UTF-8 bytes, dependencies to 128, revision maps to 1,000 and stores to 1,000 records. Recall returns at most 100 records. Packing budgets cannot exceed 1,048,576 units. These are small-store limits, not a denial-of-service guarantee.
 - New database files use owner-only permissions on POSIX. Existing POSIX stores with group/other permissions are rejected. Windows files inherit the directory ACL: use a directory accessible only to your Windows account. Symbolic-link database paths are rejected. Parent directories must be trusted; concurrent hostile filesystem mutation is outside this boundary.
-- CLI text reads are bounded. Projection dimensions and training matrix sizes are capped. NumPy loading disables pickle. The optional neural adapter requires a pinned model revision and disables remote Python code. A pinned revision establishes reproducibility, not model trust: use reviewed models and maintained inference dependencies.
+- CLI text reads are bounded. Projection dimensions and training matrix sizes are capped. NumPy loading disables pickle. The optional neural adapter requires a pinned model revision and disables remote Python code; neural weights must use safetensors. A pinned revision establishes reproducibility, not model trust: use reviewed models and maintained inference dependencies.
 
 ## Integrate safely
 

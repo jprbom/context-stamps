@@ -38,6 +38,7 @@ class EncoderTests(unittest.TestCase):
             encoder = SentenceTransformerEncoder("example", revision="a" * 40)
             self.assertEqual(encoder.encode("hello"), [0.5, 0.5])
             self.assertFalse(encoder.model.kwargs["trust_remote_code"])
+            self.assertTrue(encoder.model.kwargs["model_kwargs"]["use_safetensors"])
             self.assertIn("a" * 40, encoder.identity)
 
 
@@ -54,7 +55,10 @@ class MCPTests(unittest.IsolatedAsyncioTestCase):
             async with ClientSession(read, write) as session:
                 await session.initialize()
                 listing = await session.list_tools()
-                self.assertEqual({tool.name for tool in listing.tools}, {"recall", "pack", "inspect_source"})
+                self.assertEqual(
+                    {tool.name for tool in listing.tools},
+                    {"recall", "pack", "inspect_source", "select", "explain"},
+                )
                 result = await session.call_tool("forget", {"source": "manual"})
                 self.assertTrue(result.isError)
 
@@ -78,7 +82,7 @@ class MCPTests(unittest.IsolatedAsyncioTestCase):
                 async with ClientSession(read, write) as session:
                     await session.initialize()
                     listing = await session.list_tools()
-                    self.assertEqual(len(listing.tools), 6)
+                    self.assertEqual(len(listing.tools), 8)
                     result = await session.call_tool("remember", {"source": "manual", "text": "pump filter"})
                     self.assertFalse(result.isError)
                     result = await session.call_tool("pack", {"query": "filter", "byte_budget": 1000})

@@ -14,3 +14,9 @@ results.json
 .env.*
 docs/assets/*.visual-check*
 docs/assets/*.delivery*
+
+.cache/
+*.safetensors
+*.pt
+*.pth
+*.onnx

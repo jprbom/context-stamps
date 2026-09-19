@@ -9,7 +9,13 @@ class SentenceTransformerEncoder:
             raise ValueError("revision must be an immutable 40-character model commit SHA")
         from sentence_transformers import SentenceTransformer
 
-        self.model = SentenceTransformer(model, revision=revision, device=device, trust_remote_code=False)
+        self.model = SentenceTransformer(
+            model,
+            revision=revision,
+            device=device,
+            trust_remote_code=False,
+            model_kwargs={"use_safetensors": True},
+        )
         self.dim = int(self.model.get_sentence_embedding_dimension())
         self.identity = (
             f"sentence-transformers:{model}@{revision}:normalize=true:"
