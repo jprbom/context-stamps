@@ -1,0 +1,44 @@
+[
+  {
+    "split": "fresh_test",
+    "method": "equal_bits_uniform",
+    "query_seed_pairs": 600,
+    "top1": 0.66,
+    "mrr": 0.8021666666666667
+  },
+  {
+    "split": "fresh_test",
+    "method": "equal_bits_pairwise",
+    "query_seed_pairs": 600,
+    "top1": 0.995,
+    "mrr": 0.9975
+  },
+  {
+    "split": "fresh_test",
+    "method": "validation_selected_bits_pairwise",
+    "query_seed_pairs": 600,
+    "top1": 0.995,
+    "mrr": 0.9975
+  },
+  {
+    "split": "fresh_ood",
+    "method": "equal_bits_uniform",
+    "query_seed_pairs": 600,
+    "top1": 0.6866666666666666,
+    "mrr": 0.8104722222222223
+  },
+  {
+    "split": "fresh_ood",
+    "method": "equal_bits_pairwise",
+    "query_seed_pairs": 600,
+    "top1": 0.99,
+    "mrr": 0.995
+  },
+  {
+    "split": "fresh_ood",
+    "method": "validation_selected_bits_pairwise",
+    "query_seed_pairs": 600,
+    "top1": 0.99,
+    "mrr": 0.995
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "workflow": 0,
+    "target": 5,
+    "setting": 204,
+    "limit": 3073,
+    "new_limit": 5031,
+    "entity_prefix": "component_68663212",
+    "failure": "revoked"
+  },
+  {
+    "workflow": 1,
+    "target": 1,
+    "setting": 665,
+    "limit": 3641,
+    "new_limit": 7978,
+    "entity_prefix": "component_69708972",
+    "failure": "stale"
+  },
+  {
+    "workflow": 2,
+    "target": 0,
+    "setting": 166,
+    "limit": 3996,
+    "new_limit": 7814,
+    "entity_prefix": "component_81246153",
+    "failure": "revoked"
+  },
+  {
+    "workflow": 3,
+    "target": 7,
+    "setting": 786,
+    "limit": 2698,
+    "new_limit": 8492,
+    "entity_prefix": "component_92298595",
+    "failure": "stale"
+  },
+  {
+    "workflow": 4,
+    "target": 0,
+    "setting": 627,
+    "limit": 3451,
+    "new_limit": 5885,
+    "entity_prefix": "component_20427381",
+    "failure": "revoked"
+  },
+  {
+    "workflow": 5,
+    "target": 1,
+    "setting": 653,
+    "limit": 3739,
+    "new_limit": 8481,
+    "entity_prefix": "component_27488835",
+    "failure": "stale"
+  },
+  {
+    "workflow": 6,
+    "target": 6,
+    "setting": 275,
+    "limit": 2186,
+    "new_limit": 8841,
+    "entity_prefix": "component_34434527",
+    "failure": "revoked"
+  },
+  {
+    "workflow": 7,
+    "target": 4,
+    "setting": 203,
+    "limit": 2601,
+    "new_limit": 7592,
+    "entity_prefix": "component_49341091",
+    "failure": "stale"
+  }
+]

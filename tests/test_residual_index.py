@@ -56,6 +56,18 @@ class ResidualTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.index._codes[0, 0] = 0
 
+    def test_close_scores_at_maximum_dimension(self):
+        rng = np.random.default_rng(448)
+        q = rng.normal(size=4096).astype(np.float32)
+        q /= np.linalg.norm(q)
+        values = q + rng.normal(scale=1e-6, size=(40, 4096)).astype(np.float32)
+        values /= np.linalg.norm(values, axis=1, keepdims=True)
+        index = ResidualIndex(values, encoder_id="near-ties")
+        rows = np.arange(len(values))
+        result = index.search(q, encoder_id="near-ties", eligible=rows, fetch=lambda ids: values[ids])
+        scores = np.einsum("ij,j->i", values, q.astype(np.float64), dtype=np.float64)
+        self.assertEqual(result["rows"], np.lexsort((rows, -scores))[:10].tolist())
+
 
 if __name__ == "__main__":
     unittest.main()

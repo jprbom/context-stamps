@@ -1,0 +1,27 @@
+{
+  "status": "post-hoc exploratory paired bootstrap, not a preregistered significance test",
+  "unit": "8 unique workflows, averaging2 repeats before resampling",
+  "seed": 8299,
+  "resamples": 10000,
+  "contrasts": [
+    {
+      "contrast": "spherical_guarded minus full_current",
+      "mean_workflow_latency_difference_ms": -153.06057500000003,
+      "exploratory_95pct_interval_ms": [
+        -192.20224375000004,
+        -115.84002500000001
+      ]
+    },
+    {
+      "contrast": "spherical_guarded minus exact_graph",
+      "mean_workflow_latency_difference_ms": 17.62325,
+      "exploratory_95pct_interval_ms": [
+        -11.041131874999985,
+        42.82453124999999
+      ]
+    }
+  ],
+  "source_sha256": {
+    "experiments/summarize_improvements.py": "633d1ab4e98f0ab5aa9de808ee7cd0de48eb6e001dcbcdbee10dbb0c72a51387"
+  }
+}

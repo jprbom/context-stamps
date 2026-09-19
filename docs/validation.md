@@ -1,5 +1,13 @@
 # Validation record
 
+## Private v0.3.1 follow-up
+
+- 82 automated tests pass locally, including maximum-dimension near-tie retrieval, stale backing vectors, exact 32-byte round trips and bounded configuration rendering.
+- `verify_improvements.py` checks new artifact/source hashes, all 2,029 exact public ranking matches per retrieval run, 21 allocation training runs, 3,600 fixed-bit rankings, 768 workflow stages and 540 comparative scale queries.
+- Four workflow iterations retain output-contract failures and latency outliers. The final run uses actual 32-byte routing, matched warmup settings and unchanged controls. Eight unique workflows are repeated twice; they are not 16 independent tasks.
+- Ruff and core Bandit pass. Gitleaks reports exactly the same nine reviewed public-ID false positives, with no new matches. The new APIs introduce no new mandatory dependency.
+- Full comparisons include stronger Faiss and exact-graph controls, which remain preferable for their measured workloads. See [retrieval repair and efficiency](retrieval-repair.md).
+
 > Historical v0.2 evidence. For the private spherical v0.3 candidate, see [current results](spherical-results.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
 
 Release 0.2.0, local Windows Python 3.13.13, 2026-09-19.

@@ -1,0 +1,50 @@
+[
+  {
+    "method": "full_current",
+    "workflow_attempts": 16,
+    "unique_workflows": 8,
+    "complete_workflow_success": 10,
+    "correct_stages": 57,
+    "stages": 64,
+    "model_calls": 48,
+    "input_tokens_total": 91224,
+    "output_tokens_total": 1047,
+    "mean_workflow_ms_including_setup": 595.36500625,
+    "median_workflow_ms_including_setup": 607.08165,
+    "p95_workflow_ms_including_setup": 727.7815999999999,
+    "p95_definition": "nearest-rank p95 of16 attempts equals maximum",
+    "mean_setup_ms": 0.221825
+  },
+  {
+    "method": "exact_graph",
+    "workflow_attempts": 16,
+    "unique_workflows": 8,
+    "complete_workflow_success": 16,
+    "correct_stages": 64,
+    "stages": 64,
+    "model_calls": 48,
+    "input_tokens_total": 15702,
+    "output_tokens_total": 1056,
+    "mean_workflow_ms_including_setup": 424.68118125,
+    "median_workflow_ms_including_setup": 427.60285,
+    "p95_workflow_ms_including_setup": 473.0278,
+    "p95_definition": "nearest-rank p95 of16 attempts equals maximum",
+    "mean_setup_ms": 0.16035625
+  },
+  {
+    "method": "spherical_guarded",
+    "workflow_attempts": 16,
+    "unique_workflows": 8,
+    "complete_workflow_success": 16,
+    "correct_stages": 64,
+    "stages": 64,
+    "model_calls": 48,
+    "input_tokens_total": 15702,
+    "output_tokens_total": 1056,
+    "mean_workflow_ms_including_setup": 442.30443125,
+    "median_workflow_ms_including_setup": 438.62125000000003,
+    "p95_workflow_ms_including_setup": 539.3417,
+    "p95_definition": "nearest-rank p95 of16 attempts equals maximum",
+    "mean_setup_ms": 8.0083
+  }
+]

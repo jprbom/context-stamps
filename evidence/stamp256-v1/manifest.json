@@ -1,0 +1,92 @@
+{
+  "protocol": {
+    "status": "frozen before allocation experiment; historical synthetic outcomes known",
+    "total_bits": 256,
+    "facet_order": [
+      "content",
+      "entity",
+      "intent",
+      "task"
+    ],
+    "allocations": [
+      [
+        64,
+        64,
+        64,
+        64
+      ],
+      [
+        128,
+        64,
+        32,
+        32
+      ],
+      [
+        160,
+        32,
+        32,
+        32
+      ],
+      [
+        192,
+        32,
+        16,
+        16
+      ],
+      [
+        32,
+        128,
+        48,
+        48
+      ],
+      [
+        16,
+        160,
+        40,
+        40
+      ],
+      [
+        16,
+        80,
+        80,
+        80
+      ]
+    ],
+    "seeds": [
+      17,
+      41,
+      83
+    ],
+    "training": "existing counterbalanced spherical-v2 train120 and validation40; nonnegative pairwise objective, penalty0.001,400steps; allocation selected only by mean validation top1 then MRR across seeds",
+    "test": "fresh counterbalanced test200 seed760123 and shifted-task200 seed760124; no tuning on either",
+    "controls": [
+      "equal_bits_uniform",
+      "equal_bits_pairwise",
+      "validation_selected_bits_pairwise",
+      "exact_supplied_fields"
+    ],
+    "metrics": [
+      "top1",
+      "MRR",
+      "per-query order",
+      "training bit entropy",
+      "raw bytes",
+      "base64 transport tokens"
+    ],
+    "limits": "structured supplied facets; information entropy is not semantic coverage; 32 bytes exclude schema, digests, graph and source store; no claim of maximum possible information or neural compression"
+  },
+  "selected_widths": [
+    64,
+    64,
+    64,
+    64
+  ],
+  "numpy": "2.5.3",
+  "exact_field_control": "All fixtures uniquely determined by supplied entity/intent/task; 100%",
+  "source_sha256": {
+    "experiments/train_stamp256.py": "82d24e9cbd6cba52efb1b1fd7c7dc7a5a432a79d1267220d88b609f1e46b3166",
+    "context_stamps/stamp256.py": "55c7249352b42b5dcea62435e244ca80a099d56d1e60c1957a9b5cbc41e21aa6",
+    "context_stamps/training.py": "f5734434d4230967ec2ea9ac2dce8554705948495e86be00b6f923f3fd47eaef",
+    "experiments/run_spherical_v2.py": "3dc0b47ba90e4c1fc3a9e77f871ac16b860418f93b3a962e145b83fd1ff6c8ac"
+  }
+}

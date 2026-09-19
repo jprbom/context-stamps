@@ -12,7 +12,10 @@
 | Unauthorized dependency and no information in failure | `test_activation.py` | Automated local-role check |
 | Contradictory evidence and exact packet budget | `test_spherical.py` | Automated |
 | Structured missing claims, wrong entity, stale metadata | `test_requirements.py`, `structured-v1` | Regression and prospective fixtures |
-| Text retrieval across domains | Historical evidence plus `spherical-public-v1`, 2,029 queries | Both 256-bit spherical alternatives lose to dense; unresolved |
+| Text retrieval across domains | `spherical-public-v1`, `residual-v1/v2`, 2,029 queries | Binary-only loses; richer residual refinement matches dense |
+| Fixed 256-bit allocation | `stamp256-v1`, 21 training runs | Equal allocation retained; 32 raw bytes, metadata external |
+| Stateful handoffs and code contracts | `workflow-efficiency-v1` through `v4` | Final selected16/16 vs full10/16; typed deterministic rendering |
+| Read-only retrieval concurrency | `scale-comparison-v1` | 1k/10k/100k rows and1/4 workers; Faiss controls; no distributed-service claim |
 | Multi-view versus multi-direction equal 256-bit representation | `spherical-v1`, `spherical-v2` | Procedural supplied-facet experiment |
 | Learned relevance training and validation-only tuning | Six exported spherical models; `verify_spherical.py` retrains | Reproducible; synthetic domain only |
 | Text generation with complete and incomplete packets | `spherical-audit-v1`, `spherical-guarded-v1` | Actual local Qwen2.5-1.5B inference |

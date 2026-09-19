@@ -1,5 +1,7 @@
 # Spherical Context QR: measured results
 
+**Newer private v0.3.1 follow-up:** [retrieval repair, 32-byte routing and workflow efficiency](retrieval-repair.md). Results below remain historical. The separate residual-refinement path now matches dense rankings; the original binary code remains lossy.
+
 Private v0.3 research candidate. All spherical training below used CPU NumPy. Local model inference used Ollama and the RTX GPU; no base language model was fine-tuned.
 
 ## Representation and training

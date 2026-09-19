@@ -1,0 +1,44 @@
+[
+  {
+    "method": "full_current",
+    "workflow_attempts": 16,
+    "unique_workflows": 8,
+    "complete_workflow_success": 10,
+    "correct_stages": 52,
+    "stages": 64,
+    "model_calls": 48,
+    "input_tokens_total": 91422,
+    "output_tokens_total": 1042,
+    "mean_workflow_ms_including_setup": 586.04176875,
+    "median_workflow_ms_including_setup": 559.63455,
+    "mean_setup_ms": 0.201425
+  },
+  {
+    "method": "exact_graph",
+    "workflow_attempts": 16,
+    "unique_workflows": 8,
+    "complete_workflow_success": 16,
+    "correct_stages": 64,
+    "stages": 64,
+    "model_calls": 48,
+    "input_tokens_total": 15678,
+    "output_tokens_total": 1056,
+    "mean_workflow_ms_including_setup": 442.7761375,
+    "median_workflow_ms_including_setup": 442.06295,
+    "mean_setup_ms": 0.1294625
+  },
+  {
+    "method": "spherical_guarded",
+    "workflow_attempts": 16,
+    "unique_workflows": 8,
+    "complete_workflow_success": 16,
+    "correct_stages": 64,
+    "stages": 64,
+    "model_calls": 48,
+    "input_tokens_total": 15678,
+    "output_tokens_total": 1056,
+    "mean_workflow_ms_including_setup": 620.07166875,
+    "median_workflow_ms_including_setup": 430.8903,
+    "mean_setup_ms": 7.98265
+  }
+]

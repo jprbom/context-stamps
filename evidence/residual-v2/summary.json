@@ -1,0 +1,122 @@
+[
+  {
+    "dataset": "scifact",
+    "method": "dense_float64_reference",
+    "queries": 300,
+    "ndcg10": 0.6450816521455776,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 3.7060000000000004,
+    "p95_ms": 5.0559400000000005
+  },
+  {
+    "dataset": "scifact",
+    "method": "faiss_flat_ip",
+    "queries": 300,
+    "ndcg10": 0.6450816521455776,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 0.6115,
+    "p95_ms": 0.9680850000000002
+  },
+  {
+    "dataset": "scifact",
+    "method": "faiss_sq8",
+    "queries": 300,
+    "ndcg10": 0.6442140282114939,
+    "same_order_fraction": 0.7933333333333333,
+    "mean_refined_fraction": 0.0,
+    "median_ms": 1.1071499999999999,
+    "p95_ms": 1.3094299999999999
+  },
+  {
+    "dataset": "scifact",
+    "method": "residual_int8_exact",
+    "queries": 300,
+    "ndcg10": 0.6450816521455776,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 0.0027918194096083347,
+    "median_ms": 3.9531,
+    "p95_ms": 5.050085
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "dense_float64_reference",
+    "queries": 323,
+    "ndcg10": 0.31667312754717797,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 2.3813,
+    "p95_ms": 3.073739999999999
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "faiss_flat_ip",
+    "queries": 323,
+    "ndcg10": 0.3159407492486187,
+    "same_order_fraction": 0.8699690402476781,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 0.3591,
+    "p95_ms": 0.62193
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "faiss_sq8",
+    "queries": 323,
+    "ndcg10": 0.3155537337977027,
+    "same_order_fraction": 0.631578947368421,
+    "mean_refined_fraction": 0.0,
+    "median_ms": 0.7976,
+    "p95_ms": 1.0311799999999989
+  },
+  {
+    "dataset": "nfcorpus",
+    "method": "residual_int8_exact",
+    "queries": 323,
+    "ndcg10": 0.31667312754717797,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 0.0039566785034671,
+    "median_ms": 2.586,
+    "p95_ms": 3.2398100000000003
+  },
+  {
+    "dataset": "arguana",
+    "method": "dense_float64_reference",
+    "queries": 1406,
+    "ndcg10": 0.5040631158034715,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 6.85635,
+    "p95_ms": 9.29335
+  },
+  {
+    "dataset": "arguana",
+    "method": "faiss_flat_ip",
+    "queries": 1406,
+    "ndcg10": 0.5014117645943661,
+    "same_order_fraction": 0.9182076813655761,
+    "mean_refined_fraction": 1.0,
+    "median_ms": 0.8309,
+    "p95_ms": 1.39825
+  },
+  {
+    "dataset": "arguana",
+    "method": "faiss_sq8",
+    "queries": 1406,
+    "ndcg10": 0.501319393848524,
+    "same_order_fraction": 0.7304409672830725,
+    "mean_refined_fraction": 0.0,
+    "median_ms": 1.8728500000000001,
+    "p95_ms": 2.3604000000000003
+  },
+  {
+    "dataset": "arguana",
+    "method": "residual_int8_exact",
+    "queries": 1406,
+    "ndcg10": 0.5040631158034715,
+    "same_order_fraction": 1,
+    "mean_refined_fraction": 0.0014366491543678285,
+    "median_ms": 6.8347,
+    "p95_ms": 8.79725
+  }
+]

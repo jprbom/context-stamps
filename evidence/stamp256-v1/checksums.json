@@ -1,0 +1,13 @@
+{
+  "bit-entropy.json": "bc3f8d0b86a7c07b8a6ddb904fa55895eea3cf0ceeba06b6f2a110b8d9045dec",
+  "fixtures.json": "618571c718027a77b741d036d69bfc668fb3370e88eaf0af196ea8f52df39b22",
+  "manifest.json": "279874d5206aa3ba90f0ceae26f5be9d829b3d391fdc1798a56c86f099e0af85",
+  "model-17.json": "068a8c084e1b203de74492bd6b2e2b4d68b82fec0e083431f6f9ed5c381813ca",
+  "model-41.json": "d0515f83028528102bdc20dc044d476d48f7f6e3cc20e93b9138c5d9ba64694c",
+  "model-83.json": "da2e4d9501189ea2fdea80088bfbb58857ed8b6aa683a22624c4e0c4acbbe4e1",
+  "protocol.json": "fcbe4d6a0ea8d4d0cb3362e7936e09d088af779659ea0ee5988b23f59c767995",
+  "results.json": "de110e10e61eb11b605c7bcd2597a7689091cbfc5a13b558e07542567473699d",
+  "summary.json": "54d671ffd32992ab52b090f00a991765a20e545668cc3fe5c43ae6d7f81151c8",
+  "training.json": "4937b7e1543918b6ddd14693220f7be6d71299ca34d9492ebfc0674b9ddfedfa",
+  "transport.json": "eca2daa0a210c2bdd5bff823abc8583b5a136c660bcd77bd4e89f0aed450ae84"
+}

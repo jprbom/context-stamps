@@ -5,7 +5,10 @@ Private research candidate. Passing a controlled fixture is not proof of general
 | Failure or gap | Response | Evidence / remaining limitation |
 |---|---|---|
 | Windows manifest separators prevented Linux evidence replay | Normalize recorded relative path separators in the verifier | Original manifests and numerical results retained; cross-platform CI rerun |
-| Public 256-bit retrieval loses dense semantic information | Preserve all 2,029 query comparisons; recommend dense retrieval for general search | Two-view lexical fusion worsened results; compression loss remains unresolved |
+| Public 256-bit retrieval loses dense semantic information | Added residual-bound refinement as a separate richer index | All 2,029 dense orders recovered; the 32-byte code alone remains lossy; Faiss is faster in memory |
+| Equal bit allocation may waste capacity | Seven layouts, 21 training runs and validation-only selection | Equal 64-bit facets retained; no allocation improvement claimed |
+| Model violates coding output contract | Retained v1/v2 failures; typed extraction plus bounded deterministic rendering | v3/v4 selected workflows pass; declarative configuration only |
+| Warmup and transport differ from final path | Matched v4 model settings and measured 32-byte transport | Original latency outlier retained; eight unique workflows |
 | Pairwise scorer appears better on procedural fixtures | Paired task bootstrap and exact-field control | Intervals do not establish a reliable gain over ridge; no broad generalization claim |
 | Standalone API lost the multidimensional design | Added normalized multi-view spherical stamps and per-facet scores | Scale invariance, antipodes, strict encoder schemas; `tests/test_spherical.py` |
 | Similarity conflated with identity | Exact digests remain independent; new exact-facet activation guard | Forced identical-stamp/different-entity test; no identity decisions from approximate scores |

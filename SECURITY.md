@@ -1,5 +1,7 @@
 # Security policy and threat model
 
+The residual index verifies fetched vectors against its snapshot digests and rejects stale or reordered data. The eligibility list and snapshot require host authentication. The 32-byte code has no source/version/authentication envelope: enforce these bindings outside the code under a trusted shared schema. `render_integer_assignments` emits bounded declarative constants and never executes generated code.
+
 Context Stamps is a local, single-user context store. It is not a sandbox, access-control system, encrypted vault, or public network service. No software can promise immunity from exploitation. Version 0.2 is an early implementation; independent security review has not been performed.
 
 ## Protections

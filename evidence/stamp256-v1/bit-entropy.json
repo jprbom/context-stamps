@@ -1,0 +1,74 @@
+[
+  {
+    "seed": 17,
+    "facet": "content",
+    "bits": 64,
+    "mean_marginal_bit_entropy": 0.7688003903563669
+  },
+  {
+    "seed": 17,
+    "facet": "entity",
+    "bits": 64,
+    "mean_marginal_bit_entropy": 0.9967981585346276
+  },
+  {
+    "seed": 17,
+    "facet": "intent",
+    "bits": 64,
+    "mean_marginal_bit_entropy": 0.8659486821335445
+  },
+  {
+    "seed": 17,
+    "facet": "task",
+    "bits": 64,
+    "mean_marginal_bit_entropy": 0.7875033466137416
+  },
+  {
+    "seed": 41,
+    "facet": "content",
+    "bits": 64,
+    "mean_marginal_bit_entropy": 0.7778263342025163
+  },
+  {
+    "seed": 41,
+    "facet": "entity",
+    "bits": 64,
+    "mean_marginal_bit_entropy": 0.9964587541819356
+  },
+  {
+    "seed": 41,
+    "facet": "intent",
+    "bits": 64,
+    "mean_marginal_bit_entropy": 0.897478506552719
+  },
+  {
+    "seed": 41,
+    "facet": "task",
+    "bits": 64,
+    "mean_marginal_bit_entropy": 0.8165526907874868
+  },
+  {
+    "seed": 83,
+    "facet": "content",
+    "bits": 64,
+    "mean_marginal_bit_entropy": 0.7937891954276528
+  },
+  {
+    "seed": 83,
+    "facet": "entity",
+    "bits": 64,
+    "mean_marginal_bit_entropy": 0.996854656419945
+  },
+  {
+    "seed": 83,
+    "facet": "intent",
+    "bits": 64,
+    "mean_marginal_bit_entropy": 0.8927938893865718
+  },
+  {
+    "seed": 83,
+    "facet": "task",
+    "bits": 64,
+    "mean_marginal_bit_entropy": 0.8015284625362854
+  }
+]

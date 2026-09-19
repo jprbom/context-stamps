@@ -4,7 +4,9 @@
 
 By **Prashant Jagtap** · Python 3.10+ · MIT-licensed core
 
-**Private research candidate, v0.3.0.** This repository remains private while validation continues. No PyPI release is available. Historical v0.2 results are retained; they do not establish the performance of the new spherical design.
+**Private research candidate, v0.3.1.** This repository remains private while validation continues. No PyPI release is available. Historical results and unsuccessful experiments are retained.
+
+**Zip Spherical QR uses exactly 256 bits / 32 bytes**, with a shared schema and source store outside the code. A separate residual-bound retrieval index matched every dense-reference top-10 ranking across 2,029 public queries. It uses more than 256 bits plus backing vectors; it is not a lossless binary hash. [Measured benefits, costs and failures](docs/retrieval-repair.md).
 
 ## What it does
 
@@ -44,10 +46,15 @@ git clone https://github.com/jprbom/context-stamps.git
 cd context-stamps
 python -m pip install -e .
 python examples/spherical_workflow.py
+python examples/zip_spherical_qr.py
 scqr encode examples/facets.json
 ```
 
 Repository access is currently restricted to authorized users. The example uses lexical hashing, supplied facets and explicit dependencies; it does not download a model. The core needs no service or GPU.
+
+For exactly 32 raw bytes, use `Stamp256Codec`: [runnable guide](docs/zip-spherical-qr.md). The `scqc1` format below carries a schema ID and text encoding, so its complete envelope is larger.
+
+For quality-preserving vector refinement, install `.[learn]` and run `python examples/residual_retrieval.py`. `ResidualIndex` uses conservative score bounds, checks fetched vector digests and refines every candidate that could affect the result. Optimized Faiss is faster in current memory-resident tests. [API and comparison](docs/retrieval-repair.md).
 
 ## Compare facets and exchange a compact stamp
 
@@ -143,13 +150,15 @@ These scores are uncalibrated ranking utilities. The bundled models require the 
 ## What is measured
 
 - Original retrieval experiments cover SciFact, NFCorpus and ArguAna. The historical coverage heuristic regressed on two datasets, and historical learned selectors did not generalize reliably. Those failures remain visible.
-- A new equal-bit public retrieval test also found that 256-bit spherical codes lose accuracy against dense MiniLM on all three datasets. Adding a lexical view did not repair the loss. Keep dense retrieval for general semantic search; the compact representation is experimental.
+- The original 256-bit-only public retrieval test loses accuracy on all three datasets. The separate residual-refinement path now matches all 2,029 dense rankings. Its index arrays are 71.875% smaller than float32 vectors, but full backing vectors remain required: combined storage increases and in-memory latency remains worse than Faiss.
 - Equal-256-bit spherical experiments separate single-view, multiple-direction and multiple-view encodings. Supplied facets make these structured tests; they do not establish automatic context understanding.
 - Text generation tests compare full context, incomplete stamp-only packets, dependency-aware packets and an exact-field control using a local public 1.5B model. The exact-field control is competitive; no universal stamp advantage is claimed.
 - Deterministic verification retrains models and replays recorded rankings. Unit tests include malformed inputs, collisions, access denial, stale edges, budget boundaries and graph cycles.
 - Image, speech and video pilots completed 36 generations with identical outputs in all 18 direct/routed pairs. Routing adds overhead and leaves generator input tokens unchanged; this is integration parity, not improved generation quality.
 
 [Results and limitations](docs/spherical-results.md) · [failure ledger](docs/failures-and-fixes.md) · [scenario matrix](docs/scenario-matrix.md) · [validation record](docs/validation.md).
+
+The final controlled workflow run achieved 16/16 successful selected-context workflows versus 10/16 with full context, using 82.79% fewer input tokens and 25.71% less mean workflow time for the spherical path. There were eight unique fictional workflows and two repeats. The exact-graph baseline also passed 16/16 and was faster on average. This does not establish a benefit over exact lookup or real-repository coding performance. [Full comparison and failed iterations](docs/retrieval-repair.md).
 
 ## Scale and integration
 
@@ -158,6 +167,8 @@ The reference graph is in-memory and rebuilt by the host. It is bounded to 1,000
 Use the Python API for the spherical workflow. Existing CLI, SQLite memory, MCP tools and portable agent instructions remain available for the historical evidence APIs; they are not automatically wrappers for every new spherical API. [Integration guide](docs/integrations.md) · [historical usage](docs/historical-v02-guide.md).
 
 Potential applications include coding handoffs, experiment provenance, reusable research evidence, local SLM context assembly and cross-functional agent coordination. Internal neural attention, autonomous relationship extraction, production-scale multi-agent deployment and mobile energy savings remain unverified research directions.
+
+Prefer exact graph lookup when known entity/task fields determine the target. Read-only scaling now includes Faiss controls at 1k, 10k and 100k vectors with one/four concurrent readers; it does not cover distributed updates or production operations.
 
 ## Security, data and attribution
 

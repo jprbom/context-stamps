@@ -1,0 +1,30 @@
+{
+  "raw_bytes": 32,
+  "zlib_bytes": 41,
+  "base64_bytes": 44,
+  "base64_cl100k_tokens": 32,
+  "schema": [
+    [
+      "content",
+      "6e229ce41e1508f68023ee122039d482cb47d7113ca3ef1020211f12466fe89a",
+      64
+    ],
+    [
+      "entity",
+      "388662a043bfc7a09e52a125a10b91a83c509f84796bd02ffd1162cf2e971550",
+      64
+    ],
+    [
+      "intent",
+      "9de58667fbe994ec77dc332ce3874c4984e2aec3565e73f3b333d51c348470cd",
+      64
+    ],
+    [
+      "task",
+      "5c0138ee3f16a2c98e3f8d399ee6583dfe81d8a5cf40b0c3b472afdf98602d6a",
+      64
+    ]
+  ],
+  "schema_id": "d6ee4f3756eda79b8f6bb117a367af895331b2d106b2a94aa4a0001d0863b992",
+  "note": "Single payload illustration; schema/source/version/authorization are external; zip not used if larger."
+}
