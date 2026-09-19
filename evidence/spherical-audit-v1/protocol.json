@@ -1,0 +1,12 @@
+{
+  "status": "frozen before supplemental execution; follows inspection of spherical-v1",
+  "training_source": "spherical-v2; no refitting beyond its frozen validation protocol",
+  "activation_threshold": "choose among [0.25,0.5,0.75,1.0] by validation F1 on positive candidates versus remaining candidates; break ties by lower threshold",
+  "evaluation": "test and OOD; true-positive activation recall and false activations, including no-answer candidate sets",
+  "control": "exact equality of supplied entity, intent and task fields; same fields as multi-view representation",
+  "transport": "full JSON versus schema-referenced compact payload; include schema bootstrap and resolved text separately; token counts use cl100k_base",
+  "live_slm": "12 procedural contexts, 3 conditions, 2 repeats, seed 61193 interleaved order; full context versus stamp-only versus activated dependency closure; fixed public qwen2.5:1.5b",
+  "live_grading": "exact JSON root and dependency values; no generated code execution",
+  "latency": "wall clock from request-side query stamping and activation through assembly and local generation; prebuilt index setup measured separately; one warmup, no cold-start claim",
+  "limits": "fictional controlled tasks, caller-provided facets and edges; no attention-weight modification, neural model fine-tuning, energy or dollar-cost measurement"
+}
