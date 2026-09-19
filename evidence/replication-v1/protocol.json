@@ -1,0 +1,25 @@
+{
+  "frozen_commit": "9b1900923de28bce3633bb9138e929db5405cc85",
+  "selector_sha256": "1af31c766a0e8be5332966c6a3bdeb951683fbca069af62218acd2b573656607",
+  "datasets": [
+    "nfcorpus",
+    "arguana"
+  ],
+  "test_queries": "all official test qrels",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "candidate_pool": 100,
+  "coverage_weight": 0.3,
+  "diversity_weight": 0.15,
+  "mmr_relevance_weight": 0.8,
+  "bm25_k1": 1.5,
+  "bm25_b": 0.75,
+  "cutoff": 10,
+  "graded_ndcg_gain": "linear relevance, trec_eval default",
+  "exclude_identical_query_document_ids": true,
+  "low_lexical_stratum": "maximum Jaccard(query, positive document) <= 0.1",
+  "bootstrap_seed": 20260919,
+  "bootstrap_samples": 2000,
+  "retuning": false,
+  "rule": "Report both datasets and low-overlap strata, including regressions. No parameter changes after outcomes."
+}
