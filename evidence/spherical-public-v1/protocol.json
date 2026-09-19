@@ -1,0 +1,15 @@
+{
+  "status": "frozen before new spherical evaluation; historical public test sets have been inspected in earlier work",
+  "datasets": ["scifact", "nfcorpus", "arguana"],
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "projection_seed": 17,
+  "total_bits": 256,
+  "methods": ["dense", "semantic_256", "semantic_128_lexical_128"],
+  "lexical_encoder": "HashingEncoder dimension 384",
+  "tuning": "semantic view weight from [0.0,0.25,0.5,0.75,1.0], selected only by mean SciFact validation nDCG@10; first weight on ties; complementary lexical weight",
+  "test_policy": "all official test queries; self-document IDs excluded; missing positives remain in denominators; no test retuning",
+  "metric": "graded nDCG@10 with linear gains",
+  "timing": "not a speed benchmark; reuse pinned cached embeddings, record their hashes",
+  "limits": "two views of document text; no graph or entity metadata; no new encoder fine-tuning; no claim of untouched test sets or general agent-workflow validation"
+}
