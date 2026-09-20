@@ -18,7 +18,7 @@ Private Cortex research, chat transcripts, private corpus content, user database
 
 SciFact is a third-party dataset, identified as CC-BY-SA-4.0 by its [BEIR dataset card](https://huggingface.co/datasets/BeIR/scifact). Users must obtain it separately and respect its terms. MiniLM's [model card](https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2) specifies Apache-2.0; its pretrained weights are not republished. Third-party data and model terms are not replaced by this repository's MIT license.
 
-The standalone repository is currently private pending validation; only this reviewed component is a future public-release candidate. Publication does not include the wider private Cortex workspace. Release packages provide the source, tests and reproducible evidence rather than attempting to hide Python source in a wheel.
+The standalone repository is public. Publication covers only this reviewed component and does not include the wider private Cortex workspace. Release packages provide the source, tests and reproducible evidence rather than attempting to hide Python source in a wheel.
 
 The follow-up NFCorpus/ArguAna benchmark has [separate attribution and CC-BY-SA-4.0 terms](../evidence/replication-v1/ATTRIBUTION.md). Original fictional local-SLM fixtures and their generated outputs remain MIT; the public Qwen model is identified in the run manifest and its weights are not redistributed. No external participant responses are included. The usability kit asks for separate publication permission before sharing participant feedback.
 

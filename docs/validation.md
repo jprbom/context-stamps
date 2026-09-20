@@ -63,11 +63,11 @@ No independent penetration test, generative-model fine-tune, production-readines
 - The completed v2 multimodal run contains 36 generations and 18 identical direct/routed output pairs across image, speech and video. The verifier checks pair completeness, hashes, token equality and timing arithmetic.
 - The new public spherical retrieval run covers 2,029 queries and 6,087 method/query records. Both compact methods underperform dense retrieval on every dataset. Its verifier checks provenance, aggregates and self-exclusion; full metric replay requires external corpora and caches.
 
-Remote CI status must be checked on the pushed candidate commit. The repository remains private; no public-release readiness is implied by local checks.
+Remote CI status must be checked on the pushed release commit. Public visibility does not convert local checks into production-readiness evidence.
 
 A clean wheel installation with no optional dependencies loaded the bundled experimental scorer and ran `scqr encode` successfully. Historical workflow source is preserved under `evidence/source-snapshots` when a later capacity fix changes its file hash. Source manifests identify the original runtime path and its exact snapshot; current regression tests exercise the patched implementation.
 
-## Private v0.5 candidate verification
+## Public v0.5 release verification
 
 - The hybrid-retrieval-v1 protocol was written after the first three datasets had been inspected but before SciDocs outcomes were computed. It pins the encoder revision, BM25 parameters, 0.75 validation-selected semantic weight, metric and bootstrap seed.
 - The run contains 9,087 method/query records: dense MiniLM, BM25 and the frozen hybrid for 300 SciFact, 323 NFCorpus, 1,406 ArguAna and 1,000 SciDocs queries. `verify_hybrid_retrieval.py` checks checksums, source snapshots, record uniqueness, aggregate arithmetic and the expected sign of every paired interval.

@@ -24,7 +24,7 @@ The three-seed mean of the trained 32-byte ITQ baseline improves on all three pu
 
 The initial session cache added CPU overhead. Restricting version checks to cached dependencies, while invalidating globally on every mutation, reduced that overhead in the follow-up replay. Both runs and original source snapshots are retained. Reuse reduces repeated transfer payloads in a shared-resolver scenario, not model evidence tokens. [Details and remaining research gates](progressive-routing.md).
 
-Private research candidate. Passing a controlled fixture is not proof of general robustness.
+Research release. Passing a controlled fixture is not proof of general robustness.
 
 | Failure or gap | Response | Evidence / remaining limitation |
 |---|---|---|

@@ -1,6 +1,6 @@
 # Candidate changes
 
-All versions below are research candidates. The repository is private; this file does not announce a public or PyPI release.
+All versions below are research releases or candidates. v0.5.0 is available from the public source repository; no PyPI release is announced here.
 
 ## 0.5.0
 

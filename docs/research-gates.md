@@ -16,7 +16,7 @@ The v0.4 baseline additionally extracts bounded observed facets with provenance,
 
 Remaining gates include independently evaluated or learned facet construction, profile ablation, independent real coding/research tasks, a useful qualified compact exit, semantic gains over dense retrieval, and distributed/edge/model-internal validation. [Adaptive capsule design](adaptive-capsules.md) and [earlier measured behavior](selective-context.md).
 
-The private candidate is a tested context library and experimental scorer. It is
+The public research release is a tested context library and experimental scorer. It is
 not a pretrained multimodal foundation model. These gates separate implemented
 mechanisms from the broader research programme.
 

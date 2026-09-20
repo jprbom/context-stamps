@@ -2,7 +2,7 @@
 
 ## Latest measured comparisons
 
-The private v0.5.0 candidate uses a relation-aware 256-bit product-sphere capsule with exact-first routing and precise fallback. Compact-only three-seed ITQ means remain below dense retrieval. A separate precise MiniLM/BM25 blend improves nDCG@10 on SciFact, NFCorpus and ArguAna, then regresses on the prospective SciDocs check. The implementation now requires a positive scope certificate or uses dense retrieval. Faiss remains the stronger measured in-memory latency baseline for conventional vector indexing.
+The public v0.5.0 research release uses a relation-aware 256-bit product-sphere capsule with exact-first routing and precise fallback. Compact-only three-seed ITQ means remain below dense retrieval. A separate precise MiniLM/BM25 blend improves nDCG@10 on SciFact, NFCorpus and ArguAna, then regresses on the prospective SciDocs check. The implementation now requires a positive scope certificate or uses dense retrieval. Faiss remains the stronger measured in-memory latency baseline for conventional vector indexing.
 
 The latest changing-context replay compares an uncached exact graph, ordinary global cache invalidation and dependency-selective invalidation. All packets match; selective invalidation preserves unrelated cache hits. This is a local packet-handling comparison, not a win over complete third-party agent platforms. [Full comparison](selective-context.md). The feature review and older experiment descriptions below retain their original scope.
 

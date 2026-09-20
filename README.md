@@ -2,9 +2,9 @@
 
 **Compact context references, exact-first retrieval and version-checked evidence handoffs.**
 
-By **Prashant Jagtap** · Python 3.10+ · MIT-licensed core · **Private research candidate v0.5.0**
+By **Prashant Jagtap** · Python 3.10+ · MIT-licensed core · **Public research release v0.5.0**
 
-The repository remains private while validation continues. Access is required to clone it; no PyPI release is available. This candidate keeps the spherical stamp at **256 bits / 32 bytes** and defaults to a precise retrieval backend when a compact shortcut has not qualified on validation data.
+The source repository is public. No PyPI release is available; install from a reviewed clone. This release keeps the spherical stamp at **256 bits / 32 bytes** and defaults to a precise retrieval backend when a compact shortcut has not qualified on validation data.
 
 ![Animated Spherical Context QR workflow](docs/assets/spherical-context-flow-animated.svg)
 
@@ -245,4 +245,4 @@ The host supplies authentication and permissions. Stamps can expose similarity; 
 
 Secret scanning retains all default detection rules. Seven exact public-ID pairs in one evidence file are narrowly excluded; synthetic positive controls confirm credentials remain detectable on the same line. Historical results and unsuccessful experiments remain available.
 
-Copyright © 2026 **Prashant Jagtap**. Preserve copyright and MIT notices when redistributing substantial portions of the code. Citation is appreciated, not an additional MIT restriction. Public-data-derived records and quantizers retain their stated CC-BY-SA-4.0 terms; external models retain their own licenses. Private corpora and base-model weights are not distributed. [Rights and data](docs/rights-and-data.md) · [citation](CITATION.cff).
+Copyright © 2026 **Prashant Jagtap**. Preserve the copyright and MIT permission notice when redistributing substantial portions of the code. Citation is appreciated, not an additional MIT restriction. Public-data-derived records and quantizers retain their stated CC-BY-SA-4.0 terms; external models retain their own licenses. Private corpora and base-model weights are not distributed. [License](LICENSE) · [notice](NOTICE.md) · [rights and data](docs/rights-and-data.md) · [citation](CITATION.cff).
