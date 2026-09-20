@@ -1,10 +1,12 @@
 # Research gates after the local pilot
 
-## What v0.3.3 closes
+## What v0.4.0 closes
 
 Partial query facets are now explicit rather than fabricated; incompatible schemas are rejected and calibration scopes include the observed facet mask and weights. Dependency-selective cache invalidation replaces unnecessary whole-session clearing and is tested against uncached graph behavior. Three-seed quantizer results and precise fallback address honest comparison and quality protection, not standalone compact superiority.
 
-Remaining gates include automatic/query-conditioned facet learning, independent real coding/research tasks, a useful qualified compact exit, semantic gains over dense retrieval, and distributed/edge/model-internal validation. [Implemented behavior and measurements](selective-context.md).
+The v0.4 baseline additionally extracts bounded observed facets with provenance, defines a structured eight-view profile and enforces a caller-supplied compact-error budget. Its eight authored extraction controls are software checks, not independent extraction evidence.
+
+Remaining gates include independently evaluated or learned facet construction, profile ablation, independent real coding/research tasks, a useful qualified compact exit, semantic gains over dense retrieval, and distributed/edge/model-internal validation. [Adaptive capsule design](adaptive-capsules.md) and [earlier measured behavior](selective-context.md).
 
 The private candidate is a tested context library and experimental scorer. It is
 not a pretrained multimodal foundation model. These gates separate implemented

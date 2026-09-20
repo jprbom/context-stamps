@@ -19,6 +19,14 @@ def read(path):
     return json.loads(path.read_text(encoding='utf-8'))
 
 
+def historical_source(filename, digest):
+    current = ROOT / filename
+    if current.is_file() and hashlib.sha256(current.read_bytes()).hexdigest() == digest:
+        return current
+    snapshot = ROOT / 'evidence/source-snapshots' / f'{Path(filename).stem}-{digest}{Path(filename).suffix}'
+    return snapshot
+
+
 def main():
     for name in ('progressive-v1', 'quantizer-seeds-v1', 'context-reuse-v1', 'context-reuse-v2'):
         folder = ROOT / 'evidence' / name
@@ -27,7 +35,7 @@ def main():
         manifest = read(folder / 'manifest.json')
         for field in ('source_sha256', 'input_sha256'):
             for filename, digest in manifest.get(field, {}).items():
-                assert hashlib.sha256((ROOT / filename).read_bytes()).hexdigest() == digest, filename
+                assert hashlib.sha256(historical_source(filename, digest).read_bytes()).hexdigest() == digest, filename
     folder = ROOT / 'evidence/progressive-v1'
     rows = read(folder / 'results.json')
     assert len(rows) == 2029 * 6
@@ -53,7 +61,12 @@ def main():
     assert not (train_ids | val_ids) & {qid for dataset, qid in gold if dataset == 'scifact'}
     policy, report = fit_routing_policy(calibration['train'], calibration['validation'],
                                         scope='scifact:minilm-pinned:itq256:v1')
-    assert {'policy': asdict(policy), 'report': report} == read(folder / 'policy.json')
+    recorded = read(folder / 'policy.json')
+    for key, value in recorded['policy'].items():
+        assert asdict(policy)[key] == value
+    assert report == recorded['report']
+    assert policy.certified_error_upper_bound == report['error_upper_bound']
+    assert policy.calibration_count == report['validation_accepted']
     model = Family.load(folder / 'itq256.json')
     assert model.bits == 256 and model.method == 'itq-v1' and model.seed == 17
     replication = ROOT / 'evidence/quantizer-seeds-v1'

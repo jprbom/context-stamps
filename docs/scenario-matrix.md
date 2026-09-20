@@ -1,6 +1,6 @@
 # Scenario and evidence matrix
 
-Current candidate: v0.3.3. [Latest implementation and results](selective-context.md); earlier evidence remains historical.
+Current candidate: v0.4.0. [Adaptive capsule interfaces](adaptive-capsules.md), [earlier measured results](selective-context.md); earlier evidence remains historical.
 
 | Added scenario | Evidence | Result |
 |---|---|---|
@@ -10,6 +10,9 @@ Current candidate: v0.3.3. [Latest implementation and results](selective-context
 | Repeated handoffs with updates | `mutation-reuse-v1`, 6,600 records | Identical packets across three methods; 1,881/2,000 selective hits at 100 pairs |
 | Trained binary retrieval across seeds | `quantizer-seeds-v1` | Means improve; one ArguAna seed regresses; dense remains stronger |
 | Secret scanner false-positive boundaries | `verify_secret_scan.py` | Five controls; default rules preserved |
+| Deterministic observed-facet extraction | `capsule-controls-v1`, `test_facet_compiler.py` | Eight authored cases pass; provenance retained; independent accuracy open |
+| Structured eight-view 256-bit profile | 100 deterministic control round trips | Exact 32-byte serialization; retrieval value open |
+| Risk-budgeted compact exit | Five route controls | Over-budget/unqualified policies fall back; qualified synthetic control exits |
 
 
 | Scenario | Test / evidence | Status |
@@ -34,7 +37,7 @@ Current candidate: v0.3.3. [Latest implementation and results](selective-context
 | Constrained code generation | `local-tasks-v1`, `local-tasks-v2` | Actual local model, tiny AST grammar; no arbitrary execution |
 | Image / speech / video generation | `multimodal-v2`, 36 calls, 18 pairs | All output hashes match; unchanged generator tokens; routing overhead |
 | Real repository coding, cross-team coordination | No independent completed task benchmark | Open gate |
-| Automatic facets / inferred relationships | Not implemented | Open research task |
+| Automatic facets / inferred relationships | Deterministic extraction baseline; no relationship inference | Independent annotation and learned extraction remain open |
 | ARM/mobile power, networked agents and production scale | Not measured | Open gate |
 | Internal attention/KV-cache acceleration | Not implemented | Research hypothesis only |
 

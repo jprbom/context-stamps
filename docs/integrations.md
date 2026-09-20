@@ -2,7 +2,7 @@
 
 ## Recommended Python entry point
 
-Run `examples/progressive_context.py` for exact-first routing, precise fallback and selective packet reuse; `examples/partial_facets.py` shows queries with missing facets. Use `ProgressiveRouter`, `ContextSession` and `FacetQuery` from the package exports. The host supplies authorization, versions and its existing precise retriever. No compact policy qualifies by default. [Current guide](selective-context.md).
+Run `examples/progressive_context.py` for exact-first routing, precise fallback and selective packet reuse; `examples/partial_facets.py` shows queries with missing facets; `examples/automatic_facets.py` shows bounded extraction and provenance. Use `ProgressiveRouter`, `ContextSession`, `FacetQuery` and `FacetCompiler` from the package exports. The host supplies authorization, versions and its existing precise retriever. No public compact policy qualifies by default. [Current guide](selective-context.md) and [adaptive capsules](adaptive-capsules.md).
 
 The CLI/MCP/skill interfaces below keep their existing SQLite evidence scope; installing them does not automatically expose the new Python APIs. A 32-byte receipt is process-local and distinct from a 32-byte spherical stamp.
 

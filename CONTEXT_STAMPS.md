@@ -1,6 +1,6 @@
 # Using Context Stamps in an agent workflow
 
-For the current Python integration, use `ProgressiveRouter` and `ContextSession` as shown in `examples/progressive_context.py`. Resolve authorized exact IDs directly. Otherwise use the host's precise backend unless a scope-matched compact policy has qualified. Use `FacetQuery` for explicitly missing query facets; do not invent values or reuse a policy across facet masks. Keep authorization and required-source checks outside the score. Reuse only live receipts and resolve actual evidence before model use. See `docs/agent-instructions.md`.
+For the current Python integration, use `ProgressiveRouter` and `ContextSession` as shown in `examples/progressive_context.py`. Resolve authorized exact IDs directly. Otherwise use the host's precise backend unless a scope-matched compact policy has qualified and its certified error bound fits the caller's risk budget. Use `FacetQuery` for explicitly missing query facets; do not invent values or reuse a policy across facet masks. `FacetCompiler` may provide inspectable routing hints, but its output does not establish authority or grant access. Keep authorization and required-source checks outside the score. Reuse only live receipts and resolve actual evidence before model use. See `docs/agent-instructions.md`.
 
 The instructions below remain the separate SQLite CLI workflow.
 

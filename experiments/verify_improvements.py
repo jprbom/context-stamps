@@ -22,6 +22,14 @@ def read(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def historical_source(filename, digest):
+    filename = filename.replace("\\", "/")
+    current = ROOT / filename
+    if current.is_file() and hashlib.sha256(current.read_bytes()).hexdigest() == digest:
+        return current
+    return ROOT / "evidence/source-snapshots" / f"{Path(filename).stem}-{digest}{Path(filename).suffix}"
+
+
 def verify():
     directories = ["residual-v1", "residual-v2", "stamp256-v1", "scale-comparison-v1", *[f"workflow-efficiency-v{i}" for i in range(1, 5)]]
     for directory in directories:
@@ -31,7 +39,7 @@ def verify():
         manifest = read(folder / "manifest.json")
         for key in ("source_sha256", "input_sha256"):
             for filename, digest in manifest.get(key, {}).items():
-                assert hashlib.sha256((ROOT / filename.replace("\\", "/")).read_bytes()).hexdigest() == digest, filename
+                assert hashlib.sha256(historical_source(filename, digest).read_bytes()).hexdigest() == digest, filename
     for directory in ("residual-v1", "residual-v2"):
         folder = ROOT / "evidence" / directory
         records = read(folder / "results.json")
@@ -118,7 +126,7 @@ def verify():
         assert abs(statistics.median(r["ms"] for r in group) - summary["median_ms"]) < 1e-12
     stats = read(ROOT / "evidence/workflow-efficiency-v4/paired-statistics.json")
     for name, digest in stats["source_sha256"].items():
-        assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == digest
+        assert hashlib.sha256(historical_source(name, digest).read_bytes()).hexdigest() == digest
     print("Verified dense ranking parity,21 allocation training runs,3600 stamp rankings,768 workflow stages and540 scale calls.")
     print("Public corpus rank replay and generation require external data/runtime; timings are observations.")
 

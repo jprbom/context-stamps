@@ -7,17 +7,6 @@ outside these 32 bytes. A raw code is meaningful only in a trusted shared schema
 from .activation import StampSchema
 from .spherical import SphericalStamp
 
-STRUCTURED_256_PROFILE = {
-    "semantic": 96,
-    "task": 32,
-    "entity": 32,
-    "relation": 32,
-    "temporal": 16,
-    "authority": 16,
-    "policy": 16,
-    "modality": 16,
-}
-
 
 class Stamp256Codec:
     def __init__(self, families):
@@ -49,20 +38,3 @@ class Stamp256Codec:
             views.append((name, Stamp(family, bits, int.from_bytes(payload[offset:offset + size], "big"))))
             offset += size
         return SphericalStamp(tuple(views))
-
-
-def structured_256_codec(encoder, *, seed=20260920):
-    """Build the versioned eight-view research profile for complete documents.
-
-    Query stamps should include only observed views and use :class:`FacetQuery`;
-    callers must not fill absent query facets with sentinel text.
-    """
-    from stamps import Family
-
-    if not hasattr(encoder, "identity") or not hasattr(encoder, "dim"):
-        raise ValueError("encoder must expose immutable identity and dimension")
-    families = {
-        name: Family(encoder.identity, encoder.dim, bits, seed + index)
-        for index, (name, bits) in enumerate(STRUCTURED_256_PROFILE.items())
-    }
-    return Stamp256Codec(families)

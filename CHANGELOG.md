@@ -2,6 +2,14 @@
 
 All versions below are research candidates. The repository is private; this file does not announce a public or PyPI release.
 
+## 0.4.0
+
+- Added a bounded deterministic facet compiler with per-facet source and rule provenance. Missing facets are omitted; authority, policy and modality remain host assertions.
+- Added a versioned structured 256-bit research profile across semantic, task, entity, relation, temporal, authority, policy and modality views.
+- Bound compact exits to an application risk budget and exposed route reasons, the certified upper error bound and calibration count.
+- Added eight authored facet controls, 100 exact 32-byte round trips and five route-path controls. These test behavior, not public retrieval improvement.
+- Retained the unqualified public compact policy and precise fallback. No new model training or attention claim is made.
+
 ## 0.3.3
 
 - Added explicit partial-facet queries and calibration scopes tied to active views, families and weights.

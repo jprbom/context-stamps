@@ -1,0 +1,151 @@
+{
+  "capsule_bits": 256,
+  "capsule_profile": {
+    "authority": 16,
+    "entity": 32,
+    "modality": 16,
+    "policy": 16,
+    "relation": 32,
+    "semantic": 96,
+    "task": 32,
+    "temporal": 16
+  },
+  "facet_cases": [
+    {
+      "expected": [
+        "entity",
+        "semantic",
+        "task",
+        "temporal"
+      ],
+      "observed": [
+        "entity",
+        "semantic",
+        "task",
+        "temporal"
+      ],
+      "passed": true,
+      "text": "Review api/router.py and update Router.search() for v2.1."
+    },
+    {
+      "expected": [
+        "entity",
+        "relation",
+        "semantic",
+        "temporal"
+      ],
+      "observed": [
+        "entity",
+        "relation",
+        "semantic",
+        "temporal"
+      ],
+      "passed": true,
+      "text": "policy.py depends on schema.py on 2026-09-20."
+    },
+    {
+      "expected": [
+        "semantic"
+      ],
+      "observed": [
+        "semantic"
+      ],
+      "passed": true,
+      "text": "A short neutral sentence."
+    },
+    {
+      "expected": [
+        "semantic",
+        "task"
+      ],
+      "observed": [
+        "semantic",
+        "task"
+      ],
+      "passed": true,
+      "text": "Compare image generation outputs."
+    },
+    {
+      "expected": [
+        "entity",
+        "semantic",
+        "task"
+      ],
+      "observed": [
+        "entity",
+        "semantic",
+        "task"
+      ],
+      "passed": true,
+      "text": "train model.py using data/train.json"
+    },
+    {
+      "expected": [
+        "entity",
+        "relation",
+        "semantic",
+        "temporal"
+      ],
+      "observed": [
+        "entity",
+        "relation",
+        "semantic",
+        "temporal"
+      ],
+      "passed": true,
+      "text": "The worker requires queue.config v1.4"
+    },
+    {
+      "expected": [
+        "entity",
+        "relation",
+        "semantic",
+        "task"
+      ],
+      "observed": [
+        "entity",
+        "relation",
+        "semantic",
+        "task"
+      ],
+      "passed": true,
+      "text": "Explain why service.run() calls cache.get()."
+    },
+    {
+      "expected": [
+        "semantic",
+        "task"
+      ],
+      "observed": [
+        "semantic",
+        "task"
+      ],
+      "passed": true,
+      "text": "Measure audio latency."
+    }
+  ],
+  "facet_cases_passed": 8,
+  "format": "capsule-controls-v1",
+  "limitations": [
+    "Facet cases are authored controls, not an independently annotated corpus.",
+    "The compiler is a deterministic baseline, not a semantic parser.",
+    "Router controls validate enforcement, not public retrieval quality."
+  ],
+  "roundtrips_passed": 100,
+  "roundtrips_total": 100,
+  "router_controls_passed": true,
+  "router_expected": [
+    "exact",
+    "abstain",
+    "precise",
+    "precise",
+    "compact"
+  ],
+  "router_routes": [
+    "exact",
+    "abstain",
+    "precise",
+    "precise",
+    "compact"
+  ]
+}

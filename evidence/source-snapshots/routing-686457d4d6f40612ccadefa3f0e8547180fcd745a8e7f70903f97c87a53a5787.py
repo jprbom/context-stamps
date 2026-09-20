@@ -18,8 +18,6 @@ class RoutingPolicy:
     minimum_score: float
     minimum_margin: float
     enabled: bool = False
-    certified_error_upper_bound: float = 1.0
-    calibration_count: int = 0
 
     def __post_init__(self):
         identifier(self.scope)
@@ -29,11 +27,6 @@ class RoutingPolicy:
             raise ValueError("score and margin thresholds must be in [0, 1]")
         if type(self.enabled) is not bool:
             raise ValueError("enabled must be boolean")
-        if (not math.isfinite(self.certified_error_upper_bound)
-                or not 0 <= self.certified_error_upper_bound <= 1):
-            raise ValueError("certified error bound must be in [0, 1]")
-        if type(self.calibration_count) is not int or not 0 <= self.calibration_count <= 10000:
-            raise ValueError("calibration count must be between zero and 10000")
 
     def accepts(self, score, margin, *, scope, limit):
         return (self.enabled and self.scope == scope and self.limit == limit
@@ -102,7 +95,7 @@ def fit_routing_policy(training, validation, *, scope, limit=10, max_error=0.05,
     errors = sum(not r["correct"] for r in accepted)
     upper = error_upper_bound(errors, len(accepted), delta)
     enabled = best_count >= 0 and len(accepted) >= min_accepted and upper <= max_error
-    policy = RoutingPolicy(scope, limit, *selected, enabled, upper, len(accepted))
+    policy = RoutingPolicy(scope, limit, *selected, enabled)
     return policy, {"training_accepted": max(0, best_count), "validation_accepted": len(accepted),
                     "validation_errors": errors, "error_upper_bound": upper, "max_error": max_error,
                     "delta": delta, "enabled": enabled}
@@ -116,15 +109,10 @@ class ProgressiveRouter:
     This enforces result membership, not authentication of host callbacks.
     """
 
-    def search(self, *, eligible, precise, scope, limit=10, exact_key=None, compact=None, policy=None,
-               maximum_compact_error=0.05):
+    def search(self, *, eligible, precise, scope, limit=10, exact_key=None, compact=None, policy=None):
         identifier(scope)
         if type(limit) is not int or not 1 <= limit <= 100:
             raise ValueError("limit must be between one and 100")
-        if (type(maximum_compact_error) not in (int, float)
-                or not math.isfinite(maximum_compact_error)
-                or not 0 < maximum_compact_error < 1):
-            raise ValueError("maximum compact error must be between zero and one")
         if isinstance(eligible, str) or len(eligible) > 1000000:
             raise ValueError("bounded explicit eligible IDs required")
         ids = tuple(eligible)
@@ -135,13 +123,10 @@ class ProgressiveRouter:
             raise ValueError("duplicate eligible ID")
         if exact_key is not None:
             identifier(exact_key)
-            accepted = exact_key in allowed
-            return {"route": "exact" if accepted else "abstain",
-                    "ids": [exact_key] if accepted else [], "compact_attempted": False,
-                    "reason": "authorized_exact_id" if accepted else "exact_id_not_eligible"}
+            return {"route": "exact" if exact_key in allowed else "abstain",
+                    "ids": [exact_key] if exact_key in allowed else [], "compact_attempted": False}
         if not ids:
-            return {"route": "abstain", "ids": [], "compact_attempted": False,
-                    "reason": "no_eligible_candidates"}
+            return {"route": "abstain", "ids": [], "compact_attempted": False}
 
         def checked(callback, count, bounded=False):
             rows = callback(ids, count)
@@ -158,29 +143,12 @@ class ProgressiveRouter:
             return rows
 
         attempted = bool(policy is not None and policy.enabled and policy.scope == scope
-                         and policy.limit == limit
-                         and policy.certified_error_upper_bound <= maximum_compact_error
-                         and policy.calibration_count > 0
-                         and compact is not None and len(ids) > limit)
+                         and policy.limit == limit and compact is not None and len(ids) > limit)
         if attempted:
             rows = checked(compact, limit + 1, True)
             score, margin = rows[limit - 1][1], rows[limit - 1][1] - rows[limit][1]
             if policy.accepts(score, margin, scope=scope, limit=limit):
                 return {"route": "compact", "ids": [key for key, _ in rows[:limit]],
-                        "compact_attempted": True, "reason": "calibrated_compact_exit",
-                        "certified_error_upper_bound": policy.certified_error_upper_bound,
-                        "calibration_count": policy.calibration_count}
+                        "compact_attempted": True}
         rows = checked(precise, limit)
-        if attempted:
-            reason = "compact_threshold_rejected"
-        elif compact is None:
-            reason = "compact_backend_unavailable"
-        elif policy is None or not policy.enabled:
-            reason = "compact_policy_unqualified"
-        elif (policy.certified_error_upper_bound > maximum_compact_error
-              or policy.calibration_count == 0):
-            reason = "compact_policy_exceeds_risk_budget"
-        else:
-            reason = "compact_policy_scope_mismatch"
-        return {"route": "precise", "ids": [key for key, _ in rows],
-                "compact_attempted": attempted, "reason": reason}
+        return {"route": "precise", "ids": [key for key, _ in rows], "compact_attempted": attempted}

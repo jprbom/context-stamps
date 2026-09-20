@@ -2,7 +2,7 @@
 
 **Compact context references, exact-first retrieval and version-checked evidence handoffs.**
 
-By **Prashant Jagtap** · Python 3.10+ · MIT-licensed core · **Private research candidate v0.3.3**
+By **Prashant Jagtap** · Python 3.10+ · MIT-licensed core · **Private research candidate v0.4.0**
 
 The repository remains private while validation continues. Access is required to clone it; no PyPI release is available. This candidate keeps the spherical stamp at **256 bits / 32 bytes** and defaults to a precise retrieval backend when a compact shortcut has not qualified on validation data.
 
@@ -13,6 +13,7 @@ git clone https://github.com/jprbom/context-stamps.git
 cd context-stamps
 python -m pip install -e .
 python examples/progressive_context.py
+python examples/automatic_facets.py
 python examples/zip_spherical_qr.py
 ```
 
@@ -23,6 +24,7 @@ These examples run offline without a GPU, service or downloaded model. The first
 | Component | Purpose | Important boundary |
 |---|---|---|
 | `Stamp256Codec` | Encodes supplied content/entity/intent/task views into 32 raw bytes | Lossy similarity sketch; schema and evidence are external |
+| `FacetCompiler` | Emits observed routing facets with rule and source provenance | Deterministic baseline; not a semantic parser or fact verifier |
 | `ProgressiveRouter` | Resolves an explicit source or calls a precise backend; optionally uses a validated compact exit | Exact IDs and similarity do not grant access |
 | `ContextGraph` | Tracks declared relationships, versions and dependency closures | Does not infer missing relationships |
 | `ContextSession` | Reuses valid packets using bounded, expiring 32-byte receipts | Receipts are opaque handles, separate from semantic stamps |
@@ -64,10 +66,28 @@ result = router.search(
     precise=precise, scope="project:encoder-revision:schema-revision", limit=1,
 )
 assert result["route"] == "precise"  # No compact policy is enabled by default.
+assert result["reason"] == "compact_backend_unavailable"
 print(result["ids"])
 ```
 
-The host supplies current authorized IDs. An explicit `exact_key` bypasses retrieval when available and abstains when unavailable. Compact policies need disjoint calibration and scope binding; no public-data policy qualified in the latest experiment. Do not turn a similarity threshold into a claim of confidence. [Routing API and calibration](docs/progressive-routing.md).
+The host supplies current authorized IDs. An explicit `exact_key` bypasses retrieval when available and abstains when unavailable. Compact policies need disjoint calibration and scope binding. The router also requires the certified upper error bound to fit the caller's `maximum_compact_error` budget. No public-data policy qualified in the latest experiment. Do not turn a similarity threshold into a claim of confidence. [Routing API and calibration](docs/progressive-routing.md).
+
+## Compile observed facets and inspect their provenance
+
+```python
+from context_stamps import FacetCompiler
+
+compiled = FacetCompiler().compile(
+    "Update api/router.py because Router.search() depends on policy.py v2.1.",
+    metadata={"authority": "maintainer", "policy": "internal", "modality": "code"},
+)
+for name, item in compiled.evidence.items():
+    print(name, item.value, item.source, item.rule)
+```
+
+The compiler extracts bounded identifiers, action terms, declared relations and versions. Authority, policy and modality are host assertions. Missing facets are omitted. The baseline is deterministic and inspectable so extraction errors can be measured before a learned extractor is introduced. The standard research profile assigns 96/32/32/32/16/16/16/16 bits to semantic, task, entity, relation, temporal, authority, policy and modality views. This allocation is a testable profile, not an optimized result. [Adaptive capsule design and controls](docs/adaptive-capsules.md).
+
+![Adaptive 256-bit capsule design](docs/assets/adaptive-capsule.png)
 
 ## Reuse evidence across workflow steps
 
@@ -148,7 +168,7 @@ Training improved mean compact relevance but did not match dense retrieval. The 
 - **Earlier local SLM pilot:** eight fictional workflows, two repeats. Selected context succeeded in 16/16 versus 10/16 for full context, with 82.79% fewer input tokens and 25.71% lower mean workflow time. Exact graph lookup also succeeded in 16/16 and was faster on average. [Controls and failed iterations](docs/retrieval-repair.md).
 - **Image, speech and video pilots:** 36 generations, 18 direct/routed pairs, identical outputs. Routing added overhead and did not reduce generator tokens or improve quality. [Historical spherical results](docs/spherical-results.md).
 
-Real unseen coding/research tasks, automatic facet extraction, internal attention changes, distributed scalability and mobile energy savings remain unproven. The bounded reference graph supports 1,000 nodes and 4,096 relationships. Earlier read-only 1k/10k/100k-vector tests favor Faiss over residual refinement for latency and throughput.
+Real unseen coding/research tasks, learned facet extraction, the structured profile's retrieval value, internal attention changes, distributed scalability and mobile energy savings remain unproven. The bounded reference graph supports 1,000 nodes and 4,096 relationships. Earlier read-only 1k/10k/100k-vector tests favor Faiss over residual refinement for latency and throughput.
 
 ## Integration and training
 
@@ -170,7 +190,7 @@ python experiments/verify_progressive.py
 python examples/progressive_context.py
 ```
 
-Local validation passed 102 unit tests, including 4,000 mutation-oracle comparisons, plus five secret-scanner controls. CI runs the Windows/Linux and security checks on each candidate commit. Offline evidence checks verify recorded artifacts and calibration; full quantizer retraining needs external pinned data/embeddings. Run training in a separate checkout because runners regenerate evidence directories. [Training protocol](program.md) · [validation](docs/validation.md) · [scenario matrix](docs/scenario-matrix.md) · [remaining gaps](docs/research-gates.md).
+Local validation passed 108 unit tests, including 4,000 mutation-oracle comparisons, plus five secret-scanner controls. The v0.4 controls add eight authored extraction cases, 100 deterministic 32-byte round trips and five router-path checks. These controls verify interface behavior, not retrieval quality. CI runs the Windows/Linux and security checks on each candidate commit. Offline evidence checks verify recorded artifacts and calibration; full quantizer retraining needs external pinned data/embeddings. Run training in a separate checkout because runners regenerate evidence directories. [Training protocol](program.md) · [validation](docs/validation.md) · [scenario matrix](docs/scenario-matrix.md) · [remaining gaps](docs/research-gates.md).
 
 ## Security, data and credit
 

@@ -1,6 +1,6 @@
 # Context Stamps experiment protocol
 
-Current candidate v0.3.3: the default remains 32-byte document stamps plus exact/precise routing. Do not enable a compact exit unless separate validation qualifies it for the same domain, query-facet mask and weights. The latest quantizer study uses seeds 17/41/83; report all seeds, including the ArguAna regression. New experiments must use a new evidence directory and retain earlier failed runs. For mutation workloads include exact/no-cache, ordinary cache and selective invalidation controls, setup/update costs and identical-evidence checks.
+Current candidate v0.4.0: the default remains 32-byte document stamps plus exact/precise routing. Do not enable a compact exit unless separate validation qualifies it for the same domain, query-facet mask and weights and its certified upper error bound fits the caller's risk budget. Treat the deterministic facet compiler and structured eight-view allocation as baselines requiring independent evaluation. The latest quantizer study uses seeds 17/41/83; report all seeds, including the ArguAna regression. New experiments must use a new evidence directory and retain earlier failed runs. For mutation workloads include exact/no-cache, ordinary cache and selective invalidation controls, setup/update costs and identical-evidence checks.
 
 Author: Prashant Jagtap
 

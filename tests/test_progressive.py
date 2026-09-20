@@ -24,11 +24,11 @@ class RoutingTests(unittest.TestCase):
         def fail(*args):
             raise AssertionError("compact must not run")
         self.assertEqual(self.router.search(**self.options, compact=fail)["route"], "precise")
-        wrong = RoutingPolicy("another-domain", 1, .5, .1, True)
+        wrong = RoutingPolicy("another-domain", 1, .5, .1, True, .03, 100)
         self.assertEqual(self.router.search(**self.options, compact=fail, policy=wrong)["route"], "precise")
 
     def test_ambiguous_expands_and_confident_exits(self):
-        policy = RoutingPolicy(self.options["scope"], 1, .7, .1, True)
+        policy = RoutingPolicy(self.options["scope"], 1, .7, .1, True, .03, 100)
         def ambiguous(ids, k):
             return [("a", .8), ("b", .79)]
         result = self.router.search(**self.options, compact=ambiguous, policy=policy)
@@ -50,9 +50,33 @@ class RoutingTests(unittest.TestCase):
         policy, report = fit_routing_policy(good, good, scope="test", limit=1)
         self.assertTrue(policy.enabled)
         self.assertLess(report['error_upper_bound'], .05)
+        self.assertEqual(policy.certified_error_upper_bound, report['error_upper_bound'])
+        self.assertEqual(policy.calibration_count, report['validation_accepted'])
         self.assertFalse(fit_routing_policy(good, bad, scope="test")[0].enabled)
         self.assertFalse(fit_routing_policy(bad, good, scope="test")[0].enabled)
         self.assertFalse(fit_routing_policy(good, good[:20], scope="test")[0].enabled)
+
+    def test_route_explanations_and_certification_are_exposed(self):
+        exact = self.router.search(**self.options, exact_key="a")
+        self.assertEqual(exact["reason"], "authorized_exact_id")
+        fallback = self.router.search(**self.options, compact=lambda ids, k: [])
+        self.assertEqual(fallback["reason"], "compact_policy_unqualified")
+        policy = RoutingPolicy(self.options["scope"], 1, .7, .1, True, .03, 120)
+        result = self.router.search(
+            **self.options, policy=policy,
+            compact=lambda ids, k: [("a", .9), ("b", .5)],
+        )
+        self.assertEqual(result["reason"], "calibrated_compact_exit")
+        self.assertEqual(result["certified_error_upper_bound"], .03)
+        self.assertEqual(result["calibration_count"], 120)
+
+    def test_declared_risk_budget_cannot_be_bypassed(self):
+        policy = RoutingPolicy(self.options["scope"], 1, .7, .1, True, .08, 100)
+        result = self.router.search(
+            **self.options, compact=lambda ids, k: [("a", .9), ("b", .5)], policy=policy,
+        )
+        self.assertEqual(result["route"], "precise")
+        self.assertEqual(result["reason"], "compact_policy_exceeds_risk_budget")
 
     def test_binomial_bounds_and_validation(self):
         self.assertAlmostEqual(error_upper_bound(0, 100), .029513049607039932)

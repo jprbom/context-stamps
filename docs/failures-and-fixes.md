@@ -1,5 +1,9 @@
 # Failure ledger and release gates
 
+## v0.4.0: inspectable facets and risk-budgeted routing
+
+The repository now has a deterministic observed-facet compiler, but it is not an independently evaluated semantic extractor. Its eight authored cases validate reproducible behavior only. The structured 96/32/32/32/16/16/16/16 profile is exactly 256 bits and passes 100 round trips; its retrieval value and bit allocation remain untested. Compact exits now require a nonzero validation count and a certified error upper bound within the caller's budget. The public compact policy still does not qualify, so precise fallback remains the measured default. [Design, controls and next gate](adaptive-capsules.md).
+
 ## v0.3.3: partial facets and selective invalidation
 
 Missing query facets can be represented explicitly with `FacetQuery`; policies are scoped to the observed mask, families and weights. This is not automatic facet inference. Session mutations now invalidate affected dependency packets rather than all receipts. 4,000 oracle comparisons and the changing-context replay verify correctness and expose the cache tradeoff. [Current evidence](selective-context.md).

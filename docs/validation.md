@@ -1,5 +1,9 @@
 # Validation record
 
+## Private v0.4.0 follow-up
+
+108 local unit tests pass. The new control record contains eight authored facet cases, 100 exact structured-profile round trips and five router paths. A compact policy whose certified upper error bound exceeds the caller's budget falls back to precise retrieval. These tests validate interface behavior and fail-closed routing; they do not demonstrate facet accuracy, retrieval improvement or a qualified compact exit on public data. [Design and limits](adaptive-capsules.md).
+
 ## Private v0.3.3 follow-up
 
 102 local unit tests pass, including nine new partial-query/selective-invalidation tests and 4,000 comparisons with an uncached graph over 500 seeded mutation steps. `verify_mutation_reuse.py` checks 6,600 handoffs, packet equality, cache accounting and 152 receipt checks. The v0.3.2 global-cache source is preserved for comparison. The latest training remains the three-seed ITQ run; no additional model training is claimed here.
@@ -18,7 +22,7 @@ Secret scanning now uses exact public-ID/path exclusions, retains every default 
 - Ruff and core Bandit pass. Gitleaks reports exactly the same nine reviewed public-ID false positives, with no new matches. The new APIs introduce no new mandatory dependency.
 - Full comparisons include stronger Faiss and exact-graph controls, which remain preferable for their measured workloads. See [retrieval repair and efficiency](retrieval-repair.md).
 
-> Historical v0.2 evidence. For the private v0.3.3 candidate, see [current results](selective-context.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
+> Historical v0.2 evidence. For the current candidate, see [adaptive capsules](adaptive-capsules.md), [measured v0.3.3 results](selective-context.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
 
 Release 0.2.0, local Windows Python 3.13.13, 2026-09-19.
 

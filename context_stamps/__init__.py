@@ -3,6 +3,7 @@
 from stamps import Family, HashingEncoder, Stamp, content_digest, hamming, similarity, stamp_vector
 
 from .activation import StampSchema, activate
+from .facet_compiler import CompiledFacets, FacetCompiler, FacetEvidence
 from .facet_model import FacetModel
 from .facets import FacetQuery
 from .guarded_activation import activate_constrained
@@ -16,11 +17,14 @@ from .selection import LinearSelector, rank_candidates, select_evidence
 from .session import ContextSession
 from .sources import explain_versions, observe_files
 from .spherical import SphericalStamp
-from .stamp256 import Stamp256Codec
+from .stamp256 import STRUCTURED_256_PROFILE, Stamp256Codec, structured_256_codec
 from .workflow import ContextGraph, ContextNode
 
-__version__ = "0.3.3"
+__version__ = "0.4.0"
 __all__ = [
+    "CompiledFacets",
+    "FacetCompiler",
+    "FacetEvidence",
     "FacetQuery",
     "ContextSession",
     "ProgressiveRouter",
@@ -28,6 +32,8 @@ __all__ = [
     "fit_routing_policy",
     "ResidualIndex",
     "Stamp256Codec",
+    "STRUCTURED_256_PROFILE",
+    "structured_256_codec",
     "SphericalStamp",
     "PackedStampIndex",
     "load_experimental_model",

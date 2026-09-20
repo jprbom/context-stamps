@@ -1,6 +1,6 @@
 # Zip Spherical QR: 256 bits, not 256 bytes
 
-Current usage: keep document stamps at 32 bytes; use `FacetQuery` for observed query views and `ProgressiveRouter` for exact/precise routing. Session receipts are separate opaque handles. [Current guide](selective-context.md) and [three-seed training results](progressive-routing.md).
+Current usage: keep document stamps at 32 bytes; use `FacetQuery` for observed query views and `ProgressiveRouter` for exact/precise routing. `structured_256_codec` exposes the v0.4 eight-view research profile. Session receipts are separate opaque handles. [Adaptive capsules](adaptive-capsules.md), [current guide](selective-context.md) and [three-seed training results](progressive-routing.md).
 
 The routing code is exactly **256 bits / 32 bytes**. It represents supplied facets through angular fingerprints. A schema shared by both endpoints assigns bit ranges to the facets and identifies their encoders. Exact source identity, revisions, authorization and the evidence itself remain outside this code.
 
@@ -24,6 +24,8 @@ assert restored == stamp
 `examples/zip_spherical_qr.py` runs offline without optional dependencies. `Stamp256Codec` accepts alternative byte-aligned allocations totaling 256 bits. Both endpoints must use the exact same schema. The code alone cannot detect a wrong schema, establish authenticity, identify an entity exactly, enforce access or reconstruct evidence.
 
 ## Allocating the bit budget
+
+The v0.4 structured research profile uses semantic/task/entity/relation/temporal/authority/policy/modality widths of `96/32/32/32/16/16/16/16`. This is an initial profile for ablation, not a measured optimum. The earlier four-facet allocation study below used different fixtures and must not be presented as validation of the new profile.
 
 Seven allocations were compared in the fixed facet order content/entity/intent/task:
 

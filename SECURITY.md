@@ -10,11 +10,13 @@ CI runs Gitleaks 8.30.1 from a version- and SHA256-pinned archive with all defau
 
 The host authenticates callers and supplies current eligible IDs, roles and revisions. `RoutingPolicy` is a local configuration, not a credential. Scope must identify the actual domain, encoder and schema; undeclared distribution changes are not detected. Returned IDs never authorize tool execution.
 
+Compact exits also require a nonzero calibration count and a certified upper error bound at or below the caller's risk budget. These are statistical controls under the recorded validation assumptions, not adversarial guarantees. `FacetCompiler` treats source text as data and never executes it. Extracted identifiers and relations are routing hints; only host-asserted metadata may set authority, policy or modality, and none of these fields grants access.
+
 `ContextSession` is process-local and serializes graph mutations/cache access. Mutations invalidate every cached packet whose dependency closure contains the changed node or relationship source, including permission and same-version content changes. Unrelated receipts remain valid. A reverse source-to-receipt index is cleaned on expiry and eviction. Random 32-byte receipts are separate from spherical stamps and require the original live session and trusted host authorization. Do not expose resolution as an unauthenticated endpoint. TTL, eviction and invalid receipt failures disclose no source details. Source text remains untrusted; retrieval does not prevent prompt injection. Revocation cannot recall delivered plaintext. Remote use needs authentication, transport security and transaction semantics beyond this library.
 
 The residual index verifies fetched vectors against its snapshot digests and rejects stale or reordered data. The eligibility list and snapshot require host authentication. The 32-byte code has no source/version/authentication envelope: enforce these bindings outside the code under a trusted shared schema. `render_integer_assignments` emits bounded declarative constants and never executes generated code.
 
-Context Stamps is a local, single-user context store. It is not a sandbox, access-control system, encrypted vault, or public network service. No software can promise immunity from exploitation. This private v0.3.3 candidate is an early implementation; independent security review has not been performed.
+Context Stamps is a local, single-user context store. It is not a sandbox, access-control system, encrypted vault, or public network service. No software can promise immunity from exploitation. This private v0.4.0 candidate is an early implementation; independent security review has not been performed.
 
 ## Protections
 
