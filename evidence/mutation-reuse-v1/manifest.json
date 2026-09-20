@@ -1,20 +1,23 @@
 {
   "protocol": {
-    "workload": "20 sorted existing context_stamps Python files excluding new routing/session modules",
-    "iterations": 20,
-    "methods": [
-      "exact_graph",
-      "session_cache"
+    "pairs": [
+      10,
+      100
     ],
-    "seed": 9381,
-    "measurement": "Two source files per packet; declared paired-file dependency. Time includes authorization/version checks and packet construction/cache lookup, excludes ingestion and network.",
-    "transfer": "First delivery sends full packet plus a 32-byte receipt; subsequent deliveries send receipt only to an already populated shared resolver. Receipt metadata, protocol headers and authorization traffic are external.",
-    "limits": "A repeated-context replay using real code text, not real user tasks or agent completions. No model token, network latency or production scale claim."
+    "rounds": 20,
+    "seed": 5819,
+    "workload": "20 actual source files reused across explicitly declared independent pairs; 100-pair case duplicates text under synthetic IDs, not 100 independent tasks",
+    "mutation": "Before each round after the first, change one dependency at the same revision and revalidate its edge",
+    "comparison": [
+      "uncached exact graph",
+      "v0.3.2 global invalidation",
+      "v0.3.3 selective invalidation"
+    ],
+    "measurement": "Randomized method order per round, full packet equality and live receipt checks. Handoff and mutation times separate. No model/network calls; transfer bytes are modeled payload accounting."
   },
-  "platform": "Windows-11-10.0.26200-SP0",
-  "combined_setup_ms": 1.9629,
   "source_sha256": {
-    "experiments/run_context_reuse.py": "58aad121a38ad18bdaff1f9dd6a14d2488e2ec7ed465bf1b4e740858a89e3b77",
+    "experiments/run_mutation_reuse.py": "fb5b0456074bb867abccc112d4bffad34b46f32f9b729330136ad41d5526371b",
+    "context_stamps/session.py": "b149e4c9a7ed60aa32dab899eef8744b9b6bc04dd797784f8727940c41a2b2bf",
     "context_stamps/workflow.py": "a0fbaf563f7e60a2d42bd602b169300adf8ecce9f356ee88c58ae5d44dab83f3",
     "evidence/source-snapshots/session-3973e527a95587dd4cd4294cd1dbf75a093add14c0aa15a6a98092eaba3875cf.py": "3973e527a95587dd4cd4294cd1dbf75a093add14c0aa15a6a98092eaba3875cf"
   },

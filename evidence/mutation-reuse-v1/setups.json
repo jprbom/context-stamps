@@ -1,0 +1,32 @@
+[
+  {
+    "pairs": 10,
+    "method": "exact_graph",
+    "milliseconds": 0.2018
+  },
+  {
+    "pairs": 10,
+    "method": "global_cache",
+    "milliseconds": 0.1441
+  },
+  {
+    "pairs": 10,
+    "method": "selective_cache",
+    "milliseconds": 0.138
+  },
+  {
+    "pairs": 100,
+    "method": "exact_graph",
+    "milliseconds": 2.4232
+  },
+  {
+    "pairs": 100,
+    "method": "global_cache",
+    "milliseconds": 2.0513
+  },
+  {
+    "pairs": 100,
+    "method": "selective_cache",
+    "milliseconds": 2.0376
+  }
+]

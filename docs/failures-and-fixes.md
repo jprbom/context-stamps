@@ -1,8 +1,14 @@
 # Failure ledger and release gates
 
+## v0.3.3: partial facets and selective invalidation
+
+Missing query facets can be represented explicitly with `FacetQuery`; policies are scoped to the observed mask, families and weights. This is not automatic facet inference. Session mutations now invalidate affected dependency packets rather than all receipts. 4,000 oracle comparisons and the changing-context replay verify correctness and expose the cache tradeoff. [Current evidence](selective-context.md).
+
+The nine scanner false positives are resolved through narrowly scoped exact matches with five controls, not a disabled rule. Standalone compact relevance and real agent-task generalization remain open research gaps.
+
 ## v0.3.2: trained compression, routing and reuse
 
-The trained 32-byte ITQ baseline improves all three recorded public datasets but still trails dense retrieval. The compact confidence policy failed qualification and remains disabled. `ProgressiveRouter` uses exact IDs when available and a precise backend otherwise; all 2,029 public rankings match dense by fallback. This does not repair information loss inside the stamp.
+The three-seed mean of the trained 32-byte ITQ baseline improves on all three public datasets but still trails dense retrieval; one seed slightly regresses on ArguAna. The compact confidence policy failed qualification and remains disabled. `ProgressiveRouter` uses exact IDs when available and a precise backend otherwise; all 2,029 public rankings match dense by fallback. This does not repair information loss inside the stamp.
 
 The initial session cache added CPU overhead. Restricting version checks to cached dependencies, while invalidating globally on every mutation, reduced that overhead in the follow-up replay. Both runs and original source snapshots are retained. Reuse reduces repeated transfer payloads in a shared-resolver scenario, not model evidence tokens. [Details and remaining research gates](progressive-routing.md).
 

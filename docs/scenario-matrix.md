@@ -1,5 +1,17 @@
 # Scenario and evidence matrix
 
+Current candidate: v0.3.3. [Latest implementation and results](selective-context.md); earlier evidence remains historical.
+
+| Added scenario | Evidence | Result |
+|---|---|---|
+| Partial query, missing candidate view, schema/weight/domain changes | `test_partial_and_mutation.py` | Explicit observed facets; incompatible input rejected; distinct policy scopes |
+| Unrelated mutation, new dependency/conflict, same-version change, revocation | `test_partial_and_mutation.py` | Affected receipts invalidated; unrelated receipts retained |
+| Random mutations against uncached oracle | 500 mutation steps / 4,000 packet comparisons | Identical packet behavior |
+| Repeated handoffs with updates | `mutation-reuse-v1`, 6,600 records | Identical packets across three methods; 1,881/2,000 selective hits at 100 pairs |
+| Trained binary retrieval across seeds | `quantizer-seeds-v1` | Means improve; one ArguAna seed regresses; dense remains stronger |
+| Secret scanner false-positive boundaries | `verify_secret_scan.py` | Five controls; default rules preserved |
+
+
 | Scenario | Test / evidence | Status |
 |---|---|---|
 | Spherical scale, opposite direction, zero/nonfinite input | `test_spherical.py` | Automated |

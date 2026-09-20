@@ -1,6 +1,6 @@
 # Frozen selector replication
 
-> Historical v0.2 evidence. For the private spherical v0.3 candidate, see [current results](spherical-results.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
+> Historical v0.2 evidence. For the private v0.3.3 candidate, see [current results](selective-context.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
 
 The coverage/diversity gain on SciFact did **not** generalize to the two additional datasets. We recommend keeping a retrieval baseline and validating any reranking on the intended domain.
 

@@ -1,0 +1,686 @@
+[
+  {
+    "pairs": 10,
+    "iteration": 1,
+    "method": "exact_graph",
+    "milliseconds": 0.0135
+  },
+  {
+    "pairs": 10,
+    "iteration": 1,
+    "method": "global_cache",
+    "milliseconds": 0.0147
+  },
+  {
+    "pairs": 10,
+    "iteration": 1,
+    "method": "selective_cache",
+    "milliseconds": 0.0154
+  },
+  {
+    "pairs": 10,
+    "iteration": 2,
+    "method": "exact_graph",
+    "milliseconds": 0.0135
+  },
+  {
+    "pairs": 10,
+    "iteration": 2,
+    "method": "global_cache",
+    "milliseconds": 0.0144
+  },
+  {
+    "pairs": 10,
+    "iteration": 2,
+    "method": "selective_cache",
+    "milliseconds": 0.0142
+  },
+  {
+    "pairs": 10,
+    "iteration": 3,
+    "method": "exact_graph",
+    "milliseconds": 0.0115
+  },
+  {
+    "pairs": 10,
+    "iteration": 3,
+    "method": "global_cache",
+    "milliseconds": 0.0122
+  },
+  {
+    "pairs": 10,
+    "iteration": 3,
+    "method": "selective_cache",
+    "milliseconds": 0.0115
+  },
+  {
+    "pairs": 10,
+    "iteration": 4,
+    "method": "exact_graph",
+    "milliseconds": 0.0132
+  },
+  {
+    "pairs": 10,
+    "iteration": 4,
+    "method": "global_cache",
+    "milliseconds": 0.0119
+  },
+  {
+    "pairs": 10,
+    "iteration": 4,
+    "method": "selective_cache",
+    "milliseconds": 0.0121
+  },
+  {
+    "pairs": 10,
+    "iteration": 5,
+    "method": "exact_graph",
+    "milliseconds": 0.0134
+  },
+  {
+    "pairs": 10,
+    "iteration": 5,
+    "method": "global_cache",
+    "milliseconds": 0.019
+  },
+  {
+    "pairs": 10,
+    "iteration": 5,
+    "method": "selective_cache",
+    "milliseconds": 0.0142
+  },
+  {
+    "pairs": 10,
+    "iteration": 6,
+    "method": "exact_graph",
+    "milliseconds": 0.0168
+  },
+  {
+    "pairs": 10,
+    "iteration": 6,
+    "method": "global_cache",
+    "milliseconds": 0.0144
+  },
+  {
+    "pairs": 10,
+    "iteration": 6,
+    "method": "selective_cache",
+    "milliseconds": 0.0147
+  },
+  {
+    "pairs": 10,
+    "iteration": 7,
+    "method": "exact_graph",
+    "milliseconds": 0.0145
+  },
+  {
+    "pairs": 10,
+    "iteration": 7,
+    "method": "global_cache",
+    "milliseconds": 0.015
+  },
+  {
+    "pairs": 10,
+    "iteration": 7,
+    "method": "selective_cache",
+    "milliseconds": 0.0144
+  },
+  {
+    "pairs": 10,
+    "iteration": 8,
+    "method": "exact_graph",
+    "milliseconds": 0.0133
+  },
+  {
+    "pairs": 10,
+    "iteration": 8,
+    "method": "global_cache",
+    "milliseconds": 0.0223
+  },
+  {
+    "pairs": 10,
+    "iteration": 8,
+    "method": "selective_cache",
+    "milliseconds": 0.0136
+  },
+  {
+    "pairs": 10,
+    "iteration": 9,
+    "method": "exact_graph",
+    "milliseconds": 0.0125
+  },
+  {
+    "pairs": 10,
+    "iteration": 9,
+    "method": "global_cache",
+    "milliseconds": 0.1202
+  },
+  {
+    "pairs": 10,
+    "iteration": 9,
+    "method": "selective_cache",
+    "milliseconds": 0.013
+  },
+  {
+    "pairs": 10,
+    "iteration": 10,
+    "method": "exact_graph",
+    "milliseconds": 0.0132
+  },
+  {
+    "pairs": 10,
+    "iteration": 10,
+    "method": "global_cache",
+    "milliseconds": 0.013
+  },
+  {
+    "pairs": 10,
+    "iteration": 10,
+    "method": "selective_cache",
+    "milliseconds": 0.0123
+  },
+  {
+    "pairs": 10,
+    "iteration": 11,
+    "method": "exact_graph",
+    "milliseconds": 0.0121
+  },
+  {
+    "pairs": 10,
+    "iteration": 11,
+    "method": "global_cache",
+    "milliseconds": 0.0128
+  },
+  {
+    "pairs": 10,
+    "iteration": 11,
+    "method": "selective_cache",
+    "milliseconds": 0.0121
+  },
+  {
+    "pairs": 10,
+    "iteration": 12,
+    "method": "exact_graph",
+    "milliseconds": 0.0133
+  },
+  {
+    "pairs": 10,
+    "iteration": 12,
+    "method": "global_cache",
+    "milliseconds": 0.0147
+  },
+  {
+    "pairs": 10,
+    "iteration": 12,
+    "method": "selective_cache",
+    "milliseconds": 0.0134
+  },
+  {
+    "pairs": 10,
+    "iteration": 13,
+    "method": "exact_graph",
+    "milliseconds": 0.0116
+  },
+  {
+    "pairs": 10,
+    "iteration": 13,
+    "method": "global_cache",
+    "milliseconds": 0.011
+  },
+  {
+    "pairs": 10,
+    "iteration": 13,
+    "method": "selective_cache",
+    "milliseconds": 0.0114
+  },
+  {
+    "pairs": 10,
+    "iteration": 14,
+    "method": "exact_graph",
+    "milliseconds": 0.0115
+  },
+  {
+    "pairs": 10,
+    "iteration": 14,
+    "method": "global_cache",
+    "milliseconds": 0.0119
+  },
+  {
+    "pairs": 10,
+    "iteration": 14,
+    "method": "selective_cache",
+    "milliseconds": 0.0146
+  },
+  {
+    "pairs": 10,
+    "iteration": 15,
+    "method": "exact_graph",
+    "milliseconds": 0.0187
+  },
+  {
+    "pairs": 10,
+    "iteration": 15,
+    "method": "global_cache",
+    "milliseconds": 0.014
+  },
+  {
+    "pairs": 10,
+    "iteration": 15,
+    "method": "selective_cache",
+    "milliseconds": 0.014
+  },
+  {
+    "pairs": 10,
+    "iteration": 16,
+    "method": "exact_graph",
+    "milliseconds": 0.0133
+  },
+  {
+    "pairs": 10,
+    "iteration": 16,
+    "method": "global_cache",
+    "milliseconds": 0.0128
+  },
+  {
+    "pairs": 10,
+    "iteration": 16,
+    "method": "selective_cache",
+    "milliseconds": 0.0112
+  },
+  {
+    "pairs": 10,
+    "iteration": 17,
+    "method": "exact_graph",
+    "milliseconds": 0.0159
+  },
+  {
+    "pairs": 10,
+    "iteration": 17,
+    "method": "global_cache",
+    "milliseconds": 0.0157
+  },
+  {
+    "pairs": 10,
+    "iteration": 17,
+    "method": "selective_cache",
+    "milliseconds": 0.0167
+  },
+  {
+    "pairs": 10,
+    "iteration": 18,
+    "method": "exact_graph",
+    "milliseconds": 0.0169
+  },
+  {
+    "pairs": 10,
+    "iteration": 18,
+    "method": "global_cache",
+    "milliseconds": 0.0166
+  },
+  {
+    "pairs": 10,
+    "iteration": 18,
+    "method": "selective_cache",
+    "milliseconds": 0.016
+  },
+  {
+    "pairs": 10,
+    "iteration": 19,
+    "method": "exact_graph",
+    "milliseconds": 0.0136
+  },
+  {
+    "pairs": 10,
+    "iteration": 19,
+    "method": "global_cache",
+    "milliseconds": 0.0143
+  },
+  {
+    "pairs": 10,
+    "iteration": 19,
+    "method": "selective_cache",
+    "milliseconds": 0.0128
+  },
+  {
+    "pairs": 100,
+    "iteration": 1,
+    "method": "exact_graph",
+    "milliseconds": 0.0265
+  },
+  {
+    "pairs": 100,
+    "iteration": 1,
+    "method": "global_cache",
+    "milliseconds": 0.0376
+  },
+  {
+    "pairs": 100,
+    "iteration": 1,
+    "method": "selective_cache",
+    "milliseconds": 0.0229
+  },
+  {
+    "pairs": 100,
+    "iteration": 2,
+    "method": "exact_graph",
+    "milliseconds": 0.031
+  },
+  {
+    "pairs": 100,
+    "iteration": 2,
+    "method": "global_cache",
+    "milliseconds": 0.0475
+  },
+  {
+    "pairs": 100,
+    "iteration": 2,
+    "method": "selective_cache",
+    "milliseconds": 0.0307
+  },
+  {
+    "pairs": 100,
+    "iteration": 3,
+    "method": "exact_graph",
+    "milliseconds": 0.0302
+  },
+  {
+    "pairs": 100,
+    "iteration": 3,
+    "method": "global_cache",
+    "milliseconds": 0.184
+  },
+  {
+    "pairs": 100,
+    "iteration": 3,
+    "method": "selective_cache",
+    "milliseconds": 0.0243
+  },
+  {
+    "pairs": 100,
+    "iteration": 4,
+    "method": "exact_graph",
+    "milliseconds": 0.0263
+  },
+  {
+    "pairs": 100,
+    "iteration": 4,
+    "method": "global_cache",
+    "milliseconds": 0.0387
+  },
+  {
+    "pairs": 100,
+    "iteration": 4,
+    "method": "selective_cache",
+    "milliseconds": 0.0247
+  },
+  {
+    "pairs": 100,
+    "iteration": 5,
+    "method": "exact_graph",
+    "milliseconds": 0.059
+  },
+  {
+    "pairs": 100,
+    "iteration": 5,
+    "method": "global_cache",
+    "milliseconds": 0.0524
+  },
+  {
+    "pairs": 100,
+    "iteration": 5,
+    "method": "selective_cache",
+    "milliseconds": 0.0323
+  },
+  {
+    "pairs": 100,
+    "iteration": 6,
+    "method": "exact_graph",
+    "milliseconds": 0.0293
+  },
+  {
+    "pairs": 100,
+    "iteration": 6,
+    "method": "global_cache",
+    "milliseconds": 0.1718
+  },
+  {
+    "pairs": 100,
+    "iteration": 6,
+    "method": "selective_cache",
+    "milliseconds": 0.0237
+  },
+  {
+    "pairs": 100,
+    "iteration": 7,
+    "method": "exact_graph",
+    "milliseconds": 0.032
+  },
+  {
+    "pairs": 100,
+    "iteration": 7,
+    "method": "global_cache",
+    "milliseconds": 0.1467
+  },
+  {
+    "pairs": 100,
+    "iteration": 7,
+    "method": "selective_cache",
+    "milliseconds": 0.0282
+  },
+  {
+    "pairs": 100,
+    "iteration": 8,
+    "method": "exact_graph",
+    "milliseconds": 0.0301
+  },
+  {
+    "pairs": 100,
+    "iteration": 8,
+    "method": "global_cache",
+    "milliseconds": 0.0418
+  },
+  {
+    "pairs": 100,
+    "iteration": 8,
+    "method": "selective_cache",
+    "milliseconds": 0.0239
+  },
+  {
+    "pairs": 100,
+    "iteration": 9,
+    "method": "exact_graph",
+    "milliseconds": 0.0383
+  },
+  {
+    "pairs": 100,
+    "iteration": 9,
+    "method": "global_cache",
+    "milliseconds": 0.1564
+  },
+  {
+    "pairs": 100,
+    "iteration": 9,
+    "method": "selective_cache",
+    "milliseconds": 0.0299
+  },
+  {
+    "pairs": 100,
+    "iteration": 10,
+    "method": "exact_graph",
+    "milliseconds": 0.0291
+  },
+  {
+    "pairs": 100,
+    "iteration": 10,
+    "method": "global_cache",
+    "milliseconds": 0.0724
+  },
+  {
+    "pairs": 100,
+    "iteration": 10,
+    "method": "selective_cache",
+    "milliseconds": 0.0262
+  },
+  {
+    "pairs": 100,
+    "iteration": 11,
+    "method": "exact_graph",
+    "milliseconds": 0.0329
+  },
+  {
+    "pairs": 100,
+    "iteration": 11,
+    "method": "global_cache",
+    "milliseconds": 0.0593
+  },
+  {
+    "pairs": 100,
+    "iteration": 11,
+    "method": "selective_cache",
+    "milliseconds": 0.0226
+  },
+  {
+    "pairs": 100,
+    "iteration": 12,
+    "method": "exact_graph",
+    "milliseconds": 0.0273
+  },
+  {
+    "pairs": 100,
+    "iteration": 12,
+    "method": "global_cache",
+    "milliseconds": 0.0334
+  },
+  {
+    "pairs": 100,
+    "iteration": 12,
+    "method": "selective_cache",
+    "milliseconds": 0.0235
+  },
+  {
+    "pairs": 100,
+    "iteration": 13,
+    "method": "exact_graph",
+    "milliseconds": 0.0248
+  },
+  {
+    "pairs": 100,
+    "iteration": 13,
+    "method": "global_cache",
+    "milliseconds": 0.0355
+  },
+  {
+    "pairs": 100,
+    "iteration": 13,
+    "method": "selective_cache",
+    "milliseconds": 0.0208
+  },
+  {
+    "pairs": 100,
+    "iteration": 14,
+    "method": "exact_graph",
+    "milliseconds": 0.0404
+  },
+  {
+    "pairs": 100,
+    "iteration": 14,
+    "method": "global_cache",
+    "milliseconds": 0.0489
+  },
+  {
+    "pairs": 100,
+    "iteration": 14,
+    "method": "selective_cache",
+    "milliseconds": 0.0326
+  },
+  {
+    "pairs": 100,
+    "iteration": 15,
+    "method": "exact_graph",
+    "milliseconds": 0.0246
+  },
+  {
+    "pairs": 100,
+    "iteration": 15,
+    "method": "global_cache",
+    "milliseconds": 0.0309
+  },
+  {
+    "pairs": 100,
+    "iteration": 15,
+    "method": "selective_cache",
+    "milliseconds": 0.0215
+  },
+  {
+    "pairs": 100,
+    "iteration": 16,
+    "method": "exact_graph",
+    "milliseconds": 0.0291
+  },
+  {
+    "pairs": 100,
+    "iteration": 16,
+    "method": "global_cache",
+    "milliseconds": 0.0534
+  },
+  {
+    "pairs": 100,
+    "iteration": 16,
+    "method": "selective_cache",
+    "milliseconds": 0.0262
+  },
+  {
+    "pairs": 100,
+    "iteration": 17,
+    "method": "exact_graph",
+    "milliseconds": 0.0312
+  },
+  {
+    "pairs": 100,
+    "iteration": 17,
+    "method": "global_cache",
+    "milliseconds": 0.046
+  },
+  {
+    "pairs": 100,
+    "iteration": 17,
+    "method": "selective_cache",
+    "milliseconds": 0.0301
+  },
+  {
+    "pairs": 100,
+    "iteration": 18,
+    "method": "exact_graph",
+    "milliseconds": 0.0264
+  },
+  {
+    "pairs": 100,
+    "iteration": 18,
+    "method": "global_cache",
+    "milliseconds": 0.0398
+  },
+  {
+    "pairs": 100,
+    "iteration": 18,
+    "method": "selective_cache",
+    "milliseconds": 0.0236
+  },
+  {
+    "pairs": 100,
+    "iteration": 19,
+    "method": "exact_graph",
+    "milliseconds": 0.0273
+  },
+  {
+    "pairs": 100,
+    "iteration": 19,
+    "method": "global_cache",
+    "milliseconds": 0.0405
+  },
+  {
+    "pairs": 100,
+    "iteration": 19,
+    "method": "selective_cache",
+    "milliseconds": 0.0231
+  }
+]

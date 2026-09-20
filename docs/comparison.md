@@ -1,5 +1,11 @@
 # Comparison and intended use
 
+## Latest measured comparisons
+
+The private v0.3.3 candidate uses exact-first routing and precise fallback. Three-seed ITQ means are 0.5453/0.2501/0.4181 on SciFact/NFCorpus/ArguAna, still below dense 0.6451/0.3167/0.5041. One ArguAna seed regressed. The router matches dense by fallback, not faster compact retrieval. Faiss remains the stronger measured in-memory latency baseline.
+
+The latest changing-context replay compares an uncached exact graph, ordinary global cache invalidation and dependency-selective invalidation. All packets match; selective invalidation preserves unrelated cache hits. This is a local packet-handling comparison, not a win over complete third-party agent platforms. [Full comparison](selective-context.md). The feature review and older experiment descriptions below retain their original scope.
+
 Reviewed 2026-09-19. Feature descriptions are drawn from the linked projects. Measured comparisons are in [experimental results](experiments.md); no performance comparison with an entire memory platform is implied.
 
 | Need | Context Stamps | Relevant alternative | Decision guidance |

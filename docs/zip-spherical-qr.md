@@ -1,5 +1,7 @@
 # Zip Spherical QR: 256 bits, not 256 bytes
 
+Current usage: keep document stamps at 32 bytes; use `FacetQuery` for observed query views and `ProgressiveRouter` for exact/precise routing. Session receipts are separate opaque handles. [Current guide](selective-context.md) and [three-seed training results](progressive-routing.md).
+
 The routing code is exactly **256 bits / 32 bytes**. It represents supplied facets through angular fingerprints. A schema shared by both endpoints assigns bit ranges to the facets and identifies their encoders. Exact source identity, revisions, authorization and the evidence itself remain outside this code.
 
 The name describes a compact context reference. It is not a claim that ZIP can losslessly compress arbitrary context into 32 bytes. In the recorded sample, zlib expanded the 32-byte code to 41 bytes. Raw binary is used. Base64 text transport uses 44 bytes; the sample tokenized to 32 cl100k tokens. Other codes can tokenize differently. These are transport tokens, not the downstream model's input tokens.

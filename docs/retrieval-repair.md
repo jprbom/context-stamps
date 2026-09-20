@@ -1,5 +1,7 @@
 # Retrieval repair and workflow efficiency
 
+Historical v0.3.1 experiment record. For current defaults, three-seed training and selective reuse, see [v0.3.3 guide](selective-context.md). Residual refinement is an optional component, not the default recommended in-memory backend.
+
 Private v0.3.1 candidate. The routing code remains 256 bits. Quality-preserving semantic retrieval now has a separate refinement layer; the original 256-bit-only losses remain recorded.
 
 ## Fixing the public retrieval loss

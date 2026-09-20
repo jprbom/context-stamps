@@ -4,6 +4,7 @@ from stamps import Family, HashingEncoder, Stamp, content_digest, hamming, simil
 
 from .activation import StampSchema, activate
 from .facet_model import FacetModel
+from .facets import FacetQuery
 from .guarded_activation import activate_constrained
 from .memory import ContextMemory, Packet
 from .packed_index import PackedStampIndex
@@ -18,8 +19,9 @@ from .spherical import SphericalStamp
 from .stamp256 import Stamp256Codec
 from .workflow import ContextGraph, ContextNode
 
-__version__ = "0.3.2"
+__version__ = "0.3.3"
 __all__ = [
+    "FacetQuery",
     "ContextSession",
     "ProgressiveRouter",
     "RoutingPolicy",

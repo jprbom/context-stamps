@@ -1,5 +1,6 @@
 include stamps.py LICENSE CITATION.cff CONTEXT_STAMPS.md program.md CONTRIBUTING.md SECURITY.md
 include .gitleaks.toml
+include CHANGELOG.md
 recursive-include docs *.md *.svg *.png *.html *.json *.txt
 recursive-include examples *.py *.json
 recursive-include tests *.py

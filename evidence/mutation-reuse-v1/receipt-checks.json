@@ -1,0 +1,1066 @@
+[
+  {
+    "pairs": 10,
+    "iteration": 1,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 1,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 1,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 1,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 2,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 2,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 2,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 2,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 3,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 3,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 3,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 3,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 4,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 4,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 4,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 4,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 5,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 5,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 5,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 5,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 6,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 6,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 6,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 6,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 7,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 7,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 7,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 7,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 8,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 8,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 8,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 8,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 9,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 9,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 9,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 9,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 10,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 10,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 10,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 10,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 11,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 11,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 11,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 11,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 12,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 12,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 12,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 12,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 13,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 13,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 13,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 13,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 14,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 14,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 14,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 14,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 15,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 15,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 15,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 15,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 16,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 16,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 16,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 16,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 17,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 17,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 17,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 17,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 18,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 18,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 18,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 18,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 10,
+    "iteration": 19,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 19,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 19,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 10,
+    "iteration": 19,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 1,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 1,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 1,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 1,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 2,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 2,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 2,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 2,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 3,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 3,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 3,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 3,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 4,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 4,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 4,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 4,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 5,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 5,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 5,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 5,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 6,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 6,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 6,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 6,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 7,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 7,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 7,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 7,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 8,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 8,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 8,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 8,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 9,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 9,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 9,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 9,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 10,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 10,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 10,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 10,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 11,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 11,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 11,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 11,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 12,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 12,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 12,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 12,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 13,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 13,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 13,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 13,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 14,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 14,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 14,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 14,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 15,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 15,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 15,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 15,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 16,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 16,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 16,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 16,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 17,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 17,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 17,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 17,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 18,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 18,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 18,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 18,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  },
+  {
+    "pairs": 100,
+    "iteration": 19,
+    "method": "global_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 19,
+    "method": "global_cache",
+    "affected": false,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 19,
+    "method": "selective_cache",
+    "affected": true,
+    "status": "insufficient"
+  },
+  {
+    "pairs": 100,
+    "iteration": 19,
+    "method": "selective_cache",
+    "affected": false,
+    "status": "complete"
+  }
+]

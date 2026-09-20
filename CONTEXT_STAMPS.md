@@ -1,5 +1,9 @@
 # Using Context Stamps in an agent workflow
 
+For the current Python integration, use `ProgressiveRouter` and `ContextSession` as shown in `examples/progressive_context.py`. Resolve authorized exact IDs directly. Otherwise use the host's precise backend unless a scope-matched compact policy has qualified. Use `FacetQuery` for explicitly missing query facets; do not invent values or reuse a policy across facet masks. Keep authorization and required-source checks outside the score. Reuse only live receipts and resolve actual evidence before model use. See `docs/agent-instructions.md`.
+
+The instructions below remain the separate SQLite CLI workflow.
+
 The `cstamps` executable must be installed. Select an explicit database path for the current project. Inspect `cstamps --help` when needed; do not assume a hosted service exists.
 
 1. Store useful, bounded text with a stable `--source` identifier. Reuse that identifier when its content changes. Do not ingest unrelated files or secrets merely to build a larger memory.

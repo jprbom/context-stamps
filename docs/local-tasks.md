@@ -1,6 +1,6 @@
 # Local SLM evaluation
 
-> Historical v0.2 evidence. For the private spherical v0.3 candidate, see [current results](spherical-results.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
+> Historical v0.2 evidence. For the private v0.3.3 candidate, see [current results](selective-context.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
 
 Selected evidence reduced measured input tokens by about 75% while matching a full-current-context baseline's correctness on short fictional tasks. Latency was mixed. This experiment tests a narrow integration pattern with caller-supplied required sources; it does not establish general coding-agent performance, security, or edge-device efficiency.
 

@@ -1,6 +1,8 @@
 # Progressive routing and context reuse
 
-By Prashant Jagtap. Private research candidate v0.3.2.
+The routing/training results below were measured for v0.3.2. Current v0.3.3 adds [partial-facet queries and selective invalidation](selective-context.md). The original cache measurements remain historical; current sessions invalidate affected packets only.
+
+By Prashant Jagtap. Historical v0.3.2 routing and training record.
 
 The default spherical stamp remains **256 bits / 32 raw bytes**. New APIs prevent an unvalidated compact ranking from replacing a stronger backend and support reuse of current authorized evidence.
 
@@ -67,15 +69,15 @@ The router preserved all 2,029 dense top-10 rankings by using precise retrieval 
 
 ## Context reuse
 
-`ContextSession` owns a bounded graph and LRU cache. `issue()` returns `(packet, receipt, reused)`; `resolve()` rechecks role and requested versions. Every successful node/relationship mutation invalidates all receipts, covering dependency, permission and same-version content changes. TTL and eviction also invalidate receipts. Invalid receipts expose no source details.
+`ContextSession` owns a bounded graph and LRU cache. `issue()` returns `(packet, receipt, reused)`; `resolve()` rechecks role and requested versions. Current sessions invalidate packets containing a changed node or relationship source, covering dependency, permission and same-version content changes while retaining unrelated packets. The v0.3.2 comparison used global invalidation. TTL and eviction also invalidate receipts. Invalid receipts expose no source details.
 
 Receipts are random **32-byte opaque handles**, separate from semantic stamps. They are neither compressed evidence nor access credentials. They require the original live session and trusted host authorization. A distributed authenticated resolver is not implemented. Revocation cannot recall plaintext already delivered.
 
-`max_bytes` bounds cached evidence payloads, excluding Python objects, graph contents and metadata. Other counts and input sizes are bounded. Reads and mutations use one lock. Global invalidation favors correctness; selective invalidation and distributed transactions remain future work.
+`max_bytes` bounds cached evidence payloads, excluding Python objects, graph contents and metadata. Other counts and input sizes are bounded. Reads and mutations use one lock. Selective invalidation is now implemented and tested; distributed transactions remain future work.
 
 The source replay uses 20 actual repository Python files, ten declared pairs and 20 deliveries per pair. Both methods return identical evidence; the cache has 190 hits over 200 deliveries. Payload accounting drops from **1,533,440 to 83,072 bytes (94.6%)**, assuming a populated shared resolver. First delivery includes full evidence plus a receipt. Network headers/authentication are not measured. Resolved evidence remains **1,533,440 bytes** in both methods: no model-token reduction is established.
 
-The first cache was slower because it checked unrelated revisions. The revision checks now follow the cached dependency closure, with global invalidation on mutation. [Current timings](../evidence/context-reuse-v2/summary.json); [slower original run](../evidence/context-reuse-v1/summary.json) and source snapshots are retained. These are tiny local component measurements, not production latency or coding-agent success results. Ordinary authenticated caching remains an essential comparison, not a novelty claim.
+The first cache was slower because it checked unrelated revisions. The v0.3.2 checks followed the cached dependency closure but still invalidated globally on mutation; v0.3.3 replaces that behavior with selective invalidation. [v0.3.2 timings](../evidence/context-reuse-v2/summary.json); [slower original run](../evidence/context-reuse-v1/summary.json) and source snapshots are retained. These are tiny local component measurements, not production latency or coding-agent success results. Ordinary authenticated caching remains an essential comparison, not a novelty claim.
 
 ## Reproduction and remaining gaps
 

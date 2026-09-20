@@ -1,0 +1,9 @@
+{
+  "manifest.json": "88ee35a229372f1e51cc6cba4476126a60bdaf59be3e6cf7b6a2fda710f258b6",
+  "mutations.json": "968f4bbc0308b85da20af22a9d7ca1ffa6a5dc8796a1c83750b04bcfed818382",
+  "protocol.json": "9cc2af6a0dff129bac8121e068e1a3bd83d394e220052afdd30a8458871adf6d",
+  "receipt-checks.json": "c8f1082be8bd83f681cfc81c3d8f1531a9d1a9f4a3be35bc27ffa6e84e0788e6",
+  "results.json": "e93360033481a1daf1d40359bda36b4e73c2b4acebf4bacb99a66ab40def1505",
+  "setups.json": "43e7980c9b4a0d8b9ec8ab8d88638b076b0ccad89ccd18a877f4166dd495dfd9",
+  "summary.json": "9472f42ff74493bd5ba5d1e6c4d7ca4e0cf712ebac046d79ab6fe0d043fbdfbf"
+}

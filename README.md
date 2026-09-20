@@ -1,180 +1,181 @@
 # Context Stamps — Spherical Context QR
 
-**Compact multi-facet context representations, query-driven activation and evidence handoffs for agent workflows.**
+**Compact context references, exact-first retrieval and version-checked evidence handoffs.**
 
-By **Prashant Jagtap** · Python 3.10+ · MIT-licensed core
+By **Prashant Jagtap** · Python 3.10+ · MIT-licensed core · **Private research candidate v0.3.3**
 
-**Private research candidate, v0.3.2.** This repository remains private while validation continues. No PyPI release is available. Historical results and unsuccessful experiments are retained.
+The repository remains private while validation continues. Access is required to clone it; no PyPI release is available. This candidate keeps the spherical stamp at **256 bits / 32 bytes** and defaults to a precise retrieval backend when a compact shortcut has not qualified on validation data.
 
-**New: exact-first routing and version-checked context reuse.** A trained 32-byte quantizer improved the binary baseline on all three public datasets but still trails dense retrieval. The router defaults to precise retrieval when compact confidence is not validated. A separate session API reuses evidence through revocable 32-byte receipts. [Usage, results and remaining gaps](docs/progressive-routing.md).
-
-**Zip Spherical QR uses exactly 256 bits / 32 bytes**, with a shared schema and source store outside the code. A separate residual-bound retrieval index matched every dense-reference top-10 ranking across 2,029 public queries. It uses more than 256 bits plus backing vectors; it is not a lossless binary hash. [Measured benefits, costs and failures](docs/retrieval-repair.md).
-
-## What it does
-
-A Spherical Context QR represents a context item through named views, such as content, entity, intent and task. Each supplied vector is normalized onto a unit sphere and converted to a compact angular fingerprint. A query activates candidate contexts through per-view scores. The application then checks exact constraints and resolves the original evidence needed by the next agent or model.
-
-The representation is a product of spheres followed by binary quantization. “QR” refers to the portable stamp concept; it is not a new visual barcode standard. Stamps do not reconstruct source text or make an ordinary language model understand opaque hashes.
-
-```mermaid
-flowchart LR
-    A[Application-supplied context facets] --> B[Spherical multi-view stamp]
-    Q[Agent query facets] --> C[Per-facet activation]
-    B --> C
-    C --> D[Exact entity and task constraints]
-    D --> E[Resolve current authorized evidence]
-    G[Optional explicit dependency graph] --> E
-    E --> F[Bounded packet for agent or model]
-    U[Source changes] --> G
-```
-
-## A stamp is not a context graph
-
-| Spherical context stamp | Context graph |
-|---|---|
-| Compact representation of one item across multiple views | Explicit relationships between items |
-| Compares angular fingerprints and exposes per-facet agreement | Traverses dependencies, provenance and other declared relationships |
-| Can retrieve without a graph | Can assemble evidence from known root IDs without stamps |
-| Does not infer causality or certify identity | Does not guarantee the accuracy or completeness of supplied edges |
-
-The optional graph supports the workflow. It is not the spherical representation. Our evaluations include stamp-only, graph-only and combined configurations. [Design and mathematical scope](docs/spherical-context-qr.md).
-
-![Spherical stamps and explicit relationship graphs](docs/assets/spherical-architecture.png)
-
-## Run locally
+## Start here
 
 ```bash
 git clone https://github.com/jprbom/context-stamps.git
 cd context-stamps
 python -m pip install -e .
-python examples/spherical_workflow.py
-python examples/zip_spherical_qr.py
 python examples/progressive_context.py
-scqr encode examples/facets.json
+python examples/zip_spherical_qr.py
 ```
 
-Repository access is currently restricted to authorized users. The example uses lexical hashing, supplied facets and explicit dependencies; it does not download a model. The core needs no service or GPU.
+These examples run offline without a GPU, service or downloaded model. The first demonstrates exact resolution, precise fallback, reusable evidence and invalidation. The second creates a 32-byte spherical stamp. The core has no mandatory third-party dependencies.
 
-For exactly 32 raw bytes, use `Stamp256Codec`: [runnable guide](docs/zip-spherical-qr.md). The `scqc1` format below carries a schema ID and text encoding, so its complete envelope is larger.
+## What the components do
 
-For quality-preserving vector refinement, install `.[learn]` and run `python examples/residual_retrieval.py`. `ResidualIndex` uses conservative score bounds, checks fetched vector digests and refines every candidate that could affect the result. Optimized Faiss is faster in current memory-resident tests. [API and comparison](docs/retrieval-repair.md).
+| Component | Purpose | Important boundary |
+|---|---|---|
+| `Stamp256Codec` | Encodes supplied content/entity/intent/task views into 32 raw bytes | Lossy similarity sketch; schema and evidence are external |
+| `ProgressiveRouter` | Resolves an explicit source or calls a precise backend; optionally uses a validated compact exit | Exact IDs and similarity do not grant access |
+| `ContextGraph` | Tracks declared relationships, versions and dependency closures | Does not infer missing relationships |
+| `ContextSession` | Reuses valid packets using bounded, expiring 32-byte receipts | Receipts are opaque handles, separate from semantic stamps |
+| `ResidualIndex` | Uses a richer index and backing vectors for exact refinement | More than 32 bytes; slower than Faiss in our in-memory tests |
 
-## Compare facets and exchange a compact stamp
+The spherical representation is a product of unit spheres followed by binary projection. A graph stores relationships between items; a stamp describes one item through supplied views. “QR” names the portable reference concept, not a visual barcode standard. Neither stamps nor receipts reconstruct arbitrary context or make a language model understand a hash.
+
+```mermaid
+flowchart TD
+    Q[Request and host-authorized candidates] --> E{Explicit source ID?}
+    E -->|Available| X[Exact resolution]
+    E -->|Unavailable| A[Abstain]
+    E -->|No| P{Validated compact policy for this scope?}
+    P -->|No| D[Application precise retriever]
+    P -->|Yes| S[Compare spherical stamps]
+    S --> C{Score and margin accepted?}
+    C -->|No| D
+    C -->|Yes| V[Check evidence and dependencies]
+    D --> V
+    X --> V
+    V --> H[Issue or reuse an evidence packet]
+    U[Source or permission change] --> I[Invalidate receipts]
+```
+
+## Use your existing retriever
 
 ```python
-from context_stamps import Family, HashingEncoder, SphericalStamp, StampSchema
+from context_stamps import ProgressiveRouter
 
-encoder = HashingEncoder(64)
-facets = {
-    "content": "Revise the API timeout",
-    "entity": "worker_alpha",
-    "intent": "implementation",
-    "task": "timeout",
-}
-families = {
-    name: Family(encoder.identity, encoder.dim, bits=64, seed=17 + i)
-    for i, name in enumerate(facets)
-}
-stamp = SphericalStamp.encode(
-    {name: encoder.encode(text) for name, text in facets.items()}, families
+def precise(eligible, limit):
+    # Replace these demonstration scores with your dense/hybrid search.
+    scores = {"implementation": 0.9, "requirement": 0.7}
+    return sorted(((key, scores[key]) for key in eligible),
+                  key=lambda row: (-row[1], row[0]))[:limit]
+
+router = ProgressiveRouter()
+result = router.search(
+    eligible=["implementation", "requirement"],
+    precise=precise, scope="project:encoder-revision:schema-revision", limit=1,
 )
-schema = StampSchema.for_stamp(stamp)
-compact = schema.pack(stamp)
-restored = schema.unpack(compact)
-print(stamp.compare(restored))
-print(stamp.bits, len(compact.encode("utf-8")))  # 256 bits; 115 payload bytes
+assert result["route"] == "precise"  # No compact policy is enabled by default.
+print(result["ids"])
 ```
 
-The 115-byte payload assumes both endpoints already have the same schema. Schema distribution, identifiers, permissions and resolved evidence cost additional bytes. For arbitrary text, use a suitable pinned semantic encoder per view; the included hashing encoder is a lexical baseline. Encoder families must match exactly.
+The host supplies current authorized IDs. An explicit `exact_key` bypasses retrieval when available and abstains when unavailable. Compact policies need disjoint calibration and scope binding; no public-data policy qualified in the latest experiment. Do not turn a similarity threshold into a claim of confidence. [Routing API and calibration](docs/progressive-routing.md).
 
-## Activate context safely
+## Reuse evidence across workflow steps
 
 ```python
-from context_stamps import activate_constrained
+from context_stamps import ContextNode, ContextSession
 
-hits = activate_constrained(
-    stamp,
-    [restored],
-    metadata=[{"entity": "worker_alpha", "task": "timeout"}],
-    required={"entity": "worker_alpha", "task": "timeout"},
-    threshold=0.8,
-    limit=1,
+session = ContextSession()
+session.put(ContextNode("implementation", "TIMEOUT = 10", "v1", frozenset({"developer"})))
+session.put(ContextNode("requirement", "Timeout must be ten seconds.", "v1", frozenset({"developer"})))
+session.link("implementation", "requirement", "depends_on", provenance="review-1")
+versions = {"implementation": "v1", "requirement": "v1"}
+
+packet, receipt, reused = session.issue(
+    ["implementation"], role="developer", revisions=versions,
 )
-print(hits)
+assert packet.status == "complete" and len(receipt) == 32
+again, same_receipt, reused = session.issue(
+    ["implementation"], role="developer", revisions=versions,
+)
+assert reused and again == packet and same_receipt == receipt
+
+session.put(ContextNode("requirement", "Timeout must be twenty seconds.", "v2", frozenset({"developer"})))
+assert session.resolve(receipt, role="developer", revisions=versions).status == "insufficient"
 ```
 
-Supply current, authorized candidates and metadata bound to those candidates. The threshold above illustrates the API; calibrate it on validation data for your application. Exact constraints take precedence over similarity. Activation does not execute a tool, grant permission or prove that the evidence is correct.
+A source update invalidates receipts containing that source; a relationship update invalidates packets containing its source endpoint. Unrelated receipts remain valid. A packet includes the complete declared dependency closure or returns insufficient context. Host authorization, source versions and relationship correctness remain application responsibilities. The cache is process-local and serialized; it is not a distributed memory service. Resolved evidence still consumes model input tokens when sent to a model.
 
-## Hand evidence to another agent
+## Partial queries and changes to shared memory
 
-```python
-from context_stamps import ContextGraph, ContextNode
-
-graph = ContextGraph()
-graph.put(ContextNode("implementation", "Set timeout_ms to 250.", "v1", frozenset({"engineer"})))
-graph.put(ContextNode("contract", "Timeout values use milliseconds.", "v1", frozenset({"engineer"})))
-graph.link("implementation", "contract", "depends_on", provenance="reviewed API contract")
-packet = graph.handoff(
-    ["implementation"], role="engineer",
-    revisions={"implementation": "v1", "contract": "v1"}, budget_bytes=2048,
-)
-if packet.status == "complete":
-    print(packet.text)
-else:
-    print(packet.reason)
-print(graph.affected(["contract"]))
-```
-
-The graph returns a whole dependency closure or an empty insufficient packet. It checks declared source revisions, endpoint digests, roles, explicit conflicts and the byte budget. The host authenticates roles and maintains relationships. Missing or incorrect undeclared relationships cannot be discovered by these checks.
-
-## Train a small context model
+`FacetQuery` compares only observed query views, without fabricating missing entity or task values. Its policy scope includes the facet mask, encoder families and weights. This prevents accidental reuse of a full-facet calibration for a different query shape; scores remain uncalibrated ranking utilities.
 
 ```bash
-python -m pip install -e ".[learn,tokens]"
-python experiments/run_spherical_v2.py
-python experiments/train_pairwise.py
-python experiments/verify_spherical.py
+python examples/partial_facets.py
 ```
 
-Run experiments in a separate checkout: the training commands regenerate their evidence directories. The verifier is read-only. Exported models are small JSON facet scorers with standard-library inference. We tested ridge relevance regression and nonnegative pairwise ranking, with training losses, validation trials, frozen splits and failures recorded. These are our context-ranking models, not a newly pretrained language, image, speech or video model. [Model details](docs/spherical-results.md).
+Selective invalidation was checked against an uncached graph across 4,000 mutation comparisons. A separate 6,600-handoff replay compared exact graph lookup, the old global cache and the new selective cache. At 100 independent declared pairs with one changed pair per round, the new cache reused **1,881 of 2,000 packets**, versus zero for the old cache. All returned packet hashes matched the uncached control. The larger case repeats actual source text under synthetic IDs; it is not 100 real agent tasks. [Results, API and remaining gaps](docs/selective-context.md).
 
-The wheel includes the three experimental pairwise scorers and their model card:
+## Create a 32-byte stamp
 
 ```python
-from context_stamps import load_experimental_model
+from context_stamps import Family, HashingEncoder, Stamp256Codec
 
-model = load_experimental_model(seed=17)
-# Uses the same four-view lexical families as the first example above.
-print(model.score(stamp, restored))
+encoder = HashingEncoder(64)
+facets = {"content": "Update timeout", "entity": "worker_alpha",
+          "intent": "implement", "task": "timeout"}
+codec = Stamp256Codec({name: Family(encoder.identity, 64, 64, 17 + i)
+                       for i, name in enumerate(facets)})
+stamp = codec.encode({name: encoder.encode(value) for name, value in facets.items()})
+raw = codec.pack(stamp)
+assert len(raw) == 32
+assert codec.unpack(raw, schema_id=codec.schema.identity) == stamp
 ```
 
-These scores are uncalibrated ranking utilities. The bundled models require the exact lexical family schema used in training; they cannot be applied to arbitrary neural embeddings. Exact-field filtering remains the stronger control on the supplied-field fixtures.
+The hashing encoder is a lexical demonstration. Encoder/schema identity, exact source identity, versions, permissions and original evidence are outside the 32 bytes. Base64 and schema envelopes add transport bytes. Arbitrary context cannot be losslessly reduced to this stamp. [Format and bit allocation](docs/zip-spherical-qr.md).
 
-## What is measured
+## Latest measured retrieval results
 
-- Original retrieval experiments cover SciFact, NFCorpus and ArguAna. The historical coverage heuristic regressed on two datasets, and historical learned selectors did not generalize reliably. Those failures remain visible.
-- The original 256-bit-only public retrieval test loses accuracy on all three datasets. The separate residual-refinement path now matches all 2,029 dense rankings. Its index arrays are 71.875% smaller than float32 vectors, but full backing vectors remain required: combined storage increases and in-memory latency remains worse than Faiss.
-- Equal-256-bit spherical experiments separate single-view, multiple-direction and multiple-view encodings. Supplied facets make these structured tests; they do not establish automatic context understanding.
-- Text generation tests compare full context, incomplete stamp-only packets, dependency-aware packets and an exact-field control using a local public 1.5B model. The exact-field control is competitive; no universal stamp advantage is claimed.
-- Deterministic verification retrains models and replays recorded rankings. Unit tests include malformed inputs, collisions, access denial, stale edges, budget boundaries and graph cycles.
-- Image, speech and video pilots completed 36 generations with identical outputs in all 18 direct/routed pairs. Routing adds overhead and leaves generator input tokens unchanged; this is integration parity, not improved generation quality.
+nDCG@10 on 2,029 official public queries; higher is better. The encoder is pinned MiniLM. Tests exclude self-document matches and retain missing positives. These public test sets had been inspected in earlier work.
 
-[Results and limitations](docs/spherical-results.md) · [failure ledger](docs/failures-and-fixes.md) · [scenario matrix](docs/scenario-matrix.md) · [validation record](docs/validation.md).
+| Method | SciFact | NFCorpus | ArguAna |
+|---|---:|---:|---:|
+| Gaussian 16 bytes | 0.3843 | 0.1698 | 0.3503 |
+| Gaussian 32 bytes | 0.5008 | 0.2236 | 0.4152 |
+| Trained ITQ 32 bytes, three-seed mean | 0.5453 | 0.2501 | 0.4181 |
+| Gaussian 64 bytes | 0.5910 | 0.2602 | 0.4452 |
+| Dense float64 reference | 0.6451 | 0.3167 | 0.5041 |
+| Progressive router, precise fallback | 0.6451 | 0.3167 | 0.5041 |
 
-The final controlled workflow run achieved 16/16 successful selected-context workflows versus 10/16 with full context, using 82.79% fewer input tokens and 25.71% less mean workflow time for the spherical path. There were eight unique fictional workflows and two repeats. The exact-graph baseline also passed 16/16 and was faster on average. This does not establish a benefit over exact lookup or real-repository coding performance. [Full comparison and failed iterations](docs/retrieval-repair.md).
+![Three-seed compact retrieval comparison](docs/assets/progressive-retrieval.png)
 
-## Scale and integration
+ITQ used 391 SciFact training-query embeddings, 50 iterations and seeds 17/41/83. MiniLM was frozen. All seeds are reported; one slightly regressed on ArguAna. ITQ is an established single-view quantization baseline, distinct from the uncentered multi-view spherical codec. No base-model fine-tuning was performed.
 
-The reference graph is in-memory and rebuilt by the host. It is bounded to 1,000 nodes and 4,096 relationships. `context_stamps.packed_index.PackedStampIndex` provides an optional NumPy packed-code scan over larger snapshots, with explicit eligible rows and bounded temporary blocks. It is linear scan, not a distributed graph database or a sublinear ANN index. Code-storage figures exclude documents, keys and metadata.
+Training improved mean compact relevance but did not match dense retrieval. The router matched all 2,029 dense top-10 rankings **by using precise retrieval for every query**; it did not make the stamp lossless or demonstrate a retrieval speed gain. Shrinking to 16 bytes worsened all three datasets; 64 bytes is a diagnostic, not the new default. [Full results, calibration and provenance](docs/progressive-routing.md).
 
-Use the Python API for the spherical workflow. Existing CLI, SQLite memory, MCP tools and portable agent instructions remain available for the historical evidence APIs; they are not automatically wrappers for every new spherical API. [Integration guide](docs/integrations.md) · [historical usage](docs/historical-v02-guide.md).
+## Workflow and transport evidence
 
-Potential applications include coding handoffs, experiment provenance, reusable research evidence, local SLM context assembly and cross-functional agent coordination. Internal neural attention, autonomous relationship extraction, production-scale multi-agent deployment and mobile energy savings remain unverified research directions.
+- **Repeated packet replay:** 20 actual source files, ten declared pairs, 200 deliveries. Reuse accounted for 83,072 transfer bytes versus 1,533,440 for full packets, a 94.6% reduction with a populated shared resolver. Network/authentication costs were excluded. Both methods resolved the same evidence, so this is not a model-token saving. It is not a completed coding-agent study.
+- **Earlier local SLM pilot:** eight fictional workflows, two repeats. Selected context succeeded in 16/16 versus 10/16 for full context, with 82.79% fewer input tokens and 25.71% lower mean workflow time. Exact graph lookup also succeeded in 16/16 and was faster on average. [Controls and failed iterations](docs/retrieval-repair.md).
+- **Image, speech and video pilots:** 36 generations, 18 direct/routed pairs, identical outputs. Routing added overhead and did not reduce generator tokens or improve quality. [Historical spherical results](docs/spherical-results.md).
 
-Prefer exact graph lookup when known entity/task fields determine the target. Read-only scaling now includes Faiss controls at 1k, 10k and 100k vectors with one/four concurrent readers; it does not cover distributed updates or production operations.
+Real unseen coding/research tasks, automatic facet extraction, internal attention changes, distributed scalability and mobile energy savings remain unproven. The bounded reference graph supports 1,000 nodes and 4,096 relationships. Earlier read-only 1k/10k/100k-vector tests favor Faiss over residual refinement for latency and throughput.
 
-## Security, data and attribution
+## Integration and training
 
-Keep source data in your controlled store. Exported stamps can leak similarity information and are not encryption. A digest checks identity; it does not authenticate an author. The library does not prevent prompt injection, detect every secret or replace a host authorization system. [Security policy](SECURITY.md).
+| Entry point | Current support |
+|---|---|
+| Python library | Progressive routing, spherical stamps, graph and reusable sessions |
+| `scqr` CLI | Payload encode/inspect; not a complete routing service |
+| `cstamps`, MCP, portable skill/Markdown | Existing SQLite evidence workflow; not automatic wrappers around every new API |
+| Standalone `stamps.py` | Projection and similarity primitives |
 
-Copyright © 2026 Prashant Jagtap. Preserve the copyright and MIT license notice when distributing substantial portions of the code. Research citation is appreciated; it is not an extra restriction added to MIT. Public datasets and external models keep their own licenses. Private research corpora and downloaded model weights are not distributed here. [Rights and data](docs/rights-and-data.md) · [citation](CITATION.cff).
+[Integration guide](docs/integrations.md) · [agent instructions](docs/agent-instructions.md) · [older SQLite usage](docs/historical-v02-guide.md).
+
+The wheel's three optional pairwise facet scorers are historical procedural models, not the newly evaluated ITQ quantizers. They require their exact lexical family schema and do not supply calibrated probabilities. The ITQ artifacts and their dataset-derived licenses are under `evidence/quantizer-seeds-v1`. Neither model family is enabled automatically.
+
+```bash
+python -m pip install -e ".[dev,mcp,tokens]"
+python -m unittest discover -s tests -v
+python experiments/verify_progressive.py
+python examples/progressive_context.py
+```
+
+Local validation passed 102 unit tests, including 4,000 mutation-oracle comparisons, plus five secret-scanner controls. CI runs the Windows/Linux and security checks on each candidate commit. Offline evidence checks verify recorded artifacts and calibration; full quantizer retraining needs external pinned data/embeddings. Run training in a separate checkout because runners regenerate evidence directories. [Training protocol](program.md) · [validation](docs/validation.md) · [scenario matrix](docs/scenario-matrix.md) · [remaining gaps](docs/research-gates.md).
+
+## Security, data and credit
+
+The host supplies authentication and permissions. Stamps can expose similarity; they are not encryption. Retrieved content remains untrusted and may contain prompt injection. Receipt revocation cannot recall previously delivered plaintext. [Security policy](SECURITY.md).
+
+Secret scanning retains all default detection rules. Seven exact public-ID pairs in one evidence file are narrowly excluded; synthetic positive controls confirm credentials remain detectable on the same line. Historical results and unsuccessful experiments remain available.
+
+Copyright © 2026 **Prashant Jagtap**. Preserve copyright and MIT notices when redistributing substantial portions of the code. Citation is appreciated, not an additional MIT restriction. Public-data-derived records and quantizers retain their stated CC-BY-SA-4.0 terms; external models retain their own licenses. Private corpora and base-model weights are not distributed. [Rights and data](docs/rights-and-data.md) · [citation](CITATION.cff).

@@ -1,5 +1,11 @@
 # Validation record
 
+## Private v0.3.3 follow-up
+
+102 local unit tests pass, including nine new partial-query/selective-invalidation tests and 4,000 comparisons with an uncached graph over 500 seeded mutation steps. `verify_mutation_reuse.py` checks 6,600 handoffs, packet equality, cache accounting and 152 receipt checks. The v0.3.2 global-cache source is preserved for comparison. The latest training remains the three-seed ITQ run; no additional model training is claimed here.
+
+Secret scanning now uses exact public-ID/path exclusions, retains every default detection rule and passes five positive/negative controls. The former nine findings described in the historical entries below have been resolved. Current directory and history scans are required before sync. [Current behavior](selective-context.md).
+
 ## Private v0.3.2 follow-up
 
 93 local unit tests pass. The new offline verifier checks 18,261 public ranking records (six methods and three-seed replication over 2,029 queries), disjoint policy calibration, 800 recorded context handoffs across two implementations and source hashes. Full quantizer retraining requires the external pinned embeddings. [Usage, metrics and limitations](progressive-routing.md).
@@ -12,7 +18,7 @@
 - Ruff and core Bandit pass. Gitleaks reports exactly the same nine reviewed public-ID false positives, with no new matches. The new APIs introduce no new mandatory dependency.
 - Full comparisons include stronger Faiss and exact-graph controls, which remain preferable for their measured workloads. See [retrieval repair and efficiency](retrieval-repair.md).
 
-> Historical v0.2 evidence. For the private spherical v0.3 candidate, see [current results](spherical-results.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
+> Historical v0.2 evidence. For the private v0.3.3 candidate, see [current results](selective-context.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
 
 Release 0.2.0, local Windows Python 3.13.13, 2026-09-19.
 

@@ -1,0 +1,16 @@
+{
+  "pairs": [
+    10,
+    100
+  ],
+  "rounds": 20,
+  "seed": 5819,
+  "workload": "20 actual source files reused across explicitly declared independent pairs; 100-pair case duplicates text under synthetic IDs, not 100 independent tasks",
+  "mutation": "Before each round after the first, change one dependency at the same revision and revalidate its edge",
+  "comparison": [
+    "uncached exact graph",
+    "v0.3.2 global invalidation",
+    "v0.3.3 selective invalidation"
+  ],
+  "measurement": "Randomized method order per round, full packet equality and live receipt checks. Handoff and mutation times separate. No model/network calls; transfer bytes are modeled payload accounting."
+}

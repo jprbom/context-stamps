@@ -1,5 +1,7 @@
 # Usage guidelines
 
+This page covers the existing SQLite evidence API. For the recommended v0.3.3 routing/session API and partial-facet queries, start with [selective context](selective-context.md) and the [README](../README.md).
+
 ## Choose an encoder and a source boundary
 
 Use the built-in `HashingEncoder` for an offline lexical baseline. It preserves case, punctuation and adjacent token features, but does not understand paraphrases. Use `SentenceTransformerEncoder` or implement `identity`, `dim` and `encode(text)` for semantic retrieval.

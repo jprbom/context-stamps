@@ -1,6 +1,6 @@
 # Experimental selector model cards
 
-> Historical v0.2 evidence. For the private spherical v0.3 candidate, see [current results](spherical-results.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
+> Historical v0.2 evidence. For the private v0.3.3 candidate, see [current results](selective-context.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
 
 Author: Prashant Jagtap. Code and synthetic coefficient exports: MIT. SciFact-derived evidence and coefficient exports: CC-BY-SA-4.0; see their directory attribution notice. These are six-parameter logistic rerankers (five feature weights and a bias), not generative SLMs or fine-tuned embedding models.
 

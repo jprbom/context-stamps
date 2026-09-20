@@ -1,0 +1,68 @@
+[
+  {
+    "pairs": 10,
+    "method": "exact_graph",
+    "handoffs": 200,
+    "cache_hits": 0,
+    "handoff_ms": 3.1526,
+    "mutation_ms": 0.2623,
+    "median_handoff_ms": 0.01465,
+    "transfer_payload_bytes": 1534795,
+    "resolved_evidence_bytes": 1534795
+  },
+  {
+    "pairs": 10,
+    "method": "global_cache",
+    "handoffs": 200,
+    "cache_hits": 0,
+    "handoff_ms": 4.376,
+    "mutation_ms": 0.3809,
+    "median_handoff_ms": 0.02015,
+    "transfer_payload_bytes": 1541195,
+    "resolved_evidence_bytes": 1534795
+  },
+  {
+    "pairs": 10,
+    "method": "selective_cache",
+    "handoffs": 200,
+    "cache_hits": 171,
+    "handoff_ms": 1.4239,
+    "mutation_ms": 0.2576,
+    "median_handoff_ms": 0.0037,
+    "transfer_payload_bytes": 229928,
+    "resolved_evidence_bytes": 1534795
+  },
+  {
+    "pairs": 100,
+    "method": "exact_graph",
+    "handoffs": 2000,
+    "cache_hits": 0,
+    "handoff_ms": 40.2343,
+    "mutation_ms": 0.5958,
+    "median_handoff_ms": 0.019,
+    "transfer_payload_bytes": 15326055,
+    "resolved_evidence_bytes": 15326055
+  },
+  {
+    "pairs": 100,
+    "method": "global_cache",
+    "handoffs": 2000,
+    "cache_hits": 0,
+    "handoff_ms": 57.6539,
+    "mutation_ms": 1.337,
+    "median_handoff_ms": 0.0265,
+    "transfer_payload_bytes": 15390055,
+    "resolved_evidence_bytes": 15326055
+  },
+  {
+    "pairs": 100,
+    "method": "selective_cache",
+    "handoffs": 2000,
+    "cache_hits": 1881,
+    "handoff_ms": 24.5561,
+    "mutation_ms": 0.4908,
+    "median_handoff_ms": 0.0082,
+    "transfer_payload_bytes": 977056,
+    "resolved_evidence_bytes": 15326055
+  }
+]

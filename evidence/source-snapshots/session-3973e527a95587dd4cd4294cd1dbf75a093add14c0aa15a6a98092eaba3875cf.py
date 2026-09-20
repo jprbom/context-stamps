@@ -16,8 +16,8 @@ from .workflow import ContextGraph, Handoff
 class ContextSession:
     """Owns its graph; serializes mutations and reads under a reentrant lock.
 
-    Mutations invalidate receipts whose complete dependency closure includes the
-    changed node or relationship source. Unrelated packets remain reusable.
+    Any successful mutation invalidates all receipts, including dependencies.
+    This deliberately conservative strategy cannot miss an affected dependency.
     Reuse saves packet construction/transfer, not the model's evidence tokens.
     """
 
@@ -30,35 +30,28 @@ class ContextSession:
             raise ValueError("TTL must be positive and at most one hour")
         self._graph, self._lock = ContextGraph(), threading.RLock()
         self._entries, self._keys = OrderedDict(), {}
-        self._by_source = {}
         self._bytes = 0
         self._max_entries, self._max_bytes, self._ttl = max_entries, max_bytes, ttl_seconds
 
-    def _invalidate(self, source):
-        for token in tuple(self._by_source.get(source, ())):
-            self._remove(token)
+    def _clear(self):
+        self._entries.clear()
+        self._keys.clear()
+        self._bytes = 0
 
     def put(self, node):
         with self._lock:
             self._graph.put(node)
-            self._invalidate(node.key)
+            self._clear()
 
     def link(self, source, target, kind, *, provenance):
         with self._lock:
             self._graph.link(source, target, kind, provenance=provenance)
-            # A new dependency or conflict can change any closure containing
-            # the source, even when the target was not in the previous packet.
-            self._invalidate(source)
+            self._clear()
 
     def _remove(self, token):
         key, packet, _, _ = self._entries.pop(token)
         del self._keys[key]
         self._bytes -= packet.units
-        for source in packet.sources:
-            tokens = self._by_source[source]
-            tokens.remove(token)
-            if not tokens:
-                del self._by_source[source]
 
     def _expire(self):
         now = time.monotonic()
@@ -101,8 +94,6 @@ class ContextSession:
             self._entries[token] = key, packet, time.monotonic() + self._ttl, versions
             self._keys[key] = token
             self._bytes += packet.units
-            for source in packet.sources:
-                self._by_source.setdefault(source, set()).add(token)
             return packet, token, False
 
     def resolve(self, token, *, role, revisions, budget_bytes=8192):
