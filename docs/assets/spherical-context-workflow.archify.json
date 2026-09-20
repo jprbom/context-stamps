@@ -1,0 +1,98 @@
+{
+  "schema_version": 2,
+  "diagram_type": "workflow",
+  "meta": {
+    "title": "Spherical Context QR: relation-aware retrieval workflow",
+    "subtitle": "A 256-bit routing capsule selects evidence; precise retrieval reconstructs usable context",
+    "animation": "trace",
+    "visual_preset": "editorial",
+    "quality_profile": "showcase",
+    "views": [
+      {
+        "id": "capsule-build",
+        "label": "Build the capsule",
+        "focus": ["source", "facets", "relations", "product", "stamp"],
+        "note": "Eight bounded views are quantized independently into one 256-bit routing capsule."
+      },
+      {
+        "id": "retrieval-path",
+        "label": "Retrieve context",
+        "focus": ["query", "stamp", "router", "candidates", "hybrid", "context"],
+        "note": "The capsule narrows the search; lexical and semantic scores recover precise evidence."
+      },
+      {
+        "id": "relation-path",
+        "label": "Follow relationships",
+        "focus": ["relations", "product", "stamp", "context"],
+        "note": "Typed directional links contribute a bounded diffusion view without replacing the source graph."
+      }
+    ],
+    "output": "docs/assets/spherical-context-workflow.html"
+  },
+  "lanes": [
+    { "id": "source_lane", "label": "Context and relationships" },
+    { "id": "capsule_lane", "label": "256-bit spherical capsule" },
+    { "id": "runtime_lane", "label": "Agent retrieval path" }
+  ],
+  "phases": [
+    { "id": "represent", "label": "Represent", "fromCol": 0, "toCol": 1 },
+    { "id": "compress", "label": "Quantize", "fromCol": 2, "toCol": 3, "variant": "emphasis" },
+    { "id": "recover", "label": "Retrieve and verify", "fromCol": 4, "toCol": 5, "variant": "dashed" }
+  ],
+  "groups": [
+    { "id": "facet_group", "label": "Inspectable source representation", "lane": "source_lane", "fromCol": 0, "toCol": 2, "variant": "default" },
+    { "id": "sphere_group", "label": "Product of facet spheres", "lane": "capsule_lane", "fromCol": 2, "toCol": 3, "variant": "emphasis" },
+    { "id": "retrieval_group", "label": "Precise residual path", "lane": "runtime_lane", "fromCol": 3, "toCol": 5, "variant": "dashed" }
+  ],
+  "mainPath": ["query", "router", "candidates", "hybrid", "context"],
+  "semanticChecks": {
+    "allowedRoots": ["query", "source"],
+    "allowedTerminals": ["context"],
+    "requiredPaths": [
+      { "from": "source", "to": "stamp" },
+      { "from": "query", "to": "context" }
+    ]
+  },
+  "nodes": [
+    { "id": "source", "lane": "source_lane", "col": 0, "type": "database", "label": "Source evidence", "width": 142 },
+    { "id": "query", "lane": "runtime_lane", "col": 0, "type": "external", "label": "Agent query", "width": 142 },
+    { "id": "facets", "lane": "source_lane", "col": 1, "type": "backend", "label": "Facet compiler", "tag": "8 bounded views", "width": 154 },
+    { "id": "relations", "lane": "source_lane", "col": 2, "type": "messagebus", "label": "Relation map", "tag": "bounded diffusion", "width": 154 },
+    { "id": "product", "lane": "capsule_lane", "col": 2, "type": "backend", "label": "Product spheres", "width": 154 },
+    { "id": "stamp", "lane": "capsule_lane", "col": 3, "type": "security", "label": "32-byte capsule", "tag": "routing key", "width": 154 },
+    { "id": "router", "lane": "runtime_lane", "col": 3, "type": "backend", "label": "Risk-aware router", "width": 154 },
+    { "id": "candidates", "lane": "runtime_lane", "col": 4, "type": "database", "label": "Candidate evidence", "width": 154 },
+    { "id": "hybrid", "lane": "runtime_lane", "col": 5, "type": "backend", "label": "Precise hybrid ranker", "width": 170 },
+    { "id": "context", "lane": "source_lane", "col": 5, "type": "frontend", "label": "Grounded context", "tag": "sent to agent", "width": 154 }
+  ],
+  "edges": [
+    { "id": "source-facets", "from": "source", "to": "facets", "label": "extract", "variant": "default", "role": "main" },
+    { "id": "facets-relations", "from": "facets", "to": "relations", "label": "declared links", "variant": "default", "role": "main" },
+    { "id": "relations-product", "from": "relations", "to": "product", "label": "relation view", "variant": "emphasis", "role": "main" },
+    { "id": "facets-product", "from": "facets", "to": "product", "label": "facet vectors", "variant": "default", "role": "branch" },
+    { "id": "product-stamp", "from": "product", "to": "stamp", "label": "ITQ bit blocks", "variant": "emphasis", "role": "main" },
+    { "id": "query-router", "from": "query", "to": "router", "label": "scope + error budget", "variant": "default", "role": "main" },
+    { "id": "stamp-router", "from": "stamp", "to": "router", "label": "self-activating key", "variant": "emphasis", "role": "main" },
+    { "id": "router-candidates", "from": "router", "to": "candidates", "label": "route", "variant": "default", "role": "main" },
+    { "id": "candidates-hybrid", "from": "candidates", "to": "hybrid", "label": "rerank", "variant": "emphasis", "role": "main" },
+    { "id": "hybrid-context", "from": "hybrid", "to": "context", "label": "top evidence", "variant": "emphasis", "role": "return" }
+  ],
+  "cards": [
+    {
+      "dot": "violet",
+      "title": "What the 256 bits retain",
+      "items": [
+        "Relative position across eight learned facet spaces",
+        "A lossy routing key; source evidence remains external"
+      ]
+    },
+    {
+      "dot": "emerald",
+      "title": "What restores context quality",
+      "items": [
+        "Typed relation expansion within explicit bounds",
+        "Precise hybrid reranking before context reaches the agent"
+      ]
+    }
+  ]
+}

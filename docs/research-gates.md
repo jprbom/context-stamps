@@ -1,6 +1,14 @@
 # Research gates after the local pilot
 
-## What v0.4.0 closes
+## What v0.5.0 changes
+
+The candidate now represents typed directional relationships as a bounded diffusion view, fits independent product-sphere ITQ families and exposes a precise lexical/semantic backend. A prospective SciDocs evaluation invalidated the global 0.75/0.25 blend: nDCG@10 fell by 0.0121 with a paired 95% interval below zero. The result remains in the evidence bundle.
+
+The remediation is scope certification with dense fallback. A hybrid profile is enabled only when a disjoint validation set has a lower bootstrap bound above the requested gain. This closes the software path for abstention; it does not establish prospective improvement on unseen scopes. The next acceptance gate is a preregistered evaluation on an untouched collection using a certificate produced without its test labels.
+
+The structured capsule still needs an ablation showing benefit over a same-budget single-view binary code and over graph-only filtering. Current precise hybrid gains cannot be attributed to the 256-bit capsule.
+
+## What v0.4.0 closed
 
 Partial query facets are now explicit rather than fabricated; incompatible schemas are rejected and calibration scopes include the observed facet mask and weights. Dependency-selective cache invalidation replaces unnecessary whole-session clearing and is tested against uncached graph behavior. Three-seed quantizer results and precise fallback address honest comparison and quality protection, not standalone compact superiority.
 

@@ -2,6 +2,14 @@
 
 All versions below are research candidates. The repository is private; this file does not announce a public or PyPI release.
 
+## 0.5.0
+
+- Added typed, directional relation maps with bounded personalized diffusion as an eighth-view input to the 256-bit product-sphere profile. The map remains external and versioned; the stamp is not a serialized graph.
+- Added independent per-view ITQ fitting for a product of facet spheres. The allocation must total exactly 256 bits, and trained families now encode through the same 32-byte stamp format.
+- Added a precise MiniLM/BM25 score-fusion backend and a validation-bound scope certificate. A profile is enabled only when the paired bootstrap lower bound exceeds the caller's minimum gain; otherwise retrieval falls back to dense.
+- Preserved the frozen SciDocs prospective failure: the 0.75/0.25 blend reduced nDCG@10 by 0.0121. The same blend improved SciFact, NFCorpus and ArguAna by 0.0774, 0.0337 and 0.0344 respectively. This is evidence for scope gating, not universal superiority.
+- Added checked evidence for 9,087 query/method records, an animated reference diagram, a static research cover and revised publication material. No claim is made that the 256-bit capsule alone exceeds dense retrieval or changes model-internal attention.
+
 ## 0.4.0
 
 - Added a bounded deterministic facet compiler with per-facet source and rule provenance. Missing facets are omitted; authority, policy and modality remain host assertions.

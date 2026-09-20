@@ -41,6 +41,8 @@ class SphericalStamp:
             raise ValueError("vectors and families must have the same bounded views")
         result = []
         for name, family in families.items():
+            if family.method != "gaussian-v1" or family.mean or family.planes:
+                raise ValueError("spherical-v1 requires uncentered Gaussian angular projections")
             if len(vectors[name]) != family.dim:
                 raise ValueError("vector dimension mismatch")
             values = tuple(float(x) for x in vectors[name])

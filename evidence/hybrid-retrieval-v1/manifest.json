@@ -1,0 +1,72 @@
+{
+  "datasets": [
+    {
+      "bm25_build_seconds": 0.7113892000052147,
+      "data_sha256": {
+        "corpus.jsonl": "dec31c8182f3d744c7d2c09423756fd1d17cbef75808db13ba01cc0aab4d1ac6",
+        "qrels/test.tsv": "0864bb985e0ca2367ba217977e72004d549054b2b06666ed9d4825ac7c21284c",
+        "queries.jsonl": "8ff84a7c903f722981cd8d595c022660140c51867b27608a6d4910db86080313"
+      },
+      "dataset": "scifact",
+      "documents": 5183,
+      "embedding_sha256": {
+        "documents": "67e14c4f90e9851c6c9376b4a70abaf8f04238f77e73f028b765261f2f9435f8",
+        "queries": "6f46cbdd2b589040b980792b04614df98a0839d7cebab96b360849cfe6d2fb36"
+      },
+      "queries": 300
+    },
+    {
+      "bm25_build_seconds": 0.5432846999901813,
+      "data_sha256": {
+        "corpus.jsonl": "10cc83ef1826b1425e6a87090b5140b39b27755d5a27e48215a88611c899991f",
+        "qrels/test.tsv": "f8fba6ef3d4dd9c3a242a8ba4ae38276fc3622fce7dcbae764766d564542fd2a",
+        "queries.jsonl": "d024e6621b84925d485ae473d316a0c3af31c62c8068a59fb29d22f7613aef2a"
+      },
+      "dataset": "nfcorpus",
+      "documents": 3633,
+      "embedding_sha256": {
+        "documents": "a9c40465b4529b4822997cd0e0806ac360ec683fd6b9c89846618416b7e3b1eb",
+        "queries": "3dd31f9c23576186e51eb8ff9e796eccd9a4171c7652e25a3088fa11b856f52b"
+      },
+      "queries": 323
+    },
+    {
+      "bm25_build_seconds": 1.125978900003247,
+      "data_sha256": {
+        "corpus.jsonl": "0627982cec4ee896df6dc98604ef6b499c83fd87a19eaaeb3f23b88bbef6cbce",
+        "qrels/test.tsv": "0c47b481fa8b47fb9ca5e74bc8a017bdea14518c0e4a5d21345291180b3aca76",
+        "queries.jsonl": "f8b7c903f95d9a2d291de3915a8fac25085e9db679f19f59fea4145bfd1df618"
+      },
+      "dataset": "arguana",
+      "documents": 8674,
+      "embedding_sha256": {
+        "documents": "5caeef50eb1ad02cedc238f9e5e07105825e54e79ce96559a53fbb4d333e0c4a",
+        "queries": "5d2cdf34b5eeca37a6ce02d45172ee2c4ca76609a1cd11224ab5ccf34660aa12"
+      },
+      "queries": 1406
+    },
+    {
+      "bm25_build_seconds": 6.756550599995535,
+      "data_sha256": {
+        "corpus.jsonl": "328bb38854179c83ee40d4f49fae2ef7209ede7163785193cbdcd5906b28eecc",
+        "qrels/test.tsv": "dcd3d7f77417294bb6f338537f3c28d8a5ea72b30fe6633f407fa85528767e35",
+        "queries.jsonl": "3c85b68419bd579ff52edb58f9e7b32eb3d18bc83435edb71dbb68aaf79531d6"
+      },
+      "dataset": "scidocs",
+      "documents": 25657,
+      "embedding_sha256": {
+        "documents": "dbb94dacfca96f859e7ef0f1b139bff429bb6f45143ae1fa077c713d95ff6e4b",
+        "queries": "bb09bf093de8df57b4aef7945a197b0e334ae7fa5846dd7ce5deba364bee83e2"
+      },
+      "queries": 1000
+    }
+  ],
+  "numpy": "2.5.3",
+  "profile_identity": "abfe35a5e3d9901a5375e2a6577871e5a3b8512e5cc0f9c1db7dac2071cd5503",
+  "protocol_sha256": "79658c11ff712cf0b265b0563b77410c511b45dd79b645f7b91590e8e0fa0c2e",
+  "python": "3.13.13",
+  "source_sha256": {
+    "context_stamps/hybrid.py": "e58b15372b6fe45aa977555b1296611632f313c15d2dfa37a29099a25c1cacd7",
+    "experiments/run_hybrid_retrieval.py": "a81b6fa01d64ea104a741bb28c1317929105b140377ade8b27f47c599d694352"
+  }
+}

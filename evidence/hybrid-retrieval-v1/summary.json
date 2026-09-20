@@ -1,0 +1,146 @@
+[
+  {
+    "dataset": "scifact",
+    "documents": 5183,
+    "hybrid_minus_dense_bootstrap95": [
+      0.05100338210119556,
+      0.10719751393800821
+    ],
+    "hybrid_minus_dense_ndcg10": 0.07743572602418515,
+    "hybrid_query_losses": 28,
+    "hybrid_query_ties": 185,
+    "hybrid_query_wins": 87,
+    "methods": {
+      "bm25": {
+        "median_query_ms": 0.43920001189690083,
+        "mrr10": 0.6339986772486772,
+        "ndcg10": 0.6646172354026965,
+        "p95_query_ms": 0.7252050061651971,
+        "recall10": 0.7816111111111111
+      },
+      "dense_minilm": {
+        "median_query_ms": 0.38640000275336206,
+        "mrr10": 0.6047248677248678,
+        "ndcg10": 0.6450816521455776,
+        "p95_query_ms": 0.551279992214404,
+        "recall10": 0.7833333333333333
+      },
+      "hybrid_z_075": {
+        "median_query_ms": 1.125000009778887,
+        "mrr10": 0.6865978835978837,
+        "ndcg10": 0.7225173781697627,
+        "p95_query_ms": 1.5454450069228192,
+        "recall10": 0.8455555555555555
+      }
+    },
+    "queries": 300
+  },
+  {
+    "dataset": "nfcorpus",
+    "documents": 3633,
+    "hybrid_minus_dense_bootstrap95": [
+      0.01689774436108175,
+      0.05122381898971228
+    ],
+    "hybrid_minus_dense_ndcg10": 0.033655350177394044,
+    "hybrid_query_losses": 80,
+    "hybrid_query_ties": 126,
+    "hybrid_query_wins": 117,
+    "methods": {
+      "bm25": {
+        "median_query_ms": 0.09089999366551638,
+        "mrr10": 0.5199850115484791,
+        "ndcg10": 0.31030016667962274,
+        "p95_query_ms": 0.31272000924218446,
+        "recall10": 0.1520859587011935
+      },
+      "dense_minilm": {
+        "median_query_ms": 0.27650000993162394,
+        "mrr10": 0.5076539387684899,
+        "ndcg10": 0.31667312754717797,
+        "p95_query_ms": 0.42048000759677934,
+        "recall10": 0.15498797328057845
+      },
+      "hybrid_z_075": {
+        "median_query_ms": 0.6257999921217561,
+        "mrr10": 0.5505454813504349,
+        "ndcg10": 0.35032847772457204,
+        "p95_query_ms": 0.8721400052309036,
+        "recall10": 0.17202838856423894
+      }
+    },
+    "queries": 323
+  },
+  {
+    "dataset": "arguana",
+    "documents": 8674,
+    "hybrid_minus_dense_bootstrap95": [
+      0.021836150405727135,
+      0.04665403097385282
+    ],
+    "hybrid_minus_dense_ndcg10": 0.03442024127376885,
+    "hybrid_query_losses": 318,
+    "hybrid_query_ties": 635,
+    "hybrid_query_wins": 453,
+    "methods": {
+      "bm25": {
+        "median_query_ms": 5.316700000548735,
+        "mrr10": 0.37965380794328163,
+        "ndcg10": 0.46558774911633594,
+        "p95_query_ms": 10.488924996025162,
+        "recall10": 0.7425320056899004
+      },
+      "dense_minilm": {
+        "median_query_ms": 0.7625500002177432,
+        "mrr10": 0.4151787125471336,
+        "ndcg10": 0.5040631158034715,
+        "p95_query_ms": 1.1546500027179718,
+        "recall10": 0.7901849217638691
+      },
+      "hybrid_z_075": {
+        "median_query_ms": 6.662100000539795,
+        "mrr10": 0.44863792363792365,
+        "ndcg10": 0.5384833570772404,
+        "p95_query_ms": 12.052900001435773,
+        "recall10": 0.8278805120910384
+      }
+    },
+    "queries": 1406
+  },
+  {
+    "dataset": "scidocs",
+    "documents": 25657,
+    "hybrid_minus_dense_bootstrap95": [
+      -0.01936395467985773,
+      -0.004628131571976724
+    ],
+    "hybrid_minus_dense_ndcg10": -0.012111211047857643,
+    "hybrid_query_losses": 331,
+    "hybrid_query_ties": 397,
+    "hybrid_query_wins": 272,
+    "methods": {
+      "bm25": {
+        "median_query_ms": 2.032299991697073,
+        "mrr10": 0.26833650793650793,
+        "ndcg10": 0.15037043912635298,
+        "p95_query_ms": 3.063580000161892,
+        "recall10": 0.15576666666666666
+      },
+      "dense_minilm": {
+        "median_query_ms": 2.1208000034675933,
+        "mrr10": 0.3594198412698413,
+        "ndcg10": 0.21640561375981274,
+        "p95_query_ms": 3.298174995143199,
+        "recall10": 0.23086666666666666
+      },
+      "hybrid_z_075": {
+        "median_query_ms": 5.836649987031706,
+        "mrr10": 0.3414361111111111,
+        "ndcg10": 0.2042944027119551,
+        "p95_query_ms": 8.255599996482484,
+        "recall10": 0.21793333333333334
+      }
+    },
+    "queries": 1000
+  }
+]

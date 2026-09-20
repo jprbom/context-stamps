@@ -2,9 +2,13 @@
 
 **Compact context references, exact-first retrieval and version-checked evidence handoffs.**
 
-By **Prashant Jagtap** · Python 3.10+ · MIT-licensed core · **Private research candidate v0.4.0**
+By **Prashant Jagtap** · Python 3.10+ · MIT-licensed core · **Private research candidate v0.5.0**
 
 The repository remains private while validation continues. Access is required to clone it; no PyPI release is available. This candidate keeps the spherical stamp at **256 bits / 32 bytes** and defaults to a precise retrieval backend when a compact shortcut has not qualified on validation data.
+
+![Animated Spherical Context QR workflow](docs/assets/spherical-context-flow-animated.svg)
+
+The 32-byte capsule is a routing identity across eight bounded facets. It does not contain the document or the relationship graph. A resolver uses the capsule to narrow activation, then returns current authorized evidence through an exact, certified compact or precise path. The [interactive reference workflow](docs/assets/spherical-context-workflow.html) exposes each stage and relationship.
 
 ## Start here
 
@@ -25,6 +29,9 @@ These examples run offline without a GPU, service or downloaded model. The first
 |---|---|---|
 | `Stamp256Codec` | Encodes supplied content/entity/intent/task views into 32 raw bytes | Lossy similarity sketch; schema and evidence are external |
 | `FacetCompiler` | Emits observed routing facets with rule and source provenance | Deterministic baseline; not a semantic parser or fact verifier |
+| `RelationMap` | Converts typed, directional links into a bounded diffusion view | Lossy feature input; the source graph remains external and versioned |
+| `HybridScoreProfile` | Fuses standardized semantic and lexical scores in a precise backend | A frozen global blend can regress; use a scope certificate |
+| `ScopeCertificate` | Enables a hybrid profile only when a paired validation lower bound clears the requested gain | Validation must be disjoint from final evaluation |
 | `ProgressiveRouter` | Resolves an explicit source or calls a precise backend; optionally uses a validated compact exit | Exact IDs and similarity do not grant access |
 | `ContextGraph` | Tracks declared relationships, versions and dependency closures | Does not infer missing relationships |
 | `ContextSession` | Reuses valid packets using bounded, expiring 32-byte receipts | Receipts are opaque handles, separate from semantic stamps |
@@ -89,6 +96,25 @@ The compiler extracts bounded identifiers, action terms, declared relations and 
 
 ![Adaptive 256-bit capsule design](docs/assets/adaptive-capsule.png)
 
+## Add typed relationships without putting the graph in the stamp
+
+```python
+from context_stamps import RelationEdge, RelationMap
+
+relations = RelationMap([
+    RelationEdge("implementation", "requirement", "implements", 2.0),
+    RelationEdge("implementation", "test", "verified_by", 1.0),
+    RelationEdge("test", "fixture", "uses", 1.0),
+])
+relation_view = relations.encode("implementation", dim=64, hops=3)
+assert abs(sum(value * value for value in relation_view) - 1.0) < 1e-12
+print(relations.revision)  # Changes when an edge changes.
+```
+
+The encoder performs bounded personalized diffusion, then hashes typed forward and reverse edges into a normalized feature vector. Each facet can be centered and fitted with its own orthogonal ITQ rotation before its assigned bits are packed into the 256-bit capsule. This combines established diffusion, feature-hashing and ITQ mechanisms in a relation-aware routing architecture; it does not claim a new graph algorithm. [Mathematical definition, limits and use](docs/relation-aware-retrieval.md).
+
+![Static Spherical Context QR reference architecture](docs/assets/spherical-context-cover.png)
+
 ## Reuse evidence across workflow steps
 
 ```python
@@ -125,6 +151,8 @@ python examples/partial_facets.py
 
 Selective invalidation was checked against an uncached graph across 4,000 mutation comparisons. A separate 6,600-handoff replay compared exact graph lookup, the old global cache and the new selective cache. At 100 independent declared pairs with one changed pair per round, the new cache reused **1,881 of 2,000 packets**, versus zero for the old cache. All returned packet hashes matched the uncached control. The larger case repeats actual source text under synthetic IDs; it is not 100 real agent tasks. [Results, API and remaining gaps](docs/selective-context.md).
 
+![Selective invalidation and packet reuse](docs/assets/selective-invalidation.png)
+
 ## Create a 32-byte stamp
 
 ```python
@@ -145,22 +173,41 @@ The hashing encoder is a lexical demonstration. Encoder/schema identity, exact s
 
 ## Latest measured retrieval results
 
-nDCG@10 on 2,029 official public queries; higher is better. The encoder is pinned MiniLM. Tests exclude self-document matches and retain missing positives. These public test sets had been inspected in earlier work.
+The compact-only result remains below dense retrieval. Across 2,029 previously inspected public test queries, trained 32-byte ITQ reached 0.5453/0.2501/0.4181 nDCG@10 on SciFact/NFCorpus/ArguAna, versus 0.6451/0.3167/0.5041 for dense MiniLM. Shrinking to 16 bytes worsened all three datasets. Expanding to 64 bytes helped but still remained below dense. The 256-bit profile is therefore a routing and cache key, not a replacement for precise evidence recovery. [Compact training and calibration](docs/progressive-routing.md).
 
-| Method | SciFact | NFCorpus | ArguAna |
-|---|---:|---:|---:|
-| Gaussian 16 bytes | 0.3843 | 0.1698 | 0.3503 |
-| Gaussian 32 bytes | 0.5008 | 0.2236 | 0.4152 |
-| Trained ITQ 32 bytes, three-seed mean | 0.5453 | 0.2501 | 0.4181 |
-| Gaussian 64 bytes | 0.5910 | 0.2602 | 0.4452 |
-| Dense float64 reference | 0.6451 | 0.3167 | 0.5041 |
-| Progressive router, precise fallback | 0.6451 | 0.3167 | 0.5041 |
+![Compact retrieval training across three public datasets](docs/assets/progressive-retrieval.png)
 
-![Three-seed compact retrieval comparison](docs/assets/progressive-retrieval.png)
+The new precise path standardizes MiniLM cosine and BM25 scores over the eligible corpus and applies a weight selected on 146 SciFact validation queries: `0.75 × semantic + 0.25 × lexical`. The first three test sets had already been inspected during exploration. SciDocs was downloaded, hashed and named in the frozen protocol before its retrieval outcome was computed.
 
-ITQ used 391 SciFact training-query embeddings, 50 iterations and seeds 17/41/83. MiniLM was frozen. All seeds are reported; one slightly regressed on ArguAna. ITQ is an established single-view quantization baseline, distinct from the uncentered multi-view spherical codec. No base-model fine-tuning was performed.
+| Precise method, nDCG@10 | SciFact | NFCorpus | ArguAna | SciDocs |
+|---|---:|---:|---:|---:|
+| Dense MiniLM | 0.6451 | 0.3167 | 0.5041 | **0.2164** |
+| BM25 | 0.6646 | 0.3103 | 0.4656 | 0.1504 |
+| Frozen hybrid, 0.75/0.25 | **0.7225** | **0.3503** | **0.5385** | 0.2043 |
+| Hybrid − dense | +0.0774 | +0.0337 | +0.0344 | **−0.0121** |
+| Paired 95% interval | +0.0510 to +0.1072 | +0.0169 to +0.0512 | +0.0218 to +0.0467 | **−0.0194 to −0.0046** |
 
-Training improved mean compact relevance but did not match dense retrieval. The router matched all 2,029 dense top-10 rankings **by using precise retrieval for every query**; it did not make the stamp lossless or demonstrate a retrieval speed gain. Shrinking to 16 bytes worsened all three datasets; 64 bytes is a diagnostic, not the new default. [Full results, calibration and provenance](docs/progressive-routing.md).
+![Dense, BM25 and frozen hybrid retrieval](docs/assets/hybrid-retrieval-comparison.png)
+
+SciDocs is a clear prospective failure of the global blend. It rules out a universal-superiority claim. `certify_hybrid_scope` now issues a scope-bound profile only when a paired bootstrap lower bound on disjoint validation queries exceeds the requested minimum gain. A failed or missing certificate selects dense retrieval. This makes the supported behavior hybrid where validated and dense where the profile abstains; it does not prove that a new unseen scope will improve.
+
+```python
+from context_stamps import HybridScoreProfile, certify_hybrid_scope
+
+profile = HybridScoreProfile(semantic_weight=0.75)
+certificate = certify_hybrid_scope(
+    "corpus-and-encoder-revision",
+    profile,
+    dense_validation_ndcg,
+    hybrid_validation_ndcg,
+)
+if certificate.enabled:
+    scores = profile.fuse(dense_scores, bm25_scores)
+else:
+    scores = dense_scores
+```
+
+Median measured query time for the hybrid path was 1.125/0.626/6.662/5.837 ms, versus 0.386/0.277/0.763/2.121 ms for dense score lookup on SciFact/NFCorpus/ArguAna/SciDocs. Encoder inference, BM25 index construction, network time and capsule candidate-generation time were excluded. The quality gains on three datasets therefore carry real CPU and memory overhead. [Protocol, results, per-query records and checksums](evidence/hybrid-retrieval-v1/).
 
 ## Workflow and transport evidence
 
@@ -168,7 +215,7 @@ Training improved mean compact relevance but did not match dense retrieval. The 
 - **Earlier local SLM pilot:** eight fictional workflows, two repeats. Selected context succeeded in 16/16 versus 10/16 for full context, with 82.79% fewer input tokens and 25.71% lower mean workflow time. Exact graph lookup also succeeded in 16/16 and was faster on average. [Controls and failed iterations](docs/retrieval-repair.md).
 - **Image, speech and video pilots:** 36 generations, 18 direct/routed pairs, identical outputs. Routing added overhead and did not reduce generator tokens or improve quality. [Historical spherical results](docs/spherical-results.md).
 
-Real unseen coding/research tasks, learned facet extraction, the structured profile's retrieval value, internal attention changes, distributed scalability and mobile energy savings remain unproven. The bounded reference graph supports 1,000 nodes and 4,096 relationships. Earlier read-only 1k/10k/100k-vector tests favor Faiss over residual refinement for latency and throughput.
+Real unseen coding/research tasks, learned facet extraction, causal benefit from the structured 256-bit profile, cross-scope certificate transfer, internal attention changes, distributed scalability and mobile energy savings remain unproven. The bounded reference graph supports 1,000 nodes and 4,096 relationships. Earlier read-only 1k/10k/100k-vector tests favor Faiss over residual refinement for latency and throughput. SciDocs demonstrates that a fixed lexical blend can make a strong dense reference worse.
 
 ## Integration and training
 
@@ -190,7 +237,7 @@ python experiments/verify_progressive.py
 python examples/progressive_context.py
 ```
 
-Local validation passed 108 unit tests, including 4,000 mutation-oracle comparisons, plus five secret-scanner controls. The v0.4 controls add eight authored extraction cases, 100 deterministic 32-byte round trips and five router-path checks. These controls verify interface behavior, not retrieval quality. CI runs the Windows/Linux and security checks on each candidate commit. Offline evidence checks verify recorded artifacts and calibration; full quantizer retraining needs external pinned data/embeddings. Run training in a separate checkout because runners regenerate evidence directories. [Training protocol](program.md) · [validation](docs/validation.md) · [scenario matrix](docs/scenario-matrix.md) · [remaining gaps](docs/research-gates.md).
+Local validation passes 114 unit tests, including the existing mutation, extraction, round-trip and routing controls plus product-quantizer, relation-direction, score-fusion and certificate-abstention checks. CI runs the Windows/Linux and security checks on each candidate commit. The new offline verifier checks 9,087 method/query records, source snapshots, aggregate arithmetic and the preserved SciDocs regression. Full benchmark replay still needs the pinned external corpora and embedding caches. [Training protocol](program.md) · [validation](docs/validation.md) · [scenario matrix](docs/scenario-matrix.md) · [remaining gaps](docs/research-gates.md).
 
 ## Security, data and credit
 

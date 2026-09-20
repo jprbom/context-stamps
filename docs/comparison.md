@@ -2,11 +2,11 @@
 
 ## Latest measured comparisons
 
-The private v0.3.3 candidate uses exact-first routing and precise fallback. Three-seed ITQ means are 0.5453/0.2501/0.4181 on SciFact/NFCorpus/ArguAna, still below dense 0.6451/0.3167/0.5041. One ArguAna seed regressed. The router matches dense by fallback, not faster compact retrieval. Faiss remains the stronger measured in-memory latency baseline.
+The private v0.5.0 candidate uses a relation-aware 256-bit product-sphere capsule with exact-first routing and precise fallback. Compact-only three-seed ITQ means remain below dense retrieval. A separate precise MiniLM/BM25 blend improves nDCG@10 on SciFact, NFCorpus and ArguAna, then regresses on the prospective SciDocs check. The implementation now requires a positive scope certificate or uses dense retrieval. Faiss remains the stronger measured in-memory latency baseline for conventional vector indexing.
 
 The latest changing-context replay compares an uncached exact graph, ordinary global cache invalidation and dependency-selective invalidation. All packets match; selective invalidation preserves unrelated cache hits. This is a local packet-handling comparison, not a win over complete third-party agent platforms. [Full comparison](selective-context.md). The feature review and older experiment descriptions below retain their original scope.
 
-Reviewed 2026-09-19. Feature descriptions are drawn from the linked projects. Measured comparisons are in [experimental results](experiments.md); no performance comparison with an entire memory platform is implied.
+Reviewed 2026-09-20. Feature descriptions are drawn from the linked projects. Measured comparisons are in [experimental results](experiments.md); no performance comparison with an entire memory platform is implied.
 
 | Need | Context Stamps | Relevant alternative | Decision guidance |
 |---|---|---|---|
@@ -15,6 +15,8 @@ Reviewed 2026-09-19. Feature descriptions are drawn from the linked projects. Me
 | Reduce a prompt to fit a budget | Keeps whole original chunks with source headers and omission reasons | [LLMLingua](https://github.com/microsoft/LLMLingua) provides learned prompt compression | Use Context Stamps when intact source text and explicit requirements matter; evaluate compression when finer-grained shortening is acceptable. They can be composed. |
 | Persistent personalized agent memory | Explicit source storage; no automatic personal-fact extraction | [Mem0](https://github.com/mem0ai/mem0) provides broader memory infrastructure | Use Context Stamps when the application owns ingestion and version state; consider Mem0 for a broader memory lifecycle. |
 | Compact embedding search | Portable projection families and Hamming ranking | [Sentence Transformers quantization](https://huggingface.co/blog/embedding-quantization) supports binary/scalar quantization and reranking | Compact codes are established technology. Context Stamps adds evidence handling around them; it does not claim to invent quantization. |
+| Combine semantic and exact-term retrieval | Standardized MiniLM/BM25 fusion with validation-bound admission and dense fallback | [Elasticsearch hybrid search](https://www.elastic.co/guide/en/elasticsearch/reference/current/semantic-text-hybrid-search.html) and other search stacks combine lexical and vector ranking | Use an optimized search platform for production indexing. The reference code is useful when the admission decision and failed-scope evidence must remain small and inspectable. |
+| Route across several context facets | Fixed 256-bit product of semantic, task, entity, relation, temporal, authority, policy and modality views | Multi-vector retrieval systems retain several token or field vectors, usually at a larger storage budget | Use the capsule for a bounded first-stage key; retain multi-vector or dense evidence for precise recovery. No same-budget superiority is established yet. |
 
 ## Why it can be easier
 

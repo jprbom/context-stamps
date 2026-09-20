@@ -7,9 +7,12 @@ from .facet_compiler import CompiledFacets, FacetCompiler, FacetEvidence
 from .facet_model import FacetModel
 from .facets import FacetQuery
 from .guarded_activation import activate_constrained
+from .hybrid import HybridScoreProfile, ScopeCertificate, certify_hybrid_scope, standardize_scores
+from .learning import fit_product_families
 from .memory import ContextMemory, Packet
 from .packed_index import PackedStampIndex
 from .pretrained import load_experimental_model
+from .relation_map import RelationEdge, RelationMap
 from .requirements import Claim, Requirement, rank_candidates_safe, select_structured
 from .residual_index import ResidualIndex
 from .routing import ProgressiveRouter, RoutingPolicy, fit_routing_policy
@@ -20,11 +23,18 @@ from .spherical import SphericalStamp
 from .stamp256 import STRUCTURED_256_PROFILE, Stamp256Codec, structured_256_codec
 from .workflow import ContextGraph, ContextNode
 
-__version__ = "0.4.0"
+__version__ = "0.5.0"
 __all__ = [
     "CompiledFacets",
     "FacetCompiler",
     "FacetEvidence",
+    "HybridScoreProfile",
+    "ScopeCertificate",
+    "standardize_scores",
+    "certify_hybrid_scope",
+    "fit_product_families",
+    "RelationEdge",
+    "RelationMap",
     "FacetQuery",
     "ContextSession",
     "ProgressiveRouter",

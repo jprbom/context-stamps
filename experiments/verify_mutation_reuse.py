@@ -15,13 +15,21 @@ def read(path):
     return json.loads(path.read_text(encoding='utf-8'))
 
 
+def historical_source(filename, digest):
+    current = ROOT / filename.replace('\\', '/')
+    if current.is_file() and hashlib.sha256(current.read_bytes()).hexdigest() == digest:
+        return current
+    return ROOT / 'evidence/source-snapshots' / f'{Path(filename).stem}-{digest}{Path(filename).suffix}'
+
+
 def main():
     for filename, digest in read(OUT / 'checksums.json').items():
         assert hashlib.sha256((OUT / filename).read_bytes()).hexdigest() == digest
     manifest = read(OUT / 'manifest.json')
     for field in ('source_sha256', 'input_sha256'):
         for filename, digest in manifest[field].items():
-            assert hashlib.sha256((ROOT / filename).read_bytes()).hexdigest() == digest, filename
+            path = historical_source(filename, digest)
+            assert hashlib.sha256(path.read_bytes()).hexdigest() == digest, filename
     rows = read(OUT / 'results.json')
     assert len(rows) == 6600
     exact = {(r['pairs'], r['round'], r['pair']): r for r in rows if r['method'] == 'exact_graph'}

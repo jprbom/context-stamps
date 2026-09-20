@@ -1,0 +1,32 @@
+{
+  "format": "hybrid-retrieval-v1",
+  "frozen_before_scidocs_evaluation": true,
+  "frozen_date": "2026-09-20",
+  "research_status": "SciFact, NFCorpus and ArguAna test results were inspected during earlier work and exploratory fusion. SciDocs was downloaded and hashed but its retrieval outcomes had not been computed when this protocol was written.",
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "encoder_revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "dense_score": "cosine similarity of normalized 384-dimensional embeddings",
+  "lexical_score": "BM25 with k1=1.5 and b=0.75",
+  "fusion": "0.75*z(dense)+0.25*z(BM25), with population mean and standard deviation over the eligible corpus",
+  "semantic_weight": 0.75,
+  "selection": "Selected from a 0.05 grid using only the existing 146-query SciFact validation partition; test values did not select the final 0.75 value.",
+  "methods": ["dense_minilm", "bm25", "hybrid_z_075"],
+  "metric": "graded nDCG@10 with linear gains; recall@10; reciprocal rank at 10",
+  "candidate_scope": "all corpus documents, excluding an identical query/document identifier",
+  "uncertainty": "paired query bootstrap, 5000 samples, seed 20260920; percentile intervals are descriptive and not multiplicity adjusted",
+  "datasets": ["scifact", "nfcorpus", "arguana", "scidocs"],
+  "scidocs": {
+    "download_url": "https://public.ukp.informatik.tu-darmstadt.de/thakur/BEIR/datasets/scidocs.zip",
+    "archive_md5": "38121350fc3a4d2f48850f6aff52e4a9",
+    "archive_sha256": "96640201687767c9b1fcc5af7a80b90fb325b37fa25329c2586c25edcfa17ef1",
+    "data_sha256": {
+      "corpus.jsonl": "328bb38854179c83ee40d4f49fae2ef7209ede7163785193cbdcd5906b28eecc",
+      "queries.jsonl": "3c85b68419bd579ff52edb58f9e7b32eb3d18bc83435edb71dbb68aaf79531d6",
+      "qrels/test.tsv": "dcd3d7f77417294bb6f338537f3c28d8a5ea72b30fe6633f407fa85528767e35"
+    },
+    "documents": 25657,
+    "queries": 1000,
+    "license_note": "BEIR's Hugging Face card declares CC-BY-SA-4.0; BEIR also instructs users to verify original dataset rights. Raw data is not redistributed here."
+  },
+  "limits": "The method is a precise hybrid retriever, not a 256-bit-only result. The first three test sets were previously inspected. SciDocs is the prospective check. Encoder inference, BM25 indexing and network time are excluded from per-query timings."
+}

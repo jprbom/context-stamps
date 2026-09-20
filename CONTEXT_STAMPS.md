@@ -1,6 +1,8 @@
 # Using Context Stamps in an agent workflow
 
-For the current Python integration, use `ProgressiveRouter` and `ContextSession` as shown in `examples/progressive_context.py`. Resolve authorized exact IDs directly. Otherwise use the host's precise backend unless a scope-matched compact policy has qualified and its certified error bound fits the caller's risk budget. Use `FacetQuery` for explicitly missing query facets; do not invent values or reuse a policy across facet masks. `FacetCompiler` may provide inspectable routing hints, but its output does not establish authority or grant access. Keep authorization and required-source checks outside the score. Reuse only live receipts and resolve actual evidence before model use. See `docs/agent-instructions.md`.
+For the current Python integration, use `ProgressiveRouter` and `ContextSession` as shown in `examples/progressive_context.py`. Resolve authorized exact IDs directly. Otherwise use the host's precise backend unless a scope-matched compact policy has qualified and its certified error bound fits the caller's risk budget. `RelationMap` can add a bounded typed-relationship view to a spherical capsule; it does not replace dependency traversal. `HybridScoreProfile` can combine semantic and lexical scores only when `certify_hybrid_scope` qualifies a disjoint validation set. A failed or missing certificate uses dense retrieval.
+
+Use `FacetQuery` for explicitly missing query facets; do not invent values or reuse a policy across facet masks. `FacetCompiler` may provide inspectable routing hints, but its output does not establish authority or grant access. Keep authorization and required-source checks outside the score. Reuse only live receipts and resolve actual evidence before model use. See `docs/agent-instructions.md` and `examples/relation_aware_routing.py`.
 
 The instructions below remain the separate SQLite CLI workflow.
 

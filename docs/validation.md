@@ -66,3 +66,14 @@ No independent penetration test, generative-model fine-tune, production-readines
 Remote CI status must be checked on the pushed candidate commit. The repository remains private; no public-release readiness is implied by local checks.
 
 A clean wheel installation with no optional dependencies loaded the bundled experimental scorer and ran `scqr encode` successfully. Historical workflow source is preserved under `evidence/source-snapshots` when a later capacity fix changes its file hash. Source manifests identify the original runtime path and its exact snapshot; current regression tests exercise the patched implementation.
+
+## Private v0.5 candidate verification
+
+- The hybrid-retrieval-v1 protocol was written after the first three datasets had been inspected but before SciDocs outcomes were computed. It pins the encoder revision, BM25 parameters, 0.75 validation-selected semantic weight, metric and bootstrap seed.
+- The run contains 9,087 method/query records: dense MiniLM, BM25 and the frozen hybrid for 300 SciFact, 323 NFCorpus, 1,406 ArguAna and 1,000 SciDocs queries. `verify_hybrid_retrieval.py` checks checksums, source snapshots, record uniqueness, aggregate arithmetic and the expected sign of every paired interval.
+- The hybrid improved nDCG@10 on the three previously inspected datasets. It regressed on prospective SciDocs by 0.0121, with a paired 95% interval from −0.0194 to −0.0046. The failure remains in the candidate and is the reason scope certification defaults to dense fallback.
+- Relation-map controls check direction, revision sensitivity, normalization and bounds. Product-family controls fit eight independent 32-bit ITQ blocks, concatenate exactly 256 bits and encode through `SphericalStamp`.
+- Certificate controls check both a positive-gain admission and a regression abstention. These are deterministic interface tests; they are not a prospective validation of the remediation.
+- The animated and interactive workflow diagrams passed their structural and multi-viewport checks. The static cover and benchmark plot were visually inspected at full resolution.
+
+Raw BEIR corpora and embedding caches remain outside the repository. Encoder inference, BM25 construction, network time and capsule candidate generation are excluded from the recorded per-query score timing. No base-model fine-tuning, internal attention modification, mobile-device result or production load claim is made.

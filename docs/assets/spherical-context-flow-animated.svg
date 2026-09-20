@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="627" viewBox="0 0 1200 627" role="img" aria-labelledby="title desc">
+  <title id="title">Spherical Context QR relation-aware retrieval</title>
+  <desc id="desc">Source evidence and typed relationships form eight spherical facet views. They are quantized into a 256-bit routing capsule, which selects authorized candidates for precise hybrid reranking and grounded context delivery.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#315f67"/></marker>
+    <pattern id="bits" width="10" height="10" patternUnits="userSpaceOnUse">
+      <rect width="10" height="10" fill="#f8faf8"/><rect x="1" y="1" width="4" height="4" fill="#315f67"/><rect x="6" y="6" width="3" height="3" fill="#b6654a"/>
+    </pattern>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#16343a" flood-opacity=".12"/></filter>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#17343a}.small{font-size:12px;letter-spacing:.04em}.label{font-size:14px;font-weight:600}.note{font-size:12px;fill:#5e7073}.white{fill:#fff}.light{fill:#d7e4df}.mint{fill:#b6d0c8}.flow{fill:none;stroke:#315f67;stroke-width:2;marker-end:url(#arrow);stroke-dasharray:8 8;animation:move 2.8s linear infinite}.orbit{fill:none;stroke:#7fa6a8;stroke-width:1.4}.pulse{animation:pulse 2.8s ease-in-out infinite;transform-box:fill-box;transform-origin:center}.bitgrid{animation:bitsPulse 2.8s ease-in-out infinite}@keyframes move{to{stroke-dashoffset:-32}}@keyframes pulse{0%,100%{opacity:.72;transform:scale(.96)}50%{opacity:1;transform:scale(1.04)}}@keyframes bitsPulse{0%,100%{opacity:.78}50%{opacity:1}}@media(prefers-reduced-motion:reduce){.flow,.pulse,.bitgrid{animation:none}}
+    </style>
+  </defs>
+  <rect width="1200" height="627" fill="#f4f2ec"/>
+  <path d="M48 107H1152" stroke="#c8d0cc"/>
+  <text x="48" y="50" font-size="29" font-weight="700">Spherical Context QR</text>
+  <text x="48" y="81" font-size="16" fill="#4e666a">A 256-bit relation-aware routing capsule with a precise evidence recovery path</text>
+  <text x="1152" y="53" text-anchor="end" class="small" fill="#7a5c4e">REFERENCE ARCHITECTURE · v0.5</text>
+
+  <g filter="url(#soft)">
+    <rect x="48" y="153" width="174" height="236" rx="8" fill="#fbfaf7" stroke="#bdc9c5"/>
+    <text x="67" y="181" class="small" fill="#65787a">01 · SOURCE</text>
+    <rect x="67" y="205" width="136" height="42" rx="5" fill="#e7efeb" stroke="#7c9d92"/><text x="135" y="231" text-anchor="middle" class="label">Text + code</text>
+    <rect x="67" y="260" width="136" height="42" rx="5" fill="#eee9f1" stroke="#9b88a5"/><text x="135" y="286" text-anchor="middle" class="label">Events + state</text>
+    <rect x="67" y="315" width="136" height="52" rx="5" fill="#f3e7df" stroke="#b87860"/><text x="135" y="337" text-anchor="middle" class="label">Typed relations</text><text x="135" y="354" text-anchor="middle" class="note">direction + weight</text>
+  </g>
+
+  <path class="flow" d="M222 271H286"/>
+  <g transform="translate(416 270)" filter="url(#soft)">
+    <circle r="126" fill="#fbfaf7" stroke="#315f67" stroke-width="2"/>
+    <ellipse class="orbit" rx="110" ry="42"/><ellipse class="orbit" rx="110" ry="42" transform="rotate(60)"/><ellipse class="orbit" rx="110" ry="42" transform="rotate(120)"/>
+    <circle r="46" fill="#e4eeea" stroke="#315f67"/><text y="-5" text-anchor="middle" class="label">Product of</text><text y="14" text-anchor="middle" class="label">facet spheres</text>
+    <g class="pulse">
+      <circle cx="0" cy="-111" r="12" fill="#315f67"/><circle cx="78" cy="-78" r="12" fill="#6d8f85"/><circle cx="111" cy="0" r="12" fill="#9b88a5"/><circle cx="78" cy="78" r="12" fill="#b6654a"/><circle cx="0" cy="111" r="12" fill="#315f67"/><circle cx="-78" cy="78" r="12" fill="#6d8f85"/><circle cx="-111" cy="0" r="12" fill="#9b88a5"/><circle cx="-78" cy="-78" r="12" fill="#b6654a"/>
+    </g>
+    <text x="0" y="-91" text-anchor="middle" class="small">semantic</text><text x="91" y="-58" class="small">task</text><text x="90" y="25" class="small">entity</text><text x="70" y="101" class="small">relation</text><text x="0" y="99" text-anchor="middle" class="small">time</text><text x="-145" y="101" class="small">authority</text><text x="-157" y="25" class="small">policy</text><text x="-142" y="-58" class="small">modality</text>
+  </g>
+  <text x="416" y="422" text-anchor="middle" class="note">Independent normalization + learned orthogonal rotations</text>
+
+  <path class="flow" d="M548 270H625"/>
+  <g filter="url(#soft)">
+    <rect x="637" y="168" width="178" height="204" rx="9" fill="#fbfaf7" stroke="#b6654a" stroke-width="2"/>
+    <text x="656" y="197" class="small" fill="#7a5c4e">02 · QUANTIZE</text>
+    <rect class="bitgrid" x="666" y="216" width="120" height="120" fill="url(#bits)" stroke="#315f67"/>
+    <text x="726" y="356" text-anchor="middle" class="label">256 bits / 32 bytes</text>
+  </g>
+  <text x="726" y="398" text-anchor="middle" class="note">Lossy routing identity; source evidence remains external</text>
+
+  <path class="flow" d="M815 270H874"/>
+  <g filter="url(#soft)">
+    <rect x="888" y="153" width="264" height="236" rx="8" fill="#fbfaf7" stroke="#bdc9c5"/>
+    <text x="908" y="181" class="small" fill="#65787a">03 · RECOVER</text>
+    <rect x="908" y="205" width="224" height="42" rx="5" fill="#e7efeb" stroke="#7c9d92"/><text x="1020" y="231" text-anchor="middle" class="label">Risk-aware route</text>
+    <path class="flow" d="M1020 247V273"/>
+    <rect x="908" y="278" width="224" height="42" rx="5" fill="#eee9f1" stroke="#9b88a5"/><text x="1020" y="304" text-anchor="middle" class="label">Authorized candidates</text>
+    <path class="flow" d="M1020 320V346"/>
+    <rect x="908" y="351" width="224" height="42" rx="5" fill="#e7efeb" stroke="#7c9d92"/><text x="1020" y="377" text-anchor="middle" class="label">Precise hybrid ranker</text>
+  </g>
+
+  <path class="flow" d="M1020 393V457H900"/>
+  <rect x="756" y="438" width="396" height="105" rx="8" fill="#17343a"/>
+  <text x="782" y="469" class="small mint">GROUNDED CONTEXT</text>
+  <text x="782" y="498" font-size="16" font-weight="600" class="white">Evidence, provenance and relevant relationships</text>
+  <text x="782" y="523" font-size="13" class="light">Delivered within explicit scope and error budgets</text>
+
+  <g transform="translate(48 473)">
+    <rect width="648" height="93" rx="8" fill="#fbfaf7" stroke="#bdc9c5"/>
+    <text x="20" y="29" class="label">The capsule is a compact index, not a compressed document.</text>
+    <text x="20" y="54" class="note">It narrows activation across semantic, task, entity, relation, temporal, authority,</text>
+    <text x="20" y="74" class="note">policy and modality views. Precise retrieval reconstructs the context used by the model.</text>
+  </g>
+  <text x="48" y="606" class="small">PRASHANT JAGTAP · CONTEXT STAMPS RESEARCH</text>
+</svg>

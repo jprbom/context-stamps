@@ -22,11 +22,18 @@ def read(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def historical_source(filename, digest):
+    current = ROOT / filename.replace("\\", "/")
+    if current.is_file() and hashlib.sha256(current.read_bytes()).hexdigest() == digest:
+        return current
+    return ROOT / "evidence/source-snapshots" / f"{Path(filename).stem}-{digest}{Path(filename).suffix}"
+
+
 def main():
     structured = ROOT / "evidence/structured-v1"
     manifest = read(structured / "manifest.json")
     for name, sha in manifest["source_sha256"].items():
-        assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == sha
+        assert hashlib.sha256(historical_source(name, sha).read_bytes()).hexdigest() == sha
     assert regression() == read(structured / "regression.json")
     fixtures, fresh = prospective(manifest["protocol"]["seed"])
     # JSON encodes the generator's (source, document) tuples as arrays.
@@ -37,7 +44,7 @@ def main():
         for name, sha in read(folder / "checksums.json").items():
             assert hashlib.sha256((folder / name).read_bytes()).hexdigest() == sha, name
         for name, sha in read(folder / "manifest.json")["source_sha256"].items():
-            assert hashlib.sha256((ROOT / name).read_bytes()).hexdigest() == sha, name
+            assert hashlib.sha256(historical_source(name, sha).read_bytes()).hexdigest() == sha, name
     folder = ROOT / "evidence/pairwise-v1"
     cases, records = read(folder / "fixtures.json"), read(folder / "results.json")
     for seed in (17, 41, 83):

@@ -1,5 +1,13 @@
 # Failure ledger and release gates
 
+## v0.5.0: relation-aware product spheres and a failed prospective blend
+
+The frozen 0.75 MiniLM / 0.25 BM25 blend improved three previously inspected datasets but regressed on the untouched SciDocs check: 0.2043 versus 0.2164 dense nDCG@10, with a paired 95% interval from −0.0194 to −0.0046. The result is preserved under `evidence/hybrid-retrieval-v1`. A fixed blend is therefore not a universal replacement for dense retrieval.
+
+`certify_hybrid_scope` now binds the profile to one validation scope and enables it only when a paired bootstrap lower bound exceeds the minimum requested gain. Otherwise it abstains and selects dense scores. This protects a validated deployment policy; it does not convert the post-failure remediation into prospective evidence. The next test must freeze the scope rule before evaluating a new untouched test set.
+
+Typed relation diffusion and per-facet ITQ now feed the 256-bit product-sphere capsule. These additions make the multidimensional mechanism concrete, but their causal retrieval benefit has not yet been isolated from the precise hybrid backend.
+
 ## v0.4.0: inspectable facets and risk-budgeted routing
 
 The repository now has a deterministic observed-facet compiler, but it is not an independently evaluated semantic extractor. Its eight authored cases validate reproducible behavior only. The structured 96/32/32/32/16/16/16/16 profile is exactly 256 bits and passes 100 round trips; its retrieval value and bit allocation remain untested. Compact exits now require a nonzero validation count and a certified error upper bound within the caller's budget. The public compact policy still does not qualify, so precise fallback remains the measured default. [Design, controls and next gate](adaptive-capsules.md).
@@ -48,6 +56,8 @@ Private research candidate. Passing a controlled fixture is not proof of general
 | Multimodal / edge claims untested | Maintain explicit modality and hardware matrix | Integration pilots do not establish perceptual quality or edge energy savings |
 | Prompt injection and secret detection | Document as unsolved host/model responsibilities | No claim that a stamp sanitizes malicious instructions |
 | Large-scale / concurrent production operation | Bounded in-memory reference implementation | No distributed consistency, multi-tenant service or high-load benchmark |
+| Frozen lexical/semantic blend regressed on SciDocs | Added scope-bound certificate and dense fallback | Failure retained; remediation still needs an untouched preregistered evaluation |
+| Precise hybrid gain attributed to the capsule | Documented separate compact routing and precise recovery stages | No causal capsule gain claimed; same-budget ablation remains open |
 
 ## Before a public release
 

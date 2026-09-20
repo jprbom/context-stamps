@@ -21,6 +21,14 @@ def read(path):
     return json.loads(path.read_text(encoding="utf-8"))
 
 
+def historical_source(filename, digest):
+    filename = filename.replace("\\", "/")
+    current = ROOT / filename
+    if current.is_file() and hashlib.sha256(current.read_bytes()).hexdigest() == digest:
+        return current
+    return ROOT / "evidence/source-snapshots" / f"{Path(filename).stem}-{digest}{Path(filename).suffix}"
+
+
 def verify():
     replay_count = 0
     guarded_rows = []
@@ -33,7 +41,7 @@ def verify():
             for filename, expected in manifest.get(key, {}).items():
                 # Historical manifests were emitted on Windows. Preserve their
                 # recorded keys while resolving separators on every supported OS.
-                path = ROOT / filename.replace("\\", "/")
+                path = historical_source(filename, expected) if key == "source_sha256" else ROOT / filename.replace("\\", "/")
                 assert hashlib.sha256(path.read_bytes()).hexdigest() == expected, filename
         if name in {"spherical-v1", "spherical-v2"}:
             cases = read(folder / "fixtures.json")
