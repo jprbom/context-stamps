@@ -20,11 +20,13 @@
       "current_sources": [
         "context_stamps/runtime.py",
         "examples/enterprise_decision.py",
-        "examples/audited_decision.py"
+        "examples/audited_decision.py",
+        "examples/managed_decision.py",
+        "examples/persistent_context.py"
       ],
       "status": "partial_integrated",
       "completion_proof": "One integrated end-to-end task from authorized source state through sufficient compilation, decision and verifiable receipt.",
-      "implementation_note": "Offline authorized context compilation, typed decision, durable reference-only outcome, checkpoint replay and current-reference revocation demonstrated. Learned intelligence and managed model/tool execution remain incomplete."
+      "implementation_note": "Offline durable context, bounded working set, authorized compilation, managed execution, typed decision and durable audit integrated. Learned intelligence and real model/tool qualification remain incomplete."
     },
     {
       "id": "EC02",
@@ -141,10 +143,16 @@
         "pinning"
       ],
       "current_sources": [
-        "context_stamps/session.py"
+        "context_stamps/session.py",
+        "context_stamps/state_store.py",
+        "context_stamps/working_set.py",
+        "tests/test_state_store.py",
+        "tests/test_working_set.py",
+        "evidence/enterprise-storage-v1/local-cpu/manifest.json"
       ],
-      "status": "partial_existing",
-      "completion_proof": "Bounded capacities, pins, authorization and dependency correctness under eviction and faults."
+      "status": "partial_implemented",
+      "completion_proof": "Bounded capacities, pins, authorization and dependency correctness under eviction and faults.",
+      "implementation_note": "Cold payloads, authenticated inventories, dependency-closed activation, pins, faults, eviction and cancellable explicit prefetch tested. Serialized resident-body quotas exclude catalogue/transient/caller memory; large-scale and model-token qualification remain."
     },
     {
       "id": "EC08",
@@ -174,9 +182,14 @@
         "ARCHIVED",
         "reasoning eviction separate from compliance retention"
       ],
-      "current_sources": [],
-      "status": "not_started",
-      "completion_proof": "Retention holds, live dependents, archive integrity and permitted deletion tested."
+      "current_sources": [
+        "context_stamps/state_store.py",
+        "context_stamps/working_set.py",
+        "tests/test_working_set.py"
+      ],
+      "status": "partial_implemented",
+      "completion_proof": "Retention holds, live dependents, archive integrity and permitted deletion tested.",
+      "implementation_note": "HOT/WARM/COLD residency and reasoning eviction preserve immutable durable versions and pinned dependencies. Compliance retention holds, archival policy and physical deletion remain."
     },
     {
       "id": "EC10",
@@ -198,7 +211,7 @@
       ],
       "status": "partial_implemented",
       "completion_proof": "Bitemporal queries and late corrections without future leakage; current authorization for historical reads.",
-      "implementation_note": "In-memory validity/knowledge cutoffs, host transaction time and exact supersession tested; durable history and inverse supersession audit API remain."
+      "implementation_note": "Durable signed history, validity/knowledge cutoffs, host transaction time, inverse supersession lineage and current authorization tested after restart. Distributed time semantics and large-scale qualification remain."
     },
     {
       "id": "EC11",
@@ -275,9 +288,15 @@
         "useful-prefetch ratio",
         "net latency after wasted work"
       ],
-      "current_sources": [],
-      "status": "not_started",
-      "completion_proof": "Prospective chronological task streams; total cost, wrong prefetch, revocation and zero-repeat controls."
+      "current_sources": [
+        "context_stamps/working_set.py",
+        "tests/test_working_set.py",
+        "experiments/storage_validation.py",
+        "evidence/enterprise-storage-v1/local-cpu/manifest.json"
+      ],
+      "status": "partial_implemented",
+      "completion_proof": "Prospective chronological task streams; total cost, wrong prefetch, revocation and zero-repeat controls.",
+      "implementation_note": "Explicit asynchronous prefetch stays inactive until demand; cancellation, late completion, revocation and foreground priority tested. Fixed-successor prefetch was slower than working-set reuse alone in all three synthetic repeat regimes. Learned prediction and prospective public tasks remain; prefetch is opt-in."
     },
     {
       "id": "EC15",
@@ -375,7 +394,8 @@
         "evidence/runtime-v1/latency-manifest.json"
       ],
       "status": "partial_existing",
-      "completion_proof": "Licenses/revisions/native scoring, prospective task IDs, contamination/length audit and matched strong controls."
+      "completion_proof": "Licenses/revisions/native scoring, prospective task IDs, contamination/length audit and matched strong controls.",
+      "implementation_note": "Expanded to model-alone versus runtime-assisted open-weight/frontier pairs, coding-agent harness comparisons and quality/cost/latency/resource accounting. Start locally; frontier preparation only, no paid calls authorized. Established harness and license review precede execution."
     },
     {
       "id": "EC20",
@@ -402,13 +422,16 @@
         "context_stamps/execution.py",
         "tests/test_execution.py",
         "experiments/execution_validation.py",
-        "evidence/enterprise-execution-v1/local-cpu-v3/manifest.json"
+        "evidence/enterprise-execution-v1/local-cpu-v3/manifest.json",
+        "context_stamps/state_store.py",
+        "context_stamps/working_set.py",
+        "evidence/enterprise-storage-v1/local-cpu/manifest.json"
       ],
       "status": "partial_implemented",
       "completion_proof": "Restart/race/revocation/security evidence, permitted exports, claim-to-evidence report and reproducible release.",
-      "implementation_note": "Transactional audit, exclusive managed dispatch, owned-process cancellation, outcome capacity reservations, unknown usage and verified terminal provider reconciliation implemented with crash/race/revocation tests. Parent callback cancellation, descendant containment, durable context retention, export policy and independent replication remain."
+      "implementation_note": "Transactional audit, managed dispatch/cancellation/reconciliation and durable signed context integrated with crash/race/revocation tests. Parent callback cancellation, descendant containment, retention/deletion, export policy and independent replication remain."
     }
   ],
   "evidence_boundary": "Existing/draft sources do not prove the complete requirement. No 1.0 or universal capability claim.",
-  "latest_engineering_evidence": "evidence/enterprise-execution-v1/local-cpu-v3/manifest.json"
+  "latest_engineering_evidence": "evidence/enterprise-storage-v1/local-cpu/manifest.json"
 }

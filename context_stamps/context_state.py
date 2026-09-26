@@ -236,6 +236,38 @@ class EvidenceRequirement:
                 and (not self.verified or node.validation_revision is not None))
 
 
+def visible_records(records, acl, revoked, scope, *, at, known_at):
+    """Filter version metadata before reading payloads; shared by both state owners."""
+    known = {r.node.ref: r for r in records
+             if r.transaction_time <= known_at and r.node.temporal.observed_at <= known_at}
+    # Expiry/revocation of a replacement does not resurrect an older version.
+    retired = set()
+    pending = [ref for r in known.values() if r.node.temporal.start <= at for ref in r.node.supersedes]
+    while pending:
+        ref = pending.pop()
+        if ref not in retired:
+            retired.add(ref)
+            if ref in known:
+                pending.extend(known[ref].node.supersedes)
+    excluded = retired | revoked
+    visible = {ref: r for ref, r in known.items() if ref not in excluded
+        and r.node.temporal.applies(at) and r.node.lifecycle not in ("INVALID", "SUPERSEDED")
+        and set(scope.roles).intersection(acl[r.node.key])}
+    # Do not leak hidden dependency IDs through an otherwise visible node.
+    dependents, blocked = {}, []
+    for ref, record in visible.items():
+        for dependency in record.node.dependencies:
+            dependents.setdefault(dependency, []).append(ref)
+        if any(dependency not in visible for dependency in record.node.dependencies):
+            blocked.append(ref)
+    while blocked:
+        ref = blocked.pop()
+        if ref in visible:
+            del visible[ref]
+            blocked.extend(dependents.get(ref, ()))
+    return tuple(sorted(visible.values(), key=lambda r: (r.node.key, r.node.revision)))
+
+
 class ContextState:
     """Tenant-local append-only versions with current host-supplied ACLs.
 
@@ -326,34 +358,7 @@ class ContextState:
         with self._lock:
             if not self._authorized(scope):
                 raise PermissionError("unavailable context")
-            known = {r.node.ref: r for r in self._records.values()
-                     if r.transaction_time <= known_at and r.node.temporal.observed_at <= known_at}
-            # Expiry/revocation of a replacement does not resurrect an older version.
-            retired = set()
-            pending = [ref for r in known.values() if r.node.temporal.start <= at for ref in r.node.supersedes]
-            while pending:
-                ref = pending.pop()
-                if ref not in retired:
-                    retired.add(ref)
-                    if ref in known:
-                        pending.extend(known[ref].node.supersedes)
-            excluded = retired | self._revoked
-            visible = {ref: r for ref, r in known.items() if ref not in excluded
-                and r.node.temporal.applies(at) and r.node.lifecycle not in ("INVALID", "SUPERSEDED")
-                and set(scope.roles).intersection(self._acl[r.node.key])}
-            # Do not leak hidden dependency IDs through an otherwise visible node.
-            dependents, blocked = {}, []
-            for ref, record in visible.items():
-                for dependency in record.node.dependencies:
-                    dependents.setdefault(dependency, []).append(ref)
-                if any(dependency not in visible for dependency in record.node.dependencies):
-                    blocked.append(ref)
-            while blocked:
-                ref = blocked.pop()
-                if ref in visible:
-                    del visible[ref]
-                    blocked.extend(dependents.get(ref, ()))
-            records = tuple(sorted(visible.values(), key=lambda r: (r.node.key, r.node.revision)))
+            records = visible_records(self._records.values(), self._acl, self._revoked, scope, at=at, known_at=known_at)
             return ContextSnapshot(scope, at, known_at, records, self._signature(scope, at, known_at, records))
 
     def is_current(self, snapshot):

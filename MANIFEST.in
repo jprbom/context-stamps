@@ -22,5 +22,6 @@ recursive-include evidence/enterprise-context-v1 *.log
 recursive-include evidence/enterprise-state-v1 *.log
 recursive-include evidence/enterprise-audit-v1 *.log
 recursive-include evidence/enterprise-execution-v1 *.log
+recursive-include evidence/enterprise-storage-v1 *.log
 recursive-include evidence/engineering-sources-v1 *.gz
 recursive-include evidence/general-learning-v1 *.log
