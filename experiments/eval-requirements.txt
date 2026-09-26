@@ -1,0 +1,6 @@
+# Optional evaluation environment; independent of the package's standard-library core.
+# Each prepared plan records all installed transitive versions as well.
+inspect-ai==0.3.269
+inspect-evals==0.22.0
+openai==3.19.2
+ollama==0.6.2

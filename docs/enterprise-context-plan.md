@@ -107,6 +107,8 @@ For every experiment record per-task success, false acceptance, abstention, evid
 
 The expanded evaluation programme adds matched local open-weight and frontier-model runs. Use the same model and agent scaffold with and without the runtime to isolate its effect; comparisons between different models are a separate analysis. Start locally. Frontier runs are preparation-only: no paid provider calls are authorized. Review established harnesses, including Harbor/Cline Bench for coding agents and Inspect for model/task evaluation, before adding adapters. Preserve native task scoring, sandbox code execution, freeze development and final evaluation partitions, and never repeatedly tune against a final test set. Label pilot subsets and unsupported context lengths explicitly. Model revisions and task licenses must be checked before each registered run.
 
+The [evaluation programme](evaluation-programme.md) records the harness decisions, paired protocol, metrics, local runner and current setup failure. No new native model benchmark has completed yet.
+
 Release proof requires reproducible CPU/RTX profiles, source/data/model hashes, security/isolation tests, independent reruns, a claim-to-evidence map, source/model/data notices and owner attribution. Public documentation must distinguish implemented APIs, measured local results and unproven research targets. No universal-superiority or AGI claim follows from this programme.
 
 ## Immediate work

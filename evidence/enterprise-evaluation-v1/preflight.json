@@ -1,0 +1,80 @@
+{
+  "schema": 1,
+  "observed_date": "2026-09-26",
+  "status": "setup_failed_before_generation",
+  "attempt": "native Inspect ARC-Challenge prepare, local Qwen2.5 1.5B, first 10 samples",
+  "failure": {
+    "type": "ImportError",
+    "message": "DLL load failed while importing ops: An Application Control policy has blocked this file.",
+    "package": "pandas",
+    "version": "3.0.6",
+    "file": "ops.cp312-win_amd64.pyd",
+    "file_sha256": "5f91d662ec18a5b72275ab8a86098f78505c66ce17dc6066562d5a659b00c006"
+  },
+  "environment": {
+    "python": "3.12.10",
+    "inspect-ai": "0.3.269",
+    "inspect-evals": "0.22.0",
+    "numpy": "2.5.3",
+    "datasets": "5.0.1",
+    "pyarrow": "25.0.1",
+    "openai": "3.19.2",
+    "ollama_server": "0.34.2"
+  },
+  "model_generation_calls": 0,
+  "provider_charge_usd": 0,
+  "dataset_preparation_completed": false,
+  "native_benchmark_completed": false,
+  "frontier_calls_authorized": false,
+  "boundary_tests": {
+    "passed": 7,
+    "failed": 0,
+    "log": "boundary-tests.txt",
+    "sha256": "2691afbe5f0c33f58aab5c38b21cc62c02c5ed9591309c6de316648872c75579"
+  },
+  "current_runner_source_hashes": {
+    "experiments/local_eval.py": "60084ecbdf5294102b374414c8ecd4d994f836dce1a5536cb08f264f51337912",
+    "experiments/test_local_eval.py": "8e2442fd7ec3b58a9155b079a23c18e21f3e6cf9353dc2f398cda0752810043a",
+    "experiments/eval-requirements.txt": "c2bcee13929382a94bc8b68848c83b66a4220c45e1e1750a425f299018f6bafd"
+  },
+  "source_boundary": "Boundary guards were strengthened after the observed import failure. Hashes identify current preparation code; no successful native run qualifies that code.",
+  "harness_review": [
+    {
+      "repository": "cline/cline-bench",
+      "revision": "d1085569fb0ae3f9613957e6fc2706c6e2f7da9b",
+      "license_metadata": null,
+      "status": "root contains README, tasks and gitignore; no root license; tasks not copied or executed"
+    },
+    {
+      "repository": "harbor-framework/harbor",
+      "revision": "d10ac31727bc4428cf976e7a8a8e5328c9055928",
+      "code_license_metadata": "Apache-2.0",
+      "status": "selected for coding track, not installed or run"
+    },
+    {
+      "repository": "harbor-framework/terminal-bench-2-1",
+      "revision": "7131e4375048a0e408a8fb404b5f499d726b695b",
+      "code_license_metadata": "Apache-2.0",
+      "status": "candidate; task resource/dependency review remains"
+    },
+    {
+      "repository": "UKGovernmentBEIS/inspect_ai",
+      "revision": "0a55d2e25351515d76dbef74227d6a13dfe552af",
+      "code_license_metadata": "MIT",
+      "status": "repository metadata review; installed release separately version-pinned"
+    },
+    {
+      "repository": "UKGovernmentBEIS/inspect_evals",
+      "revision": "8bae1f63fa0596e1c93005c4b1d290eda8128a8b",
+      "code_license_metadata": "MIT",
+      "status": "repository metadata review; installed release separately version-pinned"
+    },
+    {
+      "repository": "EleutherAI/lm-evaluation-harness",
+      "revision": "d6de81643928d653435c431bae19945d41d32520",
+      "code_license_metadata": "MIT",
+      "status": "reviewed secondary control; not installed or run"
+    }
+  ],
+  "interpretation": "Preparation and engineering guard tests only; no task accuracy, runtime benefit, model ranking or GPU performance measured."
+}

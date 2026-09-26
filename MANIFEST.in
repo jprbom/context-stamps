@@ -9,6 +9,7 @@ recursive-include skills *.md
 global-exclude *.visual-check*
 
 recursive-include experiments *.py
+include experiments/eval-requirements.txt
 recursive-include evidence *.json *.jsonl *.md *.txt *.py
 exclude evidence/controller-v1/results.json
 include evidence/controller-v1/*.json.gz

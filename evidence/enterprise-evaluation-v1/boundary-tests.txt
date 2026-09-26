@@ -1,0 +1,12 @@
+test_changed_runner_rejected (__main__.LocalEvaluationBoundaryTests.test_changed_runner_rejected) ... ok
+test_cloud_alias_rejected_even_without_remote_fields (__main__.LocalEvaluationBoundaryTests.test_cloud_alias_rejected_even_without_remote_fields) ... ok
+test_exact_local_identity_binds_template (__main__.LocalEvaluationBoundaryTests.test_exact_local_identity_binds_template) ... ok
+test_missing_weights_digest_or_exact_tag_refused (__main__.LocalEvaluationBoundaryTests.test_missing_weights_digest_or_exact_tag_refused) ... ok
+test_plan_cannot_add_provider_fallback_or_expand_sample_limit (__main__.LocalEvaluationBoundaryTests.test_plan_cannot_add_provider_fallback_or_expand_sample_limit) ... ok
+test_prior_evidence_cannot_be_overwritten (__main__.LocalEvaluationBoundaryTests.test_prior_evidence_cannot_be_overwritten) ... ok
+test_remote_indirection_rejected_in_both_api_responses (__main__.LocalEvaluationBoundaryTests.test_remote_indirection_rejected_in_both_api_responses) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.003s
+
+OK

@@ -391,7 +391,11 @@
       ],
       "current_sources": [
         "evidence/controller-v2/manifest.json",
-        "evidence/runtime-v1/latency-manifest.json"
+        "evidence/runtime-v1/latency-manifest.json",
+        "docs/evaluation-programme.md",
+        "experiments/local_eval.py",
+        "experiments/test_local_eval.py",
+        "evidence/enterprise-evaluation-v1/preflight.json"
       ],
       "status": "partial_existing",
       "completion_proof": "Licenses/revisions/native scoring, prospective task IDs, contamination/length audit and matched strong controls.",

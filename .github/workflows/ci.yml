@@ -38,6 +38,7 @@ jobs:
       - run: python experiments/verify_audit.py
       - run: python experiments/verify_execution.py
       - run: python experiments/verify_storage.py
+      - run: python experiments/test_local_eval.py -v
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py
