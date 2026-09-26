@@ -47,6 +47,13 @@ the task workspace and publish only reviewed evidence.
 
 The tested local CLI environment is recorded in
 [harbor-preflight.json](../evidence/enterprise-evaluation-v1/harbor-preflight.json).
+The [installed-package inventory](../evidence/enterprise-evaluation-v1/harbor-installed-packages.json)
+corrects that first inventory's incidental inclusion of local checkout metadata.
+The requirements file contains only the 90 distributions installed in the isolated
+environment. A fresh offline installation reproduced CLI version 0.23.0; a dated
+advisory audit found no known vulnerabilities in those 90 packages, with none
+skipped. These checks do not establish container isolation or absence of security
+defects. [Reproduction and audit evidence](../evidence/enterprise-evaluation-v1/harbor-reproducibility.json)
 To reproduce that installation separately from model-serving dependencies:
 
 ```powershell

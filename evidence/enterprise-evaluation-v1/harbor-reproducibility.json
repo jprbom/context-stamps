@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-26T15:56:38.833967+00:00",
+  "audit_tool": "pip-audit",
+  "audit_tool_version": "2.10.1",
+  "audited_packages": 90,
+  "known_findings": 0,
+  "skipped_packages": 0,
+  "audit_sha256": "87aaa26227a9b23b3fd74a65f0f38aac315988293b3b932980e679582ad6171c",
+  "requirements_sha256": "8f690ac277c1b3c796c49b271965e5ea1108cb5717eaaddd009e39a9c53ea0ef",
+  "fresh_offline_install_exit_code": 0,
+  "fresh_cli_version": "0.23.0",
+  "fresh_cli_version_exit_code": 0,
+  "installation_log_sha256": "7f089ab0276ca49d16775a586574784b3fd5b96f55f15c72d682e608c29909e0",
+  "scope": "Fresh local environment install and CLI preflight, no coding-agent trial. Advisory checks are dated observations, not a guarantee against vulnerabilities."
+}
