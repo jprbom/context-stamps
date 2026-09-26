@@ -6,6 +6,8 @@ import math
 import statistics
 from pathlib import Path
 
+from source_evidence import verify_sources
+
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / "evidence/enterprise-audit-v1/local-cpu"
 
@@ -18,8 +20,7 @@ def main():
     assert all(r["outcome"] == "passed" and math.isfinite(r["seconds"]) and r["seconds"] >= 0 for r in report["tests"])
     assert sum(r["test"].startswith("test_audit.") for r in report["tests"]) == 19
     assert hashlib.sha256((EVIDENCE / "tests.log").read_bytes()).hexdigest() == report["test_log_sha256"]
-    for path, expected in report["source_hashes"].items():
-        assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == expected, path
+    verify_sources(report["source_hashes"])
     assert [case["episodes"] for case in report["durable_append"]] == [32, 256]
     for case in report["durable_append"]:
         rows = case["rows"]

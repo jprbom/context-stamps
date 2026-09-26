@@ -13,7 +13,7 @@ import math
 import re
 from dataclasses import asdict, dataclass
 
-SCHEMA_VERSION = 1
+SCHEMA_VERSION = 2
 MAX_RECORD_BYTES = 65536
 SPLITS = frozenset({"train", "tune", "calibration", "test", "development", "regression"})
 OUTCOMES = frozenset({"succeeded", "failed", "abstained", "timed_out", "cancelled", "unknown"})
@@ -115,10 +115,10 @@ class Action:
 
 @dataclass(frozen=True)
 class ResourceUse:
-    input_tokens: int
-    output_tokens: int
-    model_calls: int
-    tool_calls: int
+    input_tokens: int | None
+    output_tokens: int | None
+    model_calls: int | None
+    tool_calls: int | None
     wall_ms: float
     peak_ram_bytes: int | None = None
     peak_vram_bytes: int | None = None
@@ -126,7 +126,8 @@ class ResourceUse:
 
     def __post_init__(self):
         for value in (self.input_tokens, self.output_tokens, self.model_calls, self.tool_calls):
-            _integer(value)
+            if value is not None:
+                _integer(value)
         _number(self.wall_ms)
         for value in (self.peak_ram_bytes, self.peak_vram_bytes):
             if value is not None:
@@ -231,6 +232,58 @@ class EpisodeEnd:
             raise ValueError("explicit terminal outcome required")
 
 
+@dataclass(frozen=True)
+class DispatchClaim:
+    """One durable attempt for an exact proposal, committed before worker startup."""
+
+    episode_id: str
+    step: int
+    attempt_id: str
+    plan_digest: str
+    action: Action
+    claimed_ms: int
+    deadline_ms: int
+
+    def __post_init__(self):
+        _id(self.episode_id)
+        _integer(self.step, 1000000)
+        _hash(self.attempt_id)
+        _hash(self.plan_digest)
+        _integer(self.claimed_ms)
+        _integer(self.deadline_ms)
+        if type(self.action) is not Action or not 0 < self.deadline_ms - self.claimed_ms <= 3600000:
+            raise ValueError("typed action and dispatch lifetime of at most one hour required")
+
+
+@dataclass(frozen=True)
+class ActionReconciliation:
+    """Verified terminal provider status; never replaces the original outcome."""
+
+    episode_id: str
+    step: int
+    attempt_id: str
+    plan_digest: str
+    action: Action
+    effect_state: str
+    observations: tuple[EvidenceRef, ...]
+    verifier_revision: str
+    observed_ms: int
+
+    def __post_init__(self):
+        _id(self.episode_id)
+        _integer(self.step, 1000000)
+        _hash(self.attempt_id)
+        _hash(self.plan_digest)
+        _id(self.verifier_revision)
+        _integer(self.observed_ms)
+        if type(self.action) is not Action or self.effect_state not in ("applied", "not_applied"):
+            raise ValueError("typed action and terminal provider effect status required")
+        _members(self.observations, EvidenceRef, 128)
+        if (not self.observations or len(set(self.observations)) != len(self.observations)
+                or any(ref.kind != "observation" for ref in self.observations)):
+            raise ValueError("distinct actual provider observations required")
+
+
 def references(record):
     """Enumerate references without resolving them or granting access."""
     if type(record) is TransitionPlan:
@@ -238,6 +291,10 @@ def references(record):
             (record.prediction,) if record.prediction is not None else ())
     if type(record) is TransitionOutcome:
         return record.observations + ((record.actual_action.arguments,) if record.actual_action else ())
+    if type(record) is DispatchClaim:
+        return (record.action.arguments,)
+    if type(record) is ActionReconciliation:
+        return record.observations + (record.action.arguments,)
     if type(record) in (Episode, EpisodeEnd):
         return ()
     raise ValueError("experience record required")
@@ -263,14 +320,25 @@ def validate_transition(episode, plan, outcome=None):
         raise ValueError("foreign tenant reference")
 
 
-_KINDS = {"episode": Episode, "plan": TransitionPlan, "outcome": TransitionOutcome, "end": EpisodeEnd}
+_KINDS = {"episode": Episode, "plan": TransitionPlan, "outcome": TransitionOutcome, "end": EpisodeEnd,
+          "dispatch": DispatchClaim, "reconciliation": ActionReconciliation}
+
+
+def _schema(record):
+    # Preserve v1 bytes so existing digests and signed audit journals still replay.
+    if type(record) in (DispatchClaim, ActionReconciliation):
+        return 2
+    if type(record) is TransitionOutcome and any(getattr(record.cost, key) is None for key in
+                                                ("input_tokens", "output_tokens", "model_calls", "tool_calls")):
+        return 2
+    return 1
 
 
 def encode_record(record):
     kind = next((name for name, cls in _KINDS.items() if type(record) is cls), None)
     if kind is None:
         raise ValueError("experience record required")
-    text = json.dumps({"schema": SCHEMA_VERSION, "kind": kind, "record": asdict(record)},
+    text = json.dumps({"schema": _schema(record), "kind": kind, "record": asdict(record)},
                       sort_keys=True, separators=(",", ":"), allow_nan=False)
     if len(text.encode("utf-8")) > MAX_RECORD_BYTES:
         raise ValueError("record exceeds byte limit")
@@ -299,6 +367,8 @@ def _build(cls, data):
         Action: {"arguments": EvidenceRef},
         TransitionPlan: {"proposed_action": Action, "prediction": EvidenceRef},
         TransitionOutcome: {"actual_action": Action, "cost": ResourceUse},
+        DispatchClaim: {"action": Action},
+        ActionReconciliation: {"action": Action},
     }.get(cls, {})
     for key, subtype in converters.items():
         if values[key] is not None:
@@ -317,9 +387,12 @@ def decode_record(text):
     try:
         obj = json.loads(text, object_pairs_hook=_unique_object)
         if (not isinstance(obj, dict) or set(obj) != {"schema", "kind", "record"}
-                or type(obj["schema"]) is not int or obj["schema"] != SCHEMA_VERSION
+                or type(obj["schema"]) is not int or obj["schema"] not in (1, SCHEMA_VERSION)
                 or not isinstance(obj["kind"], str) or obj["kind"] not in _KINDS):
             raise ValueError("unsupported experience schema")
-        return _build(_KINDS[obj["kind"]], obj["record"])
+        record = _build(_KINDS[obj["kind"]], obj["record"])
+        if obj["schema"] != _schema(record):
+            raise ValueError("record version does not match its schema")
+        return record
     except (TypeError, KeyError, RecursionError, OverflowError) as error:
         raise ValueError("malformed experience record") from error

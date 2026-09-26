@@ -6,6 +6,8 @@ import math
 import statistics
 from pathlib import Path
 
+from source_evidence import verify_sources
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "evidence/enterprise-context-v1"
 
@@ -52,8 +54,7 @@ def main():
         assert all(c["returncode"] == 0 for c in manifest["checks"])
         if name == "foundation-cuda":
             assert manifest["cuda"]["available"] and manifest["cuda"]["matmul_parity"]
-            for path, expected in manifest["source_hashes"].items():
-                assert sha(ROOT / path) == expected, path
+            verify_sources(manifest["source_hashes"])
     print("20 requirements, 10 GPU capacity cases and two 155-test foundation records replayed.")
     print("Recorded evidence integrity only; no independent hardware reproduction or accuracy improvement claim.")
 

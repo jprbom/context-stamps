@@ -4,6 +4,8 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 26 September 2026
 
+- Added `ManagedExecutor`: exclusive durable dispatch claims, cancellable adapter/verifier processes, current-state checks, bounded result protocol, reserved outcome capacity and terminal provider reconciliation. Schema 2 preserves unknown usage and leaves existing schema-1 bytes unchanged. The final local suite passes 233 tests without skips; offline timing includes process startup and does not show a latency benefit. Retained two earlier runs and corrected a Windows mixed-clock measurement failure. Historical engineering sources are archived and verified as data so later code changes do not overwrite prior evidence.
+
 - Added `AuditStore`: transactional reference-only experience history, actor-bound keyed receipts, exact-event retry handling, strict plan/outcome ordering, current authorization checks and external checkpoint verification. Added an integrated context-to-decision-to-audit example, 19 audit tests and local append/reopen measurements. The full local suite passes 201 tests; external action execution/cancellation and production-scale reliability remain unqualified.
 
 - Added research interfaces for canonical temporal/epistemic state, finite negative knowledge, explicit conflict resolution and serialized-cost context compilation. Added typed batch decisions with scoped calibration, packet integrity bindings and mutation/revocation rejection. The 182-test CPU run and 80 synthetic compiler measurements retain their source hashes and limits; no new model-quality gain is claimed.

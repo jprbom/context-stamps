@@ -6,6 +6,8 @@ import math
 import statistics
 from pathlib import Path
 
+from source_evidence import verify_sources
+
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / "evidence/enterprise-state-v1/local-cpu"
 
@@ -22,8 +24,7 @@ def main():
     assert all(r["outcome"] == "passed" and math.isfinite(r["seconds"]) and r["seconds"] >= 0 for r in report["tests"])
     assert sum(r["test"].startswith("test_enterprise_context.") for r in report["tests"]) == 27
     assert sha(EVIDENCE / "tests.log") == report["test_log_sha256"]
-    for name, expected in report["source_hashes"].items():
-        assert sha(ROOT / name) == expected, name
+    verify_sources(report["source_hashes"])
     fixture = report["compiler_fixture"]
     assert len(fixture["rows"]) == 80 and len(fixture["summary"]) == 4
     assert [s["records"] for s in fixture["summary"]] == [4, 16, 64, 256]

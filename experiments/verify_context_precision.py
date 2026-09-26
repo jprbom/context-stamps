@@ -6,6 +6,8 @@ import math
 import statistics
 from pathlib import Path
 
+from source_evidence import verify_sources
+
 ROOT = Path(__file__).resolve().parents[1]
 
 
@@ -15,8 +17,7 @@ def main():
     assert report["window_seconds"] == 20 and len(report["rows"]) == len(report["case_order"]) == 8
     expected_cases = {(r, p, s) for s in (7, 29) for r in (False, True) for p in ("fp32", "bf16")}
     assert {(r["recurrent"], r["precision"], r["seed"]) for r in report["rows"]} == expected_cases
-    for path, expected in report["source_hashes"].items():
-        assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == expected, path
+    verify_sources(report["source_hashes"])
     manifest_path = ROOT / "evidence/controller-v2/data-manifest.json"
     assert hashlib.sha256(manifest_path.read_bytes()).hexdigest() == report["data_manifest_sha256"]
     manifest = json.loads(manifest_path.read_text())

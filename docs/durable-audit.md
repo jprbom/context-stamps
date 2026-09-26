@@ -77,12 +77,12 @@ Creation binds the episode to its authenticated tenant, principal and policy rev
 | Crash before the append transaction commits | The uncommitted event is absent after recovery |
 | Crash after a plan commit | The plan remains; no success is inferred |
 | Earlier failure followed by a later verified success | Both outcomes remain visible |
-| Unknown outcome followed by late evidence | Preserve the unknown record; record reconciliation as subsequent work |
+| Unknown outcome followed by late evidence | Preserve the unknown record; append verified terminal provider reconciliation |
 | Evidence access revoked | Current authorization can deny the complete history |
 
 Step numbers are consecutive from zero within an episode. Declared event times cannot move backward or arrive from the future relative to the host journal clock. Commit times do not decrease if the wall clock moves backward. A successful episode ending requires a verified successful latest action outcome. Earlier failures remain in the record.
 
-These rules enforce ordering within the journal. Only the host execution path can ensure that an external action actually starts after its plan commits. An idempotent append is not permission to execute the action again and does not establish exactly-once external effects. The runtime's managed dispatch, cancellation and reconciliation layer remains unfinished.
+These rules enforce ordering within the journal. An idempotent append is not permission to execute the action again and does not establish exactly-once external effects. The separate [managed-execution API](managed-execution.md) now commits an exclusive claim before starting an owned worker, enforces cancellation/deadline checks, reserves outcome capacity and supports terminal provider reconciliation. Raw record appends do not execute anything.
 
 ## Integrity and operational boundaries
 
@@ -119,4 +119,4 @@ python experiments/audit_validation.py --out evidence/audit-independent-run
 python experiments/verify_audit.py
 ```
 
-Use a new output directory. The first command performs a new run; the second replays recorded hashes and arithmetic. The GPU remains available for model training. The [full programme](enterprise-context-plan.md) still requires managed execution, virtual memory, incremental computation, learned context intelligence and the specified public benchmark families.
+Use a new output directory. The first command performs a new run; the second replays recorded hashes and arithmetic. Historical source bytes are retained in [bounded source archives](../evidence/engineering-sources-v1/README.md); old tests are not presented as qualification of later changes. The [full programme](enterprise-context-plan.md) still requires stronger execution containment, virtual memory, incremental computation, learned context intelligence and the specified public benchmark families.

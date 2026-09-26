@@ -18,7 +18,7 @@ On the research branch, the [temporal state, compiler and typed-decision APIs](d
 
 The [longer RTX precision study](docs/rtx-precision-capacity.md) records eight training-only capacity windows. BF16 did not consistently improve throughput and changed some ranking orders. These probe weights were discarded; serving precision and existing quality claims are unchanged.
 
-The [durable audit API](docs/durable-audit.md) now records typed plans, outcomes and failures in a transactional journal with actor-bound receipts. Run `python examples/audited_decision.py` for context compilation through a verified decision and journal reopen. The current local suite passes 201 tests, including process-crash and concurrent-writer checks. Managed action execution and cancellation remain in development.
+The [durable audit API](docs/durable-audit.md) records typed plans, outcomes and failures with actor-bound receipts. The new [managed executor](docs/managed-execution.md) commits exclusive dispatch claims, runs registered adapters/verifiers in cancellable processes, reserves outcome capacity and preserves uncertain effects for provider reconciliation. Run `python examples/managed_decision.py` for the complete offline path. The local suite passes 233 tests with zero skips. Process startup adds latency; this is an optional execution mode, not a model-quality or speed improvement.
 
 The local **`ContextRuntime`** now combines registered retrieval experts, dependency checks, explicit byte/token budgets, bounded missing-evidence recovery and verified exact-result reuse. Run `python examples/unified_context.py` after installation. [API and complete example](docs/unified-runtime.md) · [runtime results and retained failures](docs/runtime-v1-results.md).
 
@@ -53,6 +53,7 @@ These examples run offline without a GPU, service or downloaded model. The unifi
 | Component | Purpose | Important boundary |
 |---|---|---|
 | `ContextRuntime` | Composes experts, budgets, dependency closure, bounded verification and exact reuse | Trusted host adapters/verifier; callbacks need their own timeout; not a distributed service |
+| `ManagedExecutor` / `AuditStore` | Owns process dispatch, verification, cancellation and reference-only outcome history | Trusted host adapters; no sandbox or distributed exactly-once guarantee; external effects need provider reconciliation |
 | Optional `EfficientReranker` | Uses length-aware batches and exact passage-token reuse for a pinned BERT scorer | Preserve candidates and pair truncation; qualify ranking parity for the intended profile |
 | `Stamp256Codec` | Encodes supplied content/entity/intent/task views into 32 raw bytes | Lossy similarity sketch; schema and evidence are external |
 | `FacetCompiler` | Emits observed routing facets with rule and source provenance | Deterministic baseline; not a semantic parser or fact verifier |

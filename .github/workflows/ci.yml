@@ -36,6 +36,7 @@ jobs:
       - run: python experiments/verify_enterprise_state.py
       - run: python experiments/verify_context_precision.py
       - run: python experiments/verify_audit.py
+      - run: python experiments/verify_execution.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py
@@ -50,6 +51,7 @@ jobs:
       - run: python examples/unified_context.py
       - run: python examples/enterprise_decision.py
       - run: python examples/audited_decision.py
+      - run: python examples/managed_decision.py
       - run: scqr encode examples/facets.json
       - run: python examples/local_slm.py --dry-run
       - run: python benchmarks/retrieval.py --out results.json

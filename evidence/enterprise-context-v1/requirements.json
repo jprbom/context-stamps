@@ -398,13 +398,17 @@
         "context_stamps/audit.py",
         "tests/test_audit.py",
         "experiments/audit_validation.py",
-        "evidence/enterprise-audit-v1/local-cpu/manifest.json"
+        "evidence/enterprise-audit-v1/local-cpu/manifest.json",
+        "context_stamps/execution.py",
+        "tests/test_execution.py",
+        "experiments/execution_validation.py",
+        "evidence/enterprise-execution-v1/local-cpu-v3/manifest.json"
       ],
       "status": "partial_implemented",
       "completion_proof": "Restart/race/revocation/security evidence, permitted exports, claim-to-evidence report and reproducible release.",
-      "implementation_note": "Transactional reference-only audit, actor-bound keyed receipts, external checkpoints, strict ordering and crash/concurrent-writer tests implemented. Cancellation, effect reconciliation, durable context retention, export policy and independent replication remain."
+      "implementation_note": "Transactional audit, exclusive managed dispatch, owned-process cancellation, outcome capacity reservations, unknown usage and verified terminal provider reconciliation implemented with crash/race/revocation tests. Parent callback cancellation, descendant containment, durable context retention, export policy and independent replication remain."
     }
   ],
   "evidence_boundary": "Existing/draft sources do not prove the complete requirement. No 1.0 or universal capability claim.",
-  "latest_engineering_evidence": "evidence/enterprise-audit-v1/local-cpu/manifest.json"
+  "latest_engineering_evidence": "evidence/enterprise-execution-v1/local-cpu-v3/manifest.json"
 }

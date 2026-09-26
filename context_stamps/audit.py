@@ -20,13 +20,16 @@ from pathlib import Path
 from .context_state import canonical, digest, timestamp
 from .experience import (
     MAX_RECORD_BYTES,
+    ActionReconciliation,
     Authority,
+    DispatchClaim,
     Episode,
     EpisodeEnd,
     TransitionOutcome,
     TransitionPlan,
     decode_record,
     encode_record,
+    record_digest,
     validate_transition,
 )
 from .security import identifier
@@ -38,6 +41,10 @@ class AuditIntegrityError(ValueError):
 
 class AuditBusyError(RuntimeError):
     """A competing transaction exceeded the configured local lock timeout."""
+
+
+class DispatchBlockedError(ValueError):
+    """This proposal was already claimed or an earlier effect is not reconciled."""
 
 
 @dataclass(frozen=True)
@@ -65,7 +72,7 @@ class AuditReceipt:
 
 @dataclass(frozen=True)
 class AuditEntry:
-    record: Episode | TransitionPlan | TransitionOutcome | EpisodeEnd
+    record: Episode | TransitionPlan | TransitionOutcome | EpisodeEnd | DispatchClaim | ActionReconciliation
     receipt: AuditReceipt
 
 
@@ -80,16 +87,17 @@ class _EpisodeState:
 
 
 def _identity(record):
-    kinds = {Episode: "episode", TransitionPlan: "plan", TransitionOutcome: "outcome", EpisodeEnd: "end"}
+    kinds = {Episode: "episode", TransitionPlan: "plan", TransitionOutcome: "outcome", EpisodeEnd: "end",
+             DispatchClaim: "dispatch", ActionReconciliation: "reconciliation"}
     kind = kinds.get(type(record))
     if kind is None:
         raise ValueError("typed experience record required")
-    step = record.step if type(record) in (TransitionPlan, TransitionOutcome) else None
+    step = getattr(record, "step", None)
     return canonical([record.episode_id, kind, step]), kind
 
 
 def _record_time(record):
-    return next(getattr(record, field) for field in ("started_ms", "proposed_ms", "observed_ms", "ended_ms")
+    return next(getattr(record, field) for field in ("started_ms", "proposed_ms", "observed_ms", "ended_ms", "claimed_ms")
                 if hasattr(record, field))
 
 
@@ -206,6 +214,8 @@ class AuditStore:
         self._sequence, self._bytes, self._committed_ms = 0, 0, 0
         self._head = self._genesis
         self._entries, self._episodes, self._histories, self._action_bindings = {}, {}, {}, {}
+        self._dispatches, self._effect_attempts, self._reconciliations = {}, {}, {}
+        self._active_dispatches = set()
 
     def _next_state(self, record):
         current = self._episodes.get(record.episode_id)
@@ -213,10 +223,35 @@ class AuditStore:
             if current is not None or record.authority.tenant != self.tenant:
                 raise ValueError("episode identity collision or foreign tenant")
             return _EpisodeState(record, 0, record.started_ms)
-        if current is None or current.end is not None:
+        if current is None or (current.end is not None and type(record) is not ActionReconciliation):
             raise ValueError("open episode required")
         if _record_time(record) < current.last_ms:
             raise ValueError("episode time cannot move backward")
+        if type(record) is DispatchClaim:
+            plan = current.pending
+            if (plan is None or record.step != plan.step or record.plan_digest != record_digest(plan)
+                    or record.action != plan.proposed_action or record.attempt_id in self._dispatches):
+                raise ValueError("dispatch requires the exact committed pending plan")
+            earlier = self._effect_attempts.get(record.action.idempotency_key)
+            if earlier is not None:
+                reconciliation = self._reconciliations.get(earlier)
+                if reconciliation is None or reconciliation.effect_state != "not_applied":
+                    raise DispatchBlockedError("earlier effect requires terminal not-applied reconciliation before retry")
+            return replace(current, last_ms=record.claimed_ms)
+        if type(record) is ActionReconciliation:
+            claim = self._dispatches.get(record.attempt_id)
+            if (claim is None or any(getattr(record, key) != getattr(claim, key) for key in
+                                    ("episode_id", "step", "plan_digest", "action"))
+                    or record.verifier_revision != current.episode.verifier_revision
+                    or record.attempt_id in self._reconciliations
+                    or canonical([record.episode_id, "outcome", record.step]) not in self._entries):
+                raise ValueError("terminal reconciliation requires a matching claim and recorded outcome")
+            if any(ref.tenant != self.tenant for ref in record.observations):
+                raise ValueError("foreign tenant reconciliation")
+            outcome = self._entries[canonical([record.episode_id, "outcome", record.step])].record
+            if record.effect_state == "not_applied" and outcome.status == "succeeded":
+                raise ValueError("not-applied reconciliation conflicts with verified success")
+            return replace(current, last_ms=record.observed_ms)
         if type(record) is TransitionPlan:
             validate_transition(current.episode, record)
             if current.pending is not None or record.step != current.next_step:
@@ -229,6 +264,9 @@ class AuditStore:
             if current.pending is None:
                 raise ValueError("a committed plan must precede its outcome")
             validate_transition(current.episode, current.pending, record)
+            claim_entry = self._entries.get(canonical([record.episode_id, "dispatch", record.step]))
+            if claim_entry is not None and record.status == "succeeded" and record.observed_ms > claim_entry.record.deadline_ms:
+                raise ValueError("late result cannot be promoted to on-time success")
             return replace(current, pending=None, outcome=record, next_step=record.step + 1, last_ms=record.observed_ms)
         if current.pending is not None:
             raise ValueError("unresolved plan requires an explicit outcome before episode closure")
@@ -246,6 +284,15 @@ class AuditStore:
         self._episodes[record.episode_id] = next_state
         if type(record) is TransitionPlan:
             self._action_bindings[record.proposed_action.idempotency_key] = record.proposed_action
+        if type(record) is DispatchClaim:
+            self._dispatches[record.attempt_id] = record
+            self._active_dispatches.add((record.episode_id, record.step))
+            if record.action.effect != "pure":
+                self._effect_attempts[record.action.idempotency_key] = record.attempt_id
+        if type(record) is TransitionOutcome:
+            self._active_dispatches.discard((record.episode_id, record.step))
+        if type(record) is ActionReconciliation:
+            self._reconciliations[record.attempt_id] = record
 
     def _chain(self, sequence, event_key, record_digest, actor_text, committed_ms, previous):
         return self._mac(canonical([self.tenant, self.log_id, sequence, event_key, record_digest,
@@ -303,6 +350,11 @@ class AuditStore:
             raise AuditIntegrityError("external checkpoint chain mismatch")
 
     def append(self, record, *, authority):
+        if type(record) in (DispatchClaim, ActionReconciliation):
+            raise ValueError("use claim_dispatch or reconcile for execution control records")
+        return self._append(record, authority=authority)
+
+    def _append(self, record, *, authority, related=None, exclusive=False):
         event_key, _ = _identity(record)
         text = encode_record(record)
         size = len(text.encode("utf-8"))
@@ -311,6 +363,8 @@ class AuditStore:
         with self._lock:
             with self._transaction(write=True):
                 self._refresh()
+                if related is not None:
+                    self._authorized(authority, "append", related)
                 existing = self._entries.get(event_key)
                 episode = record if type(record) is Episode else self._episodes.get(record.episode_id)
                 if isinstance(episode, _EpisodeState):
@@ -320,11 +374,19 @@ class AuditStore:
                 if existing is None and type(record) is Episode and authority != record.authority:
                     raise PermissionError("episode must bind its authenticated creation authority")
                 if existing is not None:
+                    if exclusive:
+                        raise DispatchBlockedError("proposal already has a durable dispatch claim")
                     if existing.receipt.record_digest != fingerprint:
                         raise ValueError("audit event collision; history cannot be replaced")
                     self._authorized(authority, "append", record)
                     return existing.receipt
-                if self._sequence >= self.max_records or self._bytes + size > self.max_bytes:
+                reserved = len(self._active_dispatches)
+                if type(record) is DispatchClaim:
+                    reserved += 1
+                elif type(record) is TransitionOutcome and (record.episode_id, record.step) in self._active_dispatches:
+                    reserved -= 1
+                if (self._sequence + 1 + reserved > self.max_records
+                        or self._bytes + size + reserved * MAX_RECORD_BYTES > self.max_bytes):
                     raise OverflowError("audit capacity reached; action must not start")
                 state = self._next_state(record)
                 now = self._clock()
@@ -332,6 +394,10 @@ class AuditStore:
                 now = max(now, self._committed_ms)
                 if _record_time(record) > now:
                     raise ValueError("future-dated audit event")
+                if type(record) is TransitionOutcome and record.status == "succeeded":
+                    dispatch = self._entries.get(canonical([record.episode_id, "dispatch", record.step]))
+                    if dispatch is not None and now > dispatch.record.deadline_ms:
+                        raise ValueError("success commit exceeded dispatch deadline")
                 actor_text = canonical(asdict(authority))
                 chain = self._chain(self._sequence + 1, event_key, fingerprint, actor_text, now, self._head)
                 entry = AuditEntry(record, AuditReceipt(AuditCheckpoint(self.tenant, self.log_id, self._sequence + 1, chain),
@@ -339,8 +405,57 @@ class AuditStore:
                 self._connection.execute("INSERT INTO events VALUES (?, ?, ?, ?, ?, ?, ?, ?)",
                     (self._sequence + 1, event_key, text, fingerprint, actor_text, now, self._head, chain))
                 self._authorized(authority, "append", record)
+                if related is not None:
+                    self._authorized(authority, "append", related)
             self._apply(entry, event_key, size, state)
             return entry.receipt
+
+    def claim_dispatch(self, plan, *, authority, deadline_ms):
+        """Atomically claim once; only a newly committed claim authorizes launch.
+
+        A failed caller response or crash never permits replaying this launch.
+        Hosts must retain the same journal and share it across their workers.
+        """
+        if type(plan) is not TransitionPlan:
+            raise ValueError("typed committed proposal required")
+        claim = DispatchClaim(plan.episode_id, plan.step, secrets.token_hex(32), record_digest(plan),
+                              plan.proposed_action, self._clock(), deadline_ms)
+        receipt = self._append(claim, authority=authority, related=plan, exclusive=True)
+        return AuditEntry(claim, receipt)
+
+    def check_dispatch(self, claim, *, authority):
+        """Check the recorded claim, unresolved plan and current host permissions."""
+        if type(claim) is not DispatchClaim:
+            raise ValueError("typed claim required")
+        self._authorized(authority, "read", claim)
+        with self._lock, self._transaction():
+            self._refresh()
+            entry = self._entries.get(_identity(claim)[0])
+            state = self._episodes.get(claim.episode_id)
+            if entry is None or entry.record != claim or state.pending is None or state.pending.step != claim.step:
+                raise DispatchBlockedError("dispatch no longer pending")
+            self._authorized(authority, "append", state.pending)
+            self._authorized(authority, "append", claim)
+            if authority.principal != state.episode.authority.principal:
+                raise PermissionError("unavailable dispatch")
+        return True
+
+    def reconcile(self, record, *, authority, verify):
+        """Host verifies a provider's terminal status, including absence of late effects.
+
+        For not_applied, a temporary 'not found' response is insufficient: the
+        provider must guarantee that the earlier attempt can no longer take effect.
+        """
+        if type(record) is not ActionReconciliation or not callable(verify):
+            raise ValueError("typed reconciliation and host verifier required")
+        self._authorized(authority, "append", record)
+        try:
+            accepted = verify(record) is True
+        except Exception:
+            accepted = False
+        if not accepted:
+            raise ValueError("provider reconciliation was not verified")
+        return self._append(record, authority=authority)
 
     def history(self, episode_id, *, authority):
         identifier(episode_id)

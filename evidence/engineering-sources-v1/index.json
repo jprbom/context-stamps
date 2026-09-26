@@ -1,0 +1,22 @@
+{
+  "schema": 1,
+  "archives": [
+    {
+      "file": "source-09fe6a4.json.gz",
+      "sha256": "039185cf2407c1c5e9e13a80d6391f3624d41ce33091144f0bbe309c2719072d",
+      "source_commit": "09fe6a465615f4a432cabca02ad4664fc1716cc2"
+    },
+    {
+      "file": "source-managed-initial.json.gz",
+      "sha256": "4715e24e0cbd4a0c51824c91daa345d214c3151224b096748b87c79778e62de6",
+      "source_base_commit": "09fe6a465615f4a432cabca02ad4664fc1716cc2",
+      "worktree_dirty": true
+    },
+    {
+      "file": "source-managed-reservation.json.gz",
+      "sha256": "1cd1e5f7f91c54ed93dccd2b6d759e594b5e7cf21037a2626ca2ec8975db9893",
+      "source_base_commit": "09fe6a465615f4a432cabca02ad4664fc1716cc2",
+      "worktree_dirty": true
+    }
+  ]
+}

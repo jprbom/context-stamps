@@ -1,0 +1,15 @@
+{
+  "schema": 1,
+  "stage": "offline evidence replay after two passing engineering test runs",
+  "failure": "Some inner worker wall durations exceeded the enclosing full-request durations.",
+  "rows_with_inner_duration_exceeding_outer": {
+    "local-cpu": [0, 4, 8, 12, 13, 15, 19],
+    "local-cpu-v2": [6, 10, 13, 16, 18]
+  },
+  "environment": "Python 3.12.10 Windows, MSC v.1943 64 bit AMD64",
+  "inner_clock": {"function": "time.monotonic", "implementation": "GetTickCount64()", "resolution_seconds": 0.015625},
+  "outer_clock": {"function": "time.perf_counter", "implementation": "QueryPerformanceCounter()", "resolution_seconds": 0.0000001},
+  "diagnosis": "Mixed clock resolutions cause the containment comparison to fail. The inner coarse durations are not qualified for precise component accounting.",
+  "fix": "Use the same high-resolution monotonic performance counter for local deadline countdown, inner duration and outer duration. Preserve original manifests and source archives. Repeat the complete test suite and timing fixture as local-cpu-v3.",
+  "scope": "Measurement correction, not a model-quality or latency-improvement result. Earlier outer performance-counter measurements remain available."
+}

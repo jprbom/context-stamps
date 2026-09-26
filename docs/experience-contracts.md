@@ -2,7 +2,7 @@
 
 By Prashant Jagtap
 
-`context_stamps.experience` supplies strict, immutable version-1 records for the learning/audit plane. It has no mandatory dependencies. It does **not** yet persist events, execute actions, enforce append-before-action ordering, grant access to references or train a model.
+`context_stamps.experience` supplies strict, immutable records for the learning/audit plane. It has no mandatory dependencies. Schema 1 remains byte-compatible for existing measured records; schema 2 adds dispatch/reconciliation and unknown token/call usage. Persistence is provided by [AuditStore](durable-audit.md) and owned-worker execution by [ManagedExecutor](managed-execution.md). These contracts do not grant evidence access or train a model.
 
 ```python
 from hashlib import sha256
@@ -37,9 +37,11 @@ assert decode_record(encode_record(outcome)) == outcome
 | `TransitionPlan` | Observed references, belief revision, proposed action and separately typed prediction/uncertainty |
 | `TransitionOutcome` | Actual action, observed consequences, verified/failed/abstained status, costs and reward components |
 | `EpisodeEnd` | Terminal status and end timestamp |
+| `DispatchClaim` | Exclusive proposal attempt, exact plan/action binding and deadline |
+| `ActionReconciliation` | Verified terminal provider effect status, preserving the original outcome |
 | `EvidenceRef` | Tenant, source, revision, content hash, and observation versus prediction kind |
 
-Serialization rejects unknown fields, duplicate JSON keys, unsupported versions, unbounded identifiers/arrays, nonfinite costs and invalid success records. Transition validation rejects foreign tenants, changed action/verifier bindings and backwards timestamps. Numeric resource fields reject Boolean values. Unmeasured RAM, VRAM and energy are `None`, not zero.
+Serialization rejects unknown fields, duplicate JSON keys, unsupported versions, unbounded identifiers/arrays, nonfinite costs and invalid success records. Transition validation rejects foreign tenants, changed action/verifier bindings and backwards timestamps. Numeric resource fields reject Boolean values. Unmeasured tokens, calls, RAM, VRAM and energy are `None`, not zero. Wall time is a measured host duration; adapter usage claims retain their host trust boundary.
 
 The five unsuccessful states—failed, abstained, timed_out, cancelled and unknown—remain valid records with explicit reason codes. Keep these examples when building a training export. Do not silently drop them or label a timeout as a correct answer.
 
