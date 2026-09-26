@@ -1,0 +1,70 @@
+{
+  "profile": {
+    "image_id": "sha256:43b8c3541b37c9de5b68ed39744cf11f0c85e52c2ddae6e9ab988a7ba8934477",
+    "user": "1000:1000",
+    "network_mode": "none",
+    "read_only": true,
+    "pids_limit": 64,
+    "memory_bytes": 2147483648,
+    "nano_cpus": 1000000000,
+    "cap_drop": [
+      "ALL"
+    ],
+    "security_opt": [
+      "no-new-privileges:true"
+    ],
+    "mounts": []
+  },
+  "test_run": {
+    "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.15, pytest-9.0.3, pluggy-1.6.0\nrootdir: /tests\nplugins: json-ctrf-0.3.5\ncollected 2 items\n\n../tests/test_outputs.py FF                                              [100%]\n\n=================================== FAILURES ===================================\n___________________________ test_summary_file_exists ___________________________\n\n    def test_summary_file_exists():\n        \"\"\"Check if summary.csv exists.\"\"\"\n>       assert OUTPUT_FILE.exists(), f\"File {OUTPUT_FILE} does not exist\"\nE       AssertionError: File /app/summary.csv does not exist\nE       assert False\nE        +  where False = exists()\nE        +    where exists = PosixPath('/app/summary.csv').exists\n\n/tests/test_outputs.py:29: AssertionError\n______________________ test_summary_structure_and_counts _______________________\n\n    def test_summary_structure_and_counts():\n        \"\"\"Validate CSV structure and check if counts match expected hard-coded values.\"\"\"\n>       with OUTPUT_FILE.open(\"r\", newline=\"\") as f:\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n/tests/test_outputs.py:34: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/app/summary.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed to by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/app/summary.csv'\n\n/usr/local/lib/python3.13/pathlib/_local.py:537: FileNotFoundError\n=========================== short test summary info ============================\nFAILED ../tests/test_outputs.py::test_summary_file_exists - AssertionError: F...\nFAILED ../tests/test_outputs.py::test_summary_structure_and_counts - FileNotF...\n============================== 2 failed in 0.04s ===============================\n",
+    "stderr": "",
+    "return_code": 1,
+    "boundary_failure": null,
+    "command_seconds": 0.4114037270046538
+  },
+  "ctrf": {
+    "results": {
+      "tool": {
+        "name": "pytest",
+        "version": "9.0.3"
+      },
+      "summary": {
+        "tests": 2,
+        "passed": 0,
+        "failed": 2,
+        "skipped": 0,
+        "pending": 0,
+        "other": 0,
+        "start": 1790444580.0873146,
+        "stop": 1790444580.1286564
+      },
+      "tests": [
+        {
+          "name": "test_outputs.py::test_summary_file_exists",
+          "status": "failed",
+          "raw_status": "call_failed",
+          "duration": 0.000512507016537711,
+          "start": 1790444580.1104782,
+          "stop": 1790444580.119105,
+          "retries": 0,
+          "file_path": "test_outputs.py",
+          "trace": "def test_summary_file_exists():\n        \"\"\"Check if summary.csv exists.\"\"\"\n>       assert OUTPUT_FILE.exists(), f\"File {OUTPUT_FILE} does not exist\"\nE       AssertionError: File /app/summary.csv does not exist\nE       assert False\nE        +  where False = exists()\nE        +    where exists = PosixPath('/app/summary.csv').exists\n\n/tests/test_outputs.py:29: AssertionError",
+          "message": "The test failed in the call phase due to an assertion error"
+        },
+        {
+          "name": "test_outputs.py::test_summary_structure_and_counts",
+          "status": "failed",
+          "raw_status": "call_failed",
+          "duration": 0.0003616110043367371,
+          "start": 1790444580.1192646,
+          "stop": 1790444580.1284933,
+          "retries": 0,
+          "file_path": "test_outputs.py",
+          "trace": "def test_summary_structure_and_counts():\n        \"\"\"Validate CSV structure and check if counts match expected hard-coded values.\"\"\"\n>       with OUTPUT_FILE.open(\"r\", newline=\"\") as f:\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n/tests/test_outputs.py:34: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/app/summary.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed to by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/app/summary.csv'\n\n/usr/local/lib/python3.13/pathlib/_local.py:537: FileNotFoundError",
+          "message": "The test failed in the call phase"
+        }
+      ]
+    }
+  },
+  "passed": false
+}

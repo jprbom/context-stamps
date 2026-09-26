@@ -1,0 +1,23 @@
+{
+  "target": 1,
+  "mode": "json_only",
+  "request_sha256": "06c30f30f47abb7ddf04f962b9253b79e7a07e30d687663c3db142c1e4b11d9d",
+  "input_tokens": 258,
+  "started_utc": 1790444222.6788552,
+  "response": {
+    "model": "qwen2.5-coder:7b",
+    "created_at": "2026-09-26T17:37:03.1178886Z",
+    "response": "{\"tool\": \"read_file\", \"path\": \"notes.txt\"}",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 183472600,
+    "load_duration": 9888300,
+    "prompt_eval_count": 258,
+    "prompt_eval_cached_count": 257,
+    "prompt_eval_duration": 11820000,
+    "eval_count": 15,
+    "eval_duration": 156960000
+  },
+  "matches_target": true,
+  "elapsed_seconds": 0.4395053999032825
+}

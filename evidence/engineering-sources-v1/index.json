@@ -59,6 +59,30 @@
       "sha256": "71301734be0638f912daf1ef727f9dd79dd84f5742e93f4767eb81f93eb79c6a",
       "source_base_commit": "962a07bcc692c847bc359e9b3fc0018901e68687",
       "worktree_dirty": true
+    },
+    {
+      "file": "terminal-typed-initial.json.gz",
+      "sha256": "442306e7fb5ea328f40fe78e02d6becede50f697ad4b05e98922c7601b390e86",
+      "source_base_commit": "f76a2e2c6a9e46d693a280f66505033ffdbb3c94",
+      "worktree_dirty": true
+    },
+    {
+      "file": "terminal-typed-gated.json.gz",
+      "sha256": "e1263232f6bd5bcf9d60f521d7ca63a9c23653fe357fe3b48041aaf11bc5ebe1",
+      "source_base_commit": "f76a2e2c6a9e46d693a280f66505033ffdbb3c94",
+      "worktree_dirty": true
+    },
+    {
+      "file": "terminal-schema-probe.json.gz",
+      "sha256": "051b91e626abdd58294f81ae60b58ff593fc79456f51aad4bc91df5fe9ad97da",
+      "source_base_commit": "f76a2e2c6a9e46d693a280f66505033ffdbb3c94",
+      "worktree_dirty": true
+    },
+    {
+      "file": "terminal-typed-ordered.json.gz",
+      "sha256": "26907beff94407bf1c2268197dd7a990e3e84ebeb720d697d929106598b0dcc5",
+      "source_base_commit": "f76a2e2c6a9e46d693a280f66505033ffdbb3c94",
+      "worktree_dirty": true
     }
   ]
 }

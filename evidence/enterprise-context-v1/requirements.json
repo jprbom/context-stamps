@@ -318,7 +318,7 @@
         "graph",
         "temporal/policy/authority inputs",
         "sparse importance weights",
-        "smaller controls before 50M\u2013500M experiments",
+        "smaller controls before 50M–500M experiments",
         "no foundation attention modification initially"
       ],
       "current_sources": [
@@ -376,9 +376,9 @@
       "id": "EC18",
       "requirement": "Reproducible RTX and interchangeable model stack",
       "features": [
-        "0.5B\u20133B context/decision candidate",
-        "7B\u201314B quantized general candidate",
-        "3B\u20138B VLM candidate",
+        "0.5B–3B context/decision candidate",
+        "7B–14B quantized general candidate",
+        "3B–8B VLM candidate",
         "profile before residency",
         "CPU supporting work",
         "maximize measured GPU throughput",
@@ -427,11 +427,14 @@
         "evidence/terminal-pilot-v1/manifest.json",
         "docs/terminal-local-pilot.md",
         "evidence/terminal-pilot-coder7b-v1/manifest.json",
-        "experiments/verify_terminal_reference.py"
+        "experiments/verify_terminal_reference.py",
+        "experiments/terminal_tools.py",
+        "experiments/verify_typed_terminal.py",
+        "evidence/terminal-typed-v1/manifest.json"
       ],
       "status": "partial_existing",
       "completion_proof": "Licenses/revisions/native scoring, prospective task IDs, contamination/length audit and matched strong controls.",
-      "implementation_note": "Expanded to model-alone versus runtime-assisted open-weight/frontier pairs, coding-agent harness comparisons and quality/cost/latency/resource accounting. Start locally; frontier preparation only, no paid calls authorized. Established harness and license review precede execution. LongBench v2 native-prompt/parser development controls completed: 30 calls on ten short tasks across six domains; full 4/10, BM25 4/10, no context 3/10. No runtime treatment or frontier ranking. Harbor 0.23.0 isolated command/task boundary and two native Terminal-Bench 2.1 graders qualified. Qwen2.5 1.5B corrected development baseline fails both tasks (0/2); initial failed attempt retained. Six calls, exact input-token parity, no benchmark training or runtime treatment. Sixteen terminal-boundary tests and data-only replay added. A pinned Qwen2.5-Coder 7B stronger reference now passes 1/2, with both 12-step budgets exhausted. Its 24 additional calls replay offline. Runtime treatment and real local adaptation remain."
+      "implementation_note": "Expanded to model-alone versus runtime-assisted open-weight/frontier pairs, coding-agent harness comparisons and quality/cost/latency/resource accounting. Start locally; frontier preparation only, no paid calls authorized. Established harness and license review precede execution. LongBench v2 native-prompt/parser development controls completed: 30 calls on ten short tasks across six domains; full 4/10, BM25 4/10, no context 3/10. No runtime treatment or frontier ranking. Harbor 0.23.0 isolated command/task boundary and two native Terminal-Bench 2.1 graders qualified. Qwen2.5 1.5B corrected development baseline fails both tasks (0/2); initial failed attempt retained. Six calls, exact input-token parity, no benchmark training or runtime treatment. Sixteen terminal-boundary tests and data-only replay added. A pinned Qwen2.5-Coder 7B stronger reference now passes 1/2, with both 12-step budgets exhausted. Its 24 additional calls replay offline. Runtime treatment and real local adaptation remain. Typed tools now have 11 unit boundary tests, 12 live file probes and retained regressions. Matched schema canaries on both models improve from 0/3 to 3/3 after preserving union discriminator order. Corrected task runs remain 0/2 per model; no promotion or training benefit."
     },
     {
       "id": "EC20",

@@ -16,3 +16,4 @@ evidence/terminal-pilot-v1/sandbox-qualification*.json -text whitespace=cr-at-eo
 evidence/terminal-pilot-v1/boundary-tests-*.txt -text whitespace=cr-at-eol
 evidence/terminal-pilot-v1/asset-reproduction.json -text whitespace=cr-at-eol
 evidence/terminal-pilot-v1/engineering.json -text whitespace=cr-at-eol
+evidence/terminal-typed-v1/tests-*.txt -text whitespace=cr-at-eol

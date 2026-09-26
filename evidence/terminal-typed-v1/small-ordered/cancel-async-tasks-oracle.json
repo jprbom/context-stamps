@@ -1,0 +1,104 @@
+{
+  "task": "cancel-async-tasks",
+  "oracle": true,
+  "result": {
+    "profile": {
+      "image_id": "sha256:12d2710108c7c144690bf66342315b57a9f2ef3e43e982e34074d5ac32980745",
+      "user": "1000:1000",
+      "network_mode": "none",
+      "read_only": true,
+      "pids_limit": 64,
+      "memory_bytes": 2147483648,
+      "nano_cpus": 1000000000,
+      "cap_drop": [
+        "ALL"
+      ],
+      "security_opt": [
+        "no-new-privileges:true"
+      ],
+      "mounts": []
+    },
+    "test_run": {
+      "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.15, pytest-9.0.3, pluggy-1.6.0\nrootdir: /tests\nplugins: json-ctrf-0.3.5\ncollected 6 items\n\n../tests/test_outputs.py ......                                          [100%]\n\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED ../tests/test_outputs.py::test_run_py_file_exists\nPASSED ../tests/test_outputs.py::test_tasks_run_concurrently\nPASSED ../tests/test_outputs.py::test_tasks_obey_max_concurrent\nPASSED ../tests/test_outputs.py::test_tasks_cancel_below_max_concurrent\nPASSED ../tests/test_outputs.py::test_tasks_cancel_at_max_concurrent\nPASSED ../tests/test_outputs.py::test_tasks_cancel_above_max_concurrent\n============================== 6 passed in 13.86s ==============================\n",
+      "stderr": "",
+      "return_code": 0,
+      "boundary_failure": null,
+      "command_seconds": 14.140513934005867
+    },
+    "ctrf": {
+      "results": {
+        "tool": {
+          "name": "pytest",
+          "version": "9.0.3"
+        },
+        "summary": {
+          "tests": 6,
+          "passed": 6,
+          "failed": 0,
+          "skipped": 0,
+          "pending": 0,
+          "other": 0,
+          "start": 1790444441.2331562,
+          "stop": 1790444455.0921638
+        },
+        "tests": [
+          {
+            "name": "test_outputs.py::test_run_py_file_exists",
+            "status": "passed",
+            "duration": 0.00029626800096593797,
+            "start": 1790444441.2527902,
+            "stop": 1790444441.2532368,
+            "retries": 0,
+            "file_path": "test_outputs.py"
+          },
+          {
+            "name": "test_outputs.py::test_tasks_run_concurrently",
+            "status": "passed",
+            "duration": 3.1059022810077295,
+            "start": 1790444441.25334,
+            "stop": 1790444444.359563,
+            "retries": 0,
+            "file_path": "test_outputs.py"
+          },
+          {
+            "name": "test_outputs.py::test_tasks_obey_max_concurrent",
+            "status": "passed",
+            "duration": 6.175050892983563,
+            "start": 1790444444.359919,
+            "stop": 1790444450.5352907,
+            "retries": 0,
+            "file_path": "test_outputs.py"
+          },
+          {
+            "name": "test_outputs.py::test_tasks_cancel_below_max_concurrent",
+            "status": "passed",
+            "duration": 1.5180296739999903,
+            "start": 1790444450.5355556,
+            "stop": 1790444452.0538814,
+            "retries": 0,
+            "file_path": "test_outputs.py"
+          },
+          {
+            "name": "test_outputs.py::test_tasks_cancel_at_max_concurrent",
+            "status": "passed",
+            "duration": 1.5119897039985517,
+            "start": 1790444452.0542002,
+            "stop": 1790444453.5663877,
+            "retries": 0,
+            "file_path": "test_outputs.py"
+          },
+          {
+            "name": "test_outputs.py::test_tasks_cancel_above_max_concurrent",
+            "status": "passed",
+            "duration": 1.52494194402243,
+            "start": 1790444453.5665567,
+            "stop": 1790444455.091851,
+            "retries": 0,
+            "file_path": "test_outputs.py"
+          }
+        ]
+      }
+    },
+    "passed": true
+  }
+}

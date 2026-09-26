@@ -1,0 +1,23 @@
+{
+  "target": 2,
+  "mode": "sorted_single_variant",
+  "request_sha256": "11060c85d4840e3129a5d071a39d2a58228c476bdc0d1d27dd0ae346c05a05d4",
+  "input_tokens": 265,
+  "started_utc": 1790444294.07196,
+  "response": {
+    "model": "qwen2.5:1.5b",
+    "created_at": "2026-09-26T17:38:14.4495989Z",
+    "response": "{\n  \"content\": \"sample\\n\",\n  \"path\": \"notes.txt\",\n  \"tool\": \"write_file\"\n}",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 216416800,
+    "load_duration": 10738400,
+    "prompt_eval_count": 265,
+    "prompt_eval_cached_count": 264,
+    "prompt_eval_duration": 4447000,
+    "eval_count": 27,
+    "eval_duration": 196184000
+  },
+  "matches_target": true,
+  "elapsed_seconds": 0.37800899997819215
+}

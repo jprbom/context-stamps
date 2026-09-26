@@ -95,3 +95,5 @@ python experiments/verify_terminal_reference.py
 The next experiments should distinguish three failures: generating correct actions, acquiring required evidence and recognizing an ineffective repair loop. Compare ordinary scaffold corrections with typed file-edit/tool interfaces and approved exact domain tools before fitting a policy. For the smaller model, train only on independently verified **non-benchmark** action examples. A local learner needs verified outcomes from the complete pipeline; a model's declaration of completion or a syntactically valid CSV is not a correctness label.
 
 The context runtime and local statistical policy then need their own paired treatment on fresh task families, including retention and repeated-error cases. Extra context, more compact stamps and a successful statistical gate cannot supply missing code-generation competence. Local adaptation must test absolute task quality as well as savings and retention.
+
+The subsequent [typed-file experiment and schema-ordering investigation](typed-tools-development.md) retain failed variants and correct an interface regression; both models still fail both tasks.

@@ -85,6 +85,11 @@ def main(executable):
             for key in keys:
                 line = next(line for line in lines if line.strip().startswith('"' + key + '":'))
                 checksum_cases.append((relative, line))
+        relative = Path('evidence/terminal-typed-v1/small-ordered/plan.json')
+        lines = (ROOT / relative).read_text().splitlines()
+        for key in ('experiments/qwen_token_count.py', 'tokenizer_sha256'):
+            line = next(line for line in lines if line.strip().startswith('"' + key + '":'))
+            checksum_cases.append((relative, line))
         for relative, line in checksum_cases:
             control = scan / relative
             control.parent.mkdir(parents=True, exist_ok=True)

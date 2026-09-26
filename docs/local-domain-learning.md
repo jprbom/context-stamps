@@ -96,3 +96,7 @@ Start with software maintenance and operational diagnostics, where bounded tool 
 7. **Qualify the target device.** Repeat the frozen comparison on the intended edge CPU/GPU/NPU with realistic thermal and battery limits. An RTX laptop result is not embedded-device evidence. Offline operation, bounded storage and recovery are acceptance criteria.
 
 Automatic improvement means this cycle can run locally when the host has authorized its data, limits and candidate types. It does not mean every update must be accepted, every model can learn from its own answers, or quality must increase on every possible task.
+
+## Bind the execution protocol
+
+The [typed-tool experiment](typed-tools-development.md) found an execution-relevant schema serialization defect on both local models. Include the exact ordered response-schema bytes, prompt/template, parser, decoder settings and tool versions in a policy environment binding. Sorting JSON for semantic identity must not erase order that changes constrained generation. Requalify when this protocol changes. Completion or artifact existence is not a training label: use an independent outcome verifier. Benchmark development traces remain excluded from training.

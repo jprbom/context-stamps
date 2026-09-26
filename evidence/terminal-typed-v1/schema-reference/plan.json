@@ -1,0 +1,66 @@
+{
+  "schema": 1,
+  "model": {
+    "name": "qwen2.5-coder:7b",
+    "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+    "bytes": 4683087561,
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen2",
+      "families": [
+        "qwen2"
+      ],
+      "parameter_size": "7.6B",
+      "quantization_level": "Q4_K_M"
+    },
+    "template_sha256": "1e65450c30670713aa47fe23e8b9662bdf4065e81cc8e3cbfaa98924fcc0d320",
+    "parameters_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "license_sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "system_sha256": "66b9ea09bd5b7099cbb4fc820f31b575c0366fa439b08245566692c6784e281e"
+  },
+  "ollama": {
+    "version": "0.34.2"
+  },
+  "config": {
+    "temperature": 0,
+    "seed": 7,
+    "num_ctx": 4096,
+    "num_predict": 128
+  },
+  "modes": [
+    "sorted_union",
+    "ordered_union",
+    "json_only",
+    "sorted_single_variant"
+  ],
+  "targets": [
+    {
+      "tool": "shell",
+      "command": "echo 42"
+    },
+    {
+      "tool": "read_file",
+      "path": "notes.txt"
+    },
+    {
+      "tool": "write_file",
+      "path": "notes.txt",
+      "content": "sample\n"
+    }
+  ],
+  "tokenizer": {
+    "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "python_version": "3.12.10",
+    "tokenizers_version": "0.23.2"
+  },
+  "source_hashes": {
+    "experiments/terminal_schema_probe.py": "e8f0ad6776d8e9faeb8b10ad1aef9c2974384335df1b48112bd133c2ffce2e71",
+    "experiments/terminal_tools.py": "7c74e6e22cb4f351f7fbbab20b9a90df34f91775b061fdc6ead003a9ccf91ae4",
+    "experiments/terminal_pilot.py": "2542d071dc57af73a2d8fad0fafb29347ad8048f23596cc96115e8ff51b6c5be",
+    "experiments/qwen_token_count.py": "566e00eee2a32f4077c6b1980dbc8467d0c9434ff60988b43ef1c62ad8fd864f",
+    "experiments/local_eval.py": "60084ecbdf5294102b374414c8ecd4d994f836dce1a5536cb08f264f51337912"
+  },
+  "generated_commands_executed": 0,
+  "purpose": "Schema serialization canary, not agent accuracy or training"
+}

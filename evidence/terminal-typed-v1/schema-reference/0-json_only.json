@@ -1,0 +1,23 @@
+{
+  "target": 0,
+  "mode": "json_only",
+  "request_sha256": "a356ff2c7e2897794cfbbfdb5a96b7a9ec43a937ed9a3455c417b18ef7384fb1",
+  "input_tokens": 259,
+  "started_utc": 1790444219.0160928,
+  "response": {
+    "model": "qwen2.5-coder:7b",
+    "created_at": "2026-09-26T17:36:59.3591418Z",
+    "response": "{\"tool\":\"shell\",\"command\":\"echo 42\"}",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 150566200,
+    "load_duration": 23433800,
+    "prompt_eval_count": 259,
+    "prompt_eval_cached_count": 258,
+    "prompt_eval_duration": 7757000,
+    "eval_count": 13,
+    "eval_duration": 112434000
+  },
+  "matches_target": true,
+  "elapsed_seconds": 0.3437324999831617
+}

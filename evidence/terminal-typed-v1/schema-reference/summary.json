@@ -1,0 +1,12 @@
+{
+  "matches": {
+    "sorted_union": 0,
+    "ordered_union": 3,
+    "json_only": 3,
+    "sorted_single_variant": 3
+  },
+  "calls": 12,
+  "model_unchanged": true,
+  "commands_executed": 0,
+  "provider_charges_usd": 0
+}

@@ -1,0 +1,23 @@
+{
+  "target": 2,
+  "mode": "sorted_union",
+  "request_sha256": "2f2e801ed5d447959585c1826d12ec0db8245568212b93b37d3d152e2d0d989f",
+  "input_tokens": 265,
+  "started_utc": 1790444224.583186,
+  "response": {
+    "model": "qwen2.5-coder:7b",
+    "created_at": "2026-09-26T17:37:04.84685Z",
+    "response": "{\"tool\": \"finish\"}",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 111940700,
+    "load_duration": 9696000,
+    "prompt_eval_count": 265,
+    "prompt_eval_cached_count": 243,
+    "prompt_eval_duration": 20389000,
+    "eval_count": 7,
+    "eval_duration": 78508000
+  },
+  "matches_target": false,
+  "elapsed_seconds": 0.26454200001899153
+}

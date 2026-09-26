@@ -90,3 +90,14 @@ condition = "AND"
 regexTarget = "match"
 paths = ['''(^|[\\/])evidence[\\/]terminal-pilot-coder7b-v1[\\/]manifest\.json$''']
 regexes = ['''^tokenizer-source\.json": "bfba23cff6b9df699e6f0dc90e61e9765ed0e1e1fb5c832c4ac489aa636132bd"$''']
+
+[[allowlists]]
+description = "Exact public BPE and helper checksums in retained typed-interface registrations"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]terminal-typed-v1[\\/](small|reference|small-gated|reference-gated|small-ordered|reference-ordered|schema-small|schema-reference)[\\/]plan\.json$''']
+regexes = [
+  '''^tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"$''',
+  '''^qwen_token_count\.py": "566e00eee2a32f4077c6b1980dbc8467d0c9434ff60988b43ef1c62ad8fd864f"$''',
+]

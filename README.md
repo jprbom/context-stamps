@@ -36,6 +36,8 @@ The [local coding-agent pilot](docs/terminal-local-pilot.md) now runs isolated H
 
 [Download the research figure as PNG](docs/assets/acquisition-v1-tradeoff.png) · [Model card, weights and limits](evidence/acquisition-v1/MODEL_CARD.md)
 
+A subsequent [typed-tool investigation](docs/typed-tools-development.md) retains 76 task calls and 24 separate schema canaries. Recursively sorting a union schema caused both local models to select `finish` on all three copy checks; preserving discriminator order corrected all three. Corrected typed interfaces still score **0/2 tasks on each model**, below the legacy 7B control. No candidate is promoted. Eleven typed-tool tests and twelve live isolated file probes cover the engineering boundary.
+
 The [expanded evaluation programme](docs/evaluation-programme.md) specifies paired model/runtime comparisons using established harnesses. A local Inspect pilot runner and seven boundary tests are available; its first preparation was blocked by Windows Application Control before generation. No new native benchmark score or frontier-model comparison is claimed. Frontier calls remain disabled for this phase.
 
 The local **`ContextRuntime`** now combines registered retrieval experts, dependency checks, explicit byte/token budgets, bounded missing-evidence recovery and verified exact-result reuse. Run `python examples/unified_context.py` after installation. [API and complete example](docs/unified-runtime.md) · [runtime results and retained failures](docs/runtime-v1-results.md).

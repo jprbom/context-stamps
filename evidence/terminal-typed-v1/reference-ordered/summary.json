@@ -1,0 +1,27 @@
+{
+  "rows": [
+    {
+      "task": "cancel-async-tasks",
+      "status": "step_budget_exhausted",
+      "passed": false,
+      "calls": 12,
+      "input_tokens": 15315,
+      "output_tokens": 1128,
+      "agent_elapsed_seconds": 46.82050950010307
+    },
+    {
+      "task": "log-summary-date-ranges",
+      "status": "agent_done",
+      "passed": false,
+      "calls": 9,
+      "input_tokens": 17907,
+      "output_tokens": 1924,
+      "agent_elapsed_seconds": 52.251582400058396
+    }
+  ],
+  "model_unchanged": true,
+  "purpose": "selected development coding-agent control; no runtime treatment or training",
+  "provider_charges_usd": 0,
+  "energy_joules": null,
+  "host_peak_ram_bytes": null
+}

@@ -18,6 +18,7 @@ import time
 import urllib.request
 from pathlib import Path
 
+import terminal_tools
 from harbor_sandbox import MAX_COMMAND, PYTHON_IMAGE, ResearchSandbox, docker
 from local_eval import BASE_URL, canonical, local_api, model_identity
 from longbench_eval import monitor
@@ -42,6 +43,13 @@ SYSTEM = (
 )
 RESPONSE_SCHEMA = {"type": "object", "properties": {"command": {"type": "string"}, "done": {"type": "boolean"}},
                    "required": ["command", "done"], "additionalProperties": False}
+INTERFACES = ("shell-v1", "typed-files-v1", "typed-files-v2", "typed-files-v3")
+
+
+def interface_system(name):
+    if name not in INTERFACES:
+        raise ValueError("Unsupported agent interface")
+    return SYSTEM if name == "shell-v1" else terminal_tools.SYSTEM
 
 
 def sha(path):
@@ -86,16 +94,22 @@ def token_count(prompt, python, tokenizer):
     return json.loads(result.stdout)
 
 
-def generate(prompt, model=MODEL):
+def generate(prompt, model=MODEL, interface="shell-v1"):
     if model not in SUPPORTED_MODELS:
         raise ValueError("Register a supported local Qwen model with the matching tokenizer")
     class NoRedirect(urllib.request.HTTPRedirectHandler):
         def redirect_request(self, *args, **kwargs):
             raise ValueError("Local provider redirect refused")
+    interface_system(interface)
     body = {"model": model, "prompt": prompt, "raw": True, "stream": False, "keep_alive": "5m",
-            "options": CONFIG, "format": RESPONSE_SCHEMA}
+            "options": CONFIG, "format": RESPONSE_SCHEMA if interface == "shell-v1" else terminal_tools.SCHEMA}
     opener = urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())
-    request = urllib.request.Request(BASE_URL + "/api/generate", data=canonical(body),
+    # Insertion order matters to this backend's schema-derived decoding grammar.
+    # Canonical hashing must not alphabetize the tool discriminant after payload
+    # fields. Old modes remain available only for reproducing retained failures.
+    wire = (json.dumps(body, ensure_ascii=False, separators=(",", ":")).encode()
+            if interface == "typed-files-v3" else canonical(body))
+    request = urllib.request.Request(BASE_URL + "/api/generate", data=wire,
                                      headers={"Content-Type": "application/json"})
     with opener.open(request, timeout=180) as response:
         raw = response.read(1024 * 1024 + 1)
@@ -107,7 +121,8 @@ def generate(prompt, model=MODEL):
 def source_hashes():
     return {name: sha(ROOT / name) for name in
             ("experiments/terminal_pilot.py", "experiments/harbor_sandbox.py",
-             "experiments/qwen_token_count.py", "experiments/local_eval.py", "experiments/longbench_eval.py")}
+             "experiments/qwen_token_count.py", "experiments/local_eval.py", "experiments/longbench_eval.py",
+             "experiments/terminal_tools.py")}
 
 
 def check_source(source):
@@ -182,7 +197,8 @@ def prepare(args):
             "task_files": source["files"], "model": model_identity(args.model), "ollama": local_api("/api/version"),
             "agent_image": PYTHON_IMAGE, "verifier_images": images, "source_hashes": source_hashes(),
             "config": CONFIG, "max_steps": MAX_STEPS, "max_input_tokens": MAX_INPUT, "tokenizer": tokenizer,
-            "harness_python": platform.python_version(), "system_prompt": SYSTEM,
+            "harness_python": platform.python_version(), "system_prompt": interface_system(args.interface),
+            "interface": args.interface,
             "spending": "local only; no paid model/judge calls", "sample_selection": "Two tasks chosen by task type and local resource fit, before model outputs."}
     args.out.mkdir(parents=True, exist_ok=False)
     write_new(args.out / "plan.json", plan)
@@ -195,7 +211,8 @@ def validate(args):
             or plan["model"]["name"] not in SUPPORTED_MODELS
             or plan["model"] != model_identity(plan["model"]["name"]) or plan["ollama"] != local_api("/api/version")
             or plan["tasks"] != list(TASKS) or plan["config"] != CONFIG or plan["max_steps"] != MAX_STEPS
-            or plan["max_input_tokens"] != MAX_INPUT or plan["system_prompt"] != SYSTEM):
+            or plan["max_input_tokens"] != MAX_INPUT
+            or plan["system_prompt"] != interface_system(plan["interface"])):
         raise ValueError("Prepared protocol changed")
     tokenizer = token_count("", args.token_python, args.tokenizer)
     tokenizer.pop("tokens")
@@ -229,7 +246,8 @@ async def run_task(args, plan, task):
         record["sandbox"] = await sandbox.start()
         await setup_task(sandbox, args.source, task)
         instruction = (args.source / "tasks" / task / "instruction.md").read_text(encoding="utf-8")
-        messages = [{"role": "system", "content": SYSTEM}, {"role": "user", "content": instruction}]
+        interface = plan.get("interface", "shell-v1")
+        messages = [{"role": "system", "content": interface_system(interface)}, {"role": "user", "content": instruction}]
         record["initial_messages"] = messages.copy()
         format_errors = 0
         for step in range(MAX_STEPS):
@@ -246,7 +264,7 @@ async def run_task(args, plan, task):
                        "input_tokens": counted["tokens"], "token_count_seconds": count_seconds}
             record["attempts"].append(attempt)
             call_start = time.perf_counter()
-            response = generate(prompt, plan["model"]["name"])
+            response = generate(prompt, plan["model"]["name"], interface)
             attempt["request_seconds"] = time.perf_counter() - call_start
             attempt["response"] = response
             if response.get("prompt_eval_count") != counted["tokens"] or not response.get("done"):
@@ -256,20 +274,36 @@ async def run_task(args, plan, task):
                 break
             messages.append({"role": "assistant", "content": response["response"]})
             try:
-                action = parse_action(response["response"])
+                action = (parse_action if interface == "shell-v1" else terminal_tools.parse_action)(response["response"])
             except ValueError:
                 format_errors += 1
                 attempt["format_error"] = "invalid_action"
                 if format_errors > 2:
                     record["status"] = "invalid_action"
                     break
-                messages.append({"role": "user", "content": "Action rejected without execution. Return exactly command and done. "
-                                 "Use a nonempty command with done=false to execute it, or an empty command with done=true to finish."})
+                repair = ("Action rejected without execution. Return exactly command and done. "
+                          "Use a nonempty command with done=false to execute it, or an empty command with done=true to finish.")
+                messages.append({"role": "user", "content": repair if interface == "shell-v1" else terminal_tools.REPAIR})
                 continue
-            if action["done"]:
+            finished = action["done"] if interface == "shell-v1" else action["tool"] == "finish"
+            if finished:
+                if interface in ("typed-files-v2", "typed-files-v3"):
+                    check_start = time.perf_counter()
+                    present = await collect_artifact(sandbox, task)
+                    attempt["finish_check_seconds"] = time.perf_counter() - check_start
+                    if present is None:
+                        name = "run.py" if task == TASKS[0] else "summary.csv"
+                        result = {"return_code": 1, "boundary_failure": None, "stdout": "",
+                                  "stderr": "Cannot finish: required regular artifact /app/" + name
+                                  + " is missing or outside the submission bounds. Create it, check it, then finish."}
+                        attempt["finish_rejected"] = True
+                        attempt["tool_result"] = result
+                        messages.append({"role": "user", "content": json.dumps({"tool_result": result}, ensure_ascii=False)})
+                        continue
                 record["status"] = "agent_done"
                 break
-            result = await sandbox.execute(action["command"], timeout=30)
+            result = (await sandbox.execute(action["command"], timeout=30) if interface == "shell-v1"
+                      else await terminal_tools.execute(sandbox, action))
             attempt["tool_result"] = result
             if result["boundary_failure"]:
                 record["status"] = "tool_boundary_failure"
@@ -344,6 +378,7 @@ def main():
     parser.add_argument("--source", type=Path, required=True)
     parser.add_argument("--images", type=Path)
     parser.add_argument("--model", default=MODEL)
+    parser.add_argument("--interface", choices=INTERFACES, default="shell-v1")
     parser.add_argument("--token-python", type=Path, required=True)
     parser.add_argument("--tokenizer", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
