@@ -16,6 +16,8 @@ The 32-byte capsule is a routing identity across eight bounded facets. It does n
 
 On the research branch, the [temporal state, compiler and typed-decision APIs](docs/enterprise-state.md) now support historical knowledge cutoffs, verified evidence kinds, finite negative knowledge, conflict handling, dependency-aware context selection and batched Boolean/Choice/Score results. Run `python examples/enterprise_decision.py` for an offline example. The full local suite passes 182 tests; this is engineering evidence, not a newly trained model or a public benchmark gain.
 
+The [longer RTX precision study](docs/rtx-precision-capacity.md) records eight training-only capacity windows. BF16 did not consistently improve throughput and changed some ranking orders. These probe weights were discarded; serving precision and existing quality claims are unchanged.
+
 The local **`ContextRuntime`** now combines registered retrieval experts, dependency checks, explicit byte/token budgets, bounded missing-evidence recovery and verified exact-result reuse. Run `python examples/unified_context.py` after installation. [API and complete example](docs/unified-runtime.md) · [runtime results and retained failures](docs/runtime-v1-results.md).
 
 The optional cross-encoder uses length-aware GPU batches and a bounded exact passage-token cache. Its candidates, model weights and evidence limit are preserved. The learned cheaper-expert policy failed calibration and remains disabled. Precision changes require numerical and ranking checks; lower bit width alone does not earn a speed claim.

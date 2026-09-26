@@ -349,10 +349,13 @@
       ],
       "current_sources": [
         "experiments/profile_context_training.py",
-        "evidence/enterprise-context-v1/gpu-capacity.json"
+        "evidence/enterprise-context-v1/gpu-capacity.json",
+        "experiments/profile_context_precision.py",
+        "evidence/enterprise-gpu-v1/capacity.json"
       ],
       "status": "partial_measured",
-      "completion_proof": "Pinned licensed candidates, complete task and resource accounting, no simultaneous-model fit assumption."
+      "completion_proof": "Pinned licensed candidates, complete task and resource accounting, no simultaneous-model fit assumption.",
+      "implementation_note": "Two local environments, initial batch sweep and eight longer precision/capacity windows. BF16 is not a uniform speedup; new context/decision/VLM candidates and held-out qualification remain."
     },
     {
       "id": "EC19",

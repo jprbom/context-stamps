@@ -37,6 +37,8 @@ Raw observations for all ten cases are in [gpu-capacity.json](../evidence/enterp
 
 Use batch 128 as an initial setting for these two workloads. Do not infer that it is optimal for a future multi-head model or that increasing batch size preserves training quality. Re-profile the actual new architecture and validate its learning curve before adopting a changed batch. Filling unused VRAM or forcing 100% utilization is not itself an efficiency gain.
 
+The [longer precision follow-up](rtx-precision-capacity.md) finds substantial window variability, no consistent BF16 speed advantage and some changed ranking orders. It preserves this initial probe while limiting how its peak throughput should be interpreted.
+
 ```powershell
 # Run from a reviewed clone with the matching prepared training files outside Git.
 python experiments/profile_context_training.py --work C:\path\to\prepared-work --out capacity-new.json
