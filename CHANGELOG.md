@@ -2,6 +2,12 @@
 
 All versions below are research releases or candidates. v0.5.0 is available from the public source repository; no PyPI release is announced here.
 
+## Development update after 0.5.0 — 27 September 2026
+
+- Moved external runtime callbacks outside the shared state lock and added context/receipt revalidation. Concurrent exact requests share a bounded pending computation; revocation wakes waiters and adapter exceptions release capacity. Eleven new concurrency tests pass, with 339 tests passing in the complete local environment. Historical source and benchmark evidence remain replayable. No production speedup or hard callback cancellation is claimed.
+- Clarified local adaptation at three levels: verified memory, CPU context policies and optional small weight updates on capable hardware. Every supported device should retain a local evaluation and rollback path; automatic weight improvement remains unqualified.
+- Completed the public-code training control: 368 independently checked MBPP examples, 184 optimizer steps, 65.42 seconds of local RTX training and a 4.17 MiB adapter. Retained all training-source and native HumanEval+ grader audits, including the reference numerical failure on task 32. Training completion does not activate the adapter.
+
 ## Development update after 0.5.0 — 26 September 2026
 
 - Completed one offline Qwen 1.5B LoRA fixture experiment: 544,768 trainable parameters, 144 training rows, 27.73 seconds on RTX. Frozen base unchanged; adapter reload reproduces one recorded batch exactly. Test letter-selection improves 12/72 to 52/72 but introduces one new failure and trails the exact rule. Adapter stays inactive. Added training/replay code, probes, model card and local integration runbook; no general retention or autonomous deployment claim.

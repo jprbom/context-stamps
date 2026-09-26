@@ -8,6 +8,8 @@ import statistics
 from collections import Counter
 from pathlib import Path
 
+from source_evidence import verify_sources
+
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "evidence/runtime-v1"
 
@@ -29,8 +31,7 @@ def main():
     for path, digest in read(OUT / "checksums.json").items():
         assert sha(OUT / path) == digest, path
     for filename in ("latency-manifest.json", "workflow-manifest.json", "router-training.json", "spherical-ablation.json", "exact-tool-control.json"):
-        for path, digest in read(OUT / filename)["source_sha256"].items():
-            assert sha(ROOT / path) == digest, path
+        verify_sources(read(OUT / filename)["source_sha256"])
     assert read(OUT / "latency-manifest.json")["protocol_sha256"] == sha(OUT / "protocol.json")
     original = json.loads(gzip.decompress((ROOT / "evidence/controller-v2/rankings.json.gz").read_bytes()))["test"]
     lookup = {(r["dataset"], r["query_id"], r["method"]): r for r in original}

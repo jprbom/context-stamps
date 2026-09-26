@@ -1,0 +1,3 @@
+MBPP source qualification replay: 368/374 eligible; no model training in this data audit.
+HumanEval+ reference audit replay: 163/164 reference/empty pairs meet expectations.
+Includes retained transfer failure and numerical diagnostics; no model benchmark or automatic activation claim.

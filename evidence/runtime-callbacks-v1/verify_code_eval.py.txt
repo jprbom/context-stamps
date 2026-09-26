@@ -1,0 +1,1 @@
+Paired four-task smoke: base 0/4, adapter 2/4; seven native grades and one format failure. No full-benchmark claim.

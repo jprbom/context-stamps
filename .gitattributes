@@ -28,3 +28,6 @@ evidence/mbpp-code-adapter-v1/adapter/adapter_config.json -text whitespace=cr-at
 # Preserve upstream license/card bytes, including their trailing spaces.
 evidence/humaneval-grader-v1/HumanEvalPlus-LICENSE.txt -text whitespace=-blank-at-eol
 evidence/mbpp-training-v1/HF_DATASET_CARD.md -text whitespace=-blank-at-eol
+evidence/runtime-callbacks-v1/*.txt -text whitespace=cr-at-eol
+# Preserve reporter padding in the exact recorded full-suite log.
+evidence/runtime-callbacks-v1/core-py313.txt -text whitespace=cr-at-eol,-blank-at-eol

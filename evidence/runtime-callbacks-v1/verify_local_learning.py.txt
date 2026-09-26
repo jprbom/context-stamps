@@ -1,0 +1,2 @@
+Local learning: 24 boundary tests, 60 training fixtures, 1200 evaluation fixtures, rejection and rollback replayed.
+Simulated resources and task outcomes; no SLM or hardware qualification.

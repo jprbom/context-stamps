@@ -1,0 +1,2 @@
+runtime-v1: 14,708 ranking records, 288 reader observations and 80 facet fixtures replayed
+Recorded-gain replay, not independent raw-qrels, service-scale or base-model replication.

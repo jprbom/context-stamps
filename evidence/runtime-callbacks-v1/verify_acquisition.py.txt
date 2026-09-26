@@ -1,0 +1,4 @@
+Six RTX fits, 788 calibration and 3677 regression trajectories verified. No stop policy qualified; full-pool fallback retained.
+Initial 303 and optimized 304 engineering tests verified separately from model quality.
+Two planner profiles replayed; published serial profile preserves all 9000 output orders.
+Maximum replayed binomial-bound rounding difference: 0

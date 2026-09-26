@@ -1,0 +1,42 @@
+[
+  {
+    "repeat_fraction": 0.0,
+    "median_stream_ms": {
+      "direct": 38.606900023296475,
+      "working_set": 34.329299931414425,
+      "prefetch": 36.03610000573099
+    },
+    "payload_reads": {
+      "direct": 120,
+      "working_set": 63,
+      "prefetch": 68
+    }
+  },
+  {
+    "repeat_fraction": 0.1,
+    "median_stream_ms": {
+      "direct": 39.98879995197058,
+      "working_set": 24.749799980781972,
+      "prefetch": 41.24540009070188
+    },
+    "payload_reads": {
+      "direct": 120,
+      "working_set": 57,
+      "prefetch": 62
+    }
+  },
+  {
+    "repeat_fraction": 0.5,
+    "median_stream_ms": {
+      "direct": 42.260600021108985,
+      "working_set": 19.43109999410808,
+      "prefetch": 29.645799892023206
+    },
+    "payload_reads": {
+      "direct": 120,
+      "working_set": 33,
+      "prefetch": 38
+    }
+  }
+]
+267 passing test records and 540 exact-reference replay checks verified; no model-quality or production-scale claim.

@@ -16,7 +16,7 @@ from .computation import ComputationCache, ComputationIdentity
 from .facet_compiler import FacetCompiler
 from .security import bounded_text, identifier
 from .session import ContextSession
-from .workflow import ContextNode
+from .workflow import ContextNode, Handoff
 
 
 @dataclass(frozen=True)
@@ -97,16 +97,20 @@ class ContextRuntime:
     mutates sources, permissions, expert registrations or model weights.
     """
 
-    def __init__(self, *, tenant, principal, role, policy, token_counter=None):
+    def __init__(self, *, tenant, principal, role, policy, token_counter=None, max_inflight=16):
         for value in (tenant, principal, role, policy):
             identifier(value)
         if token_counter is not None and not callable(token_counter):
             raise ValueError("token_counter must be callable")
+        if type(max_inflight) is not int or not 1 <= max_inflight <= 256:
+            raise ValueError("max_inflight must be an integer from 1 to 256")
         self.tenant, self.principal, self.role, self.policy = tenant, principal, role, policy
         self._tokens = token_counter
         self._session, self._cache = ContextSession(), ComputationCache()
         self._nodes, self._revoked = {}, set()
         self._epoch, self._lock = 0, threading.RLock()
+        self._changed = threading.Condition(self._lock)
+        self._pending, self._max_inflight = {}, max_inflight
         self._outcomes = deque(maxlen=128)
 
     def put(self, node):
@@ -117,11 +121,13 @@ class ContextRuntime:
             self._nodes[node.key] = node
             self._revoked.discard(node.key)
             self._epoch += 1
+            self._changed.notify_all()
 
     def link(self, source, target, kind, *, provenance):
         with self._lock:
             self._session.link(source, target, kind, provenance=provenance)
             self._epoch += 1
+            self._changed.notify_all()
 
     def invalidate(self, source):
         identifier(source)
@@ -130,6 +136,7 @@ class ContextRuntime:
                 raise ValueError("unknown source")
             self._revoked.add(source)
             self._epoch += 1
+            self._changed.notify_all()
 
     def _versions(self):
         return {k: n.revision for k, n in self._nodes.items() if k not in self._revoked and self.role in n.roles}
@@ -144,14 +151,22 @@ class ContextRuntime:
 
     def resolve(self, receipt, *, budget=RuntimeBudget()):
         with self._lock:
+            epoch = self._epoch
             packet = self._session.resolve(receipt, role=self.role, revisions=self._versions(), budget_bytes=budget.bytes)
-            if packet.status == "complete" and budget.tokens is not None:
-                if self._tokens is None:
-                    raise ValueError("an explicit tokenizer is required for a token budget")
-                if self._count(packet.text) > budget.tokens:
-                    from .workflow import Handoff
-                    return Handoff("insufficient", "", (), 0, "token_budget")
-            return packet
+            if packet.status != "complete" or budget.tokens is None:
+                return packet
+        if self._tokens is None:
+            raise ValueError("an explicit tokenizer is required for a token budget")
+        deadline = time.monotonic() + budget.milliseconds / 1000
+        count = self._count(packet.text)
+        with self._lock:
+            if epoch != self._epoch:
+                return Handoff("insufficient", "", (), 0, "context_changed")
+            if time.monotonic() > deadline:
+                return Handoff("insufficient", "", (), 0, "latency_budget")
+            if count > budget.tokens:
+                return Handoff("insufficient", "", (), 0, "token_budget")
+            return self._session.resolve(receipt, role=self.role, revisions=self._versions(), budget_bytes=budget.bytes)
 
     def prepare_context(self, query, *, eligible, experts, baseline, scope, verifier,
                         choose=None, exact_key=None, limit=5, budget=RuntimeBudget()):
@@ -184,61 +199,74 @@ class ContextRuntime:
             epoch = self._epoch
             versions = self._versions()
             allowed = tuple(k for k in eligible if k in versions)
-            if not allowed:
+        if not allowed:
+            return failure("unavailable_context")
+        if exact_key is not None:
+            identifier(exact_key)
+            if exact_key not in allowed:
                 return failure("unavailable_context")
-            if exact_key is not None:
-                identifier(exact_key)
-                if exact_key not in allowed:
-                    return failure("unavailable_context")
-                roots, route = [exact_key], "exact"
-            else:
-                facets = tuple(FacetCompiler().compile(query).facets.items())
-                request = ExpertRequest(query, allowed, facets, min(limit, len(allowed)), deadline)
-                proposal = baseline if choose is None else choose(request)
-                candidate = registered.get(proposal)
-                if candidate is not None and (proposal == baseline or scope in candidate.approved_scopes):
-                    route = proposal
-                expert = registered[route]
-                if time.monotonic() + expert.estimated_ms / 1000 > deadline:
-                    return failure("latency_budget")
-                roots = expert.retrieve(request)
-                if (not isinstance(roots, (tuple, list)) or not 1 <= len(roots) <= request.limit
-                        or any(k not in allowed for k in roots) or len(set(roots)) != len(roots)):
-                    return failure("invalid_expert_result")
-                roots = list(roots)
-            seen = set()
-            for iterations in range(1, budget.iterations + 1):
-                if time.monotonic() > deadline:
-                    return failure("latency_budget")
+            roots, route = [exact_key], "exact"
+        else:
+            facets = tuple(FacetCompiler().compile(query).facets.items())
+            request = ExpertRequest(query, allowed, facets, min(limit, len(allowed)), deadline)
+            proposal = baseline if choose is None else choose(request)
+            candidate = registered.get(proposal)
+            if candidate is not None and (proposal == baseline or scope in candidate.approved_scopes):
+                route = proposal
+            expert = registered[route]
+            with self._lock:
+                if epoch != self._epoch:
+                    return failure("context_changed")
+            if time.monotonic() + expert.estimated_ms / 1000 > deadline:
+                return failure("latency_budget")
+            roots = expert.retrieve(request)
+            if (not isinstance(roots, (tuple, list)) or not 1 <= len(roots) <= request.limit
+                    or any(k not in allowed for k in roots) or len(set(roots)) != len(roots)):
+                return failure("invalid_expert_result")
+            roots = list(roots)
+        seen = set()
+        for iterations in range(1, budget.iterations + 1):
+            if time.monotonic() > deadline:
+                return failure("latency_budget")
+            with self._lock:
                 if epoch != self._epoch:
                     return failure("context_changed")
                 packet, receipt, reused = self._session.issue(roots, role=self.role, revisions=self._versions(), budget_bytes=budget.bytes)
                 if packet.status != "complete":
                     return failure(packet.reason)
-                tokens = self._count(packet.text)
-                if budget.tokens is not None and tokens > budget.tokens:
-                    return failure("token_budget")
-                verdict = verifier(packet)
-                if not isinstance(verdict, Verification):
-                    return failure("invalid_verifier_result")
+            tokens = self._count(packet.text)
+            with self._lock:
+                if epoch != self._epoch:
+                    return failure("context_changed")
+            if budget.tokens is not None and tokens > budget.tokens:
+                return failure("token_budget")
+            if time.monotonic() > deadline:
+                return failure("latency_budget")
+            verdict = verifier(packet)
+            if not isinstance(verdict, Verification):
+                return failure("invalid_verifier_result")
+            with self._lock:
                 if epoch != self._epoch:
                     return failure("context_changed")
                 if time.monotonic() > deadline:
                     return failure("latency_budget")
                 if verdict.complete:
+                    current = self._session.resolve(receipt, role=self.role, revisions=self._versions(), budget_bytes=budget.bytes)
+                    if current.status != "complete":
+                        return failure(current.reason)
                     return PreparedContext("complete", packet.text, packet.sources, receipt, tokens, reused,
                         iterations, route, "verified_context", (time.perf_counter() - started) * 1000)
-                if any(key not in allowed for key in verdict.missing):
-                    return failure("unavailable_context")
-                state = (packet.sources, verdict.missing)
-                expanded = sorted(set(roots) | set(verdict.missing))
-                if state in seen or set(expanded) == set(roots):
-                    return failure("no_progress")
-                if len(expanded) > 100:
-                    return failure("source_budget")
-                seen.add(state)
-                roots = expanded
-            return failure("iteration_budget")
+            if any(key not in allowed for key in verdict.missing):
+                return failure("unavailable_context")
+            state = (packet.sources, verdict.missing)
+            expanded = sorted(set(roots) | set(verdict.missing))
+            if state in seen or set(expanded) == set(roots):
+                return failure("no_progress")
+            if len(expanded) > 100:
+                return failure("source_budget")
+            seen.add(state)
+            roots = expanded
+        return failure("iteration_budget")
 
     def run_verified(self, prepared, *, request_digest, model, prompt, tool, verifier_revision, compute, verify):
         """Reuse only complete exact bindings; validate every returned result.
@@ -246,6 +274,9 @@ class ContextRuntime:
         The host includes every generation setting in request_digest and binds
         verifier changes to verifier_revision. Callbacks must be pure/idempotent.
         This method does not impose a hard timeout on an external model call.
+        Concurrent exact cache misses share one computation per context epoch;
+        every caller still verifies the result. Revocation wakes waiting callers.
+        New identities abstain when max_inflight computations are outstanding.
         """
         if not isinstance(prepared, PreparedContext) or prepared.status != "complete" or prepared.receipt is None:
             raise ValueError("complete prepared context required")
@@ -264,18 +295,42 @@ class ContextRuntime:
                 request=request_digest, model=model, prompt=prompt,
                 tool=hashlib.sha256((tool + "\0" + verifier_revision).encode()).hexdigest(),
                 sources=tuple((key, self._nodes[key].revision, self._nodes[key].digest) for key in packet.sources))
+            key = (identity.digest, epoch)
+            while key in self._pending:
+                if self._pending[key] == threading.get_ident():
+                    raise ValueError("recursive computation with the same identity")
+                # Timed wakeups also revalidate receipt expiry while an adapter
+                # is stuck. The Condition releases the shared lock while waiting.
+                self._changed.wait(timeout=0.25)
+                if epoch != self._epoch or self.resolve(prepared.receipt, budget=RuntimeBudget(bytes=1048576)).status != "complete":
+                    return {"status": "insufficient", "result": "", "reused": False}
             value = self._cache.get(identity)
             reused = value is not None
             if value is None:
+                if len(self._pending) >= self._max_inflight:
+                    return {"status": "insufficient", "result": "", "reused": False}
+                self._pending[key] = threading.get_ident()
+        try:
+            if not reused:
                 value = compute(packet.text)
             bounded_text(value)
+            with self._lock:
+                if epoch != self._epoch or self.resolve(prepared.receipt, budget=RuntimeBudget(bytes=1048576)).status != "complete":
+                    return {"status": "unverified", "result": "", "reused": False}
             verified = verify(value, packet.text) is True
-            if not verified or epoch != self._epoch:
-                return {"status": "unverified", "result": "", "reused": False}
+            with self._lock:
+                current = self.resolve(prepared.receipt, budget=RuntimeBudget(bytes=1048576))
+                if not verified or epoch != self._epoch or current.status != "complete":
+                    return {"status": "unverified", "result": "", "reused": False}
+                if not reused:
+                    self._cache.put(identity, value)
+                self.record_outcome(identity.digest, verified=True, reused=reused)
+                return {"status": "verified", "result": value, "reused": reused}
+        finally:
             if not reused:
-                self._cache.put(identity, value)
-            self.record_outcome(identity.digest, verified=True, reused=reused)
-            return {"status": "verified", "result": value, "reused": reused}
+                with self._lock:
+                    self._pending.pop(key, None)
+                    self._changed.notify_all()
 
     def record_outcome(self, request_id, *, verified, reused=False):
         identifier(request_id)

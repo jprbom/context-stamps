@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "date": "2026-09-27",
+  "base_commit": "107eb76e91812ecf040bfdd7e730e1f80fc499a8",
+  "scope": "engineering regression; no model-quality or production-speed claim",
+  "sources": {
+    "context_stamps/runtime.py": "9e8fd6f70f6674f0c4c1c537d2f52e71ba249f65f94a6f8be441ec1e61b6d85a",
+    "tests/test_runtime_callbacks.py": "627079164fe8a3565816ce6f13c9a5f1c06e0fda05ae0c210728992c982f0a4f",
+    "experiments/verify_runtime.py": "2ca766f1ae3992f888d7b859b795cec6e49b7f09cc50a5b04931863833286e8c",
+    "experiments/verify_runtime_callbacks.py": "f5f5435335eebd5e5b3a841663f13a59b0829c866425b3c4d92d4d5e68623189"
+  },
+  "files": {
+    "core-py312.txt": "2f69cb58969201ef65d164a3335ef83602141aea49ec85cd8332f68fe77921c7",
+    "core-py313.txt": "14f7143b15f24beb080b67326bc3757db351165164936a138719c4fd29a09c0d",
+    "verify_acquisition.py.txt": "14ea01954aab3e880db4de06db7171074638a7fb3909793c46c67a6452d8dcd4",
+    "verify_audit.py.txt": "733851ffa6ddc57c4ac90a73db50457661e3680a850b563e911476945f26013c",
+    "verify_code_adapter.py.txt": "cf60887c04072af135aa7eba912f8a90dacc343fa074c45e525a04584ae19b8a",
+    "verify_code_eval.py.txt": "e1496d1dc3934c8e1ced4d7cd27094247ccab362255f635c4abed68d2d9603fc",
+    "verify_code_training_data.py.txt": "abc5d9d76b8e0962f1b2c7fece3cacbd79c3a6e36f8b05895af749892b707db0",
+    "verify_enterprise_foundations.py.txt": "c821fa399d66eff0226d2ae62464e4cd1da6e57bd4aebec66710945851421ae6",
+    "verify_enterprise_state.py.txt": "760be1f0971931b89b7ea9727786fa93982842494090bcfc90f55b3bcdb1b67e",
+    "verify_execution.py.txt": "4d40d7f658e416b91492de7bcc8ca481389947b948985ac91e1bf468d024de48",
+    "verify_incremental.py.txt": "c20a36e7d3659ac3b88e747040c6c550f14bdb5ee4de638308fced63800ac87f",
+    "verify_local_learning.py.txt": "904a33d3f81578ead2ed4973b43fbfa7043d5b4545f7d0fc5a6342b20ba7c817",
+    "verify_runtime.py.txt": "3e8dfea764cd62b1292f23fc0eceefd510c7bd768f0fe1ec9026faec0e99589d",
+    "verify_storage.py.txt": "24a9e867015ecf49658eebedb2d363c5057fdebf8ca0fbb0d6cea73951e2df79"
+  },
+  "suites": {
+    "core-py312.txt": {
+      "tests": 339,
+      "skipped": 16,
+      "environment": "Windows Python 3.12.10; CPU; optional tensor/token dependencies unavailable"
+    },
+    "core-py313.txt": {
+      "tests": 339,
+      "skipped": 0,
+      "environment": "Windows Python 3.13.13; CPU; optional dependencies available"
+    }
+  },
+  "callback_tests": 11,
+  "replayed_historical_manifests": 12,
+  "limits": [
+    "No hard cancellation of in-process callbacks",
+    "No target-edge measurement",
+    "No production load or model improvement claim"
+  ]
+}

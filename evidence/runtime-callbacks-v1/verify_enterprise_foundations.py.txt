@@ -1,0 +1,2 @@
+20 requirements, 10 GPU capacity cases and two 155-test foundation records replayed.
+Recorded evidence integrity only; no independent hardware reproduction or accuracy improvement claim.

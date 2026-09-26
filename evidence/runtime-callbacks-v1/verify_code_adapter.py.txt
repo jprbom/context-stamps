@@ -1,0 +1,2 @@
+Local code SFT replay: 368 verified-source examples, 184 steps; frozen base unchanged.
+Checkpoint retained and inactive. Training completion does not establish coding or Context Stamps benefit.

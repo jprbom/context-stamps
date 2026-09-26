@@ -1,0 +1,2 @@
+201 passing test records, 1,152 durable appends and the integrated offline example replayed.
+Engineering evidence only; no exactly-once external execution, learned model or production-scale claim.

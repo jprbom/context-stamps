@@ -97,6 +97,10 @@
     {
       "file": "code-eval-replay-initial.json.gz",
       "sha256": "bbaae62ac63b6df5e89545be9c8a15a7bc2935d084cd5cf982a9cd5d3ccb97d9"
+    },
+    {
+      "file": "runtime-callbacks-initial.json.gz",
+      "sha256": "df5b161e601af48b750aa237e6be7f89c825ac7352b8cf4e970f3064f4967022"
     }
   ]
 }

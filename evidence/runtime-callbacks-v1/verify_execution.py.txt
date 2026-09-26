@@ -1,0 +1,2 @@
+233 final test records and two earlier runs verified; 60 offline paired timing cases replayed.
+Recorded engineering evidence only; no model training, latency improvement or distributed exactly-once claim.

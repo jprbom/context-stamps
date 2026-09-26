@@ -1,0 +1,39 @@
+[
+  {
+    "mutation": "local",
+    "repeat_fraction": 0.0,
+    "milliseconds": {
+      "no_reuse": 29.558799928054214,
+      "full_invalidation": 33.31069997511804,
+      "incremental": 27.692199917510152
+    }
+  },
+  {
+    "mutation": "local",
+    "repeat_fraction": 0.1,
+    "milliseconds": {
+      "no_reuse": 32.86739997565746,
+      "full_invalidation": 31.22330002952367,
+      "incremental": 27.488699997775257
+    }
+  },
+  {
+    "mutation": "local",
+    "repeat_fraction": 0.5,
+    "milliseconds": {
+      "no_reuse": 29.72390002105385,
+      "full_invalidation": 29.65559996664524,
+      "incremental": 23.189499974250793
+    }
+  },
+  {
+    "mutation": "policy",
+    "repeat_fraction": 0.0,
+    "milliseconds": {
+      "no_reuse": 30.245799920521677,
+      "full_invalidation": 33.52820000145584,
+      "incremental": 32.61410002596676
+    }
+  }
+]
+290 test records and 720 exact workflow requests verified; no training or model benchmark claim.

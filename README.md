@@ -50,6 +50,8 @@ The [expanded evaluation programme](docs/evaluation-programme.md) specifies pair
 
 The local **`ContextRuntime`** now combines registered retrieval experts, dependency checks, explicit byte/token budgets, bounded missing-evidence recovery and verified exact-result reuse. Run `python examples/unified_context.py` after installation. [API and complete example](docs/unified-runtime.md) · [runtime results and retained failures](docs/runtime-v1-results.md).
 
+External callbacks now run outside the runtime's shared state lock: a slow model call cannot block evidence invalidation. Results are revalidated before acceptance, and concurrent exact requests share one pending computation. [Eleven concurrency regression tests](evidence/runtime-callbacks-v1/README.md) cover revocation, coalescing, expiry, exceptions and bounded capacity; they do not establish production throughput.
+
 The optional cross-encoder uses length-aware GPU batches and a bounded exact passage-token cache. Its candidates, model weights and evidence limit are preserved. The learned cheaper-expert policy failed calibration and remains disabled. Precision changes require numerical and ranking checks; lower bit width alone does not earn a speed claim.
 
 ![Paired runtime latency](docs/assets/runtime-v1-latency.png)

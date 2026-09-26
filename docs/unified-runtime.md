@@ -59,7 +59,15 @@ Pass the intended reader's exact tokenizer as `token_counter` when creating the 
 
 Register the known-quality method as `baseline`. An optional `choose(request)` callback may propose another registered expert, but the runtime accepts it only for an explicitly approved scope. A scope should bind the domain, model revisions, corpus snapshot policy, facets, candidate recipe and score calibration. Approval is supplied by the trusted host after evaluation; the runtime cannot authenticate a claim that a policy is qualified.
 
-A latency estimate never authorizes a quality downgrade. If the selected qualified expert cannot fit, the result is `insufficient`. Deadline checks run before and after callbacks; a Python callback cannot be forcibly cancelled here. Network/process adapters must enforce their own timeout and cancellation. The in-process lock serializes operations; this is not a distributed serving or multi-GPU scheduler.
+A latency estimate never authorizes a quality downgrade. If the selected qualified expert cannot fit, the result is `insufficient`. Deadline checks run before and after callbacks; a Python callback cannot be forcibly cancelled here. Network/process adapters must enforce their own timeout and cancellation.
+
+## Concurrent callbacks and revocation
+
+Retrieval, routing, token counting, application verification and model computation run outside the runtime's shared state lock. A slow callback therefore does not prevent another thread from invalidating evidence. Context changes during a callback reject its result. Receipt expiry is checked again before releasing a prepared packet or verified computation. Revocation cannot withdraw text already delivered to a trusted callback or interrupt that callback; it prevents acceptance and reuse of its obsolete result.
+
+Concurrent requests with the same complete computation identity and context epoch share one pending computation. Each caller still runs its own verifier. Requests with different identities can progress independently. Pass `max_inflight=16` to `ContextRuntime` to set the maximum number of distinct outstanding computations (default 16, allowed 1–256). Further uncached identities return `insufficient` at that limit; exact cached results remain available subject to verification. The host must separately bound incoming requests, waiting threads and adapter execution time.
+
+Invalidation wakes waiting requests immediately. An adapter exception releases its pending slot and wakes waiters; a waiting request may then retry the computation. Recursive computation of the same identity on the same thread raises `ValueError` instead of deadlocking. Callbacks remain trusted, pure/idempotent host code. This is local concurrency control, not a distributed serving or GPU scheduling system, and no production throughput improvement is inferred from the regression tests.
 
 ## Optional accelerated reranking
 
