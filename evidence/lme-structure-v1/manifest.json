@@ -1,0 +1,25 @@
+{
+  "files": {
+    "index.json": "fdc53293e2a37e384de1d274a0e2e79676267a26607af894cf4257ae76d58ece",
+    "prepared.json": "470cefc7eac3c394d674af364b2124e7bfc6d2b4c3e6558e200ed3200b154543",
+    "projection-check.json": "79b44a866e2d31b4cbe237d47b85ebd849c1db174718a22f1a27635f5649e6c3",
+    "qwen2.5-1.5b-completed.json": "1494adf7a2d09ac53fb98e77b16ac2c840157e115be516f8eda3d77cde233e13",
+    "qwen2.5-coder-7b-completed.json": "f149d4c6bf4c19a17f773af46980b30a512a98e3d803d9daa3edbc2159e62186",
+    "records.json.gz": "b52375e652847ea6296fa05cd61daaf9addd1f278f91c0f3a1e470c54488e7d3",
+    "registration.json": "aec7550c902d26881f034590fbc09aa419b4cd69b4e65f2a06021bf93003a193",
+    "summary.json": "3839d9e6e799d4cc2aafe38b64b15288f576c60d1056fb8de6f62bffb7c45213",
+    "failure-review.json": "6ce4c82fa47e2088bbc47ebac781b1195051e520121a90bc74efed97d9f2df60",
+    "engineering.json": "eed5079fa6dcd854ffd3213de8675a3a2366dde555974e515b4a513da3234fc5",
+    "README.md": "3b7be431c6649511d380bb7801ae157fe8182e536e9c6d908cceedb866f775b0"
+  },
+  "expanded_bytes": 742226,
+  "tool_sources": {
+    "experiments/export_lme_structure.py": "3975ad04f3c343ec5e845bdb4ecc850792e071cca7b82908b9bf26db5c462582",
+    "experiments/verify_lme_structure.py": "a0d60c1a67e3cad5994b992cc8beab03cfae8a91fe958c69d92bbc7aec62cc74",
+    "experiments/verify_structure_projection.py": "eae663c052e1de4a1b4b3aa009bd0eaf44fb45391c46acc5be12748c016baf26",
+    "experiments/review_lme_structure.py": "cf520e10436ce1e9dadc7c6f061694310398ba6aad00d7074684bf14258cf58c",
+    "experiments/plot_lme_structure.py": "755e85f6c436d943f7bea29c2937b00644eb0ed6f365ac90c04faf3350832309",
+    "experiments/test_lme_structure.py": "1d4446f6d9da016c06a1a61e824b98829519c57dfb3c7f711ddf82ca4c6c233a",
+    "experiments/test_lme_structure_evidence.py": "6e21cd745bc87b17e300a26229c979520cb94308ccd5f511684983af3225bcbb"
+  }
+}

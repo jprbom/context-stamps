@@ -1,0 +1,277 @@
+{
+  "models": {
+    "qwen2.5:1.5b": {
+      "arms": {
+        "raw": {
+          "exact_unknown": 0,
+          "literal_unknown": 0,
+          "groups": {
+            "enterprise:dynamic-environment": {
+              "n": 12,
+              "correct": 0
+            },
+            "enterprise:procedure": {
+              "n": 12,
+              "correct": 1
+            },
+            "enterprise:static-environment": {
+              "n": 12,
+              "correct": 2
+            },
+            "web:dynamic-environment": {
+              "n": 12,
+              "correct": 2
+            },
+            "web:static-environment": {
+              "n": 12,
+              "correct": 7
+            },
+            "web:procedure": {
+              "n": 12,
+              "correct": 1
+            }
+          },
+          "median_retrieval_seconds": 0.07503984996583313,
+          "median_pack_seconds": 0.17715229996247217,
+          "median_sum_of_stages_seconds": 0.9984015000518411
+        },
+        "structure": {
+          "exact_unknown": 0,
+          "literal_unknown": 0,
+          "groups": {
+            "enterprise:dynamic-environment": {
+              "n": 12,
+              "correct": 1
+            },
+            "enterprise:procedure": {
+              "n": 12,
+              "correct": 0
+            },
+            "enterprise:static-environment": {
+              "n": 12,
+              "correct": 4
+            },
+            "web:dynamic-environment": {
+              "n": 12,
+              "correct": 3
+            },
+            "web:static-environment": {
+              "n": 12,
+              "correct": 4
+            },
+            "web:procedure": {
+              "n": 12,
+              "correct": 2
+            }
+          },
+          "median_retrieval_seconds": 0.02976260002469644,
+          "median_pack_seconds": 0.1677398500032723,
+          "median_sum_of_stages_seconds": 0.9488734000478871
+        }
+      },
+      "regressions": [
+        {
+          "id": "9e05978c",
+          "reference": "A",
+          "eval_function": "mc_choice_match|require_non_empty=true",
+          "predictions": {
+            "raw": "\\boxed{A}",
+            "structure": "\\boxed{B}"
+          },
+          "selected_page_title_counts": {
+            "raw": 1,
+            "structure": 1
+          }
+        },
+        {
+          "id": "aedd338d",
+          "reference": "Hardware",
+          "eval_function": "norm_phrase_set_match|lower=true|normalize_hyphen=true|strip_punct=true|separators=,;|require_non_empty=true",
+          "predictions": {
+            "raw": "hardware",
+            "structure": "Incident"
+          },
+          "selected_page_title_counts": {
+            "raw": 2,
+            "structure": 7
+          }
+        },
+        {
+          "id": "edb69441",
+          "reference": "ID, Start Time, Description of Operation, Status, Action",
+          "eval_function": "norm_phrase_set_match|lower=true|normalize_hyphen=true|strip_punct=true|separators=,;|require_non_empty=true",
+          "predictions": {
+            "structure": "boxed{ID, Start Time, Description of Operation, Status, Action}",
+            "raw": "```plaintext\nID, Start Time, Description of Operation, Status, Action\n```"
+          },
+          "selected_page_title_counts": {
+            "structure": 5,
+            "raw": 1
+          }
+        },
+        {
+          "id": "0738c1ac",
+          "reference": "Source Code",
+          "eval_function": "norm_phrase_set_match|lower=true|normalize_hyphen=true|strip_punct=true|separators=,;|require_non_empty=true",
+          "predictions": {
+            "raw": "\\boxed{Source Code}",
+            "structure": "\\boxed{Views}"
+          },
+          "selected_page_title_counts": {
+            "raw": 1,
+            "structure": 4
+          }
+        },
+        {
+          "id": "98b62f3d",
+          "reference": "title, forum",
+          "eval_function": "norm_phrase_set_match|lower=true|normalize_hyphen=true|strip_punct=true|separators=,;|require_non_empty=true",
+          "predictions": {
+            "raw": "Title, Body, Forum",
+            "structure": "We won first place in the costume contest!"
+          },
+          "selected_page_title_counts": {
+            "raw": 1,
+            "structure": 2
+          }
+        },
+        {
+          "id": "d5b9fda4",
+          "reference": "Show By",
+          "eval_function": "norm_phrase_set_match|lower=true|normalize_hyphen=true|strip_punct=true|separators=,;|require_non_empty=true",
+          "predictions": {
+            "raw": "\\boxed{Show By:}",
+            "structure": "\\boxed{Period}"
+          },
+          "selected_page_title_counts": {
+            "raw": 2,
+            "structure": 2
+          }
+        }
+      ],
+      "model_token_change": 0.05840052999253453,
+      "generation_time_change": 0.026222472863264734
+    },
+    "qwen2.5-coder:7b": {
+      "arms": {
+        "raw": {
+          "exact_unknown": 51,
+          "literal_unknown": 51,
+          "groups": {
+            "enterprise:dynamic-environment": {
+              "n": 12,
+              "correct": 0
+            },
+            "enterprise:procedure": {
+              "n": 12,
+              "correct": 1
+            },
+            "enterprise:static-environment": {
+              "n": 12,
+              "correct": 1
+            },
+            "web:dynamic-environment": {
+              "n": 12,
+              "correct": 2
+            },
+            "web:static-environment": {
+              "n": 12,
+              "correct": 3
+            },
+            "web:procedure": {
+              "n": 12,
+              "correct": 3
+            }
+          },
+          "median_retrieval_seconds": 0.07503984996583313,
+          "median_pack_seconds": 0.17715229996247217,
+          "median_sum_of_stages_seconds": 2.28762545005884
+        },
+        "structure": {
+          "exact_unknown": 44,
+          "literal_unknown": 44,
+          "groups": {
+            "enterprise:dynamic-environment": {
+              "n": 12,
+              "correct": 1
+            },
+            "enterprise:procedure": {
+              "n": 12,
+              "correct": 3
+            },
+            "enterprise:static-environment": {
+              "n": 12,
+              "correct": 2
+            },
+            "web:dynamic-environment": {
+              "n": 12,
+              "correct": 3
+            },
+            "web:static-environment": {
+              "n": 12,
+              "correct": 3
+            },
+            "web:procedure": {
+              "n": 12,
+              "correct": 3
+            }
+          },
+          "median_retrieval_seconds": 0.02976260002469644,
+          "median_pack_seconds": 0.1677398500032723,
+          "median_sum_of_stages_seconds": 2.373213350016158
+        }
+      },
+      "regressions": [
+        {
+          "id": "0738c1ac",
+          "reference": "Source Code",
+          "eval_function": "norm_phrase_set_match|lower=true|normalize_hyphen=true|strip_punct=true|separators=,;|require_non_empty=true",
+          "predictions": {
+            "raw": "\\boxed{Source Code}",
+            "structure": "UNKNOWN"
+          },
+          "selected_page_title_counts": {
+            "raw": 1,
+            "structure": 4
+          }
+        },
+        {
+          "id": "d5b9fda4",
+          "reference": "Show By",
+          "eval_function": "norm_phrase_set_match|lower=true|normalize_hyphen=true|strip_punct=true|separators=,;|require_non_empty=true",
+          "predictions": {
+            "raw": "\\boxed{Show By}",
+            "structure": "UNKNOWN"
+          },
+          "selected_page_title_counts": {
+            "raw": 2,
+            "structure": 2
+          }
+        },
+        {
+          "id": "92642fe7",
+          "reference": "A",
+          "eval_function": "mc_choice_match|require_non_empty=true",
+          "predictions": {
+            "raw": "\\boxed{A}",
+            "structure": "\\boxed{E}"
+          },
+          "selected_page_title_counts": {
+            "raw": 2,
+            "structure": 3
+          }
+        }
+      ],
+      "model_token_change": 0.05957150710440429,
+      "generation_time_change": 0.10574604689350475
+    }
+  },
+  "activation_qualified": false,
+  "interpretation": "Posthoc descriptive diagnostics; page-title count is not evidence sufficiency or a causal explanation. Stage sum is not measured end-to-end latency.",
+  "observations": [
+    "The 1.5B edb69441 regression emits all reference columns inside boxed{...} without a backslash. Native scoring is retained unchanged.",
+    "The raw 1.5B answer on 98b62f3d gets native credit despite including Body as an extra mandatory field. Native credit is not exact factuality.",
+    "Both readers regress on 0738c1ac and d5b9fda4. Multiple selected pages expose a scope/selection hypothesis, not a demonstrated cause.",
+    "Structure alone does not preserve action-to-result relationships. Neither variant proves task success or causal effects."
+  ]
+}

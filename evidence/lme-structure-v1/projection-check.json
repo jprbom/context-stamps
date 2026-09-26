@@ -1,0 +1,15 @@
+{
+  "checks": {
+    "observations": 5095,
+    "nonblank_source_lines": 3072962,
+    "occurrences": 78249,
+    "views": 21899,
+    "episodes": 200
+  },
+  "index_sha256": "c57585ee7433a28a4651cb9b870a0f6a0abdb6143aa961d3b082da26fed56d84",
+  "source_sha256": "363cec9a8e87aa8d9101ce4e600aadbf7031d674056ebe4f969e8424abc5f3c6",
+  "all_occurrences_reconstructed": true,
+  "all_nonblank_lines_covered": true,
+  "semantic_sufficiency": false,
+  "verifier_sha256": "eae663c052e1de4a1b4b3aa009bd0eaf44fb45391c46acc5be12748c016baf26"
+}

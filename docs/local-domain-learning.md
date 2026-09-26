@@ -4,6 +4,8 @@ By Prashant Jagtap
 
 Every supported local deployment should provide a bounded improvement path: verified memory updates, a small locally fitted context/routing policy, and optional adapter updates on capable hardware. This is a design requirement, not a claim that every present model already improves autonomously. Devices unable to train weights can still update memory and CPU policies. Successful training never activates a candidate by itself.
 
+The latest [structural-memory experiment](structured-local-memory.md) checks a source-preserving memory candidate with two local readers. It retains all measured gains and regressions, and neither candidate qualifies for activation. This distinction is necessary for local improvement: a deployment must be able to reject an update, even after its source-integrity tests pass.
+
 The [measured local policy-learning comparison](../evidence/ruler-local-learning-v1/README.md) now fits a CPU policy from 312 actual paired training inputs and evaluates 208 new inputs. Returning independently checked exact results reduces model calls and copying errors, but the learned route matches a simple fixed verified rule. The candidate remains inactive. Fresh domain cases, retention, total device cost and rollback remain acceptance gates.
 
 The primary aim is a small, locally deployed domain system that completes demanding work reliably within its device's memory, latency, energy and cost limits. Context Stamps should help that system learn from verified local experience. The seven-plane enterprise runtime is the mechanism for this aim. A larger language model, more retrieved text or a lower token count alone is not the success criterion.

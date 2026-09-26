@@ -40,3 +40,5 @@ evidence/ruler-local-learning-v1/expanded-scan-review.json -text whitespace=cr-a
 evidence/ruler-local-learning-v1/failure-review.json -text whitespace=cr-at-eol
 evidence/lme-memory-v1/upstream/* -text whitespace=cr-at-eol,-blank-at-eol
 docs/assets/lme-memory-v1.svg -text whitespace=cr-at-eol,-blank-at-eol
+docs/assets/lme-structure-v1.svg -text whitespace=cr-at-eol,-blank-at-eol
+evidence/lme-structure-v1/engineering.json -text whitespace=cr-at-eol

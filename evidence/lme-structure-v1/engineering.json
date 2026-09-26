@@ -1,0 +1,40 @@
+{
+  "windows_full_core": {
+    "tests": 369,
+    "failures": 0,
+    "skips": 0,
+    "log_sha256": "c3fd8e56a076de6c5313ca9e9f4a973e04bfca4471f02b4737bbcb6dee60f474"
+  },
+  "windows_experiment_boundaries": 3,
+  "windows_evidence_tampering_tests": 5,
+  "wsl_core_structural_tests": 8,
+  "wsl_experiment_boundary_and_evidence_tests": 8,
+  "wsl_native_scores_replayed": 288,
+  "wsl_setup_notes": [
+    "Previous temporary venv no longer existed.",
+    "System Python initially lacked the project import path; explicit PYTHONPATH=. resolved it. No package installation or source change was needed."
+  ],
+  "ruff": "pass",
+  "bandit": "pass",
+  "gitleaks_expanded_records": {
+    "bytes": 742226,
+    "findings": 0
+  },
+  "gitleaks_repo": {
+    "findings": 0,
+    "exact_public_digest_exclusions": 2,
+    "scanner_positive_and_negative_controls": 125
+  },
+  "historical_replays": [
+    "lme-memory native scores and fitted policy",
+    "882 original and 882 selective search results",
+    "RULER development",
+    "RULER local learning"
+  ],
+  "gpu": "RTX 5080 Laptop; sequential readers; no paid provider calls",
+  "limits": [
+    "No new weight training or activation.",
+    "CPU verification/tests overlapped some first-reader inference.",
+    "No independent edge deployment or retention qualification."
+  ]
+}

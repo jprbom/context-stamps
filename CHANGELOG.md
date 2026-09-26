@@ -4,6 +4,8 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 27 September 2026
 
+- Added bounded structural observation views with source-line occurrences and deduplication across repeated states. Independent reconstruction covers 3,072,962 nonblank lines in 200 public trajectories. A fresh 288-call, two-reader development comparison retains small aggregate gains, six/three regressions and increased token use; no candidate activates. Added all predictions, native replay, failure review, research figure and RTX runbook. Eight new core tests bring the full local suite to 369 passing tests without skips.
+
 - Profiled and refined local trajectory search without changing any of 882 tested returned fragment lists. A selective query plan lowers measured median lookup time from 279 to 99 ms and p95 from 357 to 312 ms. Retained the first optimization's p95 regression, both paired lookup logs, exact tie-boundary tests and a separately pinned runner. No whole-workflow speedup is claimed.
 
 - Added source-bound local trajectory views and a CPU ridge policy fitted from paired outcomes. The LongMemEval-V2 text development run uses 72 training and 222 held-out questions: no memory 21/222, state retrieval 50/222, linked memory 50/222, learned choice 54/222. Retained 15 gains, 11 regressions, five truncations, increased model-token use and all excluded judge/image cases. Candidate remains inactive. Added the local runbook, native score/policy replay, research figure and nine new core tests; full local core suite passes 361 without skips.
