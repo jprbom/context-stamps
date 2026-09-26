@@ -43,6 +43,7 @@ jobs:
       - run: python experiments/test_local_eval.py -v
       - run: python experiments/test_longbench_eval.py -v
       - run: python experiments/verify_longbench.py
+      - run: python experiments/verify_harbor_preflight.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py
