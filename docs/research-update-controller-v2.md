@@ -1,5 +1,7 @@
 # Context Stamps: what changed after testing the failure cases
 
+Historical training-round article. The [new runtime article](research-update-runtime-v1.md) adds the corrected latency optimization, unified API, reader comparison and explicit facet/tool controls.
+
 By Prashant Jagtap
 
 When an AI workflow retrieves a relevant document, it has answered only one question: does this material appear useful for the request?

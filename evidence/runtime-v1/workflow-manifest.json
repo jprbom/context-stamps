@@ -1,0 +1,41 @@
+{
+  "models": {
+    "cortex-harness:1.7b-v11": {
+      "details": {
+        "context_length": 40960,
+        "embedding_length": 2048,
+        "families": [
+          "qwen3"
+        ],
+        "family": "qwen3",
+        "format": "gguf",
+        "parameter_size": "1.7B",
+        "parent_model": "cortex-harness-1.7b-v11-bf16.gguf",
+        "quantization_level": "BF16"
+      },
+      "digest": "f9489974d20ea63778fb39591547611ce614e7456c18167f59ad4383351946c6"
+    },
+    "qwen2.5:1.5b": {
+      "details": {
+        "context_length": 32768,
+        "embedding_length": 1536,
+        "families": [
+          "qwen2"
+        ],
+        "family": "qwen2",
+        "format": "gguf",
+        "parameter_size": "1.5B",
+        "parent_model": "",
+        "quantization_level": "Q4_K_M"
+      },
+      "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b"
+    }
+  },
+  "ollama": {
+    "version": "0.34.2"
+  },
+  "source_sha256": {
+    "context_stamps/runtime.py": "702e143f0ebd21445e797e1d9f30032fd4dc6dc6b6399f01323ad84a4bea1961",
+    "experiments/benchmark_unified_runtime.py": "36dda10d9b318ed9001b99b2d228ffd76e5a73053fae977b31705a7f8119c9ce"
+  }
+}

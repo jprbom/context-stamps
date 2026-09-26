@@ -1,5 +1,9 @@
 # Validation record
 
+## Runtime follow-up — 26 September 2026
+
+The local suite passes **145 tests**. The corrected optimized scorer preserves all 3,677 full-fusion top-10 lists; deployment scope decisions stay unchanged. The initial 231 ArguAna truncation mismatches are retained with the rejected source snapshot. `verify_runtime.py` replays 14,708 ranking records across the initial/corrected runs, 288 local-reader observations, 80 synthetic facet cases and a separate 48-request exact-tool control. Source/artifact hashes bind each run. These are engineering regressions, not fresh natural-data validation. [Results](runtime-v1-results.md) · [API](unified-runtime.md).
+
 ## Controller-v2 follow-up — 26 September 2026
 
 Nine local RTX training runs, all selected checkpoints and five-dataset results are retained. `verify_controller_v2.py` checks artifact/source hashes, replays **91,039** recorded ranking rows, verifies frozen selection/gates, and checks candidate-ceiling monotonicity. The split-precision numerical audit is labeled as a post-evaluation regression, not a new independent holdout. [Results](controller-v2-results.md) · [methodology](controller-methodology-v2.md).

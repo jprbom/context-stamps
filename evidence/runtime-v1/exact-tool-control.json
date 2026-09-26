@@ -1,0 +1,780 @@
+{
+  "correct": 48,
+  "limits": "Exact parser/calculator control for the declared fixture grammar, not a general natural-language solver or proof of neural reasoning. Reader failures remain unchanged in their original records.",
+  "malformed_rejected": 3,
+  "model_calls": 0,
+  "model_tokens": 0,
+  "observations": [
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 8,
+        "effective_batch_size": 16
+      },
+      "correct": true,
+      "event": 0,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 8,
+        "effective_batch_size": 16
+      },
+      "milliseconds": 0.4702999722212553,
+      "task": 0
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 8,
+        "effective_batch_size": 16
+      },
+      "correct": true,
+      "event": 1,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 8,
+        "effective_batch_size": 16
+      },
+      "milliseconds": 0.10810000821948051,
+      "task": 0
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 10,
+        "effective_batch_size": 20
+      },
+      "correct": true,
+      "event": 2,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 10,
+        "effective_batch_size": 20
+      },
+      "milliseconds": 0.09049999061971903,
+      "task": 0
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 10,
+        "effective_batch_size": 20
+      },
+      "correct": true,
+      "event": 3,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 10,
+        "effective_batch_size": 20
+      },
+      "milliseconds": 0.08729996625334024,
+      "task": 0
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 10,
+        "effective_batch_size": 30
+      },
+      "correct": true,
+      "event": 0,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 10,
+        "effective_batch_size": 30
+      },
+      "milliseconds": 0.08489994797855616,
+      "task": 1
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 10,
+        "effective_batch_size": 30
+      },
+      "correct": true,
+      "event": 1,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 10,
+        "effective_batch_size": 30
+      },
+      "milliseconds": 0.08290004916489124,
+      "task": 1
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 12,
+        "effective_batch_size": 36
+      },
+      "correct": true,
+      "event": 2,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 12,
+        "effective_batch_size": 36
+      },
+      "milliseconds": 0.0822999281808734,
+      "task": 1
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 12,
+        "effective_batch_size": 36
+      },
+      "correct": true,
+      "event": 3,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 12,
+        "effective_batch_size": 36
+      },
+      "milliseconds": 0.08080003317445517,
+      "task": 1
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 12,
+        "effective_batch_size": 48
+      },
+      "correct": true,
+      "event": 0,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 12,
+        "effective_batch_size": 48
+      },
+      "milliseconds": 0.08030002936720848,
+      "task": 2
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 12,
+        "effective_batch_size": 48
+      },
+      "correct": true,
+      "event": 1,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 12,
+        "effective_batch_size": 48
+      },
+      "milliseconds": 0.07910002022981644,
+      "task": 2
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 14,
+        "effective_batch_size": 56
+      },
+      "correct": true,
+      "event": 2,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 14,
+        "effective_batch_size": 56
+      },
+      "milliseconds": 0.07960002403706312,
+      "task": 2
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 14,
+        "effective_batch_size": 56
+      },
+      "correct": true,
+      "event": 3,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 14,
+        "effective_batch_size": 56
+      },
+      "milliseconds": 0.07910002022981644,
+      "task": 2
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 14,
+        "effective_batch_size": 28
+      },
+      "correct": true,
+      "event": 0,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 14,
+        "effective_batch_size": 28
+      },
+      "milliseconds": 0.07780001033097506,
+      "task": 3
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 14,
+        "effective_batch_size": 28
+      },
+      "correct": true,
+      "event": 1,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 14,
+        "effective_batch_size": 28
+      },
+      "milliseconds": 0.3608999541029334,
+      "task": 3
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 16,
+        "effective_batch_size": 32
+      },
+      "correct": true,
+      "event": 2,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 16,
+        "effective_batch_size": 32
+      },
+      "milliseconds": 0.09540002793073654,
+      "task": 3
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 16,
+        "effective_batch_size": 32
+      },
+      "correct": true,
+      "event": 3,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 16,
+        "effective_batch_size": 32
+      },
+      "milliseconds": 0.08759996853768826,
+      "task": 3
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 16,
+        "effective_batch_size": 48
+      },
+      "correct": true,
+      "event": 0,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 16,
+        "effective_batch_size": 48
+      },
+      "milliseconds": 0.08519995026290417,
+      "task": 4
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 16,
+        "effective_batch_size": 48
+      },
+      "correct": true,
+      "event": 1,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 16,
+        "effective_batch_size": 48
+      },
+      "milliseconds": 0.08750008419156075,
+      "task": 4
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 18,
+        "effective_batch_size": 54
+      },
+      "correct": true,
+      "event": 2,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 18,
+        "effective_batch_size": 54
+      },
+      "milliseconds": 0.08219992741942406,
+      "task": 4
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 18,
+        "effective_batch_size": 54
+      },
+      "correct": true,
+      "event": 3,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 18,
+        "effective_batch_size": 54
+      },
+      "milliseconds": 0.08589995559304953,
+      "task": 4
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 18,
+        "effective_batch_size": 72
+      },
+      "correct": true,
+      "event": 0,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 18,
+        "effective_batch_size": 72
+      },
+      "milliseconds": 0.07750000804662704,
+      "task": 5
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 18,
+        "effective_batch_size": 72
+      },
+      "correct": true,
+      "event": 1,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 18,
+        "effective_batch_size": 72
+      },
+      "milliseconds": 0.07800001185387373,
+      "task": 5
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 20,
+        "effective_batch_size": 80
+      },
+      "correct": true,
+      "event": 2,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 20,
+        "effective_batch_size": 80
+      },
+      "milliseconds": 0.07589999586343765,
+      "task": 5
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 20,
+        "effective_batch_size": 80
+      },
+      "correct": true,
+      "event": 3,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 20,
+        "effective_batch_size": 80
+      },
+      "milliseconds": 0.17739995382726192,
+      "task": 5
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 20,
+        "effective_batch_size": 40
+      },
+      "correct": true,
+      "event": 0,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 20,
+        "effective_batch_size": 40
+      },
+      "milliseconds": 0.11360005009919405,
+      "task": 6
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 20,
+        "effective_batch_size": 40
+      },
+      "correct": true,
+      "event": 1,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 20,
+        "effective_batch_size": 40
+      },
+      "milliseconds": 0.08649996016174555,
+      "task": 6
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 22,
+        "effective_batch_size": 44
+      },
+      "correct": true,
+      "event": 2,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 22,
+        "effective_batch_size": 44
+      },
+      "milliseconds": 0.08470006287097931,
+      "task": 6
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 22,
+        "effective_batch_size": 44
+      },
+      "correct": true,
+      "event": 3,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 22,
+        "effective_batch_size": 44
+      },
+      "milliseconds": 0.08160003926604986,
+      "task": 6
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 22,
+        "effective_batch_size": 66
+      },
+      "correct": true,
+      "event": 0,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 22,
+        "effective_batch_size": 66
+      },
+      "milliseconds": 0.08080003317445517,
+      "task": 7
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 22,
+        "effective_batch_size": 66
+      },
+      "correct": true,
+      "event": 1,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 22,
+        "effective_batch_size": 66
+      },
+      "milliseconds": 0.08269993122667074,
+      "task": 7
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 24,
+        "effective_batch_size": 72
+      },
+      "correct": true,
+      "event": 2,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 24,
+        "effective_batch_size": 72
+      },
+      "milliseconds": 0.08310005068778992,
+      "task": 7
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 24,
+        "effective_batch_size": 72
+      },
+      "correct": true,
+      "event": 3,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 24,
+        "effective_batch_size": 72
+      },
+      "milliseconds": 0.07970002479851246,
+      "task": 7
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 24,
+        "effective_batch_size": 96
+      },
+      "correct": true,
+      "event": 0,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 24,
+        "effective_batch_size": 96
+      },
+      "milliseconds": 0.07890001870691776,
+      "task": 8
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 24,
+        "effective_batch_size": 96
+      },
+      "correct": true,
+      "event": 1,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 24,
+        "effective_batch_size": 96
+      },
+      "milliseconds": 0.08159992285072803,
+      "task": 8
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 26,
+        "effective_batch_size": 104
+      },
+      "correct": true,
+      "event": 2,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 26,
+        "effective_batch_size": 104
+      },
+      "milliseconds": 0.08910009637475014,
+      "task": 8
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 26,
+        "effective_batch_size": 104
+      },
+      "correct": true,
+      "event": 3,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 26,
+        "effective_batch_size": 104
+      },
+      "milliseconds": 0.07909990381449461,
+      "task": 8
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 26,
+        "effective_batch_size": 52
+      },
+      "correct": true,
+      "event": 0,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 26,
+        "effective_batch_size": 52
+      },
+      "milliseconds": 0.08219992741942406,
+      "task": 9
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 26,
+        "effective_batch_size": 52
+      },
+      "correct": true,
+      "event": 1,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 26,
+        "effective_batch_size": 52
+      },
+      "milliseconds": 0.0828000484034419,
+      "task": 9
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 28,
+        "effective_batch_size": 56
+      },
+      "correct": true,
+      "event": 2,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 28,
+        "effective_batch_size": 56
+      },
+      "milliseconds": 0.16729999333620071,
+      "task": 9
+    },
+    {
+      "actual": {
+        "accumulation_steps": 2,
+        "batch_size": 28,
+        "effective_batch_size": 56
+      },
+      "correct": true,
+      "event": 3,
+      "expected": {
+        "accumulation_steps": 2,
+        "batch_size": 28,
+        "effective_batch_size": 56
+      },
+      "milliseconds": 0.11080002877861261,
+      "task": 9
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 28,
+        "effective_batch_size": 84
+      },
+      "correct": true,
+      "event": 0,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 28,
+        "effective_batch_size": 84
+      },
+      "milliseconds": 0.09910005610436201,
+      "task": 10
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 28,
+        "effective_batch_size": 84
+      },
+      "correct": true,
+      "event": 1,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 28,
+        "effective_batch_size": 84
+      },
+      "milliseconds": 0.12119999155402184,
+      "task": 10
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 30,
+        "effective_batch_size": 90
+      },
+      "correct": true,
+      "event": 2,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 30,
+        "effective_batch_size": 90
+      },
+      "milliseconds": 0.11490005999803543,
+      "task": 10
+    },
+    {
+      "actual": {
+        "accumulation_steps": 3,
+        "batch_size": 30,
+        "effective_batch_size": 90
+      },
+      "correct": true,
+      "event": 3,
+      "expected": {
+        "accumulation_steps": 3,
+        "batch_size": 30,
+        "effective_batch_size": 90
+      },
+      "milliseconds": 0.08839997462928295,
+      "task": 10
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 30,
+        "effective_batch_size": 120
+      },
+      "correct": true,
+      "event": 0,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 30,
+        "effective_batch_size": 120
+      },
+      "milliseconds": 0.08449994493275881,
+      "task": 11
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 30,
+        "effective_batch_size": 120
+      },
+      "correct": true,
+      "event": 1,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 30,
+        "effective_batch_size": 120
+      },
+      "milliseconds": 0.08670007809996605,
+      "task": 11
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 32,
+        "effective_batch_size": 128
+      },
+      "correct": true,
+      "event": 2,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 32,
+        "effective_batch_size": 128
+      },
+      "milliseconds": 0.07810001261532307,
+      "task": 11
+    },
+    {
+      "actual": {
+        "accumulation_steps": 4,
+        "batch_size": 32,
+        "effective_batch_size": 128
+      },
+      "correct": true,
+      "event": 3,
+      "expected": {
+        "accumulation_steps": 4,
+        "batch_size": 32,
+        "effective_batch_size": 128
+      },
+      "milliseconds": 0.07670000195503235,
+      "task": 11
+    }
+  ],
+  "source_sha256": {
+    "experiments/verify_workflow_tool.py": "3e41afc1c2904e15cb16b0e65672e11c4ed4d0fbf195d4cfd622588448b21a69"
+  }
+}

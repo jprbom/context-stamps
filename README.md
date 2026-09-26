@@ -12,6 +12,18 @@ The 32-byte capsule is a routing identity across eight bounded facets. It does n
 
 ## Start here
 
+The local **`ContextRuntime`** now combines registered retrieval experts, dependency checks, explicit byte/token budgets, bounded missing-evidence recovery and verified exact-result reuse. Run `python examples/unified_context.py` after installation. [API and complete example](docs/unified-runtime.md) · [runtime results and retained failures](docs/runtime-v1-results.md).
+
+The optional cross-encoder uses length-aware GPU batches and a bounded exact passage-token cache. Its candidates, model weights and evidence limit are preserved. The learned cheaper-expert policy failed calibration and remains disabled. Precision changes require numerical and ranking checks; lower bit width alone does not earn a speed claim.
+
+![Paired runtime latency](docs/assets/runtime-v1-latency.png)
+
+![Complete runtime comparison table](docs/assets/runtime-v1-table.png)
+
+![Two local readers and verified workflow outcomes](docs/assets/runtime-v1-readers.png)
+
+![Spherical same-budget fixture and exact-metadata control](docs/assets/runtime-v1-facets.png)
+
 **26 September follow-up:** nine new RTX training runs test balanced sampling, metric-aware ranking, teacher distillation and contractive recurrence. On a fresh local **FiQA** test, a frozen hybrid/cross-encoder blend reaches **0.4125 nDCG@10 versus 0.3687 dense and 0.3888 hybrid**. This gain comes from precise reranking with external text and embeddings. The selected small student still trails hybrid on four of five collections and remains experimental. [Complete results and remaining gaps](docs/controller-v2-results.md) · [research basis and local RTX commands](docs/controller-methodology-v2.md) · [checkpoints and model card](evidence/controller-v2/MODEL_CARD.md). The earlier [six-run study and failures](docs/local-rtx-controller.md) remain intact.
 
 A separate local Qwen pilot tested exact computation reuse through source edits and policy changes. With 50% repeated computations, model calls and processed input tokens fell by 50%, and total elapsed time fell by 47.2%, with 216/216 correct outputs per mode. **p95 latency did not improve** (114.9 ms → 117.1 ms). These are 12 fictional scalar-extraction tasks repeated for timing, not a broad agent or coding benchmark. [Raw observations](evidence/computation-v1/results.json) · [summary](evidence/computation-v1/summary.json).
@@ -20,17 +32,20 @@ A separate local Qwen pilot tested exact computation reuse through source edits 
 git clone https://github.com/jprbom/context-stamps.git
 cd context-stamps
 python -m pip install -e .
+python examples/unified_context.py
 python examples/progressive_context.py
 python examples/automatic_facets.py
 python examples/zip_spherical_qr.py
 ```
 
-These examples run offline without a GPU, service or downloaded model. The first demonstrates exact resolution, precise fallback, reusable evidence and invalidation. The second creates a 32-byte spherical stamp. The core has no mandatory third-party dependencies.
+These examples run offline without a GPU, service or downloaded model. The unified example checks a complete dependency packet, verifies a reusable result and revokes the receipt after a change. The subsequent examples show precise fallback and spherical stamp construction. The core has no mandatory third-party dependencies.
 
 ## What the components do
 
 | Component | Purpose | Important boundary |
 |---|---|---|
+| `ContextRuntime` | Composes experts, budgets, dependency closure, bounded verification and exact reuse | Trusted host adapters/verifier; callbacks need their own timeout; not a distributed service |
+| Optional `EfficientReranker` | Uses length-aware batches and exact passage-token reuse for a pinned BERT scorer | Preserve candidates and pair truncation; qualify ranking parity for the intended profile |
 | `Stamp256Codec` | Encodes supplied content/entity/intent/task views into 32 raw bytes | Lossy similarity sketch; schema and evidence are external |
 | `FacetCompiler` | Emits observed routing facets with rule and source provenance | Deterministic baseline; not a semantic parser or fact verifier |
 | `RelationMap` | Converts typed, directional links into a bounded diffusion view | Lossy feature input; the source graph remains external and versioned |
@@ -58,9 +73,9 @@ The v2 experiment evaluates 3,677 queries across five collections. Method select
 
 ![Candidate expansion and its oracle ceiling](docs/assets/controller-v2-candidate-ceiling.png)
 
-The oracle is a diagnostic upper bound that uses relevance labels to sort candidates. Latency measures the local retrieval/reranking stages and excludes query encoding, reader generation, networking and concurrent load. [Detailed interpretation, confidence intervals and limitations](docs/controller-v2-results.md).
+The oracle is a diagnostic upper bound that uses relevance labels to sort candidates. These controller-v2 latency figures predate the runtime optimization above. Latency measures the local retrieval/reranking stages and excludes query encoding, reader generation, networking and concurrent load. [Detailed interpretation, confidence intervals and limitations](docs/controller-v2-results.md).
 
-The FiQA quality gain costs about **194 ms** per retrieval/reranking call versus **6.8 ms** dense in this setup. Split-precision int8 reduces measured score distortion 28–122×, but remains slower than FP32 in the small CPU forward test. Neither result establishes broad token, latency or recursive-intelligence gains. [Unified runtime architecture and measurable milestones](docs/unified-context-roadmap.md).
+The initial FiQA quality gain cost about **194 ms** per retrieval/reranking call versus **6.8 ms** dense. The [new paired execution benchmark](docs/runtime-v1-results.md) measures lower cold/warm reranking latency while retaining ranking gates. Split-precision student int8 reduces measured score distortion 28–122× but remains slower than FP32 in its small CPU forward test. No broad recursive-intelligence or production-scale claim follows. [Architecture and remaining milestones](docs/unified-context-roadmap.md).
 
 ```mermaid
 flowchart TD
@@ -260,7 +275,7 @@ python experiments/verify_progressive.py
 python examples/progressive_context.py
 ```
 
-Local validation passes 114 unit tests, including the existing mutation, extraction, round-trip and routing controls plus product-quantizer, relation-direction, score-fusion and certificate-abstention checks. CI runs the Windows/Linux and security checks on each candidate commit. The new offline verifier checks 9,087 method/query records, source snapshots, aggregate arithmetic and the preserved SciDocs regression. Full benchmark replay still needs the pinned external corpora and embedding caches. [Training protocol](program.md) · [validation](docs/validation.md) · [scenario matrix](docs/scenario-matrix.md) · [remaining gaps](docs/research-gates.md).
+Local validation covers mutation, extraction, round trips, numerical recurrence, optional quantization, runtime budgets, permissions, expert abstention and token-cache/truncation boundaries. CI runs Windows/Linux, optional Torch and security checks on each candidate commit. Offline verifiers replay historical and current per-query evidence, including preserved failures. Full numerical benchmark replay still needs pinned external corpora and embedding caches. [Training protocol](program.md) · [validation](docs/validation.md) · [scenario matrix](docs/scenario-matrix.md) · [remaining gaps](docs/unified-context-roadmap.md).
 
 ## Security, data and credit
 

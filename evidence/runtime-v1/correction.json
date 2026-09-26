@@ -1,0 +1,6 @@
+{
+  "reason": "Initial optimized pair preparation changed longest-first truncation for long queries. ArguAna had231 top10 mismatches and failed the parity gate; its existing dense policy remained unchanged.",
+  "fix": "Queries longer than254 tokens use the original pinned tokenizer on full text pairs. Short-query passage caching remains safe because the shorter query is retained while the passage alone is truncated. Full regression and timing rerun; no model fitting, threshold adjustment, candidate change or relevance-label change.",
+  "retained_failure": "initial-candidate contains all first-pass rankings, timings, metrics and the original efficient-reranker source.",
+  "interpretation": "This is a post-inspection engineering correction. Neither the initial run nor the corrected replay is an untouched evaluation. Statistical generalization still needs new holdouts."
+}

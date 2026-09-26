@@ -16,6 +16,7 @@ from .relation_map import RelationEdge, RelationMap
 from .requirements import Claim, Requirement, rank_candidates_safe, select_structured
 from .residual_index import ResidualIndex
 from .routing import ProgressiveRouter, RoutingPolicy, fit_routing_policy
+from .runtime import ContextExpert, ContextRuntime, RuntimeBudget, Verification
 from .selection import LinearSelector, rank_candidates, select_evidence
 from .session import ContextSession
 from .sources import explain_versions, observe_files
@@ -25,6 +26,10 @@ from .workflow import ContextGraph, ContextNode
 
 __version__ = "0.5.0"
 __all__ = [
+    "ContextExpert",
+    "ContextRuntime",
+    "RuntimeBudget",
+    "Verification",
     "CompiledFacets",
     "FacetCompiler",
     "FacetEvidence",

@@ -1,0 +1,14 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "precision": "FP32 weights, BF16 autocast",
+  "protocol_sha256": "08b2a6f4f74670be616be794a2c47812d5310e33700f211b1a4750e5c4f4a217",
+  "python": "3.12.10",
+  "query_count": 3677,
+  "source_sha256": {
+    "context_stamps/efficient_reranker.py": "0664b121246e66122f754ef588e0b821b37679e6dcaebcbdaacff76838d30041",
+    "context_stamps/expert_router.py": "920ed66593a55d5ffb9cd99a83b1daf530eed49862aaaec0bff20b141070a7fd",
+    "experiments/audit_runtime_latency.py": "8ae16ec0fa8ce4a30ab467743938092f8f369a21265e409b4d230df1c1f25ab7",
+    "experiments/train_expert_router.py": "84bfdff698cec07347bbc8bf7c50315cb1a1373bed2c4148e4932ff621062d88"
+  },
+  "torch": "2.11.0+cu128"
+}

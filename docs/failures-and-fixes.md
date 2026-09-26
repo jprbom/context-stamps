@@ -1,5 +1,9 @@
 # Failure ledger and release gates
 
+## Runtime follow-up
+
+The first optimized pair preparation changed 231 ArguAna top-10 rankings through incorrect long-query truncation. Its full evidence and source are retained under `runtime-v1/initial-candidate`. Long pairs now delegate to the original pinned tokenizer; the complete regression is repeated. The learned cheap-route model failed calibration and is disabled. Full-weight FP16/BF16 conversion changed scores in the development pilot and was not promoted. The runtime stops on stale/revoked evidence, insufficient budgets, unauthorized results, no progress and failed verification. [Measured results](runtime-v1-results.md) · [API and limitations](unified-runtime.md).
+
 ## 26 September follow-up: candidate coverage and stable recurrence
 
 Controller-v2 adds domain-balanced training, a top-10 ranking loss, query/document role features, a real cross-encoder teacher and a contractive recurrence. Nine models trained with separate tuning and calibration. The expanded candidate union raises the oracle top-10 ceiling on all five collections. Eight new controller tests cover numerical contraction, padding, permutation, invalid inputs, checkpoint corruption, quantized masked outliers and split-projection equivalence.

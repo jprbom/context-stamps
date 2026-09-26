@@ -4,6 +4,10 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 26 September 2026
 
+- Added `ContextRuntime` for registered experts, exact dependency closure, tokenizer-backed budgets, bounded evidence recovery, outcome verification and source-bound computation reuse.
+- Added length-aware BERT reranking with a bounded passage-token cache. Preserved the first long-query truncation failure, fixed it through the pinned tokenizer and reran all five public collections. Whole-weight FP16/BF16 conversion remains experimental.
+- Trained a cost-aware ridge router using existing public training partitions; neither fusion scope qualified for cheaper exits. Added two local-reader workflow pilots, a fixed-budget synthetic facet ablation with an exact-metadata control, figures and offline evidence replay.
+
 - Added controller-v2: balanced domain sampling, metric-aware pair loss, query/document role features, pinned cross-encoder distillation and a mathematically contractive attention recurrence. Trained and retained all nine seed/recipe runs.
 - Expanded candidate unions and measured both recall and oracle top-10 ceilings. Added fresh local FiQA calibration/test partitions without using FiQA training data. Frozen fusion improves FiQA retrieval over dense and hybrid; the learned student remains experimental and is not a universal improvement.
 - Added real dynamic-int8 CPU execution, online retrieval/reranking timings, batch-shape ranking checks, new regression tests, source/artifact fingerprints, updated research figures and local training instructions. Public source and derived artifacts retain separate attribution.

@@ -1,0 +1,116 @@
+{
+  "calibration": 788,
+  "gates": {
+    "arguana": {
+      "approved": false,
+      "reason": "preserve_existing_dense_scope"
+    },
+    "fiqa": {
+      "approved": false,
+      "cheap": 5,
+      "delta": {
+        "lower": -0.0012272345551467261,
+        "lower_95": -0.0012081568241119386,
+        "mean": -0.00037406065705499657,
+        "n": 500,
+        "upper": 0.0001770740350087483,
+        "upper_95": 0.0001770740350087483
+      },
+      "n": 500
+    },
+    "nfcorpus": {
+      "approved": false,
+      "reason": "preserve_existing_dense_scope"
+    },
+    "scidocs": {
+      "approved": false,
+      "reason": "preserve_existing_dense_scope"
+    },
+    "scifact": {
+      "approved": false,
+      "cheap": 0,
+      "delta": {
+        "lower": 0.0,
+        "lower_95": 0.0,
+        "mean": 0.0,
+        "n": 121,
+        "upper": 0.0,
+        "upper_95": 0.0
+      },
+      "n": 121
+    }
+  },
+  "limitation": "All calibration/test collections were previously inspected; this is an engineering regression round.",
+  "selected_threshold": 0.01,
+  "source_sha256": {
+    "context_stamps/expert_router.py": "920ed66593a55d5ffb9cd99a83b1daf530eed49862aaaec0bff20b141070a7fd",
+    "experiments/train_expert_router.py": "84bfdff698cec07347bbc8bf7c50315cb1a1373bed2c4148e4932ff621062d88"
+  },
+  "train": 3134,
+  "trials": [
+    {
+      "cheap": 30,
+      "delta_by_domain": {
+        "nfcorpus": 0.0006714159674704026,
+        "scifact": -0.00032704307642433735
+      },
+      "eligible": false,
+      "threshold": 0.0
+    },
+    {
+      "cheap": 3,
+      "delta_by_domain": {
+        "nfcorpus": 0.0010154433138460997,
+        "scifact": 0.0
+      },
+      "eligible": true,
+      "threshold": 0.01
+    },
+    {
+      "cheap": 1,
+      "delta_by_domain": {
+        "nfcorpus": 0.0010154432744900654,
+        "scifact": 0.0
+      },
+      "eligible": true,
+      "threshold": 0.02
+    },
+    {
+      "cheap": 0,
+      "delta_by_domain": {
+        "nfcorpus": 0.0,
+        "scifact": 0.0
+      },
+      "eligible": true,
+      "threshold": 0.04
+    },
+    {
+      "cheap": 0,
+      "delta_by_domain": {
+        "nfcorpus": 0.0,
+        "scifact": 0.0
+      },
+      "eligible": true,
+      "threshold": 0.08
+    },
+    {
+      "cheap": 0,
+      "delta_by_domain": {
+        "nfcorpus": 0.0,
+        "scifact": 0.0
+      },
+      "eligible": true,
+      "threshold": 0.16
+    },
+    {
+      "cheap": 0,
+      "delta_by_domain": {
+        "nfcorpus": 0.0,
+        "scifact": 0.0
+      },
+      "eligible": true,
+      "threshold": 2.0
+    }
+  ],
+  "tune": 290
+}

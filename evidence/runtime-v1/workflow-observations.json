@@ -1,0 +1,7490 @@
+[
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "context_bytes": 498,
+    "correct": true,
+    "elapsed_ms": 205.1713999826461,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 30,
+    "prompt_tokens": 322,
+    "response_sha256": "21557872cabc3b623da71b5c0df731f531f7dad76bfab3e1cac3127d4d9c70e7",
+    "reused": false,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "context_bytes": 498,
+    "correct": true,
+    "elapsed_ms": 192.8140000673011,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 30,
+    "prompt_tokens": 322,
+    "response_sha256": "21557872cabc3b623da71b5c0df731f531f7dad76bfab3e1cac3127d4d9c70e7",
+    "reused": false,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 196.0530000505969,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 327,
+    "response_sha256": "d6a5bc7f6faeffcd3d1687b8949129bc5eb46a9d4fa4ff4a40e2bf984d521ea1",
+    "reused": false,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 145.0104999821633,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 327,
+    "response_sha256": "d6a5bc7f6faeffcd3d1687b8949129bc5eb46a9d4fa4ff4a40e2bf984d521ea1",
+    "reused": false,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 222.32260007876903,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 331,
+    "response_sha256": "8c071d6b2caedde66d808c3a1e1ed2036a5b0f4f5a35c39a0761b5df27d285e0",
+    "reused": false,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 160.93180002644658,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 331,
+    "response_sha256": "8c071d6b2caedde66d808c3a1e1ed2036a5b0f4f5a35c39a0761b5df27d285e0",
+    "reused": false,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 184.427100000903,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 328,
+    "response_sha256": "2c7f50076d75a9001ab83aab2da831b6f334b9d86e4b753cb6c5ae524ea14f35",
+    "reused": false,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 176.07739998493344,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 328,
+    "response_sha256": "2c7f50076d75a9001ab83aab2da831b6f334b9d86e4b753cb6c5ae524ea14f35",
+    "reused": false,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 203.74360005371273,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 325,
+    "response_sha256": "eef0105f395463a1f0454320d0836bbc2901255b7e87c90205cdad727afda402",
+    "reused": false,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 159.82709999661893,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 325,
+    "response_sha256": "eef0105f395463a1f0454320d0836bbc2901255b7e87c90205cdad727afda402",
+    "reused": false,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 191.2109999684617,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 329,
+    "response_sha256": "47bc2b82336a856fd5838454069002e29080237f5836dd4e4124c384b84aba3a",
+    "reused": false,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 166.57120001036674,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 329,
+    "response_sha256": "47bc2b82336a856fd5838454069002e29080237f5836dd4e4124c384b84aba3a",
+    "reused": false,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 197.88819993846118,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 328,
+    "response_sha256": "8bb93588f97b4b931d42b396cc3115bd31fa43f2173ad74d67e5bf75168171c1",
+    "reused": false,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 170.55119993165135,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 328,
+    "response_sha256": "8bb93588f97b4b931d42b396cc3115bd31fa43f2173ad74d67e5bf75168171c1",
+    "reused": false,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 187.1343000093475,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 327,
+    "response_sha256": "7ec8c75231c7e34ba9c64a489119b1330c04c2dcea03eb2a215b208be24978cb",
+    "reused": false,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 159.9528999067843,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 327,
+    "response_sha256": "7ec8c75231c7e34ba9c64a489119b1330c04c2dcea03eb2a215b208be24978cb",
+    "reused": false,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 190.0193999754265,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 331,
+    "response_sha256": "8ee0b6db1bc9ac52193be6b0d8903147bec2665af37575d4681c1ed140b87e46",
+    "reused": false,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 161.00130008999258,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 331,
+    "response_sha256": "8ee0b6db1bc9ac52193be6b0d8903147bec2665af37575d4681c1ed140b87e46",
+    "reused": false,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 197.95089995022863,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 330,
+    "response_sha256": "425e2f3fac92510944863e440e2469b326e8983bdbb6e6c41aa8105344527a51",
+    "reused": false,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 151.82889997959137,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 330,
+    "response_sha256": "425e2f3fac92510944863e440e2469b326e8983bdbb6e6c41aa8105344527a51",
+    "reused": false,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 177.0810999441892,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 327,
+    "response_sha256": "e8f3b67c8533fc4b0df00bd152636a644ffe25cfed2b3a89b3203dd10e8885e7",
+    "reused": false,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 165.59920005965978,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 327,
+    "response_sha256": "e8f3b67c8533fc4b0df00bd152636a644ffe25cfed2b3a89b3203dd10e8885e7",
+    "reused": false,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 190.53180003538728,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 330,
+    "response_sha256": "0476c391e4aa480226217dbfd2bbd2139d9285136ae2b000b51712cc68f4d862",
+    "reused": false,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 152.75320003274828,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 330,
+    "response_sha256": "0476c391e4aa480226217dbfd2bbd2139d9285136ae2b000b51712cc68f4d862",
+    "reused": false,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 185.26590010151267,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 329,
+    "response_sha256": "118fae312f9bf255d56fe76d15b89f2e8c9ef4525b3d395ff48ea6617f15d507",
+    "reused": false,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 154.1190999560058,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 329,
+    "response_sha256": "118fae312f9bf255d56fe76d15b89f2e8c9ef4525b3d395ff48ea6617f15d507",
+    "reused": false,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 186.89640006050467,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 329,
+    "response_sha256": "94306599eb7aac6b0124be84a034d0bac9661da1b652c1268bac426da4a0305b",
+    "reused": false,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 157.36610000021756,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 329,
+    "response_sha256": "94306599eb7aac6b0124be84a034d0bac9661da1b652c1268bac426da4a0305b",
+    "reused": false,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 169.47480000089854,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 333,
+    "response_sha256": "9aa935e1df2f3e0875b1d9e2e57e322dbf3e7624eb2096dcefaa4f2a1e1f62b3",
+    "reused": false,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 159.4830999383703,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 333,
+    "response_sha256": "9aa935e1df2f3e0875b1d9e2e57e322dbf3e7624eb2096dcefaa4f2a1e1f62b3",
+    "reused": false,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 185.19879993982613,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 332,
+    "response_sha256": "a28d19f3b27527705a3bcc5dd52773f91cefe57cef2e3448846c3bed9b1f9750",
+    "reused": false,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 150.84050002042204,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 332,
+    "response_sha256": "a28d19f3b27527705a3bcc5dd52773f91cefe57cef2e3448846c3bed9b1f9750",
+    "reused": false,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 184.32350002694875,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 329,
+    "response_sha256": "a42168e26641b08a3952ad227b35829ce706d2bcd0af2f95f9c5178acadb5386",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 159.25310004968196,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 329,
+    "response_sha256": "a42168e26641b08a3952ad227b35829ce706d2bcd0af2f95f9c5178acadb5386",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 177.7824000455439,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 331,
+    "response_sha256": "de5caa45d23bafd2bc84636829f140cf16ed53c620b0e76dd04e5d5de45e535e",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 173.69160009548068,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 331,
+    "response_sha256": "de5caa45d23bafd2bc84636829f140cf16ed53c620b0e76dd04e5d5de45e535e",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 183.48280002828687,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 330,
+    "response_sha256": "6759a73c68c2c34bb117c6147eb18762c13bf65fd92de9a664544337db0a62c2",
+    "reused": false,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 169.48139993473887,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 330,
+    "response_sha256": "6759a73c68c2c34bb117c6147eb18762c13bf65fd92de9a664544337db0a62c2",
+    "reused": false,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 186.4472000161186,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 328,
+    "response_sha256": "6f94a9938f8d121d17daab7ec6c31ff9f1fe8b55cfa4934faaa712afff01da89",
+    "reused": false,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 168.3150000171736,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 328,
+    "response_sha256": "6f94a9938f8d121d17daab7ec6c31ff9f1fe8b55cfa4934faaa712afff01da89",
+    "reused": false,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 200.6748999701813,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 332,
+    "response_sha256": "dfcf21ba6047565ca9387db592689db581d88b69758ecf746896fc654b012e13",
+    "reused": false,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 174.63199992198497,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 332,
+    "response_sha256": "dfcf21ba6047565ca9387db592689db581d88b69758ecf746896fc654b012e13",
+    "reused": false,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 207.78070006053895,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 331,
+    "response_sha256": "cfad402abfd46f3f0b0394c34ba1d7aaa4e2228af87080b461e0cf7bd041af8a",
+    "reused": false,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 145.33750002738088,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 331,
+    "response_sha256": "cfad402abfd46f3f0b0394c34ba1d7aaa4e2228af87080b461e0cf7bd041af8a",
+    "reused": false,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 211.14229992963374,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 328,
+    "response_sha256": "f9509a21def58de521f3aff9791b22e936f31264ebeea44fe553488aad599f07",
+    "reused": false,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 170.48079997766763,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 328,
+    "response_sha256": "f9509a21def58de521f3aff9791b22e936f31264ebeea44fe553488aad599f07",
+    "reused": false,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 208.23889994062483,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 328,
+    "response_sha256": "cb358c538e2e5984126c273a2fe889930cc76717057742a2ace4e9573204887e",
+    "reused": false,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 179.21440000645816,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "mode": "prepared_context",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 328,
+    "response_sha256": "cb358c538e2e5984126c273a2fe889930cc76717057742a2ace4e9573204887e",
+    "reused": false,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "context_bytes": 498,
+    "correct": true,
+    "elapsed_ms": 181.97510007303208,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 30,
+    "prompt_tokens": 322,
+    "response_sha256": "21557872cabc3b623da71b5c0df731f531f7dad76bfab3e1cac3127d4d9c70e7",
+    "reused": false,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "context_bytes": 498,
+    "correct": true,
+    "elapsed_ms": 0.3459000727161765,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "21557872cabc3b623da71b5c0df731f531f7dad76bfab3e1cac3127d4d9c70e7",
+    "reused": true,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 152.7823000214994,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 327,
+    "response_sha256": "d6a5bc7f6faeffcd3d1687b8949129bc5eb46a9d4fa4ff4a40e2bf984d521ea1",
+    "reused": false,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.3960999893024564,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "d6a5bc7f6faeffcd3d1687b8949129bc5eb46a9d4fa4ff4a40e2bf984d521ea1",
+    "reused": true,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 162.52140002325177,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 331,
+    "response_sha256": "8c071d6b2caedde66d808c3a1e1ed2036a5b0f4f5a35c39a0761b5df27d285e0",
+    "reused": false,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.23779994808137417,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "8c071d6b2caedde66d808c3a1e1ed2036a5b0f4f5a35c39a0761b5df27d285e0",
+    "reused": true,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 155.5667999200523,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 328,
+    "response_sha256": "2c7f50076d75a9001ab83aab2da831b6f334b9d86e4b753cb6c5ae524ea14f35",
+    "reused": false,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.25619997177273035,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "2c7f50076d75a9001ab83aab2da831b6f334b9d86e4b753cb6c5ae524ea14f35",
+    "reused": true,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 183.08440002147108,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 325,
+    "response_sha256": "eef0105f395463a1f0454320d0836bbc2901255b7e87c90205cdad727afda402",
+    "reused": false,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.32400002237409353,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "eef0105f395463a1f0454320d0836bbc2901255b7e87c90205cdad727afda402",
+    "reused": true,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 157.74970001075417,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 329,
+    "response_sha256": "47bc2b82336a856fd5838454069002e29080237f5836dd4e4124c384b84aba3a",
+    "reused": false,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.2911000046879053,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "47bc2b82336a856fd5838454069002e29080237f5836dd4e4124c384b84aba3a",
+    "reused": true,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 158.88360003009439,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 328,
+    "response_sha256": "8bb93588f97b4b931d42b396cc3115bd31fa43f2173ad74d67e5bf75168171c1",
+    "reused": false,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.23790006525814533,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "8bb93588f97b4b931d42b396cc3115bd31fa43f2173ad74d67e5bf75168171c1",
+    "reused": true,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 178.57119999825954,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 327,
+    "response_sha256": "7ec8c75231c7e34ba9c64a489119b1330c04c2dcea03eb2a215b208be24978cb",
+    "reused": false,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.22829999215900898,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "7ec8c75231c7e34ba9c64a489119b1330c04c2dcea03eb2a215b208be24978cb",
+    "reused": true,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 182.37729999236763,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 331,
+    "response_sha256": "8ee0b6db1bc9ac52193be6b0d8903147bec2665af37575d4681c1ed140b87e46",
+    "reused": false,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.31729997135698795,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "8ee0b6db1bc9ac52193be6b0d8903147bec2665af37575d4681c1ed140b87e46",
+    "reused": true,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 206.44920004997402,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 330,
+    "response_sha256": "425e2f3fac92510944863e440e2469b326e8983bdbb6e6c41aa8105344527a51",
+    "reused": false,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.430300016887486,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "425e2f3fac92510944863e440e2469b326e8983bdbb6e6c41aa8105344527a51",
+    "reused": true,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 187.0543999830261,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 327,
+    "response_sha256": "e8f3b67c8533fc4b0df00bd152636a644ffe25cfed2b3a89b3203dd10e8885e7",
+    "reused": false,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.44689991045743227,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "e8f3b67c8533fc4b0df00bd152636a644ffe25cfed2b3a89b3203dd10e8885e7",
+    "reused": true,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 194.4932999322191,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 330,
+    "response_sha256": "0476c391e4aa480226217dbfd2bbd2139d9285136ae2b000b51712cc68f4d862",
+    "reused": false,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.3971999976783991,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "0476c391e4aa480226217dbfd2bbd2139d9285136ae2b000b51712cc68f4d862",
+    "reused": true,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 201.7774999840185,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 329,
+    "response_sha256": "118fae312f9bf255d56fe76d15b89f2e8c9ef4525b3d395ff48ea6617f15d507",
+    "reused": false,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.7532000308856368,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "118fae312f9bf255d56fe76d15b89f2e8c9ef4525b3d395ff48ea6617f15d507",
+    "reused": true,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 172.11090005002916,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 329,
+    "response_sha256": "94306599eb7aac6b0124be84a034d0bac9661da1b652c1268bac426da4a0305b",
+    "reused": false,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.23619993589818478,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "94306599eb7aac6b0124be84a034d0bac9661da1b652c1268bac426da4a0305b",
+    "reused": true,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 174.80709997471422,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 333,
+    "response_sha256": "9aa935e1df2f3e0875b1d9e2e57e322dbf3e7624eb2096dcefaa4f2a1e1f62b3",
+    "reused": false,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.2730999840423465,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "9aa935e1df2f3e0875b1d9e2e57e322dbf3e7624eb2096dcefaa4f2a1e1f62b3",
+    "reused": true,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 170.01080000773072,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 332,
+    "response_sha256": "a28d19f3b27527705a3bcc5dd52773f91cefe57cef2e3448846c3bed9b1f9750",
+    "reused": false,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.31649996526539326,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "a28d19f3b27527705a3bcc5dd52773f91cefe57cef2e3448846c3bed9b1f9750",
+    "reused": true,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 173.29210008028895,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 329,
+    "response_sha256": "a42168e26641b08a3952ad227b35829ce706d2bcd0af2f95f9c5178acadb5386",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.27439999394118786,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "a42168e26641b08a3952ad227b35829ce706d2bcd0af2f95f9c5178acadb5386",
+    "reused": true,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 188.7416000245139,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 331,
+    "response_sha256": "de5caa45d23bafd2bc84636829f140cf16ed53c620b0e76dd04e5d5de45e535e",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.2264999784529209,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "de5caa45d23bafd2bc84636829f140cf16ed53c620b0e76dd04e5d5de45e535e",
+    "reused": true,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 187.2375999810174,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 330,
+    "response_sha256": "6759a73c68c2c34bb117c6147eb18762c13bf65fd92de9a664544337db0a62c2",
+    "reused": false,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.23370003327727318,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "6759a73c68c2c34bb117c6147eb18762c13bf65fd92de9a664544337db0a62c2",
+    "reused": true,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 181.16720009129494,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 328,
+    "response_sha256": "6f94a9938f8d121d17daab7ec6c31ff9f1fe8b55cfa4934faaa712afff01da89",
+    "reused": false,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.238100066781044,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "6f94a9938f8d121d17daab7ec6c31ff9f1fe8b55cfa4934faaa712afff01da89",
+    "reused": true,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 179.35870005749166,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 332,
+    "response_sha256": "dfcf21ba6047565ca9387db592689db581d88b69758ecf746896fc654b012e13",
+    "reused": false,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.22789998911321163,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "dfcf21ba6047565ca9387db592689db581d88b69758ecf746896fc654b012e13",
+    "reused": true,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 170.73799995705485,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 331,
+    "response_sha256": "cfad402abfd46f3f0b0394c34ba1d7aaa4e2228af87080b461e0cf7bd041af8a",
+    "reused": false,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.3087999066337943,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "cfad402abfd46f3f0b0394c34ba1d7aaa4e2228af87080b461e0cf7bd041af8a",
+    "reused": true,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 197.8252000408247,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 328,
+    "response_sha256": "f9509a21def58de521f3aff9791b22e936f31264ebeea44fe553488aad599f07",
+    "reused": false,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.41009997949004173,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "f9509a21def58de521f3aff9791b22e936f31264ebeea44fe553488aad599f07",
+    "reused": true,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 186.00769992917776,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 328,
+    "response_sha256": "cb358c538e2e5984126c273a2fe889930cc76717057742a2ace4e9573204887e",
+    "reused": false,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.3787999739870429,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "mode": "verified_reuse",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "cb358c538e2e5984126c273a2fe889930cc76717057742a2ace4e9573204887e",
+    "reused": true,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "context_bytes": 5538,
+    "correct": true,
+    "elapsed_ms": 334.92549997754395,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 30,
+    "prompt_tokens": 1786,
+    "response_sha256": "21557872cabc3b623da71b5c0df731f531f7dad76bfab3e1cac3127d4d9c70e7",
+    "reused": false,
+    "sources": 13,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "context_bytes": 5538,
+    "correct": true,
+    "elapsed_ms": 201.56429999042302,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 30,
+    "prompt_tokens": 1786,
+    "response_sha256": "21557872cabc3b623da71b5c0df731f531f7dad76bfab3e1cac3127d4d9c70e7",
+    "reused": false,
+    "sources": 13,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 333.3807000890374,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1791,
+    "response_sha256": "d6a5bc7f6faeffcd3d1687b8949129bc5eb46a9d4fa4ff4a40e2bf984d521ea1",
+    "reused": false,
+    "sources": 13,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 189.49449993669987,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1791,
+    "response_sha256": "d6a5bc7f6faeffcd3d1687b8949129bc5eb46a9d4fa4ff4a40e2bf984d521ea1",
+    "reused": false,
+    "sources": 13,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 335.637400043197,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1795,
+    "response_sha256": "8c071d6b2caedde66d808c3a1e1ed2036a5b0f4f5a35c39a0761b5df27d285e0",
+    "reused": false,
+    "sources": 13,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 192.79279990587384,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1795,
+    "response_sha256": "8c071d6b2caedde66d808c3a1e1ed2036a5b0f4f5a35c39a0761b5df27d285e0",
+    "reused": false,
+    "sources": 13,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 358.019300037995,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1792,
+    "response_sha256": "2c7f50076d75a9001ab83aab2da831b6f334b9d86e4b753cb6c5ae524ea14f35",
+    "reused": false,
+    "sources": 13,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 170.2437000349164,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1792,
+    "response_sha256": "2c7f50076d75a9001ab83aab2da831b6f334b9d86e4b753cb6c5ae524ea14f35",
+    "reused": false,
+    "sources": 13,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 344.75769998971373,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1789,
+    "response_sha256": "eef0105f395463a1f0454320d0836bbc2901255b7e87c90205cdad727afda402",
+    "reused": false,
+    "sources": 13,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 191.16779998876154,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1789,
+    "response_sha256": "eef0105f395463a1f0454320d0836bbc2901255b7e87c90205cdad727afda402",
+    "reused": false,
+    "sources": 13,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 328.299600048922,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1793,
+    "response_sha256": "47bc2b82336a856fd5838454069002e29080237f5836dd4e4124c384b84aba3a",
+    "reused": false,
+    "sources": 13,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 201.4255999820307,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1793,
+    "response_sha256": "47bc2b82336a856fd5838454069002e29080237f5836dd4e4124c384b84aba3a",
+    "reused": false,
+    "sources": 13,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 335.8246999559924,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1792,
+    "response_sha256": "8bb93588f97b4b931d42b396cc3115bd31fa43f2173ad74d67e5bf75168171c1",
+    "reused": false,
+    "sources": 13,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 181.48359993938357,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1792,
+    "response_sha256": "8bb93588f97b4b931d42b396cc3115bd31fa43f2173ad74d67e5bf75168171c1",
+    "reused": false,
+    "sources": 13,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 346.6806000797078,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1791,
+    "response_sha256": "7ec8c75231c7e34ba9c64a489119b1330c04c2dcea03eb2a215b208be24978cb",
+    "reused": false,
+    "sources": 13,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 200.855000060983,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1791,
+    "response_sha256": "7ec8c75231c7e34ba9c64a489119b1330c04c2dcea03eb2a215b208be24978cb",
+    "reused": false,
+    "sources": 13,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 339.2119000200182,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1795,
+    "response_sha256": "8ee0b6db1bc9ac52193be6b0d8903147bec2665af37575d4681c1ed140b87e46",
+    "reused": false,
+    "sources": 13,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 191.43249990884215,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1795,
+    "response_sha256": "8ee0b6db1bc9ac52193be6b0d8903147bec2665af37575d4681c1ed140b87e46",
+    "reused": false,
+    "sources": 13,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 313.78359999507666,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1794,
+    "response_sha256": "425e2f3fac92510944863e440e2469b326e8983bdbb6e6c41aa8105344527a51",
+    "reused": false,
+    "sources": 13,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 184.56109997350723,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1794,
+    "response_sha256": "425e2f3fac92510944863e440e2469b326e8983bdbb6e6c41aa8105344527a51",
+    "reused": false,
+    "sources": 13,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 334.02090007439256,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1791,
+    "response_sha256": "e8f3b67c8533fc4b0df00bd152636a644ffe25cfed2b3a89b3203dd10e8885e7",
+    "reused": false,
+    "sources": 13,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 199.20980010647327,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1791,
+    "response_sha256": "e8f3b67c8533fc4b0df00bd152636a644ffe25cfed2b3a89b3203dd10e8885e7",
+    "reused": false,
+    "sources": 13,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 327.2430000361055,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1794,
+    "response_sha256": "0476c391e4aa480226217dbfd2bbd2139d9285136ae2b000b51712cc68f4d862",
+    "reused": false,
+    "sources": 13,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 180.5331000359729,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1794,
+    "response_sha256": "0476c391e4aa480226217dbfd2bbd2139d9285136ae2b000b51712cc68f4d862",
+    "reused": false,
+    "sources": 13,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 316.3502000970766,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1793,
+    "response_sha256": "118fae312f9bf255d56fe76d15b89f2e8c9ef4525b3d395ff48ea6617f15d507",
+    "reused": false,
+    "sources": 13,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 168.5195000609383,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1793,
+    "response_sha256": "118fae312f9bf255d56fe76d15b89f2e8c9ef4525b3d395ff48ea6617f15d507",
+    "reused": false,
+    "sources": 13,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 309.9762999918312,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1793,
+    "response_sha256": "94306599eb7aac6b0124be84a034d0bac9661da1b652c1268bac426da4a0305b",
+    "reused": false,
+    "sources": 13,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 181.49190000258386,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1793,
+    "response_sha256": "94306599eb7aac6b0124be84a034d0bac9661da1b652c1268bac426da4a0305b",
+    "reused": false,
+    "sources": 13,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 327.95719988644123,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1797,
+    "response_sha256": "9aa935e1df2f3e0875b1d9e2e57e322dbf3e7624eb2096dcefaa4f2a1e1f62b3",
+    "reused": false,
+    "sources": 13,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 183.64960001781583,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1797,
+    "response_sha256": "9aa935e1df2f3e0875b1d9e2e57e322dbf3e7624eb2096dcefaa4f2a1e1f62b3",
+    "reused": false,
+    "sources": 13,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 320.6796000013128,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1796,
+    "response_sha256": "a28d19f3b27527705a3bcc5dd52773f91cefe57cef2e3448846c3bed9b1f9750",
+    "reused": false,
+    "sources": 13,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 181.52600002940744,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1796,
+    "response_sha256": "a28d19f3b27527705a3bcc5dd52773f91cefe57cef2e3448846c3bed9b1f9750",
+    "reused": false,
+    "sources": 13,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 318.4882999630645,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1793,
+    "response_sha256": "a42168e26641b08a3952ad227b35829ce706d2bcd0af2f95f9c5178acadb5386",
+    "reused": false,
+    "sources": 13,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 171.65429994929582,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1793,
+    "response_sha256": "a42168e26641b08a3952ad227b35829ce706d2bcd0af2f95f9c5178acadb5386",
+    "reused": false,
+    "sources": 13,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 354.8046000069007,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 1795,
+    "response_sha256": "de5caa45d23bafd2bc84636829f140cf16ed53c620b0e76dd04e5d5de45e535e",
+    "reused": false,
+    "sources": 13,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 176.57060001511127,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 1795,
+    "response_sha256": "de5caa45d23bafd2bc84636829f140cf16ed53c620b0e76dd04e5d5de45e535e",
+    "reused": false,
+    "sources": 13,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 353.89170004054904,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1794,
+    "response_sha256": "6759a73c68c2c34bb117c6147eb18762c13bf65fd92de9a664544337db0a62c2",
+    "reused": false,
+    "sources": 13,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 190.1120999827981,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1794,
+    "response_sha256": "6759a73c68c2c34bb117c6147eb18762c13bf65fd92de9a664544337db0a62c2",
+    "reused": false,
+    "sources": 13,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 356.29629995673895,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1792,
+    "response_sha256": "6f94a9938f8d121d17daab7ec6c31ff9f1fe8b55cfa4934faaa712afff01da89",
+    "reused": false,
+    "sources": 13,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 208.85200006887317,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1792,
+    "response_sha256": "6f94a9938f8d121d17daab7ec6c31ff9f1fe8b55cfa4934faaa712afff01da89",
+    "reused": false,
+    "sources": 13,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 337.551899952814,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1796,
+    "response_sha256": "dfcf21ba6047565ca9387db592689db581d88b69758ecf746896fc654b012e13",
+    "reused": false,
+    "sources": 13,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 173.6500000115484,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1796,
+    "response_sha256": "dfcf21ba6047565ca9387db592689db581d88b69758ecf746896fc654b012e13",
+    "reused": false,
+    "sources": 13,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 349.67579995281994,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1795,
+    "response_sha256": "cfad402abfd46f3f0b0394c34ba1d7aaa4e2228af87080b461e0cf7bd041af8a",
+    "reused": false,
+    "sources": 13,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 179.27309998776764,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1795,
+    "response_sha256": "cfad402abfd46f3f0b0394c34ba1d7aaa4e2228af87080b461e0cf7bd041af8a",
+    "reused": false,
+    "sources": 13,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 308.5572998970747,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 1792,
+    "response_sha256": "f9509a21def58de521f3aff9791b22e936f31264ebeea44fe553488aad599f07",
+    "reused": false,
+    "sources": 13,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 204.1185999987647,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 1792,
+    "response_sha256": "f9509a21def58de521f3aff9791b22e936f31264ebeea44fe553488aad599f07",
+    "reused": false,
+    "sources": 13,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 319.986000075005,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 1792,
+    "response_sha256": "cb358c538e2e5984126c273a2fe889930cc76717057742a2ace4e9573204887e",
+    "reused": false,
+    "sources": 13,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 175.97960005514324,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "mode": "full_scope",
+    "model": "qwen2.5:1.5b",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 1792,
+    "response_sha256": "cb358c538e2e5984126c273a2fe889930cc76717057742a2ace4e9573204887e",
+    "reused": false,
+    "sources": 13,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "context_bytes": 498,
+    "correct": true,
+    "elapsed_ms": 301.14590004086494,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 30,
+    "prompt_tokens": 305,
+    "response_sha256": "21557872cabc3b623da71b5c0df731f531f7dad76bfab3e1cac3127d4d9c70e7",
+    "reused": false,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "context_bytes": 498,
+    "correct": true,
+    "elapsed_ms": 264.7228999994695,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 30,
+    "prompt_tokens": 305,
+    "response_sha256": "21557872cabc3b623da71b5c0df731f531f7dad76bfab3e1cac3127d4d9c70e7",
+    "reused": false,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 371.4926999527961,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 310,
+    "response_sha256": "d6a5bc7f6faeffcd3d1687b8949129bc5eb46a9d4fa4ff4a40e2bf984d521ea1",
+    "reused": false,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 342.1972000505775,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 310,
+    "response_sha256": "d6a5bc7f6faeffcd3d1687b8949129bc5eb46a9d4fa4ff4a40e2bf984d521ea1",
+    "reused": false,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 334.9794999230653,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 314,
+    "response_sha256": "8c071d6b2caedde66d808c3a1e1ed2036a5b0f4f5a35c39a0761b5df27d285e0",
+    "reused": false,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 264.65000002644956,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 314,
+    "response_sha256": "8c071d6b2caedde66d808c3a1e1ed2036a5b0f4f5a35c39a0761b5df27d285e0",
+    "reused": false,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 397.303199977614,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 311,
+    "response_sha256": "2c7f50076d75a9001ab83aab2da831b6f334b9d86e4b753cb6c5ae524ea14f35",
+    "reused": false,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 296.7212999938056,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 311,
+    "response_sha256": "2c7f50076d75a9001ab83aab2da831b6f334b9d86e4b753cb6c5ae524ea14f35",
+    "reused": false,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 333.77939998172224,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 308,
+    "response_sha256": "eef0105f395463a1f0454320d0836bbc2901255b7e87c90205cdad727afda402",
+    "reused": false,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 278.0590000329539,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 308,
+    "response_sha256": "eef0105f395463a1f0454320d0836bbc2901255b7e87c90205cdad727afda402",
+    "reused": false,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 14
+    },
+    "context_bytes": 499,
+    "correct": false,
+    "elapsed_ms": 370.886699995026,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "147cce1704b36215632ee7084a5e9e6ccd06f38603fbcab72faf52dee603f7cf",
+    "reused": false,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 14
+    },
+    "context_bytes": 499,
+    "correct": false,
+    "elapsed_ms": 299.26869994960725,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "147cce1704b36215632ee7084a5e9e6ccd06f38603fbcab72faf52dee603f7cf",
+    "reused": false,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 348.23800006415695,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 311,
+    "response_sha256": "8bb93588f97b4b931d42b396cc3115bd31fa43f2173ad74d67e5bf75168171c1",
+    "reused": false,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 270.9852000698447,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 311,
+    "response_sha256": "8bb93588f97b4b931d42b396cc3115bd31fa43f2173ad74d67e5bf75168171c1",
+    "reused": false,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 331.06549992226064,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 310,
+    "response_sha256": "7ec8c75231c7e34ba9c64a489119b1330c04c2dcea03eb2a215b208be24978cb",
+    "reused": false,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 280.7837000582367,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 310,
+    "response_sha256": "7ec8c75231c7e34ba9c64a489119b1330c04c2dcea03eb2a215b208be24978cb",
+    "reused": false,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 310.45109999831766,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 314,
+    "response_sha256": "8ee0b6db1bc9ac52193be6b0d8903147bec2665af37575d4681c1ed140b87e46",
+    "reused": false,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 276.3815999496728,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 314,
+    "response_sha256": "8ee0b6db1bc9ac52193be6b0d8903147bec2665af37575d4681c1ed140b87e46",
+    "reused": false,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 328.1686999835074,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 313,
+    "response_sha256": "425e2f3fac92510944863e440e2469b326e8983bdbb6e6c41aa8105344527a51",
+    "reused": false,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 271.9641000730917,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 313,
+    "response_sha256": "425e2f3fac92510944863e440e2469b326e8983bdbb6e6c41aa8105344527a51",
+    "reused": false,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 324.2100999923423,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 310,
+    "response_sha256": "e8f3b67c8533fc4b0df00bd152636a644ffe25cfed2b3a89b3203dd10e8885e7",
+    "reused": false,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 307.18789994716644,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 310,
+    "response_sha256": "e8f3b67c8533fc4b0df00bd152636a644ffe25cfed2b3a89b3203dd10e8885e7",
+    "reused": false,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 315.84500009194016,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 313,
+    "response_sha256": "0476c391e4aa480226217dbfd2bbd2139d9285136ae2b000b51712cc68f4d862",
+    "reused": false,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 288.7743000173941,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 313,
+    "response_sha256": "0476c391e4aa480226217dbfd2bbd2139d9285136ae2b000b51712cc68f4d862",
+    "reused": false,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 309.9168000044301,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "118fae312f9bf255d56fe76d15b89f2e8c9ef4525b3d395ff48ea6617f15d507",
+    "reused": false,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 292.79209999367595,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "118fae312f9bf255d56fe76d15b89f2e8c9ef4525b3d395ff48ea6617f15d507",
+    "reused": false,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 306.2401000643149,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "94306599eb7aac6b0124be84a034d0bac9661da1b652c1268bac426da4a0305b",
+    "reused": false,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 286.66350001003593,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "94306599eb7aac6b0124be84a034d0bac9661da1b652c1268bac426da4a0305b",
+    "reused": false,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 337.97120000235736,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 316,
+    "response_sha256": "9aa935e1df2f3e0875b1d9e2e57e322dbf3e7624eb2096dcefaa4f2a1e1f62b3",
+    "reused": false,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 249.14730002637953,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 316,
+    "response_sha256": "9aa935e1df2f3e0875b1d9e2e57e322dbf3e7624eb2096dcefaa4f2a1e1f62b3",
+    "reused": false,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 319.9305000016466,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 315,
+    "response_sha256": "a28d19f3b27527705a3bcc5dd52773f91cefe57cef2e3448846c3bed9b1f9750",
+    "reused": false,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 326.3681000098586,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 315,
+    "response_sha256": "a28d19f3b27527705a3bcc5dd52773f91cefe57cef2e3448846c3bed9b1f9750",
+    "reused": false,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 24
+    },
+    "context_bytes": 499,
+    "correct": false,
+    "elapsed_ms": 389.13160003721714,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "7204e9b833a37f210a7f866f5971e3ba8d36acab71e9f003068a8999d48a3c2b",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 24
+    },
+    "context_bytes": 499,
+    "correct": false,
+    "elapsed_ms": 295.7474000286311,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "7204e9b833a37f210a7f866f5971e3ba8d36acab71e9f003068a8999d48a3c2b",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 26
+    },
+    "context_bytes": 499,
+    "correct": false,
+    "elapsed_ms": 377.06580001395196,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 314,
+    "response_sha256": "9b0dcc6b4c0036c99d19a75ebc8fd80876ce564695244e34198b60dcad156027",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 26
+    },
+    "context_bytes": 499,
+    "correct": false,
+    "elapsed_ms": 327.08620000630617,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 314,
+    "response_sha256": "9b0dcc6b4c0036c99d19a75ebc8fd80876ce564695244e34198b60dcad156027",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 379.2153999675065,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 313,
+    "response_sha256": "6759a73c68c2c34bb117c6147eb18762c13bf65fd92de9a664544337db0a62c2",
+    "reused": false,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 320.18170005176216,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 313,
+    "response_sha256": "6759a73c68c2c34bb117c6147eb18762c13bf65fd92de9a664544337db0a62c2",
+    "reused": false,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 381.0862998943776,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 311,
+    "response_sha256": "6f94a9938f8d121d17daab7ec6c31ff9f1fe8b55cfa4934faaa712afff01da89",
+    "reused": false,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 311.2617000006139,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 311,
+    "response_sha256": "6f94a9938f8d121d17daab7ec6c31ff9f1fe8b55cfa4934faaa712afff01da89",
+    "reused": false,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 352.0488999783993,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 315,
+    "response_sha256": "dfcf21ba6047565ca9387db592689db581d88b69758ecf746896fc654b012e13",
+    "reused": false,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 294.4635999156162,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 315,
+    "response_sha256": "dfcf21ba6047565ca9387db592689db581d88b69758ecf746896fc654b012e13",
+    "reused": false,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 348.77609997056425,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 314,
+    "response_sha256": "cfad402abfd46f3f0b0394c34ba1d7aaa4e2228af87080b461e0cf7bd041af8a",
+    "reused": false,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 288.5264999931678,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 314,
+    "response_sha256": "cfad402abfd46f3f0b0394c34ba1d7aaa4e2228af87080b461e0cf7bd041af8a",
+    "reused": false,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 362.3025000561029,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 311,
+    "response_sha256": "f9509a21def58de521f3aff9791b22e936f31264ebeea44fe553488aad599f07",
+    "reused": false,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 316.7781999800354,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 311,
+    "response_sha256": "f9509a21def58de521f3aff9791b22e936f31264ebeea44fe553488aad599f07",
+    "reused": false,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 339.5883999764919,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 311,
+    "response_sha256": "cb358c538e2e5984126c273a2fe889930cc76717057742a2ace4e9573204887e",
+    "reused": false,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 283.224800019525,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "mode": "prepared_context",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 311,
+    "response_sha256": "cb358c538e2e5984126c273a2fe889930cc76717057742a2ace4e9573204887e",
+    "reused": false,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "context_bytes": 498,
+    "correct": true,
+    "elapsed_ms": 290.5621000099927,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 30,
+    "prompt_tokens": 305,
+    "response_sha256": "21557872cabc3b623da71b5c0df731f531f7dad76bfab3e1cac3127d4d9c70e7",
+    "reused": false,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "context_bytes": 498,
+    "correct": true,
+    "elapsed_ms": 0.3037001006305218,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "21557872cabc3b623da71b5c0df731f531f7dad76bfab3e1cac3127d4d9c70e7",
+    "reused": true,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 302.92929999995977,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 310,
+    "response_sha256": "d6a5bc7f6faeffcd3d1687b8949129bc5eb46a9d4fa4ff4a40e2bf984d521ea1",
+    "reused": false,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.2744999947026372,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "d6a5bc7f6faeffcd3d1687b8949129bc5eb46a9d4fa4ff4a40e2bf984d521ea1",
+    "reused": true,
+    "sources": 3,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 308.6247999453917,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 314,
+    "response_sha256": "8c071d6b2caedde66d808c3a1e1ed2036a5b0f4f5a35c39a0761b5df27d285e0",
+    "reused": false,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.28009992092847824,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "8c071d6b2caedde66d808c3a1e1ed2036a5b0f4f5a35c39a0761b5df27d285e0",
+    "reused": true,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 311.78580003324896,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 311,
+    "response_sha256": "2c7f50076d75a9001ab83aab2da831b6f334b9d86e4b753cb6c5ae524ea14f35",
+    "reused": false,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.29009999707341194,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "2c7f50076d75a9001ab83aab2da831b6f334b9d86e4b753cb6c5ae524ea14f35",
+    "reused": true,
+    "sources": 3,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 309.4801000552252,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 308,
+    "response_sha256": "eef0105f395463a1f0454320d0836bbc2901255b7e87c90205cdad727afda402",
+    "reused": false,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.2728999825194478,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "eef0105f395463a1f0454320d0836bbc2901255b7e87c90205cdad727afda402",
+    "reused": true,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 14
+    },
+    "context_bytes": 499,
+    "correct": false,
+    "elapsed_ms": 344.91349989548326,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "147cce1704b36215632ee7084a5e9e6ccd06f38603fbcab72faf52dee603f7cf",
+    "reused": false,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 14
+    },
+    "context_bytes": 499,
+    "correct": false,
+    "elapsed_ms": 330.8076999383047,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "147cce1704b36215632ee7084a5e9e6ccd06f38603fbcab72faf52dee603f7cf",
+    "reused": false,
+    "sources": 3,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 319.78390004951507,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 311,
+    "response_sha256": "8bb93588f97b4b931d42b396cc3115bd31fa43f2173ad74d67e5bf75168171c1",
+    "reused": false,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.3692000173032284,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "8bb93588f97b4b931d42b396cc3115bd31fa43f2173ad74d67e5bf75168171c1",
+    "reused": true,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 302.2315000416711,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 310,
+    "response_sha256": "7ec8c75231c7e34ba9c64a489119b1330c04c2dcea03eb2a215b208be24978cb",
+    "reused": false,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.2880999818444252,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "7ec8c75231c7e34ba9c64a489119b1330c04c2dcea03eb2a215b208be24978cb",
+    "reused": true,
+    "sources": 3,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 329.4480999466032,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 314,
+    "response_sha256": "8ee0b6db1bc9ac52193be6b0d8903147bec2665af37575d4681c1ed140b87e46",
+    "reused": false,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.3122000489383936,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "8ee0b6db1bc9ac52193be6b0d8903147bec2665af37575d4681c1ed140b87e46",
+    "reused": true,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 316.35769992135465,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 313,
+    "response_sha256": "425e2f3fac92510944863e440e2469b326e8983bdbb6e6c41aa8105344527a51",
+    "reused": false,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.4409000976011157,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "425e2f3fac92510944863e440e2469b326e8983bdbb6e6c41aa8105344527a51",
+    "reused": true,
+    "sources": 3,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 317.7805000450462,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 310,
+    "response_sha256": "e8f3b67c8533fc4b0df00bd152636a644ffe25cfed2b3a89b3203dd10e8885e7",
+    "reused": false,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.44600002001971006,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "e8f3b67c8533fc4b0df00bd152636a644ffe25cfed2b3a89b3203dd10e8885e7",
+    "reused": true,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 307.6236000051722,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 313,
+    "response_sha256": "0476c391e4aa480226217dbfd2bbd2139d9285136ae2b000b51712cc68f4d862",
+    "reused": false,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.3513999981805682,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "0476c391e4aa480226217dbfd2bbd2139d9285136ae2b000b51712cc68f4d862",
+    "reused": true,
+    "sources": 3,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 293.7896999064833,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "118fae312f9bf255d56fe76d15b89f2e8c9ef4525b3d395ff48ea6617f15d507",
+    "reused": false,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.4412999842315912,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "118fae312f9bf255d56fe76d15b89f2e8c9ef4525b3d395ff48ea6617f15d507",
+    "reused": true,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 291.7983999941498,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "94306599eb7aac6b0124be84a034d0bac9661da1b652c1268bac426da4a0305b",
+    "reused": false,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.2828999422490597,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "94306599eb7aac6b0124be84a034d0bac9661da1b652c1268bac426da4a0305b",
+    "reused": true,
+    "sources": 3,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 302.8427000390366,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 316,
+    "response_sha256": "9aa935e1df2f3e0875b1d9e2e57e322dbf3e7624eb2096dcefaa4f2a1e1f62b3",
+    "reused": false,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.4371000686660409,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "9aa935e1df2f3e0875b1d9e2e57e322dbf3e7624eb2096dcefaa4f2a1e1f62b3",
+    "reused": true,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 293.2046999922022,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 315,
+    "response_sha256": "a28d19f3b27527705a3bcc5dd52773f91cefe57cef2e3448846c3bed9b1f9750",
+    "reused": false,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.44709991198033094,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "a28d19f3b27527705a3bcc5dd52773f91cefe57cef2e3448846c3bed9b1f9750",
+    "reused": true,
+    "sources": 3,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 24
+    },
+    "context_bytes": 499,
+    "correct": false,
+    "elapsed_ms": 341.14770009182394,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "7204e9b833a37f210a7f866f5971e3ba8d36acab71e9f003068a8999d48a3c2b",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 24
+    },
+    "context_bytes": 499,
+    "correct": false,
+    "elapsed_ms": 312.85970006138086,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 312,
+    "response_sha256": "7204e9b833a37f210a7f866f5971e3ba8d36acab71e9f003068a8999d48a3c2b",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 26
+    },
+    "context_bytes": 499,
+    "correct": false,
+    "elapsed_ms": 355.5277999257669,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 314,
+    "response_sha256": "9b0dcc6b4c0036c99d19a75ebc8fd80876ce564695244e34198b60dcad156027",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 26
+    },
+    "context_bytes": 499,
+    "correct": false,
+    "elapsed_ms": 306.9334999890998,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 314,
+    "response_sha256": "9b0dcc6b4c0036c99d19a75ebc8fd80876ce564695244e34198b60dcad156027",
+    "reused": false,
+    "sources": 3,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 314.72210003994405,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 313,
+    "response_sha256": "6759a73c68c2c34bb117c6147eb18762c13bf65fd92de9a664544337db0a62c2",
+    "reused": false,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.2327000256627798,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "6759a73c68c2c34bb117c6147eb18762c13bf65fd92de9a664544337db0a62c2",
+    "reused": true,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 320.5230999737978,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 311,
+    "response_sha256": "6f94a9938f8d121d17daab7ec6c31ff9f1fe8b55cfa4934faaa712afff01da89",
+    "reused": false,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.2394000766798854,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "6f94a9938f8d121d17daab7ec6c31ff9f1fe8b55cfa4934faaa712afff01da89",
+    "reused": true,
+    "sources": 3,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 322.5941000273451,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 315,
+    "response_sha256": "dfcf21ba6047565ca9387db592689db581d88b69758ecf746896fc654b012e13",
+    "reused": false,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.24560000747442245,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "dfcf21ba6047565ca9387db592689db581d88b69758ecf746896fc654b012e13",
+    "reused": true,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 382.3919999413192,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 314,
+    "response_sha256": "cfad402abfd46f3f0b0394c34ba1d7aaa4e2228af87080b461e0cf7bd041af8a",
+    "reused": false,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.35099999513477087,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "cfad402abfd46f3f0b0394c34ba1d7aaa4e2228af87080b461e0cf7bd041af8a",
+    "reused": true,
+    "sources": 3,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 322.9638999328017,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 311,
+    "response_sha256": "f9509a21def58de521f3aff9791b22e936f31264ebeea44fe553488aad599f07",
+    "reused": false,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.27959991712123156,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "f9509a21def58de521f3aff9791b22e936f31264ebeea44fe553488aad599f07",
+    "reused": true,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 327.46609998866916,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 311,
+    "response_sha256": "cb358c538e2e5984126c273a2fe889930cc76717057742a2ace4e9573204887e",
+    "reused": false,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "context_bytes": 499,
+    "correct": true,
+    "elapsed_ms": 0.2539000706747174,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "mode": "verified_reuse",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 0,
+    "output_tokens": 0,
+    "prompt_tokens": 0,
+    "response_sha256": "cb358c538e2e5984126c273a2fe889930cc76717057742a2ace4e9573204887e",
+    "reused": true,
+    "sources": 3,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "context_bytes": 5538,
+    "correct": true,
+    "elapsed_ms": 510.70569991134107,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 30,
+    "prompt_tokens": 1769,
+    "response_sha256": "21557872cabc3b623da71b5c0df731f531f7dad76bfab3e1cac3127d4d9c70e7",
+    "reused": false,
+    "sources": 13,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "context_bytes": 5538,
+    "correct": true,
+    "elapsed_ms": 294.43290003109723,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 8,
+      "effective_batch_size": 16
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 30,
+    "prompt_tokens": 1769,
+    "response_sha256": "21557872cabc3b623da71b5c0df731f531f7dad76bfab3e1cac3127d4d9c70e7",
+    "reused": false,
+    "sources": 13,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 555.9739000163972,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1774,
+    "response_sha256": "d6a5bc7f6faeffcd3d1687b8949129bc5eb46a9d4fa4ff4a40e2bf984d521ea1",
+    "reused": false,
+    "sources": 13,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 305.63590000383556,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 10,
+      "effective_batch_size": 20
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1774,
+    "response_sha256": "d6a5bc7f6faeffcd3d1687b8949129bc5eb46a9d4fa4ff4a40e2bf984d521ea1",
+    "reused": false,
+    "sources": 13,
+    "task": 0
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 594.2577000241727,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1778,
+    "response_sha256": "8c071d6b2caedde66d808c3a1e1ed2036a5b0f4f5a35c39a0761b5df27d285e0",
+    "reused": false,
+    "sources": 13,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 307.14379996061325,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 10,
+      "effective_batch_size": 30
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1778,
+    "response_sha256": "8c071d6b2caedde66d808c3a1e1ed2036a5b0f4f5a35c39a0761b5df27d285e0",
+    "reused": false,
+    "sources": 13,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 603.1152999494225,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1775,
+    "response_sha256": "2c7f50076d75a9001ab83aab2da831b6f334b9d86e4b753cb6c5ae524ea14f35",
+    "reused": false,
+    "sources": 13,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 275.01629991456866,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 12,
+      "effective_batch_size": 36
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1775,
+    "response_sha256": "2c7f50076d75a9001ab83aab2da831b6f334b9d86e4b753cb6c5ae524ea14f35",
+    "reused": false,
+    "sources": 13,
+    "task": 1
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 513.1536999251693,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1772,
+    "response_sha256": "eef0105f395463a1f0454320d0836bbc2901255b7e87c90205cdad727afda402",
+    "reused": false,
+    "sources": 13,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 300.2912999363616,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 12,
+      "effective_batch_size": 48
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1772,
+    "response_sha256": "eef0105f395463a1f0454320d0836bbc2901255b7e87c90205cdad727afda402",
+    "reused": false,
+    "sources": 13,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 14
+    },
+    "context_bytes": 5539,
+    "correct": false,
+    "elapsed_ms": 609.1666999273002,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1776,
+    "response_sha256": "147cce1704b36215632ee7084a5e9e6ccd06f38603fbcab72faf52dee603f7cf",
+    "reused": false,
+    "sources": 13,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 14
+    },
+    "context_bytes": 5539,
+    "correct": false,
+    "elapsed_ms": 324.2667999584228,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 14,
+      "effective_batch_size": 56
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1776,
+    "response_sha256": "147cce1704b36215632ee7084a5e9e6ccd06f38603fbcab72faf52dee603f7cf",
+    "reused": false,
+    "sources": 13,
+    "task": 2
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 542.8725000238046,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1775,
+    "response_sha256": "8bb93588f97b4b931d42b396cc3115bd31fa43f2173ad74d67e5bf75168171c1",
+    "reused": false,
+    "sources": 13,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 318.94539995118976,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 14,
+      "effective_batch_size": 28
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1775,
+    "response_sha256": "8bb93588f97b4b931d42b396cc3115bd31fa43f2173ad74d67e5bf75168171c1",
+    "reused": false,
+    "sources": 13,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 583.5714000277221,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1774,
+    "response_sha256": "7ec8c75231c7e34ba9c64a489119b1330c04c2dcea03eb2a215b208be24978cb",
+    "reused": false,
+    "sources": 13,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 318.3095999993384,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 16,
+      "effective_batch_size": 32
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1774,
+    "response_sha256": "7ec8c75231c7e34ba9c64a489119b1330c04c2dcea03eb2a215b208be24978cb",
+    "reused": false,
+    "sources": 13,
+    "task": 3
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 542.9309000028297,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1778,
+    "response_sha256": "8ee0b6db1bc9ac52193be6b0d8903147bec2665af37575d4681c1ed140b87e46",
+    "reused": false,
+    "sources": 13,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 304.82680001296103,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 16,
+      "effective_batch_size": 48
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1778,
+    "response_sha256": "8ee0b6db1bc9ac52193be6b0d8903147bec2665af37575d4681c1ed140b87e46",
+    "reused": false,
+    "sources": 13,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 590.5905000399798,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1777,
+    "response_sha256": "425e2f3fac92510944863e440e2469b326e8983bdbb6e6c41aa8105344527a51",
+    "reused": false,
+    "sources": 13,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 300.5678999470547,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 18,
+      "effective_batch_size": 54
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1777,
+    "response_sha256": "425e2f3fac92510944863e440e2469b326e8983bdbb6e6c41aa8105344527a51",
+    "reused": false,
+    "sources": 13,
+    "task": 4
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 18
+    },
+    "context_bytes": 5539,
+    "correct": false,
+    "elapsed_ms": 619.8091999394819,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1774,
+    "response_sha256": "da1e0df032a01fc123ca944bddf257f0945fb4d439187571c75a3020cbade2a8",
+    "reused": false,
+    "sources": 13,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 18
+    },
+    "context_bytes": 5539,
+    "correct": false,
+    "elapsed_ms": 332.770699984394,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 18,
+      "effective_batch_size": 72
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1774,
+    "response_sha256": "da1e0df032a01fc123ca944bddf257f0945fb4d439187571c75a3020cbade2a8",
+    "reused": false,
+    "sources": 13,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 579.0444000158459,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1777,
+    "response_sha256": "0476c391e4aa480226217dbfd2bbd2139d9285136ae2b000b51712cc68f4d862",
+    "reused": false,
+    "sources": 13,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 300.6455999566242,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 20,
+      "effective_batch_size": 80
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1777,
+    "response_sha256": "0476c391e4aa480226217dbfd2bbd2139d9285136ae2b000b51712cc68f4d862",
+    "reused": false,
+    "sources": 13,
+    "task": 5
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 577.290500048548,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1776,
+    "response_sha256": "118fae312f9bf255d56fe76d15b89f2e8c9ef4525b3d395ff48ea6617f15d507",
+    "reused": false,
+    "sources": 13,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 314.5845999242738,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 20,
+      "effective_batch_size": 40
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1776,
+    "response_sha256": "118fae312f9bf255d56fe76d15b89f2e8c9ef4525b3d395ff48ea6617f15d507",
+    "reused": false,
+    "sources": 13,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 549.3619999615476,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1776,
+    "response_sha256": "94306599eb7aac6b0124be84a034d0bac9661da1b652c1268bac426da4a0305b",
+    "reused": false,
+    "sources": 13,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 289.5627999678254,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 22,
+      "effective_batch_size": 44
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1776,
+    "response_sha256": "94306599eb7aac6b0124be84a034d0bac9661da1b652c1268bac426da4a0305b",
+    "reused": false,
+    "sources": 13,
+    "task": 6
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 22
+    },
+    "context_bytes": 5539,
+    "correct": false,
+    "elapsed_ms": 608.3288000663742,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1780,
+    "response_sha256": "60695a61e0c354f3047fb55f00691a942ca9db478a7a80f7c03bb2b6fe15c726",
+    "reused": false,
+    "sources": 13,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 22
+    },
+    "context_bytes": 5539,
+    "correct": false,
+    "elapsed_ms": 300.70050002541393,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 22,
+      "effective_batch_size": 66
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1780,
+    "response_sha256": "60695a61e0c354f3047fb55f00691a942ca9db478a7a80f7c03bb2b6fe15c726",
+    "reused": false,
+    "sources": 13,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 24
+    },
+    "context_bytes": 5539,
+    "correct": false,
+    "elapsed_ms": 571.8013999285176,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1779,
+    "response_sha256": "ca0c061c4e3d8b51393907983308de7728655128235edfa85c20d22b7c5325f6",
+    "reused": false,
+    "sources": 13,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 24
+    },
+    "context_bytes": 5539,
+    "correct": false,
+    "elapsed_ms": 346.159299951978,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 24,
+      "effective_batch_size": 72
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1779,
+    "response_sha256": "ca0c061c4e3d8b51393907983308de7728655128235edfa85c20d22b7c5325f6",
+    "reused": false,
+    "sources": 13,
+    "task": 7
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 24
+    },
+    "context_bytes": 5539,
+    "correct": false,
+    "elapsed_ms": 570.2603999525309,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1776,
+    "response_sha256": "7204e9b833a37f210a7f866f5971e3ba8d36acab71e9f003068a8999d48a3c2b",
+    "reused": false,
+    "sources": 13,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 24
+    },
+    "context_bytes": 5539,
+    "correct": false,
+    "elapsed_ms": 341.4818999590352,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 24,
+      "effective_batch_size": 96
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1776,
+    "response_sha256": "7204e9b833a37f210a7f866f5971e3ba8d36acab71e9f003068a8999d48a3c2b",
+    "reused": false,
+    "sources": 13,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 26
+    },
+    "context_bytes": 5539,
+    "correct": false,
+    "elapsed_ms": 617.5379999913275,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1778,
+    "response_sha256": "9b0dcc6b4c0036c99d19a75ebc8fd80876ce564695244e34198b60dcad156027",
+    "reused": false,
+    "sources": 13,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 26
+    },
+    "context_bytes": 5539,
+    "correct": false,
+    "elapsed_ms": 316.62010005675256,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 26,
+      "effective_batch_size": 104
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1778,
+    "response_sha256": "9b0dcc6b4c0036c99d19a75ebc8fd80876ce564695244e34198b60dcad156027",
+    "reused": false,
+    "sources": 13,
+    "task": 8
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 556.9027999881655,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1777,
+    "response_sha256": "6759a73c68c2c34bb117c6147eb18762c13bf65fd92de9a664544337db0a62c2",
+    "reused": false,
+    "sources": 13,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 299.9413999496028,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 26,
+      "effective_batch_size": 52
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1777,
+    "response_sha256": "6759a73c68c2c34bb117c6147eb18762c13bf65fd92de9a664544337db0a62c2",
+    "reused": false,
+    "sources": 13,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 581.636399962008,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1775,
+    "response_sha256": "6f94a9938f8d121d17daab7ec6c31ff9f1fe8b55cfa4934faaa712afff01da89",
+    "reused": false,
+    "sources": 13,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 304.3773000827059,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 2,
+      "batch_size": 28,
+      "effective_batch_size": 56
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1775,
+    "response_sha256": "6f94a9938f8d121d17daab7ec6c31ff9f1fe8b55cfa4934faaa712afff01da89",
+    "reused": false,
+    "sources": 13,
+    "task": 9
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 557.628000038676,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1779,
+    "response_sha256": "dfcf21ba6047565ca9387db592689db581d88b69758ecf746896fc654b012e13",
+    "reused": false,
+    "sources": 13,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 313.6598999844864,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 28,
+      "effective_batch_size": 84
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1779,
+    "response_sha256": "dfcf21ba6047565ca9387db592689db581d88b69758ecf746896fc654b012e13",
+    "reused": false,
+    "sources": 13,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 552.0414999919012,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1778,
+    "response_sha256": "cfad402abfd46f3f0b0394c34ba1d7aaa4e2228af87080b461e0cf7bd041af8a",
+    "reused": false,
+    "sources": 13,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 299.2958000395447,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 3,
+      "batch_size": 30,
+      "effective_batch_size": 90
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 31,
+    "prompt_tokens": 1778,
+    "response_sha256": "cfad402abfd46f3f0b0394c34ba1d7aaa4e2228af87080b461e0cf7bd041af8a",
+    "reused": false,
+    "sources": 13,
+    "task": 10
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 570.6238000420853,
+    "event": 0,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 1775,
+    "response_sha256": "f9509a21def58de521f3aff9791b22e936f31264ebeea44fe553488aad599f07",
+    "reused": false,
+    "sources": 13,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 319.30700002703816,
+    "event": 1,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 30,
+      "effective_batch_size": 120
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 1775,
+    "response_sha256": "f9509a21def58de521f3aff9791b22e936f31264ebeea44fe553488aad599f07",
+    "reused": false,
+    "sources": 13,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 559.5370999071747,
+    "event": 2,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 1775,
+    "response_sha256": "cb358c538e2e5984126c273a2fe889930cc76717057742a2ace4e9573204887e",
+    "reused": false,
+    "sources": 13,
+    "task": 11
+  },
+  {
+    "actual": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "context_bytes": 5539,
+    "correct": true,
+    "elapsed_ms": 322.38339993637055,
+    "event": 3,
+    "exact_schema": true,
+    "expected": {
+      "accumulation_steps": 4,
+      "batch_size": 32,
+      "effective_batch_size": 128
+    },
+    "mode": "full_scope",
+    "model": "cortex-harness:1.7b-v11",
+    "model_calls": 1,
+    "output_tokens": 32,
+    "prompt_tokens": 1775,
+    "response_sha256": "cb358c538e2e5984126c273a2fe889930cc76717057742a2ace4e9573204887e",
+    "reused": false,
+    "sources": 13,
+    "task": 11
+  }
+]

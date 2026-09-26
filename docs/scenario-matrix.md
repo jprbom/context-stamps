@@ -4,6 +4,11 @@ Public source release: v0.5.0, with subsequent controller research updates. [Con
 
 | Added scenario | Evidence | Result |
 |---|---|---|
+| Pair-token caching, long queries and length-bucketed GPU execution | `runtime-v1`, `test_efficient_reranker.py` | Retained first truncation failure; corrected all 3,677 top-10 lists match reference |
+| Expert choice, token/byte/deadline budgets, no-progress loop, revoked or hidden evidence | `test_runtime.py` | Unqualified routes cannot replace baseline; bounded missing-evidence recovery and fail-closed outputs |
+| Two local readers with source edits and repeated requests | `runtime-v1/workflow-observations.json` | Qwen48/48; Cortex36/48 full scope to42/48 prepared; failed outputs not promoted; narrow fictional tasks |
+| Supplied facets at equal top-1 budget | `runtime-v1/spherical-ablation.json` | Full32-byte facets80/80; exact metadata also80/80; constructed ambiguity, not natural-data superiority |
+| Exact arithmetic control and malformed structured sources | `runtime-v1/exact-tool-control.json` | 48/48 with zero model calls; three malformed/ambiguous packets rejected |
 | Extra recurrent depth, padding, permutation and corrupted checkpoints | `test_contractive_controller.py`, `controller-v2/recurrence.json` | Contractive state update; bounded serving depths; convergence does not prove accuracy |
 | Quantized CPU inference with masked extreme values | `test_contractive_controller.py`, `controller-v2/online-runtime.json` | Masked inputs cleared before projection; real dynamic-int8 operators measured separately |
 | New-domain transfer with stronger ranking controls | `controller-v2`, FiQA plus four regression collections | Nine trained runs; frozen selection; dense/hybrid/cross-encoder/fusion controls |

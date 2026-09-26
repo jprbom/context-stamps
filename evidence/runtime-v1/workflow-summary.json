@@ -1,0 +1,66 @@
+{
+  "cortex-harness:1.7b-v11": {
+    "full_scope": {
+      "calls": 48,
+      "output_tokens": 1490,
+      "p50_ms": 428.43249993165955,
+      "p95_ms": 608.3288000663742,
+      "prompt_tokens": 85246,
+      "requests": 48,
+      "total_ms": 21169.069599243812,
+      "verified": 36
+    },
+    "prepared_context": {
+      "calls": 48,
+      "output_tokens": 1490,
+      "p50_ms": 316.3116000359878,
+      "p95_ms": 379.2153999675065,
+      "prompt_tokens": 14974,
+      "requests": 48,
+      "total_ms": 15304.776400094852,
+      "verified": 42
+    },
+    "verified_reuse": {
+      "calls": 27,
+      "output_tokens": 838,
+      "p50_ms": 293.49719994934276,
+      "p95_ms": 341.14770009182394,
+      "prompt_tokens": 8425,
+      "requests": 48,
+      "total_ms": 8587.933799950406,
+      "verified": 42
+    }
+  },
+  "qwen2.5:1.5b": {
+    "full_scope": {
+      "calls": 48,
+      "output_tokens": 1492,
+      "p50_ms": 258.70464998297393,
+      "p95_ms": 353.89170004054904,
+      "prompt_tokens": 86062,
+      "requests": 48,
+      "total_ms": 12486.161200213246,
+      "verified": 48
+    },
+    "prepared_context": {
+      "calls": 48,
+      "output_tokens": 1492,
+      "p50_ms": 177.43174999486655,
+      "p95_ms": 207.78070006053895,
+      "prompt_tokens": 15790,
+      "requests": 48,
+      "total_ms": 8555.376300122589,
+      "verified": 48
+    },
+    "verified_reuse": {
+      "calls": 24,
+      "output_tokens": 746,
+      "p50_ms": 76.76775002619252,
+      "p95_ms": 194.4932999322191,
+      "prompt_tokens": 7895,
+      "requests": 48,
+      "total_ms": 4292.369400034659,
+      "verified": 48
+    }
+  }
+}

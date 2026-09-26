@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "purpose": "Engineering regression, not a fresh generalization claim; all five collections previously inspected.",
+  "reference": "controller-v2 candidates, teacher revision, 512-token pair truncation, full fusion and scope decisions remain fixed",
+  "execution": "Original FP32 weights with BF16 autocast; BERT pair-token cache; stable length bucketing; batch64; pad multiple8",
+  "development_pilot": "Seven FiQA development queries compared autocast BF16, full FP16 and full BF16. Only autocast BF16 retained exact scores; other precisions not promoted.",
+  "regression_gate": "Require identical full top10 IDs and nDCG for every test query before approving accelerated fusion for a scope; otherwise retain reference. No retuning on failures.",
+  "router": "Ridge coefficient10, equal-domain weights, train3134, tune290. Select threshold from [0,.01,.02,.04,.08,.16,2] maximizing cheap queries with nonnegative mean gain per tuning domain. Calibration needs30 cheap exits, mean delta>=0, corrected lower bound>=-.001 versus existing fusion. Unapproved scopes keep existing decisions.",
+  "latency": "20 evenly spaced queries per dataset; one warmup and three measured repeats; rotate method order; synchronized GPU. Reference, cold-token-cache and warm-token-cache include full retrieval and pair preparation. Cached query embedding; excludes initial index/model builds, reader and network.",
+  "safety": "No candidate pruning, token-limit reduction, approximate cache hits, raw-text publication or external model calls. Quantized router coefficients use an input-dependent error bound and FP64 boundary decisions.",
+  "seed": 20260926
+}

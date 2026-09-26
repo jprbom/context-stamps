@@ -30,6 +30,8 @@ The follow-up controller-v2 adds FiQA calibration/evaluation and a separately ob
 
 ## Multimodal evaluation models
 
+The runtime follow-up retains public-dataset-derived router parameters, rankings and timing evidence under the [runtime artifact attribution](../evidence/runtime-v1/ATTRIBUTION.md). Its fictional reader/metadata fixtures and original code remain MIT. The existing local Cortex 1.7B model is used only for inference on those fictional inputs; its weights, private training corpus, prompt template and filesystem paths are not published. Reader observations retain expected/parsed integer outputs and hashes rather than unconstrained text.
+
 The multimodal pilot uses pinned external model revisions for inference only. SD-Turbo retains its model-specific Stability AI license; MMS English TTS uses CC-BY-NC-4.0. The ModelScope video card contains inconsistent NC and NC-ND labels; treat redistribution and commercial use as unresolved until its terms are clarified. No weights or generated media from these models are included in this repository. Their use in a local research test does not make them part of the MIT-licensed core.
 
 Model cards: [SD-Turbo](https://huggingface.co/stabilityai/sd-turbo), [MMS English](https://huggingface.co/facebook/mms-tts-eng), [ModelScope video](https://huggingface.co/ali-vilab/text-to-video-ms-1.7b). The model metadata in spherical manifests has its generated Modelfile removed to avoid publishing a local cache path; the redaction is recorded.

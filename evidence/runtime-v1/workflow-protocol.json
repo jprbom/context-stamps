@@ -1,0 +1,28 @@
+{
+  "events": [
+    "initial",
+    "repeat",
+    "source_edit",
+    "repeat"
+  ],
+  "limits": "Fictional narrow scalar/arithmetic tasks; 50% repeated requests by design; one timing run; not open-ended coding, agent planning or production throughput.",
+  "models": {
+    "cortex-harness:1.7b-v11": "f9489974d20ea63778fb39591547611ce614e7456c18167f59ad4383351946c6",
+    "qwen2.5:1.5b": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b"
+  },
+  "modes": [
+    "full_scope",
+    "prepared_context",
+    "verified_reuse"
+  ],
+  "options": {
+    "num_ctx": 4096,
+    "num_predict": 80,
+    "seed": 20260926,
+    "temperature": 0
+  },
+  "quality": "Host exact JSON verification of three integers including multiplication; every failure and model call retained. Source edits rebind dependencies before reuse.",
+  "rounds": 1,
+  "tasks": 12,
+  "timing": "Whole request including packet preparation, model HTTP or verified cache lookup. Serialized warm local models, randomized mode order. Server prefix-cache remains enabled. No hard callback cancellation."
+}
