@@ -15,3 +15,5 @@ include evidence/controller-v1/*.json.gz
 include evidence/controller-v1/checkpoints/selected-fp32.safetensors
 include evidence/controller-v1/checkpoints/selected-int8.safetensors
 include evidence/controller-v1/checkpoints/recurrent-29.safetensors
+include evidence/controller-v2/*.json.gz
+include evidence/controller-v2/models/*.safetensors

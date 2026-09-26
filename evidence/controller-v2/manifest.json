@@ -1,0 +1,39 @@
+{
+  "methods": [
+    "balanced_ndcg-17",
+    "balanced_ndcg-29",
+    "balanced_ndcg-7",
+    "bm25",
+    "contractive-17",
+    "contractive-29",
+    "contractive-7",
+    "dense",
+    "depth-2",
+    "depth-32",
+    "depth-8",
+    "distilled-17",
+    "distilled-29",
+    "distilled-7",
+    "fusion",
+    "gated",
+    "hybrid",
+    "student",
+    "teacher"
+  ],
+  "query_counts": {
+    "arguana": 1406,
+    "fiqa": 648,
+    "nfcorpus": 323,
+    "scidocs": 1000,
+    "scifact": 300
+  },
+  "run_config_sha256": "82664b77ea348dca7d619426ab00fd7ae37bfa3d060fc3df0c027c7685d07622",
+  "selected_student": "balanced_ndcg-17",
+  "selection_sha256": "419232a9395648b350072c4049705c11e46f31711e546f5ee4f4225a98d13bd0",
+  "source_sha256": {
+    "context_stamps/contractive_controller.py": "f09eae0bc32b02eca61c798aa65cce77738b045143375e03a8fdc32a73b7f7df",
+    "experiments/run_hybrid_retrieval.py": "a81b6fa01d64ea104a741bb28c1317929105b140377ade8b27f47c599d694352",
+    "experiments/train_controller.py": "773509dbdcd0fc36b2386e2fa0029e7354cbf574a784443a862ab042aa3f6c92",
+    "experiments/train_controller_v2.py": "1db974e11108db2a4220c9d4ced8011ba89cbb33310227c41800f263b663d7c6"
+  }
+}

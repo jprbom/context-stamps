@@ -2,6 +2,8 @@
 
 By Prashant Jagtap. Recorded experiment: 26 September 2026.
 
+This page preserves **controller-v1** and its original results. For the subsequent nine-run study, fresh FiQA evaluation and contractive implementation, see [controller-v2 results](controller-v2-results.md) and the [updated RTX methodology](controller-methodology-v2.md).
+
 This update implements and trains a small residual evidence ranker, tests recurrent attention, and adds exact computation reuse. It is an optional component around a retriever and a frozen reader. It does not fine-tune a foundation model, alter a frontier model's internal attention, or encode an entire context in 32 bytes.
 
 The result matters: **the trained controller did not qualify for deployment over the existing retrieval baselines.** A simpler ranker won tuning. Independent calibration selected hybrid retrieval for SciFact and dense retrieval for NFCorpus; uncalibrated domains use dense. The code and failed experiments remain available so this decision can be reproduced.

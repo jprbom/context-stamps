@@ -2,6 +2,8 @@
 
 By Prashant Jagtap · 26 September 2026
 
+Historical controller-v1 article. The [revised follow-up article](research-update-controller-v2.md) covers the subsequent nine-run study, fresh FiQA evaluation, runtime trade-offs and unified-runtime milestones.
+
 In a research or coding workflow, finding a relevant document is only part of the context problem. A result may depend on a particular dataset revision, evaluation script, model checkpoint and policy. When one changes, the system needs to know which conclusions can still be reused.
 
 I am building Context Stamps around that problem. Its Spherical Context QR is a 256-bit reference across several context facets. The document and relationship map remain outside those 32 bytes. The reference helps route a request; exact checks determine what evidence or previous computation is still valid.

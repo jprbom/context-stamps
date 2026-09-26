@@ -2,7 +2,9 @@
 
 ## Latest measured comparisons
 
-The 26 September local training study adds a no-attention MLP and a recurrent attention ranker, each trained with three seeds. They are compared with pinned MiniLM dense retrieval, BM25 and the existing hybrid on four historically inspected datasets. The selected learned model did not qualify against the baselines on independent calibration. Exact computation reuse shows a separate benefit on a repetitive local Qwen workload; no head-to-head comparison with a full commercial agent platform was performed. [Measured outcomes and RTX reproduction](local-rtx-controller.md).
+The latest 26 September follow-up trains nine small controllers and compares them with dense, BM25, hybrid, a frozen cross-encoder and fixed score fusion over five datasets. FiQA is a fresh local transfer test: fusion reaches 0.4125 nDCG@10 versus 0.3687 dense and 0.3888 hybrid. The selected student remains below hybrid on four of five datasets. Fusion also regresses on SciDocs; the frozen gate uses dense there. [All results and confidence intervals](controller-v2-results.md) · [methodology and RTX reproduction](controller-methodology-v2.md). These are lightweight reference models, not the newest frontier retrieval leaderboard. No whole-platform or industry-wide superiority is claimed.
+
+The earlier [six-run controller study](local-rtx-controller.md) and exact computation-reuse pilot retain their original outcomes. Computation reuse shows a separate benefit on a repetitive local Qwen workload; no head-to-head comparison with a full commercial agent platform was performed.
 
 The public v0.5.0 research release uses a relation-aware 256-bit product-sphere capsule with exact-first routing and precise fallback. Compact-only three-seed ITQ means remain below dense retrieval. A separate precise MiniLM/BM25 blend improves nDCG@10 on SciFact, NFCorpus and ArguAna, then regresses on the prospective SciDocs check. The implementation now requires a positive scope certificate or uses dense retrieval. Faiss remains the stronger measured in-memory latency baseline for conventional vector indexing.
 
@@ -38,6 +40,6 @@ The [frozen follow-up](replication.md) adds all NFCorpus and ArguAna test querie
 
 The [local SLM comparison](local-tasks.md) uses current full context as a strong correctness baseline and an intentionally stale cache as a failure control. It found fewer prompt tokens with selected context, equivalent correctness on the narrow fixtures, and mixed latency. It does not compare whole third-party products. A [developer study kit](usability-study.md) is available; ease of adoption has not yet been independently measured.
 
-## Private spherical candidate
+## Earlier spherical experiments
 
 The new representation exposes multiple angular views per context item and query-driven activation. An optional graph handles explicit dependencies. This differs in representation from [Graphiti](https://github.com/getzep/graphiti), whose primary abstraction is a temporal knowledge graph. It is not a measured performance advantage over Graphiti. [Charikar’s random-hyperplane similarity method](https://courses.compute.dtu.dk/02289/2022/approxds/charikar.pdf) underlies the angular fingerprints; no invention of angular hashing is claimed. Our supplied-field experiments include an exact-field graph control, which matches the guarded method. See [spherical results](spherical-results.md).

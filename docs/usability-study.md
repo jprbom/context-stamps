@@ -55,7 +55,7 @@ Ask for explicit permission before publishing a quote or individual response. Th
 
 Prioritize fixes that unblock task completion. Repeat affected tasks with new participants after changes. Do not claim “easy to use” from the maintainer's own installation test alone.
 
-## Private spherical-candidate extension
+## Spherical workflow extension
 
 Use a clean environment and an authorized checkout. Do not invite or contact anyone automatically; the owner will invite developers.
 

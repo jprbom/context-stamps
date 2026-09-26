@@ -28,3 +28,4 @@ evidence/controller-v1/results.json
 !evidence/controller-v1/checkpoints/selected-fp32.safetensors
 !evidence/controller-v1/checkpoints/selected-int8.safetensors
 !evidence/controller-v1/checkpoints/recurrent-29.safetensors
+!evidence/controller-v2/models/*.safetensors

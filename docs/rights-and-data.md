@@ -26,6 +26,8 @@ The follow-up NFCorpus/ArguAna benchmark has [separate attribution and CC-BY-SA-
 
 The 26 September controller update adds locally trained public-data checkpoints and retrieval evidence under separate [CC BY-SA 4.0 attribution](../evidence/controller-v1/ATTRIBUTION.md). They are optional research artifacts, not part of the dependency-free MIT core or bundled Python wheel. The authored computation-cache fixtures and local Qwen pilot records remain MIT; Qwen weights are separately installed and not redistributed. The controller never trained on private Cortex records or model-generated image/audio/video media.
 
+The follow-up controller-v2 adds FiQA calibration/evaluation and a separately obtained frozen cross-encoder teacher. Its [artifact attribution](../evidence/controller-v2/ATTRIBUTION.md) distinguishes source code, derived controller weights and third-party model/data terms. FiQA training data is unused. External teacher weights and raw public text remain outside Git. Dynamic-int8 execution is constructed locally from the experimental student; no pickle checkpoint is distributed.
+
 ## Multimodal evaluation models
 
 The multimodal pilot uses pinned external model revisions for inference only. SD-Turbo retains its model-specific Stability AI license; MMS English TTS uses CC-BY-NC-4.0. The ModelScope video card contains inconsistent NC and NC-ND labels; treat redistribution and commercial use as unresolved until its terms are clarified. No weights or generated media from these models are included in this repository. Their use in a local research test does not make them part of the MIT-licensed core.

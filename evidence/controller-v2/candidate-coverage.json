@@ -1,0 +1,52 @@
+{
+  "arguana": {
+    "new_candidates": {
+      "oracle_ndcg10": 0.9850640113798008,
+      "recall": 0.9850640113798008
+    },
+    "old_candidates": {
+      "oracle_ndcg10": 0.9786628733997155,
+      "recall": 0.9786628733997155
+    }
+  },
+  "fiqa": {
+    "new_candidates": {
+      "oracle_ndcg10": 0.7969054373293035,
+      "recall": 0.7607888553490405
+    },
+    "old_candidates": {
+      "oracle_ndcg10": 0.7339130978155112,
+      "recall": 0.6911754868930795
+    }
+  },
+  "nfcorpus": {
+    "new_candidates": {
+      "oracle_ndcg10": 0.6732364487506962,
+      "recall": 0.3507019624896644
+    },
+    "old_candidates": {
+      "oracle_ndcg10": 0.6176927131065418,
+      "recall": 0.2961854675669955
+    }
+  },
+  "scidocs": {
+    "new_candidates": {
+      "oracle_ndcg10": 0.6336141664372852,
+      "recall": 0.5405333333333333
+    },
+    "old_candidates": {
+      "oracle_ndcg10": 0.5547840541296668,
+      "recall": 0.4555333333333333
+    }
+  },
+  "scifact": {
+    "new_candidates": {
+      "oracle_ndcg10": 0.9787104906425517,
+      "recall": 0.9783333333333334
+    },
+    "old_candidates": {
+      "oracle_ndcg10": 0.958273140384177,
+      "recall": 0.9576666666666667
+    }
+  }
+}

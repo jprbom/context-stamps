@@ -4,6 +4,10 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 26 September 2026
 
+- Added controller-v2: balanced domain sampling, metric-aware pair loss, query/document role features, pinned cross-encoder distillation and a mathematically contractive attention recurrence. Trained and retained all nine seed/recipe runs.
+- Expanded candidate unions and measured both recall and oracle top-10 ceilings. Added fresh local FiQA calibration/test partitions without using FiQA training data. Frozen fusion improves FiQA retrieval over dense and hybrid; the learned student remains experimental and is not a universal improvement.
+- Added real dynamic-int8 CPU execution, online retrieval/reranking timings, batch-shape ranking checks, new regression tests, source/artifact fingerprints, updated research figures and local training instructions. Public source and derived artifacts retain separate attribution.
+
 - Implemented an optional residual ranker with shared recurrent attention, a no-attention baseline, listwise training, hybrid-distribution regularization and bounded score corrections. Trained six local RTX runs on public training splits; preserved all outcomes and independent calibration decisions.
 - Added experimental FP32/int8-storage safetensors checkpoints, per-query evidence, CPU/CUDA/precision measurements and a reproducible local runbook. The learned model did not qualify for promotion; no default retrieval replacement or base-model fine-tuning is claimed.
 - Locked serving to checkpoint training depth after four-step inference caused severe transfer regressions. Direct forward overrides remain an explicit research ablation interface.

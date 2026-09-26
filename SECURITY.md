@@ -46,6 +46,8 @@ Filter unauthorized and stale evidence before building neural tensors; a score o
 
 The experimental neural checkpoints are not enabled by default. The 32-byte similarity stamp is never used as an exact computation-cache key. `exact_decimal` performs only allowlisted arithmetic on bounded decimal strings and rejects operations requiring rounding; it never evaluates source code.
 
+The v2 contractive controller supports trained serving depths 2/4/8 and bounds its score correction to ±1. Its mathematical convergence bound is not an authorization or adversarial-robustness guarantee. Query/document features must be built from the host's already authorized evidence pool. Optional dynamic-int8 evaluation uses local CPU operators and does not publish executable/pickle model files. Public-data preparation uses revision-pinned local model loading and whitelisted archive destinations; cached arrays disable pickle. Run these research scripts with ordinary user privileges and reviewed data/model sources.
+
 ## Reporting
 
 Report vulnerabilities privately to the repository owner, Prashant Jagtap, through an existing private contact channel or GitHub private vulnerability reporting when available. Do not post credentials, private text or working exploit details in a public issue. Include the affected commit, minimal reproduction, impact and environment. No response-time guarantee is currently offered.

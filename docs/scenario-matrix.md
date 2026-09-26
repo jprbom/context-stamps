@@ -1,9 +1,13 @@
 # Scenario and evidence matrix
 
-Current candidate: v0.4.0. [Adaptive capsule interfaces](adaptive-capsules.md), [earlier measured results](selective-context.md); earlier evidence remains historical.
+Public source release: v0.5.0, with subsequent controller research updates. [Controller methodology](controller-methodology-v2.md), [adaptive capsule interfaces](adaptive-capsules.md), [context reuse results](selective-context.md). Version-specific results below retain their original scope.
 
 | Added scenario | Evidence | Result |
 |---|---|---|
+| Extra recurrent depth, padding, permutation and corrupted checkpoints | `test_contractive_controller.py`, `controller-v2/recurrence.json` | Contractive state update; bounded serving depths; convergence does not prove accuracy |
+| Quantized CPU inference with masked extreme values | `test_contractive_controller.py`, `controller-v2/online-runtime.json` | Masked inputs cleared before projection; real dynamic-int8 operators measured separately |
+| New-domain transfer with stronger ranking controls | `controller-v2`, FiQA plus four regression collections | Nine trained runs; frozen selection; dense/hybrid/cross-encoder/fusion controls |
+| Online versus cached scoring | `controller-v2/online-runtime.json` | Includes retrieval and reranker preparation; batch-shape ranking differences recorded |
 | Partial query, missing candidate view, schema/weight/domain changes | `test_partial_and_mutation.py` | Explicit observed facets; incompatible input rejected; distinct policy scopes |
 | Unrelated mutation, new dependency/conflict, same-version change, revocation | `test_partial_and_mutation.py` | Affected receipts invalidated; unrelated receipts retained |
 | Random mutations against uncached oracle | 500 mutation steps / 4,000 packet comparisons | Identical packet behavior |

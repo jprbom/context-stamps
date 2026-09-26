@@ -1,5 +1,11 @@
 # Validation record
 
+## Controller-v2 follow-up — 26 September 2026
+
+Nine local RTX training runs, all selected checkpoints and five-dataset results are retained. `verify_controller_v2.py` checks artifact/source hashes, replays **91,039** recorded ranking rows, verifies frozen selection/gates, and checks candidate-ceiling monotonicity. The split-precision numerical audit is labeled as a post-evaluation regression, not a new independent holdout. [Results](controller-v2-results.md) · [methodology](controller-methodology-v2.md).
+
+The local suite has **133 tests**, including eight new numerical/masking/serialization/quantization checks. Core Bandit, Ruff and the secret scanner are part of release validation. The historical entries below describe earlier versions, including periods before the owner authorized public release.
+
 ## Private v0.4.0 follow-up
 
 108 local unit tests pass. The new control record contains eight authored facet cases, 100 exact structured-profile round trips and five router paths. A compact policy whose certified upper error bound exceeds the caller's budget falls back to precise retrieval. These tests validate interface behavior and fail-closed routing; they do not demonstrate facet accuracy, retrieval improvement or a qualified compact exit on public data. [Design and limits](adaptive-capsules.md).

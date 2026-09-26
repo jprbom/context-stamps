@@ -1,0 +1,201 @@
+{
+  "cpu_threads": 4,
+  "engine": "onednn",
+  "fidelity": {
+    "arguana": {
+      "cpu-fp32": {
+        "exact_top10_order_fraction": 1.0,
+        "max_abs_logit_error": 0.0,
+        "mean_abs_logit_error": 0.0,
+        "ndcg10": 0.517090468475354
+      },
+      "split-int8": {
+        "exact_top10_order_fraction": 0.7859174964438123,
+        "max_abs_logit_error": 0.081573486328125,
+        "mean_abs_logit_error": 0.009413114748895168,
+        "ndcg10": 0.5173909597808911
+      },
+      "whole-int8": {
+        "exact_top10_order_fraction": 0.3869132290184922,
+        "max_abs_logit_error": 1.8250881433486938,
+        "mean_abs_logit_error": 0.4213216006755829,
+        "ndcg10": 0.5288819613446551
+      }
+    },
+    "fiqa": {
+      "cpu-fp32": {
+        "exact_top10_order_fraction": 1.0,
+        "max_abs_logit_error": 0.0,
+        "mean_abs_logit_error": 0.0,
+        "ndcg10": 0.3852882606126828
+      },
+      "split-int8": {
+        "exact_top10_order_fraction": 0.7932098765432098,
+        "max_abs_logit_error": 0.07581114768981934,
+        "mean_abs_logit_error": 0.005195260513573885,
+        "ndcg10": 0.38531516053150466
+      },
+      "whole-int8": {
+        "exact_top10_order_fraction": 0.4058641975308642,
+        "max_abs_logit_error": 1.693222165107727,
+        "mean_abs_logit_error": 0.14731287956237793,
+        "ndcg10": 0.38627920973540086
+      }
+    },
+    "nfcorpus": {
+      "cpu-fp32": {
+        "exact_top10_order_fraction": 1.0,
+        "max_abs_logit_error": 0.0,
+        "mean_abs_logit_error": 0.0,
+        "ndcg10": 0.34410048359226514
+      },
+      "split-int8": {
+        "exact_top10_order_fraction": 0.5727554179566563,
+        "max_abs_logit_error": 0.08484482765197754,
+        "mean_abs_logit_error": 0.007168949116021395,
+        "ndcg10": 0.3446908046955664
+      },
+      "whole-int8": {
+        "exact_top10_order_fraction": 0.06811145510835913,
+        "max_abs_logit_error": 1.9198248386383057,
+        "mean_abs_logit_error": 0.8732319474220276,
+        "ndcg10": 0.3513685604989898
+      }
+    },
+    "scidocs": {
+      "cpu-fp32": {
+        "exact_top10_order_fraction": 1.0,
+        "max_abs_logit_error": 0.0,
+        "mean_abs_logit_error": 0.0,
+        "ndcg10": 0.2003128749281168
+      },
+      "split-int8": {
+        "exact_top10_order_fraction": 0.795,
+        "max_abs_logit_error": 0.07675600051879883,
+        "mean_abs_logit_error": 0.007448324002325535,
+        "ndcg10": 0.2006572968736291
+      },
+      "whole-int8": {
+        "exact_top10_order_fraction": 0.432,
+        "max_abs_logit_error": 1.84116530418396,
+        "mean_abs_logit_error": 0.29827871918678284,
+        "ndcg10": 0.20344178409129382
+      }
+    },
+    "scifact": {
+      "cpu-fp32": {
+        "exact_top10_order_fraction": 1.0,
+        "max_abs_logit_error": 0.0,
+        "mean_abs_logit_error": 0.0,
+        "ndcg10": 0.731597681393226
+      },
+      "split-int8": {
+        "exact_top10_order_fraction": 0.7,
+        "max_abs_logit_error": 0.07102346420288086,
+        "mean_abs_logit_error": 0.008565496653318405,
+        "ndcg10": 0.7320482657849788
+      },
+      "whole-int8": {
+        "exact_top10_order_fraction": 0.21333333333333335,
+        "max_abs_logit_error": 1.7888833284378052,
+        "mean_abs_logit_error": 0.3099903166294098,
+        "ndcg10": 0.7257960094511509
+      }
+    }
+  },
+  "forward_timing": {
+    "arguana": {
+      "cpu-fp32": {
+        "exact_batch1_vs_batch32_fraction": 1.0,
+        "p50_ms": 0.5333999870344996,
+        "p95_ms": 1.457114977529272
+      },
+      "split-int8": {
+        "exact_batch1_vs_batch32_fraction": 0.8,
+        "p50_ms": 0.6162500358186662,
+        "p95_ms": 1.306034921435639
+      },
+      "whole-int8": {
+        "exact_batch1_vs_batch32_fraction": 0.4,
+        "p50_ms": 0.622499966993928,
+        "p95_ms": 1.4312850777059785
+      }
+    },
+    "fiqa": {
+      "cpu-fp32": {
+        "exact_batch1_vs_batch32_fraction": 1.0,
+        "p50_ms": 0.5219499580562115,
+        "p95_ms": 0.955469970358535
+      },
+      "split-int8": {
+        "exact_batch1_vs_batch32_fraction": 0.75,
+        "p50_ms": 0.6160999764688313,
+        "p95_ms": 1.1808099574409419
+      },
+      "whole-int8": {
+        "exact_batch1_vs_batch32_fraction": 0.35,
+        "p50_ms": 0.6180000491440296,
+        "p95_ms": 1.3523950474336734
+      }
+    },
+    "nfcorpus": {
+      "cpu-fp32": {
+        "exact_batch1_vs_batch32_fraction": 1.0,
+        "p50_ms": 0.5313000292517245,
+        "p95_ms": 1.6065399860963223
+      },
+      "split-int8": {
+        "exact_batch1_vs_batch32_fraction": 0.6,
+        "p50_ms": 0.6223999662324786,
+        "p95_ms": 1.6093599959276614
+      },
+      "whole-int8": {
+        "exact_batch1_vs_batch32_fraction": 0.1,
+        "p50_ms": 0.6338500534184277,
+        "p95_ms": 1.3095549365971235
+      }
+    },
+    "scidocs": {
+      "cpu-fp32": {
+        "exact_batch1_vs_batch32_fraction": 1.0,
+        "p50_ms": 0.521550013218075,
+        "p95_ms": 1.2008050165604796
+      },
+      "split-int8": {
+        "exact_batch1_vs_batch32_fraction": 0.75,
+        "p50_ms": 0.6199000054039061,
+        "p95_ms": 1.327704981667921
+      },
+      "whole-int8": {
+        "exact_batch1_vs_batch32_fraction": 0.35,
+        "p50_ms": 0.6386000313796103,
+        "p95_ms": 1.561365078669041
+      }
+    },
+    "scifact": {
+      "cpu-fp32": {
+        "exact_batch1_vs_batch32_fraction": 1.0,
+        "p50_ms": 0.5179499858058989,
+        "p95_ms": 1.654025010066107
+      },
+      "split-int8": {
+        "exact_batch1_vs_batch32_fraction": 0.55,
+        "p50_ms": 0.6024999893270433,
+        "p95_ms": 1.4325449883472168
+      },
+      "whole-int8": {
+        "exact_batch1_vs_batch32_fraction": 0.25,
+        "p50_ms": 0.6094499840401113,
+        "p95_ms": 2.020555012859404
+      }
+    }
+  },
+  "limits": "Post-evaluation numerical engineering regression, not a fresh accuracy confirmation. Batch32 quality and batch1 timing/parity; dynamic activation quantization remains batch-dependent. Forward-only timing includes input validation but excludes retrieval, encoding, reader and transfer preparation. No serving gate changes.",
+  "method": "Split original input matrix into embedding projection and six-feature FP32 projection; quantize only embedding projection; keep output/attention FP32. No fitting or threshold tuning.",
+  "selected_student": "balanced_ndcg-17",
+  "source_sha256": {
+    "context_stamps/controller_quantization.py": "81e9ba7b5c6f9bc9180b9e3053a7817d17d20a82e5d6ade5882ff16b17d47924",
+    "experiments/audit_split_quantization.py": "ec4abc309e1068683fd8a4d377ce5de4a51963624d60d15b7c889498728ab48c"
+  },
+  "torch": "2.11.0+cu128"
+}

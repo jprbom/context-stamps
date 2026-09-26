@@ -1,0 +1,96 @@
+{
+  "limits": "First32 queries per collection; fixed point proximity does not establish relevance, factuality or safety.",
+  "stresses": [
+    {
+      "dataset": "scifact",
+      "depth": 2,
+      "max_row_l2_error_to_32": 0.05854193866252899,
+      "queries": 32
+    },
+    {
+      "dataset": "scifact",
+      "depth": 4,
+      "max_row_l2_error_to_32": 0.0010187847074121237,
+      "queries": 32
+    },
+    {
+      "dataset": "scifact",
+      "depth": 8,
+      "max_row_l2_error_to_32": 3.475518042250769e-07,
+      "queries": 32
+    },
+    {
+      "dataset": "nfcorpus",
+      "depth": 2,
+      "max_row_l2_error_to_32": 0.0608329102396965,
+      "queries": 32
+    },
+    {
+      "dataset": "nfcorpus",
+      "depth": 4,
+      "max_row_l2_error_to_32": 0.0010504499077796936,
+      "queries": 32
+    },
+    {
+      "dataset": "nfcorpus",
+      "depth": 8,
+      "max_row_l2_error_to_32": 3.953724956318183e-07,
+      "queries": 32
+    },
+    {
+      "dataset": "arguana",
+      "depth": 2,
+      "max_row_l2_error_to_32": 0.062325216829776764,
+      "queries": 32
+    },
+    {
+      "dataset": "arguana",
+      "depth": 4,
+      "max_row_l2_error_to_32": 0.0010854809079319239,
+      "queries": 32
+    },
+    {
+      "dataset": "arguana",
+      "depth": 8,
+      "max_row_l2_error_to_32": 3.8857473327880143e-07,
+      "queries": 32
+    },
+    {
+      "dataset": "scidocs",
+      "depth": 2,
+      "max_row_l2_error_to_32": 0.048319678753614426,
+      "queries": 32
+    },
+    {
+      "dataset": "scidocs",
+      "depth": 4,
+      "max_row_l2_error_to_32": 0.0008349380805157125,
+      "queries": 32
+    },
+    {
+      "dataset": "scidocs",
+      "depth": 8,
+      "max_row_l2_error_to_32": 2.920019426255749e-07,
+      "queries": 32
+    },
+    {
+      "dataset": "fiqa",
+      "depth": 2,
+      "max_row_l2_error_to_32": 0.04104255139827728,
+      "queries": 32
+    },
+    {
+      "dataset": "fiqa",
+      "depth": 4,
+      "max_row_l2_error_to_32": 0.0007151392637751997,
+      "queries": 32
+    },
+    {
+      "dataset": "fiqa",
+      "depth": 8,
+      "max_row_l2_error_to_32": 2.365486011512985e-07,
+      "queries": 32
+    }
+  ],
+  "trial": "contractive-17"
+}

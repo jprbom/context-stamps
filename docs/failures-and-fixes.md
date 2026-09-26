@@ -1,5 +1,15 @@
 # Failure ledger and release gates
 
+## 26 September follow-up: candidate coverage and stable recurrence
+
+Controller-v2 adds domain-balanced training, a top-10 ranking loss, query/document role features, a real cross-encoder teacher and a contractive recurrence. Nine models trained with separate tuning and calibration. The expanded candidate union raises the oracle top-10 ceiling on all five collections. Eight new controller tests cover numerical contraction, padding, permutation, invalid inputs, checkpoint corruption, quantized masked outliers and split-projection equivalence.
+
+The recurrent extra-depth collapse is addressed for the tested model: four/eight/32-pass mean nDCG is effectively unchanged, and eight-pass states are within 4e-7 of the 32-pass reference on 160 stress queries. The simpler no-attention student still wins neural tuning and trails hybrid on four test collections. Distillation does not establish a neural generalization improvement. These failures remain in the evidence.
+
+The fixed hybrid/teacher blend passes the frozen calibration gate for SciFact and fresh FiQA. FiQA test improves from 0.3687 dense / 0.3888 hybrid to 0.4125. SciFact's small fusion advantage over hybrid is inconclusive on test despite its calibration gate passing. NFCorpus test gains do not override its earlier inconclusive gate. SciDocs fusion regresses; uncalibrated scopes use dense. [Full measurements and remaining gaps](controller-v2-results.md).
+
+Whole-layer dynamic int8 distorted mixed embedding/retrieval inputs. A split-precision projection reduces mean logit error 28.4–121.8× without fitting new weights. Rankings are still approximate and forward latency does not beat FP32. Fusion itself is much slower than dense in the stage benchmark. Neither quantization nor the fusion quality gain is reported as a token/latency improvement.
+
 ## 26 September: trained controller, independent rejection and recurrence failure
 
 Six RTX training runs reused public SciFact/NFCorpus labels with distinct tuning/calibration partitions. The MLP beat recurrent attention on tuning; neither learned architecture qualified for deployment against the strong existing baselines. The selected model regressed on SciDocs (0.1934 versus 0.2164 dense nDCG@10). Independent gating selects hybrid only for SciFact, otherwise dense in this study. This conservatism also forgoes potential gains where evidence is inconclusive.
@@ -74,7 +84,7 @@ Research release. Passing a controlled fixture is not proof of general robustnes
 3. Review data/model licenses and exclude private corpora, raw weights and secrets.
 4. Complete independent workflow studies; benchmark supplied facets against exact-field and vector baselines.
 5. Evaluate automatic facet extraction and missing/wrong relationships separately.
-6. Confirm release scope and repository visibility with the owner. This candidate stays private.
+6. Preserve the owner's release scope. The source repository is public; experimental checkpoints, failed evaluations and unresolved limitations must remain clearly labeled. New public claims require corresponding evidence.
 
 No finite test suite can cover all adversarial inputs or every agent workflow. Each
 new issue should receive a fixture, a named failure category, a fix where feasible,

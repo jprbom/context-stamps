@@ -1,0 +1,16 @@
+{
+  "batches_per_epoch": 196,
+  "data_manifest_sha256": "c2563d95534a1467a4d02d23921f6f051d8cbe571f9430b23bb63bfa7b734a39",
+  "gate": "One-sided Bonferroni alpha0.05/3 for each of dense/hybrid/teacher; identical method is exact equality and exempt. At least50 calibration queries. Other failed comparisons fall back to dense.",
+  "optimizer": "AdamW, lr0.0003, weight_decay0.01, gradient norm clip1.0, BF16 forward/FP32 loss",
+  "protocol_sha256": "9e896611d9307a4aca270540aeb06480fd15443b665f1dc0e9895384e4238654",
+  "recurrence": "Uniformly sample depth2/4/8 once per optimizer step; inference4; research stress32",
+  "sampling": "8 queries per domain with replacement per batch; all lists eligible; equal-domain loss mean",
+  "source_sha256": {
+    "context_stamps/contractive_controller.py": "f09eae0bc32b02eca61c798aa65cce77738b045143375e03a8fdc32a73b7f7df",
+    "experiments/run_hybrid_retrieval.py": "a81b6fa01d64ea104a741bb28c1317929105b140377ade8b27f47c599d694352",
+    "experiments/train_controller.py": "773509dbdcd0fc36b2386e2fa0029e7354cbf574a784443a862ab042aa3f6c92",
+    "experiments/train_controller_v2.py": "1db974e11108db2a4220c9d4ced8011ba89cbb33310227c41800f263b663d7c6"
+  },
+  "timing": "Data preparation/teacher labeling recorded separately. Training clock includes tune checks and checkpoint I/O."
+}

@@ -1,0 +1,131 @@
+{
+  "decisions": {
+    "arguana": {
+      "candidate": "fusion",
+      "deployed": "dense",
+      "qualified": false,
+      "reason": "no scoped calibration"
+    },
+    "fiqa": {
+      "candidate": "fusion",
+      "comparisons": {
+        "dense": {
+          "lower": 0.002381436069588028,
+          "lower_95": 0.004448335192909564,
+          "mean": 0.025478781078232485,
+          "n": 500,
+          "upper": 0.04827311590559131,
+          "upper_95": 0.04661067340154673
+        },
+        "hybrid": {
+          "lower": 0.008432098596543924,
+          "lower_95": 0.00944094014780831,
+          "mean": 0.021852340305267903,
+          "n": 500,
+          "upper": 0.0361379319543,
+          "upper_95": 0.03460573993055166
+        },
+        "teacher": {
+          "lower": 0.028771757520735262,
+          "lower_95": 0.030051880826428533,
+          "mean": 0.043412854880094526,
+          "n": 500,
+          "upper": 0.057832975354790726,
+          "upper_95": 0.05661170454919338
+        }
+      },
+      "deployed": "fusion",
+      "qualified": true,
+      "queries": 500
+    },
+    "nfcorpus": {
+      "candidate": "fusion",
+      "comparisons": {
+        "dense": {
+          "lower": 0.013469298750862791,
+          "lower_95": 0.015169168866554042,
+          "mean": 0.03546577903299315,
+          "n": 167,
+          "upper": 0.05781075221101698,
+          "upper_95": 0.05579421551034895
+        },
+        "hybrid": {
+          "lower": 0.010086537481423024,
+          "lower_95": 0.011033904038942978,
+          "mean": 0.02234019601927569,
+          "n": 167,
+          "upper": 0.03516375416294327,
+          "upper_95": 0.03426303040945288
+        },
+        "teacher": {
+          "lower": -0.0032353552906009965,
+          "lower_95": -0.0021429982833831964,
+          "mean": 0.009712463902856062,
+          "n": 167,
+          "upper": 0.023242687719489293,
+          "upper_95": 0.022068740902635862
+        }
+      },
+      "deployed": "dense",
+      "qualified": false,
+      "queries": 167
+    },
+    "scidocs": {
+      "candidate": "fusion",
+      "deployed": "dense",
+      "qualified": false,
+      "reason": "no scoped calibration"
+    },
+    "scifact": {
+      "candidate": "fusion",
+      "comparisons": {
+        "dense": {
+          "lower": 0.07461501529025794,
+          "lower_95": 0.0791089477611223,
+          "mean": 0.12762900129382926,
+          "n": 121,
+          "upper": 0.18363207859915012,
+          "upper_95": 0.17784651130192966
+        },
+        "hybrid": {
+          "lower": 0.005893170770776722,
+          "lower_95": 0.007263535395725337,
+          "mean": 0.0310250691850975,
+          "n": 121,
+          "upper": 0.05983977063525547,
+          "upper_95": 0.05720989888384458
+        },
+        "teacher": {
+          "lower": 0.022226470191616658,
+          "lower_95": 0.02464694567332583,
+          "mean": 0.05159356500491623,
+          "n": 121,
+          "upper": 0.08371662775839658,
+          "upper_95": 0.08117467916824601
+        }
+      },
+      "deployed": "fusion",
+      "qualified": true,
+      "queries": 121
+    }
+  },
+  "global_tune_method": "fusion",
+  "limits": "Existing SciFact/NFCorpus calibration has been inspected in v1. FiQA calibration is fresh locally. Test data never selects a model, recipe, seed or gate.",
+  "selected_student": "balanced_ndcg-17",
+  "tune_scores": {
+    "nfcorpus": {
+      "dense": 0.27439092208742616,
+      "fusion": 0.3103588471093621,
+      "hybrid": 0.30170898348060643,
+      "student": 0.3026943386842807,
+      "teacher": 0.3040081264021305
+    },
+    "scifact": {
+      "dense": 0.6897884988545694,
+      "fusion": 0.7563759923648479,
+      "hybrid": 0.7394231008769089,
+      "student": 0.7541061064867831,
+      "teacher": 0.7416981516489342
+    }
+  }
+}
