@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "scope": "One local generic code-adaptation control; not Context Stamps treatment or automatic activation",
+  "files": {
+    "generations.jsonl.gz": "d00bbcbfd2087e27d6a0dcf34a27c850254d9fe5f10bd613e8e6dce11d0acabe",
+    "records.json.gz": "674ee33d2173532b02df9c72618f3705f7ac94a2549727c2986eb6c10edf35ff",
+    "summary.json": "c803a0bb33d309c164b126af4c53d3ebd759e8e561b07a1a05b5b3b29a6e185e"
+  },
+  "sources": {
+    "experiments/summarize_code_comparison.py": "46f5df92574f042aab786c48d8efe0796b92839d6fce8a75e26c72b13d11e753",
+    "experiments/export_code_comparison.py": "6048a950b6d75f067638a6ae2a8e2d08d175d4f2751ed352a4e473ffa4ba97b6",
+    "experiments/verify_full_code_eval.py": "9c1c7fc4602d31979ce79a9beba6e20bdb09dda9749060415df2f1954ba0c125",
+    "experiments/test_code_statistics.py": "bf0b4dd58010fffa91f350582e3b082b5fd3c8894a379780987f5e1da94db971"
+  },
+  "licenses": {
+    "benchmark_notices": "evidence/humaneval-grader-v1",
+    "training_attribution": "evidence/mbpp-training-v1",
+    "adapter_card": "evidence/mbpp-code-adapter-v1/MODEL_CARD.md"
+  },
+  "limitations": [
+    "One generic SFT control, one base model, one training seed and greedy decoding",
+    "No stamp-memory treatment, domain-retention result, production workload, frontier comparison or edge-device measurement",
+    "Benchmark task 32 has a retained reference/oracle numerical limitation; it remains in the denominator",
+    "Batch generation time is not per-request latency, time to first token or end-to-end workflow cost",
+    "No energy measurement; no automatic activation or domain-wide competence claim"
+  ]
+}

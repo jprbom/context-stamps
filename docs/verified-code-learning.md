@@ -68,6 +68,10 @@ the repository. A failed or partial run is retained; use a new directory for a
 new attempt. The Harbor environment is separate from the CUDA environment and
 needs Docker Desktop with Linux containers.
 
+In the commands below, replace `../qwen-base` with the location of your verified
+base download. For example, the earlier setup guide uses `.local/qwen-base`.
+Changing the path does not change the required base revision or file hashes.
+
 ```powershell
 # CPU environment: download the exact source; no code from the data runs here.
 python -c "import sys; from pathlib import Path; sys.path.insert(0,'experiments'); from mbpp_training_data import fetch; fetch(Path('../mbpp-source'))"
@@ -95,6 +99,11 @@ This is ordinary supervised adaptation used as a control. A future claim about
 Context Stamps must also compare the same model with and without its verified
 memory, context compiler and learning policy. A generic fine-tuning gain alone
 would not establish that contribution.
+
+The [full paired comparison](../evidence/mbpp-code-comparison-v1/README.md)
+reports all 164 HumanEval+ tasks, including output failures and regressions.
+It is separate from the immutable training record and does not activate the
+adapter. Replay it with `python experiments/verify_full_code_eval.py`.
 
 ## Evaluate separately
 

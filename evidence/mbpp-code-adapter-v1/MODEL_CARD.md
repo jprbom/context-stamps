@@ -54,6 +54,11 @@ and disabled. A generic SFT gain, if found, still needs a separate ablation of
 Context Stamps memory, context selection and learning policy. No universal
 superiority follows from this checkpoint.
 
+The separate [full HumanEval+ comparison](../mbpp-code-comparison-v1/README.md)
+retains all 164 paired task outcomes and resource measurements. The original
+`trained.json` remains a training-only record; its null benchmark field is not
+retroactively replaced. The candidate remains inactive.
+
 The adapter is distributed under Apache-2.0; retain `APACHE-2.0.txt` and
 attribution to Prashant Jagtap. The Qwen base retains its Apache-2.0 license and
 attribution. MBPP records retain CC BY 4.0 and attribution to Austin et al.

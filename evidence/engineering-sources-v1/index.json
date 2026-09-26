@@ -101,6 +101,10 @@
     {
       "file": "runtime-callbacks-initial.json.gz",
       "sha256": "df5b161e601af48b750aa237e6be7f89c825ac7352b8cf4e970f3064f4967022"
+    },
+    {
+      "file": "code-card-training-only.json.gz",
+      "sha256": "e8336a7dd39e3532eac064df119cee0ab0216df34679651c1e737a53ccc16508"
     }
   ]
 }

@@ -4,6 +4,8 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 27 September 2026
 
+- Completed all 164 paired HumanEval+ tasks: base 49/164, adapter 49/164, with 19 gains and 19 regressions. Output-format failures fall 20 to 5, but generated tokens increase 7.3% and summed generation batch time increases 36.0%. Retained all 328 outputs, native grading, paired statistics and a review of every regression. Adapter remains inactive; no useful code-adaptation or Context Stamps gain is established.
+
 - Moved external runtime callbacks outside the shared state lock and added context/receipt revalidation. Concurrent exact requests share a bounded pending computation; revocation wakes waiters and adapter exceptions release capacity. Eleven new concurrency tests pass, with 339 tests passing in the complete local environment. Historical source and benchmark evidence remain replayable. No production speedup or hard callback cancellation is claimed.
 - Clarified local adaptation at three levels: verified memory, CPU context policies and optional small weight updates on capable hardware. Every supported device should retain a local evaluation and rollback path; automatic weight improvement remains unqualified.
 - Completed the public-code training control: 368 independently checked MBPP examples, 184 optimizer steps, 65.42 seconds of local RTX training and a 4.17 MiB adapter. Retained all training-source and native HumanEval+ grader audits, including the reference numerical failure on task 32. Training completion does not activate the adapter.

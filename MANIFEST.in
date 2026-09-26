@@ -36,3 +36,4 @@ include evidence/mbpp-code-adapter-v1/adapter/*.safetensors
 recursive-include evidence/mbpp-training-v1 *.gz
 recursive-include evidence/humaneval-grader-v1 *.gz
 recursive-include evidence/mbpp-code-eval-v1 *.gz
+recursive-include evidence/mbpp-code-comparison-v1 *.gz

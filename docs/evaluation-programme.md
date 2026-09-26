@@ -8,12 +8,14 @@ The primary target is a locally improving small domain model under device constr
 
 **Status, 26 September 2026:** the independent [LongBench v2 reader pilot](longbench-local-pilot.md) completed 30 local calls on ten short-context tasks: full context 4/10, BM25 4/10, no context 3/10. The [Terminal-Bench 2.1 development pilot](terminal-local-pilot.md) adds a qualified isolated Harbor command boundary and native grader controls. Qwen2.5 1.5B passed 0/2 tasks after an interface correction; the failed initial attempt is also retained. The subsequent Qwen2.5-Coder 7B control passed 1/2 with both step budgets exhausted. Across the two models, all 30 calls are retained; no local weight updates occurred. These are baseline controls, not runtime benefits or frontier rankings. Sixteen terminal-boundary tests supplement the seventeen earlier provider/reader checks. The separate native Inspect ARC preparation remains blocked before generation by Windows Application Control on a pandas DLL. The 328-test local-learning revision passed all six GitHub CI jobs. Engineering checks and model accuracy remain separate evidence.
 
+**Update, 27 September 2026:** the [public-code adapter control](../evidence/mbpp-code-comparison-v1/README.md) completes 164 paired HumanEval+ tasks: base 49/164, adapter 49/164, 19 gains and 19 regressions. It lowers format failures but increases generated tokens and summed generation time. The trained adapter remains inactive. This is a separate generic SFT comparison, not a Context Stamps treatment. All outcomes, native logs and regression diagnoses are retained. The [runtime concurrency fix](../evidence/runtime-callbacks-v1/README.md) also passes 339 local tests and all six CI jobs; these are engineering checks, not model-quality evidence.
+
 ## Harness selection
 
 | Tool or collection | Intended role | Decision and limits |
 |---|---|---|
 | Inspect AI + Inspect Evals | Native task definitions, model adapters, scoring and per-sample logs | Selected for the first local model track. Installed versions are pinned; execution is not yet qualified on this host. |
-| Harbor | Isolated agent tasks, verifier execution and trajectories | Version 0.23.0 installed; CLI version/help and local Docker preflight pass. Adapter and sandbox qualification remain. |
+| Harbor | Isolated agent tasks, verifier execution and trajectories | Version 0.23.0; the local terminal and code pilots now retain bounded offline-container controls. Broader enterprise isolation and workload qualification remain. |
 | Cline Bench | Engineering tasks derived from coding sessions; Cline as a scaffold control | Harbor-compatible. Inspected revision has no root license file or declared repository license; task rights need resolution before inclusion. No tasks copied or executed. |
 | Terminal-Bench 2.1 | Broader terminal and coding-agent tasks | Two Apache-2.0 tasks now run in a modified local development protocol; 0/2 for Qwen2.5 1.5B. Native positive/negative grader controls pass. No full benchmark claim; keep 2.0 and 2.1 results separate. |
 | EleutherAI LM Evaluation Harness | Conventional language-model capability controls | Useful secondary cross-check when its task protocol fits. It does not by itself test persistent enterprise context. |
@@ -32,13 +34,14 @@ commands on the host. Keep identical model, tool, turn and time budgets for the
 baseline and runtime treatment. Harbor also supports installed agents, including
 the Cline CLI control. [Custom agent API](https://docs.harborframework.com/core-concepts/agents/custom-agents)
 
-Qualify the local Docker boundary before running coding tasks: pin images and
+The local pilots qualify a bounded Docker boundary for their coding tasks: pin images and
 dependencies, separate verifier inputs, use task-owned writable volumes, exclude
 host credentials, test resource limits and cancellation, and validate denied
 network access. Harbor distinguishes setup, agent and verifier phases; a policy
 applied only during the agent phase does not restrict setup. Docker network
-policies require its egress-control support. These checks are pending, not
-capabilities already proved by this repository.
+policies require its egress-control support. The tested pilot instead runs
+offline containers with the network disabled; it does not qualify arbitrary
+Harbor network policies or enterprise deployments.
 [Network policy semantics](https://docs.harborframework.com/core-concepts/tasks/network-policies)
 
 Set `$env:HARBOR_TELEMETRY='off'` before invoking Harbor for these local runs.
