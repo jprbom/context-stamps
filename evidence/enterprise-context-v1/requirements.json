@@ -165,10 +165,15 @@
       ],
       "current_sources": [
         "context_stamps/computation.py",
-        "context_stamps/session.py"
+        "context_stamps/session.py",
+        "context_stamps/incremental.py",
+        "tests/test_incremental.py",
+        "examples/incremental_metrics.py",
+        "evidence/enterprise-incremental-v1/local-cpu/manifest.json"
       ],
-      "status": "partial_existing",
-      "completion_proof": "Branched workflow only reruns affected work; changed model/tool/policy/input prevents inappropriate reuse."
+      "status": "partial_implemented",
+      "completion_proof": "Branched workflow only reruns affected work; changed model/tool/policy/input prevents inappropriate reuse.",
+      "implementation_note": "Bounded pure DAG, affected active descendants, version/model/prompt/tool/verifier/policy-bound receipts and current authorization implemented. 23 tests and 720 fictional workflow requests pass. Localized changes reduce callbacks; policy-wide changes force recomputation. Durable scheduling, real model/tool integration and production qualification remain."
     },
     {
       "id": "EC09",
@@ -437,5 +442,5 @@
     }
   ],
   "evidence_boundary": "Existing/draft sources do not prove the complete requirement. No 1.0 or universal capability claim.",
-  "latest_engineering_evidence": "evidence/enterprise-storage-v1/local-cpu/manifest.json"
+  "latest_engineering_evidence": "evidence/enterprise-incremental-v1/local-cpu/manifest.json"
 }
