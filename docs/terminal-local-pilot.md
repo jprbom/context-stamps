@@ -4,6 +4,8 @@ By Prashant Jagtap
 
 The current small-model baseline is not ready for the intended domain workflow. After a bounded interface correction, local Qwen2.5 1.5B Q4_K_M passed **0 of 2 selected Terminal-Bench 2.1 tasks**. Both reference solutions passed their native assertions, and empty submissions failed. This establishes an executable task baseline and identifies failures; it does not establish a Context Stamps improvement.
 
+A subsequent **Qwen2.5-Coder 7B Q4_K_M reference passed 1/2** under the same task and generation budgets. It produced a valid cancellation implementation, but its own checks failed and it continued making ineffective edits until the 12-step limit. For log aggregation, it wrote placeholder zero counts without reading the logs and exhausted the step limit. A stronger decoder improves one submission here; it does not solve evidence use, recovery or termination.
+
 ## Observations
 
 | Run | Task | Outcome | Model calls | Input / output tokens | Agent elapsed seconds |
@@ -30,7 +32,7 @@ This is a **modified development pilot**, not the full native Harbor job/leaderb
 
 ## Reproduction and next experiment
 
-Install the pinned [Harbor environment](evaluation-programme.md), prepare the licensed task files at the recorded revision and build isolated verifier images from the pinned Python digest and [hashed requirements](../evidence/terminal-pilot-v1/verifier-requirements.txt). Verifier images contain only their own task's tests; agent images contain none. Keep raw task files and downloaded models outside the repository. The [complete driver](../experiments/terminal_pilot.py) exposes `prepare`, `qualify-graders` and `run`, each with a fresh output directory for a changed protocol. `--help` lists the explicit source, tokenizer and local environment paths. The current driver also accepts `--model qwen2.5-coder:7b` with its matching tokenizer for a stronger local reference; no result for that model is included here.
+Install the pinned [Harbor environment](evaluation-programme.md), prepare the licensed task files at the recorded revision and build isolated verifier images from the pinned Python digest and [hashed requirements](../evidence/terminal-pilot-v1/verifier-requirements.txt). Verifier images contain only their own task's tests; agent images contain none. Keep raw task files and downloaded models outside the repository. The [complete driver](../experiments/terminal_pilot.py) exposes `prepare`, `qualify-graders` and `run`, each with a fresh output directory for a changed protocol. `--help` lists the explicit source, tokenizer and local environment paths. The current driver also accepts `--model qwen2.5-coder:7b` with its matching tokenizer for the stronger local reference reported below.
 
 To replay the published records without Docker, network access or a model:
 
@@ -77,4 +79,19 @@ Sixteen boundary tests cover action ambiguity, protocol delimiter injection, com
 
 After these model runs, a review found that Python helpers could import an agent-created module from `/app`. The current supervisor and artifact helpers use Python's isolated mode, and an additional live probe creates hostile module names before verifying supervisor operation. The earlier source is archived with the failed baseline records; their agents created no submission. This is a harness correction, not a model-quality improvement.
 
-The next comparison needs a stronger local coding reference before model/runtime effects can be separated. For the smaller model, investigate typed file-edit/tool interfaces and training on independently verified **non-benchmark** action examples. Compare that with ordinary prompt/scaffold corrections first. The context runtime and local statistical policy then need their own paired treatment on fresh task families. Extra context, more compact stamps and a successful statistical gate cannot supply missing code-generation competence. This is why local adaptation must test absolute task quality as well as savings and retention.
+## Stronger reference and remaining gaps
+
+| Qwen2.5-Coder 7B task | Native outcome | Stop condition | Calls | Input / output tokens | Agent elapsed seconds |
+|---|---|---|---:|---:|---:|
+| Async task cancellation | Pass, all six assertions | 12-step limit | 12 | 12,978 / 585 | 39.14 |
+| Dated-log aggregation | Fail | 12-step limit | 12 | 11,766 / 290 | 32.78 |
+
+The [complete reference records](../evidence/terminal-pilot-coder7b-v1) contain all 24 calls, both artifacts, native reports, telemetry, immutable model identity and the tokenizer source revision. Every full-input token count matched the server. Native positive/negative controls passed again for the rebuilt verifier images. This run uses the hardened supervisor; it is another development control on already inspected tasks. The two models were not compared in randomized repeated timing trials. The timings are descriptive, and the extra calls/input tokens are retained rather than presented as an efficiency improvement.
+
+```bash
+python experiments/verify_terminal_reference.py
+```
+
+The next experiments should distinguish three failures: generating correct actions, acquiring required evidence and recognizing an ineffective repair loop. Compare ordinary scaffold corrections with typed file-edit/tool interfaces and approved exact domain tools before fitting a policy. For the smaller model, train only on independently verified **non-benchmark** action examples. A local learner needs verified outcomes from the complete pipeline; a model's declaration of completion or a syntactically valid CSV is not a correctness label.
+
+The context runtime and local statistical policy then need their own paired treatment on fresh task families, including retention and repeated-error cases. Extra context, more compact stamps and a successful statistical gate cannot supply missing code-generation competence. Local adaptation must test absolute task quality as well as savings and retention.

@@ -75,6 +75,16 @@ def main(executable):
         line = next(line for line in (ROOT / relative).read_text().splitlines()
                     if line.strip().startswith('"experiments/qwen_token_count.py":'))
         checksum_cases.append((relative, line))
+        for filename, keys in (
+            ('plan.json', ('experiments/qwen_token_count.py', 'tokenizer_sha256')),
+            ('tokenizer-source.json', ('tokenizer.json', 'tokenizer_config.json')),
+            ('manifest.json', ('tokenizer-source.json',)),
+        ):
+            relative = Path('evidence/terminal-pilot-coder7b-v1') / filename
+            lines = (ROOT / relative).read_text().splitlines()
+            for key in keys:
+                line = next(line for line in lines if line.strip().startswith('"' + key + '":'))
+                checksum_cases.append((relative, line))
         for relative, line in checksum_cases:
             control = scan / relative
             control.parent.mkdir(parents=True, exist_ok=True)

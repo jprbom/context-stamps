@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "evidence_class": "selected_local_coding_reference_development",
+  "passed": 1,
+  "tasks": 2,
+  "local_model_calls": 24,
+  "input_tokens": 24744,
+  "output_tokens": 875,
+  "runtime_treatment": false,
+  "training_runs": 0,
+  "provider_charges_usd": 0,
+  "files": {
+    "ATTRIBUTION.md": "fea8b2cdbf5d4ca1d7945caff51b7ea32f47d90607e9c88de35a438d317c7656",
+    "cancel-async-tasks-empty.json": "d713394dcf22f11c630e57a9acb9c9fb487fd978c2010029d82a2e2f211b358f",
+    "cancel-async-tasks-grade.json": "c1841ca2c519d9f42dac9379e3cfede1ed3f482ea97f1665a033a4905018f005",
+    "cancel-async-tasks-oracle.json": "0b3e39399413b4ef0b49651b9dfbf756b035da826f667b3520bd85f5235989dd",
+    "cancel-async-tasks-trajectory.json": "f096571d56f78fd79fd4702f7f01e31476fffa022ba37b55f5fc382de95a58fd",
+    "grader-started.json": "6f137044960ba730ebac372cc3a89b4f92c2c5093abd984f8681d811c9147e78",
+    "graders-qualified.json": "6c6c457bf7d194ef85b1a6fff12ed640b5d661215aff35e6f4b6b60b58ad519c",
+    "log-summary-date-ranges-empty.json": "7536eec8af19bfa7b094e3dd39bc054a0d65752f01f2a91482f0ed3c8166733f",
+    "log-summary-date-ranges-grade.json": "7cde08d22d8acdda382821a55a3de99fc791d9a8650bdfee69278894810a3d80",
+    "log-summary-date-ranges-oracle.json": "864c06cd2f73f63e0bc2001c53cb9927a790ffbd56faa908ed9f4e88f59896e7",
+    "log-summary-date-ranges-trajectory.json": "96afb8d35bfb8b6976b70eb7e389a78f6267211a9d66e638c5a856ea66590250",
+    "plan.json": "e8639ed20feed466ba12e1fec1cb52dab5c07439d8f8dda30e7ff0f651a16b2b",
+    "resident-models.json": "c9734407c3d28dddab1efc303a15103dbc9939457cea466ef9fa16655d5f34d8",
+    "started.json": "ab0beba9cee3314fabd7004ecadaa8d961f8eb3fc43865bfbdbe199dbd81c619",
+    "summary.json": "a8ace7b92158c398a3fc7ef2dfc992322d3329a2a658fdbc45c53a0b9fe65953",
+    "telemetry.json": "2b3f9a3a23b9fa078310fd5f16d3e70a149715aab7ee8fde14e67b5b307f4a74",
+    "tokenizer-source.json": "bfba23cff6b9df699e6f0dc90e61e9765ed0e1e1fb5c832c4ac489aa636132bd"
+  }
+}

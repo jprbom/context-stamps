@@ -1,0 +1,375 @@
+{
+  "passed": true,
+  "model_calls": 0,
+  "records": [
+    {
+      "task": "cancel-async-tasks",
+      "oracle": false,
+      "result": {
+        "profile": {
+          "image_id": "sha256:12d2710108c7c144690bf66342315b57a9f2ef3e43e982e34074d5ac32980745",
+          "user": "1000:1000",
+          "network_mode": "none",
+          "read_only": true,
+          "pids_limit": 64,
+          "memory_bytes": 2147483648,
+          "nano_cpus": 1000000000,
+          "cap_drop": [
+            "ALL"
+          ],
+          "security_opt": [
+            "no-new-privileges:true"
+          ],
+          "mounts": []
+        },
+        "test_run": {
+          "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.15, pytest-9.0.3, pluggy-1.6.0\nrootdir: /tests\nplugins: json-ctrf-0.3.5\ncollected 6 items\n\n../tests/test_outputs.py FFFFFF                                          [100%]\n\n=================================== FAILURES ===================================\n___________________________ test_run_py_file_exists ____________________________\n\n    def test_run_py_file_exists():\n        \"\"\"Ensure that the run.py file exists.\"\"\"\n        run_path = Path(\"/app/run.py\")\n    \n>       assert run_path.exists(), f\"File {run_path} does not exist\"\nE       AssertionError: File /app/run.py does not exist\nE       assert False\nE        +  where False = exists()\nE        +    where exists = PosixPath('/app/run.py').exists\n\n/tests/test_outputs.py:14: AssertionError\n_________________________ test_tasks_run_concurrently __________________________\n\n    def test_tasks_run_concurrently():\n        \"\"\"Ensure that tasks run concurrently by timing out if they don't.\"\"\"\n>       result = subprocess.run(\n            [\n                \"python\",\n                \"test.py\",\n                \"--n-tasks\",\n                \"2\",\n                \"--max-concurrent\",\n                \"2\",\n            ],\n            timeout=5,  # Each task takes 3 seconds to run.\n            check=True,\n            capture_output=True,\n        )\n\n/tests/test_outputs.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput = None, capture_output = True, timeout = 5, check = True\npopenargs = (['python', 'test.py', '--n-tasks', '2', '--max-concurrent', '2'],)\nkwargs = {'stderr': -1, 'stdout': -1}\nprocess = <Popen: returncode: 1 args: ['python', 'test.py', '--n-tasks', '2', '--max-c...>\nstdout = b''\nstderr = b'Traceback (most recent call last):\\n  File \"/app/test.py\", line 4, in <module>\\n    from run import run_tasks  # type: ignore\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^\\nModuleNotFoundError: No module named \\'run\\'\\n'\nretcode = 1\n\n    def run(*popenargs,\n            input=None, capture_output=False, timeout=None, check=False, **kwargs):\n        \"\"\"Run command with arguments and return a CompletedProcess instance.\n    \n        The returned instance will have attributes args, returncode, stdout and\n        stderr. By default, stdout and stderr are not captured, and those attributes\n        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,\n        or pass capture_output=True to capture both.\n    \n        If check is True and the exit code was non-zero, it raises a\n        CalledProcessError. The CalledProcessError object will have the return code\n        in the returncode attribute, and output & stderr attributes if those streams\n        were captured.\n    \n        If timeout (seconds) is given and the process takes too long,\n         a TimeoutExpired exception will be raised.\n    \n        There is an optional argument \"input\", allowing you to\n        pass bytes or a string to the subprocess's stdin.  If you use this argument\n        you may not also use the Popen constructor's \"stdin\" argument, as\n        it will be used internally.\n    \n        By default, all communication is in bytes, and therefore any \"input\" should\n        be bytes, and the stdout and stderr will be bytes. If in text mode, any\n        \"input\" should be a string, and stdout and stderr will be strings decoded\n        according to locale encoding, or by \"encoding\" if set. Text mode is\n        triggered by setting any of text, encoding, errors or universal_newlines.\n    \n        The other arguments are the same as for the Popen constructor.\n        \"\"\"\n        if input is not None:\n            if kwargs.get('stdin') is not None:\n                raise ValueError('stdin and input arguments may not both be used.')\n            kwargs['stdin'] = PIPE\n    \n        if capture_output:\n            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:\n                raise ValueError('stdout and stderr arguments may not be used '\n                                 'with capture_output.')\n            kwargs['stdout'] = PIPE\n            kwargs['stderr'] = PIPE\n    \n        with Popen(*popenargs, **kwargs) as process:\n            try:\n                stdout, stderr = process.communicate(input, timeout=timeout)\n            except TimeoutExpired as exc:\n                process.kill()\n                if _mswindows:\n                    # Windows accumulates the output in a single blocking\n                    # read() call run on child threads, with the timeout\n                    # being done in a join() on those threads.  communicate()\n                    # _after_ kill() is required to collect that and add it\n                    # to the exception.\n                    exc.stdout, exc.stderr = process.communicate()\n                else:\n                    # POSIX _communicate already populated the output so\n                    # far into the TimeoutExpired exception.\n                    process.wait()\n                raise\n            except:  # Including KeyboardInterrupt, communicate handled that.\n                process.kill()\n                # We don't call process.wait() as .__exit__ does that for us.\n                raise\n            retcode = process.poll()\n            if check and retcode:\n>               raise CalledProcessError(retcode, process.args,\n                                         output=stdout, stderr=stderr)\nE               subprocess.CalledProcessError: Command '['python', 'test.py', '--n-tasks', '2', '--max-concurrent', '2']' returned non-zero exit status 1.\n\n/usr/local/lib/python3.13/subprocess.py:577: CalledProcessError\n________________________ test_tasks_obey_max_concurrent ________________________\n\n    def test_tasks_obey_max_concurrent():\n        \"\"\"\n        Ensure that tasks obey the max concurrent and that the total runtime is at least\n        6 seconds.\n        \"\"\"\n        start = time.monotonic()\n    \n>       result = subprocess.run(\n            [\n                \"python\",\n                \"test.py\",\n                \"--n-tasks\",\n                \"2\",\n                \"--max-concurrent\",\n                \"1\",\n            ],\n            timeout=10,\n            check=True,\n            capture_output=True,\n        )\n\n/tests/test_outputs.py:47: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput = None, capture_output = True, timeout = 10, check = True\npopenargs = (['python', 'test.py', '--n-tasks', '2', '--max-concurrent', '1'],)\nkwargs = {'stderr': -1, 'stdout': -1}\nprocess = <Popen: returncode: 1 args: ['python', 'test.py', '--n-tasks', '2', '--max-c...>\nstdout = b''\nstderr = b'Traceback (most recent call last):\\n  File \"/app/test.py\", line 4, in <module>\\n    from run import run_tasks  # type: ignore\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^\\nModuleNotFoundError: No module named \\'run\\'\\n'\nretcode = 1\n\n    def run(*popenargs,\n            input=None, capture_output=False, timeout=None, check=False, **kwargs):\n        \"\"\"Run command with arguments and return a CompletedProcess instance.\n    \n        The returned instance will have attributes args, returncode, stdout and\n        stderr. By default, stdout and stderr are not captured, and those attributes\n        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,\n        or pass capture_output=True to capture both.\n    \n        If check is True and the exit code was non-zero, it raises a\n        CalledProcessError. The CalledProcessError object will have the return code\n        in the returncode attribute, and output & stderr attributes if those streams\n        were captured.\n    \n        If timeout (seconds) is given and the process takes too long,\n         a TimeoutExpired exception will be raised.\n    \n        There is an optional argument \"input\", allowing you to\n        pass bytes or a string to the subprocess's stdin.  If you use this argument\n        you may not also use the Popen constructor's \"stdin\" argument, as\n        it will be used internally.\n    \n        By default, all communication is in bytes, and therefore any \"input\" should\n        be bytes, and the stdout and stderr will be bytes. If in text mode, any\n        \"input\" should be a string, and stdout and stderr will be strings decoded\n        according to locale encoding, or by \"encoding\" if set. Text mode is\n        triggered by setting any of text, encoding, errors or universal_newlines.\n    \n        The other arguments are the same as for the Popen constructor.\n        \"\"\"\n        if input is not None:\n            if kwargs.get('stdin') is not None:\n                raise ValueError('stdin and input arguments may not both be used.')\n            kwargs['stdin'] = PIPE\n    \n        if capture_output:\n            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:\n                raise ValueError('stdout and stderr arguments may not be used '\n                                 'with capture_output.')\n            kwargs['stdout'] = PIPE\n            kwargs['stderr'] = PIPE\n    \n        with Popen(*popenargs, **kwargs) as process:\n            try:\n                stdout, stderr = process.communicate(input, timeout=timeout)\n            except TimeoutExpired as exc:\n                process.kill()\n                if _mswindows:\n                    # Windows accumulates the output in a single blocking\n                    # read() call run on child threads, with the timeout\n                    # being done in a join() on those threads.  communicate()\n                    # _after_ kill() is required to collect that and add it\n                    # to the exception.\n                    exc.stdout, exc.stderr = process.communicate()\n                else:\n                    # POSIX _communicate already populated the output so\n                    # far into the TimeoutExpired exception.\n                    process.wait()\n                raise\n            except:  # Including KeyboardInterrupt, communicate handled that.\n                process.kill()\n                # We don't call process.wait() as .__exit__ does that for us.\n                raise\n            retcode = process.poll()\n            if check and retcode:\n>               raise CalledProcessError(retcode, process.args,\n                                         output=stdout, stderr=stderr)\nE               subprocess.CalledProcessError: Command '['python', 'test.py', '--n-tasks', '2', '--max-concurrent', '1']' returned non-zero exit status 1.\n\n/usr/local/lib/python3.13/subprocess.py:577: CalledProcessError\n____________________ test_tasks_cancel_below_max_concurrent ____________________\n\n    def test_tasks_cancel_below_max_concurrent():\n        \"\"\"\n        Ensure that tasks cancel when below the max concurrent.\n    \n        This will fail e.g. if the agent tries to use threading.ThreadPoolExecutor which\n        doesn't propagate the cancellation signal to the tasks.\n        \"\"\"\n        proc = subprocess.Popen(\n            [\n                \"python\",\n                \"test.py\",\n                \"--n-tasks\",\n                \"2\",\n                \"--max-concurrent\",\n                \"3\",\n            ],\n            stdout=subprocess.PIPE,\n            stderr=subprocess.PIPE,\n        )\n    \n        # Wait 500ms, then send SIGINT (KeyboardInterrupt)\n        time.sleep(0.5)\n        proc.send_signal(signal.SIGINT)\n    \n        try:\n            stdout, stderr = proc.communicate(timeout=5)\n        finally:\n            proc.kill()\n    \n        stdout = stdout.decode(\"utf-8\")\n    \n>       assert stdout.count(\"Task started.\") == 2\nE       AssertionError: assert 0 == 2\nE        +  where 0 = <built-in method count of str object at 0x7ba4f8a29240>('Task started.')\nE        +    where <built-in method count of str object at 0x7ba4f8a29240> = ''.count\n\n/tests/test_outputs.py:102: AssertionError\n_____________________ test_tasks_cancel_at_max_concurrent ______________________\n\n    def test_tasks_cancel_at_max_concurrent():\n        \"\"\"\n        Ensure tasks cancel when at the max concurrent. This should behave similar to when\n        task count is below.\n        \"\"\"\n        proc = subprocess.Popen(\n            [\n                \"python\",\n                \"test.py\",\n                \"--n-tasks\",\n                \"2\",\n                \"--max-concurrent\",\n                \"2\",\n            ],\n            stdout=subprocess.PIPE,\n            stderr=subprocess.PIPE,\n        )\n    \n        # Wait 500ms, then send SIGINT (KeyboardInterrupt)\n        time.sleep(0.5)\n        proc.send_signal(signal.SIGINT)\n    \n        try:\n            stdout, stderr = proc.communicate(timeout=5)\n        finally:\n            proc.kill()\n    \n        stdout = stdout.decode(\"utf-8\")\n    \n>       assert stdout.count(\"Task started.\") == 2\nE       AssertionError: assert 0 == 2\nE        +  where 0 = <built-in method count of str object at 0x7ba4f8a29240>('Task started.')\nE        +    where <built-in method count of str object at 0x7ba4f8a29240> = ''.count\n\n/tests/test_outputs.py:135: AssertionError\n____________________ test_tasks_cancel_above_max_concurrent ____________________\n\n    def test_tasks_cancel_above_max_concurrent():\n        \"\"\"\n        Test that cancellation occurs and only the first two tasks are started and\n        cancelled.\n    \n        This is a common gotcha in Python because asyncio.gather doesn't properly cancel\n        existing tasks if there are still tasks in the queue.\n        \"\"\"\n        proc = subprocess.Popen(\n            [\n                \"python\",\n                \"test.py\",\n                \"--n-tasks\",\n                \"3\",\n                \"--max-concurrent\",\n                \"2\",\n            ],\n            stdout=subprocess.PIPE,\n            stderr=subprocess.PIPE,\n        )\n    \n        # Wait 500ms, then send SIGINT (KeyboardInterrupt)\n        time.sleep(0.5)\n        proc.send_signal(signal.SIGINT)\n    \n        try:\n            stdout, stderr = proc.communicate(timeout=5)\n        finally:\n            proc.kill()\n    \n        stdout = stdout.decode(\"utf-8\")\n    \n>       assert stdout.count(\"Task started.\") == 2\nE       AssertionError: assert 0 == 2\nE        +  where 0 = <built-in method count of str object at 0x7ba4f8a29240>('Task started.')\nE        +    where <built-in method count of str object at 0x7ba4f8a29240> = ''.count\n\n/tests/test_outputs.py:171: AssertionError\n=========================== short test summary info ============================\nFAILED ../tests/test_outputs.py::test_run_py_file_exists - AssertionError: Fi...\nFAILED ../tests/test_outputs.py::test_tasks_run_concurrently - subprocess.Cal...\nFAILED ../tests/test_outputs.py::test_tasks_obey_max_concurrent - subprocess....\nFAILED ../tests/test_outputs.py::test_tasks_cancel_below_max_concurrent - Ass...\nFAILED ../tests/test_outputs.py::test_tasks_cancel_at_max_concurrent - Assert...\nFAILED ../tests/test_outputs.py::test_tasks_cancel_above_max_concurrent - Ass...\n============================== 6 failed in 1.76s ===============================\n",
+          "stderr": "",
+          "return_code": 1,
+          "boundary_failure": null,
+          "command_seconds": 2.050696146005066
+        },
+        "ctrf": {
+          "results": {
+            "tool": {
+              "name": "pytest",
+              "version": "9.0.3"
+            },
+            "summary": {
+              "tests": 6,
+              "passed": 0,
+              "failed": 6,
+              "skipped": 0,
+              "pending": 0,
+              "other": 0,
+              "start": 1790442470.4142733,
+              "stop": 1790442472.1782124
+            },
+            "tests": [
+              {
+                "name": "test_outputs.py::test_run_py_file_exists",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0004051569849252701,
+                "start": 1790442470.4353945,
+                "stop": 1790442470.4422543,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_run_py_file_exists():\n        \"\"\"Ensure that the run.py file exists.\"\"\"\n        run_path = Path(\"/app/run.py\")\n    \n>       assert run_path.exists(), f\"File {run_path} does not exist\"\nE       AssertionError: File /app/run.py does not exist\nE       assert False\nE        +  where False = exists()\nE        +    where exists = PosixPath('/app/run.py').exists\n\n/tests/test_outputs.py:14: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+              },
+              {
+                "name": "test_outputs.py::test_tasks_run_concurrently",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.09198257300886326,
+                "start": 1790442470.4423718,
+                "stop": 1790442470.5509593,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_tasks_run_concurrently():\n        \"\"\"Ensure that tasks run concurrently by timing out if they don't.\"\"\"\n>       result = subprocess.run(\n            [\n                \"python\",\n                \"test.py\",\n                \"--n-tasks\",\n                \"2\",\n                \"--max-concurrent\",\n                \"2\",\n            ],\n            timeout=5,  # Each task takes 3 seconds to run.\n            check=True,\n            capture_output=True,\n        )\n\n/tests/test_outputs.py:19: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput = None, capture_output = True, timeout = 5, check = True\npopenargs = (['python', 'test.py', '--n-tasks', '2', '--max-concurrent', '2'],)\nkwargs = {'stderr': -1, 'stdout': -1}\nprocess = <Popen: returncode: 1 args: ['python', 'test.py', '--n-tasks', '2', '--max-c...>\nstdout = b''\nstderr = b'Traceback (most recent call last):\\n  File \"/app/test.py\", line 4, in <module>\\n    from run import run_tasks  # type: ignore\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^\\nModuleNotFoundError: No module named \\'run\\'\\n'\nretcode = 1\n\n    def run(*popenargs,\n            input=None, capture_output=False, timeout=None, check=False, **kwargs):\n        \"\"\"Run command with arguments and return a CompletedProcess instance.\n    \n        The returned instance will have attributes args, returncode, stdout and\n        stderr. By default, stdout and stderr are not captured, and those attributes\n        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,\n        or pass capture_output=True to capture both.\n    \n        If check is True and the exit code was non-zero, it raises a\n        CalledProcessError. The CalledProcessError object will have the return code\n        in the returncode attribute, and output & stderr attributes if those streams\n        were captured.\n    \n        If timeout (seconds) is given and the process takes too long,\n         a TimeoutExpired exception will be raised.\n    \n        There is an optional argument \"input\", allowing you to\n        pass bytes or a string to the subprocess's stdin.  If you use this argument\n        you may not also use the Popen constructor's \"stdin\" argument, as\n        it will be used internally.\n    \n        By default, all communication is in bytes, and therefore any \"input\" should\n        be bytes, and the stdout and stderr will be bytes. If in text mode, any\n        \"input\" should be a string, and stdout and stderr will be strings decoded\n        according to locale encoding, or by \"encoding\" if set. Text mode is\n        triggered by setting any of text, encoding, errors or universal_newlines.\n    \n        The other arguments are the same as for the Popen constructor.\n        \"\"\"\n        if input is not None:\n            if kwargs.get('stdin') is not None:\n                raise ValueError('stdin and input arguments may not both be used.')\n            kwargs['stdin'] = PIPE\n    \n        if capture_output:\n            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:\n                raise ValueError('stdout and stderr arguments may not be used '\n                                 'with capture_output.')\n            kwargs['stdout'] = PIPE\n            kwargs['stderr'] = PIPE\n    \n        with Popen(*popenargs, **kwargs) as process:\n            try:\n                stdout, stderr = process.communicate(input, timeout=timeout)\n            except TimeoutExpired as exc:\n                process.kill()\n                if _mswindows:\n                    # Windows accumulates the output in a single blocking\n                    # read() call run on child threads, with the timeout\n                    # being done in a join() on those threads.  communicate()\n                    # _after_ kill() is required to collect that and add it\n                    # to the exception.\n                    exc.stdout, exc.stderr = process.communicate()\n                else:\n                    # POSIX _communicate already populated the output so\n                    # far into the TimeoutExpired exception.\n                    process.wait()\n                raise\n            except:  # Including KeyboardInterrupt, communicate handled that.\n                process.kill()\n                # We don't call process.wait() as .__exit__ does that for us.\n                raise\n            retcode = process.poll()\n            if check and retcode:\n>               raise CalledProcessError(retcode, process.args,\n                                         output=stdout, stderr=stderr)\nE               subprocess.CalledProcessError: Command '['python', 'test.py', '--n-tasks', '2', '--max-concurrent', '2']' returned non-zero exit status 1.\n\n/usr/local/lib/python3.13/subprocess.py:577: CalledProcessError",
+                "message": "The test failed in the call phase"
+              },
+              {
+                "name": "test_outputs.py::test_tasks_obey_max_concurrent",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.10042203099874314,
+                "start": 1790442470.5511386,
+                "stop": 1790442470.6670833,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_tasks_obey_max_concurrent():\n        \"\"\"\n        Ensure that tasks obey the max concurrent and that the total runtime is at least\n        6 seconds.\n        \"\"\"\n        start = time.monotonic()\n    \n>       result = subprocess.run(\n            [\n                \"python\",\n                \"test.py\",\n                \"--n-tasks\",\n                \"2\",\n                \"--max-concurrent\",\n                \"1\",\n            ],\n            timeout=10,\n            check=True,\n            capture_output=True,\n        )\n\n/tests/test_outputs.py:47: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\ninput = None, capture_output = True, timeout = 10, check = True\npopenargs = (['python', 'test.py', '--n-tasks', '2', '--max-concurrent', '1'],)\nkwargs = {'stderr': -1, 'stdout': -1}\nprocess = <Popen: returncode: 1 args: ['python', 'test.py', '--n-tasks', '2', '--max-c...>\nstdout = b''\nstderr = b'Traceback (most recent call last):\\n  File \"/app/test.py\", line 4, in <module>\\n    from run import run_tasks  # type: ignore\\n    ^^^^^^^^^^^^^^^^^^^^^^^^^\\nModuleNotFoundError: No module named \\'run\\'\\n'\nretcode = 1\n\n    def run(*popenargs,\n            input=None, capture_output=False, timeout=None, check=False, **kwargs):\n        \"\"\"Run command with arguments and return a CompletedProcess instance.\n    \n        The returned instance will have attributes args, returncode, stdout and\n        stderr. By default, stdout and stderr are not captured, and those attributes\n        will be None. Pass stdout=PIPE and/or stderr=PIPE in order to capture them,\n        or pass capture_output=True to capture both.\n    \n        If check is True and the exit code was non-zero, it raises a\n        CalledProcessError. The CalledProcessError object will have the return code\n        in the returncode attribute, and output & stderr attributes if those streams\n        were captured.\n    \n        If timeout (seconds) is given and the process takes too long,\n         a TimeoutExpired exception will be raised.\n    \n        There is an optional argument \"input\", allowing you to\n        pass bytes or a string to the subprocess's stdin.  If you use this argument\n        you may not also use the Popen constructor's \"stdin\" argument, as\n        it will be used internally.\n    \n        By default, all communication is in bytes, and therefore any \"input\" should\n        be bytes, and the stdout and stderr will be bytes. If in text mode, any\n        \"input\" should be a string, and stdout and stderr will be strings decoded\n        according to locale encoding, or by \"encoding\" if set. Text mode is\n        triggered by setting any of text, encoding, errors or universal_newlines.\n    \n        The other arguments are the same as for the Popen constructor.\n        \"\"\"\n        if input is not None:\n            if kwargs.get('stdin') is not None:\n                raise ValueError('stdin and input arguments may not both be used.')\n            kwargs['stdin'] = PIPE\n    \n        if capture_output:\n            if kwargs.get('stdout') is not None or kwargs.get('stderr') is not None:\n                raise ValueError('stdout and stderr arguments may not be used '\n                                 'with capture_output.')\n            kwargs['stdout'] = PIPE\n            kwargs['stderr'] = PIPE\n    \n        with Popen(*popenargs, **kwargs) as process:\n            try:\n                stdout, stderr = process.communicate(input, timeout=timeout)\n            except TimeoutExpired as exc:\n                process.kill()\n                if _mswindows:\n                    # Windows accumulates the output in a single blocking\n                    # read() call run on child threads, with the timeout\n                    # being done in a join() on those threads.  communicate()\n                    # _after_ kill() is required to collect that and add it\n                    # to the exception.\n                    exc.stdout, exc.stderr = process.communicate()\n                else:\n                    # POSIX _communicate already populated the output so\n                    # far into the TimeoutExpired exception.\n                    process.wait()\n                raise\n            except:  # Including KeyboardInterrupt, communicate handled that.\n                process.kill()\n                # We don't call process.wait() as .__exit__ does that for us.\n                raise\n            retcode = process.poll()\n            if check and retcode:\n>               raise CalledProcessError(retcode, process.args,\n                                         output=stdout, stderr=stderr)\nE               subprocess.CalledProcessError: Command '['python', 'test.py', '--n-tasks', '2', '--max-concurrent', '1']' returned non-zero exit status 1.\n\n/usr/local/lib/python3.13/subprocess.py:577: CalledProcessError",
+                "message": "The test failed in the call phase"
+              },
+              {
+                "name": "test_outputs.py::test_tasks_cancel_below_max_concurrent",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.5013322239974514,
+                "start": 1790442470.6675394,
+                "stop": 1790442471.1705534,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_tasks_cancel_below_max_concurrent():\n        \"\"\"\n        Ensure that tasks cancel when below the max concurrent.\n    \n        This will fail e.g. if the agent tries to use threading.ThreadPoolExecutor which\n        doesn't propagate the cancellation signal to the tasks.\n        \"\"\"\n        proc = subprocess.Popen(\n            [\n                \"python\",\n                \"test.py\",\n                \"--n-tasks\",\n                \"2\",\n                \"--max-concurrent\",\n                \"3\",\n            ],\n            stdout=subprocess.PIPE,\n            stderr=subprocess.PIPE,\n        )\n    \n        # Wait 500ms, then send SIGINT (KeyboardInterrupt)\n        time.sleep(0.5)\n        proc.send_signal(signal.SIGINT)\n    \n        try:\n            stdout, stderr = proc.communicate(timeout=5)\n        finally:\n            proc.kill()\n    \n        stdout = stdout.decode(\"utf-8\")\n    \n>       assert stdout.count(\"Task started.\") == 2\nE       AssertionError: assert 0 == 2\nE        +  where 0 = <built-in method count of str object at 0x7ba4f8a29240>('Task started.')\nE        +    where <built-in method count of str object at 0x7ba4f8a29240> = ''.count\n\n/tests/test_outputs.py:102: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+              },
+              {
+                "name": "test_outputs.py::test_tasks_cancel_at_max_concurrent",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.5013864499924239,
+                "start": 1790442471.1706805,
+                "stop": 1790442471.6747913,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_tasks_cancel_at_max_concurrent():\n        \"\"\"\n        Ensure tasks cancel when at the max concurrent. This should behave similar to when\n        task count is below.\n        \"\"\"\n        proc = subprocess.Popen(\n            [\n                \"python\",\n                \"test.py\",\n                \"--n-tasks\",\n                \"2\",\n                \"--max-concurrent\",\n                \"2\",\n            ],\n            stdout=subprocess.PIPE,\n            stderr=subprocess.PIPE,\n        )\n    \n        # Wait 500ms, then send SIGINT (KeyboardInterrupt)\n        time.sleep(0.5)\n        proc.send_signal(signal.SIGINT)\n    \n        try:\n            stdout, stderr = proc.communicate(timeout=5)\n        finally:\n            proc.kill()\n    \n        stdout = stdout.decode(\"utf-8\")\n    \n>       assert stdout.count(\"Task started.\") == 2\nE       AssertionError: assert 0 == 2\nE        +  where 0 = <built-in method count of str object at 0x7ba4f8a29240>('Task started.')\nE        +    where <built-in method count of str object at 0x7ba4f8a29240> = ''.count\n\n/tests/test_outputs.py:135: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+              },
+              {
+                "name": "test_outputs.py::test_tasks_cancel_above_max_concurrent",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.5013115709880367,
+                "start": 1790442471.6750045,
+                "stop": 1790442472.1780677,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_tasks_cancel_above_max_concurrent():\n        \"\"\"\n        Test that cancellation occurs and only the first two tasks are started and\n        cancelled.\n    \n        This is a common gotcha in Python because asyncio.gather doesn't properly cancel\n        existing tasks if there are still tasks in the queue.\n        \"\"\"\n        proc = subprocess.Popen(\n            [\n                \"python\",\n                \"test.py\",\n                \"--n-tasks\",\n                \"3\",\n                \"--max-concurrent\",\n                \"2\",\n            ],\n            stdout=subprocess.PIPE,\n            stderr=subprocess.PIPE,\n        )\n    \n        # Wait 500ms, then send SIGINT (KeyboardInterrupt)\n        time.sleep(0.5)\n        proc.send_signal(signal.SIGINT)\n    \n        try:\n            stdout, stderr = proc.communicate(timeout=5)\n        finally:\n            proc.kill()\n    \n        stdout = stdout.decode(\"utf-8\")\n    \n>       assert stdout.count(\"Task started.\") == 2\nE       AssertionError: assert 0 == 2\nE        +  where 0 = <built-in method count of str object at 0x7ba4f8a29240>('Task started.')\nE        +    where <built-in method count of str object at 0x7ba4f8a29240> = ''.count\n\n/tests/test_outputs.py:171: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+              }
+            ]
+          }
+        },
+        "passed": false
+      }
+    },
+    {
+      "task": "cancel-async-tasks",
+      "oracle": true,
+      "result": {
+        "profile": {
+          "image_id": "sha256:12d2710108c7c144690bf66342315b57a9f2ef3e43e982e34074d5ac32980745",
+          "user": "1000:1000",
+          "network_mode": "none",
+          "read_only": true,
+          "pids_limit": 64,
+          "memory_bytes": 2147483648,
+          "nano_cpus": 1000000000,
+          "cap_drop": [
+            "ALL"
+          ],
+          "security_opt": [
+            "no-new-privileges:true"
+          ],
+          "mounts": []
+        },
+        "test_run": {
+          "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.15, pytest-9.0.3, pluggy-1.6.0\nrootdir: /tests\nplugins: json-ctrf-0.3.5\ncollected 6 items\n\n../tests/test_outputs.py ......                                          [100%]\n\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED ../tests/test_outputs.py::test_run_py_file_exists\nPASSED ../tests/test_outputs.py::test_tasks_run_concurrently\nPASSED ../tests/test_outputs.py::test_tasks_obey_max_concurrent\nPASSED ../tests/test_outputs.py::test_tasks_cancel_below_max_concurrent\nPASSED ../tests/test_outputs.py::test_tasks_cancel_at_max_concurrent\nPASSED ../tests/test_outputs.py::test_tasks_cancel_above_max_concurrent\n============================== 6 passed in 13.77s ==============================\n",
+          "stderr": "",
+          "return_code": 0,
+          "boundary_failure": null,
+          "command_seconds": 13.96873141299875
+        },
+        "ctrf": {
+          "results": {
+            "tool": {
+              "name": "pytest",
+              "version": "9.0.3"
+            },
+            "summary": {
+              "tests": 6,
+              "passed": 6,
+              "failed": 0,
+              "skipped": 0,
+              "pending": 0,
+              "other": 0,
+              "start": 1790442484.8129706,
+              "stop": 1790442498.5874166
+            },
+            "tests": [
+              {
+                "name": "test_outputs.py::test_run_py_file_exists",
+                "status": "passed",
+                "duration": 0.00032542800181545317,
+                "start": 1790442484.8266673,
+                "stop": 1790442484.8271627,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+              },
+              {
+                "name": "test_outputs.py::test_tasks_run_concurrently",
+                "status": "passed",
+                "duration": 3.0977881620055996,
+                "start": 1790442484.8272727,
+                "stop": 1790442487.9252286,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+              },
+              {
+                "name": "test_outputs.py::test_tasks_obey_max_concurrent",
+                "status": "passed",
+                "duration": 6.107360605004942,
+                "start": 1790442487.9254029,
+                "stop": 1790442494.0330577,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+              },
+              {
+                "name": "test_outputs.py::test_tasks_cancel_below_max_concurrent",
+                "status": "passed",
+                "duration": 1.5144194890017388,
+                "start": 1790442494.0333784,
+                "stop": 1790442495.548071,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+              },
+              {
+                "name": "test_outputs.py::test_tasks_cancel_at_max_concurrent",
+                "status": "passed",
+                "duration": 1.518475041986676,
+                "start": 1790442495.5483096,
+                "stop": 1790442497.066977,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+              },
+              {
+                "name": "test_outputs.py::test_tasks_cancel_above_max_concurrent",
+                "status": "passed",
+                "duration": 1.5197493680170737,
+                "start": 1790442497.067192,
+                "stop": 1790442498.587188,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+              }
+            ]
+          }
+        },
+        "passed": true
+      }
+    },
+    {
+      "task": "log-summary-date-ranges",
+      "oracle": false,
+      "result": {
+        "profile": {
+          "image_id": "sha256:43b8c3541b37c9de5b68ed39744cf11f0c85e52c2ddae6e9ab988a7ba8934477",
+          "user": "1000:1000",
+          "network_mode": "none",
+          "read_only": true,
+          "pids_limit": 64,
+          "memory_bytes": 2147483648,
+          "nano_cpus": 1000000000,
+          "cap_drop": [
+            "ALL"
+          ],
+          "security_opt": [
+            "no-new-privileges:true"
+          ],
+          "mounts": []
+        },
+        "test_run": {
+          "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.15, pytest-9.0.3, pluggy-1.6.0\nrootdir: /tests\nplugins: json-ctrf-0.3.5\ncollected 2 items\n\n../tests/test_outputs.py FF                                              [100%]\n\n=================================== FAILURES ===================================\n___________________________ test_summary_file_exists ___________________________\n\n    def test_summary_file_exists():\n        \"\"\"Check if summary.csv exists.\"\"\"\n>       assert OUTPUT_FILE.exists(), f\"File {OUTPUT_FILE} does not exist\"\nE       AssertionError: File /app/summary.csv does not exist\nE       assert False\nE        +  where False = exists()\nE        +    where exists = PosixPath('/app/summary.csv').exists\n\n/tests/test_outputs.py:29: AssertionError\n______________________ test_summary_structure_and_counts _______________________\n\n    def test_summary_structure_and_counts():\n        \"\"\"Validate CSV structure and check if counts match expected hard-coded values.\"\"\"\n>       with OUTPUT_FILE.open(\"r\", newline=\"\") as f:\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n/tests/test_outputs.py:34: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/app/summary.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed to by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/app/summary.csv'\n\n/usr/local/lib/python3.13/pathlib/_local.py:537: FileNotFoundError\n=========================== short test summary info ============================\nFAILED ../tests/test_outputs.py::test_summary_file_exists - AssertionError: F...\nFAILED ../tests/test_outputs.py::test_summary_structure_and_counts - FileNotF...\n============================== 2 failed in 0.03s ===============================\n",
+          "stderr": "",
+          "return_code": 1,
+          "boundary_failure": null,
+          "command_seconds": 0.24852660299802665
+        },
+        "ctrf": {
+          "results": {
+            "tool": {
+              "name": "pytest",
+              "version": "9.0.3"
+            },
+            "summary": {
+              "tests": 2,
+              "passed": 0,
+              "failed": 2,
+              "skipped": 0,
+              "pending": 0,
+              "other": 0,
+              "start": 1790442509.1824741,
+              "stop": 1790442509.2090132
+            },
+            "tests": [
+              {
+                "name": "test_outputs.py::test_summary_file_exists",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0003801700077019632,
+                "start": 1790442509.196028,
+                "stop": 1790442509.2014434,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_summary_file_exists():\n        \"\"\"Check if summary.csv exists.\"\"\"\n>       assert OUTPUT_FILE.exists(), f\"File {OUTPUT_FILE} does not exist\"\nE       AssertionError: File /app/summary.csv does not exist\nE       assert False\nE        +  where False = exists()\nE        +    where exists = PosixPath('/app/summary.csv').exists\n\n/tests/test_outputs.py:29: AssertionError",
+                "message": "The test failed in the call phase due to an assertion error"
+              },
+              {
+                "name": "test_outputs.py::test_summary_structure_and_counts",
+                "status": "failed",
+                "raw_status": "call_failed",
+                "duration": 0.0002811759914038703,
+                "start": 1790442509.2015605,
+                "stop": 1790442509.2088666,
+                "retries": 0,
+                "file_path": "test_outputs.py",
+                "trace": "def test_summary_structure_and_counts():\n        \"\"\"Validate CSV structure and check if counts match expected hard-coded values.\"\"\"\n>       with OUTPUT_FILE.open(\"r\", newline=\"\") as f:\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n\n/tests/test_outputs.py:34: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = PosixPath('/app/summary.csv'), mode = 'r', buffering = -1\nencoding = 'locale', errors = None, newline = ''\n\n    def open(self, mode='r', buffering=-1, encoding=None,\n             errors=None, newline=None):\n        \"\"\"\n        Open the file pointed to by this path and return a file object, as\n        the built-in open() function does.\n        \"\"\"\n        if \"b\" not in mode:\n            encoding = io.text_encoding(encoding)\n>       return io.open(self, mode, buffering, encoding, errors, newline)\n               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nE       FileNotFoundError: [Errno 2] No such file or directory: '/app/summary.csv'\n\n/usr/local/lib/python3.13/pathlib/_local.py:537: FileNotFoundError",
+                "message": "The test failed in the call phase"
+              }
+            ]
+          }
+        },
+        "passed": false
+      }
+    },
+    {
+      "task": "log-summary-date-ranges",
+      "oracle": true,
+      "result": {
+        "profile": {
+          "image_id": "sha256:43b8c3541b37c9de5b68ed39744cf11f0c85e52c2ddae6e9ab988a7ba8934477",
+          "user": "1000:1000",
+          "network_mode": "none",
+          "read_only": true,
+          "pids_limit": 64,
+          "memory_bytes": 2147483648,
+          "nano_cpus": 1000000000,
+          "cap_drop": [
+            "ALL"
+          ],
+          "security_opt": [
+            "no-new-privileges:true"
+          ],
+          "mounts": []
+        },
+        "test_run": {
+          "stdout": "============================= test session starts ==============================\nplatform linux -- Python 3.13.15, pytest-9.0.3, pluggy-1.6.0\nrootdir: /tests\nplugins: json-ctrf-0.3.5\ncollected 2 items\n\n../tests/test_outputs.py ..                                              [100%]\n\n==================================== PASSES ====================================\n=========================== short test summary info ============================\nPASSED ../tests/test_outputs.py::test_summary_file_exists\nPASSED ../tests/test_outputs.py::test_summary_structure_and_counts\n============================== 2 passed in 0.02s ===============================\n",
+          "stderr": "",
+          "return_code": 0,
+          "boundary_failure": null,
+          "command_seconds": 0.2429469360067742
+        },
+        "ctrf": {
+          "results": {
+            "tool": {
+              "name": "pytest",
+              "version": "9.0.3"
+            },
+            "summary": {
+              "tests": 2,
+              "passed": 2,
+              "failed": 0,
+              "skipped": 0,
+              "pending": 0,
+              "other": 0,
+              "start": 1790442526.8430102,
+              "stop": 1790442526.8600805
+            },
+            "tests": [
+              {
+                "name": "test_outputs.py::test_summary_file_exists",
+                "status": "passed",
+                "duration": 0.00027754600159823895,
+                "start": 1790442526.8591905,
+                "stop": 1790442526.859611,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+              },
+              {
+                "name": "test_outputs.py::test_summary_structure_and_counts",
+                "status": "passed",
+                "duration": 0.0002068750181933865,
+                "start": 1790442526.8597116,
+                "stop": 1790442526.8599916,
+                "retries": 0,
+                "file_path": "test_outputs.py"
+              }
+            ]
+          }
+        },
+        "passed": true
+      }
+    }
+  ],
+  "plan_sha256": "e8639ed20feed466ba12e1fec1cb52dab5c07439d8f8dda30e7ff0f651a16b2b"
+}

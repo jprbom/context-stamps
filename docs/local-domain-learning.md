@@ -83,6 +83,8 @@ These are proposed experiments, not implemented capabilities or claims of first 
 
 ## Qualification order and RTX workflow
 
+The first [local coding controls](terminal-local-pilot.md) show why this order matters: the 1.5B model passes 0/2 selected tasks, and the 7B coding reference passes 1/2 while exhausting both step budgets. One agent writes a correct artifact but fails to repair its own check; the other output uses placeholder counts without consulting the source. These observations identify action, evidence-use and recovery gaps. They are not training data or proof of local adaptation.
+
 Start with software maintenance and operational diagnostics, where bounded tool outputs and executable verifiers are practical. This is the initial evaluation domain, not a claim that present models already handle its full scope. Add other domains only after their evidence, verifiers and risk requirements are defined.
 
 1. **Freeze a domain contract.** Declare tasks, exclusions, harmful errors, abstention behavior, allowed tools and device limits. Keep task-family/project holdouts separate from fitting, tuning and calibration. Public benchmark tasks marked evaluation-only must never enter training.

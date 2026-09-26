@@ -60,3 +60,33 @@ condition = "AND"
 regexTarget = "match"
 paths = ['''(^|[\\/])evidence[\\/]terminal-pilot-v1[\\/]manifest\.json$''']
 regexes = ['''^qwen_token_count\.py": "566e00eee2a32f4077c6b1980dbc8467d0c9434ff60988b43ef1c62ad8fd864f"$''']
+
+[[allowlists]]
+description = "Exact reviewed BPE and helper checksums in the stronger local coding control"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]terminal-pilot-coder7b-v1[\\/]plan\.json$''']
+regexes = [
+  '''^tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"$''',
+  '''^qwen_token_count\.py": "566e00eee2a32f4077c6b1980dbc8467d0c9434ff60988b43ef1c62ad8fd864f"$''',
+]
+
+[[allowlists]]
+description = "Exact public tokenizer checksums at the recorded Qwen coding-model revision"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]terminal-pilot-coder7b-v1[\\/]tokenizer-source\.json$''']
+regexes = [
+  '''^tokenizer\.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"$''',
+  '''^tokenizer_config\.json": "959e7f1d9a1b7641a6d6ce05ca97b75c7894fcb66cbe5a040406458fb1128ee4"$''',
+]
+
+[[allowlists]]
+description = "Exact public tokenizer-source manifest checksum"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]terminal-pilot-coder7b-v1[\\/]manifest\.json$''']
+regexes = ['''^tokenizer-source\.json": "bfba23cff6b9df699e6f0dc90e61e9765ed0e1e1fb5c832c4ac489aa636132bd"$''']

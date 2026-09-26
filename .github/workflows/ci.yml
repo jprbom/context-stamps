@@ -47,6 +47,7 @@ jobs:
       - run: python experiments/verify_local_learning.py
       - run: python experiments/test_terminal_pilot.py -v
       - run: python experiments/verify_terminal_pilot.py
+      - run: python experiments/verify_terminal_reference.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py

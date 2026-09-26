@@ -53,6 +53,12 @@
       "sha256": "cd1f9745f8a2170c8e3b2ecaf1cdb30c71f961c25a2846443277cb9aa66a8689",
       "source_base_commit": "9dbe64d6d73cfae6f1ccb422556c577bfea92d70",
       "worktree_dirty": true
+    },
+    {
+      "file": "terminal-pilot-hardened.json.gz",
+      "sha256": "71301734be0638f912daf1ef727f9dd79dd84f5742e93f4767eb81f93eb79c6a",
+      "source_base_commit": "962a07bcc692c847bc359e9b3fc0018901e68687",
+      "worktree_dirty": true
     }
   ]
 }
