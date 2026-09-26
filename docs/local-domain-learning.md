@@ -12,7 +12,7 @@ The primary aim is a small, locally deployed domain system that completes demand
 |---|---|---|---|
 | Verified memory | Facts, temporal versions, dependencies, working sets and reusable computation | Provenance, current permissions, independent validation and invalidation | Existing state, compiler and reuse interfaces; application integration remains |
 | Context policy | Which evidence to acquire, which approved expert to use, when to stop or abstain | Separate training and prospective paired evaluation; quality and total resource checks | New small statistical policy, persistent evaluation registry and rollback API; simulated demonstration only |
-| Model parameters | Small task heads, low-rank adapters or a domain SLM | Licensed training data, held-out task families, retention tests, quantized inference parity and device measurements | Prior experimental context heads exist; no automatically improving SLM weights are qualified |
+| Model parameters | Small task heads, low-rank adapters or a domain SLM | Licensed training data, held-out task families, retention tests, quantized inference parity and device measurements | Experimental context heads and one local LoRA fixture fit exist; no automatically improving SLM weights are qualified |
 
 Learning stays in the local environment. The new modules have no network client, telemetry, model loader, shell execution or remote training dependency. A host application still controls its own providers, permissions, storage and adapters. This library does not make an application offline merely because its learning registry is local.
 
@@ -100,3 +100,5 @@ Automatic improvement means this cycle can run locally when the host has authori
 ## Bind the execution protocol
 
 The [typed-tool experiment](typed-tools-development.md) found an execution-relevant schema serialization defect on both local models. Include the exact ordered response-schema bytes, prompt/template, parser, decoder settings and tool versions in a policy environment binding. Sorting JSON for semantic identity must not erase order that changes constrained generation. Requalify when this protocol changes. Completion or artifact existence is not a training label: use an independent outcome verifier. Benchmark development traces remain excluded from training.
+
+The [local RTX adapter experiment](local-adapter-rtx.md) now supplies an actual small weight update and offline reload evidence. It remains inactive because it trails a deterministic control, retains 20/72 workflow failures and causes one new failure. This is a training mechanism for the third level, not a qualified autonomous learning cycle.

@@ -50,6 +50,8 @@ jobs:
       - run: python experiments/verify_terminal_reference.py
       - run: python experiments/test_terminal_tools.py -v
       - run: python experiments/verify_typed_terminal.py
+      - run: python experiments/test_local_adapter.py -v
+      - run: python experiments/verify_local_adapter.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py

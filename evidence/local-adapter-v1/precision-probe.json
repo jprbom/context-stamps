@@ -1,0 +1,66 @@
+{
+  "source_sha256": "6c9e393071cce971976bb9c8975246dfe1b25462cd974127af830bf6b89ae970",
+  "fitting": false,
+  "rows": [
+    {
+      "id": "retention-0",
+      "dtype": "bfloat16",
+      "response": "F"
+    },
+    {
+      "id": "retention-12",
+      "dtype": "bfloat16",
+      "response": "D: 39"
+    },
+    {
+      "id": "retention-23",
+      "dtype": "bfloat16",
+      "response": "B"
+    },
+    {
+      "id": "control-0",
+      "dtype": "bfloat16",
+      "response": "4"
+    },
+    {
+      "id": "control-1",
+      "dtype": "bfloat16",
+      "response": "48"
+    },
+    {
+      "id": "control-2",
+      "dtype": "bfloat16",
+      "response": "F"
+    },
+    {
+      "id": "retention-0",
+      "dtype": "float32",
+      "response": "B"
+    },
+    {
+      "id": "retention-12",
+      "dtype": "float32",
+      "response": "B"
+    },
+    {
+      "id": "retention-23",
+      "dtype": "float32",
+      "response": "B"
+    },
+    {
+      "id": "control-0",
+      "dtype": "float32",
+      "response": "4"
+    },
+    {
+      "id": "control-1",
+      "dtype": "float32",
+      "response": "48"
+    },
+    {
+      "id": "control-2",
+      "dtype": "float32",
+      "response": "F"
+    }
+  ]
+}

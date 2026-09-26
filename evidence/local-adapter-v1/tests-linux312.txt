@@ -1,0 +1,9 @@
+test_authorization_and_stale_dependencies_override_success (__main__.AdapterDataTests.test_authorization_and_stale_dependencies_override_success) ... ok
+test_modified_targets_or_messages_are_refused (__main__.AdapterDataTests.test_modified_targets_or_messages_are_refused) ... ok
+test_train_calibration_test_and_retention_clusters_are_separate (__main__.AdapterDataTests.test_train_calibration_test_and_retention_clusters_are_separate) ... ok
+test_untrusted_self_claim_never_labels_a_success (__main__.AdapterDataTests.test_untrusted_self_claim_never_labels_a_success) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 0.041s
+
+OK

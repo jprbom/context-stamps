@@ -1,0 +1,29 @@
+{
+  "calibration": {
+    "rows": 48,
+    "clusters": 8,
+    "base_correct": 11,
+    "adapter_correct": 35,
+    "new_failures": 0
+  },
+  "test": {
+    "rows": 72,
+    "clusters": 12,
+    "base_correct": 12,
+    "adapter_correct": 52,
+    "new_failures": 1
+  },
+  "retention": {
+    "rows": 24,
+    "clusters": 24,
+    "base_correct": 2,
+    "adapter_correct": 5,
+    "new_failures": 0
+  },
+  "training_seconds": 27.73068650008645,
+  "promotion": false,
+  "provider_charges_usd": 0,
+  "rule_baseline_workflow_correct": 120,
+  "energy_joules": null,
+  "qualification": "engineering exercise only; no automatic model-weight activation"
+}

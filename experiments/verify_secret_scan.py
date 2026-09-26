@@ -90,6 +90,10 @@ def main(executable):
         for key in ('experiments/qwen_token_count.py', 'tokenizer_sha256'):
             line = next(line for line in lines if line.strip().startswith('"' + key + '":'))
             checksum_cases.append((relative, line))
+        relative = Path('evidence/local-adapter-v1/manifest.json')
+        line = next(line for line in (ROOT / relative).read_text().splitlines()
+                    if line.strip().startswith('"tokenization.json":'))
+        checksum_cases.append((relative, line))
         for relative, line in checksum_cases:
             control = scan / relative
             control.parent.mkdir(parents=True, exist_ok=True)

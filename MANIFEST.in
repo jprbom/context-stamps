@@ -31,3 +31,4 @@ recursive-include evidence/enterprise-incremental-v1 *.log
 recursive-include evidence/acquisition-v1 *.json.gz *.log
 recursive-include evidence/engineering-sources-v1 *.gz
 recursive-include evidence/general-learning-v1 *.log
+include evidence/local-adapter-v1/adapter/*.safetensors

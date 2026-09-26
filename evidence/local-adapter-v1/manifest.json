@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "evidence_class": "authored_local_adapter_engineering_not_domain_qualification",
+  "source_hashes": {
+    "experiments/local_adapter_data.py": "1f76e506b8efe8e22acca730db85140750e1e7378feb266712b35de4863c41eb",
+    "experiments/local_adapter_train.py": "9fd773ac5f131bdd69319aa63c79f8bab5766536d870f83ab9ad5b3040bad51e",
+    "experiments/local_adapter_probe.py": "f4d5abed5b8218f5a0fdc5617c5b4ece020f413c394af1075af30972783aa9fb",
+    "experiments/local_adapter_precision_probe.py": "6c9e393071cce971976bb9c8975246dfe1b25462cd974127af830bf6b89ae970",
+    "experiments/local_adapter_reload.py": "a146be188d4ecbe90ad9e11b202a417d85812b7c877ca7958342ba87f1ecfe72",
+    "experiments/test_local_adapter.py": "16c92d2415c469602197919164d14f4edb7013d1a5e3b1602d2d70d1613cc05a",
+    "experiments/verify_local_adapter.py": "a1a0709cf3147df96238c6c71268046957c1b8f66486c30d74365acab1ef63bb",
+    "experiments/plot_local_adapter.py": "5bd033bdced87a061ad0feac49b296891a586c654f3a409ca6815fdf808dab7c"
+  },
+  "files": {
+    "adapter/adapter_config.json": "b68655db82157caad0c761532076aa21d18b8921f3145fa5bdd47141d1e516d5",
+    "adapter/adapter_model.safetensors": "9ffa9fd631dbf024724fe18d3f9ef6140365b785c542cc13fd7c644b1c1250e7",
+    "adapter/BASE_MODEL_LICENSE.txt": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "added-dependency-audit.json": "fdc697c4e9e92f160de5743fbfe1930a6af77a426f1c76bc5d7b5a3ca43a97dd",
+    "base.json": "7fcc1057e7176344da0817914bfc462f1ea9de5510456904f7e9c69f2efa06d4",
+    "data.json": "733b74c1548c2619c00a5b1f6e0d6bff4b01d3704ad927d590b2a4ef4d7813ce",
+    "evaluation.jsonl": "b01ddde53787958ec9a4824306a492a08faac7e523084d3334553febcf844779",
+    "loaded.json": "1f811c952fd675dbd5691face186d32bfc64402646fcce472d8aecd636c00b4c",
+    "MODEL_CARD.md": "bca0d97b4b96df9588ccee451ebb0d6b676408c0cfede8d713107dd50a676d2b",
+    "plan.json": "527134dabfc8a8930943210cefd6a87d05989226269ee62e4365ac8e052e2da4",
+    "precision-probe.json": "44e85f529ffaf8916a3ea16c66f5ac604c328b538665eba3238923b97b2360ad",
+    "reload.json": "e6258e9901599756afb665ed416d07fd7fc9dd4b9784bd325004340d62d8aff3",
+    "shape-probe.json": "61b3901ce27acd168108ca47aa81acabfe73f6d0122975ee7cc6a5052f2c8e96",
+    "summary.json": "116e2ba6cd3063fa6dc4e771356edb5c88eced899844761955f511f3bdd2b998",
+    "tests-linux312.txt": "3b925042e2432c4d44b40b41a782bb672af37e332c0b763712173bf243b5daa9",
+    "tests-win312.txt": "e494ef48470e196138577dc51f5ccab8ab4cba3beded07901b0748934d5e9db2",
+    "tests-win313.txt": "4d9f89e720e0a77e56d72ba1cc4d3f93e164c7d9a67e63237c96076c791b3df4",
+    "tokenization.json": "dd0386717b722d8a9a88654f45ccf17633dbfade36e51eb601a44b6f5461adfa",
+    "trained.json": "18467cb54e976605e33c8c3c68c1ee6d104f29f203b2de21f9abf00ba7f34c83",
+    "training.jsonl": "ae813e5ae1a9a2346bae26ecaddaaa6b0d14bd1058ddef0d40bc76ae3ca0105e"
+  },
+  "training_runs": 1,
+  "activation": false,
+  "provider_charges_usd": 0,
+  "dependency_audit_scope": "Only newly added peft, accelerate and psutil packages; not the entire CUDA environment.",
+  "figure_hashes": {
+    "docs/assets/local-adapter-v1.png": "3591e039e3f7a2575f196be6949221329d29072a52d518b12d96db6eef2114c3",
+    "docs/assets/local-adapter-v1.svg": "40f80c44343b92ba07c330904e0919e9ea8d49390bd5d5b8dde68414392e9b14"
+  }
+}

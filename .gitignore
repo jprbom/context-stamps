@@ -29,3 +29,7 @@ evidence/controller-v1/results.json
 !evidence/controller-v1/checkpoints/selected-int8.safetensors
 !evidence/controller-v1/checkpoints/recurrent-29.safetensors
 !evidence/controller-v2/models/*.safetensors
+
+# Local model weights, training runs and private adaptation inputs.
+.local/
+!evidence/local-adapter-v1/adapter/adapter_model.safetensors

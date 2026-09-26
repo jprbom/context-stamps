@@ -1,0 +1,63 @@
+{
+  "source_sha256": "a146be188d4ecbe90ad9e11b202a417d85812b7c877ca7958342ba87f1ecfe72",
+  "adapter_sha256": "9ffa9fd631dbf024724fe18d3f9ef6140365b785c542cc13fd7c644b1c1250e7",
+  "rows": [
+    {
+      "id": "test-project-0-A",
+      "kind": "base",
+      "prediction": "F",
+      "maximum_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "id": "test-project-8-B",
+      "kind": "base",
+      "prediction": "F",
+      "maximum_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "id": "test-project-10-A",
+      "kind": "base",
+      "prediction": "F",
+      "maximum_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "id": "retention-23",
+      "kind": "base",
+      "prediction": "B",
+      "maximum_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "id": "test-project-0-A",
+      "kind": "adapter",
+      "prediction": "A",
+      "maximum_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "id": "test-project-8-B",
+      "kind": "adapter",
+      "prediction": "F",
+      "maximum_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "id": "test-project-10-A",
+      "kind": "adapter",
+      "prediction": "A",
+      "maximum_logit_difference": 0.0,
+      "passed": true
+    },
+    {
+      "id": "retention-23",
+      "kind": "adapter",
+      "prediction": "B",
+      "maximum_logit_difference": 0.0,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

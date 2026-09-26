@@ -1,0 +1,51 @@
+{
+  "schema": 1,
+  "experiment": "authored_workflow_adapter_engineering_v1",
+  "config": {
+    "seed": 7,
+    "rank": 4,
+    "alpha": 8,
+    "dropout": 0.0,
+    "target_modules": [
+      "q_proj",
+      "v_proj"
+    ],
+    "learning_rate": 0.0002,
+    "epochs": 2,
+    "batch_size": 4,
+    "max_length": 768,
+    "dtype": "bfloat16",
+    "attention": "sdpa",
+    "weight_decay": 0.01,
+    "gradient_clip": 1.0
+  },
+  "sources": {
+    "experiments/local_adapter_train.py": "9fd773ac5f131bdd69319aa63c79f8bab5766536d870f83ab9ad5b3040bad51e",
+    "experiments/local_adapter_data.py": "1f76e506b8efe8e22acca730db85140750e1e7378feb266712b35de4863c41eb"
+  },
+  "data_sha256": "733b74c1548c2619c00a5b1f6e0d6bff4b01d3704ad927d590b2a4ef4d7813ce",
+  "base_manifest_sha256": "7fcc1057e7176344da0817914bfc462f1ea9de5510456904f7e9c69f2efa06d4",
+  "versions": {
+    "torch": "2.11.0+cu128",
+    "transformers": "5.17.0",
+    "peft": "0.21.0",
+    "accelerate": "1.15.0",
+    "safetensors": "0.8.0",
+    "tokenizers": "0.23.2"
+  },
+  "python": "3.12.10",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "provider_charges_usd": 0,
+  "promotion_allowed": false,
+  "controls": [
+    "same BF16 base with adapter disabled",
+    "exact host rule"
+  ],
+  "evaluation": "Fixed final epoch; paired batch-order randomization; no evaluation-directed tuning",
+  "limitations": [
+    "Authored synthetic states; no public benchmark or full coding tasks",
+    "Shared templates; project IDs are fixture clusters, not real independent deployments",
+    "Six-token constrained classification, not free text or tool execution",
+    "No on-device CPU/NPU, quantized, energy or production qualification"
+  ]
+}

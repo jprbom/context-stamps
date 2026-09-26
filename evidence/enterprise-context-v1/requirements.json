@@ -473,11 +473,15 @@
         "context_stamps/local_learning.py",
         "tests/test_local_learning.py",
         "examples/local_learning.py",
-        "evidence/local-learning-v1/manifest.json"
+        "evidence/local-learning-v1/manifest.json",
+        "experiments/local_adapter_train.py",
+        "experiments/verify_local_adapter.py",
+        "evidence/local-adapter-v1/manifest.json",
+        "docs/local-adapter-rtx.md"
       ],
       "status": "partial_implemented",
       "completion_proof": "Restart/race/revocation/security evidence, permitted exports, claim-to-evidence report and reproducible release.",
-      "implementation_note": "Transactional audit, managed dispatch/cancellation/reconciliation and durable signed context integrated with crash/race/revocation tests. Parent callback cancellation, descendant containment, retention/deletion, export policy and independent replication remain. Local Beta-smoothed policy fitting and transactional promotion registry now have simulated adaptation, rejection and rollback evidence. No automatic SLM-weight update, automatic drift detection, signed promotion-audit integration or device-level benefit qualified."
+      "implementation_note": "Transactional audit, managed dispatch/cancellation/reconciliation and durable signed context integrated with crash/race/revocation tests. Parent callback cancellation, descendant containment, retention/deletion, export policy and independent replication remain. Local Beta-smoothed policy fitting and transactional promotion registry now have simulated adaptation, rejection and rollback evidence. No automatic SLM-weight update, automatic drift detection, signed promotion-audit integration or device-level benefit qualified. An actual local 1.5B LoRA fixture fit now completes and reloads: 144 training rows, 544768 parameters, 27.73 seconds. Held-out fixture rows improve 12/72 to 52/72 with one new failure; exact rule is 72/72. Adapter remains inactive; no qualified autonomous weight updates or domain competence."
     }
   ],
   "evidence_boundary": "Existing/draft sources do not prove the complete requirement. No 1.0 or universal capability claim.",

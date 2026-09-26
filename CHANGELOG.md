@@ -4,6 +4,8 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 26 September 2026
 
+- Completed one offline Qwen 1.5B LoRA fixture experiment: 544,768 trainable parameters, 144 training rows, 27.73 seconds on RTX. Frozen base unchanged; adapter reload reproduces one recorded batch exactly. Test letter-selection improves 12/72 to 52/72 but introduces one new failure and trails the exact rule. Adapter stays inactive. Added training/replay code, probes, model card and local integration runbook; no general retention or autonomous deployment claim.
+
 - Added bounded typed file tools, artifact-presence completion checks and an order-preserving response-schema serializer. Retained failed variants, 76 task calls and 24 schema canaries. Both models recover schema-copy correctness (0/3 to 3/3), but corrected typed interfaces still pass 0/2 coding tasks each. Twelve isolated file probes and eleven new boundary tests pass. No model training or task-quality benefit is attributed to this change.
 
 - Added a pinned local Qwen2.5-Coder 7B control: 1/2 selected coding tasks pass, both exhaust the 12-step budget. All 24 calls and native test reports replay offline. This exposes evidence-use, repair-loop and termination gaps; it is a larger-model reference, not learned runtime improvement.

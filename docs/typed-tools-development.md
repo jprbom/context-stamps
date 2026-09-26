@@ -32,4 +32,3 @@ python experiments/verify_typed_terminal.py
 ```
 
 [Complete records and registrations](../evidence/terminal-typed-v1/manifest.json).
-

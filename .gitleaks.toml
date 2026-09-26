@@ -101,3 +101,11 @@ regexes = [
   '''^tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"$''',
   '''^qwen_token_count\.py": "566e00eee2a32f4077c6b1980dbc8467d0c9434ff60988b43ef1c62ad8fd864f"$''',
 ]
+
+[[allowlists]]
+description = "Exact tokenization-record checksum in the local adapter evidence inventory"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]local-adapter-v1[\\/]manifest\.json$''']
+regexes = ['''^tokenization\.json": "dd0386717b722d8a9a88654f45ccf17633dbfade36e51eb601a44b6f5461adfa"$''']

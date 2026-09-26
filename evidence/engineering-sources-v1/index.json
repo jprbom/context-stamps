@@ -83,6 +83,12 @@
       "sha256": "26907beff94407bf1c2268197dd7a990e3e84ebeb720d697d929106598b0dcc5",
       "source_base_commit": "f76a2e2c6a9e46d693a280f66505033ffdbb3c94",
       "worktree_dirty": true
+    },
+    {
+      "file": "local-adapter-initial.json.gz",
+      "sha256": "89c6f4153f015c48f96661bc3205debe42978db29aa879029e0af6a3149396bf",
+      "source_base_commit": "d01f9534d0de3e3221bcfb6f1524688535af12f1",
+      "worktree_dirty": true
     }
   ]
 }
