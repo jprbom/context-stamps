@@ -1,0 +1,16 @@
+{
+  "source_hashes": {
+    "experiments/lme_relations_fast.py": "78eacd44337477e7d6c8eb2442841dad017974b244c99ced65629bad7c9c3b42"
+  },
+  "status": "Exploratory single-question probe; no model calls",
+  "question_id": "0d07143c",
+  "measurements": {
+    "original_lookup_seconds": 0.2562525999965146,
+    "sql_bm25_scoped_seconds": 0.6460048001026735,
+    "original_pack_seconds": 0.7461236000526696,
+    "batch_pack_seconds": 0.28823589999228716
+  },
+  "prompt_equal": true,
+  "ranked_views_equal": true,
+  "reason": "Batched complete-prompt packing looks promising; unindexed scope + bm25 sorting regressed."
+}

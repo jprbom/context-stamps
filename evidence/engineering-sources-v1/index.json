@@ -119,6 +119,12 @@
       "sha256": "7ef2fa7a857e090795944bc2b8e7a21a1d6bc0537be730bc71adbcf25bbfcb9f",
       "source_base_commit": "b3811e964d8bc6487e6ba49f6d51da05f5c86c5a",
       "worktree_dirty": true
+    },
+    {
+      "file": "source-batched-packing-probes-v1.json.gz",
+      "sha256": "f6c9e29a96808d61696d29017b30abca618739a86863e9e4f971824d27ce0d34",
+      "source_base_commit": "b0c1f90cc05e5b4efe6001337d8a5acfd7c4f8ab",
+      "worktree_dirty": true
     }
   ]
 }

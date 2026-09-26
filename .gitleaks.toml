@@ -240,3 +240,27 @@ condition = "AND"
 regexTarget = "match"
 paths = ['''(^|[\\/])evidence[\\/]lme-relations-v2[\\/]registration\.json$''']
 regexes = ['''^tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"$''']
+
+[[allowlists]]
+description = "Exact reviewed public source/tokenizer checksum in CPU packing evidence"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]batched\-packing\-v1[\\/]registration\.json$''']
+regexes = ['''^tokenizer_sha256":\ "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"$''']
+
+[[allowlists]]
+description = "Exact reviewed public source/tokenizer checksum in CPU packing evidence"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]batched\-packing\-v1[\\/]manifest\.json$''']
+regexes = ['''^tokenizer\-canaries\.json":\ "c468e98096c0684a3f0d336473736f44712fdf6d9d7d3e7c6cf599433a30e401"$''']
+
+[[allowlists]]
+description = "Exact reviewed public source/tokenizer checksum in CPU packing evidence"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]batched\-packing\-v1[\\/]probes[\\/]attempt\-1\.json$''']
+regexes = ['''^token_counter\.py":\ "693ae2cf95008077f2525c7865b1eb0becac688d7b656543c1a969322f3d035f"$''']

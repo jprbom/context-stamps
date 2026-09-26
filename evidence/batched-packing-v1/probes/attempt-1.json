@@ -1,0 +1,16 @@
+{
+  "source_hashes": {
+    "context_stamps/token_counter.py": "693ae2cf95008077f2525c7865b1eb0becac688d7b656543c1a969322f3d035f",
+    "experiments/lme_relations_fast.py": "2518a38ea42b6101900140b02535c4e8fee4c8d21415b471f7311019e282bdb6"
+  },
+  "status": "Exploratory one-question probe; no model calls; not selected for a full benchmark",
+  "question_id": "0d07143c",
+  "measurements": {
+    "counter_initialization_seconds": 0.45569269999396056,
+    "original_lookup_seconds": 0.28209289989899844,
+    "sql_scoped_lookup_seconds": 0.2848682999610901,
+    "segment_pack_seconds": 0.7693453000392765
+  },
+  "prompt_equal": true,
+  "reason": "Segment counting did not remove repeated pretokenization overhead; no established latency gain. SQL rank ordering still evaluates global ranking before scope filtering."
+}

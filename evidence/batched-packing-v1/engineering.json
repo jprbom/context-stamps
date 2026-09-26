@@ -1,0 +1,36 @@
+{
+  "core": {
+    "tests": 388,
+    "failures": 0,
+    "skips": 0,
+    "log_sha256": "4244455614c96129c4608606fe672a97f3cd166e12f8d1e7b47d9578f4a6c243"
+  },
+  "new_greedy_boundary_tests": 9,
+  "sequential_oracle_comparisons": 400,
+  "windows_evidence_tests": 6,
+  "linux_greedy_tests": 9,
+  "linux_evidence_tests": 6,
+  "linux_replayed_pairs": 432,
+  "sdist_replayed_pairs": 432,
+  "wheel_contains_core_helper": true,
+  "local_tokenizer_example": {
+    "selected": [
+      0,
+      2,
+      3
+    ],
+    "tokens": 67
+  },
+  "ruff": "pass",
+  "bandit": "pass",
+  "scanner_controls": 150,
+  "added_exact_public_checksum_exclusions": 3,
+  "expanded_archived_sources": 4,
+  "expanded_archived_source_findings": 0,
+  "export_note": "Initial export used a relative output path and stopped before creating a manifest. Partial export preserved outside the repository; absolute path validation corrected. Measurement/source logs unchanged.",
+  "limits": [
+    "No new model call or weight update",
+    "No whole-request, energy, peak-memory, concurrency or edge-device qualification",
+    "Increased process CPU cost; five elapsed-time regressions retained"
+  ]
+}

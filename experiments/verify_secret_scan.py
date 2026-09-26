@@ -117,6 +117,14 @@ def main(executable):
             line = next(line for line in (ROOT / relative).read_text().splitlines()
                         if line.strip().startswith('"tokenizer_sha256":'))
             checksum_cases.append((relative, line))
+        for filename, key in (
+                ('registration.json', 'tokenizer_sha256'),
+                ('manifest.json', 'tokenizer-canaries.json'),
+                ('probes/attempt-1.json', 'context_stamps/token_counter.py')):
+            relative = Path('evidence/batched-packing-v1') / filename
+            line = next(line for line in (ROOT / relative).read_text().splitlines()
+                        if line.strip().startswith('"' + key + '":'))
+            checksum_cases.append((relative, line))
         for relative, line in checksum_cases:
             control = scan / relative
             control.parent.mkdir(parents=True, exist_ok=True)

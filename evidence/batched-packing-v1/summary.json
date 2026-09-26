@@ -1,0 +1,68 @@
+{
+  "groups": {
+    "structure": {
+      "baseline": {
+        "n": 144,
+        "total_seconds": 28.299589399830438,
+        "median_seconds": 0.20638925000093877,
+        "p95_seconds": 0.24706850996008142,
+        "total_process_cpu_seconds": 27.484375,
+        "median_search_seconds": 0.02939059998607263,
+        "median_pack_seconds": 0.17395985004259273
+      },
+      "batched": {
+        "n": 144,
+        "total_seconds": 15.315916699706577,
+        "median_seconds": 0.1072566999355331,
+        "p95_seconds": 0.13220642997766846,
+        "total_process_cpu_seconds": 32.4375,
+        "median_search_seconds": 0.03031200001714751,
+        "median_pack_seconds": 0.07701740000629798
+      }
+    },
+    "scoped": {
+      "baseline": {
+        "n": 144,
+        "total_seconds": 42.33454899920616,
+        "median_seconds": 0.28447404998587444,
+        "p95_seconds": 0.4252381150261499,
+        "total_process_cpu_seconds": 41.578125,
+        "median_search_seconds": 0.1334658499690704,
+        "median_pack_seconds": 0.16943895001895726
+      },
+      "batched": {
+        "n": 144,
+        "total_seconds": 30.313535699038766,
+        "median_seconds": 0.21942725003464147,
+        "p95_seconds": 0.31695270498166794,
+        "total_process_cpu_seconds": 47.046875,
+        "median_search_seconds": 0.139079499989748,
+        "median_pack_seconds": 0.07998439995571971
+      }
+    },
+    "relations": {
+      "baseline": {
+        "n": 144,
+        "total_seconds": 117.85303700051736,
+        "median_seconds": 0.8734669500263408,
+        "p95_seconds": 1.1449498550384305,
+        "total_process_cpu_seconds": 114.765625,
+        "median_search_seconds": 0.36327695002546534,
+        "median_pack_seconds": 0.5591282000532374
+      },
+      "batched": {
+        "n": 144,
+        "total_seconds": 85.58276619983371,
+        "median_seconds": 0.5947843499598093,
+        "p95_seconds": 0.8089841599809006,
+        "total_process_cpu_seconds": 119.625,
+        "median_search_seconds": 0.3629144999431446,
+        "median_pack_seconds": 0.27466504997573793
+      }
+    }
+  },
+  "pairs": 432,
+  "all_equal": true,
+  "model_calls": 0,
+  "qualification": "Warm CPU context compilation only; no model generation, whole-request speedup, new task-quality score or edge deployment qualification"
+}

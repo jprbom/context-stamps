@@ -1,0 +1,19 @@
+{
+  "files": {
+    "completion.json": "ffc07d74513774f3c663b2a42133cbd426815dacdb872d8e23c9d0f2dec66208",
+    "initialization.json": "8fb9adb95c66ae3c8ecea6a83885c130103342ed42ad02d0c5cfb40237a0d1dc",
+    "records.jsonl": "7142717bb4bf1db708d76102d4fd870c03d78682a99e57c99f339af271a54220",
+    "registration.json": "6965fc17fd4f8ddf2fcc47a4ba34560c87d711c2808dee73a0ebd4a5ba72cfdc",
+    "summary.json": "11b613191f7e4d51871fb09b8711d56798cad5ef2e56a1ac9ce4ff71eab0784e",
+    "tokenizer-canaries.json": "c468e98096c0684a3f0d336473736f44712fdf6d9d7d3e7c6cf599433a30e401",
+    "probes/attempt-1.json": "4dbb24e07800a45838c5fb60b4072a1958651f4743215c610ebd40088fd19b5b",
+    "probes/attempt-2.json": "946deee4871af7c2fbf0b97980a026d01cf5ec92f2491ca1ad2c966a53fcf698",
+    "probes/attempt-3.json": "86cc99d717555a7b4f9608a26440930d3bf4961ab132a301c64338b1695088b7"
+  },
+  "tools": {
+    "experiments/export_batched_packing.py": "dac02eb488efb2091f122b3f8d6c04c6c4c3407cd9e7197b1b3f4f07416ce073",
+    "experiments/verify_batched_packing.py": "b66835a78b79e6325efdfd79d10e3f548255b1e5b4cfb0c4403efcf3dadad4d4"
+  },
+  "archive": "evidence/engineering-sources-v1/source-batched-packing-probes-v1.json.gz",
+  "archive_sha256": "f6c9e29a96808d61696d29017b30abca618739a86863e9e4f971824d27ce0d34"
+}

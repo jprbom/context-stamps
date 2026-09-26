@@ -12,7 +12,11 @@ The 32-byte capsule is a routing identity across eight bounded facets. It does n
 
 ## Start here
 
-The latest [page and relation-memory comparison](evidence/lme-relations-v2/README.md) completes **432 local requests**. Page filtering changes native credit **14→17/72 for Qwen2.5 1.5B** and **16→16/72 for Qwen2.5-Coder 7B**. Relation packets regress to **13 and 9/72** and increase summed request time **76% and 36%** despite slightly fewer tokens. Both treatments remain inactive. Full live request timings, all regressions and a separate stricter reference-agreement check are published. [API and local RTX steps](docs/page-relational-memory.md) · `python examples/page_relational_memory.py`.
+The latest [CPU compiler comparison](evidence/batched-packing-v1/README.md) adds optional exact batched packing. Across **432 pairs / 864 compilations**, all 216 prompts, token counts and selected sources match the frozen baseline. Median compilation falls **206→107 ms**, **284→219 ms** and **873→595 ms** for structural, page-filtered and relation contexts. Process CPU time rises **18%, 13% and 4%**. This is a latency tradeoff; it does not fix answer-quality failures or demonstrate whole-model/edge-device gains. [Library API and runnable local-tokenizer example](docs/batched-context-packing.md).
+
+![Exact context compilation latency and CPU cost](docs/assets/batched-packing-v1.png)
+
+The preceding [page and relation-memory comparison](evidence/lme-relations-v2/README.md) completes **432 local requests**. Page filtering changes native credit **14→17/72 for Qwen2.5 1.5B** and **16→16/72 for Qwen2.5-Coder 7B**. Relation packets regress to **13 and 9/72** and increase summed request time **76% and 36%** despite slightly fewer tokens. Both treatments remain inactive. Full live request timings, all regressions and a separate stricter reference-agreement check are published. [API and local RTX steps](docs/page-relational-memory.md) · `python examples/page_relational_memory.py`.
 
 ![Page selection and relation-packet quality and cost](docs/assets/lme-relations-v2.png)
 

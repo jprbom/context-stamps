@@ -77,6 +77,8 @@ jobs:
       - run: python experiments/test_lme_relation_evidence.py -v
       - run: python experiments/verify_lme_relations.py
       - run: python experiments/verify_relation_preparation.py
+      - run: python experiments/test_batched_packing_evidence.py -v
+      - run: python experiments/verify_batched_packing.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py

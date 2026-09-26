@@ -45,3 +45,5 @@ evidence/lme-structure-v1/engineering.json -text whitespace=cr-at-eol
 docs/assets/lme-relations-v2.svg -text whitespace=cr-at-eol,-blank-at-eol
 evidence/lme-relations-preparation-v1/superseded.json -text whitespace=cr-at-eol
 evidence/lme-relations-v2/core-tests.txt whitespace=-blank-at-eol
+docs/assets/batched-packing-v1.svg -text whitespace=cr-at-eol,-blank-at-eol
+evidence/batched-packing-v1/core-tests.txt whitespace=-blank-at-eol

@@ -1,0 +1,13 @@
+{
+  "source_hashes": {
+    "experiments/lme_relations_fast.py": "74e7d3d20ed16cc8b22bd5238bde8518fec38658ae834aca20e2ce995bb1e823"
+  },
+  "status": "Exploratory single-question probe; no model calls; rejected query plan",
+  "question_id": "0d07143c",
+  "measurements": {
+    "metadata_initialization_seconds": 1.1306119000073522,
+    "lookup_seconds": 8.932481299969368
+  },
+  "ranked_views_equal": true,
+  "reason": "Metadata-index rowid IN plan caused repeated full-text work and a large regression. Retain original retrieval."
+}
