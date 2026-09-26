@@ -6,6 +6,8 @@ This is the active implementation objective, superseding the earlier general-lea
 
 **Target:** given a task, select fresh, authorized, sufficient context within a declared economic budget, execute an appropriate decision/tool/model, and provide a receipt explaining the evidence and computation used.
 
+**Primary application target:** robust small domain models that operate and improve locally within edge-device constraints. Evaluate domain task competence, uncertainty, recovery and retention alongside complete latency, RAM/VRAM, energy and learning cost. The seven planes support that target; they are not an end in themselves. [Local domain learning](local-domain-learning.md) defines the statistical policy update, promotion and rollback path, its present engineering evidence, and remaining model/device qualification. “Domain AGI” remains an ambition, not a measured property of this release.
+
 “Smallest,” “causally sufficient” and “economically optimal” are research objectives, not current guarantees. Exact minimality can be proved only for a bounded candidate set with a declared cost function and requirements. Declared dependency closure does not establish causal discovery. Learned sufficiency probabilities require calibration and an explicit scope.
 
 ## Seven planes and current evidence

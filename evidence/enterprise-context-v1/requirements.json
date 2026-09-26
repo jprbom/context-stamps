@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "objective_sha256": "66552f64c1621f8e95b3f0623fae6dcfaa1c5031e833ed2568d4c1a23b06d4ed",
+  "objective_sha256": "f260d389fd50c12f89dd443545629592ebfabd499086417f96e648e22aa1af62",
   "source_baseline": "1c4024d529b0be48ade3dfe37a9db2cf2f0bf3ca",
   "active_objective": "Enterprise Context Intelligence Runtime",
   "supersedes": "Earlier 96-task general-learning programme; preserve only work aligned with this objective.",
@@ -382,13 +382,17 @@
         "profile before residency",
         "CPU supporting work",
         "maximize measured GPU throughput",
-        "one GPU workload"
+        "one GPU workload",
+        "small-model domain competence first",
+        "prospective local adaptation and retention",
+        "actual edge-device memory, latency, energy and offline operation"
       ],
       "current_sources": [
         "experiments/profile_context_training.py",
         "evidence/enterprise-context-v1/gpu-capacity.json",
         "experiments/profile_context_precision.py",
-        "evidence/enterprise-gpu-v1/capacity.json"
+        "evidence/enterprise-gpu-v1/capacity.json",
+        "docs/local-domain-learning.md"
       ],
       "status": "partial_measured",
       "completion_proof": "Pinned licensed candidates, complete task and resource accounting, no simultaneous-model fit assumption.",
@@ -435,7 +439,11 @@
         "retention",
         "source/model/data licenses",
         "Prashant Jagtap attribution",
-        "independent replication"
+        "independent replication",
+        "local statistical learning",
+        "fresh evaluation clusters",
+        "persistent candidate promotion and rollback",
+        "learning cost amortization"
       ],
       "current_sources": [
         "context_stamps/experience.py",
@@ -451,13 +459,22 @@
         "evidence/enterprise-execution-v1/local-cpu-v3/manifest.json",
         "context_stamps/state_store.py",
         "context_stamps/working_set.py",
-        "evidence/enterprise-storage-v1/local-cpu/manifest.json"
+        "evidence/enterprise-storage-v1/local-cpu/manifest.json",
+        "context_stamps/local_policy.py",
+        "context_stamps/local_learning.py",
+        "tests/test_local_learning.py",
+        "examples/local_learning.py",
+        "evidence/local-learning-v1/manifest.json"
       ],
       "status": "partial_implemented",
       "completion_proof": "Restart/race/revocation/security evidence, permitted exports, claim-to-evidence report and reproducible release.",
-      "implementation_note": "Transactional audit, managed dispatch/cancellation/reconciliation and durable signed context integrated with crash/race/revocation tests. Parent callback cancellation, descendant containment, retention/deletion, export policy and independent replication remain."
+      "implementation_note": "Transactional audit, managed dispatch/cancellation/reconciliation and durable signed context integrated with crash/race/revocation tests. Parent callback cancellation, descendant containment, retention/deletion, export policy and independent replication remain. Local Beta-smoothed policy fitting and transactional promotion registry now have simulated adaptation, rejection and rollback evidence. No automatic SLM-weight update, automatic drift detection, signed promotion-audit integration or device-level benefit qualified."
     }
   ],
   "evidence_boundary": "Existing/draft sources do not prove the complete requirement. No 1.0 or universal capability claim.",
-  "latest_engineering_evidence": "evidence/acquisition-v1/engineering-v2/manifest.json"
+  "latest_engineering_evidence": "evidence/local-learning-v1/engineering.json",
+  "previous_objective_sha256": "66552f64c1621f8e95b3f0623fae6dcfaa1c5031e833ed2568d4c1a23b06d4ed",
+  "primary_application_objective": "Small domain models that operate and improve locally within explicit correctness, latency, memory, energy and cost limits.",
+  "capability_boundary": "Domain AGI is an ambition, not an achieved or tested capability. Simulated local-policy adaptation is not qualified SLM weight improvement or edge deployment.",
+  "adaptation_contract": "Verified memory updates; statistical context-policy proposals; fresh paired evaluation with persistent error-budget accounting; reversible activation. Model-weight adaptation and automatic drift detection remain unqualified."
 }

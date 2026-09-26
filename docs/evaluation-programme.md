@@ -4,6 +4,8 @@ By Prashant Jagtap
 
 The question is whether Context Stamps improves a particular model's task outcome or reduces its total resource use while preserving required quality. A model leaderboard alone cannot answer that question. Compare the same model, agent scaffold, tools and task budget with and without the runtime; report comparisons between different models separately.
 
+The primary target is a locally improving small domain model under device constraints. Prioritize prospective software/operations tasks with executable checks, then measure retention after adaptation and total device cost. Broader benchmarks are controls for that objective. The [local learning protocol](local-domain-learning.md) adds frozen local candidates, fresh task clusters, repeated-experiment accounting and rollback. Its current records are simulations of the learning controls, not added model benchmark scores. All frontier calls remain disabled without a separately authorized API budget.
+
 **Status, 26 September 2026:** the independent [LongBench v2 reader pilot](longbench-local-pilot.md) completed 30 local calls on ten short-context tasks: full context 4/10, BM25 4/10, no context 3/10. This establishes baseline plumbing, not a runtime benefit or frontier ranking. Seventeen evaluation-boundary tests pass. Harbor 0.23.0 starts locally with Docker 29.7.2; no coding-agent trial has run, and sandbox/task qualification remains. The separate native Inspect ARC preparation remains blocked before generation by Windows Application Control on a pandas DLL. The 304-test acquisition revision passed all six GitHub CI jobs. Engineering checks and model accuracy remain separate evidence.
 
 ## Harness selection

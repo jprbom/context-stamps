@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "tests": 328,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "python_environment": "Python 3.12.10; existing CUDA environment with GPU hidden for CPU tests",
+  "log": "evidence/local-learning-v1/full-suite.txt",
+  "log_sha256": "febe41112f9782d35a80dffae9f8d2cb0fdfca1254531a4b70801b25d36075fd",
+  "implementation_manifest": "evidence/local-learning-v1/manifest.json",
+  "source_note": "Local policy module docstring subsequently corrected from empirical-Bayes to Beta-smoothed; pre-edit implementation bytes retained in source archive. Executable statements unchanged.",
+  "scope": "Engineering regression tests; not model accuracy or edge-device qualification."
+}

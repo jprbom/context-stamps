@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "evidence_class": "deterministic_simulation_not_benchmark",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "model_calls": 0,
+  "gpu_training_runs": 0,
+  "training_task_clusters": 60,
+  "training_paired_action_observations": 120,
+  "evaluation_fixture_clusters": 1200,
+  "tests_exit_code": 0,
+  "tests_sha256": "1bf34114e68bed9e339d182e07faef2d24b94bd5c233aaebdeb1324c29a24456",
+  "results_sha256": "93648d45b92ce965ab410d71f4402b3cb5f0e4c6d589520abe8243ba1d1a4105",
+  "source_hashes": {
+    "context_stamps/local_learning.py": "4e3ee71a78d5eab62b9b60122f0191290490c5598283885a4eea5e7e1b448970",
+    "context_stamps/local_policy.py": "4ad9d97d878eb8a4ea6b3110eee8311235425d5543c93bf3b47b3ab301d5abeb",
+    "context_stamps/decisions/calibration.py": "cba2d81351c5b5212af361c8d82180731a7b934fe61c4e37b92af53ebb0182d7",
+    "context_stamps/experience.py": "d4e4333c43dff8fe30a06836f005141beb9a105da8dfe1fad39a28368e436a4b",
+    "context_stamps/security.py": "2e38aa395acf61abe39f5fa7b0b506996425afb136860969ec7df12fb52e9b34",
+    "examples/local_learning.py": "a78f85f0fee1e5f746684dad6b311c8cd3764867d07a21b68d57b24df79c7fe5",
+    "tests/test_local_learning.py": "80afbad08c462480534d357126137b5c3dc25e39b2d67f31ece967edebb7b53d",
+    "experiments/validate_local_learning.py": "908c27892075bf1f3f2eb125741bf75565a74d2eaacf96255ae5fb4456bfedbe"
+  }
+}

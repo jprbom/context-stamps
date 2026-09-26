@@ -4,6 +4,8 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 26 September 2026
 
+- Made locally improving small domain models the primary application objective. Added a bounded Beta-smoothed cell policy and local SQLite candidate registry with frozen plans, fresh task IDs, error-budget accounting across rounds, paired quality/resource checks, activation and rollback. Added 24 boundary tests and a replayable simulation: 60 training fixtures and two 600-task evaluation fixtures. No new SLM weights, GPU training, model-quality gain or edge-device qualification is claimed.
+
 - Added a pinned local LongBench v2 control runner with native prompts/scoring, whole-input token checks, retained failures, immutable registrations and offline evidence replay. Thirty RTX calls cover ten short-context tasks across six domains: full context 4/10, BM25 4/10, no context 3/10. No runtime gain or full-benchmark claim. Ten new evaluation-boundary tests pass alongside seven existing provider checks. Harbor 0.23.0 CLI preflight also passes; coding-agent task/sandbox qualification remains.
 
 - Added a bounded optional acquisition planner, portable three-head predictor and whole-trajectory risk accounting. Six RTX fits use public training partitions; 788 calibration and 3,677 regression trajectories retain all false early stops. No scope passed the 5% error gate; unqualified scopes keep the full candidate pool and skip unused feature/model work. Added 14 targeted tests, a complete example, source-bound evidence, model cards and a research figure; all 304 local tests pass. No default routing change, answer-sufficiency qualification or end-to-end token/latency claim.

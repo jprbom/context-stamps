@@ -44,6 +44,7 @@ jobs:
       - run: python experiments/test_longbench_eval.py -v
       - run: python experiments/verify_longbench.py
       - run: python experiments/verify_harbor_preflight.py
+      - run: python experiments/verify_local_learning.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py
@@ -61,6 +62,7 @@ jobs:
       - run: python examples/managed_decision.py
       - run: python examples/persistent_context.py
       - run: python examples/incremental_metrics.py
+      - run: python examples/local_learning.py
       - run: python examples/adaptive_acquisition.py --model evidence/acquisition-v1/mlp32-seed29.json
       - run: scqr encode examples/facets.json
       - run: python examples/local_slm.py --dry-run

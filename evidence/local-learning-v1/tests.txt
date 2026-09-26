@@ -1,0 +1,29 @@
+test_current_binding_and_host_authorization_required (test_local_learning.LocalPolicyTests.test_current_binding_and_host_authorization_required) ... ok
+test_incomplete_counterfactuals_and_duplicate_tasks_rejected (test_local_learning.LocalPolicyTests.test_incomplete_counterfactuals_and_duplicate_tasks_rejected) ... ok
+test_invalid_cells_outliers_and_confidence_labels_rejected (test_local_learning.LocalPolicyTests.test_invalid_cells_outliers_and_confidence_labels_rejected) ... ok
+test_local_fit_learns_different_context_actions (test_local_learning.LocalPolicyTests.test_local_fit_learns_different_context_actions) ... ok
+test_under_supported_and_unseen_cells_use_baseline (test_local_learning.LocalPolicyTests.test_under_supported_and_unseen_cells_use_baseline) ... ok
+test_changed_binding_returns_no_policy (test_local_learning.RegistryTests.test_changed_binding_returns_no_policy) ... ok
+test_no_optional_stopping_or_second_result (test_local_learning.RegistryTests.test_no_optional_stopping_or_second_result) ... ok
+test_plan_mutation_and_duplicate_evaluation_rejected (test_local_learning.RegistryTests.test_plan_mutation_and_duplicate_evaluation_rejected) ... ok
+test_rejection_keeps_baseline (test_local_learning.RegistryTests.test_rejection_keeps_baseline) ... ok
+test_restart_promotion_and_rollback_revoke (test_local_learning.RegistryTests.test_restart_promotion_and_rollback_revoke) ... ok
+test_reused_training_validation_and_duplicates_rejected (test_local_learning.RegistryTests.test_reused_training_validation_and_duplicates_rejected) ... ok
+test_rollback_cancels_pending_promotion (test_local_learning.RegistryTests.test_rollback_cancels_pending_promotion) ... ok
+test_round_spending_survives_abandonment_and_restart (test_local_learning.RegistryTests.test_round_spending_survives_abandonment_and_restart) ... ok
+test_two_connections_cannot_register_pending_candidates (test_local_learning.RegistryTests.test_two_connections_cannot_register_pending_candidates) ... ok
+test_abstentions_remain_failures (test_local_learning.StatisticalGateTests.test_abstentions_remain_failures) ... ok
+test_amortized_learning_cost_can_reject (test_local_learning.StatisticalGateTests.test_amortized_learning_cost_can_reject) ... ok
+test_equally_bad_baseline_does_not_qualify (test_local_learning.StatisticalGateTests.test_equally_bad_baseline_does_not_qualify) ... ok
+test_gains_elsewhere_do_not_cancel_new_harm (test_local_learning.StatisticalGateTests.test_gains_elsewhere_do_not_cancel_new_harm) ... ok
+test_invalid_numbers_and_duplicate_tasks (test_local_learning.StatisticalGateTests.test_invalid_numbers_and_duplicate_tasks) ... ok
+test_small_perfect_sample_is_not_qualification (test_local_learning.StatisticalGateTests.test_small_perfect_sample_is_not_qualification) ... ok
+test_tail_latency_is_separate_from_average_cost (test_local_learning.StatisticalGateTests.test_tail_latency_is_separate_from_average_cost) ... ok
+test_unknown_outlier_memory_and_safety_fail_closed (test_local_learning.StatisticalGateTests.test_unknown_outlier_memory_and_safety_fail_closed) ... ok
+test_wall_cost_cannot_exclude_pipeline_overhead (test_local_learning.StatisticalGateTests.test_wall_cost_cannot_exclude_pipeline_overhead) ... ok
+test_zero_error_exact_bound_and_cost_range (test_local_learning.StatisticalGateTests.test_zero_error_exact_bound_and_cost_range) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.338s
+
+OK

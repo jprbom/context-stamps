@@ -35,6 +35,12 @@
       "sha256": "bea125b2d74ba78c765b026624b0bf77f995a4b4847757e99005549d4abcc2c0",
       "source_base_commit": "4ea7cc6ca489c3a150ce8e7a5ddd2db7fd3d640b",
       "worktree_dirty": true
+    },
+    {
+      "file": "local-learning-initial.json.gz",
+      "sha256": "417640ffec6fe6c9ae21657cdc60bd35ddb4639e5a9df01a3f4f0e8df4d117e9",
+      "source_base_commit": "ab056021d3aa60eaa4e910efb3ae11218139f1c3",
+      "worktree_dirty": true
     }
   ]
 }
