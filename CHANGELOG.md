@@ -4,6 +4,8 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 26 September 2026
 
+- Added `AuditStore`: transactional reference-only experience history, actor-bound keyed receipts, exact-event retry handling, strict plan/outcome ordering, current authorization checks and external checkpoint verification. Added an integrated context-to-decision-to-audit example, 19 audit tests and local append/reopen measurements. The full local suite passes 201 tests; external action execution/cancellation and production-scale reliability remain unqualified.
+
 - Added research interfaces for canonical temporal/epistemic state, finite negative knowledge, explicit conflict resolution and serialized-cost context compilation. Added typed batch decisions with scoped calibration, packet integrity bindings and mutation/revocation rejection. The 182-test CPU run and 80 synthetic compiler measurements retain their source hashes and limits; no new model-quality gain is claimed.
 
 - Added `ContextRuntime` for registered experts, exact dependency closure, tokenizer-backed budgets, bounded evidence recovery, outcome verification and source-bound computation reuse.

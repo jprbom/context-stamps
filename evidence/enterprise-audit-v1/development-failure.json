@@ -1,0 +1,14 @@
+{
+  "stage": "initial audit unit tests",
+  "tests": 16,
+  "failures": 0,
+  "errors": 2,
+  "source_base": "7e71e5abb4db069b9f1db9874b82d63b04fe5e3f",
+  "test_source_sha256": "dd06c6f737b538a85ac86a418d3a8234d4369b881df96c873c8a02b7fd97f0e7",
+  "cause": "Two test fixtures used sqlite3.Connection as a context manager without closing it. Windows TemporaryDirectory cleanup failed with WinError 32 on audit.sqlite. The assertions completed; this was a fixture handle-lifetime error.",
+  "affected_tests": [
+    "test_external_checkpoint_detects_complete_valid_prefix_rollback",
+    "test_signed_tamper_detection_poisoned_instance_and_append_only_trigger"
+  ],
+  "fix": "Use contextlib.closing around raw fixture connections, retaining the transaction context where writes need commit."
+}

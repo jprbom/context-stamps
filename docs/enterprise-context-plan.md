@@ -18,7 +18,7 @@ This is the active implementation objective, superseding the earlier general-lea
 | Context compiler | Authorization-first temporal compiler, conflict policy, exact bounded closure selection and token/byte budgets | Faithful semantic compression, learned value/sufficiency and adaptive acquisition |
 | Decision/routing | Choice/Boolean/Score batch API, verifier checks and scoped calibration certificates | Real held-out calibration, learned providers and matched external controls |
 | Model execution | Explicit host-owned callbacks and local reader pilots | Shared reader/VLM/tool contract, hard deadlines, side-effect execution semantics and measured portability |
-| Learning/audit | Experiment manifests, exact reuse and bounded in-memory outcomes | Durable reference-only events, prospective labels, policy candidate evaluation and immutable receipts |
+| Learning/audit | Transactional reference-only experience journal, keyed receipts, experiment manifests and exact reuse | Managed dispatch/reconciliation, persistent context state, prospective labels and policy candidate evaluation |
 
 The package remains at v0.5.0. This plan does not publish a 1.0 release or change existing evidence. Use the current controller-v2/runtime-v1 reports for numbers; the revised objective contains an older retrieval table that must not silently replace those results.
 
@@ -107,6 +107,6 @@ Release proof requires reproducible CPU/RTX profiles, source/data/model hashes, 
 
 ## Immediate work
 
-The research worktree is isolated from the public main branch. The original two 155-test baseline records and failed runner attempt remain intact. The new [temporal state/compiler/decision layer](enterprise-state.md) passes all 182 tests without skips and records 80 synthetic compilation measurements. A complete offline example checks a research experiment and rejects reuse after revocation. These are engineering results; real decision calibration, learned sufficiency and public benchmark gains remain unproven.
+The research worktree is isolated from the public main branch. The current full suite passes 201 tests without skips. The [temporal state/compiler/decision layer](enterprise-state.md) has 80 synthetic compilation measurements; the [durable audit layer](durable-audit.md) adds 19 tests, 1,152 measured local appends and a complete offline context-to-decision-to-journal example. All earlier records and failures remain intact. These are engineering results; real decision calibration, learned sufficiency and public benchmark gains remain unproven.
 
-The earlier training-only RTX probe selected batch 128 for both existing controller variants. Use the GPU for training and numerical/performance qualification; keep state, preparation and routine verification on CPU. Next: durable reference-only audit and execution/cancellation semantics, then virtual memory/incremental computation and prospective datasets for a new context model. Preserve the failed student/router controls and all existing qualified retrieval routes.
+The initial training-only RTX probe selected batch 128 for both existing controller variants; longer windows found substantial variation and no consistent BF16 benefit. Use the GPU for training and numerical/performance qualification; keep state, preparation and routine verification on CPU. Next: managed dispatch, execution/cancellation and reconciliation, then virtual memory/incremental computation and prospective datasets for a new context model. Preserve the failed student/router controls and all existing qualified retrieval routes.

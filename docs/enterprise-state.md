@@ -96,7 +96,7 @@ Use a new output directory for each run. `verify_enterprise_state.py` checks the
 
 ## Remaining boundaries
 
-The state and integrity key are in-process. There is no durable ledger, remote authentication server, distributed transaction protocol or persistent lifecycle manager yet. An `AccessScope` must come from the trusted application, never unchecked client input. The host must allow-list model destinations and prevent unauthorized external transmission.
+The context state and its packet-integrity key are in-process. The separate [audit journal](durable-audit.md) can now retain reference-only experience records, but does not persist the context state itself. There is no remote authentication server, distributed transaction protocol or persistent lifecycle manager yet. An `AccessScope` must come from the trusted application, never unchecked client input. The host must allow-list model destinations and prevent unauthorized external transmission.
 
 Permission and state changes during a callback invalidate its result. Callbacks execute outside the state lock, but cannot yet be forcibly cancelled. A deadline rejects late output; it does not stop ongoing work or undo a side effect. No external side effects should be authorized from a decision without a fresh host check.
 

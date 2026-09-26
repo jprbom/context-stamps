@@ -14,9 +14,11 @@ The 32-byte capsule is a routing identity across eight bounded facets. It does n
 
 **Active research direction:** an [Enterprise Context Intelligence Runtime](docs/enterprise-context-plan.md) that owns versioned evidence, compiles sufficient authorized context for interchangeable models, and records why each decision used it. The [requirement register](evidence/enterprise-context-v1/requirements.json) separates existing components from unfinished work. This is a development programme, not a 1.0 capability claim.
 
-On the research branch, the [temporal state, compiler and typed-decision APIs](docs/enterprise-state.md) now support historical knowledge cutoffs, verified evidence kinds, finite negative knowledge, conflict handling, dependency-aware context selection and batched Boolean/Choice/Score results. Run `python examples/enterprise_decision.py` for an offline example. The full local suite passes 182 tests; this is engineering evidence, not a newly trained model or a public benchmark gain.
+On the research branch, the [temporal state, compiler and typed-decision APIs](docs/enterprise-state.md) now support historical knowledge cutoffs, verified evidence kinds, finite negative knowledge, conflict handling, dependency-aware context selection and batched Boolean/Choice/Score results. Run `python examples/enterprise_decision.py` for an offline example. These are tested engineering interfaces, not a newly trained model or a public benchmark gain.
 
 The [longer RTX precision study](docs/rtx-precision-capacity.md) records eight training-only capacity windows. BF16 did not consistently improve throughput and changed some ranking orders. These probe weights were discarded; serving precision and existing quality claims are unchanged.
+
+The [durable audit API](docs/durable-audit.md) now records typed plans, outcomes and failures in a transactional journal with actor-bound receipts. Run `python examples/audited_decision.py` for context compilation through a verified decision and journal reopen. The current local suite passes 201 tests, including process-crash and concurrent-writer checks. Managed action execution and cancellation remain in development.
 
 The local **`ContextRuntime`** now combines registered retrieval experts, dependency checks, explicit byte/token budgets, bounded missing-evidence recovery and verified exact-result reuse. Run `python examples/unified_context.py` after installation. [API and complete example](docs/unified-runtime.md) · [runtime results and retained failures](docs/runtime-v1-results.md).
 

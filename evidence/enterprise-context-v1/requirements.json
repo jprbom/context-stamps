@@ -19,11 +19,12 @@
       ],
       "current_sources": [
         "context_stamps/runtime.py",
-        "examples/enterprise_decision.py"
+        "examples/enterprise_decision.py",
+        "examples/audited_decision.py"
       ],
       "status": "partial_integrated",
       "completion_proof": "One integrated end-to-end task from authorized source state through sufficient compilation, decision and verifiable receipt.",
-      "implementation_note": "Offline typed decision with an authorized compiled view and revocation rejection; seven planes are not complete."
+      "implementation_note": "Offline authorized context compilation, typed decision, durable reference-only outcome, checkpoint replay and current-reference revocation demonstrated. Learned intelligence and managed model/tool execution remain incomplete."
     },
     {
       "id": "EC02",
@@ -393,12 +394,17 @@
       "current_sources": [
         "context_stamps/experience.py",
         "tests/test_experience.py",
-        "docs/rights-and-data.md"
+        "docs/rights-and-data.md",
+        "context_stamps/audit.py",
+        "tests/test_audit.py",
+        "experiments/audit_validation.py",
+        "evidence/enterprise-audit-v1/local-cpu/manifest.json"
       ],
-      "status": "partial_draft",
-      "completion_proof": "Restart/race/revocation/security evidence, permitted exports, claim-to-evidence report and reproducible release."
+      "status": "partial_implemented",
+      "completion_proof": "Restart/race/revocation/security evidence, permitted exports, claim-to-evidence report and reproducible release.",
+      "implementation_note": "Transactional reference-only audit, actor-bound keyed receipts, external checkpoints, strict ordering and crash/concurrent-writer tests implemented. Cancellation, effect reconciliation, durable context retention, export policy and independent replication remain."
     }
   ],
   "evidence_boundary": "Existing/draft sources do not prove the complete requirement. No 1.0 or universal capability claim.",
-  "latest_engineering_evidence": "evidence/enterprise-state-v1/local-cpu/manifest.json"
+  "latest_engineering_evidence": "evidence/enterprise-audit-v1/local-cpu/manifest.json"
 }
