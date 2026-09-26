@@ -12,6 +12,8 @@ The 32-byte capsule is a routing identity across eight bounded facets. It does n
 
 ## Start here
 
+**Active research direction:** an [Enterprise Context Intelligence Runtime](docs/enterprise-context-plan.md) that owns versioned evidence, compiles sufficient authorized context for interchangeable models, and records why each decision used it. The [requirement register](evidence/enterprise-context-v1/requirements.json) separates existing components from unfinished work. This is a development programme, not a 1.0 capability claim.
+
 The local **`ContextRuntime`** now combines registered retrieval experts, dependency checks, explicit byte/token budgets, bounded missing-evidence recovery and verified exact-result reuse. Run `python examples/unified_context.py` after installation. [API and complete example](docs/unified-runtime.md) · [runtime results and retained failures](docs/runtime-v1-results.md).
 
 The optional cross-encoder uses length-aware GPU batches and a bounded exact passage-token cache. Its candidates, model weights and evidence limit are preserved. The learned cheaper-expert policy failed calibration and remains disabled. Precision changes require numerical and ranking checks; lower bit width alone does not earn a speed claim.

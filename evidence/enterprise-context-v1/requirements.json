@@ -1,0 +1,371 @@
+{
+  "schema": 1,
+  "objective_sha256": "66552f64c1621f8e95b3f0623fae6dcfaa1c5031e833ed2568d4c1a23b06d4ed",
+  "source_baseline": "1c4024d529b0be48ade3dfe37a9db2cf2f0bf3ca",
+  "active_objective": "Enterprise Context Intelligence Runtime",
+  "supersedes": "Earlier 96-task general-learning programme; preserve only work aligned with this objective.",
+  "requirements": [
+    {
+      "id": "EC01",
+      "requirement": "Runtime-owned context and seven interacting planes",
+      "features": [
+        "ingestion",
+        "state",
+        "intelligence",
+        "compiler",
+        "decision-routing",
+        "model-execution",
+        "learning-audit"
+      ],
+      "current_sources": [
+        "context_stamps/runtime.py"
+      ],
+      "status": "partial_existing",
+      "completion_proof": "One integrated end-to-end task from authorized source state through sufficient compilation, decision and verifiable receipt."
+    },
+    {
+      "id": "EC02",
+      "requirement": "256-bit control-plane reference",
+      "features": [
+        "96/32/32/32/16/16/16/16 profile",
+        "source content external",
+        "schema/encoder compatibility",
+        "not an authorization token"
+      ],
+      "current_sources": [
+        "context_stamps/stamp256.py",
+        "tests/test_stamp256.py"
+      ],
+      "status": "implemented_existing",
+      "completion_proof": "Exactly 32-byte round-trip, incompatible-family rejection and no implicit text reconstruction or authority."
+    },
+    {
+      "id": "EC03",
+      "requirement": "Typed decision plane",
+      "features": [
+        "schema",
+        "choice",
+        "boolean",
+        "score",
+        "calibration",
+        "abstention",
+        "batch",
+        "evidence/stamp/state bindings",
+        "probability distinct from arbitrary score",
+        "external typed-decision control"
+      ],
+      "current_sources": [],
+      "status": "not_started",
+      "completion_proof": "Typed decisions, calibrated scopes and missing/stale/revoked evidence cause safe abstention; batch parity and actual cost."
+    },
+    {
+      "id": "EC04",
+      "requirement": "Context sufficiency and adaptive acquisition",
+      "features": [
+        "incremental evidence",
+        "calibrated correctness estimate",
+        "marginal gain/cost",
+        "stop/no-progress/budget rules"
+      ],
+      "current_sources": [
+        "context_stamps/runtime.py",
+        "context_stamps/requirements.py"
+      ],
+      "status": "partial_existing",
+      "completion_proof": "Held-out correctness and risk/coverage at measured total cost against fixed retrieval and full context."
+    },
+    {
+      "id": "EC05",
+      "requirement": "Dynamic context value",
+      "features": [
+        "relevance",
+        "information gain",
+        "dependency contribution",
+        "temporal validity",
+        "trust",
+        "tokens",
+        "latency",
+        "risk"
+      ],
+      "current_sources": [],
+      "status": "not_started",
+      "completion_proof": "Dimensioned cost/value objective, hard authority constraints and matched-cost ablations."
+    },
+    {
+      "id": "EC06",
+      "requirement": "Model-aware context compiler",
+      "features": [
+        "authorization",
+        "staleness",
+        "conflicts",
+        "dependency closure",
+        "value ranking",
+        "redundancy removal",
+        "verified semantic compression",
+        "model formatting",
+        "actual token budget",
+        "sufficiency verification"
+      ],
+      "current_sources": [
+        "context_stamps/requirements.py",
+        "context_stamps/runtime.py"
+      ],
+      "status": "partial_existing",
+      "completion_proof": "All ten stages integrated; exact small-instance control; larger-instance limits and model-specific tokenizer evidence."
+    },
+    {
+      "id": "EC07",
+      "requirement": "Context virtual memory",
+      "features": [
+        "cold/warm/active",
+        "page-in",
+        "page-out",
+        "working set",
+        "page fault",
+        "prefetch",
+        "garbage collection",
+        "pinning"
+      ],
+      "current_sources": [
+        "context_stamps/session.py"
+      ],
+      "status": "partial_existing",
+      "completion_proof": "Bounded capacities, pins, authorization and dependency correctness under eviction and faults."
+    },
+    {
+      "id": "EC08",
+      "requirement": "Delta context and incremental computation",
+      "features": [
+        "affected active descendants",
+        "unrelated result reuse",
+        "computation DAG",
+        "fully bound computation receipts"
+      ],
+      "current_sources": [
+        "context_stamps/computation.py",
+        "context_stamps/session.py"
+      ],
+      "status": "partial_existing",
+      "completion_proof": "Branched workflow only reruns affected work; changed model/tool/policy/input prevents inappropriate reuse."
+    },
+    {
+      "id": "EC09",
+      "requirement": "Context lifecycle and retention",
+      "features": [
+        "HOT",
+        "WARM",
+        "COLD",
+        "SUPERSEDED",
+        "INVALID",
+        "ARCHIVED",
+        "reasoning eviction separate from compliance retention"
+      ],
+      "current_sources": [],
+      "status": "not_started",
+      "completion_proof": "Retention holds, live dependents, archive integrity and permitted deletion tested."
+    },
+    {
+      "id": "EC10",
+      "requirement": "Temporal context",
+      "features": [
+        "valid_from",
+        "valid_until",
+        "observed_at",
+        "effective_at",
+        "supersedes",
+        "superseded_by",
+        "transaction_time",
+        "event_time"
+      ],
+      "current_sources": [
+        "context_stamps/workflow.py"
+      ],
+      "status": "partial_existing",
+      "completion_proof": "Bitemporal queries and late corrections without future leakage; current authorization for historical reads."
+    },
+    {
+      "id": "EC11",
+      "requirement": "Epistemic typing",
+      "features": [
+        "FACT",
+        "OBSERVATION",
+        "CLAIM",
+        "INFERENCE",
+        "POLICY",
+        "ASSUMPTION",
+        "PREDICTION",
+        "USER_ASSERTION",
+        "MODEL_OUTPUT",
+        "DERIVED_RESULT"
+      ],
+      "current_sources": [
+        "context_stamps/experience.py",
+        "tests/test_experience.py"
+      ],
+      "status": "partial_draft",
+      "completion_proof": "Model output/assumption cannot satisfy verified fact or policy requirements; canonical nodes and receipts preserve the type."
+    },
+    {
+      "id": "EC12",
+      "requirement": "Contradiction graph",
+      "features": [
+        "preserve contradictions",
+        "authority/freshness/reliability/effective time/type",
+        "RESOLVED",
+        "UNRESOLVED",
+        "NEEDS_EVIDENCE"
+      ],
+      "current_sources": [
+        "context_stamps/workflow.py",
+        "context_stamps/requirements.py"
+      ],
+      "status": "partial_existing",
+      "completion_proof": "Conflicts remain inspectable, temporal/authority resolution auditable, ambiguous claims abstain."
+    },
+    {
+      "id": "EC13",
+      "requirement": "Negative knowledge",
+      "features": [
+        "UNKNOWN",
+        "KNOWN_ABSENT",
+        "NOT_APPLICABLE",
+        "REDACTED",
+        "UNAUTHORIZED",
+        "STALE",
+        "scope and expiry"
+      ],
+      "current_sources": [],
+      "status": "not_started",
+      "completion_proof": "Known absence avoids redundant calls until expiry; denial does not leak hidden existence."
+    },
+    {
+      "id": "EC14",
+      "requirement": "Context speculation",
+      "features": [
+        "next-context prediction",
+        "asynchronous prefetch",
+        "inactive until demanded",
+        "useful-prefetch ratio",
+        "net latency after wasted work"
+      ],
+      "current_sources": [],
+      "status": "not_started",
+      "completion_proof": "Prospective chronological task streams; total cost, wrong prefetch, revocation and zero-repeat controls."
+    },
+    {
+      "id": "EC15",
+      "requirement": "Sparse context-node attention",
+      "features": [
+        "node/task embeddings",
+        "graph",
+        "temporal/policy/authority inputs",
+        "sparse importance weights",
+        "smaller controls before 50M\u2013500M experiments",
+        "no foundation attention modification initially"
+      ],
+      "current_sources": [
+        "context_stamps/contractive_controller.py"
+      ],
+      "status": "partial_existing_experiment",
+      "completion_proof": "New graph/time/policy model beats matched simpler controls on verified tasks; existing attention did not earn promotion."
+    },
+    {
+      "id": "EC16",
+      "requirement": "Multi-head context model",
+      "features": [
+        "relevance",
+        "value",
+        "decision",
+        "probability",
+        "sufficiency",
+        "missing context",
+        "uncertainty",
+        "conflict",
+        "staleness",
+        "next context"
+      ],
+      "current_sources": [],
+      "status": "not_started",
+      "completion_proof": "Separate labels/head losses, disjoint calibration and held-out task/cost gains with all head ablations."
+    },
+    {
+      "id": "EC17",
+      "requirement": "Canonical multimodal adapters",
+      "features": [
+        "text",
+        "image",
+        "audio",
+        "video",
+        "table",
+        "code",
+        "external media hashes",
+        "encoder/OCR lineage",
+        "temporal scene/event graph"
+      ],
+      "current_sources": [],
+      "status": "not_started",
+      "completion_proof": "Shared node contract and task metrics for each modality; prior media pilots do not establish this integration."
+    },
+    {
+      "id": "EC18",
+      "requirement": "Reproducible RTX and interchangeable model stack",
+      "features": [
+        "0.5B\u20133B context/decision candidate",
+        "7B\u201314B quantized general candidate",
+        "3B\u20138B VLM candidate",
+        "profile before residency",
+        "CPU supporting work",
+        "maximize measured GPU throughput",
+        "one GPU workload"
+      ],
+      "current_sources": [
+        "experiments/profile_context_training.py",
+        "evidence/enterprise-context-v1/gpu-capacity.json"
+      ],
+      "status": "partial_measured",
+      "completion_proof": "Pinned licensed candidates, complete task and resource accounting, no simultaneous-model fit assumption."
+    },
+    {
+      "id": "EC19",
+      "requirement": "Public benchmark families",
+      "features": [
+        "current BEIR collections as regression",
+        "new untouched retrieval scopes",
+        "RULER",
+        "LongBench v2",
+        "LongMemEval",
+        "LoCoMo",
+        "BEAM"
+      ],
+      "current_sources": [
+        "evidence/controller-v2/manifest.json",
+        "evidence/runtime-v1/latency-manifest.json"
+      ],
+      "status": "partial_existing",
+      "completion_proof": "Licenses/revisions/native scoring, prospective task IDs, contamination/length audit and matched strong controls."
+    },
+    {
+      "id": "EC20",
+      "requirement": "Durable audit, reliability, ownership and honest release",
+      "features": [
+        "durable outcomes including failures",
+        "prediction-before-observation",
+        "host-bound authority",
+        "cancellable callbacks",
+        "safe action reconciliation",
+        "retention",
+        "source/model/data licenses",
+        "Prashant Jagtap attribution",
+        "independent replication"
+      ],
+      "current_sources": [
+        "context_stamps/experience.py",
+        "tests/test_experience.py",
+        "docs/rights-and-data.md"
+      ],
+      "status": "partial_draft",
+      "completion_proof": "Restart/race/revocation/security evidence, permitted exports, claim-to-evidence report and reproducible release."
+    }
+  ],
+  "evidence_boundary": "Existing/draft sources do not prove the complete requirement. No 1.0 or universal capability claim."
+}

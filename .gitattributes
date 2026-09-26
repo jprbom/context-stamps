@@ -3,3 +3,6 @@
 *.gz binary
 *.safetensors binary
 *.svg text eol=lf
+# Preserve the exact recorded test-log bytes used by evidence hashes.
+evidence/enterprise-context-v1/**/tests.log -text whitespace=cr-at-eol
+evidence/general-learning-v1/**/tests.log -text whitespace=cr-at-eol

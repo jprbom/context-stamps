@@ -32,6 +32,7 @@ jobs:
       - run: python experiments/verify_controller.py
       - run: python experiments/verify_controller_v2.py
       - run: python experiments/verify_runtime.py
+      - run: python experiments/verify_enterprise_foundations.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py
