@@ -11,6 +11,7 @@ global-exclude *.visual-check*
 recursive-include experiments *.py
 include experiments/eval-requirements.txt
 include experiments/harbor-requirements.txt
+include experiments/ruler-requirements.txt
 include evidence/longbench-v2-pilot/upstream/LICENSE
 include evidence/terminal-pilot-v1/upstream/LICENSE
 recursive-include evidence *.json *.jsonl *.md *.txt *.py
@@ -37,3 +38,4 @@ recursive-include evidence/mbpp-training-v1 *.gz
 recursive-include evidence/humaneval-grader-v1 *.gz
 recursive-include evidence/mbpp-code-eval-v1 *.gz
 recursive-include evidence/mbpp-code-comparison-v1 *.gz
+recursive-include evidence/ruler-development-v1 *.gz

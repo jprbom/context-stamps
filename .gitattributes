@@ -32,3 +32,4 @@ evidence/runtime-callbacks-v1/*.txt -text whitespace=cr-at-eol
 # Preserve reporter padding in the exact recorded full-suite log.
 evidence/runtime-callbacks-v1/core-py313.txt -text whitespace=cr-at-eol,-blank-at-eol
 docs/assets/mbpp-code-comparison-v1.svg -text whitespace=cr-at-eol,-blank-at-eol
+docs/assets/ruler-development-v1.svg -text whitespace=cr-at-eol,-blank-at-eol

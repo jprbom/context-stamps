@@ -117,3 +117,71 @@ condition = "AND"
 regexTarget = "match"
 paths = ['''(^|[\\/])evidence[\\/]mbpp-code-adapter-v1[\\/]manifest\.json$''']
 regexes = ['''^tokenization\.json": "3c4ddeaba7c749d9582759f5f3f75188443c6681bb4c034e2e4c731752118035"$''']
+
+[[allowlists]]
+description = "Exact verified public RULER source/data checksums; not credentials"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\/])docs[\\/]ruler\-local\-development\.md$''']
+regexes = [
+  '''^tokenizer\ revision:\ `989aa7980e4cf806f80c7fef2b1adb7bc71aa306`$''',
+]
+
+[[allowlists]]
+description = "Exact verified public RULER source/data checksums; not credentials"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\/])evidence[\\/]ruler\-development\-v1[\\/]data\-plan\.json$''']
+regexes = [
+  '''^tokenizer\.py":\ "f01cbc167403d687378862f87ecd605b9f77545bcb095e27df16aaebbc934869"$''',
+  '''^call_api\.py":\ "5c9ab59f494c0c702e6e8cdb497675de06df8b1fa790cbf184e7374a2399f992"$''',
+  '''^tokenizer\.json":\ "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"$''',
+  '''^tokenizer_config\.json":\ "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"$''',
+]
+
+[[allowlists]]
+description = "Exact verified public RULER source/data checksums; not credentials"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\/])evidence[\\/]ruler\-development\-v1[\\/]registration\.json$''']
+regexes = [
+  '''^tokenizer_sha256":\ "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"$''',
+]
+
+[[allowlists]]
+description = "Exact verified public RULER source/data checksums; not credentials"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\/])evidence[\\/]ruler\-development\-v1[\\/]data\-inventory\.json$''']
+regexes = [
+  '''^keys_sha256":\ "cc69a2f710dfecb7fff5d4a7455b94602820af93f919d9ce689458159075e671"$''',
+  '''^keys_sha256":\ "f4431370cf15b7f80a2c038b6f6068dd699a50387bec875cc629dc5541201205"$''',
+  '''^keys_sha256":\ "9e600e3c5ec611020fb7bff669a3bf9dd349145e454f046e7eeca9aca8bf42fa"$''',
+  '''^keys_sha256":\ "d61a6a63b0a7aa28cee906fdd8f6878a56460f2f9f9a68adc0cb3e8e563ec494"$''',
+  '''^keys_sha256":\ "154eb09e3a0f0a941ef4198995f98b9dde8e6d973f7deed3676d2149f8866ba3"$''',
+  '''^keys_sha256":\ "28cb0e160c3422d24b75088373ae82a93edf5af97568d147fe9c6239d278029e"$''',
+  '''^keys_sha256":\ "7068a9a7d14451e9e7a11b9396af64f10d25927e1b2c2312a85c893aab78cbd1"$''',
+  '''^keys_sha256":\ "1622f2f4a945b2223f7ae53ececce7e2f061ec6c1ffa58bd801a88a3d455c5ab"$''',
+  '''^keys_sha256":\ "3d0d48857c1139ea1e3c26802dd3bf734955c700bec2c028fa4a7e77c84cd4f4"$''',
+  '''^keys_sha256":\ "daf4a0eb29a0de3148eab540e70fc0e0db7e45e35a4a7c943d31199bdea379b4"$''',
+  '''^keys_sha256":\ "e63c430f704861c45fa4ee5f8400c96d90131e999dcaa7cf7009523f402030a9"$''',
+  '''^keys_sha256":\ "63b3e6545d992ba487e31b4999afcff6c863ae75a9f6d8559c9975f1c551bbe5"$''',
+  '''^keys_sha256":\ "bf662c2cd2fcda5afb04dbdbacd9532e9b2790851266f365ed71a0688dd2820d"$''',
+  '''^keys_sha256":\ "482b5bec54db4a77545de57883d59716ddbec5be462df2bdd4410197b0e7b5a1"$''',
+  '''^keys_sha256":\ "1c743356576457410fd32108f099f93560c5f24eead5ef5c84626d643abeeee3"$''',
+  '''^keys_sha256":\ "014005daf2e892b25a381fba299a5116fce0b3191c50f294077fd67c31a8cb72"$''',
+  '''^keys_sha256":\ "25e3e5bce2e41fd9544ee2284199d58d87277b0f4fb0a4fec1b271ff8e1bc1eb"$''',
+  '''^keys_sha256":\ "2babe0bec04b54730a278c811d83828b0a34546e399c63bf8544e8684af7e243"$''',
+  '''^keys_sha256":\ "13db0a70c56c773e22d02099c2df45594f9cbac840eedec44e57c1966b42cd60"$''',
+  '''^keys_sha256":\ "bf0a135efcb4373eadebaad9c1756f53e5f7d0c25e7763616287eba19079f1aa"$''',
+  '''^keys_sha256":\ "75f73b681cdfa4a5b75e741aff44629ecc128080818bc72dfb6ed464b8a7252f"$''',
+  '''^keys_sha256":\ "633a32a99ad16237b4b63574aac0ae0a3d6183151bfc691a98505f211db61945"$''',
+  '''^keys_sha256":\ "5689994f0a5e063517b1948cc7a3d18d54995dee82e858671718d9f4655b72d6"$''',
+  '''^keys_sha256":\ "e0743263be525c705f882c75ea956e868c62ac9e7fe088b397fae67ba1d3c3f0"$''',
+  '''^keys_sha256":\ "50a70e849046f94e83f484d0700e1edb7e2120f47a9623f0915c574f5e735a57"$''',
+  '''^keys_sha256":\ "754ac0ad675297649d817f8e7b9cb95b4d01ff221c206261ca817297b6c25b18"$''',
+]

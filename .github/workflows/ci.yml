@@ -60,6 +60,9 @@ jobs:
       - run: python experiments/verify_code_eval.py
       - run: python experiments/test_code_statistics.py -v
       - run: python experiments/verify_full_code_eval.py
+      - run: python experiments/test_ruler_context.py -v
+      - run: python experiments/test_ruler_evidence.py -v
+      - run: python experiments/verify_ruler_development.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py

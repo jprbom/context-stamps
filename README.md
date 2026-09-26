@@ -12,6 +12,10 @@ The 32-byte capsule is a routing identity across eight bounded facets. It does n
 
 ## Start here
 
+The latest [local RULER context trial](evidence/ruler-development-v1/README.md) covers all 13 task types at nominal 4K/16K: **44/52 complete-credit outputs with the runtime versus 34/52 with full context**, using 76.1% fewer input tokens. Direct operations plus the same reader reach **45/52** with still fewer tokens. This is a small development result under a permissive native scorer, with two truncated outputs retained; it does not establish an advantage over direct tools or autonomous local improvement. The [local reproduction guide](docs/ruler-local-development.md) includes every control and limitation.
+
+![Local RULER context treatment comparison](docs/assets/ruler-development-v1.png)
+
 **Primary research aim:** help small, locally deployed models become more capable and reliable within a domain while reducing total memory, latency, energy and operating cost. The [Enterprise Context Intelligence Runtime](docs/enterprise-context-plan.md) owns versioned evidence and compiles authorized context for these models. [Local learning](docs/local-domain-learning.md) should improve memory, context policies and eventually selected model parameters through verified outcomes and reversible updates. Domain-wide competence, edge-device gains and autonomous model-weight improvement remain unqualified.
 
 A [first local SLM adapter experiment](docs/local-adapter-rtx.md) now trains 544,768 low-rank parameters on the RTX using 144 authored workflow fixtures. It raises a narrow six-choice test from 12/72 to 52/72, but introduces one new failure and trails an exact rule (72/72). The 2.09 MiB adapter remains **inactive**. Retention-format controls are weak; this is reproducible training evidence, not qualified autonomous improvement, coding competence or an edge-device result. [Checkpoint, full outcomes and limits](evidence/local-adapter-v1/MODEL_CARD.md).

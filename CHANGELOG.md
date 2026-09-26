@@ -4,6 +4,8 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 27 September 2026
 
+- Completed a 52-input, 208-call local RULER-v1 development comparison across all 13 tasks at nominal 4K/16K. Runtime complete native credit is 44/52 versus full context 34/52, with 76.1% fewer input tokens. Direct operations plus the reader achieve 45/52 with fewer tokens than the runtime; the zero-model-call control gets 42/52 and abstains on ten inputs. Retained both output truncations, all predictions and the permissive native metric. Added 14 boundary/evidence tests, reproduction scripts and a research figure. No weight activation, independent generalization, edge qualification or advantage over direct tools is claimed.
+
 - Completed all 164 paired HumanEval+ tasks: base 49/164, adapter 49/164, with 19 gains and 19 regressions. Output-format failures fall 20 to 5, but generated tokens increase 7.3% and summed generation batch time increases 36.0%. Retained all 328 outputs, native grading, paired statistics and a review of every regression. Adapter remains inactive; no useful code-adaptation or Context Stamps gain is established.
 
 - Moved external runtime callbacks outside the shared state lock and added context/receipt revalidation. Concurrent exact requests share a bounded pending computation; revocation wakes waiters and adapter exceptions release capacity. Eleven new concurrency tests pass, with 339 tests passing in the complete local environment. Historical source and benchmark evidence remain replayable. No production speedup or hard callback cancellation is claimed.

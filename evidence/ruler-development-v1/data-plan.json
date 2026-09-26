@@ -1,0 +1,75 @@
+{
+  "schema": 1,
+  "purpose": "RULER-v1 development data; custom local orchestration, no leaderboard claim",
+  "source_revision": "c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a",
+  "nemo_revision": "f4a3fd8e524acd9abd1fea4387e8f179f6d51cf3",
+  "source_hashes": {
+    "scripts/data/manifest_utils.py": "be1ccae3813043e4de90f2d8e9a98b0f9dc3e91bb607eb00f0270f48155bbaa9",
+    "scripts/data/prepare.py": "ef330a9e83ac2cbc954afd960480db2f1b4911ab23993634bab3d1bdcb121933",
+    "scripts/data/synthetic/common_words_extraction.py": "d8026aa525d8f107df90e945626612ef59d1323df65dc13cee3c899c4546c7b6",
+    "scripts/data/synthetic/constants.py": "b67ad58ac9c9c256f3d4e3a6db1d1c0d8b8dd4480d02a96b19d2393b9ebc6009",
+    "scripts/data/synthetic/freq_words_extraction.py": "43b3707732944626f384291593c02d6c2a10458fc6fda411ce827a905e0b7b00",
+    "scripts/data/synthetic/json/download_paulgraham_essay.py": "78a8e56c95ec7a3f163dd07d5febcfebadae91a07c1384065e429c5c3a935bc9",
+    "scripts/data/synthetic/json/PaulGrahamEssays_URLs.txt": "360164040f0c6a90eaad3d0b203de5dc5dd4cc05269f7d2b4f403f3d2b5c0e49",
+    "scripts/data/synthetic/niah.py": "3098dfd834d01a36a767a55caa37d871c2cc75d8a3a5ee73438febb77d95492e",
+    "scripts/data/synthetic/qa.py": "b1483cd6ac2e71d8f1ca2d7548180d0c9d9f74d272189848582e984194f39275",
+    "scripts/data/synthetic/variable_tracking.py": "6b5f8d21d4955f55cb9e446931ee65286492d2750a662ae345bd84968d9b816f",
+    "scripts/data/template.py": "64e54cffe00788366e2c92aea1284931891af8cd9455c8e91d49555db164d897",
+    "scripts/data/tokenizer.py": "f01cbc167403d687378862f87ecd605b9f77545bcb095e27df16aaebbc934869",
+    "scripts/eval/evaluate.py": "d134d51f184854d492d1ae7717966e56577f4bf15f33563741b118d03088e413",
+    "scripts/eval/synthetic/constants.py": "14007f0463e65e58daf7a57a7b2c5b1f67649606d1834657f395cbe6e75acdf0",
+    "scripts/pred/call_api.py": "5c9ab59f494c0c702e6e8cdb497675de06df8b1fa790cbf184e7374a2399f992",
+    "scripts/pred/client_wrappers.py": "3e89b8a1155450252e6af3360d7939be68cac1416a21448f11b5cf14e4a421b4",
+    "scripts/pred/model_wrappers.py": "8b3526a033a09cf041b65d48557a3ca2947ed05ad05b2327f0feba8318355d26",
+    "scripts/pred/serve_trt.py": "f9fbb3f528bde1e71fc4ca17898451027a4e739045101c12a14cbaa13938a1aa",
+    "scripts/pred/serve_vllm.py": "8992fec7205b322afd9f447103dbd486ff70f433b62be5ca7fb07729fb5e0b85",
+    "scripts/synthetic.yaml": "ebcdcca355f7bf132bd74d7fe53c10825841d90654581b8e2530d52ed06ba596"
+  },
+  "runner_sha256": "24da0a6ced34b79f654707998f06c74d3f8ac00c758495139d8609eeb4f2c38a",
+  "assets_sha256": "2a91bceb085b45ca5acdbf54543b5a81f5dc1c52f8b2e6eaf26b46ee826429c9",
+  "tokenizer_sha256": {
+    "tokenizer.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "tokenizer_config.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+    "config.json": "98d2ff8cc47488d08a2b0b3acf4eb99ef210779b42bd48605f6b8e36acdbf670"
+  },
+  "count_per_task_length": 2,
+  "seed": 71,
+  "lengths": [
+    4096,
+    16384
+  ],
+  "tasks": [
+    "niah_single_1",
+    "niah_single_2",
+    "niah_single_3",
+    "niah_multikey_1",
+    "niah_multikey_2",
+    "niah_multikey_3",
+    "niah_multivalue",
+    "niah_multiquery",
+    "vt",
+    "cwe",
+    "fwe",
+    "qa_1",
+    "qa_2"
+  ],
+  "template_reserve": 50,
+  "native_base_template_tokens": 4,
+  "packages": {
+    "transformers": "5.17.0",
+    "tokenizers": "0.23.2",
+    "numpy": "2.4.6",
+    "nltk": "3.9.2",
+    "wonderwords": "2.2.0",
+    "scipy": "1.16.3",
+    "tenacity": "9.1.2",
+    "PyYAML": "6.0.3"
+  },
+  "answer_isolation": "Separate public inputs and scoring keys. Never pass outputs or token_position_answer to selectors.",
+  "deviations": [
+    "Original generators called directly without NeMo shell/pip wrapper",
+    "Local pinned Qwen tokenizer; offline, no remotely loaded model code",
+    "Same NeMo 50-token reserve and native base-template-token subtraction",
+    "Smaller development sample count; not a complete official benchmark run"
+  ]
+}

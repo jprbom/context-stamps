@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "files": {
+    "data-inventory.json": "c823d49754ba78ccda5e295101b9a11f9f12cd41748dc42c8b9630d7c17cb88f",
+    "data-plan.json": "4d6871226eadc1d1c0de8abedd6df3a93f2311cdf9931c9e0880b76aa8408cf0",
+    "records.json.gz": "30995314218e4e4b10b2397817ac2137aca49b83f632e4bab582c25eda878ccd",
+    "registration.json": "f1671ec98024df8d32d796a3e078b81c99debabf57a1154bc3523ed34350d02f",
+    "summary.json": "50b159a5cd5dcf9af6c1133fd70b4712689c506fae50f55020c3498f4d399340"
+  },
+  "original_generations_sha256": "adfdafad7b80b86f9a7ee4dbdb71e873fc0ac2a1473266bf8378865abf4e445f",
+  "scope": "Short predictions/references and metadata; no prompts, essay text or context-token IDs",
+  "verification": "Public replayer recomputes metrics from exported predictions. Full context-selection replay needs locally downloaded data."
+}

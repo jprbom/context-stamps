@@ -2,6 +2,8 @@
 
 By Prashant Jagtap
 
+**Latest context treatment:** the [RULER development trial](../evidence/ruler-development-v1/README.md) completes 208 local calls across all 13 tasks and two nominal lengths. Runtime complete native credit is 44/52 versus 34/52 for full context, with 76.1% fewer input tokens. Direct operations plus the same reader reach 45/52 with lower input cost. This supports further investigation of explicit context operations; it does not establish added quality from the stamp/runtime over those operations. Both truncations and all failed QA cases remain visible. See the [reproduction protocol](ruler-local-development.md).
+
 The question is whether Context Stamps improves a particular model's task outcome or reduces its total resource use while preserving required quality. A model leaderboard alone cannot answer that question. Compare the same model, agent scaffold, tools and task budget with and without the runtime; report comparisons between different models separately.
 
 The primary target is a locally improving small domain model under device constraints. Prioritize prospective software/operations tasks with executable checks, then measure retention after adaptation and total device cost. Broader benchmarks are controls for that objective. The [local learning protocol](local-domain-learning.md) adds frozen local candidates, fresh task clusters, repeated-experiment accounting and rollback. Its current records are simulations of the learning controls, not added model benchmark scores. All frontier calls remain disabled without a separately authorized API budget.
