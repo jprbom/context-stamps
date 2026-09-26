@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "failed_commit": "72115e732210c96d13e30f2b3c4ef52635a791b7",
+  "failed_run": "https://github.com/jprbom/context-stamps/actions/runs/36251477785",
+  "failed_job": "core (ubuntu-latest, 3.13)",
+  "failure": "Exact dictionary equality in verify_acquisition.py rejected a reconstructed floating-point binomial upper bound.",
+  "local_linux_reproduction": "Ubuntu-24.04 standard-library replay passed with a maximum reported absolute bound difference of approximately 1.11e-16; all non-bound fields matched exactly.",
+  "fix": "Compare only reconstructed upper_error with absolute tolerance 1e-12; retain exact counts, identities, alpha, hashes and policy outcomes. Print maximum observed rounding difference.",
+  "unchanged": ["training records", "checkpoints", "calibration counts", "regression outcomes", "5 percent gate", "all scopes rejected"],
+  "qualification": "Numerical replay portability fix only; no policy promoted or benchmark result improved."
+}

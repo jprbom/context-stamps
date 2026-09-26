@@ -70,12 +70,22 @@ def main():
                        for p in row["predictions"])
     family = tuple(tuple(v) for v in calibration["family"])
     assert len(family) == len(calibration["reports"]) == 12
+    maximum_bound_drift = 0.
     for row in calibration["reports"]:
         policy = StopPolicy(model.revision, row["threshold"])
         trajectories = tuple(Trajectory(r["query_id"], tuple(p[0] for p in r["predictions"]), tuple(r["complete"]))
                              for r in data["calibration"] if r["dataset"] == row["scope"])
         risk = assess_policy(policy, trajectories, scope=row["scope"], family=family)
-        assert asdict(risk) == row["risk"]
+        actual = asdict(risk)
+        recorded = dict(row["risk"])
+        actual_bound, recorded_bound = actual.pop("upper_error"), recorded.pop("upper_error")
+        assert actual == recorded  # Counts, identities and alpha remain exact.
+        if actual_bound is None or recorded_bound is None:
+            assert actual_bound is recorded_bound
+        else:
+            # libm lgamma/log implementations vary in the final floating bits.
+            assert math.isclose(actual_bound, recorded_bound, rel_tol=0, abs_tol=1e-12)
+            maximum_bound_drift = max(maximum_bound_drift, abs(actual_bound - recorded_bound))
         assert not risk.permits(policy, scope=row["scope"], maximum_error=protocol["maximum_error"])
     assert calibration["choices"] == {"scifact": None, "nfcorpus": None, "fiqa": None}
     assert calibration["independent_final_qualification"] is False
@@ -153,6 +163,7 @@ def main():
     print("Six RTX fits, 788 calibration and 3677 regression trajectories verified. No stop policy qualified; full-pool fallback retained.")
     print("Initial 303 and optimized 304 engineering tests verified separately from model quality.")
     print("Two planner profiles replayed; published serial profile preserves all 9000 output orders.")
+    print(f"Maximum replayed binomial-bound rounding difference: {maximum_bound_drift:.3g}")
 
 
 if __name__ == "__main__":

@@ -103,6 +103,8 @@ python -m unittest discover -s tests -p test_acquisition.py -v
 
 The run records GPU samples, peak Torch allocation, all six losses, source/model hashes, CPU/CUDA portable prediction parity, selected-model trajectories and failures. Selection timings cover portable prediction over cached feature rows; they exclude retrieval, document loading, tokenization and generation. Candidate reduction therefore establishes neither token savings nor an end-to-end latency improvement.
 
+The initial Linux CI replay exposed a floating-point comparison defect in the evidence verifier. A local Linux replay differed from Windows by approximately 1.11e-16 in a reconstructed binomial bound. The verifier now permits at most 1e-12 absolute rounding difference for that field, while retaining exact counts, hashes, identities and policy choices. Training results and the 5% gate are unchanged. The [failed run and correction](../evidence/acquisition-v1/ci-replay-note.json) remain recorded.
+
 ## Avoid unnecessary fallback work
 
 Unqualified scopes now skip prefix-feature extraction and model inference. Immutable model/policy digests are cached after validation. A separate CPU microbenchmark used the first 20 existing regression queries per collection, three randomized orders and ten repetitions, with identical retained indices on all 9,000 calls. Predictions for these 100 queries remained identical after the optimization.
