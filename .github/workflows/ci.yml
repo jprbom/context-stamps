@@ -63,6 +63,9 @@ jobs:
       - run: python experiments/test_ruler_context.py -v
       - run: python experiments/test_ruler_evidence.py -v
       - run: python experiments/verify_ruler_development.py
+      - run: python experiments/test_ruler_local_learning.py -v
+      - run: python experiments/test_ruler_learning_evidence.py -v
+      - run: python experiments/verify_ruler_learning.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py

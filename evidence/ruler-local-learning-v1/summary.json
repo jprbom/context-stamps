@@ -1,0 +1,1276 @@
+{
+  "schema": 1,
+  "training": {
+    "reader": {
+      "samples": 312,
+      "native_mean": 0.8875,
+      "native_complete": 271,
+      "strict_correct": 218,
+      "verified": 0,
+      "errors": 0,
+      "truncations": 0,
+      "model_calls": 312,
+      "input_tokens": 285678,
+      "output_tokens": 6718,
+      "wall_seconds": 117.85699629969895
+    },
+    "direct": {
+      "samples": 312,
+      "native_mean": 0.8461538461538461,
+      "native_complete": 264,
+      "strict_correct": 264,
+      "verified": 264,
+      "errors": 0,
+      "truncations": 0,
+      "model_calls": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "wall_seconds": 0.35518330056220293
+    }
+  },
+  "holdout": {
+    "reader": {
+      "samples": 208,
+      "native_mean": 0.9427884615384615,
+      "native_complete": 193,
+      "strict_correct": 143,
+      "verified": 0,
+      "errors": 0,
+      "truncations": 0,
+      "model_calls": 208,
+      "input_tokens": 408813,
+      "output_tokens": 4691,
+      "wall_seconds": 88.54268839932047
+    },
+    "learned": {
+      "samples": 208,
+      "native_mean": 0.9471153846153846,
+      "native_complete": 197,
+      "strict_correct": 188,
+      "verified": 176,
+      "errors": 0,
+      "truncations": 0,
+      "model_calls": 32,
+      "input_tokens": 320080,
+      "output_tokens": 343,
+      "wall_seconds": 15.274054901092313
+    },
+    "fixed": {
+      "samples": 208,
+      "native_mean": 0.9471153846153846,
+      "native_complete": 197,
+      "strict_correct": 187,
+      "verified": 176,
+      "errors": 0,
+      "truncations": 0,
+      "model_calls": 32,
+      "input_tokens": 320080,
+      "output_tokens": 368,
+      "wall_seconds": 22.731493899715133
+    }
+  },
+  "cells": [
+    {
+      "length": 4096,
+      "task": "cwe",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 0.9875,
+          "native_complete": 7,
+          "strict_correct": 0,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 4757,
+          "output_tokens": 384,
+          "wall_seconds": 3.3321029997896403
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.010285800090059638
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.013700600014999509
+        }
+      }
+    },
+    {
+      "length": 4096,
+      "task": "fwe",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 4,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 2122,
+          "output_tokens": 146,
+          "wall_seconds": 2.209178600111045
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.012806200189515948
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.01081930031068623
+        }
+      }
+    },
+    {
+      "length": 4096,
+      "task": "niah_multikey_1",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 1803,
+          "output_tokens": 72,
+          "wall_seconds": 1.9857592998305336
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.0038305999478325248
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.003730800119228661
+        }
+      }
+    },
+    {
+      "length": 4096,
+      "task": "niah_multikey_2",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 1799,
+          "output_tokens": 72,
+          "wall_seconds": 2.0063031999161467
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.011706299730576575
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.004442399716936052
+        }
+      }
+    },
+    {
+      "length": 4096,
+      "task": "niah_multikey_3",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 2649,
+          "output_tokens": 262,
+          "wall_seconds": 2.781508200103417
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.002841600216925144
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.0037249999586492777
+        }
+      }
+    },
+    {
+      "length": 4096,
+      "task": "niah_multiquery",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 6,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 5906,
+          "output_tokens": 284,
+          "wall_seconds": 3.1130590999964625
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.004338700091466308
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.004082900006324053
+        }
+      }
+    },
+    {
+      "length": 4096,
+      "task": "niah_multivalue",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 3,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 5580,
+          "output_tokens": 292,
+          "wall_seconds": 3.087505300180055
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.0035722998436540365
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.003718799911439419
+        }
+      }
+    },
+    {
+      "length": 4096,
+      "task": "niah_single_1",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 1825,
+          "output_tokens": 72,
+          "wall_seconds": 2.0546632003970444
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.003911999869160354
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.00289609981700778
+        }
+      }
+    },
+    {
+      "length": 4096,
+      "task": "niah_single_2",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 1816,
+          "output_tokens": 72,
+          "wall_seconds": 1.974167300038971
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.004680500132963061
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.0032465000404044986
+        }
+      }
+    },
+    {
+      "length": 4096,
+      "task": "niah_single_3",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 2015,
+          "output_tokens": 272,
+          "wall_seconds": 2.7863299996824935
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.00896649993956089
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.004674400086514652
+        }
+      }
+    },
+    {
+      "length": 4096,
+      "task": "qa_1",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 5,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 25064,
+          "output_tokens": 57,
+          "wall_seconds": 2.329355799825862
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 5,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 25064,
+          "output_tokens": 57,
+          "wall_seconds": 2.8036324999993667
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 5,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 25064,
+          "output_tokens": 59,
+          "wall_seconds": 2.4494214999722317
+        }
+      }
+    },
+    {
+      "length": 4096,
+      "task": "qa_2",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 0.5,
+          "native_complete": 4,
+          "strict_correct": 3,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 28947,
+          "output_tokens": 59,
+          "wall_seconds": 3.1152821000432596
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 0.5,
+          "native_complete": 4,
+          "strict_correct": 3,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 28947,
+          "output_tokens": 59,
+          "wall_seconds": 1.862364999949932
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 0.5,
+          "native_complete": 4,
+          "strict_correct": 3,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 28947,
+          "output_tokens": 59,
+          "wall_seconds": 3.022884799866006
+        }
+      }
+    },
+    {
+      "length": 4096,
+      "task": "vt",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 6,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 10456,
+          "output_tokens": 207,
+          "wall_seconds": 3.3303521998459473
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.014955500257201493
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.006877100095152855
+        }
+      }
+    },
+    {
+      "length": 16384,
+      "task": "cwe",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 0.9,
+          "native_complete": 5,
+          "strict_correct": 0,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 12037,
+          "output_tokens": 363,
+          "wall_seconds": 3.943993700086139
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.029535399982705712
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.025534899905323982
+        }
+      }
+    },
+    {
+      "length": 16384,
+      "task": "fwe",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 0,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 2126,
+          "output_tokens": 218,
+          "wall_seconds": 2.908922999748029
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.03861570020671934
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.037295900052413344
+        }
+      }
+    },
+    {
+      "length": 16384,
+      "task": "niah_multikey_1",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 1793,
+          "output_tokens": 72,
+          "wall_seconds": 1.9276425999123603
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.017054199939593673
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.00887180003337562
+        }
+      }
+    },
+    {
+      "length": 16384,
+      "task": "niah_multikey_2",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 1817,
+          "output_tokens": 72,
+          "wall_seconds": 1.9600194999948144
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.022892100154422224
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.01868409989401698
+        }
+      }
+    },
+    {
+      "length": 16384,
+      "task": "niah_multikey_3",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 2686,
+          "output_tokens": 267,
+          "wall_seconds": 3.0217108997749165
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.00782699987757951
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.011927599902264774
+        }
+      }
+    },
+    {
+      "length": 16384,
+      "task": "niah_multiquery",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 5,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 5828,
+          "output_tokens": 286,
+          "wall_seconds": 3.0925189999397844
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.00817010027822107
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.008054900099523365
+        }
+      }
+    },
+    {
+      "length": 16384,
+      "task": "niah_multivalue",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 5,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 5608,
+          "output_tokens": 289,
+          "wall_seconds": 3.085716599947773
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.015691799926571548
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.00835169991478324
+        }
+      }
+    },
+    {
+      "length": 16384,
+      "task": "niah_single_1",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 1798,
+          "output_tokens": 72,
+          "wall_seconds": 1.8667603998910636
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.013796099927276373
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.005179899977520108
+        }
+      }
+    },
+    {
+      "length": 16384,
+      "task": "niah_single_2",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 1801,
+          "output_tokens": 72,
+          "wall_seconds": 1.9363922999473289
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.014195300289429724
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.007347300066612661
+        }
+      }
+    },
+    {
+      "length": 16384,
+      "task": "niah_single_3",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 2003,
+          "output_tokens": 272,
+          "wall_seconds": 2.7269015001365915
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.00811060017440468
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.007346500060521066
+        }
+      }
+    },
+    {
+      "length": 16384,
+      "task": "qa_1",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 0.875,
+          "native_complete": 7,
+          "strict_correct": 2,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 133125,
+          "output_tokens": 205,
+          "wall_seconds": 13.796181000187062
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 0.875,
+          "native_complete": 7,
+          "strict_correct": 2,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 133125,
+          "output_tokens": 176,
+          "wall_seconds": 7.49502430006396
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 0.875,
+          "native_complete": 7,
+          "strict_correct": 1,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 133125,
+          "output_tokens": 190,
+          "wall_seconds": 5.9631742999190465
+        }
+      }
+    },
+    {
+      "length": 16384,
+      "task": "qa_2",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 0.25,
+          "native_complete": 2,
+          "strict_correct": 2,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 132944,
+          "output_tokens": 51,
+          "wall_seconds": 11.036979000084102
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 0.25,
+          "native_complete": 2,
+          "strict_correct": 2,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 132944,
+          "output_tokens": 51,
+          "wall_seconds": 2.8421212998218834
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 0.25,
+          "native_complete": 2,
+          "strict_correct": 2,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 132944,
+          "output_tokens": 60,
+          "wall_seconds": 11.076958399964496
+        }
+      }
+    },
+    {
+      "length": 16384,
+      "task": "vt",
+      "arms": {
+        "reader": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 6,
+          "verified": 0,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 8,
+          "input_tokens": 10508,
+          "output_tokens": 201,
+          "wall_seconds": 3.133381599909626
+        },
+        "learned": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.01312750019133091
+        },
+        "fixed": {
+          "samples": 8,
+          "native_mean": 1.0,
+          "native_complete": 8,
+          "strict_correct": 8,
+          "verified": 8,
+          "errors": 0,
+          "truncations": 0,
+          "model_calls": 0,
+          "input_tokens": 0,
+          "output_tokens": 0,
+          "wall_seconds": 0.018546400009654462
+        }
+      }
+    }
+  ],
+  "policy_choices": [
+    [
+      "dependency",
+      "direct"
+    ],
+    [
+      "exact",
+      "direct"
+    ],
+    [
+      "full",
+      "reader"
+    ],
+    [
+      "statistic",
+      "direct"
+    ]
+  ],
+  "policy_revision": "1b110015ab23e68f38540ab501f621ddf6fe37a5ed57f3638fd59573bf3d55f1",
+  "update_tokens": 292396,
+  "fitting_seconds": 0.00036919990088790655,
+  "promoted": false,
+  "promotion_reasons": [
+    "missing_measurements",
+    "cohort:adaptation:missing_measurements",
+    "cohort:retention:missing_measurements"
+  ],
+  "zero_new_failure_upper_if_iid": {
+    "retention": 0.052739049895145614,
+    "adaptation": 0.052739049895145614
+  },
+  "zero_failure_bound_caveat": "Sample-size diagnostic only: no source-cluster IID qualification"
+}

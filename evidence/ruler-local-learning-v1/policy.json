@@ -1,0 +1,4396 @@
+{
+  "policy": {
+    "binding": "fb963ae592765319c1e3a8cfc4716be394a03c098e62d5baa2456f2596dc211b",
+    "baseline_action": "reader",
+    "choices": [
+      [
+        "dependency",
+        "direct"
+      ],
+      [
+        "exact",
+        "direct"
+      ],
+      [
+        "full",
+        "reader"
+      ],
+      [
+        "statistic",
+        "direct"
+      ]
+    ]
+  },
+  "revision": "1b110015ab23e68f38540ab501f621ddf6fe37a5ed57f3638fd59573bf3d55f1",
+  "fitting_seconds": 0.00036919990088790655,
+  "observations": [
+    {
+      "cluster_id": "a544c5a72862f729ce81056724414fa9835dfcbcf84f55e5dfa895918afab84b",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 234.0
+    },
+    {
+      "cluster_id": "a544c5a72862f729ce81056724414fa9835dfcbcf84f55e5dfa895918afab84b",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6e0c50f8a2217bc91cf8513f6c1c5dd63db1bc73f1e82dd5575b0b74758552da",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6e0c50f8a2217bc91cf8513f6c1c5dd63db1bc73f1e82dd5575b0b74758552da",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 234.0
+    },
+    {
+      "cluster_id": "2e4cba3c3f9c2cd6f3a98793c701460e643f30c078e30fa9f88629553a221761",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 235.0
+    },
+    {
+      "cluster_id": "2e4cba3c3f9c2cd6f3a98793c701460e643f30c078e30fa9f88629553a221761",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "dead689a27c56da6653d0c05c80cc6d9ce04acca3c3e0682e82d0f9ac96c3d2d",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 235.0
+    },
+    {
+      "cluster_id": "dead689a27c56da6653d0c05c80cc6d9ce04acca3c3e0682e82d0f9ac96c3d2d",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6b3fae70c7459afb78a0ad88a33f614220fbeb3fe46ef468a7dd530225c72845",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 228.0
+    },
+    {
+      "cluster_id": "6b3fae70c7459afb78a0ad88a33f614220fbeb3fe46ef468a7dd530225c72845",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "d7d7a186b4b490220d396cc97adc6d6096a4b7c6ddfa19aeedd0495688d42a9c",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 239.0
+    },
+    {
+      "cluster_id": "d7d7a186b4b490220d396cc97adc6d6096a4b7c6ddfa19aeedd0495688d42a9c",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "1838b009c12851d4f7168b4baee0f8d9e7b97b09aaac6b4c72eb22e118adca12",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 236.0
+    },
+    {
+      "cluster_id": "1838b009c12851d4f7168b4baee0f8d9e7b97b09aaac6b4c72eb22e118adca12",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "88601fcfa22ea978370b819b7e081e613cbbe194281f5e4f94d126a2d2cb9b8f",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "88601fcfa22ea978370b819b7e081e613cbbe194281f5e4f94d126a2d2cb9b8f",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 233.0
+    },
+    {
+      "cluster_id": "8601316a4adb7677a99e23712ff80b0ecd12863cdd92e983c065320745995d4e",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "8601316a4adb7677a99e23712ff80b0ecd12863cdd92e983c065320745995d4e",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 237.0
+    },
+    {
+      "cluster_id": "ea8c6fa8b282fa846f6e8151ad37780be4c6ee003d33e2034274be36a66b0fe1",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ea8c6fa8b282fa846f6e8151ad37780be4c6ee003d33e2034274be36a66b0fe1",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 236.0
+    },
+    {
+      "cluster_id": "b37808c068395752a51730084b8c5c0c53c76df2615aa772298485350f4ded50",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 240.0
+    },
+    {
+      "cluster_id": "b37808c068395752a51730084b8c5c0c53c76df2615aa772298485350f4ded50",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "61d59e300cbaaf8ceb5dc87ae36dbb43f4cb2dd029ea7b62bbcff3b9cc61862b",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 234.0
+    },
+    {
+      "cluster_id": "61d59e300cbaaf8ceb5dc87ae36dbb43f4cb2dd029ea7b62bbcff3b9cc61862b",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "baa840ba7fceb25cbafbed2f6bb7878a6725366fc017c5cd44df9807c345cd54",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 233.0
+    },
+    {
+      "cluster_id": "baa840ba7fceb25cbafbed2f6bb7878a6725366fc017c5cd44df9807c345cd54",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "b0f5e64b01bc9b8ec75f63b16c27b26be8b538037e18a242cd6033c46440ef0f",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "b0f5e64b01bc9b8ec75f63b16c27b26be8b538037e18a242cd6033c46440ef0f",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 231.0
+    },
+    {
+      "cluster_id": "c9fe8a9fdd5ac5df1151a3fc43678172ff142b1c8ec7baf6849369c1a3cc22d1",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "c9fe8a9fdd5ac5df1151a3fc43678172ff142b1c8ec7baf6849369c1a3cc22d1",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 237.0
+    },
+    {
+      "cluster_id": "70365e547a2709208afa01b474cfbc83d010223c38c925fd03dfd1669a024e92",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 239.0
+    },
+    {
+      "cluster_id": "70365e547a2709208afa01b474cfbc83d010223c38c925fd03dfd1669a024e92",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "acda8569e244bfbe18d0be7f62d3c9e2c994cc4f217cc54cb8dd2b14852d6aee",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "acda8569e244bfbe18d0be7f62d3c9e2c994cc4f217cc54cb8dd2b14852d6aee",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 235.0
+    },
+    {
+      "cluster_id": "d36b213680f13844f86aeb32beb2ae05d6ad02ca407d0891a65dbb824432698f",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 237.0
+    },
+    {
+      "cluster_id": "d36b213680f13844f86aeb32beb2ae05d6ad02ca407d0891a65dbb824432698f",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "74eb55b7503db50935ca4891c438293c9ceb83f606bd20b180bd941703df6c1b",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 228.0
+    },
+    {
+      "cluster_id": "74eb55b7503db50935ca4891c438293c9ceb83f606bd20b180bd941703df6c1b",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f1230e38b1fdedad74983cae6308d98bcdef0192555510ef5623108aed0254e5",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f1230e38b1fdedad74983cae6308d98bcdef0192555510ef5623108aed0254e5",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 234.0
+    },
+    {
+      "cluster_id": "9229650a4f57a76f723c5ca599ec23c0c81381b6c804cae9a92b3f2757d6ac2a",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 238.0
+    },
+    {
+      "cluster_id": "9229650a4f57a76f723c5ca599ec23c0c81381b6c804cae9a92b3f2757d6ac2a",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f79de8b9486c2abec45a5dc1596d8c9ce16ef5dbeb22418dbfb8983de48d3a17",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f79de8b9486c2abec45a5dc1596d8c9ce16ef5dbeb22418dbfb8983de48d3a17",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 232.0
+    },
+    {
+      "cluster_id": "865ea4f054f08dc0909236d90cc8fe66bf276ae67f6abdaa4dcc536973add620",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 243.0
+    },
+    {
+      "cluster_id": "865ea4f054f08dc0909236d90cc8fe66bf276ae67f6abdaa4dcc536973add620",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "255b32567011f9347d0c55ec1d99c0837ff3742933a219be84c7b71bf8e5d1b9",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "255b32567011f9347d0c55ec1d99c0837ff3742933a219be84c7b71bf8e5d1b9",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 236.0
+    },
+    {
+      "cluster_id": "1e9282410f3a0cf9cadfdd4ff1d7a693a9c8cf2df712da1574949cfab8ee6d10",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 237.0
+    },
+    {
+      "cluster_id": "1e9282410f3a0cf9cadfdd4ff1d7a693a9c8cf2df712da1574949cfab8ee6d10",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "39db1d9e22cca94fd79c0996fc259fcfcc9f4878e734724d4b22354d298c7758",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 234.0
+    },
+    {
+      "cluster_id": "39db1d9e22cca94fd79c0996fc259fcfcc9f4878e734724d4b22354d298c7758",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "a370cc48f30f9cd2e3e646d3717b0e5087873ebb10a34d213a442da5a481d177",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "a370cc48f30f9cd2e3e646d3717b0e5087873ebb10a34d213a442da5a481d177",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 234.0
+    },
+    {
+      "cluster_id": "55fe6ce1162e38efabd7bb8fff6798017af05734fd0fd8280faa112e9697d102",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 238.0
+    },
+    {
+      "cluster_id": "55fe6ce1162e38efabd7bb8fff6798017af05734fd0fd8280faa112e9697d102",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "33eadd78adfcb8b95dec18fd44c6a32a149affa74c2f077ab0d4c99de3fff093",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 229.0
+    },
+    {
+      "cluster_id": "33eadd78adfcb8b95dec18fd44c6a32a149affa74c2f077ab0d4c99de3fff093",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "063f6af31a8d33c24590da68060bccae0e7579d0d586d7b3d4f9f33c3b3a8bd4",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "063f6af31a8d33c24590da68060bccae0e7579d0d586d7b3d4f9f33c3b3a8bd4",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 233.0
+    },
+    {
+      "cluster_id": "d8fa52f889725ff898c02b280e75909a290d0dccf059221045fdc24e691b4724",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "d8fa52f889725ff898c02b280e75909a290d0dccf059221045fdc24e691b4724",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 229.0
+    },
+    {
+      "cluster_id": "4819d4053857857720053710294763bac2745b5c46dd1437ee0589d778b34211",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 232.0
+    },
+    {
+      "cluster_id": "4819d4053857857720053710294763bac2745b5c46dd1437ee0589d778b34211",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "4b8525fb0f5c621a7cf73e5ca57c78d7afcc4a4a5523019313e6d2b615fcca69",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "4b8525fb0f5c621a7cf73e5ca57c78d7afcc4a4a5523019313e6d2b615fcca69",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 236.0
+    },
+    {
+      "cluster_id": "4cddbaafa00a42e1e7168d8c27611d4de136479f64bac49f6307df186c7208c1",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "4cddbaafa00a42e1e7168d8c27611d4de136479f64bac49f6307df186c7208c1",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 238.0
+    },
+    {
+      "cluster_id": "8ab3c99d4dbe18d61efbd1b9a42978e0b3c9652803392bfc7c6c6c518551a977",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 233.0
+    },
+    {
+      "cluster_id": "8ab3c99d4dbe18d61efbd1b9a42978e0b3c9652803392bfc7c6c6c518551a977",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "caf5cbd643e31223353fe57184b5a8e17002a32a53ea044a09bec52d843f1a6b",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 233.0
+    },
+    {
+      "cluster_id": "caf5cbd643e31223353fe57184b5a8e17002a32a53ea044a09bec52d843f1a6b",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ad59331688d5e025c0f435ada35eed607ff403b6d2f03a3752188921d5a4b97f",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 230.0
+    },
+    {
+      "cluster_id": "ad59331688d5e025c0f435ada35eed607ff403b6d2f03a3752188921d5a4b97f",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "940688b513aa3a7e6c73870fbc4793ed06e8362e854e8ce477355fea4c4fa36c",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "940688b513aa3a7e6c73870fbc4793ed06e8362e854e8ce477355fea4c4fa36c",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 230.0
+    },
+    {
+      "cluster_id": "22026551ef6b81811d3c3e2580ce3b9a75235bc26eb72a6b1353a9724b8316c0",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 235.0
+    },
+    {
+      "cluster_id": "22026551ef6b81811d3c3e2580ce3b9a75235bc26eb72a6b1353a9724b8316c0",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "331b168ae708c6f60f800f70a53a1b714196c96861dcb195476816e23fbbcaa7",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "331b168ae708c6f60f800f70a53a1b714196c96861dcb195476816e23fbbcaa7",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 234.0
+    },
+    {
+      "cluster_id": "4b7232c2e2a7f89c1c014dd05a82ff9625ba24d9075d1e1f92a7052763f155d4",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "4b7232c2e2a7f89c1c014dd05a82ff9625ba24d9075d1e1f92a7052763f155d4",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 234.0
+    },
+    {
+      "cluster_id": "5432009fc59fcd5ef2294acd2369863b4268875c0c529cd87f88b1d059907c26",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "5432009fc59fcd5ef2294acd2369863b4268875c0c529cd87f88b1d059907c26",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 226.0
+    },
+    {
+      "cluster_id": "4780b67fcbc3a10b9425e6b961f87a9a291f2f8f6ec1ce3eca37fabd173b8992",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 228.0
+    },
+    {
+      "cluster_id": "4780b67fcbc3a10b9425e6b961f87a9a291f2f8f6ec1ce3eca37fabd173b8992",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f74cddebe3ade0ece28463fe486e679d1b5bdc00de6a2026a42788689a9cc6ed",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 237.0
+    },
+    {
+      "cluster_id": "f74cddebe3ade0ece28463fe486e679d1b5bdc00de6a2026a42788689a9cc6ed",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "1ee6c534910878c9ae3edcb78ede50f2f0ddb1093b9727b78f5df1044ff0575b",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "1ee6c534910878c9ae3edcb78ede50f2f0ddb1093b9727b78f5df1044ff0575b",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 226.0
+    },
+    {
+      "cluster_id": "792bb6d68d25f5fd0f7c2699cbada453157a385c7fd12f655cc705ed9a368c55",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 238.0
+    },
+    {
+      "cluster_id": "792bb6d68d25f5fd0f7c2699cbada453157a385c7fd12f655cc705ed9a368c55",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "5afaed1cf4087543fea46a1f14b132f591ef44c72c85628c279366f7081997da",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "5afaed1cf4087543fea46a1f14b132f591ef44c72c85628c279366f7081997da",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 231.0
+    },
+    {
+      "cluster_id": "b1e41bd999ab95e8e70818e2d7caee12bddfb4527e620a7ca86c3579fd8c1886",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "b1e41bd999ab95e8e70818e2d7caee12bddfb4527e620a7ca86c3579fd8c1886",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 229.0
+    },
+    {
+      "cluster_id": "d351a05e675cfb82670739233d1c798c5e11e6798094477ba99dbdfad0f5f961",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "d351a05e675cfb82670739233d1c798c5e11e6798094477ba99dbdfad0f5f961",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 286.0
+    },
+    {
+      "cluster_id": "44cd908a475228e1e535e132bcbfd2a0b50779d71acff494ef1c8fbeba19e091",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 278.0
+    },
+    {
+      "cluster_id": "44cd908a475228e1e535e132bcbfd2a0b50779d71acff494ef1c8fbeba19e091",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "44f2070e324bfe8bc1ecf0ab2079619eb7582a0f0c7b7beb13eca68103520534",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "44f2070e324bfe8bc1ecf0ab2079619eb7582a0f0c7b7beb13eca68103520534",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 284.0
+    },
+    {
+      "cluster_id": "ad09ee402e1e5c83267f4a5ce05045c5604473ca882e72edbe7b878d6c8dd71e",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 285.0
+    },
+    {
+      "cluster_id": "ad09ee402e1e5c83267f4a5ce05045c5604473ca882e72edbe7b878d6c8dd71e",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "0411b4bd7ddb7e1e3c149b73826f27f3b1c710fed1b0a8b32955bb0b3d54b33b",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 277.0
+    },
+    {
+      "cluster_id": "0411b4bd7ddb7e1e3c149b73826f27f3b1c710fed1b0a8b32955bb0b3d54b33b",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "1d2cf10831f8d6c3c1385886110e2098295f2a7b7aef360cdd2c9ad4a57a6787",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "1d2cf10831f8d6c3c1385886110e2098295f2a7b7aef360cdd2c9ad4a57a6787",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 278.0
+    },
+    {
+      "cluster_id": "15b6c020a0a3c1e9ec1ecda6373be43b2d50a10d2eb9ef9dad1dba2f6c50460d",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 291.0
+    },
+    {
+      "cluster_id": "15b6c020a0a3c1e9ec1ecda6373be43b2d50a10d2eb9ef9dad1dba2f6c50460d",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ef12b3adf6a267d9fece9990b975b380553d0006145de3d573e3188e96a4cf55",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ef12b3adf6a267d9fece9990b975b380553d0006145de3d573e3188e96a4cf55",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 294.0
+    },
+    {
+      "cluster_id": "eb46c17f614c4a21136814c1f1ed98ec8bae3e3ac358cccef46ab3976a768687",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 286.0
+    },
+    {
+      "cluster_id": "eb46c17f614c4a21136814c1f1ed98ec8bae3e3ac358cccef46ab3976a768687",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "cdff07940b8c4e3cad402e128ee36d206cf378cbd82e57a4e03e008a90ac4770",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "cdff07940b8c4e3cad402e128ee36d206cf378cbd82e57a4e03e008a90ac4770",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 283.0
+    },
+    {
+      "cluster_id": "12cbdf271d28130672161c1567be8bfddc7195444b539768e6e1dcbb57ac6ef6",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 285.0
+    },
+    {
+      "cluster_id": "12cbdf271d28130672161c1567be8bfddc7195444b539768e6e1dcbb57ac6ef6",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f17749c2723001c1f4d4577bace2a42db61519c8c572fbff11dd5614cd63a1f4",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 282.0
+    },
+    {
+      "cluster_id": "f17749c2723001c1f4d4577bace2a42db61519c8c572fbff11dd5614cd63a1f4",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "228e6352af17023798eba24aac6bb864c67bdcd0df729158dff341c96843399e",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "228e6352af17023798eba24aac6bb864c67bdcd0df729158dff341c96843399e",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 287.0
+    },
+    {
+      "cluster_id": "d3b1b278ac5a91cb2fdb251de0752fa603a1ba8d637853467edf0625fe162d2e",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "d3b1b278ac5a91cb2fdb251de0752fa603a1ba8d637853467edf0625fe162d2e",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 283.0
+    },
+    {
+      "cluster_id": "a2a289f5cea35a7bd2af6e4261ce0420493e61e7512f7f10eaf0ed7822967653",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 286.0
+    },
+    {
+      "cluster_id": "a2a289f5cea35a7bd2af6e4261ce0420493e61e7512f7f10eaf0ed7822967653",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "a6e0d1ed1b7d09cdda90b34a5ab13deb344fb1a2c6fc943875078c4c09b6ced2",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "a6e0d1ed1b7d09cdda90b34a5ab13deb344fb1a2c6fc943875078c4c09b6ced2",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 284.0
+    },
+    {
+      "cluster_id": "920699b02be93f644ff7de77d66c7b8a93d9bcbe29f412ec02835b21c434ce99",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "920699b02be93f644ff7de77d66c7b8a93d9bcbe29f412ec02835b21c434ce99",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 295.0
+    },
+    {
+      "cluster_id": "fe5968392c7941e3b2b8682fd8f1efa34edeb6e0b1f5a0d72aa2b2c5a1b82c46",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 285.0
+    },
+    {
+      "cluster_id": "fe5968392c7941e3b2b8682fd8f1efa34edeb6e0b1f5a0d72aa2b2c5a1b82c46",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "52ba161e4f7c00de72486ab6d8ba631712d1459883a462c7ae1b3ddff7da8916",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 283.0
+    },
+    {
+      "cluster_id": "52ba161e4f7c00de72486ab6d8ba631712d1459883a462c7ae1b3ddff7da8916",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6f86e17e15e7ce3471bca60c700aed0be948a0eb615e5c6fd0ebfb6214683680",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6f86e17e15e7ce3471bca60c700aed0be948a0eb615e5c6fd0ebfb6214683680",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 278.0
+    },
+    {
+      "cluster_id": "ea003b3381a21d56dc1578e926362de312e83ae05c5e08074dcc22e4de57be01",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ea003b3381a21d56dc1578e926362de312e83ae05c5e08074dcc22e4de57be01",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 284.0
+    },
+    {
+      "cluster_id": "65dc191384d7abd80c88a7b3f405c783c626d41568606fbec1e3ba418b8a12f0",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 281.0
+    },
+    {
+      "cluster_id": "65dc191384d7abd80c88a7b3f405c783c626d41568606fbec1e3ba418b8a12f0",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ac94a4c87ddc7857c7a217c9ce660433e0564c0981b413fadc924341b4fdf278",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ac94a4c87ddc7857c7a217c9ce660433e0564c0981b413fadc924341b4fdf278",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 269.0
+    },
+    {
+      "cluster_id": "6daefaed8f8243a3885d27cbfa392b0834a57b2d5536e8452cb4cac7ecd1216a",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6daefaed8f8243a3885d27cbfa392b0834a57b2d5536e8452cb4cac7ecd1216a",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 272.0
+    },
+    {
+      "cluster_id": "5599d944d496d1f8228affbe185653c39838e6b3ca7f98f91180de1553a9e64d",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "5599d944d496d1f8228affbe185653c39838e6b3ca7f98f91180de1553a9e64d",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 239.0
+    },
+    {
+      "cluster_id": "4bd6f214b08ebe2fa9ade727df159357b35f8e62bf954ebbff10770eb71767e4",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "4bd6f214b08ebe2fa9ade727df159357b35f8e62bf954ebbff10770eb71767e4",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 233.0
+    },
+    {
+      "cluster_id": "a33b959341e0abf437d1499301b095818c4e0ef708e6f5d1bb1bb245d33af5bb",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 231.0
+    },
+    {
+      "cluster_id": "a33b959341e0abf437d1499301b095818c4e0ef708e6f5d1bb1bb245d33af5bb",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "18152ec2f723dfab44950b060ee5d0e4c526586e0a0b62c8b2f510ea3ac533e0",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 223.0
+    },
+    {
+      "cluster_id": "18152ec2f723dfab44950b060ee5d0e4c526586e0a0b62c8b2f510ea3ac533e0",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "bb1bca219ee222816785dc77982f73dcf0eda5f361160e065390528c89ff106a",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "bb1bca219ee222816785dc77982f73dcf0eda5f361160e065390528c89ff106a",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 229.0
+    },
+    {
+      "cluster_id": "f414fe52b6476826274349453e41761a9534dbed4c5c9f9dcb447537653b0780",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 241.0
+    },
+    {
+      "cluster_id": "f414fe52b6476826274349453e41761a9534dbed4c5c9f9dcb447537653b0780",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "896c377a2c23334cac2ef4949a444347a479569eb038d409340ad9b0b14bfdbb",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "896c377a2c23334cac2ef4949a444347a479569eb038d409340ad9b0b14bfdbb",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 225.0
+    },
+    {
+      "cluster_id": "99a3066a9441f6297040975df4dc82b61a8298f0a5e3f17c65cb2959607f00bf",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 229.0
+    },
+    {
+      "cluster_id": "99a3066a9441f6297040975df4dc82b61a8298f0a5e3f17c65cb2959607f00bf",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "eac842e174ea10bed9217ac694e268c5d3f58ea52c961d57a91a3d6052b76c45",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "eac842e174ea10bed9217ac694e268c5d3f58ea52c961d57a91a3d6052b76c45",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 234.0
+    },
+    {
+      "cluster_id": "13ba9fe7baafcd1ef0286a1167911f82da207aee13385cb2e22c05e130574ec1",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 244.0
+    },
+    {
+      "cluster_id": "13ba9fe7baafcd1ef0286a1167911f82da207aee13385cb2e22c05e130574ec1",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "68f008db9842dcc4538c5558b4e4ba1b64689af89455c73ebe512e29dfab96c3",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 236.0
+    },
+    {
+      "cluster_id": "68f008db9842dcc4538c5558b4e4ba1b64689af89455c73ebe512e29dfab96c3",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "75df6fc8a1b0d2b81001558970f37e4389cf30a2b7fc404ce818e74bf59b97bc",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 231.0
+    },
+    {
+      "cluster_id": "75df6fc8a1b0d2b81001558970f37e4389cf30a2b7fc404ce818e74bf59b97bc",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "2c227f3c0b6db2dec78af0c6c6989959fc4f72016584cde16aec00afbe87b789",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "2c227f3c0b6db2dec78af0c6c6989959fc4f72016584cde16aec00afbe87b789",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 235.0
+    },
+    {
+      "cluster_id": "7226324d7e1787ce14c25f3dc7052b21d4fc28e34748186559de6743591ca854",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "7226324d7e1787ce14c25f3dc7052b21d4fc28e34748186559de6743591ca854",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 230.0
+    },
+    {
+      "cluster_id": "595ca5e9fa1fafffe520625d25a48d45da3d366bd79f036e004f06bd767c2525",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "595ca5e9fa1fafffe520625d25a48d45da3d366bd79f036e004f06bd767c2525",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 233.0
+    },
+    {
+      "cluster_id": "8c2f32fd348cf4b957b5791a6170ee277e4b4ddfbbad96141d1773b1cab80539",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 236.0
+    },
+    {
+      "cluster_id": "8c2f32fd348cf4b957b5791a6170ee277e4b4ddfbbad96141d1773b1cab80539",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "0fe40b8c1ce4e9f5c38d0555a151a1e426c9d9ed4f66dae5491d0c709d0c45ea",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 227.0
+    },
+    {
+      "cluster_id": "0fe40b8c1ce4e9f5c38d0555a151a1e426c9d9ed4f66dae5491d0c709d0c45ea",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "8924f2b6aecb7349adb43ff4795461856127301fc533534b0f0cc4630a3d15ac",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "8924f2b6aecb7349adb43ff4795461856127301fc533534b0f0cc4630a3d15ac",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 231.0
+    },
+    {
+      "cluster_id": "e4da1db96fe73fe1a4d28f342bd8e345edc5df33e0b3f0ec4d6e3584c59312b1",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "e4da1db96fe73fe1a4d28f342bd8e345edc5df33e0b3f0ec4d6e3584c59312b1",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 233.0
+    },
+    {
+      "cluster_id": "03d4fc1edc3d1ea386758e2d85cb7fae69a187eb9048299aaf8055c2481cf827",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 229.0
+    },
+    {
+      "cluster_id": "03d4fc1edc3d1ea386758e2d85cb7fae69a187eb9048299aaf8055c2481cf827",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "7b8eeed4cb3ae1120b40888807c828d9c81e7006b2a136a4861a861a29979bad",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "7b8eeed4cb3ae1120b40888807c828d9c81e7006b2a136a4861a861a29979bad",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 234.0
+    },
+    {
+      "cluster_id": "689ed80f34b89d68d2d907fe2fd1db917630dc2188271096529f52c8a0c62020",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "689ed80f34b89d68d2d907fe2fd1db917630dc2188271096529f52c8a0c62020",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 225.0
+    },
+    {
+      "cluster_id": "8478fbfc81f0d2da92af4a1c8842a0cd0ef968ddf0d54d0fe6dd752aa2c0604e",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "8478fbfc81f0d2da92af4a1c8842a0cd0ef968ddf0d54d0fe6dd752aa2c0604e",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 238.0
+    },
+    {
+      "cluster_id": "37e305b94c111fc35f408abc77ea475f97d9bfcc405ef6af5d872ea72505a6f3",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 232.0
+    },
+    {
+      "cluster_id": "37e305b94c111fc35f408abc77ea475f97d9bfcc405ef6af5d872ea72505a6f3",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f96599001a2467c52e217c3b314ce26165e97040666f1bba6314d2158fe83205",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f96599001a2467c52e217c3b314ce26165e97040666f1bba6314d2158fe83205",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 236.0
+    },
+    {
+      "cluster_id": "3f4da91a2a178c1af46328b112d0dbe35a5f1b6fbac9e016086b387447fd9c32",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "3f4da91a2a178c1af46328b112d0dbe35a5f1b6fbac9e016086b387447fd9c32",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 229.0
+    },
+    {
+      "cluster_id": "082c06ff0d7a5e55b79fc2b9ef986802b9ca3fa967a400d7d3aa15f85291c245",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "082c06ff0d7a5e55b79fc2b9ef986802b9ca3fa967a400d7d3aa15f85291c245",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 235.0
+    },
+    {
+      "cluster_id": "ef9c5cf183fb2fa62b382a07af8b52329c1f043e89e62f63776df126518505ac",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ef9c5cf183fb2fa62b382a07af8b52329c1f043e89e62f63776df126518505ac",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 239.0
+    },
+    {
+      "cluster_id": "db855cdf5fa2e0316e90456863b65a57a52b05c6d0f128a25c3fab90cb50dc0b",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "db855cdf5fa2e0316e90456863b65a57a52b05c6d0f128a25c3fab90cb50dc0b",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 232.0
+    },
+    {
+      "cluster_id": "52b874f186df7608550689309ddc7aa417d8152c9e98c2491602b2e2745ef5bc",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "52b874f186df7608550689309ddc7aa417d8152c9e98c2491602b2e2745ef5bc",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 228.0
+    },
+    {
+      "cluster_id": "beefb7755303af02e00c1349b6dfe7fc9e3ce17fbf42f859c6e8443771bc0ad1",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "beefb7755303af02e00c1349b6dfe7fc9e3ce17fbf42f859c6e8443771bc0ad1",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 234.0
+    },
+    {
+      "cluster_id": "a96344be3cfdab4c443526e2f726e24b37e9e1e79aee2436b26e147ed7cf64a2",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 235.0
+    },
+    {
+      "cluster_id": "a96344be3cfdab4c443526e2f726e24b37e9e1e79aee2436b26e147ed7cf64a2",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f5789f5d4eb3b487d400f6f45abb4c3e382898a280ed914442670fe495cf3ba4",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f5789f5d4eb3b487d400f6f45abb4c3e382898a280ed914442670fe495cf3ba4",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 241.0
+    },
+    {
+      "cluster_id": "7b6d983bf08c869c7d1ec455cfd7f856cda3bfc657264867c769829c85db5509",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 234.0
+    },
+    {
+      "cluster_id": "7b6d983bf08c869c7d1ec455cfd7f856cda3bfc657264867c769829c85db5509",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "00837d46b5a794aa4e1ea23d0c8bd4db5c19650b53c38d5485f525d00c7cc9f2",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "00837d46b5a794aa4e1ea23d0c8bd4db5c19650b53c38d5485f525d00c7cc9f2",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 226.0
+    },
+    {
+      "cluster_id": "f16104b7c53fb65a3d1fb193686454645bdc1eda92863c16b415a61a059543fa",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 230.0
+    },
+    {
+      "cluster_id": "f16104b7c53fb65a3d1fb193686454645bdc1eda92863c16b415a61a059543fa",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6bf9af87dfd2dceae34514d1dcde639443bf9089ec08ca0e8c5e1f12293b5560",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6bf9af87dfd2dceae34514d1dcde639443bf9089ec08ca0e8c5e1f12293b5560",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 226.0
+    },
+    {
+      "cluster_id": "e72833b64e1ab38feb3c6d76bb8dd114bd41eda50afb01830b5fd1ab7ca98559",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "e72833b64e1ab38feb3c6d76bb8dd114bd41eda50afb01830b5fd1ab7ca98559",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 231.0
+    },
+    {
+      "cluster_id": "175fb400995f490b6d44c329947b355ff1878a9eb49da0fa582781925f4e93cd",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "175fb400995f490b6d44c329947b355ff1878a9eb49da0fa582781925f4e93cd",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 232.0
+    },
+    {
+      "cluster_id": "b4e58c5e01ea8a0b6876f9987a45c7a48d17a6476ecd890f56407087356cbf61",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "b4e58c5e01ea8a0b6876f9987a45c7a48d17a6476ecd890f56407087356cbf61",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 226.0
+    },
+    {
+      "cluster_id": "bb6b7558a3c5844e89a507de641e2c183a25614116e86a61f5162b6eb5a5587d",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 233.0
+    },
+    {
+      "cluster_id": "bb6b7558a3c5844e89a507de641e2c183a25614116e86a61f5162b6eb5a5587d",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "0966e2923299d25af1f509191bd1c8ed7950919e7b4f54ac3bb5f74c244fc529",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 232.0
+    },
+    {
+      "cluster_id": "0966e2923299d25af1f509191bd1c8ed7950919e7b4f54ac3bb5f74c244fc529",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "7b08e2eaeba636dcaa69e50d581bea9f1160bc877275974f3a4a7007682819ee",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 242.0
+    },
+    {
+      "cluster_id": "7b08e2eaeba636dcaa69e50d581bea9f1160bc877275974f3a4a7007682819ee",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "0435d8aad9e44b504d7f3df9bb690dbf6107abc2c0a73fedc3ed07a33a4dcbe1",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "0435d8aad9e44b504d7f3df9bb690dbf6107abc2c0a73fedc3ed07a33a4dcbe1",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 233.0
+    },
+    {
+      "cluster_id": "0076c6b8cd78653b6bdb2053b0a65cb0424cdc9ca8d243ac037fc0d411d39994",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "0076c6b8cd78653b6bdb2053b0a65cb0424cdc9ca8d243ac037fc0d411d39994",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 240.0
+    },
+    {
+      "cluster_id": "b14d34de39f1988c38714677a495b81c22b430554cdc3d0c47827b0aec7a9b10",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 233.0
+    },
+    {
+      "cluster_id": "b14d34de39f1988c38714677a495b81c22b430554cdc3d0c47827b0aec7a9b10",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "b957ca7429200be40bae61e28103204be248dc60c6b4f7f0f70ff172df8b8245",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 224.0
+    },
+    {
+      "cluster_id": "b957ca7429200be40bae61e28103204be248dc60c6b4f7f0f70ff172df8b8245",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "c46514ebeb6be0894c1007bace47327f2c7b6318e64c45e3f002ca8f003c75c9",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "c46514ebeb6be0894c1007bace47327f2c7b6318e64c45e3f002ca8f003c75c9",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 237.0
+    },
+    {
+      "cluster_id": "ad8272d45f954937eabb64655e665da74e8371190216c14b9e0eae9bec5e3235",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ad8272d45f954937eabb64655e665da74e8371190216c14b9e0eae9bec5e3235",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 372.0
+    },
+    {
+      "cluster_id": "10e32eb90c140db6e62a37a458c5dd57c9ae8a6ac6c44bb24be250d61c1bc3da",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 364.0
+    },
+    {
+      "cluster_id": "10e32eb90c140db6e62a37a458c5dd57c9ae8a6ac6c44bb24be250d61c1bc3da",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "220a81fd914818ad9ac8a9fd3c911820c5e5b589e2130308355bf82c24748f13",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "220a81fd914818ad9ac8a9fd3c911820c5e5b589e2130308355bf82c24748f13",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 382.0
+    },
+    {
+      "cluster_id": "d068e70d3b9b6cf23a3e7e927cf6bac88805b9a5bcc5ebb05e06f3f57103ab8c",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 391.0
+    },
+    {
+      "cluster_id": "d068e70d3b9b6cf23a3e7e927cf6bac88805b9a5bcc5ebb05e06f3f57103ab8c",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6a546f67c69bbf507df21f5a09df78117e29d5011ffdfac63fe786acb3823073",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6a546f67c69bbf507df21f5a09df78117e29d5011ffdfac63fe786acb3823073",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 373.0
+    },
+    {
+      "cluster_id": "6318d747cfdae1a969c92f0eea673e7c5414ec5b4c8a0ee7269de768d1a5bbe2",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 374.0
+    },
+    {
+      "cluster_id": "6318d747cfdae1a969c92f0eea673e7c5414ec5b4c8a0ee7269de768d1a5bbe2",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "75aa2ea023b00017ee07d1db62fed32a8b300f9ef0f26ba1424f9270afff0ff4",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 365.0
+    },
+    {
+      "cluster_id": "75aa2ea023b00017ee07d1db62fed32a8b300f9ef0f26ba1424f9270afff0ff4",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "71896ddee97729b3ce919fe09910c61be43921e6fae61e92021519cbafaa5923",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "71896ddee97729b3ce919fe09910c61be43921e6fae61e92021519cbafaa5923",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 382.0
+    },
+    {
+      "cluster_id": "dde42400977f40ee213857da55ae3e3f7a2eed03cfca8b025838aae6881d9116",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "dde42400977f40ee213857da55ae3e3f7a2eed03cfca8b025838aae6881d9116",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 362.0
+    },
+    {
+      "cluster_id": "9d931c263555b8d0a7e5e76d2f0a45db5c3756dce5ad7c749c1b8849edd09457",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 373.0
+    },
+    {
+      "cluster_id": "9d931c263555b8d0a7e5e76d2f0a45db5c3756dce5ad7c749c1b8849edd09457",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "04468f50ef76880601256778213b08c75033bd555e1461ef98fa10bdb6aa4934",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "04468f50ef76880601256778213b08c75033bd555e1461ef98fa10bdb6aa4934",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 376.0
+    },
+    {
+      "cluster_id": "41ee8a149bede9eb41c37e52494941ba7e6e8021cf8f43abda65c6e58152fd26",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 387.0
+    },
+    {
+      "cluster_id": "41ee8a149bede9eb41c37e52494941ba7e6e8021cf8f43abda65c6e58152fd26",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "7f23a46f7b60a027d45ee66d65af51d7627ed18ba077bf0dc38fd875f8b9a1ea",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "7f23a46f7b60a027d45ee66d65af51d7627ed18ba077bf0dc38fd875f8b9a1ea",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 356.0
+    },
+    {
+      "cluster_id": "769d7a670f575f764bbd04aefb375fdee6e4093ad252b39e20f5e24afaf7e71f",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 372.0
+    },
+    {
+      "cluster_id": "769d7a670f575f764bbd04aefb375fdee6e4093ad252b39e20f5e24afaf7e71f",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "0b7d1d032a921fa39b0beeca5dbed192e342554718ebb2ae47e360a9322c8d6b",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 379.0
+    },
+    {
+      "cluster_id": "0b7d1d032a921fa39b0beeca5dbed192e342554718ebb2ae47e360a9322c8d6b",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "1e33f166a0258c4f0168487df3e5c0d1c4df1329552c7964ae9659d559acb011",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 363.0
+    },
+    {
+      "cluster_id": "1e33f166a0258c4f0168487df3e5c0d1c4df1329552c7964ae9659d559acb011",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "729ef3b890c0f3d94a56c0212e402ce0b81a9cf3283a79c71defc121ce4e4486",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "729ef3b890c0f3d94a56c0212e402ce0b81a9cf3283a79c71defc121ce4e4486",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 367.0
+    },
+    {
+      "cluster_id": "9b7248e3dbb24268b13cb9eaf98ca58293b8ac1e3be78e580c35f6dce4771405",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "9b7248e3dbb24268b13cb9eaf98ca58293b8ac1e3be78e580c35f6dce4771405",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 373.0
+    },
+    {
+      "cluster_id": "97ece0ef1eb2574afba6882e9d7f59b6c304c89cdd4bbc0c361e4bbde9b9d03f",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 373.0
+    },
+    {
+      "cluster_id": "97ece0ef1eb2574afba6882e9d7f59b6c304c89cdd4bbc0c361e4bbde9b9d03f",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "8bedc2e3f4d16e1bb18ad390d071e5983ba5de86479f22109a3b09f2adccf8ec",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "8bedc2e3f4d16e1bb18ad390d071e5983ba5de86479f22109a3b09f2adccf8ec",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 372.0
+    },
+    {
+      "cluster_id": "1e55006dc33cb3b81c7fe56f7b5b9190158056d51fde6ea889bb250e82df7a13",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 375.0
+    },
+    {
+      "cluster_id": "1e55006dc33cb3b81c7fe56f7b5b9190158056d51fde6ea889bb250e82df7a13",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6d79bfee973ba5f8c2fac2a4d9527e711cb51413006b38966da138b52527ccab",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 377.0
+    },
+    {
+      "cluster_id": "6d79bfee973ba5f8c2fac2a4d9527e711cb51413006b38966da138b52527ccab",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "76229e8d3e4a24f1bffe8427e030eb615990b869a92e95370b2173c356ae5e14",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "76229e8d3e4a24f1bffe8427e030eb615990b869a92e95370b2173c356ae5e14",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 375.0
+    },
+    {
+      "cluster_id": "4c18d1aa6eadc6c0097fa4d6bcae22b616191f4612341afef80b46a6c0f87064",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 366.0
+    },
+    {
+      "cluster_id": "4c18d1aa6eadc6c0097fa4d6bcae22b616191f4612341afef80b46a6c0f87064",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "c60359f0813ed18f0d4f04065c06f51542350c04a730a2045e06681a21f9ffea",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "c60359f0813ed18f0d4f04065c06f51542350c04a730a2045e06681a21f9ffea",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 737.0
+    },
+    {
+      "cluster_id": "eba9de70fc76091b19f170add918d4375671550a746129e2f9b0a6730ea92abd",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "eba9de70fc76091b19f170add918d4375671550a746129e2f9b0a6730ea92abd",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 728.0
+    },
+    {
+      "cluster_id": "137dc26654da65f6bfd386d99b6098e4bb4b08e3c4d6ac5bd1d23c79d3429f41",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 720.0
+    },
+    {
+      "cluster_id": "137dc26654da65f6bfd386d99b6098e4bb4b08e3c4d6ac5bd1d23c79d3429f41",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "9e1a01185448ede12c9bd992adcc9ff8ff0953485d594db2bb7e34a05a887991",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 765.0
+    },
+    {
+      "cluster_id": "9e1a01185448ede12c9bd992adcc9ff8ff0953485d594db2bb7e34a05a887991",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "73503945e977d0975cb194daf3f535ee182833672c9828f0340e7d22ce164bfe",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "73503945e977d0975cb194daf3f535ee182833672c9828f0340e7d22ce164bfe",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 737.0
+    },
+    {
+      "cluster_id": "8548001bb73f118a30c01191af1c0c8815d5073417b5852c14806b3ebec21487",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "8548001bb73f118a30c01191af1c0c8815d5073417b5852c14806b3ebec21487",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 742.0
+    },
+    {
+      "cluster_id": "f29d0a1d21e7532126befcabdd06a4d3eeeb4d616d6f983c76974293408b68c3",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f29d0a1d21e7532126befcabdd06a4d3eeeb4d616d6f983c76974293408b68c3",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 723.0
+    },
+    {
+      "cluster_id": "255ca7a7879f48faacc3f7de78fbc975b2b00baa52c7a3b9e6520ca7174b794e",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "255ca7a7879f48faacc3f7de78fbc975b2b00baa52c7a3b9e6520ca7174b794e",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 726.0
+    },
+    {
+      "cluster_id": "6959a6eb5541dcef3e4ac9625d7addb40a597d302fbb1592de1e59e6a96af04c",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 738.0
+    },
+    {
+      "cluster_id": "6959a6eb5541dcef3e4ac9625d7addb40a597d302fbb1592de1e59e6a96af04c",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "cbe62392da39bf7122e8cda6c895832e07ea84f93051d6ae55233dbc52f38265",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "cbe62392da39bf7122e8cda6c895832e07ea84f93051d6ae55233dbc52f38265",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 745.0
+    },
+    {
+      "cluster_id": "2943f6f1ea2a49f956bb34f55f50b3c5e46a348928e1248ae6a00a0578df59fe",
+      "cell": "exact",
+      "action": "reader",
+      "correct": false,
+      "cost": 738.0
+    },
+    {
+      "cluster_id": "2943f6f1ea2a49f956bb34f55f50b3c5e46a348928e1248ae6a00a0578df59fe",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "010e13d4802af208a777ed14f9539c537e26a0726ca9282e733687641ffba650",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 720.0
+    },
+    {
+      "cluster_id": "010e13d4802af208a777ed14f9539c537e26a0726ca9282e733687641ffba650",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "67ca43c9800d3bbaf93225403fd043d59ea004bd1c896fe8e4e1493aa793e40c",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 730.0
+    },
+    {
+      "cluster_id": "67ca43c9800d3bbaf93225403fd043d59ea004bd1c896fe8e4e1493aa793e40c",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "8765ae96441741fb1c727e5a45c4a5f101775e0af793d40a5254afa2d694dd3d",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "8765ae96441741fb1c727e5a45c4a5f101775e0af793d40a5254afa2d694dd3d",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 747.0
+    },
+    {
+      "cluster_id": "7a4fcd4526c909f853c44cec4f739a8927c9e96c7e762f07fb36c48e6d27b5c4",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 752.0
+    },
+    {
+      "cluster_id": "7a4fcd4526c909f853c44cec4f739a8927c9e96c7e762f07fb36c48e6d27b5c4",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f40ceb97945780752f8fd1489132fade6f901e3922c6c2c8c8e2e2911f86e2f3",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f40ceb97945780752f8fd1489132fade6f901e3922c6c2c8c8e2e2911f86e2f3",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 740.0
+    },
+    {
+      "cluster_id": "83538d21debe1c335c822d455a7c005f3ad2b7ab3d8988803ff8b98f289340b1",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "83538d21debe1c335c822d455a7c005f3ad2b7ab3d8988803ff8b98f289340b1",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 733.0
+    },
+    {
+      "cluster_id": "7092555eef2fbafa963bd5a2439ddb74ff11cb70eac4dd6f217b3f30e3fbd575",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "7092555eef2fbafa963bd5a2439ddb74ff11cb70eac4dd6f217b3f30e3fbd575",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 752.0
+    },
+    {
+      "cluster_id": "283f2d0cb18f1dcf4c6a733b186e500f6c0b95190d31dcaff4353e0201354d5c",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "283f2d0cb18f1dcf4c6a733b186e500f6c0b95190d31dcaff4353e0201354d5c",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 726.0
+    },
+    {
+      "cluster_id": "adf33ea5bbf43559c90230fd93fcdede85c74495aa719b87ac8c096df4256435",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "adf33ea5bbf43559c90230fd93fcdede85c74495aa719b87ac8c096df4256435",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 729.0
+    },
+    {
+      "cluster_id": "6dba7c95b8750a1eb52929e40660a3c78a9948130a98afc3b8eea1d542e452c0",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 738.0
+    },
+    {
+      "cluster_id": "6dba7c95b8750a1eb52929e40660a3c78a9948130a98afc3b8eea1d542e452c0",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "d51b2d69395a9e1102a90982331c5d87d576d0461b04e62bf5f87feeae761260",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "d51b2d69395a9e1102a90982331c5d87d576d0461b04e62bf5f87feeae761260",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 752.0
+    },
+    {
+      "cluster_id": "fee540e43926ccc11937d2962fa796e7dac11d3873f8f88e74a9af6a0edf7409",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "fee540e43926ccc11937d2962fa796e7dac11d3873f8f88e74a9af6a0edf7409",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 738.0
+    },
+    {
+      "cluster_id": "27f7be042c6be56bc86dc2333e5b319c717595b62d4fd81cb0c1082be33c9beb",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "27f7be042c6be56bc86dc2333e5b319c717595b62d4fd81cb0c1082be33c9beb",
+      "cell": "exact",
+      "action": "reader",
+      "correct": false,
+      "cost": 743.0
+    },
+    {
+      "cluster_id": "d9c1d2ee5338ea0f237d89f2c6f63152b048fb4cf8c38ca5ab6c09b61f3eab84",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "d9c1d2ee5338ea0f237d89f2c6f63152b048fb4cf8c38ca5ab6c09b61f3eab84",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 759.0
+    },
+    {
+      "cluster_id": "72142cf6d432d206a030489a44ea9bd589410510eba67cc10ef4b135e78070cb",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 771.0
+    },
+    {
+      "cluster_id": "72142cf6d432d206a030489a44ea9bd589410510eba67cc10ef4b135e78070cb",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "20173f8434de8b81e09a0bf8d7f5c28bdf1f92a9dbf3388a91d908c3cbab3bc6",
+      "cell": "exact",
+      "action": "reader",
+      "correct": false,
+      "cost": 749.0
+    },
+    {
+      "cluster_id": "20173f8434de8b81e09a0bf8d7f5c28bdf1f92a9dbf3388a91d908c3cbab3bc6",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "012d83fd332c5500cbbd8e4e8d5cd42913c14ada58a873446a5b0f529a04279f",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "012d83fd332c5500cbbd8e4e8d5cd42913c14ada58a873446a5b0f529a04279f",
+      "cell": "exact",
+      "action": "reader",
+      "correct": false,
+      "cost": 808.0
+    },
+    {
+      "cluster_id": "adf61da603f54aeb9c973bc71904ac5ab5064dbd79a9edd3f4ccf8a69e0b6048",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "adf61da603f54aeb9c973bc71904ac5ab5064dbd79a9edd3f4ccf8a69e0b6048",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 761.0
+    },
+    {
+      "cluster_id": "8f0eb9284a32fa163a04d41a927570e720e51e914d7d76b5851f8c0f02857133",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 756.0
+    },
+    {
+      "cluster_id": "8f0eb9284a32fa163a04d41a927570e720e51e914d7d76b5851f8c0f02857133",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "7805c48c1df38e211cbdd8c5dc08db0611aa3452a95df7b725c982b44303b4d8",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "7805c48c1df38e211cbdd8c5dc08db0611aa3452a95df7b725c982b44303b4d8",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 780.0
+    },
+    {
+      "cluster_id": "905516b6d4f095d2248bae4742100ea10c6ddfd614ebef05361856bec59be915",
+      "cell": "exact",
+      "action": "reader",
+      "correct": false,
+      "cost": 766.0
+    },
+    {
+      "cluster_id": "905516b6d4f095d2248bae4742100ea10c6ddfd614ebef05361856bec59be915",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ce0dd6b920680fd8edf3d29b7bf15121e0da3bd332f4f985456a8ac07b25aff4",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ce0dd6b920680fd8edf3d29b7bf15121e0da3bd332f4f985456a8ac07b25aff4",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 736.0
+    },
+    {
+      "cluster_id": "b3b1fff4e23012b17af93e7cf1fa865b2833d716baa3d485dd7276aad500e01e",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "b3b1fff4e23012b17af93e7cf1fa865b2833d716baa3d485dd7276aad500e01e",
+      "cell": "exact",
+      "action": "reader",
+      "correct": false,
+      "cost": 769.0
+    },
+    {
+      "cluster_id": "10ab193f6b5cf599214d38a6f96ac45bf5351f02942e870498f6c6492cc3b7d6",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "10ab193f6b5cf599214d38a6f96ac45bf5351f02942e870498f6c6492cc3b7d6",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 754.0
+    },
+    {
+      "cluster_id": "88815dd465b1a83aff151dd2a15e9c4437e3af1aad15926f82fa1db5ffae9c05",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 740.0
+    },
+    {
+      "cluster_id": "88815dd465b1a83aff151dd2a15e9c4437e3af1aad15926f82fa1db5ffae9c05",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "689918a0138bccb1db5595d056639d5a3117ee68e0d9b7c2f56aa64241d3ba01",
+      "cell": "exact",
+      "action": "reader",
+      "correct": false,
+      "cost": 764.0
+    },
+    {
+      "cluster_id": "689918a0138bccb1db5595d056639d5a3117ee68e0d9b7c2f56aa64241d3ba01",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ecde5462d02224b512ee654af20571b24473c602be7303b705369cb757069006",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ecde5462d02224b512ee654af20571b24473c602be7303b705369cb757069006",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 769.0
+    },
+    {
+      "cluster_id": "b5707d2477b87ea28e320d6c69bc5c1c609fd4e1875b2192edd9aa71890ec22a",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "b5707d2477b87ea28e320d6c69bc5c1c609fd4e1875b2192edd9aa71890ec22a",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 759.0
+    },
+    {
+      "cluster_id": "fb373a9fbffde8871acd922e9ce989ec3b29eae6c6f64b54cfc057cb26f0987c",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "fb373a9fbffde8871acd922e9ce989ec3b29eae6c6f64b54cfc057cb26f0987c",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 757.0
+    },
+    {
+      "cluster_id": "7ff3a002546c4aeb4c512308734d5e79724a8c1746251daae2c9adc1dd4e2cf3",
+      "cell": "exact",
+      "action": "reader",
+      "correct": false,
+      "cost": 781.0
+    },
+    {
+      "cluster_id": "7ff3a002546c4aeb4c512308734d5e79724a8c1746251daae2c9adc1dd4e2cf3",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "c49f2e7bb27547dcd0012c4de2669ed315aad6b5f0daec070b8ebbf75798102e",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "c49f2e7bb27547dcd0012c4de2669ed315aad6b5f0daec070b8ebbf75798102e",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 788.0
+    },
+    {
+      "cluster_id": "93c8faaf979cf533a7679a005364af8ee87b5ad62e3e4acf8df95036f6693c21",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "93c8faaf979cf533a7679a005364af8ee87b5ad62e3e4acf8df95036f6693c21",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 749.0
+    },
+    {
+      "cluster_id": "659aba7fdb52f1455a4a40203004fddfc1cd7ba506f86faf7659094ea8929e1b",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 772.0
+    },
+    {
+      "cluster_id": "659aba7fdb52f1455a4a40203004fddfc1cd7ba506f86faf7659094ea8929e1b",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6e44b17003a6b5ceb3f8612bbc721955fc5cab8448c6c73d55905bd4d219a55e",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6e44b17003a6b5ceb3f8612bbc721955fc5cab8448c6c73d55905bd4d219a55e",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 752.0
+    },
+    {
+      "cluster_id": "3552ce948f49af55343753826a1a28c476b94923c06e7e3977eee77f1f79f645",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "3552ce948f49af55343753826a1a28c476b94923c06e7e3977eee77f1f79f645",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 759.0
+    },
+    {
+      "cluster_id": "8bad425a808fd3010b94e29d85cb1deedd298f07fdef04318b359590d4924f7f",
+      "cell": "exact",
+      "action": "reader",
+      "correct": false,
+      "cost": 786.0
+    },
+    {
+      "cluster_id": "8bad425a808fd3010b94e29d85cb1deedd298f07fdef04318b359590d4924f7f",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "11f6303b2bb1170f99fd6fccd43c63525ada19f568b43b4bc05f96db975b5439",
+      "cell": "exact",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "11f6303b2bb1170f99fd6fccd43c63525ada19f568b43b4bc05f96db975b5439",
+      "cell": "exact",
+      "action": "reader",
+      "correct": true,
+      "cost": 776.0
+    },
+    {
+      "cluster_id": "c55bdab542a375879d030a0f4b75d1986516c3b5917a600f9d246a73fd65bb4e",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "c55bdab542a375879d030a0f4b75d1986516c3b5917a600f9d246a73fd65bb4e",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1331.0
+    },
+    {
+      "cluster_id": "ec917e74cd263be6e46db07da6f6456bac4e159f4a11586ee67c5d02bf91dcd4",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ec917e74cd263be6e46db07da6f6456bac4e159f4a11586ee67c5d02bf91dcd4",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1319.0
+    },
+    {
+      "cluster_id": "0f09e3bb74b6cd503b6c9fc6c8a6a8ec6cd6fb459ea82db68dede0a7b2033396",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1320.0
+    },
+    {
+      "cluster_id": "0f09e3bb74b6cd503b6c9fc6c8a6a8ec6cd6fb459ea82db68dede0a7b2033396",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "c0edf4f79469db059d33dfa755a39482f753441581257cdf481c57aaca8f0845",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1332.0
+    },
+    {
+      "cluster_id": "c0edf4f79469db059d33dfa755a39482f753441581257cdf481c57aaca8f0845",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "db9b41d9f78281b8bb24ae24f2a5d8c2e9a47ab8c2c82c3133e0155981c4a7b6",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1304.0
+    },
+    {
+      "cluster_id": "db9b41d9f78281b8bb24ae24f2a5d8c2e9a47ab8c2c82c3133e0155981c4a7b6",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "97333fb47afa912d91961efe4c0d315ab2537ecac2acd411d34b941c6f1f9ea1",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "97333fb47afa912d91961efe4c0d315ab2537ecac2acd411d34b941c6f1f9ea1",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1337.0
+    },
+    {
+      "cluster_id": "e916b94bd173f61fe1641d4f3cd1246d244b075f6e3f81c77d140941c7bb47a7",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "e916b94bd173f61fe1641d4f3cd1246d244b075f6e3f81c77d140941c7bb47a7",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1333.0
+    },
+    {
+      "cluster_id": "2da9ddf4c5c9b6f111603032e3f608af24bbae58abedd16157dc23551a56805c",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1339.0
+    },
+    {
+      "cluster_id": "2da9ddf4c5c9b6f111603032e3f608af24bbae58abedd16157dc23551a56805c",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "65d095234c4bbf6dc3201d9b2f1544a6475a13221dec12db63fd8f77cb41872c",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1312.0
+    },
+    {
+      "cluster_id": "65d095234c4bbf6dc3201d9b2f1544a6475a13221dec12db63fd8f77cb41872c",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "61f7246262c09f152cfa4d4dfa380caee9c644a774d294ec700d49210d0b1da7",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "61f7246262c09f152cfa4d4dfa380caee9c644a774d294ec700d49210d0b1da7",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": false,
+      "cost": 1321.0
+    },
+    {
+      "cluster_id": "8523b6fa5c9421ac8184f9367af9aef5c424f2e7e77eae7cb8f5a2df8332045b",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1318.0
+    },
+    {
+      "cluster_id": "8523b6fa5c9421ac8184f9367af9aef5c424f2e7e77eae7cb8f5a2df8332045b",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "118b81eafad573cf5db25f8ba6cfda0e7499c4ed51f93543c58c69265478a187",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "118b81eafad573cf5db25f8ba6cfda0e7499c4ed51f93543c58c69265478a187",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1345.0
+    },
+    {
+      "cluster_id": "9cfd4784a90ca8018861573a623520c7726ba6e47859750bb90781ce248d001c",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1332.0
+    },
+    {
+      "cluster_id": "9cfd4784a90ca8018861573a623520c7726ba6e47859750bb90781ce248d001c",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "c8b1206716837ca003c518ec57a91d533218424c289ca99b146181633cba3e81",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1324.0
+    },
+    {
+      "cluster_id": "c8b1206716837ca003c518ec57a91d533218424c289ca99b146181633cba3e81",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "046202223ef6bded7611653339d0a2c155b838b69a6818e984e4a0f9513cff5a",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "046202223ef6bded7611653339d0a2c155b838b69a6818e984e4a0f9513cff5a",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1343.0
+    },
+    {
+      "cluster_id": "264ca6b138337538cfe2c406cb6d5a03e2b42acbe58605f3f2a88500e35d4299",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "264ca6b138337538cfe2c406cb6d5a03e2b42acbe58605f3f2a88500e35d4299",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1330.0
+    },
+    {
+      "cluster_id": "38af295893c9bb205653f9bbff47a3915c9db1a34e7d76492eeaba97e97f81aa",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "38af295893c9bb205653f9bbff47a3915c9db1a34e7d76492eeaba97e97f81aa",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1319.0
+    },
+    {
+      "cluster_id": "e4e5e06af9498ad88872b5d2abb507c19abe7e98d5ac3fc110d681111fc38923",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "e4e5e06af9498ad88872b5d2abb507c19abe7e98d5ac3fc110d681111fc38923",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1321.0
+    },
+    {
+      "cluster_id": "234105193c01aa42155a57553e162c3c27140b2b37845d904649d79744b5688f",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1303.0
+    },
+    {
+      "cluster_id": "234105193c01aa42155a57553e162c3c27140b2b37845d904649d79744b5688f",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "0417670285ef8da6cbfacf5d003296f907db1d69583cdddeb90e5eae00ed5b9d",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": false,
+      "cost": 1312.0
+    },
+    {
+      "cluster_id": "0417670285ef8da6cbfacf5d003296f907db1d69583cdddeb90e5eae00ed5b9d",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "1ff8170d6a2f8c0dd54d5fc6268c269a914c22104499f98c69fb3b7941683ce0",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1338.0
+    },
+    {
+      "cluster_id": "1ff8170d6a2f8c0dd54d5fc6268c269a914c22104499f98c69fb3b7941683ce0",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "7b7d6753cd33c3e7d7445e416445b141b5b95405de7d0b81f7aa4b55c0256a05",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1322.0
+    },
+    {
+      "cluster_id": "7b7d6753cd33c3e7d7445e416445b141b5b95405de7d0b81f7aa4b55c0256a05",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "76245e58400f9fbf80c22b7545e7ac8d9c758da6b17cf54fab845666a7e18b64",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1308.0
+    },
+    {
+      "cluster_id": "76245e58400f9fbf80c22b7545e7ac8d9c758da6b17cf54fab845666a7e18b64",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ad1c59a5623dec17156232bb9a4a70a56bf68308c6a52bcd3819d06be798a1f7",
+      "cell": "dependency",
+      "action": "reader",
+      "correct": true,
+      "cost": 1324.0
+    },
+    {
+      "cluster_id": "ad1c59a5623dec17156232bb9a4a70a56bf68308c6a52bcd3819d06be798a1f7",
+      "cell": "dependency",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "2612437d1a0ccd10006fee4c19b938e793981f137ab922bef2a97fee42aceae0",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 664.0
+    },
+    {
+      "cluster_id": "2612437d1a0ccd10006fee4c19b938e793981f137ab922bef2a97fee42aceae0",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "89e179f164a594d0ea82c14a6a0b03c52ac3478f9bdc39fc70ada3fd428fa1f8",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 646.0
+    },
+    {
+      "cluster_id": "89e179f164a594d0ea82c14a6a0b03c52ac3478f9bdc39fc70ada3fd428fa1f8",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "9d9bf0303def2807f8a79900fe43bc40fbad130f01847eadc08d5c7c886de9c3",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 660.0
+    },
+    {
+      "cluster_id": "9d9bf0303def2807f8a79900fe43bc40fbad130f01847eadc08d5c7c886de9c3",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "227b5b0b61211cc924b1bd192b1a87219d2d13350f8f6c97863d9c91de7ecc6a",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "227b5b0b61211cc924b1bd192b1a87219d2d13350f8f6c97863d9c91de7ecc6a",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 640.0
+    },
+    {
+      "cluster_id": "b2ee9a62c39bd3f7bce72ffdebb0c497824c8ba476ec1a62fea3d26b436be75c",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 663.0
+    },
+    {
+      "cluster_id": "b2ee9a62c39bd3f7bce72ffdebb0c497824c8ba476ec1a62fea3d26b436be75c",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "aedbffa80f35919427aae231920a2c27ef2aa8bf2f361f27a84678af041ed9df",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 661.0
+    },
+    {
+      "cluster_id": "aedbffa80f35919427aae231920a2c27ef2aa8bf2f361f27a84678af041ed9df",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "11336aa8404931de395af22fa1028a50113a56d072953b0410b4641e24ea0393",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "11336aa8404931de395af22fa1028a50113a56d072953b0410b4641e24ea0393",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 635.0
+    },
+    {
+      "cluster_id": "d9d7a85be9aa92302c938c99cdde9fdb818c91b58e69d1980b1eb4a4440136a4",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "d9d7a85be9aa92302c938c99cdde9fdb818c91b58e69d1980b1eb4a4440136a4",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 653.0
+    },
+    {
+      "cluster_id": "e91eb5723d3e8961f043a8e25aa05dddbb630eed5113d954e5d073bf1cac8d8e",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 628.0
+    },
+    {
+      "cluster_id": "e91eb5723d3e8961f043a8e25aa05dddbb630eed5113d954e5d073bf1cac8d8e",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "06bc5b673b014992d8928aed17768d3784b33e32813b60b129a7941adb076fe6",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "06bc5b673b014992d8928aed17768d3784b33e32813b60b129a7941adb076fe6",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 653.0
+    },
+    {
+      "cluster_id": "201bb5411ad46843d656b42bb6d27a641e41b81c55f6147700a2663d22958f91",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 668.0
+    },
+    {
+      "cluster_id": "201bb5411ad46843d656b42bb6d27a641e41b81c55f6147700a2663d22958f91",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "50fc011d4aec496fcb8181749edbafb103792b63e864352ecc04a42243cfb312",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 658.0
+    },
+    {
+      "cluster_id": "50fc011d4aec496fcb8181749edbafb103792b63e864352ecc04a42243cfb312",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6c720062adafed832b9186a9e636bf7e8619c000f19ff605c573706b96f57e8c",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6c720062adafed832b9186a9e636bf7e8619c000f19ff605c573706b96f57e8c",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 635.0
+    },
+    {
+      "cluster_id": "c6acb55b9e202523443c06743cc083e4edbffacdb603e1da0d2f5ce24f3c7d20",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "c6acb55b9e202523443c06743cc083e4edbffacdb603e1da0d2f5ce24f3c7d20",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 645.0
+    },
+    {
+      "cluster_id": "497de0c053fac3d7e340e6b906dca3d9ebce2144267e1df0207922761c848e7b",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 624.0
+    },
+    {
+      "cluster_id": "497de0c053fac3d7e340e6b906dca3d9ebce2144267e1df0207922761c848e7b",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "a301e270dad5db02713b3ada7d2926ff22e6353c734b22ea8e260a7a4b463349",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "a301e270dad5db02713b3ada7d2926ff22e6353c734b22ea8e260a7a4b463349",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 636.0
+    },
+    {
+      "cluster_id": "ad903ebc328425490cf362ac6e25315341282463832a9f236a7bd3732f5270f4",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 638.0
+    },
+    {
+      "cluster_id": "ad903ebc328425490cf362ac6e25315341282463832a9f236a7bd3732f5270f4",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "c44b5810306374b2abf0ee154b88dcd10edf169dd3ef69d5dc8af48857343032",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": true,
+      "cost": 620.0
+    },
+    {
+      "cluster_id": "c44b5810306374b2abf0ee154b88dcd10edf169dd3ef69d5dc8af48857343032",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "0320f943ad2fe72c7dcb26cdde6e5c50ed3bc4a36110c6de0b5e194db00e409b",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "0320f943ad2fe72c7dcb26cdde6e5c50ed3bc4a36110c6de0b5e194db00e409b",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 652.0
+    },
+    {
+      "cluster_id": "916ae541ece5447568b89cabb87d7893db88ae3976b66f5302c61702f7d480ed",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "916ae541ece5447568b89cabb87d7893db88ae3976b66f5302c61702f7d480ed",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 645.0
+    },
+    {
+      "cluster_id": "7ecc9790c343b721db43ea92a598ad70f237429128a01f88ffe14e638a4b6f07",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 640.0
+    },
+    {
+      "cluster_id": "7ecc9790c343b721db43ea92a598ad70f237429128a01f88ffe14e638a4b6f07",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f137aa55ce8018f16b7119eec32911b2434bfb7fc712e8c75c2121fe49f074ae",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f137aa55ce8018f16b7119eec32911b2434bfb7fc712e8c75c2121fe49f074ae",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 660.0
+    },
+    {
+      "cluster_id": "d903779f22ff5bb66c61a204f338237422077a593330bd0d43d3292b3322aa30",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 647.0
+    },
+    {
+      "cluster_id": "d903779f22ff5bb66c61a204f338237422077a593330bd0d43d3292b3322aa30",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "b945fade6dda884a633aa2a58804a230154123b5849f152d235f5632be931724",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 641.0
+    },
+    {
+      "cluster_id": "b945fade6dda884a633aa2a58804a230154123b5849f152d235f5632be931724",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "91038426d425bc161ae6cbb36d0c315a2b6faee8176ccd76324c90c082ea6c5e",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 288.0
+    },
+    {
+      "cluster_id": "91038426d425bc161ae6cbb36d0c315a2b6faee8176ccd76324c90c082ea6c5e",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "40f4072e3eda080f7a562b836c31f8445a79149e61ffc564e69ad73d26492913",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "40f4072e3eda080f7a562b836c31f8445a79149e61ffc564e69ad73d26492913",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 293.0
+    },
+    {
+      "cluster_id": "e0ec964cf15497cf1c8d62dabe1537939762990b4fa90a0bf8241c2ea919ccad",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "e0ec964cf15497cf1c8d62dabe1537939762990b4fa90a0bf8241c2ea919ccad",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 292.0
+    },
+    {
+      "cluster_id": "bf8fa507397d9e62ecb9f1ad73219476f10e80a7b0735659ed7f823e64cd8ac2",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "bf8fa507397d9e62ecb9f1ad73219476f10e80a7b0735659ed7f823e64cd8ac2",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 282.0
+    },
+    {
+      "cluster_id": "ef0ae24aa65b08e527291b586e7fd39d85c125f6ef5bb5e9bae70ff71b0c980d",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ef0ae24aa65b08e527291b586e7fd39d85c125f6ef5bb5e9bae70ff71b0c980d",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 285.0
+    },
+    {
+      "cluster_id": "dc86c2bce5c5dc2a068eaa706444375eace072d06c413a05f5a7b326909e8dc6",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "dc86c2bce5c5dc2a068eaa706444375eace072d06c413a05f5a7b326909e8dc6",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 292.0
+    },
+    {
+      "cluster_id": "2a6ed191e778f212755b68318de3e5cbfc65b5af80e1c5eb41023e6a40eaa6a5",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "2a6ed191e778f212755b68318de3e5cbfc65b5af80e1c5eb41023e6a40eaa6a5",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 295.0
+    },
+    {
+      "cluster_id": "f229fdf95f9ac8a35fbaab4be8f9b04faa677df38c174d7f3502617a2da29b2b",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": true,
+      "cost": 280.0
+    },
+    {
+      "cluster_id": "f229fdf95f9ac8a35fbaab4be8f9b04faa677df38c174d7f3502617a2da29b2b",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "431e54fdbba8994c7bca153acb2f105571b0abd2664a6e065dddf7eb58b3602b",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 281.0
+    },
+    {
+      "cluster_id": "431e54fdbba8994c7bca153acb2f105571b0abd2664a6e065dddf7eb58b3602b",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6cf668a64ca63578a157ccfd7a4ea1fc4c36db92031307df9df2427bb05bd7ad",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "6cf668a64ca63578a157ccfd7a4ea1fc4c36db92031307df9df2427bb05bd7ad",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 287.0
+    },
+    {
+      "cluster_id": "126bfeac1e51ba752a3c5972d44293fef5d71c1bf31a5ff7b9e0c6d5306beb8e",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 286.0
+    },
+    {
+      "cluster_id": "126bfeac1e51ba752a3c5972d44293fef5d71c1bf31a5ff7b9e0c6d5306beb8e",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "e8d3067d7e4ca48925d98fd52d201d584bc18c93049f4be1de289fdc24e8e617",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "e8d3067d7e4ca48925d98fd52d201d584bc18c93049f4be1de289fdc24e8e617",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": true,
+      "cost": 283.0
+    },
+    {
+      "cluster_id": "1c1c2d22c451630d0dc81bcbba1a3ef0c7ebeb11d71ebf5c9a88125c10c12dd0",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 287.0
+    },
+    {
+      "cluster_id": "1c1c2d22c451630d0dc81bcbba1a3ef0c7ebeb11d71ebf5c9a88125c10c12dd0",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "870541c7ceb2454b931ae10e22b697d43a7449291807daa6e93217fc87e5c595",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "870541c7ceb2454b931ae10e22b697d43a7449291807daa6e93217fc87e5c595",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 290.0
+    },
+    {
+      "cluster_id": "daedd495abae8d0406f9b737448c8fbca5888ff61038c3ab4ceafa2a7a06184c",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 287.0
+    },
+    {
+      "cluster_id": "daedd495abae8d0406f9b737448c8fbca5888ff61038c3ab4ceafa2a7a06184c",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "8bd9b25362b6f5536a843c89760a99f462ba26effb36c42206b9907f12fa8280",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 282.0
+    },
+    {
+      "cluster_id": "8bd9b25362b6f5536a843c89760a99f462ba26effb36c42206b9907f12fa8280",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "e8053107e07800084fe7d4f029c5b532b90c83b8308b62bae40cb36d0e998a84",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "e8053107e07800084fe7d4f029c5b532b90c83b8308b62bae40cb36d0e998a84",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 292.0
+    },
+    {
+      "cluster_id": "89485ae8933c9bcfb6d87888688f8dacc10562365b2484da7326878072077e24",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": true,
+      "cost": 275.0
+    },
+    {
+      "cluster_id": "89485ae8933c9bcfb6d87888688f8dacc10562365b2484da7326878072077e24",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "15faa8a6cb28a1b62640e886c369446c44ac106947558a72d87782a8dabece01",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "15faa8a6cb28a1b62640e886c369446c44ac106947558a72d87782a8dabece01",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 291.0
+    },
+    {
+      "cluster_id": "306dd2635c93bb090ac46c72edbf07db51dcbb31cc705927ab1ec56406894aa1",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "306dd2635c93bb090ac46c72edbf07db51dcbb31cc705927ab1ec56406894aa1",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 292.0
+    },
+    {
+      "cluster_id": "f0a530c231ad051a4ea78421a12db7527d1c7bbbaa24454919f3bfb11445607a",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 285.0
+    },
+    {
+      "cluster_id": "f0a530c231ad051a4ea78421a12db7527d1c7bbbaa24454919f3bfb11445607a",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "4ae5c8fcf2dbd0e574eab94b0868fba7d2dabc1c89a550ffcfb1c82762d714b6",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "4ae5c8fcf2dbd0e574eab94b0868fba7d2dabc1c89a550ffcfb1c82762d714b6",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": false,
+      "cost": 288.0
+    },
+    {
+      "cluster_id": "cca9fc4b5b6c869f14f1df661c12632a6cbe33718c5f19b1976bee5e514c08e2",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": true,
+      "cost": 282.0
+    },
+    {
+      "cluster_id": "cca9fc4b5b6c869f14f1df661c12632a6cbe33718c5f19b1976bee5e514c08e2",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "9077f0d533683e9f50b10c376745972482de4f34212496084a98613bc0a9a25a",
+      "cell": "statistic",
+      "action": "reader",
+      "correct": true,
+      "cost": 280.0
+    },
+    {
+      "cluster_id": "9077f0d533683e9f50b10c376745972482de4f34212496084a98613bc0a9a25a",
+      "cell": "statistic",
+      "action": "direct",
+      "correct": true,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "0470e04be3e7bb333b68f14fe966944818e8d52d1dd43837e7b61efc9a58a209",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "0470e04be3e7bb333b68f14fe966944818e8d52d1dd43837e7b61efc9a58a209",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3314.0
+    },
+    {
+      "cluster_id": "d14768407a5e664134a0b35312574a7bf193ca146399f13e7d36a9147773cb63",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "d14768407a5e664134a0b35312574a7bf193ca146399f13e7d36a9147773cb63",
+      "cell": "full",
+      "action": "reader",
+      "correct": true,
+      "cost": 3798.0
+    },
+    {
+      "cluster_id": "5f00ee87fec99575cd398c8f43b50ff9ae368ec91920125e6e1c5f64b15bf13b",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "5f00ee87fec99575cd398c8f43b50ff9ae368ec91920125e6e1c5f64b15bf13b",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3768.0
+    },
+    {
+      "cluster_id": "edd93b02435573eee335b46adf5e0ca0e2b33fb27d88282f5326ece8666818aa",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "edd93b02435573eee335b46adf5e0ca0e2b33fb27d88282f5326ece8666818aa",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3432.0
+    },
+    {
+      "cluster_id": "1db7a4b04a61530b219951ce418a3758fb3785bf8188388596fa7f37201c0d78",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "1db7a4b04a61530b219951ce418a3758fb3785bf8188388596fa7f37201c0d78",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3173.0
+    },
+    {
+      "cluster_id": "87094b3e0fa81d68755a12b2768c0c4a28cf66a2d8a4637c6ab657dc706e5466",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "87094b3e0fa81d68755a12b2768c0c4a28cf66a2d8a4637c6ab657dc706e5466",
+      "cell": "full",
+      "action": "reader",
+      "correct": true,
+      "cost": 3299.0
+    },
+    {
+      "cluster_id": "94c1662e37962f5dbf9054a9517809375e8839935728b186fb13a5306fc47dec",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3392.0
+    },
+    {
+      "cluster_id": "94c1662e37962f5dbf9054a9517809375e8839935728b186fb13a5306fc47dec",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "b10d5955367736b13465097b94920f4f414439e11b5335520737843ad810fa2c",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3246.0
+    },
+    {
+      "cluster_id": "b10d5955367736b13465097b94920f4f414439e11b5335520737843ad810fa2c",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "03825751df9651b3ae823f9a008de86369683bf85d9c69393a6e2675fe47d3aa",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3231.0
+    },
+    {
+      "cluster_id": "03825751df9651b3ae823f9a008de86369683bf85d9c69393a6e2675fe47d3aa",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f2e0f10e119f750c1462356b626b2ba62bc7ce54f5dff51da53eb45c32bad157",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "f2e0f10e119f750c1462356b626b2ba62bc7ce54f5dff51da53eb45c32bad157",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3297.0
+    },
+    {
+      "cluster_id": "919555bffa226b0086907156f22ac9d0c784361ce5a181b0dd76915e991ae00d",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "919555bffa226b0086907156f22ac9d0c784361ce5a181b0dd76915e991ae00d",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3173.0
+    },
+    {
+      "cluster_id": "887a6e61fda391d47cffb5a8a496bcaec4c046335c37783913714f077fc24b07",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "887a6e61fda391d47cffb5a8a496bcaec4c046335c37783913714f077fc24b07",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3287.0
+    },
+    {
+      "cluster_id": "b93fab8dc990d2a716156fcfb0c650603578a0a8a916a20d12552cc873811ca9",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3157.0
+    },
+    {
+      "cluster_id": "b93fab8dc990d2a716156fcfb0c650603578a0a8a916a20d12552cc873811ca9",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "7d80b211d1a478658113f214fc971cd613c72887a97f7082f75178c68c9df1d7",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3533.0
+    },
+    {
+      "cluster_id": "7d80b211d1a478658113f214fc971cd613c72887a97f7082f75178c68c9df1d7",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "d0184453ea7f3b7082e3672fe22a5cfa4098e55cd31a391cc7c465c8796693ec",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "d0184453ea7f3b7082e3672fe22a5cfa4098e55cd31a391cc7c465c8796693ec",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3441.0
+    },
+    {
+      "cluster_id": "cd43d6c703a1b3626b65d5193dd6bf90ceafe15d701b29d6e75fad4c8b312ffb",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "cd43d6c703a1b3626b65d5193dd6bf90ceafe15d701b29d6e75fad4c8b312ffb",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3355.0
+    },
+    {
+      "cluster_id": "2dc710908e833c5c7de9f287ba2cb160b8f202a377516426bd37de98a5492d43",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "2dc710908e833c5c7de9f287ba2cb160b8f202a377516426bd37de98a5492d43",
+      "cell": "full",
+      "action": "reader",
+      "correct": true,
+      "cost": 3215.0
+    },
+    {
+      "cluster_id": "361aa68b22e9467d35ad2243127e36852e8dd32e2fa87fe4fb2d9fcd330d90a6",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "361aa68b22e9467d35ad2243127e36852e8dd32e2fa87fe4fb2d9fcd330d90a6",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3496.0
+    },
+    {
+      "cluster_id": "7eec61a7ab56ccda153a67f72304e62408c4deba0f67aef257d4fbaca52d8dfc",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3269.0
+    },
+    {
+      "cluster_id": "7eec61a7ab56ccda153a67f72304e62408c4deba0f67aef257d4fbaca52d8dfc",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "99d843a6457cb3b252c04e1a342a2004ae6e5eb3ad723a8db13374e751181233",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "99d843a6457cb3b252c04e1a342a2004ae6e5eb3ad723a8db13374e751181233",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3066.0
+    },
+    {
+      "cluster_id": "0408c4dbc2c4b471cb05cd84342c3e94a8352e6df670ba13b520b3e1a0d87d54",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3192.0
+    },
+    {
+      "cluster_id": "0408c4dbc2c4b471cb05cd84342c3e94a8352e6df670ba13b520b3e1a0d87d54",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "c602e5f654a0fd51b86fc4a7e9f0ce16c775ab713465593b688dac7832a6ea70",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3181.0
+    },
+    {
+      "cluster_id": "c602e5f654a0fd51b86fc4a7e9f0ce16c775ab713465593b688dac7832a6ea70",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "15558ddbab6ccf9d06c2c48448d7d37732bb8b7647795e60d2675a567d205eb2",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3288.0
+    },
+    {
+      "cluster_id": "15558ddbab6ccf9d06c2c48448d7d37732bb8b7647795e60d2675a567d205eb2",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "31e91ebdb78b33c829f8e8fc6f84cd536c42504c5504d62a18a769b14603d90b",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "31e91ebdb78b33c829f8e8fc6f84cd536c42504c5504d62a18a769b14603d90b",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3338.0
+    },
+    {
+      "cluster_id": "80a98aba84d6dd610f63ad2499f35b2acd1c69bab04bbc6bb6dd2197bcf1e19d",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3582.0
+    },
+    {
+      "cluster_id": "80a98aba84d6dd610f63ad2499f35b2acd1c69bab04bbc6bb6dd2197bcf1e19d",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "b3bade4515c92c3e6477309d1d1c45d097ebf931a59820fa57f5a8092db3bf21",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "b3bade4515c92c3e6477309d1d1c45d097ebf931a59820fa57f5a8092db3bf21",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3523.0
+    },
+    {
+      "cluster_id": "7b4dbdeefd2dc76205153667193df440b329e280536c9d9c6bf88a3498120d0f",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 4142.0
+    },
+    {
+      "cluster_id": "7b4dbdeefd2dc76205153667193df440b329e280536c9d9c6bf88a3498120d0f",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "098e058cde9743449d997034ffbd268fa155cf2f1ddf43a1a7bd456ca22df261",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 2877.0
+    },
+    {
+      "cluster_id": "098e058cde9743449d997034ffbd268fa155cf2f1ddf43a1a7bd456ca22df261",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "cc72322f9aa80ef1701a8b5b04b994eda229f7d691f0812f3db75e1a67843d21",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "cc72322f9aa80ef1701a8b5b04b994eda229f7d691f0812f3db75e1a67843d21",
+      "cell": "full",
+      "action": "reader",
+      "correct": true,
+      "cost": 2699.0
+    },
+    {
+      "cluster_id": "3d531e8c1304214314e6e822f06d18a295f182096c3bc5fad8320a130dcde33e",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "3d531e8c1304214314e6e822f06d18a295f182096c3bc5fad8320a130dcde33e",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3590.0
+    },
+    {
+      "cluster_id": "ca3233aaf1c67a2f84505fc2b907528c9b187bbe27c1e4e9c9ea123032adc1d0",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3928.0
+    },
+    {
+      "cluster_id": "ca3233aaf1c67a2f84505fc2b907528c9b187bbe27c1e4e9c9ea123032adc1d0",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "48e3b5ae45e332e46002f05a8f87458688f16b7212a0955897a825e6bc394272",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3626.0
+    },
+    {
+      "cluster_id": "48e3b5ae45e332e46002f05a8f87458688f16b7212a0955897a825e6bc394272",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "0fddf173746452f2b02ba1574c52bd812e9f15152f88610fc12f346453ea7c44",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 2954.0
+    },
+    {
+      "cluster_id": "0fddf173746452f2b02ba1574c52bd812e9f15152f88610fc12f346453ea7c44",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "33887a8df420cd2215dfb1dc2beda9fc973dec4a49825b0482bd1cba043ee082",
+      "cell": "full",
+      "action": "reader",
+      "correct": true,
+      "cost": 4078.0
+    },
+    {
+      "cluster_id": "33887a8df420cd2215dfb1dc2beda9fc973dec4a49825b0482bd1cba043ee082",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "07ab42937eec972058cbff2e17346550303f6deacaaac254b3362a3a682493e9",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "07ab42937eec972058cbff2e17346550303f6deacaaac254b3362a3a682493e9",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 4034.0
+    },
+    {
+      "cluster_id": "0c8f2e837d9159c78c1245888487083e05f8ca138c55a07b56ca4246faad1d41",
+      "cell": "full",
+      "action": "reader",
+      "correct": true,
+      "cost": 4084.0
+    },
+    {
+      "cluster_id": "0c8f2e837d9159c78c1245888487083e05f8ca138c55a07b56ca4246faad1d41",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "885d28efd915b1ff150cc3c9b4199b80f25095579a5a89779d5e7746adfb9e00",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "885d28efd915b1ff150cc3c9b4199b80f25095579a5a89779d5e7746adfb9e00",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 4008.0
+    },
+    {
+      "cluster_id": "c9b70a4df6bbff3607a28a699ae9f9d69cd35879df871b82edc2f4c579b15d73",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3229.0
+    },
+    {
+      "cluster_id": "c9b70a4df6bbff3607a28a699ae9f9d69cd35879df871b82edc2f4c579b15d73",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "1399b1c801f8f127c3b03b61f1ac81d7ffc095545ec43f892243fa5cfad651d8",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "1399b1c801f8f127c3b03b61f1ac81d7ffc095545ec43f892243fa5cfad651d8",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3979.0
+    },
+    {
+      "cluster_id": "1cb232afaa53210761d4e86990178e3588cdb1f49fe843fa5820c81f58f724b0",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "1cb232afaa53210761d4e86990178e3588cdb1f49fe843fa5820c81f58f724b0",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 2382.0
+    },
+    {
+      "cluster_id": "d070ec5b0023575c2703c662949119c5615daf2a75b6c1979e0acc7b156bb802",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 4233.0
+    },
+    {
+      "cluster_id": "d070ec5b0023575c2703c662949119c5615daf2a75b6c1979e0acc7b156bb802",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "57d399a8c073ae71cc8fa742e04b57759a6e26ea14a337ea2a1a5debfd8a8dc5",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3718.0
+    },
+    {
+      "cluster_id": "57d399a8c073ae71cc8fa742e04b57759a6e26ea14a337ea2a1a5debfd8a8dc5",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "7065c1b76252aae756bc3a2b30ef469ede34f7b5301cf9a1af9a69fdca710226",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "7065c1b76252aae756bc3a2b30ef469ede34f7b5301cf9a1af9a69fdca710226",
+      "cell": "full",
+      "action": "reader",
+      "correct": true,
+      "cost": 3005.0
+    },
+    {
+      "cluster_id": "9da6c707982ba1fdc0ddbf485cea7fa6f2a6884ea5857432fbd8bc830c7bdcde",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "9da6c707982ba1fdc0ddbf485cea7fa6f2a6884ea5857432fbd8bc830c7bdcde",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 4081.0
+    },
+    {
+      "cluster_id": "72ca76f48394efbd11a9824888dae1706b24dfb15d02043ac5b4a0d80322e47d",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "72ca76f48394efbd11a9824888dae1706b24dfb15d02043ac5b4a0d80322e47d",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3329.0
+    },
+    {
+      "cluster_id": "ebae2b790f4812149bb1895da040c5c4b0a9dd81d7d61076aada09efd7492682",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "ebae2b790f4812149bb1895da040c5c4b0a9dd81d7d61076aada09efd7492682",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3438.0
+    },
+    {
+      "cluster_id": "9311b654b0553b078f58036d92efccd0926c214e198f7e349581f668e762be6a",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 2418.0
+    },
+    {
+      "cluster_id": "9311b654b0553b078f58036d92efccd0926c214e198f7e349581f668e762be6a",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "d2f2ffbe561aa73dc7c2e3aa478653d988af9c7214ad151bf24539d435a49908",
+      "cell": "full",
+      "action": "direct",
+      "correct": false,
+      "cost": 0.0
+    },
+    {
+      "cluster_id": "d2f2ffbe561aa73dc7c2e3aa478653d988af9c7214ad151bf24539d435a49908",
+      "cell": "full",
+      "action": "reader",
+      "correct": false,
+      "cost": 3145.0
+    }
+  ]
+}

@@ -24,7 +24,7 @@ def fixture_report(directory):
     shortcut = CellPolicy(binding, "full", (("dependent", "compact"), ("direct", "compact")))
     limits = LearningLimits("fixture_units", 10., 0., 0., 1000)
     registry = LocalLearningRegistry(str(Path(directory) / "local-learning.sqlite"), scope="fictional-two-cell",
-                                     binding=binding, baseline=baseline.revision)
+                                     binding=binding, baseline=baseline.revision, required_cohorts=())
     rounds = []
     policies = {p.revision: p for p in (baseline, learned, shortcut)}
     try:

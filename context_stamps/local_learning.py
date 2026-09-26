@@ -97,6 +97,31 @@ class PairedOutcome:
             raise ValueError("measured memory must be a nonnegative integer or unknown")
 
 
+@dataclass(frozen=True)
+class EvaluationCohort:
+    """A host-declared, disjoint task population frozen before labels are read."""
+
+    name: str
+    clusters: tuple[str, ...]
+
+    def __post_init__(self):
+        _id(self.name)
+        _clusters(self.clusters)
+        if not self.clusters:
+            raise ValueError("an evaluation cohort cannot be empty")
+
+
+def _cohort_partition(cohorts, clusters):
+    if (type(cohorts) is not tuple or not 1 <= len(cohorts) <= 8
+            or any(type(c) is not EvaluationCohort for c in cohorts)
+            or len({c.name for c in cohorts}) != len(cohorts)):
+        raise ValueError("one to eight uniquely named typed cohorts required")
+    combined = tuple(key for cohort in cohorts for key in cohort.clusters)
+    _clusters(combined)
+    if set(combined) != set(clusters):
+        raise ValueError("cohorts must partition all and only the registered evaluation clusters")
+
+
 def assess_candidate(rows, limits, *, alpha):
     """Four simultaneous one-sided checks at alpha/4, fixed sample size.
 
@@ -156,6 +181,44 @@ def assess_candidate(rows, limits, *, alpha):
     return result
 
 
+def assess_cohorts(rows, limits, cohorts, *, alpha):
+    """Separate harm/error/deadline checks per cohort; one pooled savings check.
+
+    The round error budget is divided equally over 3*K+1 tests. Union bounding
+    does not require independence between cohorts, but each binomial population
+    still needs independent identically distributed task clusters. Retention
+    need not save resources itself; it must meet quality and deadline limits.
+    """
+    if (type(rows) is not tuple or not rows or len(rows) > 10000
+            or any(type(row) is not PairedOutcome for row in rows)):
+        raise ValueError("typed bounded paired observations required")
+    _clusters(tuple(row.cluster_id for row in rows))
+    _cohort_partition(cohorts, tuple(row.cluster_id for row in rows))
+    count = 3 * len(cohorts) + 1
+    _number(alpha, count * 1e-12, .25)
+    level = alpha / count
+    # Reuse the reviewed primitive bounds at the explicit per-check level.
+    # Only the checks declared below can influence this composed decision.
+    overall = assess_candidate(rows, limits, alpha=4 * level)
+    quality = {"new_failure_bound", "absolute_failure_bound", "deadline_bound"}
+    overall["reasons"] = [r for r in overall["reasons"] if r not in quality]
+    overall["eligible"] = not overall["reasons"]
+    overall["applied_statistical_checks"] = ["net_saving_bound"]
+    lookup = {r.cluster_id: r for r in rows}
+    reports, failures = {}, list(overall["reasons"])
+    for cohort in sorted(cohorts, key=lambda c: c.name):
+        report = assess_candidate(tuple(lookup[key] for key in sorted(cohort.clusters)), limits, alpha=4 * level)
+        report["reasons"] = [r for r in report["reasons"] if r != "net_saving_bound"]
+        report["eligible"] = not report["reasons"]
+        report["applied_statistical_checks"] = sorted(quality)
+        reports[cohort.name] = report
+        failures.extend(f"cohort:{cohort.name}:{reason}" for reason in report["reasons"])
+    return dict(eligible=not failures, reasons=failures, tasks=len(rows), alpha=alpha,
+                per_check_alpha=level, statistical_checks=count, overall=overall, cohorts=reports,
+                cohort_partition_revision=revision([{ "name": c.name, "clusters": sorted(c.clusters)}
+                                                   for c in sorted(cohorts, key=lambda c: c.name)]))
+
+
 class LocalLearningRegistry:
     """One scope, one pending trial, bounded lifetime, local-only SQLite state.
 
@@ -163,13 +226,23 @@ class LocalLearningRegistry:
     even if abandoned. Restarts preserve spent rounds and reserved cluster IDs.
     Host binds model/runtime/policy/verifier/device revisions into binding; it
     alone maps an active digest to an already reviewed data-only policy artifact.
+    New registries require separate adaptation and retention populations. An
+    explicit required_cohorts=() replays legacy pooled trials; it cannot reopen
+    or downgrade a protected registry.
     """
 
-    def __init__(self, path, *, scope, binding, baseline, alpha=.05):
+    def __init__(self, path, *, scope, binding, baseline, alpha=.05,
+                 required_cohorts=("adaptation", "retention")):
         _id(scope)
         _hash(binding)
         _hash(baseline)
         _number(alpha, 1e-6, .25)
+        if type(required_cohorts) is not tuple or len(required_cohorts) > 8:
+            raise ValueError("bounded unique required cohort names required")
+        for name in required_cohorts:
+            _id(name)
+        if len(set(required_cohorts)) != len(required_cohorts):
+            raise ValueError("bounded unique required cohort names required")
         prepare_database(path)
         self._db = sqlite3.connect(path, timeout=5, isolation_level=None)
         self._db.execute("PRAGMA journal_mode=DELETE")
@@ -180,6 +253,8 @@ class LocalLearningRegistry:
         self._db.execute("CREATE TABLE IF NOT EXISTS revoked (revision TEXT PRIMARY KEY)")
         self._db.execute("CREATE TABLE IF NOT EXISTS events (id INTEGER PRIMARY KEY, value TEXT)")
         self._config = {"schema": 1, "scope": scope, "binding": binding, "baseline": baseline, "alpha": alpha}
+        if required_cohorts:
+            self._config.update(schema=2, required_cohorts=sorted(required_cohorts))
         try:
             self._db.execute("BEGIN IMMEDIATE")
             self._db.execute("INSERT OR IGNORE INTO config VALUES (1, ?)", (_json(self._config),))
@@ -201,7 +276,7 @@ class LocalLearningRegistry:
         item = self._db.execute("SELECT value FROM events ORDER BY id DESC LIMIT 1").fetchone()
         return json.loads(item[0])["active"] if item else self._config["baseline"]
 
-    def register(self, candidate, *, evaluation_clusters, training_clusters, limits):
+    def register(self, candidate, *, evaluation_clusters, training_clusters, limits, cohorts=()):
         _hash(candidate)
         _clusters(evaluation_clusters)
         _clusters(training_clusters, 100000)
@@ -209,6 +284,12 @@ class LocalLearningRegistry:
             raise ValueError("nonempty fresh holdout and typed limits required")
         if set(evaluation_clusters) & set(training_clusters):
             raise ValueError("training and evaluation cluster overlap")
+        if self._config["schema"] == 2:
+            _cohort_partition(cohorts, evaluation_clusters)
+            if sorted(c.name for c in cohorts) != self._config["required_cohorts"]:
+                raise ValueError("every required cohort must be registered before evaluation")
+        elif cohorts != ():
+            raise ValueError("legacy pooled registry cannot claim cohort qualification")
         self._db.execute("BEGIN IMMEDIATE")
         try:
             if self._db.execute("SELECT 1 FROM trials WHERE result IS NULL").fetchone():
@@ -231,6 +312,9 @@ class LocalLearningRegistry:
                     "round_alpha": self._config["alpha"] / (r * (r + 1)),
                     "evaluation_clusters": sorted(evaluation_clusters),
                     "training_clusters_revision": revision(sorted(training_clusters)), "limits": asdict(limits)}
+            if self._config["schema"] == 2:
+                plan["cohorts"] = [{"name": c.name, "clusters": sorted(c.clusters)}
+                                   for c in sorted(cohorts, key=lambda c: c.name)]
             self._db.execute("INSERT INTO trials VALUES (?, ?, NULL)", (r, _json(plan)))
             self._db.executemany("INSERT INTO used VALUES (?)", ((c,) for c in sorted(combined - used)))
             self._db.execute("COMMIT")
@@ -254,7 +338,11 @@ class LocalLearningRegistry:
                     or any(type(r) is not PairedOutcome for r in rows)
                     or sorted(r.cluster_id for r in rows) != plan["evaluation_clusters"]):
                 raise ValueError("all and only the registered independent clusters are required")
-            report = assess_candidate(rows, LearningLimits(**plan["limits"]), alpha=plan["round_alpha"])
+            if plan["schema"] == 2:
+                cohorts = tuple(EvaluationCohort(c["name"], tuple(c["clusters"])) for c in plan["cohorts"])
+                report = assess_cohorts(rows, LearningLimits(**plan["limits"]), cohorts, alpha=plan["round_alpha"])
+            else:
+                report = assess_candidate(rows, LearningLimits(**plan["limits"]), alpha=plan["round_alpha"])
             report["plan_revision"] = revision(plan)
             active = plan["candidate"] if report["eligible"] else plan["baseline"]
             self._db.execute("UPDATE trials SET result=? WHERE round=?", (_json(report), plan["round"]))

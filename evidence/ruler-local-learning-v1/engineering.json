@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "runs": [
+    {
+      "environment": "Windows CPython 3.13.13 with CPU Torch",
+      "tests": 352,
+      "passed": true,
+      "optional_skips": 0,
+      "raw_log_sha256": "203e10e2a2c48aa2aa287681a078b39abcca97a325251bf1a3454c8e440399cb"
+    },
+    {
+      "environment": "Windows CPython 3.12.10 without Torch; 16 optional skips",
+      "tests": 352,
+      "passed": true,
+      "optional_skips": 16,
+      "raw_log_sha256": "b1cc0a7d9abf1f2fd30769f95cdda19dec82a1eebd21b195849a8eef37fb5c7e"
+    },
+    {
+      "environment": "Windows CPython 3.13.13",
+      "tests": 26,
+      "passed": true,
+      "optional_skips": 0,
+      "raw_log_sha256": "f60f9ee21e1c63f33ef41d5a9e375cc1cf0e318a25c4439ee2e966a8433d95a5"
+    },
+    {
+      "environment": "WSL Ubuntu 24.04 CPython 3.12",
+      "tests": 26,
+      "passed": true,
+      "optional_skips": 0,
+      "raw_log_sha256": "0ef4efd0e5d743ea37791543c33fb3bf306d728e1b1a1a7533a926c141e5445d"
+    },
+    {
+      "environment": "WSL Ubuntu 24.04 CPython 3.12",
+      "tests": 13,
+      "passed": true,
+      "optional_skips": 0,
+      "raw_log_sha256": "699d3a1a7a5a65bbefd29f0fe6454cfcb92ff638aec1c32383ec4e4f09d7081d"
+    },
+    {
+      "environment": "Extracted source distribution, Windows CPython 3.13.13",
+      "tests": 26,
+      "passed": true,
+      "optional_skips": 0,
+      "raw_log_sha256": "cf0f343e448907786ec63208b9d7fcb6e25111e4885336da084b9ad0f71efdb9"
+    }
+  ],
+  "ruff": "passed",
+  "bandit": "passed",
+  "source_distribution_build": "passed",
+  "secret_scan": {
+    "repository_findings_after_exact_public_hash_exclusion": 0,
+    "positive_controls_passed": 105,
+    "expanded_records_review": "expanded-scan-review.json"
+  },
+  "historical_replay": "Original simulated local-learning and 52-input RULER evidence replayed unchanged.",
+  "scope": "Engineering tests and metric replay do not qualify broad self-improvement or an edge device."
+}

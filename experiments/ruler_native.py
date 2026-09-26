@@ -20,8 +20,6 @@ import urllib.request
 import zipfile
 from pathlib import Path
 
-import yaml
-
 SOURCE_REV = "c3f5e3b4f87f97e048793bb510a3a6b19a46bf3a"
 NEMO_REV = "f4a3fd8e524acd9abd1fea4387e8f179f6d51cf3"
 TASKS = ("niah_single_1", "niah_single_2", "niah_single_3", "niah_multikey_1",
@@ -153,8 +151,9 @@ def fetch(source, output):
     print(json.dumps({"essays": len(records), "corpora": manifest["corpora"], "seconds": manifest["seconds"]}))
 
 
-def prepare(source, assets, tokenizer, output, count, seed, lengths):
+def prepare(source, assets, tokenizer, output, count, seed, lengths, qa_offset=0, seed_stride=0, qa_offset_stride=0):
     """Call original generators using argument arrays, with bounded subprocesses."""
+    import yaml
     from transformers import AutoTokenizer
 
     source, assets, output = map(outside_repo, (source, assets, output))
@@ -165,6 +164,8 @@ def prepare(source, assets, tokenizer, output, count, seed, lengths):
         raise ValueError("Corpora no longer match downloaded artifacts")
     if not 1 <= count <= 500 or not lengths or any(n not in (4096, 8192, 16384, 32768) for n in lengths):
         raise ValueError("Bounded registered length and sample count required")
+    if any(type(v) is not int or not 0 <= v <= 100000 for v in (qa_offset, seed_stride, qa_offset_stride)):
+        raise ValueError("Nonnegative bounded offsets/seed strides required")
     tokenizer = Path(tokenizer).resolve()
     tok = AutoTokenizer.from_pretrained(tokenizer, local_files_only=True, trust_remote_code=False)
     base_tokens = len(tok.tokenize("{task_template}"))
@@ -178,6 +179,7 @@ def prepare(source, assets, tokenizer, output, count, seed, lengths):
                 runner_sha256=sha(__file__), assets_sha256=sha(assets / "manifest.json"),
                 tokenizer_sha256={n: sha(tokenizer / n) for n in ("tokenizer.json", "tokenizer_config.json", "config.json")},
                 count_per_task_length=count, seed=seed, lengths=lengths, tasks=TASKS,
+                qa_offset=qa_offset, seed_stride=seed_stride, qa_offset_stride=qa_offset_stride,
                 template_reserve=50, native_base_template_tokens=base_tokens,
                 packages={p: importlib.metadata.version(p) for p in
                           ("transformers", "tokenizers", "numpy", "nltk", "wonderwords", "scipy", "tenacity", "PyYAML")},
@@ -188,7 +190,7 @@ def prepare(source, assets, tokenizer, output, count, seed, lengths):
                             "Smaller development sample count; not a complete official benchmark run"])
     write_new(output / "plan.json", plan)
     inventory = []
-    for length in lengths:
+    for length_index, length in enumerate(lengths):
         for task in TASKS:
             spec = config[task]
             constant = constants[spec["task"]]
@@ -197,15 +199,19 @@ def prepare(source, assets, tokenizer, output, count, seed, lengths):
                     "--save_dir", str(directory), "--save_name", task, "--subset", "test",
                     "--tokenizer_path", str(tokenizer), "--tokenizer_type", "hf",
                     "--max_seq_length", str(length-50), "--num_samples", str(count),
-                    "--random_seed", str(seed), "--model_template_token", str(base_tokens),
+                    "--random_seed", str(seed + length_index * seed_stride), "--model_template_token", str(base_tokens),
                     "--tokens_to_generate", str(constant["tokens_to_generate"]),
                     "--template", constant["template"] + constant.get("answer_prefix", "")]
             for key, value in spec["args"].items():
                 args.extend([f"--{key}", str(value)])
+            if spec["task"] == "qa":
+                args.extend(["--pre_samples", str(qa_offset + length_index * qa_offset_stride)])
             start = time.perf_counter()
             with (output / f"{length}-{task}.log").open("xb") as log:
                 completed = subprocess.run(args, env=environment, stdout=log, stderr=subprocess.STDOUT, timeout=240, check=False)
-            row = dict(length=length, task=task, seconds=time.perf_counter()-start, exit_code=completed.returncode)
+            row = dict(length=length, task=task, seconds=time.perf_counter()-start, exit_code=completed.returncode,
+                       seed=seed + length_index * seed_stride,
+                       qa_offset=qa_offset + length_index * qa_offset_stride if spec["task"] == "qa" else None)
             path = directory / task / "test.jsonl"
             if completed.returncode != 0 or not path.is_file():
                 write_new(output / "failure.json", row)
@@ -240,10 +246,14 @@ if __name__ == "__main__":
     parser.add_argument("--count", type=int, default=2)
     parser.add_argument("--seed", type=int, default=71)
     parser.add_argument("--lengths", type=int, nargs="+", default=[4096, 16384])
+    parser.add_argument("--qa-offset", type=int, default=0)
+    parser.add_argument("--seed-stride", type=int, default=0)
+    parser.add_argument("--qa-offset-stride", type=int, default=0)
     args = parser.parse_args()
     if args.mode == "fetch":
         fetch(args.source, args.output)
     else:
         if args.assets is None or args.tokenizer is None:
             parser.error("prepare requires --assets and --tokenizer")
-        prepare(args.source, args.assets, args.tokenizer, args.output, args.count, args.seed, args.lengths)
+        prepare(args.source, args.assets, args.tokenizer, args.output, args.count, args.seed, args.lengths,
+                args.qa_offset, args.seed_stride, args.qa_offset_stride)

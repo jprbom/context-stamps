@@ -185,3 +185,10 @@ regexes = [
   '''^keys_sha256":\ "50a70e849046f94e83f484d0700e1edb7e2120f47a9623f0915c574f5e735a57"$''',
   '''^keys_sha256":\ "754ac0ad675297649d817f8e7b9cb95b4d01ff221c206261ca817297b6c25b18"$''',
 ]
+[[allowlists]]
+description = "Exact verified public tokenizer checksum in local policy-learning registration"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]ruler-local-learning-v1[\\/]registration\.json$''']
+regexes = ['''^tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"$''']

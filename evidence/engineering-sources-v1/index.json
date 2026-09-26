@@ -105,6 +105,14 @@
     {
       "file": "code-card-training-only.json.gz",
       "sha256": "e8336a7dd39e3532eac064df119cee0ab0216df34679651c1e737a53ccc16508"
+    },
+    {
+      "file": "local-learning-cohorts-initial.json.gz",
+      "sha256": "30086c4c26ca18ec977db5ece9efc13ca4965feda4f7f2e16d822b7b64131a3d"
+    },
+    {
+      "file": "ruler-learning-data-prep.json.gz",
+      "sha256": "fec0d32bc0ee9b1677d652cfccdbfe71e1da3bbc509c662a5a9d8c89b523e783"
     }
   ]
 }

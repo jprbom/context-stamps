@@ -39,3 +39,4 @@ recursive-include evidence/humaneval-grader-v1 *.gz
 recursive-include evidence/mbpp-code-eval-v1 *.gz
 recursive-include evidence/mbpp-code-comparison-v1 *.gz
 recursive-include evidence/ruler-development-v1 *.gz
+recursive-include evidence/ruler-local-learning-v1 *.gz

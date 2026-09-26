@@ -33,3 +33,8 @@ evidence/runtime-callbacks-v1/*.txt -text whitespace=cr-at-eol
 evidence/runtime-callbacks-v1/core-py313.txt -text whitespace=cr-at-eol,-blank-at-eol
 docs/assets/mbpp-code-comparison-v1.svg -text whitespace=cr-at-eol,-blank-at-eol
 docs/assets/ruler-development-v1.svg -text whitespace=cr-at-eol,-blank-at-eol
+docs/assets/ruler-local-learning-v1.svg -text whitespace=cr-at-eol,-blank-at-eol
+# Preserve the exact hashed post-run report bytes.
+evidence/ruler-local-learning-v1/engineering.json -text whitespace=cr-at-eol
+evidence/ruler-local-learning-v1/expanded-scan-review.json -text whitespace=cr-at-eol
+evidence/ruler-local-learning-v1/failure-review.json -text whitespace=cr-at-eol

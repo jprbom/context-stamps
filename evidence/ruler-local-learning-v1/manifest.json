@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "files": {
+    "engineering.json": "620872346b11516d13345aa29384d089ca3cbc5e829e564c5b2513b6c54be200",
+    "expanded-scan-review.json": "9373aa545cae7cdb143a4548d46d68572550c2e1358270264546badb76a9b450",
+    "failure-review.json": "52bed1e7b72b0b4c1ec20a06544287e13da038abff4b108ca045b0202420eb82",
+    "policy-data.json": "fbe2a8401069756bee8153587990339280b0a9b5bac5215f234eecc4c7ea2d26",
+    "policy.json": "584e7ffb4bd75c58156989818e72cc599f83ac3d82c2fdeed1463505e83c7571",
+    "promotion.json": "2a3ef4ba220f01786fc2b4e291db6fe9b8a5c6a26d9411f312d605d9e6863163",
+    "README.md": "e7f2d2ed7b7231bed9d7a57697f1c74fcc4df55c67a7f59840da0b7262f52b2a",
+    "records.json.gz": "ae62cd6009087a75248f30ad1555ace950dfa9750a4fde9ba831ef2bc7b2e827",
+    "registered-trial.json": "81c1b5dd0c9f52ea0fdc4e130a528f497a40002d8161d6c4edbd17cfa3dd2e58",
+    "registration.json": "804a792fc4eb499a705571d1122e27740117047d5135136ba6de603479aee4e6",
+    "source-overlap.json": "4f74766ab7fdb39519e8c8935ae348c25a0e80f429fab07e8c4eb0f8c8b4dd8b",
+    "summary.json": "be416e537b5495bc28e6d42ea14e453083fcf37df636b7c52b4935ce1c6cccac"
+  },
+  "original_logs": {
+    "train": "ebfa9d2bd8c156fd95e938731b8b25d4f6564d7d96bd7053eab41ef77cd5a348",
+    "holdout": "ff2d9b15e41329f29105c297f09dd3b5c2e34dcc4afd0ea0bf133ffb23d1fb06"
+  },
+  "expanded_bytes": 1215038,
+  "disclosure": "Short public-benchmark outputs and references only; raw prompts/token IDs excluded",
+  "replay": "Offline metrics/policy/gate replay; regenerating and verifying context requires the separate licensed source data"
+}

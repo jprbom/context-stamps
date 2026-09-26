@@ -1,0 +1,14 @@
+{
+  "expanded_bytes": 1215038,
+  "expanded_sha256": "54412e596b5ce05805a596cc3623064c2a7c39d3ec6f786ce44444eef4372f4d",
+  "default_findings": 47,
+  "field_counts": {
+    "tokenizer.py\"": 2,
+    "call_api.py\"": 2,
+    "tokenizer.json\"": 2,
+    "tokenizer_config.json\"": 2,
+    "keys_sha256\"": 39
+  },
+  "classification": "All findings are exact public source/data/tokenizer SHA-256 fields from generator plans and inventories, not credentials. No broad exclusion added.",
+  "credential_findings_after_review": 0
+}

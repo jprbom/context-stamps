@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "kind": "post_run_diagnostic_not_a_preregistered_independence_test",
+  "counts": {
+    "train": {
+      "inputs": 312,
+      "qa_inputs": 48,
+      "unique_qa_questions": 48,
+      "unique_qa_document_texts": 625
+    },
+    "retention": {
+      "inputs": 104,
+      "qa_inputs": 16,
+      "unique_qa_questions": 16,
+      "unique_qa_document_texts": 238
+    },
+    "adaptation": {
+      "inputs": 104,
+      "qa_inputs": 16,
+      "unique_qa_questions": 16,
+      "unique_qa_document_texts": 1295
+    }
+  },
+  "pairs": [
+    {
+      "left": "train",
+      "right": "retention",
+      "overlaps": {
+        "questions": 0,
+        "documents": 3,
+        "full_inputs": 0
+      }
+    },
+    {
+      "left": "train",
+      "right": "adaptation",
+      "overlaps": {
+        "questions": 0,
+        "documents": 19,
+        "full_inputs": 0
+      }
+    },
+    {
+      "left": "retention",
+      "right": "adaptation",
+      "overlaps": {
+        "questions": 0,
+        "documents": 24,
+        "full_inputs": 0
+      }
+    }
+  ],
+  "inputs": {
+    "train_inventory": "b8c69961c553b4bd82676f3f99ba0fbfe02adeab125dca84953b6e2ed9f05d71",
+    "holdout_inventory": "63cc93e17a226cfb2419cbfd029b3520e055b1b1250210cc9d8d9a5d68e8cce6"
+  },
+  "sources": {
+    "experiments/audit_ruler_learning_data.py": "af2e94516f9be442821ccfd7cf6ffdb6b49db33714629f89f05356829f167fab"
+  },
+  "caveat": "QA source documents and synthetic templates/backgrounds can repeat. Distinct full-input hashes do not prove IID task clusters."
+}

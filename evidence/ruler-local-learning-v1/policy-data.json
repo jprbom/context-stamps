@@ -1,0 +1,22 @@
+{
+  "binding": "fb963ae592765319c1e3a8cfc4716be394a03c098e62d5baa2456f2596dc211b",
+  "baseline_action": "reader",
+  "choices": [
+    [
+      "dependency",
+      "direct"
+    ],
+    [
+      "exact",
+      "direct"
+    ],
+    [
+      "full",
+      "reader"
+    ],
+    [
+      "statistic",
+      "direct"
+    ]
+  ]
+}

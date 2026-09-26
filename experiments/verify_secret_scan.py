@@ -98,6 +98,10 @@ def main(executable):
         line = next(line for line in (ROOT / relative).read_text().splitlines()
                     if line.strip().startswith('"tokenization.json":'))
         checksum_cases.append((relative, line))
+        relative = Path('evidence/ruler-local-learning-v1/registration.json')
+        line = next(line for line in (ROOT / relative).read_text().splitlines()
+                    if line.strip().startswith('"tokenizer_sha256":'))
+        checksum_cases.append((relative, line))
         for relative, line in checksum_cases:
             control = scan / relative
             control.parent.mkdir(parents=True, exist_ok=True)

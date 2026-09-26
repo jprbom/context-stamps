@@ -103,7 +103,7 @@ class RegistryTests(unittest.TestCase):
         self.rows = observations()
 
     def open(self):
-        return LocalLearningRegistry(self.path, scope="fixture", binding=BINDING, baseline=BASELINE)
+        return LocalLearningRegistry(self.path, scope="fixture", binding=BINDING, baseline=BASELINE, required_cohorts=())
 
     def tearDown(self):
         self.registry.close()

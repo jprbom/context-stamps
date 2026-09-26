@@ -1,0 +1,276 @@
+{
+  "schema": 1,
+  "paired": {
+    "learned": {
+      "strict_gains": 45,
+      "strict_losses": 0,
+      "native_gains": 4,
+      "native_losses": 0
+    },
+    "fixed": {
+      "strict_gains": 45,
+      "strict_losses": 1,
+      "native_gains": 4,
+      "native_losses": 0
+    }
+  },
+  "subsets": {
+    "exact_tasks": {
+      "reader": {
+        "n": 176,
+        "strict_correct": 131,
+        "native_complete": 172
+      },
+      "learned": {
+        "n": 176,
+        "strict_correct": 176,
+        "native_complete": 176
+      },
+      "fixed": {
+        "n": 176,
+        "strict_correct": 176,
+        "native_complete": 176
+      }
+    },
+    "document_qa": {
+      "reader": {
+        "n": 32,
+        "strict_correct": 12,
+        "native_complete": 21
+      },
+      "learned": {
+        "n": 32,
+        "strict_correct": 12,
+        "native_complete": 21
+      },
+      "fixed": {
+        "n": 32,
+        "strict_correct": 11,
+        "native_complete": 21
+      }
+    }
+  },
+  "candidate_failures": [
+    {
+      "id": "4096-qa_1-0000",
+      "task": "qa_1",
+      "length": 4096,
+      "native_score": 1.0,
+      "strict_correct": false,
+      "prediction": "An open loop system releases the exhaust steam into the atmosphere."
+    },
+    {
+      "id": "4096-qa_1-0001",
+      "task": "qa_1",
+      "length": 4096,
+      "native_score": 1.0,
+      "strict_correct": false,
+      "prediction": "Mercury is the working fluid in the mercury vapor turbine."
+    },
+    {
+      "id": "4096-qa_1-0003",
+      "task": "qa_1",
+      "length": 4096,
+      "native_score": 1.0,
+      "strict_correct": false,
+      "prediction": "The working fluid limits the Rankine cycle's efficiency."
+    },
+    {
+      "id": "4096-qa_2-0000",
+      "task": "qa_2",
+      "length": 4096,
+      "native_score": 0.0,
+      "strict_correct": false,
+      "prediction": "The Kansas Jayhawks men's basketball program"
+    },
+    {
+      "id": "4096-qa_2-0001",
+      "task": "qa_2",
+      "length": 4096,
+      "native_score": 0.0,
+      "strict_correct": false,
+      "prediction": "Mobilis"
+    },
+    {
+      "id": "4096-qa_2-0002",
+      "task": "qa_2",
+      "length": 4096,
+      "native_score": 1.0,
+      "strict_correct": false,
+      "prediction": "The writer of Never Let Me Go novel won the Man Booker Prize for Fiction in 1989."
+    },
+    {
+      "id": "4096-qa_2-0004",
+      "task": "qa_2",
+      "length": 4096,
+      "native_score": 0.0,
+      "strict_correct": false,
+      "prediction": "Ross Ulbricht"
+    },
+    {
+      "id": "4096-qa_2-0007",
+      "task": "qa_2",
+      "length": 4096,
+      "native_score": 0.0,
+      "strict_correct": false,
+      "prediction": "Aamir Khan"
+    },
+    {
+      "id": "16384-qa_1-0000",
+      "task": "qa_1",
+      "length": 16384,
+      "native_score": 1.0,
+      "strict_correct": false,
+      "prediction": "a pair of lobes"
+    },
+    {
+      "id": "16384-qa_1-0001",
+      "task": "qa_1",
+      "length": 16384,
+      "native_score": 1.0,
+      "strict_correct": false,
+      "prediction": "Auricles are gelatinous projections edged with cilia that produce water currents that help direct microscopic prey toward the mouth."
+    },
+    {
+      "id": "16384-qa_1-0003",
+      "task": "qa_1",
+      "length": 16384,
+      "native_score": 1.0,
+      "strict_correct": false,
+      "prediction": "The auricles of lobates have cilia edging them that produce water currents that help direct microscopic prey toward the mouth."
+    },
+    {
+      "id": "16384-qa_1-0004",
+      "task": "qa_1",
+      "length": 16384,
+      "native_score": 0.0,
+      "strict_correct": false,
+      "prediction": "lobates feed on salps, close relatives of sea-squirts that form large chain-like floating colonies, and juveniles of Lampea attach themselves like parasites to salps that are too large for them to swallow."
+    },
+    {
+      "id": "16384-qa_1-0006",
+      "task": "qa_1",
+      "length": 16384,
+      "native_score": 1.0,
+      "strict_correct": false,
+      "prediction": "Members of the lobate genera Bathocyroe and Ocyropsis can escape from danger by clapping their lobes, so that the jet of expelled water drives them backwards very quickly."
+    },
+    {
+      "id": "16384-qa_1-0007",
+      "task": "qa_1",
+      "length": 16384,
+      "native_score": 1.0,
+      "strict_correct": false,
+      "prediction": "The movements of the lobates' combs are controlled by nerves rather than by water disturbances created by the cilia."
+    },
+    {
+      "id": "16384-qa_2-0001",
+      "task": "qa_2",
+      "length": 16384,
+      "native_score": 0.0,
+      "strict_correct": false,
+      "prediction": "Minneapolis, Minnesota"
+    },
+    {
+      "id": "16384-qa_2-0003",
+      "task": "qa_2",
+      "length": 16384,
+      "native_score": 0.0,
+      "strict_correct": false,
+      "prediction": "Prospero Colonna"
+    },
+    {
+      "id": "16384-qa_2-0004",
+      "task": "qa_2",
+      "length": 16384,
+      "native_score": 0.0,
+      "strict_correct": false,
+      "prediction": "Las Vegas, Nevada"
+    },
+    {
+      "id": "16384-qa_2-0005",
+      "task": "qa_2",
+      "length": 16384,
+      "native_score": 0.0,
+      "strict_correct": false,
+      "prediction": "UFO Magazine covers what subject named for Charles Hoy Fort."
+    },
+    {
+      "id": "16384-qa_2-0006",
+      "task": "qa_2",
+      "length": 16384,
+      "native_score": 0.0,
+      "strict_correct": false,
+      "prediction": "No"
+    },
+    {
+      "id": "16384-qa_2-0007",
+      "task": "qa_2",
+      "length": 16384,
+      "native_score": 0.0,
+      "strict_correct": false,
+      "prediction": "Richie Furay"
+    }
+  ],
+  "learned_fixed_generation_differences": [
+    {
+      "id": "4096-qa_1-0004",
+      "arms": {
+        "learned": {
+          "action": "reader",
+          "prompt_sha256": "f720487de92eb178a64b2c9df97dacad8cefeb6f8592549b299a0588d176fbf6",
+          "prediction": "565",
+          "strict_correct": true,
+          "native_score": 1.0
+        },
+        "fixed": {
+          "action": "reader",
+          "prompt_sha256": "f720487de92eb178a64b2c9df97dacad8cefeb6f8592549b299a0588d176fbf6",
+          "prediction": "565 °C",
+          "strict_correct": true,
+          "native_score": 1.0
+        }
+      }
+    },
+    {
+      "id": "16384-qa_1-0005",
+      "arms": {
+        "learned": {
+          "action": "reader",
+          "prompt_sha256": "351b20f8bc9b00cd7d9d9ad9b6c236cfbb53cd71556e28ecd5394dd4f44f9cd3",
+          "prediction": "clapping their lobes",
+          "strict_correct": true,
+          "native_score": 1.0
+        },
+        "fixed": {
+          "action": "reader",
+          "prompt_sha256": "351b20f8bc9b00cd7d9d9ad9b6c236cfbb53cd71556e28ecd5394dd4f44f9cd3",
+          "prediction": "Clapping their lobes, so that the jet of expelled water drives them backwards very quickly.",
+          "strict_correct": false,
+          "native_score": 1.0
+        }
+      }
+    },
+    {
+      "id": "16384-qa_2-0001",
+      "arms": {
+        "learned": {
+          "action": "reader",
+          "prompt_sha256": "3ea1635c59c4fe60fc43a8ce1a8992c80e7b34f19f61821db4d37c33bc823856",
+          "prediction": "Minneapolis, Minnesota",
+          "strict_correct": false,
+          "native_score": 0.0
+        },
+        "fixed": {
+          "action": "reader",
+          "prompt_sha256": "3ea1635c59c4fe60fc43a8ce1a8992c80e7b34f19f61821db4d37c33bc823856",
+          "prediction": "The band that recorded Renegade from is Motion City Soundtrack.",
+          "strict_correct": false,
+          "native_score": 0.0
+        }
+      }
+    }
+  ],
+  "identical_learned_fixed_actions": true,
+  "caveat": "Post-run failure audit; same route and prompt can yield different local outputs. Do not attribute these differences to policy learning."
+}

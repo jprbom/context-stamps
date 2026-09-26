@@ -4,7 +4,7 @@ By Prashant Jagtap
 
 Every supported local deployment should provide a bounded improvement path: verified memory updates, a small locally fitted context/routing policy, and optional adapter updates on capable hardware. This is a design requirement, not a claim that every present model already improves autonomously. Devices unable to train weights can still update memory and CPU policies. Successful training never activates a candidate by itself.
 
-The [new RULER development comparison](../evidence/ruler-development-v1/README.md) reinforces the order: direct local operations can improve a small reader without a weight update, and sometimes should return the verified answer directly. Its benchmark-aware contracts and small samples do not qualify a prospective local learning cycle. Fresh domain cases, retention, total device cost and rollback remain acceptance gates.
+The [measured local policy-learning comparison](../evidence/ruler-local-learning-v1/README.md) now fits a CPU policy from 312 actual paired training inputs and evaluates 208 new inputs. Returning independently checked exact results reduces model calls and copying errors, but the learned route matches a simple fixed verified rule. The candidate remains inactive. Fresh domain cases, retention, total device cost and rollback remain acceptance gates.
 
 The primary aim is a small, locally deployed domain system that completes demanding work reliably within its device's memory, latency, energy and cost limits. Context Stamps should help that system learn from verified local experience. The seven-plane enterprise runtime is the mechanism for this aim. A larger language model, more retrieved text or a lower token count alone is not the success criterion.
 
@@ -15,7 +15,7 @@ The primary aim is a small, locally deployed domain system that completes demand
 | Level | What can change locally | Required evidence | Current position |
 |---|---|---|---|
 | Verified memory | Facts, temporal versions, dependencies, working sets and reusable computation | Provenance, current permissions, independent validation and invalidation | Existing state, compiler and reuse interfaces; application integration remains |
-| Context policy | Which evidence to acquire, which approved expert to use, when to stop or abstain | Separate training and prospective paired evaluation; quality and total resource checks | New small statistical policy, persistent evaluation registry and rollback API; simulated demonstration only |
+| Context policy | Which evidence to acquire, which approved expert to use, when to stop or abstain | Separate training and prospective paired evaluation; quality and total resource checks | CPU policy fitted from actual local RULER outcomes; fresh evaluation completed, but matches fixed routing and remains inactive; protected cohort registry and rollback API |
 | Model parameters | Small task heads, low-rank adapters or a domain SLM | Licensed training data, held-out task families, retention tests, quantized inference parity and device measurements | Experimental context heads, a local LoRA fixture fit and a verified public-code LoRA fit exist; no automatically improving SLM weights are qualified |
 
 Learning stays in the local environment. The new modules have no network client, telemetry, model loader, shell execution or remote training dependency. A host application still controls its own providers, permissions, storage and adapters. This library does not make an application offline merely because its learning registry is local.
@@ -34,9 +34,9 @@ These estimates propose candidates. They are not calibrated confidence in a futu
 
 1. Reserves fresh task-cluster IDs before evaluation. Training, earlier evaluation and abandoned-round IDs cannot be reused as new evaluation cases.
 2. Requires every registered task, including failures and abstentions. Partial results cannot activate a candidate.
-3. Keeps an experiment error budget across restarts and abandoned rounds. At round `r`, the available budget is `alpha / (r * (r + 1))`; four statistical checks share it equally. The sum over rounds is at most `alpha` within this one registry and scope.
-4. Bounds new failures on tasks the baseline solved, overall candidate failure, and deadline exceedances using one-sided exact binomial bounds. It requires a positive lower bound on paired resource savings after the declared learning cost is amortized.
-5. Rejects missing measurements, sampled memory overruns, safety violations and observations outside the preregistered cost range. Outliers are retained as a failed gate, not clipped away.
+3. Keeps an experiment error budget across restarts and abandoned rounds. At round `r`, the available budget is `alpha / (r * (r + 1))`. New registries require separate `adaptation` and `retention` cohorts, registered before evaluation. For `K` cohorts, `3*K+1` applied statistical checks share the round budget equally. The sum over rounds is at most `alpha` within this one registry and scope.
+4. Bounds new failures on tasks the baseline solved, candidate failure, and deadline exceedances **separately in each cohort**, using one-sided exact binomial bounds. A large adaptation sample cannot dilute a smaller retention failure. One additional check requires a positive lower bound on pooled resource savings after the declared learning cost is amortized; retention can preserve cost without saving resources itself.
+5. Rejects missing measurements, reported memory overruns, safety violations and observations outside the preregistered cost range. Outliers are retained as a failed gate, not clipped away. A sampled RSS maximum is not automatically a trustworthy whole-pipeline peak.
 6. Activates only a data artifact's digest. It neither installs nor executes a proposed model or program. A trusted host maps that digest to an already reviewed policy and independently authorizes actions and evidence.
 7. Supports explicit rollback, cancels pending activation and prevents the revoked candidate from being reactivated in that registry.
 
@@ -54,7 +54,40 @@ This is a conservative Hoeffding bound for differences in `[-C, C]`. It is not a
 
 The new-failure check bounds the probability of `baseline correct AND candidate incorrect`. It conservatively bounds the increase in error without allowing successes elsewhere to hide new harms. The absolute-failure check also prevents an equally bad baseline and candidate from qualifying merely through parity. The latency check is an absolute deadline exceedance limit, not proof of a relative p95 speedup. Memory checks cover observed runs, not all future inputs.
 
-The statistical interpretation assumes IID task clusters for the binomial checks and independent bounded paired costs for the savings check; candidates, thresholds and task selection must be frozen before labels are exposed. Repeated prompts from one source are one cluster, not independent samples. Mixed domains require separately registered scopes and an additional programme-wide error budget. Temporal dependence, poisoning, distribution shift and unreported experiments can invalidate the interpretation. Creating a fresh database to reset the error budget is not valid methodology.
+The statistical interpretation assumes IID task clusters within each cohort for the binomial checks and independent bounded paired costs for the savings check; candidates, thresholds and task selection must be frozen before labels are exposed. The union bound does not require independence between cohorts. Repeated prompts from one source are one cluster, not independent samples. A cohort name does not establish independence or meaningful retention: the host must select older skills and freeze their grouping. Mixed domains require separately registered scopes and an additional programme-wide error budget. Temporal dependence, poisoning, distribution shift and unreported experiments can invalidate the interpretation. Creating a fresh database to reset the error budget is not valid methodology.
+
+The default two-cohort registration looks like this after a host has frozen its candidate and reserved independent cases:
+
+```python
+from context_stamps.local_learning import (
+    EvaluationCohort, LearningLimits, LocalLearningRegistry,
+)
+
+registry = LocalLearningRegistry(
+    "domain-learning.sqlite", scope="maintenance",
+    binding=environment_digest, baseline=current_policy_digest,
+)
+plan = registry.register(
+    candidate_digest,
+    training_clusters=training_ids,
+    evaluation_clusters=new_task_ids + older_skill_ids,
+    cohorts=(
+        EvaluationCohort("adaptation", new_task_ids),
+        EvaluationCohort("retention", older_skill_ids),
+    ),
+    limits=LearningLimits(
+        metric="total_tokens", cost_cap=32000,
+        minimum_saving=0, update_cost=measured_training_tokens,
+        amortization_tasks=10000,
+    ),
+)
+# Run every reserved case with both frozen pipelines. Supply independently
+# verified PairedOutcome records, including errors and unknown measurements.
+report = registry.finish(plan, paired_outcomes)
+registry.close()
+```
+
+The identifiers, digests, measurements and outcomes above come from the trusted host; they are not inferred from the model's text. Cohorts must be disjoint, nonempty and cover the entire evaluation set. Their membership cannot change after registration. A protected registry cannot be reopened with retention disabled. `required_cohorts=()` is an explicit legacy mode for historical pooled trials; it does not claim retention qualification. The original simulated example uses this mode to preserve its published evidence exactly.
 
 SQLite transactions enforce ordinary restart and competing-writer behavior. They cannot attest that a host supplied honest labels or complete records. The file is not encrypted, authenticated or resistant to an administrator modifying or restoring it. The host must protect the file, retain its experiment lineage, and connect promotion events to the existing durable audit system before a managed enterprise deployment. Automatic drift detection, signed policy export, multi-device coordination and model-weight training are not implemented here.
 

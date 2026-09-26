@@ -9,6 +9,7 @@ Only the public question string is accepted. No labels or answer-position fields
 
 import collections
 import hashlib
+import json
 import re
 import time
 from dataclasses import dataclass
@@ -57,6 +58,7 @@ class Selection:
     direct_answer: str | None
     contract: str
     full_source_sha256: str
+    answer_values: tuple[str, ...] | None = None
 
 
 def select(view):
@@ -76,14 +78,14 @@ def select(view):
         keys = re.split(r", and |, ", query[1])
         if not keys or len(set(keys)) != len(keys):
             return fallback("ambiguous_keys")
-        matches = list(re.finditer(r"One of the special magic (?:numbers|uuids|words) for ([\w-]+) is: ([\w-]+)\.", text))
+        matches = list(re.finditer(r"One of the special magic (?:numbers|uuids|words) for ([\w][\w '-]{0,127}) is: ([\w-]+)\.", text))
         if len(matches) != text.count("One of the special magic "):
             return fallback("unparsed_needle_statement")
         chosen = [m for m in matches if m[1] in keys]
         if set(m[1] for m in chosen) != set(keys) or not 1 <= len(chosen) <= 64:
             return fallback("missing_or_unbounded_keys")
         return Selection("exact", tuple(m[0] for m in chosen), (), " ".join(m[2] for m in chosen),
-                         "all_literal_key_matches_v1", digest)
+                         "all_literal_key_matches_v2", digest, tuple(dict.fromkeys(m[2] for m in chosen)))
     if view.kind == "variables":
         query = re.search(r"assigned the value (\d+) in the text above", view.suffix)
         matches = list(re.finditer(r"VAR ([A-Z]{5}) = (?:VAR ([A-Z]{5})|(\d+))(?=[\s.]|$)", text))
@@ -106,7 +108,8 @@ def select(view):
         remap = {old: new for new, old in enumerate(chosen)}
         edges = tuple((remap[a], remap[b]) for a, b in dependencies if a in remap and b in remap)
         return Selection("dependency", tuple(matches[i][0] for i in chosen), edges,
-                         " ".join(matches[i][1] for i in chosen), "ordered_unique_assignments_v1", digest)
+                         " ".join(matches[i][1] for i in chosen), "ordered_unique_assignments_v1", digest,
+                         tuple(matches[i][1] for i in chosen))
     if view.kind in ("common", "frequency"):
         if view.kind == "common":
             matches = list(re.finditer(r"(\d+)\. ([^\d]+?)(?= \d+\. |$)", text))
@@ -129,8 +132,95 @@ def select(view):
             f"{term}: {frequency}" for term, frequency in ranked[:count])
         text += f"\nLargest omitted count: {ranked[count][1] if len(ranked) > count else 0}."
         return Selection("statistic", (text,), (), " ".join(term for term, _ in ranked[:count]),
-                         "full_scan_counts_unique_top_k_v1", digest)
+                         "full_scan_counts_unique_top_k_v1", digest, tuple(term for term, _ in ranked[:count]))
     return fallback("no_semantic_sufficiency_certificate")
+
+
+def verify_direct(view, result):
+    """Check an exact answer against the full public input, without answer keys.
+
+    Separate verification code uses literal sentence splitting, graph chasing
+    and integer tallies. It assumes the declared RULER grammar; it does not
+    certify arbitrary natural-language truth or interpret embedded instructions.
+    """
+    try:
+        values = json.loads(result)
+        if (type(values) is not list or not 1 <= len(values) <= 128
+                or any(type(v) is not str or not v or len(v) > 256 for v in values)
+                or len(set(values)) != len(values)):
+            return False
+        text = view.context
+        if view.kind == "needle":
+            query = re.search(r"for (.*?) mentioned in the provided text\?", view.suffix)
+            if query is None:
+                return False
+            keys = query[1].replace(", and ", ", ").split(", ")
+            found, seen = set(), set()
+            statements = text.split("One of the special magic ")[1:]
+            if not statements:
+                return False
+            for statement in statements:
+                left, separator, rest = statement.partition(" is: ")
+                kind, sep, key = left.partition(" for ")
+                value, dot, _ = rest.partition(".")
+                if (not separator or not sep or not dot or kind not in ("numbers", "uuids", "words")
+                        or re.fullmatch(r"[\w][\w '-]{0,127}", key) is None
+                        or re.fullmatch(r"[\w-]+", value) is None):
+                    return False
+                if key in keys:
+                    found.add(value)
+                    seen.add(key)
+            return seen == set(keys) and set(values) == found
+        if view.kind == "variables":
+            query = re.search(r"assigned the value (\d+) in the text above", view.suffix)
+            pairs = re.findall(r"VAR ([A-Z]{5}) = (VAR [A-Z]{5}|\d+)(?=[\s.]|$)", text)
+            if query is None or not pairs or len(pairs) > 100 or len(pairs) != len(re.findall(r"\bVAR\s+\w+\s*=", text)):
+                return False
+            assignments = dict(pairs)
+            if len(assignments) != len(pairs):
+                return False
+            found = set()
+            for name in assignments:
+                current, visited = name, set()
+                while True:
+                    if current not in assignments or current in visited:
+                        return False
+                    visited.add(current)
+                    target = assignments[current]
+                    if not target.startswith("VAR "):
+                        if target == query[1]:
+                            found.add(name)
+                        break
+                    current = target[4:]
+            return set(values) == found
+        if view.kind == "common":
+            parts = re.split(r"(?:^| )(\d+)\. ", text)
+            if parts[0] != "" or len(parts) < 3 or len(parts) % 2 != 1:
+                return False
+            terms = []
+            for i in range(1, len(parts), 2):
+                if int(parts[i]) != (i+1)//2 or not parts[i+1] or any(c.isdigit() for c in parts[i+1]):
+                    return False
+                terms.append(parts[i+1])
+            count = 10
+        elif view.kind == "frequency":
+            terms = text.split()
+            if any(v != "..." and re.fullmatch(r"[a-z]{6}", v) is None for v in terms):
+                return False
+            terms = [v for v in terms if v != "..."]
+            count = 3
+        else:
+            return False
+        tallies = {}
+        for term in terms:
+            tallies[term] = tallies.get(term, 0) + 1
+        if len(values) != count or not set(values) <= set(tallies):
+            return False
+        minimum_selected = min(tallies[v] for v in values)
+        maximum_unselected = max((n for term, n in tallies.items() if term not in values), default=0)
+        return minimum_selected > maximum_unselected
+    except (ValueError, TypeError, KeyError):
+        return False
 
 
 def runtime_context(view, selection, token_count):

@@ -1,11 +1,57 @@
 """Adversarial boundaries for the benchmark input adapters (no model calls)."""
 
+import json
 import unittest
 
-from ruler_context import Frame, frame, native_score, runtime_context, select
+from ruler_context import Frame, frame, native_score, runtime_context, select, verify_direct
 
 
 class ContractTests(unittest.TestCase):
+    def test_multiword_keys_and_independent_value_verification(self):
+        view = Frame("", "One of the special magic numbers for ad hoc-incidence is: 123. "
+                     "One of the special magic numbers for ad hoc-incidences is: 999. "
+                     "One of the special magic numbers for ad hoc-incidence is: 456.",
+                     "What are all numbers for ad hoc-incidence mentioned in the provided text?", "needle")
+        self.assertEqual(select(view).answer_values, ("123", "456"))
+        self.assertTrue(verify_direct(view, '["456", "123"]'))
+        for answer in ('["123"]', '["123", "456", "999"]', '["123", "123", "456"]',
+                       '"123 456"', '[123,456]', '{"answer": ["123", "456"]}'):
+            self.assertFalse(verify_direct(view, answer))
+        changed = Frame("", view.context.replace("456", "457"), view.suffix, "needle")
+        self.assertFalse(verify_direct(changed, '["123", "456"]'))
+
+    def test_verifier_rejects_unparsed_statement_and_missing_key(self):
+        context = "One of the special magic numbers for red-cat is: 123. "
+        suffix = "What are numbers for red-cat mentioned in the provided text?"
+        for text in (context + "One of the special magic numbers for blue-cat is: unknown value.",
+                     context.replace(" is: ", " is ")):
+            self.assertFalse(verify_direct(Frame("", text, suffix, "needle"), '["123"]'))
+        self.assertFalse(verify_direct(Frame("", context, suffix.replace("red-cat", "blue-cat"), "needle"), '["123"]'))
+
+    def test_graph_verifier_rejects_cycles_reassignment_missing_parent_and_extra_values(self):
+        suffix = "assigned the value 12345 in the text above"
+        source = "VAR ABCDE = 12345\nVAR FGHIJ = VAR ABCDE\nVAR KLMNO = VAR FGHIJ"
+        view = Frame("", source, suffix, "variables")
+        self.assertTrue(verify_direct(view, '["KLMNO", "ABCDE", "FGHIJ"]'))
+        self.assertFalse(verify_direct(view, '["ABCDE", "FGHIJ"]'))
+        for text in (source + "\nVAR ABCDE = 0", "VAR ABCDE = VAR FGHIJ\nVAR FGHIJ = VAR ABCDE",
+                     "VAR ABCDE = VAR FGHIJ", "VAR ABCDE = 12345\nVAR FGHIJ = unknown"):
+            self.assertFalse(verify_direct(Frame("", text, suffix, "variables"), '["ABCDE"]'))
+
+    def test_tally_verifier_preserves_multiword_terms_and_rejects_boundary_ties(self):
+        words = [f"word {chr(97+i)}" for i in range(10)]
+        source = " ".join(f"{i+1}. {word}" for i, word in enumerate(words*2 + ["other"]))
+        view = Frame("", source, "Question: top 10", "common")
+        self.assertTrue(verify_direct(view, json.dumps(select(view).answer_values)))
+        self.assertFalse(verify_direct(view, json.dumps(words[:-1] + ["other"])))
+        self.assertFalse(verify_direct(Frame("", source.replace("2. ", "99. ", 1), view.suffix, "common"), json.dumps(words)))
+        coded = Frame("", "aaaaaa aaaaaa aaaaaa bbbbbb bbbbbb cccccc ...", "", "frequency")
+        answer = '["aaaaaa", "bbbbbb", "cccccc"]'
+        self.assertTrue(verify_direct(coded, answer))
+        self.assertFalse(verify_direct(Frame("", coded.context + " dddddd", "", "frequency"), answer))
+        self.assertFalse(verify_direct(Frame("", coded.context + " bad!", "", "frequency"), answer))
+        self.assertFalse(verify_direct(Frame("", "an assertion", "why?", "qa"), '["an assertion"]'))
+
     def test_needle_requires_all_keys_and_exact_key_identity(self):
         view = Frame("", "One of the special magic numbers for red-cat is: 123. "
                      "One of the special magic numbers for red-catfish is: 456. "
