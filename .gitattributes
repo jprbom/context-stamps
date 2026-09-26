@@ -8,4 +8,6 @@ evidence/enterprise-context-v1/**/tests.log -text whitespace=cr-at-eol
 evidence/longbench-v2-pilot/boundary-tests.txt -text whitespace=cr-at-eol
 evidence/longbench-v2-pilot/boundary-v2-tests.txt -text whitespace=cr-at-eol
 evidence/enterprise-evaluation-v1/harbor-dependency-audit.json -text whitespace=cr-at-eol
+# Preserve reporter padding in the hashed full-suite evidence.
+evidence/local-learning-v1/full-suite.txt -text whitespace=-blank-at-eol
 evidence/general-learning-v1/**/tests.log -text whitespace=cr-at-eol
