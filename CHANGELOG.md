@@ -4,6 +4,8 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 26 September 2026
 
+- Added a pinned local LongBench v2 control runner with native prompts/scoring, whole-input token checks, retained failures, immutable registrations and offline evidence replay. Thirty RTX calls cover ten short-context tasks across six domains: full context 4/10, BM25 4/10, no context 3/10. No runtime gain or full-benchmark claim. Ten new evaluation-boundary tests pass alongside seven existing provider checks. Harbor 0.23.0 CLI preflight also passes; coding-agent task/sandbox qualification remains.
+
 - Added a bounded optional acquisition planner, portable three-head predictor and whole-trajectory risk accounting. Six RTX fits use public training partitions; 788 calibration and 3,677 regression trajectories retain all false early stops. No scope passed the 5% error gate; unqualified scopes keep the full candidate pool and skip unused feature/model work. Added 14 targeted tests, a complete example, source-bound evidence, model cards and a research figure; all 304 local tests pass. No default routing change, answer-sufficiency qualification or end-to-end token/latency claim.
 
 - Added `IncrementalExecutor`: bounded pure-computation graphs, affected active descendants, exact dependency/version reuse, request-hash receipts, current authority checks and explicit failure outcomes. Added 23 tests and a complete incremental-metrics example. All 290 local tests and 720 fictional workflow requests pass. Localized changes avoided callbacks; policy-wide changes forced recomputation and added overhead. No new trained-model, token-saving, distributed scheduling or hard callback-cancellation claim.

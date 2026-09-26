@@ -1,0 +1,7 @@
+{
+  "utc": 1790437468.5955317,
+  "generation_calls": 0,
+  "reason": "Length-only audit admitted 7/503 tasks from one domain at 12000 tokens. Before any generation, register 28000-token full-input limit within documented 32768 model capacity; this admits 97/503 across all six domains.",
+  "replacement": "run-v2",
+  "plan_sha256": "82219d735da8bb567a06fd0dc37354be597d9072cbad1bd4be0d9ae5ad1f79b3"
+}

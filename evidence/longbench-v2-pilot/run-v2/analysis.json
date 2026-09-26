@@ -1,0 +1,535 @@
+{
+  "schema": 1,
+  "summary_sha256": "9d109eccd5d6d3175b7d8de3498d5c6a7198943a0785369161922a3cb7ad29df",
+  "source_hashes": {
+    "experiments/report_longbench.py": "4d37c9b2eb64e04fd69b8f5f4fdec465b2adc0adba367465baf6f1d967d92dcc"
+  },
+  "corpus_tasks": 503,
+  "eligible": 97,
+  "selected": 10,
+  "excluded_by_length": 406,
+  "strata": [
+    {
+      "axis": "domain",
+      "value": "Code Repository Understanding",
+      "methods": [
+        {
+          "method": "full",
+          "expected": 1,
+          "recorded": 1,
+          "correct": 0,
+          "denominator": 1,
+          "accuracy": 0.0,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 24736,
+          "output_tokens": 8,
+          "p50_seconds": 4.483214100007899,
+          "p95_seconds": 4.483214100007899,
+          "total_request_seconds": 4.483214100007899
+        },
+        {
+          "method": "bm25",
+          "expected": 1,
+          "recorded": 1,
+          "correct": 0,
+          "denominator": 1,
+          "accuracy": 0.0,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 3984,
+          "output_tokens": 8,
+          "p50_seconds": 13.421919799991883,
+          "p95_seconds": 13.421919799991883,
+          "total_request_seconds": 13.421919799991883
+        },
+        {
+          "method": "no_context",
+          "expected": 1,
+          "recorded": 1,
+          "correct": 0,
+          "denominator": 1,
+          "accuracy": 0.0,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 342,
+          "output_tokens": 8,
+          "p50_seconds": 1.0818631999427453,
+          "p95_seconds": 1.0818631999427453,
+          "total_request_seconds": 1.0818631999427453
+        }
+      ]
+    },
+    {
+      "axis": "domain",
+      "value": "Long In-context Learning",
+      "methods": [
+        {
+          "method": "full",
+          "expected": 2,
+          "recorded": 2,
+          "correct": 1,
+          "denominator": 2,
+          "accuracy": 0.5,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 28897,
+          "output_tokens": 16,
+          "p50_seconds": 2.4358835500315763,
+          "p95_seconds": 2.723009700071998,
+          "total_request_seconds": 4.871767100063153
+        },
+        {
+          "method": "bm25",
+          "expected": 2,
+          "recorded": 2,
+          "correct": 1,
+          "denominator": 2,
+          "accuracy": 0.5,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 7596,
+          "output_tokens": 16,
+          "p50_seconds": 1.284224050003104,
+          "p95_seconds": 1.3154825000092387,
+          "total_request_seconds": 2.568448100006208
+        },
+        {
+          "method": "no_context",
+          "expected": 2,
+          "recorded": 2,
+          "correct": 1,
+          "denominator": 2,
+          "accuracy": 0.5,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 303,
+          "output_tokens": 16,
+          "p50_seconds": 0.8334614000050351,
+          "p95_seconds": 0.8842504000058398,
+          "total_request_seconds": 1.6669228000100702
+        }
+      ]
+    },
+    {
+      "axis": "domain",
+      "value": "Long Structured Data Understanding",
+      "methods": [
+        {
+          "method": "full",
+          "expected": 1,
+          "recorded": 1,
+          "correct": 0,
+          "denominator": 1,
+          "accuracy": 0.0,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 19097,
+          "output_tokens": 8,
+          "p50_seconds": 3.182097499957308,
+          "p95_seconds": 3.182097499957308,
+          "total_request_seconds": 3.182097499957308
+        },
+        {
+          "method": "bm25",
+          "expected": 1,
+          "recorded": 1,
+          "correct": 0,
+          "denominator": 1,
+          "accuracy": 0.0,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 3927,
+          "output_tokens": 8,
+          "p50_seconds": 1.7985380999743938,
+          "p95_seconds": 1.7985380999743938,
+          "total_request_seconds": 1.7985380999743938
+        },
+        {
+          "method": "no_context",
+          "expected": 1,
+          "recorded": 1,
+          "correct": 0,
+          "denominator": 1,
+          "accuracy": 0.0,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 202,
+          "output_tokens": 8,
+          "p50_seconds": 1.131660500075668,
+          "p95_seconds": 1.131660500075668,
+          "total_request_seconds": 1.131660500075668
+        }
+      ]
+    },
+    {
+      "axis": "domain",
+      "value": "Long-dialogue History Understanding",
+      "methods": [
+        {
+          "method": "full",
+          "expected": 2,
+          "recorded": 2,
+          "correct": 1,
+          "denominator": 2,
+          "accuracy": 0.5,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 51145,
+          "output_tokens": 24,
+          "p50_seconds": 4.3862878999789245,
+          "p95_seconds": 4.5484614999732,
+          "total_request_seconds": 8.772575799957849
+        },
+        {
+          "method": "bm25",
+          "expected": 2,
+          "recorded": 2,
+          "correct": 1,
+          "denominator": 2,
+          "accuracy": 0.5,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 7810,
+          "output_tokens": 24,
+          "p50_seconds": 1.5091415499919094,
+          "p95_seconds": 1.6198315999936312,
+          "total_request_seconds": 3.018283099983819
+        },
+        {
+          "method": "no_context",
+          "expected": 2,
+          "recorded": 2,
+          "correct": 1,
+          "denominator": 2,
+          "accuracy": 0.5,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 159,
+          "output_tokens": 24,
+          "p50_seconds": 0.7883172000292689,
+          "p95_seconds": 0.790368500049226,
+          "total_request_seconds": 1.5766344000585377
+        }
+      ]
+    },
+    {
+      "axis": "domain",
+      "value": "Multi-Document QA",
+      "methods": [
+        {
+          "method": "full",
+          "expected": 2,
+          "recorded": 2,
+          "correct": 1,
+          "denominator": 2,
+          "accuracy": 0.5,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 27630,
+          "output_tokens": 22,
+          "p50_seconds": 2.4643467000569217,
+          "p95_seconds": 2.871292500058189,
+          "total_request_seconds": 4.928693400113843
+        },
+        {
+          "method": "bm25",
+          "expected": 2,
+          "recorded": 2,
+          "correct": 1,
+          "denominator": 2,
+          "accuracy": 0.5,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 7836,
+          "output_tokens": 22,
+          "p50_seconds": 1.338337799999863,
+          "p95_seconds": 1.4073274000547826,
+          "total_request_seconds": 2.676675599999726
+        },
+        {
+          "method": "no_context",
+          "expected": 2,
+          "recorded": 2,
+          "correct": 0,
+          "denominator": 2,
+          "accuracy": 0.0,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 369,
+          "output_tokens": 34,
+          "p50_seconds": 0.9509275000309572,
+          "p95_seconds": 0.9864214999834076,
+          "total_request_seconds": 1.9018550000619143
+        }
+      ]
+    },
+    {
+      "axis": "domain",
+      "value": "Single-Document QA",
+      "methods": [
+        {
+          "method": "full",
+          "expected": 2,
+          "recorded": 2,
+          "correct": 1,
+          "denominator": 2,
+          "accuracy": 0.5,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 40142,
+          "output_tokens": 16,
+          "p50_seconds": 3.4793402000213973,
+          "p95_seconds": 3.59489560010843,
+          "total_request_seconds": 6.958680400042795
+        },
+        {
+          "method": "bm25",
+          "expected": 2,
+          "recorded": 2,
+          "correct": 1,
+          "denominator": 2,
+          "accuracy": 0.5,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 7968,
+          "output_tokens": 16,
+          "p50_seconds": 1.380250399990473,
+          "p95_seconds": 1.3933128999779,
+          "total_request_seconds": 2.760500799980946
+        },
+        {
+          "method": "no_context",
+          "expected": 2,
+          "recorded": 2,
+          "correct": 1,
+          "denominator": 2,
+          "accuracy": 0.5,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 733,
+          "output_tokens": 16,
+          "p50_seconds": 0.9818489500321448,
+          "p95_seconds": 1.1433943000156432,
+          "total_request_seconds": 1.9636979000642896
+        }
+      ]
+    },
+    {
+      "axis": "difficulty",
+      "value": "easy",
+      "methods": [
+        {
+          "method": "full",
+          "expected": 4,
+          "recorded": 4,
+          "correct": 0,
+          "denominator": 4,
+          "accuracy": 0.0,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 83436,
+          "output_tokens": 36,
+          "p50_seconds": 3.8326557999826036,
+          "p95_seconds": 4.5484614999732,
+          "total_request_seconds": 14.362530499929562
+        },
+        {
+          "method": "bm25",
+          "expected": 4,
+          "recorded": 4,
+          "correct": 0,
+          "denominator": 4,
+          "accuracy": 0.0,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 15496,
+          "output_tokens": 36,
+          "p50_seconds": 1.7091848499840125,
+          "p95_seconds": 13.421919799991883,
+          "total_request_seconds": 18.155771999969147
+        },
+        {
+          "method": "no_context",
+          "expected": 4,
+          "recorded": 4,
+          "correct": 1,
+          "denominator": 4,
+          "accuracy": 0.25,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 748,
+          "output_tokens": 36,
+          "p50_seconds": 0.9361158499959856,
+          "p95_seconds": 1.131660500075668,
+          "total_request_seconds": 3.78656460007187
+        }
+      ]
+    },
+    {
+      "axis": "difficulty",
+      "value": "hard",
+      "methods": [
+        {
+          "method": "full",
+          "expected": 6,
+          "recorded": 6,
+          "correct": 4,
+          "denominator": 6,
+          "accuracy": 0.6666666666666666,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 108211,
+          "output_tokens": 58,
+          "p50_seconds": 3.117538649996277,
+          "p95_seconds": 4.224114299984649,
+          "total_request_seconds": 18.834497800213285
+        },
+        {
+          "method": "bm25",
+          "expected": 6,
+          "recorded": 6,
+          "correct": 4,
+          "denominator": 6,
+          "accuracy": 0.6666666666666666,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 23625,
+          "output_tokens": 58,
+          "p50_seconds": 1.380250399990473,
+          "p95_seconds": 1.4073274000547826,
+          "total_request_seconds": 8.088593499967828
+        },
+        {
+          "method": "no_context",
+          "expected": 6,
+          "recorded": 6,
+          "correct": 2,
+          "denominator": 6,
+          "accuracy": 0.3333333333333333,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 1360,
+          "output_tokens": 70,
+          "p50_seconds": 0.8998419500421733,
+          "p95_seconds": 1.1433943000156432,
+          "total_request_seconds": 5.536069200141355
+        }
+      ]
+    },
+    {
+      "axis": "length",
+      "value": "short",
+      "methods": [
+        {
+          "method": "full",
+          "expected": 10,
+          "recorded": 10,
+          "correct": 4,
+          "denominator": 10,
+          "accuracy": 0.4,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 191647,
+          "output_tokens": 94,
+          "p50_seconds": 3.2729411499458365,
+          "p95_seconds": 4.5484614999732,
+          "total_request_seconds": 33.19702830014285
+        },
+        {
+          "method": "bm25",
+          "expected": 10,
+          "recorded": 10,
+          "correct": 4,
+          "denominator": 10,
+          "accuracy": 0.4,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 39121,
+          "output_tokens": 94,
+          "p50_seconds": 1.3958821999840438,
+          "p95_seconds": 13.421919799991883,
+          "total_request_seconds": 26.244365499936976
+        },
+        {
+          "method": "no_context",
+          "expected": 10,
+          "recorded": 10,
+          "correct": 3,
+          "denominator": 10,
+          "accuracy": 0.3,
+          "malformed": 0,
+          "errors": 0,
+          "missing": 0,
+          "input_tokens": 2108,
+          "output_tokens": 106,
+          "p50_seconds": 0.8998419500421733,
+          "p95_seconds": 1.1433943000156432,
+          "total_request_seconds": 9.322633800213225
+        }
+      ]
+    }
+  ],
+  "paired_outcomes": [
+    {
+      "alternative": "bm25",
+      "versus": "full",
+      "counts": {
+        "both_wrong": 6,
+        "both_correct": 4
+      },
+      "tasks": 10
+    },
+    {
+      "alternative": "no_context",
+      "versus": "full",
+      "counts": {
+        "both_wrong": 5,
+        "alternative_only": 1,
+        "full_only": 2,
+        "both_correct": 2
+      },
+      "tasks": 10
+    }
+  ],
+  "bm25_input_reduction": 0.7958694892171545,
+  "first_call": {
+    "method": "bm25",
+    "whole_request_seconds": 13.421919799991883,
+    "load_seconds": 11.9490423
+  },
+  "telemetry": {
+    "samples": 61,
+    "peak_gpu_utilization_percent": 100.0,
+    "peak_device_memory_mib": 2230.0,
+    "peak_temperature_c": 64.0
+  },
+  "resident_models_sha256": "cbe872abbc0d2ccf9719e1cb6bc08cffc76aba0447ed52b69525d8c31026ea49",
+  "conclusion": "No promotion. Small controls-only development subset; reader quality and runtime benefit unqualified."
+}

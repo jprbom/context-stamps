@@ -1,0 +1,59 @@
+{
+  "id": "66f284ff821e116aacb29763",
+  "method": "bm25",
+  "domain": "Single-Document QA",
+  "length": "short",
+  "difficulty": "hard",
+  "status": "ok",
+  "identity_check_seconds": 0.5627819000510499,
+  "prompt_sha256": "9a09be10d88b8aaf32e9770ed57fb845f90d0100017381b8574c19173d8e18b3",
+  "input_tokens": 3899,
+  "selected_spans": [
+    [
+      2124,
+      4694
+    ],
+    [
+      4367,
+      6911
+    ],
+    [
+      18065,
+      20633
+    ],
+    [
+      20283,
+      22856
+    ],
+    [
+      22601,
+      25160
+    ],
+    [
+      36158,
+      38441
+    ],
+    [
+      57000,
+      59637
+    ]
+  ],
+  "selected_chunks": 7,
+  "context_preparation_seconds": 0.28467509988695383,
+  "model_call_seconds": 0.5458029001019895,
+  "response": "The correct answer is (A).",
+  "response_sha256": "752375a17b7fbd88b77e40a5fe4e688646cf633c1ba7bbd56c3c27ff880ffeb4",
+  "usage": {
+    "prompt_eval_count": 3899,
+    "eval_count": 8,
+    "total_duration": 357311800,
+    "load_duration": 11858700,
+    "prompt_eval_duration": 287024000,
+    "eval_duration": 38596000,
+    "done_reason": "stop"
+  },
+  "prediction": "A",
+  "target": "C",
+  "correct": false,
+  "whole_request_seconds": 1.3933128999779
+}

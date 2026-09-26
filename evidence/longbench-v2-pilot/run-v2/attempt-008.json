@@ -1,0 +1,30 @@
+{
+  "id": "66f2aac2821e116aacb2a9de",
+  "method": "no_context",
+  "domain": "Long In-context Learning",
+  "length": "short",
+  "difficulty": "hard",
+  "status": "ok",
+  "identity_check_seconds": 0.5361762000247836,
+  "prompt_sha256": "79db5cd75c50e3e47687140a8644499acf74d4d249614585a583deffac3a1267",
+  "input_tokens": 178,
+  "selected_spans": [],
+  "selected_chunks": 0,
+  "context_preparation_seconds": 0.0006660000653937459,
+  "model_call_seconds": 0.3473770000273362,
+  "response": "The correct answer is (D).",
+  "response_sha256": "e7ab34269718079bc067b6e60ed5dd4b32c9b4b671ab85539368e58dc761c55a",
+  "usage": {
+    "prompt_eval_count": 178,
+    "eval_count": 8,
+    "total_duration": 118740100,
+    "load_duration": 12295400,
+    "prompt_eval_duration": 21112000,
+    "eval_duration": 32573999,
+    "done_reason": "stop"
+  },
+  "prediction": "D",
+  "target": "B",
+  "correct": false,
+  "whole_request_seconds": 0.8842504000058398
+}

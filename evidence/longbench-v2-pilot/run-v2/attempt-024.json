@@ -1,0 +1,63 @@
+{
+  "id": "66fbab85bb02136c067c81dc",
+  "method": "bm25",
+  "domain": "Multi-Document QA",
+  "length": "short",
+  "difficulty": "hard",
+  "status": "ok",
+  "identity_check_seconds": 0.5875342000508681,
+  "prompt_sha256": "2218524fad15d35fc81cd45bbbb9c28ed74bbfdc9de555978ae6be9da4ad7d8c",
+  "input_tokens": 3915,
+  "selected_spans": [
+    [
+      0,
+      2344
+    ],
+    [
+      2035,
+      4692
+    ],
+    [
+      6760,
+      9493
+    ],
+    [
+      9162,
+      11854
+    ],
+    [
+      28657,
+      31240
+    ],
+    [
+      33406,
+      36184
+    ],
+    [
+      45935,
+      48714
+    ],
+    [
+      60637,
+      61556
+    ]
+  ],
+  "selected_chunks": 8,
+  "context_preparation_seconds": 0.15516740002203733,
+  "model_call_seconds": 0.6645733999321237,
+  "response": "The correct answer is (C) the cooperation between various people.",
+  "response_sha256": "7e561939c2b566800b51e3baad1225063b1a517624d89a0634975607cd778c62",
+  "usage": {
+    "prompt_eval_count": 3915,
+    "eval_count": 14,
+    "total_duration": 491027000,
+    "load_duration": 11888300,
+    "prompt_eval_duration": 270788000,
+    "eval_duration": 64336000,
+    "done_reason": "stop"
+  },
+  "prediction": "C",
+  "target": "C",
+  "correct": true,
+  "whole_request_seconds": 1.4073274000547826
+}

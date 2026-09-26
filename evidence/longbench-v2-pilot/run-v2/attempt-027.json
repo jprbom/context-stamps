@@ -1,0 +1,30 @@
+{
+  "id": "66ebde0f5a08c7b9b35e1256",
+  "method": "full",
+  "domain": "Single-Document QA",
+  "length": "short",
+  "difficulty": "hard",
+  "status": "ok",
+  "identity_check_seconds": 0.6126132000936195,
+  "prompt_sha256": "803012deeb8e206116a8e876dfcb136db57b0357d339e20e80a64fc4f942fdbd",
+  "input_tokens": 21106,
+  "selected_spans": [],
+  "selected_chunks": 0,
+  "context_preparation_seconds": 0.030588299967348576,
+  "model_call_seconds": 2.95164320000913,
+  "response": "The correct answer is (D).",
+  "response_sha256": "e7ab34269718079bc067b6e60ed5dd4b32c9b4b671ab85539368e58dc761c55a",
+  "usage": {
+    "prompt_eval_count": 21106,
+    "eval_count": 8,
+    "total_duration": 2785502300,
+    "load_duration": 12689100,
+    "prompt_eval_duration": 2579362000,
+    "eval_duration": 39462000,
+    "done_reason": "stop"
+  },
+  "prediction": "D",
+  "target": "D",
+  "correct": true,
+  "whole_request_seconds": 3.59489560010843
+}

@@ -41,6 +41,8 @@ jobs:
       - run: python experiments/verify_incremental.py
       - run: python experiments/verify_acquisition.py
       - run: python experiments/test_local_eval.py -v
+      - run: python experiments/test_longbench_eval.py -v
+      - run: python experiments/verify_longbench.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py

@@ -26,6 +26,8 @@ The [incremental computation layer](docs/incremental-computation.md) now recompu
 
 The [adaptive-acquisition study](docs/adaptive-acquisition.md) trained six small predictors on the RTX using 3,134 public training queries. The selected 1,187-parameter model was audited on 788 calibration and 3,677 regression queries. **No scope passed the 5% early-stop error gate.** Transfer to SciDocs and FiQA failed severely, so the guarded planner retains the full candidate pool and skips unused feature/model work. The current engineering suite passes **304 tests without skips**. These tests and the retained negative result do not establish answer sufficiency or end-to-end token/latency savings.
 
+A new [LongBench v2 reader pilot](docs/longbench-local-pilot.md) completed 30 local RTX calls on ten short-context tasks across six domains. Full context and a BM25 control each scored 4/10; no context scored 3/10. All input-token counts matched the server, and no request or output-format failures occurred. The report retains token counts, timings, cold-load effects and every answer. These are baseline controls, not a runtime gain or a full benchmark result. The [evaluation programme](docs/evaluation-programme.md) also prepares Harbor/Cline-style coding-agent comparisons; Harbor's local CLI is installed and verified, while task/sandbox qualification remains.
+
 ![Acquisition candidate counts and recall, including failed transfer](docs/assets/acquisition-v1-tradeoff.svg)
 
 [Download the research figure as PNG](docs/assets/acquisition-v1-tradeoff.png) · [Model card, weights and limits](evidence/acquisition-v1/MODEL_CARD.md)

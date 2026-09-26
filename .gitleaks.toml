@@ -1,4 +1,4 @@
-title = "Context Stamps: narrow public ArguAna identifier exceptions"
+title = "Context Stamps: exact public identifier and checksum exceptions"
 
 [extend]
 useDefault = true
@@ -20,3 +20,24 @@ regexes = [
   '''^validation-science-ihbrapisbpl-pro02b\", \"test-culture-mmctghwbsa-con01b\"$''',
   '''^validation-science-ihbrapisbpl-pro02b\", \"test-international-bldimehbn-pro01a\"$''',
 ]
+
+# SHA256 checksums of the separately downloaded, pinned public Qwen tokenizer.
+# The entire matched text AND one of these two immutable plan paths must agree.
+[[allowlists]]
+description = "Reviewed public tokenizer file checksums in LongBench registrations"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]longbench-v2-pilot[\\/]run-v[12][\\/]plan\.json$''']
+regexes = [
+  '''^tokenizer\.json": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"$''',
+  '''^tokenizer_config\.json": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583"$''',
+]
+
+[[allowlists]]
+description = "Exact public Qwen Hub commit ID, not a provider credential"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])experiments[\\/]longbench_eval\.py$''']
+regexes = ['''^TOKEN_REV = "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"$''']

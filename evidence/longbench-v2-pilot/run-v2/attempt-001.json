@@ -1,0 +1,59 @@
+{
+  "id": "6708a096bb02136c067d1789",
+  "method": "bm25",
+  "domain": "Code Repository Understanding",
+  "length": "short",
+  "difficulty": "easy",
+  "status": "ok",
+  "identity_check_seconds": 0.5910198999335989,
+  "prompt_sha256": "660693e87d2dfc62c20ddfa10bc4ce0936fdb269113dd9056109a8fee5fa21bf",
+  "input_tokens": 3984,
+  "selected_spans": [
+    [
+      5850,
+      8032
+    ],
+    [
+      11762,
+      14184
+    ],
+    [
+      21270,
+      23250
+    ],
+    [
+      29881,
+      31268
+    ],
+    [
+      34510,
+      36753
+    ],
+    [
+      46197,
+      48646
+    ],
+    [
+      79599,
+      81950
+    ]
+  ],
+  "selected_chunks": 7,
+  "context_preparation_seconds": 0.2759597999975085,
+  "model_call_seconds": 12.5548267000122,
+  "response": "The correct answer is (B).",
+  "response_sha256": "987dc6f5a2dcd29af5701fa85a7804104cf1d465892a16af87cfda1d2d79662d",
+  "usage": {
+    "prompt_eval_count": 3984,
+    "eval_count": 8,
+    "total_duration": 12371896000,
+    "load_duration": 11949042300,
+    "prompt_eval_duration": 369626000,
+    "eval_duration": 40669000,
+    "done_reason": "stop"
+  },
+  "prediction": "B",
+  "target": "D",
+  "correct": false,
+  "whole_request_seconds": 13.421919799991883
+}

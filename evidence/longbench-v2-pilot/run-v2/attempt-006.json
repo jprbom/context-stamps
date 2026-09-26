@@ -1,0 +1,59 @@
+{
+  "id": "66f9625fbb02136c067c5456",
+  "method": "bm25",
+  "domain": "Long In-context Learning",
+  "length": "short",
+  "difficulty": "easy",
+  "status": "ok",
+  "identity_check_seconds": 0.5421607999596745,
+  "prompt_sha256": "37da9bfa12720b7fa52871599c96acc931209b5514710508a1f23488a2392277",
+  "input_tokens": 3772,
+  "selected_spans": [
+    [
+      21546,
+      23788
+    ],
+    [
+      23442,
+      25461
+    ],
+    [
+      30963,
+      33178
+    ],
+    [
+      32879,
+      35139
+    ],
+    [
+      42210,
+      44520
+    ],
+    [
+      48284,
+      50572
+    ],
+    [
+      50264,
+      52669
+    ]
+  ],
+  "selected_chunks": 7,
+  "context_preparation_seconds": 0.136659299954772,
+  "model_call_seconds": 0.6366127000655979,
+  "response": "The correct answer is (C).",
+  "response_sha256": "b677f18f9ea76367d139dc2c32e03737e030b4f04a4ac3ff018031c4d33e1143",
+  "usage": {
+    "prompt_eval_count": 3772,
+    "eval_count": 8,
+    "total_duration": 478065200,
+    "load_duration": 12291400,
+    "prompt_eval_duration": 276132000,
+    "eval_duration": 39012000,
+    "done_reason": "stop"
+  },
+  "prediction": "C",
+  "target": "B",
+  "correct": false,
+  "whole_request_seconds": 1.3154825000092387
+}

@@ -54,7 +54,37 @@ def main(executable):
         target.write_text(original.replace('test-law-tahglcphsld-pro02a', fake) + '\n', encoding='utf-8')
         assert run(ROOT / '.gitleaks.toml'), 'changed neighboring token must remain detectable'
 
-    print('Five scanner controls passed: default finding, scoped exclusion, same-line canary, wrong path, changed token.')
+        target.write_text('', encoding='utf-8')
+        checksum_cases = []
+        for version in (1, 2):
+            relative = Path(f'evidence/longbench-v2-pilot/run-v{version}/plan.json')
+            lines = (ROOT / relative).read_text(encoding='utf-8').splitlines()
+            for key in ('tokenizer.json', 'tokenizer_config.json'):
+                line = next(line for line in lines if line.strip().startswith('"' + key + '":'))
+                checksum_cases.append((relative, line))
+        relative = Path('experiments/longbench_eval.py')
+        line = next(line for line in (ROOT / relative).read_text().splitlines() if line.startswith('TOKEN_REV = '))
+        checksum_cases.append((relative, line))
+        for relative, line in checksum_cases:
+            control = scan / relative
+            control.parent.mkdir(parents=True, exist_ok=True)
+            control.write_text(line + '\n', encoding='utf-8')
+            assert len(run(baseline)) == 1, 'public checksum should reproduce default finding'
+            assert not run(ROOT / '.gitleaks.toml'), 'only the reviewed checksum/path is excluded'
+            control.write_text(line + ' api_key="' + fake + '"\n', encoding='utf-8')
+            assert run(ROOT / '.gitleaks.toml'), 'same-line canary remains detectable'
+            control.write_text('', encoding='utf-8')
+            other.write_text(line + '\n', encoding='utf-8')
+            assert run(ROOT / '.gitleaks.toml'), 'public checksum is not globally excluded'
+            other.write_text('', encoding='utf-8')
+            import re
+
+            changed = re.sub(r'[a-f0-9]{40,64}', fake, line)
+            control.write_text(changed + '\n', encoding='utf-8')
+            assert run(ROOT / '.gitleaks.toml'), 'changed checksum remains detectable'
+            control.write_text('', encoding='utf-8')
+
+    print('Thirty scanner controls passed: default findings, exact exclusions, same-line canaries, wrong paths, changed tokens.')
 
 
 if __name__ == '__main__':

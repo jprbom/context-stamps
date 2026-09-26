@@ -1,0 +1,63 @@
+{
+  "id": "6719bce5bb02136c067d4447",
+  "method": "bm25",
+  "domain": "Long-dialogue History Understanding",
+  "length": "short",
+  "difficulty": "hard",
+  "status": "ok",
+  "identity_check_seconds": 0.5729173000436276,
+  "prompt_sha256": "540d23c1420881cc1da1f58e5a96a69fb34f7c29ddc85bfaacc1590d011f02a9",
+  "input_tokens": 3997,
+  "selected_spans": [
+    [
+      20223,
+      21881
+    ],
+    [
+      28369,
+      30019
+    ],
+    [
+      36554,
+      38239
+    ],
+    [
+      44733,
+      46384
+    ],
+    [
+      62625,
+      64405
+    ],
+    [
+      70863,
+      72565
+    ],
+    [
+      79083,
+      80725
+    ],
+    [
+      87281,
+      88088
+    ]
+  ],
+  "selected_chunks": 8,
+  "context_preparation_seconds": 0.23166119994129986,
+  "model_call_seconds": 0.593814600026235,
+  "response": "The correct answer is (C) player_7.",
+  "response_sha256": "524c0e760818802c3c4220013d066647495385036721331baeddd40032fb05b7",
+  "usage": {
+    "prompt_eval_count": 3997,
+    "eval_count": 12,
+    "total_duration": 419571500,
+    "load_duration": 11662200,
+    "prompt_eval_duration": 293868000,
+    "eval_duration": 50947000,
+    "done_reason": "stop"
+  },
+  "prediction": "C",
+  "target": "C",
+  "correct": true,
+  "whole_request_seconds": 1.3984514999901876
+}

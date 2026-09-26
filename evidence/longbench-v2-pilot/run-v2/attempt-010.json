@@ -1,0 +1,63 @@
+{
+  "id": "66ed2c87821e116aacb1f149",
+  "method": "bm25",
+  "domain": "Long Structured Data Understanding",
+  "length": "short",
+  "difficulty": "easy",
+  "status": "ok",
+  "identity_check_seconds": 0.6074734999565408,
+  "prompt_sha256": "2bd32a88178ca1d55000c81111f99c80ded5d3d89218b0f141226343c005696a",
+  "input_tokens": 3927,
+  "selected_spans": [
+    [
+      4066,
+      6353
+    ],
+    [
+      6034,
+      8540
+    ],
+    [
+      12256,
+      14516
+    ],
+    [
+      26153,
+      28482
+    ],
+    [
+      28173,
+      30416
+    ],
+    [
+      30103,
+      32554
+    ],
+    [
+      32244,
+      34740
+    ],
+    [
+      59798,
+      59918
+    ]
+  ],
+  "selected_chunks": 8,
+  "context_preparation_seconds": 0.3577505999710411,
+  "model_call_seconds": 0.8332843000534922,
+  "response": "The correct answer is (D).",
+  "response_sha256": "e7ab34269718079bc067b6e60ed5dd4b32c9b4b671ab85539368e58dc761c55a",
+  "usage": {
+    "prompt_eval_count": 3927,
+    "eval_count": 8,
+    "total_duration": 548974800,
+    "load_duration": 15240800,
+    "prompt_eval_duration": 273802000,
+    "eval_duration": 35544000,
+    "done_reason": "stop"
+  },
+  "prediction": "D",
+  "target": "A",
+  "correct": false,
+  "whole_request_seconds": 1.7985380999743938
+}

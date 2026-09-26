@@ -10,6 +10,8 @@ global-exclude *.visual-check*
 
 recursive-include experiments *.py
 include experiments/eval-requirements.txt
+include experiments/harbor-requirements.txt
+include evidence/longbench-v2-pilot/upstream/LICENSE
 recursive-include evidence *.json *.jsonl *.md *.txt *.py
 exclude evidence/controller-v1/results.json
 include evidence/controller-v1/*.json.gz

@@ -1,0 +1,63 @@
+{
+  "id": "671b1480bb02136c067d4f14",
+  "method": "bm25",
+  "domain": "Long-dialogue History Understanding",
+  "length": "short",
+  "difficulty": "easy",
+  "status": "ok",
+  "identity_check_seconds": 0.5683769000461325,
+  "prompt_sha256": "4e512d0365ece6f05f1bec0a96432cf817373dbe30c7af2026b48e97fcce4ba6",
+  "input_tokens": 3813,
+  "selected_spans": [
+    [
+      4406,
+      5721
+    ],
+    [
+      5493,
+      7353
+    ],
+    [
+      21788,
+      23572
+    ],
+    [
+      39600,
+      41361
+    ],
+    [
+      57451,
+      59183
+    ],
+    [
+      67026,
+      68891
+    ],
+    [
+      83326,
+      85093
+    ],
+    [
+      93030,
+      93247
+    ]
+  ],
+  "selected_chunks": 8,
+  "context_preparation_seconds": 0.25763619993813336,
+  "model_call_seconds": 0.793755599996075,
+  "response": "The correct answer is (B) player_2.",
+  "response_sha256": "d38db49fec99e07891b9cb46b25e0941c3f6bcdf44c0dfd8ef9d334e7e5227e7",
+  "usage": {
+    "prompt_eval_count": 3813,
+    "eval_count": 12,
+    "total_duration": 633297500,
+    "load_duration": 12431500,
+    "prompt_eval_duration": 260511000,
+    "eval_duration": 53819000,
+    "done_reason": "stop"
+  },
+  "prediction": "B",
+  "target": "A",
+  "correct": false,
+  "whole_request_seconds": 1.6198315999936312
+}

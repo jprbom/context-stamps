@@ -1,0 +1,9 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU, 610.62, 16303",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "initial_resident_models": {
+    "models": []
+  },
+  "note": "Device inventory, not per-process allocation. No model inference issued by this check."
+}

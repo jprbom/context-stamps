@@ -1,0 +1,30 @@
+{
+  "id": "66fbab85bb02136c067c81dc",
+  "method": "no_context",
+  "domain": "Multi-Document QA",
+  "length": "short",
+  "difficulty": "hard",
+  "status": "ok",
+  "identity_check_seconds": 0.5872233000118285,
+  "prompt_sha256": "2fe9b3b7802cb40ebbf4d3421f249216dec7a87debf7d7c519a3e2166397e09e",
+  "input_tokens": 96,
+  "selected_spans": [],
+  "selected_chunks": 0,
+  "context_preparation_seconds": 0.0004073000745847821,
+  "model_call_seconds": 0.32775369996670634,
+  "response": "The correct answer is (B) the education of the young people who are allways considered as the sun of the nation.",
+  "response_sha256": "6eb5bf838914eb75748bc71ba577982aef8cc8d94feef601b62c23314f1520bd",
+  "usage": {
+    "prompt_eval_count": 96,
+    "eval_count": 26,
+    "total_duration": 177029800,
+    "load_duration": 9615900,
+    "prompt_eval_duration": 17915000,
+    "eval_duration": 103678000,
+    "done_reason": "stop"
+  },
+  "prediction": "B",
+  "target": "C",
+  "correct": false,
+  "whole_request_seconds": 0.9154335000785068
+}

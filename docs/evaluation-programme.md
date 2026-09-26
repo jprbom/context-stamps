@@ -4,14 +4,14 @@ By Prashant Jagtap
 
 The question is whether Context Stamps improves a particular model's task outcome or reduces its total resource use while preserving required quality. A model leaderboard alone cannot answer that question. Compare the same model, agent scaffold, tools and task budget with and without the runtime; report comparisons between different models separately.
 
-**Status, 26 September 2026:** protocol and a guarded local pilot runner are available. Seven runner-boundary tests pass. The first native Inspect ARC preparation stopped before generation because Windows Application Control blocked a pandas DLL. No new model benchmark score, frontier comparison or training gain is reported. The existing 267-test storage revision has passed all six GitHub CI jobs. These engineering checks are separate from model accuracy.
+**Status, 26 September 2026:** the independent [LongBench v2 reader pilot](longbench-local-pilot.md) completed 30 local calls on ten short-context tasks: full context 4/10, BM25 4/10, no context 3/10. This establishes baseline plumbing, not a runtime benefit or frontier ranking. Seventeen evaluation-boundary tests pass. Harbor 0.23.0 starts locally with Docker 29.7.2; no coding-agent trial has run, and sandbox/task qualification remains. The separate native Inspect ARC preparation remains blocked before generation by Windows Application Control on a pandas DLL. The 304-test acquisition revision passed all six GitHub CI jobs. Engineering checks and model accuracy remain separate evidence.
 
 ## Harness selection
 
 | Tool or collection | Intended role | Decision and limits |
 |---|---|---|
 | Inspect AI + Inspect Evals | Native task definitions, model adapters, scoring and per-sample logs | Selected for the first local model track. Installed versions are pinned; execution is not yet qualified on this host. |
-| Harbor | Isolated agent tasks, verifier execution and trajectories | Selected for the coding-agent track. Local Docker responds; the adapter and sandbox qualification remain. |
+| Harbor | Isolated agent tasks, verifier execution and trajectories | Version 0.23.0 installed; CLI version/help and local Docker preflight pass. Adapter and sandbox qualification remain. |
 | Cline Bench | Engineering tasks derived from coding sessions; Cline as a scaffold control | Harbor-compatible. Inspected revision has no root license file or declared repository license; task rights need resolution before inclusion. No tasks copied or executed. |
 | Terminal-Bench 2.1 | Broader terminal and coding-agent tasks | Preferred initial Harbor collection after task/resource/license review. Keep 2.0 and 2.1 results separate. |
 | EleutherAI LM Evaluation Harness | Conventional language-model capability controls | Useful secondary cross-check when its task protocol fits. It does not by itself test persistent enterprise context. |
@@ -22,6 +22,42 @@ Sources: [Inspect providers](https://inspect.aisi.org.uk/providers.html), [Inspe
 The Terminal-Bench authors revised tasks to address external dependency drift, resource mismatches and specification problems. Freeze the collection revision and container digests, validate the task environment, and report infrastructure failures separately from incorrect model answers. Do not combine scores from different benchmark versions. [Revision explanation](https://www.tbench.ai/news/terminal-bench-2-1)
 
 Published Cline or leaderboard results can help choose controls. They are external results, not measurements of this repository, and cannot establish a runtime improvement. Our own paired runs must retain their task identities, configurations and failures. No automatic leaderboard upload is planned.
+
+For the Harbor implementation, use an external `BaseAgent` when the runtime and
+local model connection need to remain on the host. The agent sends task commands
+only through Harbor's `BaseEnvironment`; it must not execute model-written shell
+commands on the host. Keep identical model, tool, turn and time budgets for the
+baseline and runtime treatment. Harbor also supports installed agents, including
+the Cline CLI control. [Custom agent API](https://docs.harborframework.com/core-concepts/agents/custom-agents)
+
+Qualify the local Docker boundary before running coding tasks: pin images and
+dependencies, separate verifier inputs, use task-owned writable volumes, exclude
+host credentials, test resource limits and cancellation, and validate denied
+network access. Harbor distinguishes setup, agent and verifier phases; a policy
+applied only during the agent phase does not restrict setup. Docker network
+policies require its egress-control support. These checks are pending, not
+capabilities already proved by this repository.
+[Network policy semantics](https://docs.harborframework.com/core-concepts/tasks/network-policies)
+
+Set `$env:HARBOR_TELEMETRY='off'` before invoking Harbor for these local runs.
+Its default usage telemetry includes job-level metadata and measurements; no
+upload is needed to perform a local comparison. Keep the raw run artifacts in
+the task workspace and publish only reviewed evidence.
+[Telemetry controls](https://docs.harborframework.com/telemetry/telemetry)
+
+The tested local CLI environment is recorded in
+[harbor-preflight.json](../evidence/enterprise-evaluation-v1/harbor-preflight.json).
+To reproduce that installation separately from model-serving dependencies:
+
+```powershell
+uv venv ../harbor-eval-venv --python 3.12
+uv pip install --python ../harbor-eval-venv/Scripts/python.exe -r experiments/harbor-requirements.txt
+$env:HARBOR_TELEMETRY='off'
+& ../harbor-eval-venv/Scripts/harbor.exe --version
+& ../harbor-eval-venv/Scripts/harbor.exe run --help
+```
+
+These are installation checks, not an agent trial or container isolation test.
 
 ## Evaluation tracks
 

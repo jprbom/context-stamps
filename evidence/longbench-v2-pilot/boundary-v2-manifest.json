@@ -1,0 +1,12 @@
+{
+  "command": "python -m unittest discover -s experiments -p test_*eval.py -v",
+  "exit_code": 0,
+  "tests": 17,
+  "source_hashes": {
+    "experiments/longbench_eval.py": "c2b9b794632777e960c8316cf62a3e1d442fe43d71a33e01f58cd9387f4b8063",
+    "experiments/test_longbench_eval.py": "41fc68c62c8c70104fdacce2f228f4a10e8556bf1d91466cbfb28e9e67d75b98",
+    "experiments/local_eval.py": "60084ecbdf5294102b374414c8ecd4d994f836dce1a5536cb08f264f51337912",
+    "experiments/test_local_eval.py": "8e2442fd7ec3b58a9155b079a23c18e21f3e6cf9353dc2f398cda0752810043a"
+  },
+  "log_sha256": "0f8b1f5e5ebdf502367c82b8e6a6a58d67f31ee623ca2ad66ab516c00f017198"
+}

@@ -5,4 +5,6 @@
 *.svg text eol=lf
 # Preserve the exact recorded test-log bytes used by evidence hashes.
 evidence/enterprise-context-v1/**/tests.log -text whitespace=cr-at-eol
+evidence/longbench-v2-pilot/boundary-tests.txt -text whitespace=cr-at-eol
+evidence/longbench-v2-pilot/boundary-v2-tests.txt -text whitespace=cr-at-eol
 evidence/general-learning-v1/**/tests.log -text whitespace=cr-at-eol

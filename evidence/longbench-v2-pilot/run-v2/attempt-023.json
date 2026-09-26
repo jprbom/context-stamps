@@ -1,0 +1,30 @@
+{
+  "id": "66fbab85bb02136c067c81dc",
+  "method": "full",
+  "domain": "Multi-Document QA",
+  "length": "short",
+  "difficulty": "hard",
+  "status": "ok",
+  "identity_check_seconds": 0.6062243001069874,
+  "prompt_sha256": "2c0558bc4ef8a8aacb7c489169f506322654af4d94090a29c983cfedadebed16",
+  "input_tokens": 11470,
+  "selected_spans": [],
+  "selected_chunks": 0,
+  "context_preparation_seconds": 0.018535499926656485,
+  "model_call_seconds": 1.4326010000659153,
+  "response": "The correct answer is (C) the cooperation between various people.",
+  "response_sha256": "7e561939c2b566800b51e3baad1225063b1a517624d89a0634975607cd778c62",
+  "usage": {
+    "prompt_eval_count": 11470,
+    "eval_count": 14,
+    "total_duration": 1268229800,
+    "load_duration": 13906000,
+    "prompt_eval_duration": 1108339000,
+    "eval_duration": 75841000,
+    "done_reason": "stop"
+  },
+  "prediction": "C",
+  "target": "C",
+  "correct": true,
+  "whole_request_seconds": 2.0574009000556543
+}

@@ -30,6 +30,13 @@ The follow-up controller-v2 adds FiQA calibration/evaluation and a separately ob
 
 ## Multimodal evaluation models
 
+The [LongBench v2 reader pilot](../evidence/longbench-v2-pilot/ATTRIBUTION.md)
+retains third-party MIT prompt/parser notices and the Apache-2.0 dataset/model
+attribution separately. Raw contexts, question/choice texts and pretrained weights
+are downloaded outside Git. Released observations contain identifiers, hashes,
+short generated answers, public target labels and measurements. Cline Bench tasks
+have not been copied or executed while their task licensing remains unresolved.
+
 The acquisition study retains public-data-derived small JSON predictors and trajectory evidence under its [CC BY-SA 4.0 attribution](../evidence/acquisition-v1/ATTRIBUTION.md). Its source, engineering tests and fictional example remain MIT. The learned policy failed qualification and is not a default retrieval route. External model weights and raw dataset texts are excluded.
 
 The runtime follow-up retains public-dataset-derived router parameters, rankings and timing evidence under the [runtime artifact attribution](../evidence/runtime-v1/ATTRIBUTION.md). Its fictional reader/metadata fixtures and original code remain MIT. The existing local Cortex 1.7B model is used only for inference on those fictional inputs; its weights, private training corpus, prompt template and filesystem paths are not published. Reader observations retain expected/parsed integer outputs and hashes rather than unconstrained text.

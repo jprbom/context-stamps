@@ -1,0 +1,20 @@
+test_changed_runner_rejected (test_local_eval.LocalEvaluationBoundaryTests.test_changed_runner_rejected) ... ok
+test_cloud_alias_rejected_even_without_remote_fields (test_local_eval.LocalEvaluationBoundaryTests.test_cloud_alias_rejected_even_without_remote_fields) ... ok
+test_exact_local_identity_binds_template (test_local_eval.LocalEvaluationBoundaryTests.test_exact_local_identity_binds_template) ... ok
+test_missing_weights_digest_or_exact_tag_refused (test_local_eval.LocalEvaluationBoundaryTests.test_missing_weights_digest_or_exact_tag_refused) ... ok
+test_plan_cannot_add_provider_fallback_or_expand_sample_limit (test_local_eval.LocalEvaluationBoundaryTests.test_plan_cannot_add_provider_fallback_or_expand_sample_limit) ... ok
+test_prior_evidence_cannot_be_overwritten (test_local_eval.LocalEvaluationBoundaryTests.test_prior_evidence_cannot_be_overwritten) ... ok
+test_remote_indirection_rejected_in_both_api_responses (test_local_eval.LocalEvaluationBoundaryTests.test_remote_indirection_rejected_in_both_api_responses) ... ok
+test_chunk_coverage_unicode_and_stable_zero_scores (test_longbench_eval.LongBenchBoundaryTests.test_chunk_coverage_unicode_and_stable_zero_scores) ... ok
+test_evidence_placeholder_is_literal (test_longbench_eval.LongBenchBoundaryTests.test_evidence_placeholder_is_literal) ... ok
+test_failures_and_missing_attempts_remain_in_denominator (test_longbench_eval.LongBenchBoundaryTests.test_failures_and_missing_attempts_remain_in_denominator) ... ok
+test_inference_is_fixed_loopback_raw_no_tools_and_no_proxy (test_longbench_eval.LongBenchBoundaryTests.test_inference_is_fixed_loopback_raw_no_tools_and_no_proxy) ... ok
+test_native_parser_is_not_lenient (test_longbench_eval.LongBenchBoundaryTests.test_native_parser_is_not_lenient) ... ok
+test_no_context_has_no_source_and_bm25_has_complete_budget (test_longbench_eval.LongBenchBoundaryTests.test_no_context_has_no_source_and_bm25_has_complete_budget) ... ok
+test_no_silent_truncation_even_for_question_only_overflow (test_longbench_eval.LongBenchBoundaryTests.test_no_silent_truncation_even_for_question_only_overflow) ... ok
+test_target_and_grader_metadata_do_not_change_any_prompt (test_longbench_eval.LongBenchBoundaryTests.test_target_and_grader_metadata_do_not_change_any_prompt) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.033s
+
+OK

@@ -1,0 +1,30 @@
+{
+  "id": "671b1480bb02136c067d4f14",
+  "method": "full",
+  "domain": "Long-dialogue History Understanding",
+  "length": "short",
+  "difficulty": "easy",
+  "status": "ok",
+  "identity_check_seconds": 0.5481871999800205,
+  "prompt_sha256": "6661a6fe9b39a193ad1a8f00382e26945cb65164ddcd49a0520b74c925f5ea23",
+  "input_tokens": 26602,
+  "selected_spans": [],
+  "selected_chunks": 0,
+  "context_preparation_seconds": 0.03267510002478957,
+  "model_call_seconds": 3.967569399974309,
+  "response": "The correct answer is (C) player_4.",
+  "response_sha256": "be22219d81b5b59cfd34713ca34a5ab1fcb55a910ea7bd007ddc8db3734e80bb",
+  "usage": {
+    "prompt_eval_count": 26602,
+    "eval_count": 12,
+    "total_duration": 3795853200,
+    "load_duration": 13508700,
+    "prompt_eval_duration": 3661747000,
+    "eval_duration": 70702000,
+    "done_reason": "stop"
+  },
+  "prediction": "C",
+  "target": "A",
+  "correct": false,
+  "whole_request_seconds": 4.5484614999732
+}

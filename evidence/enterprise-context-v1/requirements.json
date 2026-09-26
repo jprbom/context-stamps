@@ -103,7 +103,10 @@
         "latency",
         "risk"
       ],
-      "current_sources": ["context_stamps/acquisition.py", "evidence/acquisition-v1/manifest.json"],
+      "current_sources": [
+        "context_stamps/acquisition.py",
+        "evidence/acquisition-v1/manifest.json"
+      ],
       "status": "partial_experiment",
       "completion_proof": "Dimensioned cost/value objective, hard authority constraints and matched-cost ablations.",
       "implementation_note": "Remaining/next-batch judged-gain heads trained as auxiliary signals, without authorization powers. They are relevance fractions, not measured economic value. Token, latency, risk coefficients and task-outcome labels remain."
@@ -339,7 +342,11 @@
         "staleness",
         "next context"
       ],
-      "current_sources": ["context_stamps/acquisition.py", "experiments/train_acquisition.py", "evidence/acquisition-v1/MODEL_CARD.md"],
+      "current_sources": [
+        "context_stamps/acquisition.py",
+        "experiments/train_acquisition.py",
+        "evidence/acquisition-v1/MODEL_CARD.md"
+      ],
       "status": "partial_experiment",
       "completion_proof": "Separate labels/head losses, disjoint calibration and held-out task/cost gains with all head ablations.",
       "implementation_note": "Three public-judgment heads with explicit labels/losses, linear/MLP controls and three seeds implemented. Failed calibration and transfer preserved. No reader correctness, missing-fact, conflict, staleness or decision heads qualified; prospective gains and head ablations remain."
@@ -405,11 +412,16 @@
         "docs/evaluation-programme.md",
         "experiments/local_eval.py",
         "experiments/test_local_eval.py",
-        "evidence/enterprise-evaluation-v1/preflight.json"
+        "evidence/enterprise-evaluation-v1/preflight.json",
+        "experiments/longbench_eval.py",
+        "experiments/test_longbench_eval.py",
+        "docs/longbench-local-pilot.md",
+        "evidence/longbench-v2-pilot/run-v2/summary.json",
+        "evidence/enterprise-evaluation-v1/harbor-preflight.json"
       ],
       "status": "partial_existing",
       "completion_proof": "Licenses/revisions/native scoring, prospective task IDs, contamination/length audit and matched strong controls.",
-      "implementation_note": "Expanded to model-alone versus runtime-assisted open-weight/frontier pairs, coding-agent harness comparisons and quality/cost/latency/resource accounting. Start locally; frontier preparation only, no paid calls authorized. Established harness and license review precede execution."
+      "implementation_note": "Expanded to model-alone versus runtime-assisted open-weight/frontier pairs, coding-agent harness comparisons and quality/cost/latency/resource accounting. Start locally; frontier preparation only, no paid calls authorized. Established harness and license review precede execution. LongBench v2 native-prompt/parser development controls completed: 30 calls on ten short tasks across six domains; full 4/10, BM25 4/10, no context 3/10. No runtime treatment or frontier ranking. Harbor 0.23.0 CLI preflight succeeds; sandbox and agent qualification remain."
     },
     {
       "id": "EC20",

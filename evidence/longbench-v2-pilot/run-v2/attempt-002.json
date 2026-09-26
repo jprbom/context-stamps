@@ -1,0 +1,30 @@
+{
+  "id": "6708a096bb02136c067d1789",
+  "method": "full",
+  "domain": "Code Repository Understanding",
+  "length": "short",
+  "difficulty": "easy",
+  "status": "ok",
+  "identity_check_seconds": 0.562508900067769,
+  "prompt_sha256": "0017577f156644548a9d8e2d53317a4518aba0f93102d623ad30ce52d8f2fac1",
+  "input_tokens": 24736,
+  "selected_spans": [],
+  "selected_chunks": 0,
+  "context_preparation_seconds": 0.03474829997867346,
+  "model_call_seconds": 3.885924599948339,
+  "response": "The correct answer is (B).",
+  "response_sha256": "987dc6f5a2dcd29af5701fa85a7804104cf1d465892a16af87cfda1d2d79662d",
+  "usage": {
+    "prompt_eval_count": 24736,
+    "eval_count": 8,
+    "total_duration": 3703425700,
+    "load_duration": 15987300,
+    "prompt_eval_duration": 3501488000,
+    "eval_duration": 52806000,
+    "done_reason": "stop"
+  },
+  "prediction": "B",
+  "target": "D",
+  "correct": false,
+  "whole_request_seconds": 4.483214100007899
+}
