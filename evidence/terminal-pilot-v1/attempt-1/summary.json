@@ -1,0 +1,18 @@
+{
+  "rows": [
+    {
+      "task": "cancel-async-tasks",
+      "status": "error",
+      "passed": false,
+      "calls": 2,
+      "input_tokens": 611,
+      "output_tokens": 48,
+      "agent_elapsed_seconds": 17.4333036999451
+    }
+  ],
+  "model_unchanged": true,
+  "purpose": "selected development coding-agent control; no runtime treatment or training",
+  "provider_charges_usd": 0,
+  "energy_joules": null,
+  "host_peak_ram_bytes": null
+}

@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "source_files_verified": 17,
+  "same_host_rebuild": true,
+  "images": {
+    "cancel-async-tasks": "sha256:12d2710108c7c144690bf66342315b57a9f2ef3e43e982e34074d5ac32980745",
+    "log-summary-date-ranges": "sha256:43b8c3541b37c9de5b68ed39744cf11f0c85e52c2ddae6e9ab988a7ba8934477"
+  },
+  "matches_original_local_images": false,
+  "model_calls": 0,
+  "qualification_note": "Same-host asset preparation check; not independent benchmark replication."
+}

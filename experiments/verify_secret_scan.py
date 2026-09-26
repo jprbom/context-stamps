@@ -65,6 +65,16 @@ def main(executable):
         relative = Path('experiments/longbench_eval.py')
         line = next(line for line in (ROOT / relative).read_text().splitlines() if line.startswith('TOKEN_REV = '))
         checksum_cases.append((relative, line))
+        for version in (1, 2):
+            relative = Path(f'evidence/terminal-pilot-v1/attempt-{version}/plan.json')
+            lines = (ROOT / relative).read_text(encoding='utf-8').splitlines()
+            for key in ('experiments/qwen_token_count.py', 'tokenizer_sha256'):
+                line = next(line for line in lines if line.strip().startswith('"' + key + '":'))
+                checksum_cases.append((relative, line))
+        relative = Path('evidence/terminal-pilot-v1/manifest.json')
+        line = next(line for line in (ROOT / relative).read_text().splitlines()
+                    if line.strip().startswith('"experiments/qwen_token_count.py":'))
+        checksum_cases.append((relative, line))
         for relative, line in checksum_cases:
             control = scan / relative
             control.parent.mkdir(parents=True, exist_ok=True)
@@ -84,7 +94,7 @@ def main(executable):
             assert run(ROOT / '.gitleaks.toml'), 'changed checksum remains detectable'
             control.write_text('', encoding='utf-8')
 
-    print('Thirty scanner controls passed: default findings, exact exclusions, same-line canaries, wrong paths, changed tokens.')
+    print(f'{5 + 5 * len(checksum_cases)} scanner controls passed: default findings, exact exclusions, same-line canaries, wrong paths, changed tokens.')
 
 
 if __name__ == '__main__':

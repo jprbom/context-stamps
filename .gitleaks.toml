@@ -41,3 +41,22 @@ condition = "AND"
 regexTarget = "match"
 paths = ['''(^|[\\/])experiments[\\/]longbench_eval\.py$''']
 regexes = ['''^TOKEN_REV = "989aa7980e4cf806f80c7fef2b1adb7bc71aa306"$''']
+
+[[allowlists]]
+description = "Exact public BPE and authored helper checksums in two retained terminal pilot registrations"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]terminal-pilot-v1[\\/]attempt-[12][\\/]plan\.json$''']
+regexes = [
+  '''^tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"$''',
+  '''^qwen_token_count\.py": "566e00eee2a32f4077c6b1980dbc8467d0c9434ff60988b43ef1c62ad8fd864f"$''',
+]
+
+[[allowlists]]
+description = "Exact authored token-count helper checksum in the terminal evidence manifest"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]terminal-pilot-v1[\\/]manifest\.json$''']
+regexes = ['''^qwen_token_count\.py": "566e00eee2a32f4077c6b1980dbc8467d0c9434ff60988b43ef1c62ad8fd864f"$''']

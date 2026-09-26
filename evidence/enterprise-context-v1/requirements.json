@@ -421,11 +421,15 @@
         "experiments/test_longbench_eval.py",
         "docs/longbench-local-pilot.md",
         "evidence/longbench-v2-pilot/run-v2/summary.json",
-        "evidence/enterprise-evaluation-v1/harbor-preflight.json"
+        "evidence/enterprise-evaluation-v1/harbor-preflight.json",
+        "experiments/terminal_pilot.py",
+        "experiments/test_terminal_pilot.py",
+        "evidence/terminal-pilot-v1/manifest.json",
+        "docs/terminal-local-pilot.md"
       ],
       "status": "partial_existing",
       "completion_proof": "Licenses/revisions/native scoring, prospective task IDs, contamination/length audit and matched strong controls.",
-      "implementation_note": "Expanded to model-alone versus runtime-assisted open-weight/frontier pairs, coding-agent harness comparisons and quality/cost/latency/resource accounting. Start locally; frontier preparation only, no paid calls authorized. Established harness and license review precede execution. LongBench v2 native-prompt/parser development controls completed: 30 calls on ten short tasks across six domains; full 4/10, BM25 4/10, no context 3/10. No runtime treatment or frontier ranking. Harbor 0.23.0 CLI preflight succeeds; sandbox and agent qualification remain."
+      "implementation_note": "Expanded to model-alone versus runtime-assisted open-weight/frontier pairs, coding-agent harness comparisons and quality/cost/latency/resource accounting. Start locally; frontier preparation only, no paid calls authorized. Established harness and license review precede execution. LongBench v2 native-prompt/parser development controls completed: 30 calls on ten short tasks across six domains; full 4/10, BM25 4/10, no context 3/10. No runtime treatment or frontier ranking. Harbor 0.23.0 isolated command/task boundary and two native Terminal-Bench 2.1 graders qualified. Qwen2.5 1.5B corrected development baseline fails both tasks (0/2); initial failed attempt retained. Six calls, exact input-token parity, no benchmark training or runtime treatment. Sixteen terminal-boundary tests and data-only replay added. Stronger reference and real local adaptation remain."
     },
     {
       "id": "EC20",

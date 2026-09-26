@@ -1,0 +1,21 @@
+test_control_character_and_host_argv_budget (__main__.ActionTests.test_control_character_and_host_argv_budget) ... ok
+test_exact_action_contract (__main__.ActionTests.test_exact_action_contract) ... ok
+test_malformed_ambiguous_and_extra_actions_rejected (__main__.ActionTests.test_malformed_ambiguous_and_extra_actions_rejected) ... ok
+test_no_grader_path_or_solution_in_system_prompt (__main__.ActionTests.test_no_grader_path_or_solution_in_system_prompt) ... ok
+test_payload_cannot_create_chatml_role_boundary (__main__.ActionTests.test_payload_cannot_create_chatml_role_boundary) ... ok
+test_artifact_contract_refuses_paths_and_oversized_data (__main__.SandboxTests.test_artifact_contract_refuses_paths_and_oversized_data) ... ok
+test_artifact_helpers_ignore_model_created_python_modules (__main__.SandboxTests.test_artifact_helpers_ignore_model_created_python_modules) ... ok
+test_boundary_failure_tears_down_and_stops_reuse (__main__.SandboxTests.test_boundary_failure_tears_down_and_stops_reuse) ... ok
+test_format_repair_is_bounded_and_partial_artifact_is_graded (__main__.SandboxTests.test_format_repair_is_bounded_and_partial_artifact_is_graded) ... ok
+test_invalid_commands_never_reach_container (__main__.SandboxTests.test_invalid_commands_never_reach_container) ... ok
+test_missing_or_changed_isolation_profile_aborts (__main__.SandboxTests.test_missing_or_changed_isolation_profile_aborts) ... ok
+test_no_commands_before_start_or_after_failure (__main__.SandboxTests.test_no_commands_before_start_or_after_failure) ... ok
+test_provider_failure_usage_remains_unknown (__main__.SandboxTests.test_provider_failure_usage_remains_unknown) ... ok
+test_shell_payload_is_encoded_not_host_interpolated (__main__.SandboxTests.test_shell_payload_is_encoded_not_host_interpolated) ... ok
+test_supervisor_error_and_cancellation_teardown (__main__.SandboxTests.test_supervisor_error_and_cancellation_teardown) ... ok
+test_task_setup_has_no_solution_or_grader_transfer (__main__.SandboxTests.test_task_setup_has_no_solution_or_grader_transfer) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.167s
+
+OK

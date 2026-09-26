@@ -41,6 +41,18 @@
       "sha256": "417640ffec6fe6c9ae21657cdc60bd35ddb4639e5a9df01a3f4f0e8df4d117e9",
       "source_base_commit": "ab056021d3aa60eaa4e910efb3ae11218139f1c3",
       "worktree_dirty": true
+    },
+    {
+      "file": "terminal-pilot-initial.json.gz",
+      "sha256": "fd4867f156fbb94a1afdea78225c8ecf07575df44eed39a15d7c9f6e7cab0bab",
+      "source_base_commit": "9dbe64d6d73cfae6f1ccb422556c577bfea92d70",
+      "worktree_dirty": true
+    },
+    {
+      "file": "terminal-pilot-format-repair.json.gz",
+      "sha256": "cd1f9745f8a2170c8e3b2ecaf1cdb30c71f961c25a2846443277cb9aa66a8689",
+      "source_base_commit": "9dbe64d6d73cfae6f1ccb422556c577bfea92d70",
+      "worktree_dirty": true
     }
   ]
 }

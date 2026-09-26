@@ -1,0 +1,74 @@
+{
+  "repository": "harbor-framework/terminal-bench-2-1",
+  "revision": "7131e4375048a0e408a8fb404b5f499d726b695b",
+  "files": {
+    "LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "tasks/cancel-async-tasks/README.md": {
+      "bytes": 1627,
+      "sha256": "9adf86b1279cc44f83fe16e6d340595aa992240f1d87243d204cae32e453693b"
+    },
+    "tasks/cancel-async-tasks/instruction.md": {
+      "bytes": 537,
+      "sha256": "23d22f7039b50682941652c716f96dac314b8585c32c133614cac77dc067f47e"
+    },
+    "tasks/cancel-async-tasks/task.toml": {
+      "bytes": 927,
+      "sha256": "14db0675e04408f2133b0067e8dbddf66a1d6e7baf6b8d38bef8ecccfc4e58a8"
+    },
+    "tasks/cancel-async-tasks/environment/Dockerfile": {
+      "bytes": 213,
+      "sha256": "1ee7bdb4a7536f5f114c11a3ac6ff42790abfea901fcba6b2a8ea8685f19140e"
+    },
+    "tasks/cancel-async-tasks/solution/solve.sh": {
+      "bytes": 709,
+      "sha256": "4938ca4ad5b7dcd36b414b42a1abb10c058ecefce7462b678f9bd05c9fae1844"
+    },
+    "tasks/cancel-async-tasks/tests/test.sh": {
+      "bytes": 639,
+      "sha256": "79600a6b863def31b4daa008297423010cd2d6243e689d67503e118e4dc53397"
+    },
+    "tasks/cancel-async-tasks/tests/test_outputs.py": {
+      "bytes": 4225,
+      "sha256": "d6f510b51fafc81b4e9b5cc95535aa13491c8753e0e4171db42c45f4de460ee7"
+    },
+    "tasks/log-summary-date-ranges/README.md": {
+      "bytes": 1858,
+      "sha256": "026000415cb577f3d3d5132902670262f7d5d8f69841903ec06a882292f756b4"
+    },
+    "tasks/log-summary-date-ranges/instruction.md": {
+      "bytes": 1391,
+      "sha256": "c1d4516ad4ec2238209740eaf01291df9ab48b0028a3fc5df383c6f831453484"
+    },
+    "tasks/log-summary-date-ranges/task.toml": {
+      "bytes": 988,
+      "sha256": "9a9593673d6805ef3a301ea734e9c4dbaf80da1b37c0fe9d1f2ceea2a8c57e18"
+    },
+    "tasks/log-summary-date-ranges/environment/Dockerfile": {
+      "bytes": 508,
+      "sha256": "b479f6e987b63a6ec118fa1691b8bb85c437b2a6a0fe63feab5ed7154957fdfc"
+    },
+    "tasks/log-summary-date-ranges/solution/solve.sh": {
+      "bytes": 2170,
+      "sha256": "9f6a8ee8947bdf1c0f31b530b6194ae998d66841a3b785fa2e246ee840350ab6"
+    },
+    "tasks/log-summary-date-ranges/tests/test.sh": {
+      "bytes": 608,
+      "sha256": "4770437ea96c3cc84684b4f99d55fb148fcac09f9ea1e8ef49de487716e6c334"
+    },
+    "tasks/log-summary-date-ranges/tests/test_outputs.py": {
+      "bytes": 1655,
+      "sha256": "2fc06a6ce1944ad82f84fb437395fa75ed8c0eadd385b92e375c27e5bc9cb2b4"
+    },
+    "tasks/cancel-async-tasks/tests/test.py": {
+      "bytes": 701,
+      "sha256": "f533c0a64db068f582b4733c5b81f2e66b8fa52fcd3efa65752e6bd6d24780aa"
+    },
+    "tasks/log-summary-date-ranges/environment/log_generator_deterministic.py": {
+      "bytes": 3903,
+      "sha256": "beb6eff59979e9aa0be63ce8a0f1b0df1178f92871f04ba9f76fa70cf8beb81c"
+    }
+  }
+}

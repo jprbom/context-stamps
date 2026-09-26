@@ -4,6 +4,8 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 26 September 2026
 
+- Added a local Terminal-Bench 2.1 development pilot through isolated Harbor environments. The Qwen2.5 1.5B baseline passes 0/2 tasks; all six calls and the first failed interface attempt remain available for offline replay. Native reference/empty controls validate both graders. Offline containers have bounded CPU, memory, processes, output and time, with no host mounts. Trusted Python helpers now ignore agent-created modules. Sixteen boundary tests cover the harness; no runtime benefit or fine-tuning result is claimed.
+
 - Made locally improving small domain models the primary application objective. Added a bounded Beta-smoothed cell policy and local SQLite candidate registry with frozen plans, fresh task IDs, error-budget accounting across rounds, paired quality/resource checks, activation and rollback. Added 24 boundary tests and a replayable simulation: 60 training fixtures and two 600-task evaluation fixtures. No new SLM weights, GPU training, model-quality gain or edge-device qualification is claimed.
 
 - Added a pinned local LongBench v2 control runner with native prompts/scoring, whole-input token checks, retained failures, immutable registrations and offline evidence replay. Thirty RTX calls cover ten short-context tasks across six domains: full context 4/10, BM25 4/10, no context 3/10. No runtime gain or full-benchmark claim. Ten new evaluation-boundary tests pass alongside seven existing provider checks. Harbor 0.23.0 CLI preflight also passes; coding-agent task/sandbox qualification remains.
