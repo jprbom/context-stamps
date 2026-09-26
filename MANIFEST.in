@@ -43,3 +43,5 @@ recursive-include evidence/ruler-local-learning-v1 *.gz
 recursive-include evidence/lme-memory-v1 *.gz
 recursive-include evidence/lme-structure-v1 *.gz
 recursive-include evidence/lme-relations-v2 *.gz
+recursive-include evidence/local-monitor-v1 *.gz
+recursive-include evidence/local-monitor-preparation-v1 *.gz

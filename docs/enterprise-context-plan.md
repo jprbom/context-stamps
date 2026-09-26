@@ -20,7 +20,7 @@ This is the active implementation objective, superseding the earlier general-lea
 | Context compiler | Authorization-first temporal compiler, conflict policy, exact bounded closure selection, token/byte budgets and optional exact batched packing | Faithful semantic compression, learned value/sufficiency, adaptive acquisition and target-device resource qualification |
 | Decision/routing | Choice/Boolean/Score batch API, verifier checks and scoped calibration certificates | Real held-out calibration, learned providers and matched external controls |
 | Model execution | Host-registered owned workers, dispatch claims, cancellation and deadline checks, bounded JSON results, provider reconciliation | Resident reader/VLM integration, descendant containment, parent callback isolation and measured portability |
-| Learning/audit | Transactional reference-only journal, reserved outcome capacity, keyed receipts, historical source archives and pure computation DAG reuse | Crash-resumable graph scheduling, retention/export policy, prospective labels and policy candidate evaluation |
+| Learning/audit | Transactional journal, protected adaptation/retention gates, local outcome monitor, guarded rollback, historical source archives and computation reuse | Qualified model improvement, crash-resumable graph scheduling, retention/export policy, complete device costs and trustworthy prospective labels |
 
 The package remains at v0.5.0. This plan does not publish a 1.0 release or change existing evidence. Use the current controller-v2/runtime-v1 reports for numbers; the revised objective contains an older retrieval table that must not silently replace those results.
 

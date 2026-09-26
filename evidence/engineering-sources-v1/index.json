@@ -125,6 +125,24 @@
       "sha256": "f6c9e29a96808d61696d29017b30abca618739a86863e9e4f971824d27ce0d34",
       "source_base_commit": "b0c1f90cc05e5b4efe6001337d8a5acfd7c4f8ab",
       "worktree_dirty": true
+    },
+    {
+      "file": "source-local-learning-pre-monitor.json.gz",
+      "sha256": "c76b202267d3933473809a6d68ef09f741b1a695c6ce119b7eea81b7c8a691cf",
+      "source_base_commit": "b17c392a08fca54a3a1f173d417ce5634e4c6e91",
+      "worktree_dirty": false
+    },
+    {
+      "file": "source-monitor-preparation-v1.json.gz",
+      "sha256": "29454bea608a02d93f959fad25eede2f78fe186059ea84895667e11c856ba428",
+      "source_base_commit": "b17c392a08fca54a3a1f173d417ce5634e4c6e91",
+      "worktree_dirty": true
+    },
+    {
+      "file": "source-monitor-portability-v1.json.gz",
+      "sha256": "d1edd2559eec358f314d004b8311f3ade2d6e4324826e748018dd42b67371b08",
+      "source_base_commit": "b17c392a08fca54a3a1f173d417ce5634e4c6e91",
+      "worktree_dirty": true
     }
   ]
 }

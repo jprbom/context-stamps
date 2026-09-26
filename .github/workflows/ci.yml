@@ -46,6 +46,8 @@ jobs:
       - run: python experiments/verify_longbench.py
       - run: python experiments/verify_harbor_preflight.py
       - run: python experiments/verify_local_learning.py
+      - run: python experiments/test_local_monitor_evidence.py -v
+      - run: python experiments/verify_local_monitor.py
       - run: python experiments/test_terminal_pilot.py -v
       - run: python experiments/verify_terminal_pilot.py
       - run: python experiments/verify_terminal_reference.py
@@ -97,6 +99,7 @@ jobs:
       - run: python examples/persistent_context.py
       - run: python examples/incremental_metrics.py
       - run: python examples/local_learning.py
+      - run: python examples/local_adaptation_cycle.py
       - run: python examples/local_trajectory_memory.py
       - run: python examples/structured_local_memory.py
       - run: python examples/page_relational_memory.py

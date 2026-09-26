@@ -364,26 +364,35 @@ class LocalLearningRegistry:
             self._db.execute("ROLLBACK")
             raise
 
-    def rollback(self, *, reason):
+    def rollback(self, *, reason, expected_active=None):
         """Revoke current candidate, abandon pending work and return to anchor.
 
         A trusted host triggers this on drift, verifier failure, permission or
         device changes. This does not itself detect shift or undo external work.
+        expected_active makes delayed monitor requests compare-and-swap: they
+        cannot revoke a different, newly activated revision. Returns whether
+        the expected revision matched (or no expectation was supplied).
         """
         _id(reason)
+        if expected_active is not None:
+            _hash(expected_active)
         self._db.execute("BEGIN IMMEDIATE")
         try:
             current = self.active_revision(binding=self._config["binding"])
+            if expected_active is not None and current != expected_active:
+                self._db.execute("COMMIT")
+                return False
             pending = self._db.execute("SELECT 1 FROM trials WHERE result IS NULL").fetchone()
             if current == self._config["baseline"] and pending is None:
                 self._db.execute("COMMIT")
-                return
+                return True
             if current != self._config["baseline"]:
                 self._db.execute("INSERT OR IGNORE INTO revoked VALUES (?)", (current,))
             self._db.execute("UPDATE trials SET result=? WHERE result IS NULL", (_json({"abandoned": True}),))
             self._db.execute("INSERT INTO events(value) VALUES (?)",
                              (_json({"active": self._config["baseline"], "reason": reason}),))
             self._db.execute("COMMIT")
+            return True
         except BaseException:
             self._db.execute("ROLLBACK")
             raise

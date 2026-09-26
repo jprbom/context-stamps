@@ -1,0 +1,21 @@
+{
+  "evidence_class": "deterministic_simulation_not_model_or_device_benchmark",
+  "model_calls": 0,
+  "gpu_training_runs": 0,
+  "source_hashes": {
+    "context_stamps/local_monitor.py": "527ff50f0e27107c59872be96cecea26ab7c103c69a5b3c92f37a4668ab97f57",
+    "context_stamps/local_learning.py": "7abe55f3d25d988c87939899d5dbb2cf84787ba13a2559f709bceb0be6cabb46",
+    "context_stamps/local_policy.py": "21429ed7397097727992f6c463c25ed35b85674c034548d6770a492b61ac0805",
+    "context_stamps/decisions/calibration.py": "cba2d81351c5b5212af361c8d82180731a7b934fe61c4e37b92af53ebb0182d7",
+    "context_stamps/experience.py": "d4e4333c43dff8fe30a06836f005141beb9a105da8dfe1fad39a28368e436a4b",
+    "context_stamps/security.py": "2e38aa395acf61abe39f5fa7b0b506996425afb136860969ec7df12fb52e9b34",
+    "tests/test_local_monitor.py": "6096da358d34391d49e8ee4b23e60b9c4f45e0a6627556a59df6685d9ee79925",
+    "examples/local_adaptation_cycle.py": "4eb4f72136bbec3202bf73334d3dbaca4484e59399376b18e0141d94b0552394",
+    "experiments/validate_local_monitor.py": "ac80c07dddc150613192a93106bc477e77f6d3fbacf38769d0d0d8eeec1e4df9",
+    "experiments/verify_local_monitor.py": "76f61b2ff9c0de7352356a20231cb2cd2240f06c72c9de2d624ebdfb6da4d8ce"
+  },
+  "result_sha256": "80864a1e192a621df34d87610b95f8b854c5492cdd0a0c257d151d75f4f991ee",
+  "python": "3.12.10",
+  "simulation_only": true,
+  "device_or_model_benefit_claimed": false
+}

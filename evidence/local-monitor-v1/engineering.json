@@ -1,0 +1,23 @@
+{
+  "evidence_class": "engineering_and_simulation_not_model_quality",
+  "core_tests": 402,
+  "core_skips": 0,
+  "new_monitor_tests": 14,
+  "replay_tests": 2,
+  "windows_replay": "pass",
+  "linux_replay": "pass",
+  "ruff": "pass",
+  "bandit": "pass",
+  "initial_repository_secret_scan": "zero findings",
+  "model_calls": 0,
+  "gpu_training_runs": 0,
+  "core_log_sha256": "1a121de048c75c1e04ed5edb64850e3eba95481344edde47225bf3a6cf4a5d3c",
+  "replay_source_hashes": {
+    "experiments/verify_local_monitor.py": "cdc31131968212c340c176d1fd703c58dc08e9b35a417faf9be8b8175ccbc618",
+    "experiments/test_local_monitor_evidence.py": "68b4e58894026e02b37bdd05cb5196d309bdd23bcc90774a197430ba08120197"
+  },
+  "retained_failures": [
+    "initial tuple-versus-JSON-list replay mismatch",
+    "Linux: 16 last-bit intermediate log-statistic differences; finite-float tolerance 1e-12 added without changing recorded outcomes"
+  ]
+}
