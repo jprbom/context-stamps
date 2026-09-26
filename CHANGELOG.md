@@ -2,6 +2,14 @@
 
 All versions below are research releases or candidates. v0.5.0 is available from the public source repository; no PyPI release is announced here.
 
+## Development update after 0.5.0 — 26 September 2026
+
+- Implemented an optional residual ranker with shared recurrent attention, a no-attention baseline, listwise training, hybrid-distribution regularization and bounded score corrections. Trained six local RTX runs on public training splits; preserved all outcomes and independent calibration decisions.
+- Added experimental FP32/int8-storage safetensors checkpoints, per-query evidence, CPU/CUDA/precision measurements and a reproducible local runbook. The learned model did not qualify for promotion; no default retrieval replacement or base-model fine-tuning is claimed.
+- Locked serving to checkpoint training depth after four-step inference caused severe transfer regressions. Direct forward overrides remain an explicit research ablation interface.
+- Added exact computation identities, a bounded expiring result cache and exact decimal tools. A real local Qwen pilot halved calls/input tokens on a 50%-repeat workload and reduced total elapsed time 47.2%; p95 latency slightly worsened. This is a narrow synthetic workload, not a general agent-speed claim.
+- Retained all earlier compact-retrieval and multimodal limitations. No source/corpus graph or arbitrary document is contained in the 256-bit stamp.
+
 ## 0.5.0
 
 - Added typed, directional relation maps with bounded personalized diffusion as an eighth-view input to the 256-bit product-sphere profile. The map remains external and versioned; the stamp is not a serialized graph.

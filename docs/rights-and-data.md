@@ -22,6 +22,10 @@ The standalone repository is public. Publication covers only this reviewed compo
 
 The follow-up NFCorpus/ArguAna benchmark has [separate attribution and CC-BY-SA-4.0 terms](../evidence/replication-v1/ATTRIBUTION.md). Original fictional local-SLM fixtures and their generated outputs remain MIT; the public Qwen model is identified in the run manifest and its weights are not redistributed. No external participant responses are included. The usability kit asks for separate publication permission before sharing participant feedback.
 
+## Controller experiment
+
+The 26 September controller update adds locally trained public-data checkpoints and retrieval evidence under separate [CC BY-SA 4.0 attribution](../evidence/controller-v1/ATTRIBUTION.md). They are optional research artifacts, not part of the dependency-free MIT core or bundled Python wheel. The authored computation-cache fixtures and local Qwen pilot records remain MIT; Qwen weights are separately installed and not redistributed. The controller never trained on private Cortex records or model-generated image/audio/video media.
+
 ## Multimodal evaluation models
 
 The multimodal pilot uses pinned external model revisions for inference only. SD-Turbo retains its model-specific Stability AI license; MMS English TTS uses CC-BY-NC-4.0. The ModelScope video card contains inconsistent NC and NC-ND labels; treat redistribution and commercial use as unresolved until its terms are clarified. No weights or generated media from these models are included in this repository. Their use in a local research test does not make them part of the MIT-licensed core.

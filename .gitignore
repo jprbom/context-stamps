@@ -21,3 +21,10 @@ docs/assets/*.delivery*
 *.pt
 *.pth
 *.onnx
+
+# The reproducible controller runner writes an uncompressed local copy.
+# Git contains the same evidence losslessly compressed as results.json.gz.
+evidence/controller-v1/results.json
+!evidence/controller-v1/checkpoints/selected-fp32.safetensors
+!evidence/controller-v1/checkpoints/selected-int8.safetensors
+!evidence/controller-v1/checkpoints/recurrent-29.safetensors

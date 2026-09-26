@@ -1,0 +1,21 @@
+{
+  "format": "controller-v1",
+  "frozen_date": "2026-09-26",
+  "status": "Protocol written before this controller's training and evaluation. All four public test sets have been inspected in previous experiments; this is a retrospective regression study, not an untouched benchmark.",
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "training": "SciFact official train, partitioned by normalized query text SHA256 into train/tune/calibration at 70/15/15; NFCorpus official train, official dev split 50/50 tune/calibration. Remove normalized-text overlaps with test and development from training. ArguAna/SciDocs test only. No positive injection into candidate sets.",
+  "candidates": "Union dense top48, frozen hybrid top48, BM25 top32; at most128; identical query/document ID excluded. Full-corpus z-score fusion 0.75 dense + 0.25 BM25. No corpus labels used to generate candidates.",
+  "architecture": "Frozen 384D embeddings; product and absolute difference; six exact retrieval score features; width64, heads4; shared attention/feedforward recurrence2; bounded residual +/-2; no position encoding; output starts at zero. Compare same-width no-attention residual MLP.",
+  "seeds": [7, 17, 29],
+  "epochs": 12,
+  "batch_size": 16,
+  "learning_rate": 0.0003,
+  "loss": "Listwise linear relevance cross entropy plus 0.1 KL to frozen hybrid distribution; skip training candidate sets without positive judgments, report their count. Unjudged documents are treated as nonrelevant, a known incomplete-label limitation.",
+  "selection": "Each seed/architecture checkpoint selected on equal-dataset-weight tune nDCG@10 including epoch0. One global candidate selected on tune. Independent per-domain calibration enables selected neural policy only if paired bootstrap lower95 gain is positive against both dense and hybrid, at least50 queries. Otherwise enable hybrid only if its lower95 gain versus dense is positive, else dense. Uncalibrated domains use dense.",
+  "metric": "nDCG@10 linear relevance gains; recall@10; reciprocal rank@10; candidate recall; three seed results; paired query bootstrap5000 seed20260926. Intervals descriptive, not multiplicity adjusted.",
+  "quantization": "Per-output-row symmetric int8 matrix storage in safetensors; float32 biases/norm; reconstruct float32 on loading. Measure actual file bytes, prediction/metric drift. No int8 compute-speed or resident-memory claim.",
+  "timing": "Warm batch1 reranker forward only p50/p95; CUDA synchronization; FP32 and BF16 separately. Candidate retrieval and encoder excluded and not called end-to-end latency. Public cached retrieval timing recorded separately.",
+  "scope": "Retrieval controller and exact computation reuse. No base language-model weights or internal attention fine-tuned; public qrels do not supervise evidence sufficiency, policy, agent actions or multimodal generation.",
+  "promotion": "Experimental opt-in only; no replacement of default routing based on these already-inspected test sets. No paid endpoints; local RTX. Maximum12 epochs per trial, four recurrent steps at inference. Never retune on test outcomes."
+}

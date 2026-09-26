@@ -20,6 +20,7 @@ semantic = ["sentence-transformers>=3,<6"]
 tokens = ["tiktoken>=0.7,<1"]
 mcp = ["mcp>=1.12,<2"]
 experiment = ["numpy>=1.25,<3", "sentence-transformers>=3,<6", "faiss-cpu>=1.10,<2", "psutil>=6,<8", "matplotlib>=3.9,<4"]
+controller = ["numpy>=1.24,<3", "torch>=2.6,<3", "safetensors>=0.5,<1", "transformers>=4.48,<6"]
 
 dev = ["build>=1.2", "ruff>=0.9", "numpy>=1.24,<3"]
 

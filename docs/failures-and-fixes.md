@@ -1,5 +1,13 @@
 # Failure ledger and release gates
 
+## 26 September: trained controller, independent rejection and recurrence failure
+
+Six RTX training runs reused public SciFact/NFCorpus labels with distinct tuning/calibration partitions. The MLP beat recurrent attention on tuning; neither learned architecture qualified for deployment against the strong existing baselines. The selected model regressed on SciDocs (0.1934 versus 0.2164 dense nDCG@10). Independent gating selects hybrid only for SciFact, otherwise dense in this study. This conservatism also forgoes potential gains where evidence is inconclusive.
+
+Four-step inference on a model trained for two steps sharply degraded ArguAna (0.5216 → 0.2761) and SciDocs (0.2045 → 0.1187). The serving method now rejects recurrent-depth overrides; raw forward overrides remain research ablations. Int8 storage reduces file size 3.79× but changes rankings and reconstructs FP32 at runtime. BF16 and CUDA were slower than CPU for the small measured batch-one forward workload.
+
+Exact computation reuse halved calls/tokens on a 50%-repeat local Qwen fixture workload and reduced total elapsed time 47.2%, while p95 slightly worsened. This is a separate narrow workload benefit, not a repair of learned retrieval or proof of broad coding/agent efficiency. [Full runbook, metrics and limits](local-rtx-controller.md).
+
 ## v0.5.0: relation-aware product spheres and a failed prospective blend
 
 The frozen 0.75 MiniLM / 0.25 BM25 blend improved three previously inspected datasets but regressed on the untouched SciDocs check: 0.2043 versus 0.2164 dense nDCG@10, with a paired 95% interval from −0.0194 to −0.0046. The result is preserved under `evidence/hybrid-retrieval-v1`. A fixed blend is therefore not a universal replacement for dense retrieval.

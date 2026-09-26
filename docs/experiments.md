@@ -1,5 +1,7 @@
 # Recorded experiments
 
+**Latest executed work, 26 September:** [six-run RTX controller study](local-rtx-controller.md), [per-query results and calibration](../evidence/controller-v1/summary.json), and [local Qwen computation-reuse pilot](../evidence/computation-v1/summary.json). The learned controller did not qualify; extra untrained recurrence harmed accuracy. Both positive and negative outcomes are retained.
+
 > Historical v0.2 evidence. For the private v0.3.3 candidate, see [current results](selective-context.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
 
 These are executed measurements, including negative results. They are not claims of general agent correctness, prompt-injection resistance or superiority over complete memory platforms. [Reproduction](#reproduce) and [model cards](models.md) explain the scope.

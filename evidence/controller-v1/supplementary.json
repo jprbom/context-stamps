@@ -1,0 +1,37 @@
+{
+  "eligible_logits": 216299,
+  "int8_logit_rmse": 0.008621987988260266,
+  "maximum_bf16_logit_error_all_test_candidates": 0.036205291748046875,
+  "maximum_int8_logit_error_all_test_candidates": 0.048895835876464844,
+  "recurrent_trial": "recurrent-29",
+  "selected_cpu_batch1_p50_ms": 0.25540002388879657,
+  "selected_cpu_batch1_p95_ms": 0.41644990560598666,
+  "source_sha256": "c134b422ef085553063d54dcadb7289576d67876860a7c31f0a8468ba87e8ed1",
+  "status": "Post-training diagnostic; no retuning, policy selection or new generalization claim. CPU forward only; excludes encoding, candidate generation and data transfer.",
+  "summary": {
+    "arguana": {
+      "attention-steps1": 0.536641093736692,
+      "attention-steps2": 0.5216120861332922,
+      "attention-steps4": 0.2760613528033917,
+      "selected-bf16": 0.5296372274204474
+    },
+    "nfcorpus": {
+      "attention-steps1": 0.3506648713267255,
+      "attention-steps2": 0.3536353150250004,
+      "attention-steps4": 0.30434924112661704,
+      "selected-bf16": 0.3507386736525655
+    },
+    "scidocs": {
+      "attention-steps1": 0.20566633976995946,
+      "attention-steps2": 0.2044561504498124,
+      "attention-steps4": 0.11868140276521444,
+      "selected-bf16": 0.19346291729062795
+    },
+    "scifact": {
+      "attention-steps1": 0.7211372727652391,
+      "attention-steps2": 0.7135987874368827,
+      "attention-steps4": 0.6216469145814578,
+      "selected-bf16": 0.7191546929379304
+    }
+  }
+}

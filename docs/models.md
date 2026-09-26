@@ -1,5 +1,7 @@
 # Experimental selector model cards
 
+**26 September update:** [new locally trained MLP/recurrent controllers](../evidence/controller-v1/MODEL_CARD.md) and [RTX training instructions](local-rtx-controller.md). Their calibration failed promotion; they remain opt-in research artifacts. The historical six-parameter selectors below are separate models.
+
 > Historical v0.2 evidence. For the private v0.3.3 candidate, see [current results](selective-context.md), [scenario coverage](scenario-matrix.md) and [failures](failures-and-fixes.md).
 
 Author: Prashant Jagtap. Code and synthetic coefficient exports: MIT. SciFact-derived evidence and coefficient exports: CC-BY-SA-4.0; see their directory attribution notice. These are six-parameter logistic rerankers (five feature weights and a bias), not generative SLMs or fine-tuned embedding models.

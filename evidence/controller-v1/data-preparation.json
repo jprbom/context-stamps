@@ -1,0 +1,126 @@
+{
+  "encoder": "sentence-transformers/all-MiniLM-L6-v2",
+  "inherited_embeddings": {
+    "arguana": {
+      "documents": "5caeef50eb1ad02cedc238f9e5e07105825e54e79ce96559a53fbb4d333e0c4a",
+      "queries": "5d2cdf34b5eeca37a6ce02d45172ee2c4ca76609a1cd11224ab5ccf34660aa12"
+    },
+    "nfcorpus": {
+      "documents": "a9c40465b4529b4822997cd0e0806ac360ec683fd6b9c89846618416b7e3b1eb",
+      "queries": "3dd31f9c23576186e51eb8ff9e796eccd9a4171c7652e25a3088fa11b856f52b"
+    },
+    "scidocs": {
+      "documents": "dbb94dacfca96f859e7ef0f1b139bff429bb6f45143ae1fa077c713d95ff6e4b",
+      "queries": "bb09bf093de8df57b4aef7945a197b0e334ae7fa5846dd7ce5deba364bee83e2"
+    },
+    "scifact": {
+      "documents": "67e14c4f90e9851c6c9376b4a70abaf8f04238f77e73f028b765261f2f9435f8",
+      "queries": "6f46cbdd2b589040b980792b04614df98a0839d7cebab96b360849cfe6d2fb36"
+    }
+  },
+  "partitions": [
+    {
+      "array_sha256": "3e54bce30746653089bdfb6c2c313c4db417d8e625b4f659e11971c3fdd5c643",
+      "cached_retrieval_ms_p50": 1.2668499839492142,
+      "cached_retrieval_ms_p95": 1.604925061110407,
+      "candidate_recall": 0.9426328502415457,
+      "count": 552,
+      "dataset": "scifact",
+      "no_candidate_positive": 29,
+      "split": "train"
+    },
+    {
+      "array_sha256": "bfd87884374b702671bb6269ff51a00cc6a54bad09797004fc06fa1e2fe88da2",
+      "cached_retrieval_ms_p50": 1.270950015168637,
+      "cached_retrieval_ms_p95": 1.5850950381718576,
+      "candidate_recall": 0.9440298507462687,
+      "count": 134,
+      "dataset": "scifact",
+      "no_candidate_positive": 7,
+      "split": "tune"
+    },
+    {
+      "array_sha256": "6ae8e289940a9b13b9ce79f76e6b78bd4a4c2363df45232988ae9a25bea9ffa7",
+      "cached_retrieval_ms_p50": 1.2525999918580055,
+      "cached_retrieval_ms_p95": 1.5746999997645617,
+      "candidate_recall": 0.9669421487603306,
+      "count": 121,
+      "dataset": "scifact",
+      "no_candidate_positive": 4,
+      "split": "calibration"
+    },
+    {
+      "array_sha256": "6d662f1e8c024a84d6df287e7f940d95ccf18004a74549be9d2e851a6b41240f",
+      "cached_retrieval_ms_p50": 1.2479499564506114,
+      "cached_retrieval_ms_p95": 1.57418999588117,
+      "candidate_recall": 0.9576666666666667,
+      "count": 300,
+      "dataset": "scifact",
+      "no_candidate_positive": 12,
+      "split": "test"
+    },
+    {
+      "array_sha256": "b8df4266a83712a4aa345443de2d9975512b08afdf323e49b0e148ded9c59c52",
+      "cached_retrieval_ms_p50": 0.6644999957643449,
+      "cached_retrieval_ms_p95": 0.9283350780606268,
+      "candidate_recall": 0.2941055403466411,
+      "count": 2582,
+      "dataset": "nfcorpus",
+      "no_candidate_positive": 383,
+      "split": "train"
+    },
+    {
+      "array_sha256": "e3ca36aebf56e7b0f7165d4f2e531f845f5f1e8b30a35844ae2a39f9dcd85e2b",
+      "cached_retrieval_ms_p50": 0.6985000218264759,
+      "cached_retrieval_ms_p95": 1.0103750100824982,
+      "candidate_recall": 0.25948783207649284,
+      "count": 156,
+      "dataset": "nfcorpus",
+      "no_candidate_positive": 29,
+      "split": "tune"
+    },
+    {
+      "array_sha256": "a62a8fe99ee70e1107868b9c29a8b8bb9d8efb8250602ac2dd9f82ce6f61392f",
+      "cached_retrieval_ms_p50": 0.6917999126017094,
+      "cached_retrieval_ms_p95": 0.9966800222173333,
+      "candidate_recall": 0.289757664683178,
+      "count": 167,
+      "dataset": "nfcorpus",
+      "no_candidate_positive": 24,
+      "split": "calibration"
+    },
+    {
+      "array_sha256": "ac577a8ff8765da6cce99672b1529fbe229ecb45014a56599b84cd072d6f6bad",
+      "cached_retrieval_ms_p50": 0.710100051946938,
+      "cached_retrieval_ms_p95": 1.047340058721602,
+      "candidate_recall": 0.2961854675669955,
+      "count": 323,
+      "dataset": "nfcorpus",
+      "no_candidate_positive": 50,
+      "split": "test"
+    },
+    {
+      "array_sha256": "41b39a8ec2041e785091307f89c0f621ee4b32f6361c7f1a304a2b3841ba63b3",
+      "cached_retrieval_ms_p50": 6.8167499848641455,
+      "cached_retrieval_ms_p95": 11.761774978367612,
+      "candidate_recall": 0.9786628733997155,
+      "count": 1406,
+      "dataset": "arguana",
+      "no_candidate_positive": 30,
+      "split": "test"
+    },
+    {
+      "array_sha256": "7c9c4fcfa648619a46d9f6159bf76004da35108facb9c24139e7b17fad3faf21",
+      "cached_retrieval_ms_p50": 6.3391500152647495,
+      "cached_retrieval_ms_p95": 9.689299931051204,
+      "candidate_recall": 0.4555333333333333,
+      "count": 1000,
+      "dataset": "scidocs",
+      "no_candidate_positive": 130,
+      "split": "test"
+    }
+  ],
+  "protocol_sha256": "bd8cff1aed5504e21e017a84d0d65efcb746eb2012cc42308ce9e5ce2b3412b3",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "split_sha256": "5e71a32dd41538d276f21ea18126d17fdab1afb373cd5878f802221a21ac5d98"
+}

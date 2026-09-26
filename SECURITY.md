@@ -38,6 +38,14 @@ Use one store per trust boundary. Any process with file access can read or modif
 
 Do not open databases, projection files or checkpoints received from untrusted parties. Size checks reduce accidental resource exhaustion; they do not isolate native parsers or contain a compromised dependency. Use maintained Python/SQLite and isolate model downloads and training. Neural inference can use substantial memory independently of store limits.
 
+## Optional controller and computation results
+
+Filter unauthorized and stale evidence before building neural tensors; a score or mask supplied by an untrusted client is not authorization. Recheck source access before returning text or cached results. Serving rejects non-finite inputs/outputs and unvalidated recurrent-depth overrides. Checkpoint loading uses safetensors, bounded file size and expected shapes/dtypes; it does not load pickle or execute downloaded Python. These checks do not sandbox native model dependencies.
+
+`ComputationCache` is in-process and binds caller-supplied tenant/principal, model/prompt/tool/policy revisions, request digest and exact source revisions/content digests. The host must capture every relevant parameter and state, including seeds, conversation, time-dependent inputs and tool environments. A digest is not authentication, a signature or encryption. Do not cache side-effecting actions as if returning their old result executes them again. Revoked access requires a new policy binding and a host authorization check before lookup. Capacity, byte limits and TTL constrain the cache; it is not a distributed revocation service.
+
+The experimental neural checkpoints are not enabled by default. The 32-byte similarity stamp is never used as an exact computation-cache key. `exact_decimal` performs only allowlisted arithmetic on bounded decimal strings and rejects operations requiring rounding; it never evaluates source code.
+
 ## Reporting
 
 Report vulnerabilities privately to the repository owner, Prashant Jagtap, through an existing private contact channel or GitHub private vulnerability reporting when available. Do not post credentials, private text or working exploit details in a public issue. Include the affected commit, minimal reproduction, impact and environment. No response-time guarantee is currently offered.

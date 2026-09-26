@@ -1,0 +1,30 @@
+{
+  "methods": [
+    "bm25",
+    "dense",
+    "gated-policy",
+    "hybrid",
+    "mlp-17",
+    "mlp-29",
+    "mlp-7",
+    "recurrent-17",
+    "recurrent-29",
+    "recurrent-7",
+    "selected-int8-storage",
+    "selected-steps1",
+    "selected-steps4"
+  ],
+  "protocol_sha256": "bd8cff1aed5504e21e017a84d0d65efcb746eb2012cc42308ce9e5ce2b3412b3",
+  "query_counts": {
+    "arguana": 1406,
+    "nfcorpus": 323,
+    "scidocs": 1000,
+    "scifact": 300
+  },
+  "selected": "mlp-29",
+  "source_sha256": {
+    "context_stamps/neural_controller.py": "0a622e07365488e9604a7319ddc7203a7c68a9e4cf2ff334e6d96edf650789c5",
+    "experiments/run_hybrid_retrieval.py": "a81b6fa01d64ea104a741bb28c1317929105b140377ade8b27f47c599d694352",
+    "experiments/train_controller.py": "773509dbdcd0fc36b2386e2fa0029e7354cbf574a784443a862ab042aa3f6c92"
+  }
+}

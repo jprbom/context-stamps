@@ -1,0 +1,24 @@
+{
+  "always_call": {
+    "correct": 216,
+    "hits": 0,
+    "model_calls": 216,
+    "output_tokens": 2592,
+    "p50_ms": 96.22330003185198,
+    "p95_ms": 114.86480000894517,
+    "prompt_tokens": 12780,
+    "requests": 216,
+    "total_ms": 20703.667800989933
+  },
+  "exact_reuse": {
+    "correct": 216,
+    "hits": 108,
+    "model_calls": 108,
+    "output_tokens": 1296,
+    "p50_ms": 35.64259997801855,
+    "p95_ms": 117.13499994948506,
+    "prompt_tokens": 6390,
+    "requests": 216,
+    "total_ms": 10935.71100034751
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "ollama_version": {
+    "version": "0.34.2"
+  },
+  "protocol_sha256": "c60b8e569791f637029b8779fd7ca1993dcf4c0ec3b25b06b84be87e8c501009",
+  "source_sha256": {
+    "context_stamps/computation.py": "f346ac4ac389abbbf64cccfb65a58dab4100434c4e245b6f732f349de903fd7a",
+    "experiments/benchmark_computation.py": "f1016305f06c9c1908b6cd4da1854012496214a37d8e74667cb889a59d223441"
+  }
+}

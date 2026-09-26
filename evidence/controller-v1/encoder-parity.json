@@ -1,0 +1,102 @@
+{
+  "samples": [
+    {
+      "count": 16,
+      "dataset": "scifact",
+      "maximum_coordinate_error": 1.8998980522155762e-07,
+      "minimum_cosine": 0.9999999403953552,
+      "sampled_query_ids": [
+        "1",
+        "100",
+        "1012",
+        "1014",
+        "1019",
+        "1020",
+        "1021",
+        "1024",
+        "1029",
+        "1041",
+        "1049",
+        "1062",
+        "1086",
+        "1088",
+        "1089",
+        "1099"
+      ]
+    },
+    {
+      "count": 16,
+      "dataset": "nfcorpus",
+      "maximum_coordinate_error": 1.4808028936386108e-07,
+      "minimum_cosine": 0.9999999403953552,
+      "sampled_query_ids": [
+        "PLAIN-1008",
+        "PLAIN-1018",
+        "PLAIN-102",
+        "PLAIN-1028",
+        "PLAIN-1039",
+        "PLAIN-1050",
+        "PLAIN-1066",
+        "PLAIN-1088",
+        "PLAIN-1098",
+        "PLAIN-1109",
+        "PLAIN-1119",
+        "PLAIN-112",
+        "PLAIN-1130",
+        "PLAIN-1141",
+        "PLAIN-1151",
+        "PLAIN-1161"
+      ]
+    },
+    {
+      "count": 16,
+      "dataset": "arguana",
+      "maximum_coordinate_error": 1.73225998878479e-07,
+      "minimum_cosine": 0.9999999403953552,
+      "sampled_query_ids": [
+        "test-culture-ahrtsdlgra-con01a",
+        "test-culture-ahrtsdlgra-con02a",
+        "test-culture-ahrtsdlgra-con03a",
+        "test-culture-ahrtsdlgra-pro01a",
+        "test-culture-ahrtsdlgra-pro02a",
+        "test-culture-ahrtsdlgra-pro03a",
+        "test-culture-ascidfakhba-con01a",
+        "test-culture-ascidfakhba-con02a",
+        "test-culture-ascidfakhba-con03a",
+        "test-culture-ascidfakhba-con04a",
+        "test-culture-ascidfakhba-pro01a",
+        "test-culture-ascidfakhba-pro02a",
+        "test-culture-ascidfakhba-pro03a",
+        "test-culture-ascidfakhba-pro04a",
+        "test-culture-cgeeghwmeo-con01a",
+        "test-culture-cgeeghwmeo-con02a"
+      ]
+    },
+    {
+      "count": 16,
+      "dataset": "scidocs",
+      "maximum_coordinate_error": 1.471489667892456e-07,
+      "minimum_cosine": 0.9999999403953552,
+      "sampled_query_ids": [
+        "01273bd34dacfe9ef887b320f36934d2f9fa9b34",
+        "012e396b02aa584cb74a65ae14af355e7c897858",
+        "01d208b33561362f7714f714d3bc4a1f7aa1637c",
+        "0210b3fe6f7173c86936b5dd9261bc0be0c45652",
+        "0229829e9a1eed5769a2b5eccddcaa7cd9460b92",
+        "027e7780dbda48d99f3654e77b4a63063224950e",
+        "02c9fe33a5d8cb94373cea20a53f01e0a0e70f7f",
+        "030ff7012b92b805a60976f8dbd6a08c1cecebe6",
+        "031a0f18d46b8e006eb4262233f7734fe4505c21",
+        "033897d56c7cf4f084dec1fad072f1a6aca65c6e",
+        "03725753e46ee9b13cbdfa78c9b62700d4cc2956",
+        "038ee3d9e0a739752f4a270548ab8c97ed024633",
+        "03bd09f62445ee68095f20000342c1c76b57d7c9",
+        "03d23160e7066e5adab0d55779287e3c4982b9d5",
+        "0416f5d1564d1f2a597acac04e81b02b2eff67d2",
+        "045a50ec31973fee15ff967f18e016fae77fd1f3"
+      ]
+    }
+  ],
+  "source_sha256": "b679dd4ac248ed82646c82ef9e6e83641056d9fa41c27d9f3bb418afea1c0d4f",
+  "status": "Sampled numerical compatibility, not a new retrieval benchmark."
+}

@@ -1,0 +1,14 @@
+{
+  "data-preparation.json": "f69f35e62bcdefeed3e5e65ab15094ac2504a8d5240b83a54d2465589be0264b",
+  "encoder-parity.json": "587dbca40b7d20c3b9b6366107687b8f3b46a299302cef1e736bc8be6092ba10",
+  "manifest.json": "dc1c707ff59b332f8d3c3fa7467f5648a63dd65f9cfa97ec32a8e55dd4c5bcb4",
+  "protocol.json": "bd8cff1aed5504e21e017a84d0d65efcb746eb2012cc42308ce9e5ce2b3412b3",
+  "results.json.gz": "16c084058d65feecb86ee9d7e5260cd6c200c01c15485b060e648f9d01892352",
+  "runtime.json": "7076207217c90139486b6dba448b226b6c307d8fbef2fd7ccc96002f621ccd14",
+  "selection.json": "920e436ac89a0c3cd8e6628cc8df1f93ee6321cdb679766853bc492f39590b48",
+  "split-manifest.json": "5e71a32dd41538d276f21ea18126d17fdab1afb373cd5878f802221a21ac5d98",
+  "summary.json": "a5921a5edd41cee9c6e5f2d5e7ead875a12bfef9c91f75a2d7020b0c4e867107",
+  "supplementary-results.json.gz": "cd330d39b383b704a812ad555a7c3f09bf51e595aa256c179d23de52a40ff819",
+  "supplementary.json": "0b90bacae27f7b5a2dc9dc7c3ef3b1e504fece34b61a383fec42e2d2ffacfc6f",
+  "training.json": "500f17f0bda52c76cdef5094e7b583c932d134d59845afd059c617b39b80c9f6"
+}

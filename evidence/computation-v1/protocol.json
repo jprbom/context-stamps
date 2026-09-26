@@ -1,0 +1,27 @@
+{
+  "events_per_task": 6,
+  "limits": "12 fictional scalar-extraction tasks, each with50% identical computations. Repetitions measure timing, not independent quality samples. No base-model fine-tuning, ranking, open-ended coding, cross-agent network or production-scale conclusion.",
+  "model": "qwen2.5:1.5b",
+  "model_digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+  "modes": [
+    "always_call",
+    "exact_reuse"
+  ],
+  "options": {
+    "num_ctx": 2048,
+    "num_predict": 40,
+    "seed": 20260926,
+    "temperature": 0
+  },
+  "repetitions": 3,
+  "sequence": [
+    "initial",
+    "repeat",
+    "source_edit",
+    "repeat",
+    "policy_edit",
+    "repeat"
+  ],
+  "tasks": 12,
+  "timing": "Warm local service, serialized requests, shuffled mode order per repetition; normal server prefix-cache behavior. End-to-end HTTP/cache lookup, excludes model cold load."
+}

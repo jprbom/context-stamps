@@ -12,6 +12,10 @@ The 32-byte capsule is a routing identity across eight bounded facets. It does n
 
 ## Start here
 
+**26 September research update:** an optional recurrent evidence controller has now been implemented and trained locally on an RTX 5080 Laptop GPU. Six runs reused SciFact/NFCorpus training data, with separate tuning and calibration. The simpler learned ranker won tuning, but **neither learned architecture qualified to replace the existing retrieval baseline**. The default remains unchanged. [Results, mathematics and complete RTX instructions](docs/local-rtx-controller.md) · [experimental checkpoints and model card](evidence/controller-v1/MODEL_CARD.md).
+
+A separate local Qwen pilot tested exact computation reuse through source edits and policy changes. With 50% repeated computations, model calls and processed input tokens fell by 50%, and total elapsed time fell by 47.2%, with 216/216 correct outputs per mode. **p95 latency did not improve** (114.9 ms → 117.1 ms). These are 12 fictional scalar-extraction tasks repeated for timing, not a broad agent or coding benchmark. [Raw observations](evidence/computation-v1/results.json) · [summary](evidence/computation-v1/summary.json).
+
 ```bash
 git clone https://github.com/jprbom/context-stamps.git
 cd context-stamps
@@ -35,9 +39,13 @@ These examples run offline without a GPU, service or downloaded model. The first
 | `ProgressiveRouter` | Resolves an explicit source or calls a precise backend; optionally uses a validated compact exit | Exact IDs and similarity do not grant access |
 | `ContextGraph` | Tracks declared relationships, versions and dependency closures | Does not infer missing relationships |
 | `ContextSession` | Reuses valid packets using bounded, expiring 32-byte receipts | Receipts are opaque handles, separate from semantic stamps |
+| `ComputationIdentity` / `ComputationCache` | Reuses a result only when request, model, prompt, tool, policy, principal and source bindings match | Host owns authorization and complete input capture; bounded in-process cache |
+| Optional `RecurrentEvidenceRanker` | Learns a bounded correction over precise retrieval candidates | Experimental; calibration rejected promotion; serving enforces trained recurrence depth |
 | `ResidualIndex` | Uses a richer index and backing vectors for exact refinement | More than 32 bytes; slower than Faiss in our in-memory tests |
 
 The spherical representation is a product of unit spheres followed by binary projection. A graph stores relationships between items; a stamp describes one item through supplied views. “QR” names the portable reference concept, not a visual barcode standard. Neither stamps nor receipts reconstruct arbitrary context or make a language model understand a hash.
+
+For an offline computation-reuse example, run `python examples/computation_reuse.py`. To train the optional ranker, install the `controller` extra into a CUDA-capable environment and follow the [local RTX guide](docs/local-rtx-controller.md). The selected checkpoint is 267,060 bytes in FP32 or 70,440 bytes with int8 matrix storage; the encoder and index are external. The int8 export reconstructs FP32 for inference and is not lossless or an int8 compute implementation.
 
 ```mermaid
 flowchart TD

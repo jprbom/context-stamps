@@ -10,3 +10,8 @@ global-exclude *.visual-check*
 
 recursive-include experiments *.py
 recursive-include evidence *.json *.jsonl *.md *.txt *.py
+exclude evidence/controller-v1/results.json
+include evidence/controller-v1/*.json.gz
+include evidence/controller-v1/checkpoints/selected-fp32.safetensors
+include evidence/controller-v1/checkpoints/selected-int8.safetensors
+include evidence/controller-v1/checkpoints/recurrent-29.safetensors

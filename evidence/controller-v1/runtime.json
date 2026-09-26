@@ -1,0 +1,32 @@
+{
+  "batch": 1,
+  "candidates": 128,
+  "checkpoint_bytes": {
+    "fp32": 267060,
+    "int8": 70440
+  },
+  "checkpoint_sha256": {
+    "fp32": "ca2c164e5c6699308647ecc01b932a66aedb9d5cd778a0dd2c6e2fe5e4107709",
+    "int8": "b5209a5873aa863bcc8d5759628de2a0bd4b0afc332bcdf1e8fd8ff9b03aee98"
+  },
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "limits": "Warm forward only, excluding encoding/retrieval/transfers. Int8 storage is reconstructed FP32; no resident memory or speed reduction asserted.",
+  "max_logit_error_first_test_query": 0.011939525604248047,
+  "numpy": "2.4.6",
+  "python": "3.12.10",
+  "selected": "mlp-29",
+  "threads": 4,
+  "timing": {
+    "torch.bfloat16": {
+      "p50_ms": 0.7231999770738184,
+      "p95_ms": 1.7347799323033541
+    },
+    "torch.float32": {
+      "p50_ms": 0.5786500405520201,
+      "p95_ms": 1.5222250600345433
+    }
+  },
+  "torch": "2.11.0+cu128",
+  "total_train_evaluate_seconds": 130.35206710000057
+}
