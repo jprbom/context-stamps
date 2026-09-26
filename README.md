@@ -12,7 +12,11 @@ The 32-byte capsule is a routing identity across eight bounded facets. It does n
 
 ## Start here
 
-The latest [structural-memory comparison](evidence/lme-structure-v1/README.md) preserves recorded UI ancestry and source-line references. Across 72 development questions per reader, native credit changes **13 to 14 for Qwen2.5 1.5B** and **10 to 15 for Qwen2.5-Coder 7B**. Six and three regressions, higher token use and incomplete retention testing keep both candidates inactive. The adapter covers all 3.07 million nonblank source lines across the full view collection; that does not prove that retrieval selects sufficient evidence. [API, limits and RTX reproduction](docs/structured-local-memory.md) · `python examples/structured_local_memory.py`.
+The latest [page and relation-memory comparison](evidence/lme-relations-v2/README.md) completes **432 local requests**. Page filtering changes native credit **14→17/72 for Qwen2.5 1.5B** and **16→16/72 for Qwen2.5-Coder 7B**. Relation packets regress to **13 and 9/72** and increase summed request time **76% and 36%** despite slightly fewer tokens. Both treatments remain inactive. Full live request timings, all regressions and a separate stricter reference-agreement check are published. [API and local RTX steps](docs/page-relational-memory.md) · `python examples/page_relational_memory.py`.
+
+![Page selection and relation-packet quality and cost](docs/assets/lme-relations-v2.png)
+
+The preceding [structural-memory comparison](evidence/lme-structure-v1/README.md) preserves recorded UI ancestry and source-line references. Across 72 development questions per reader, native credit changes **13 to 14 for Qwen2.5 1.5B** and **10 to 15 for Qwen2.5-Coder 7B**. Six and three regressions, higher token use and incomplete retention testing keep both candidates inactive. The adapter covers all 3.07 million nonblank source lines across the full view collection; that does not prove that retrieval selects sufficient evidence. [API, limits and RTX reproduction](docs/structured-local-memory.md) · `python examples/structured_local_memory.py`.
 
 ![Structural-memory quality and resource comparison](docs/assets/lme-structure-v1.png)
 

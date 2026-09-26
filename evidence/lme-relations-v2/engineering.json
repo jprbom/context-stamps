@@ -1,0 +1,39 @@
+{
+  "windows_full_core": {
+    "tests": 379,
+    "failures": 0,
+    "skips": 0,
+    "log_sha256": "47660ccb6e648ad87558c2f80c493e60252a91632d382ab8d71aed9fd078d1f5"
+  },
+  "windows_experiment_boundary_tests": 5,
+  "windows_evidence_and_metric_tests": 7,
+  "wsl_core_packet_tests": 10,
+  "wsl_experiment_and_evidence_tests": 12,
+  "wsl_native_scores_replayed": 432,
+  "source_occurrences_independently_verified": 1065198,
+  "ruff": "pass",
+  "bandit": "pass",
+  "gitleaks": {
+    "expanded_records_bytes": 4579285,
+    "expanded_records_and_archived_source_findings": 0,
+    "repo_findings": 0,
+    "added_exact_public_digest_exclusions": 2,
+    "scanner_controls_passed": 135
+  },
+  "package": {
+    "sdist_and_wheel_built": true,
+    "sdist_native_scores_replayed": 432,
+    "sdist_superseded_preparation_replayed": true,
+    "wheel_contains_new_module": true,
+    "setup_note": "CPU Python 3.12 environment lacked setuptools for --no-isolation. Existing Python 3.13 build environment succeeded without dependency or source changes."
+  },
+  "historical_replays": [
+    "lme-structure 288 native scores",
+    "lme-memory 1104 scores and fitted policy"
+  ],
+  "limits": [
+    "No activation or model-weight training",
+    "Previously inspected development material",
+    "Warm sequential workstation timings; no energy, peak RAM, concurrency or physical edge-device qualification"
+  ]
+}

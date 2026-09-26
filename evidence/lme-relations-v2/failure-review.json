@@ -1,0 +1,332 @@
+{
+  "models": {
+    "qwen2.5:1.5b": {
+      "arms": {
+        "structure": {
+          "total_request_seconds": 68.39652439998463,
+          "median_request_seconds": 0.9646419000346214,
+          "p95_request_seconds": 1.1318021700484677,
+          "median_retrieval_seconds": 0.03254530002595857,
+          "median_pack_seconds": 0.17408119997708127,
+          "median_selected_views": 10.0,
+          "exact_unknown": 0,
+          "literal_unknown": 0,
+          "cells": {
+            "enterprise:procedure": {
+              "n": 12,
+              "correct": 0
+            },
+            "enterprise:dynamic-environment": {
+              "n": 12,
+              "correct": 1
+            },
+            "enterprise:static-environment": {
+              "n": 12,
+              "correct": 4
+            },
+            "web:static-environment": {
+              "n": 12,
+              "correct": 4
+            },
+            "web:procedure": {
+              "n": 12,
+              "correct": 2
+            },
+            "web:dynamic-environment": {
+              "n": 12,
+              "correct": 3
+            }
+          },
+          "strict_reference_agreement": 11,
+          "native_pass_strict_fail": [
+            "658fa827",
+            "60c7ca22",
+            "65fbcbdf"
+          ]
+        },
+        "scoped": {
+          "total_request_seconds": 74.64607020036783,
+          "median_request_seconds": 1.0551344499690458,
+          "p95_request_seconds": 1.3568668100517243,
+          "median_retrieval_seconds": 0.13366895006038249,
+          "median_pack_seconds": 0.17628979997243732,
+          "median_selected_views": 12.0,
+          "exact_unknown": 0,
+          "literal_unknown": 0,
+          "cells": {
+            "enterprise:procedure": {
+              "n": 12,
+              "correct": 0
+            },
+            "enterprise:dynamic-environment": {
+              "n": 12,
+              "correct": 2
+            },
+            "enterprise:static-environment": {
+              "n": 12,
+              "correct": 4
+            },
+            "web:static-environment": {
+              "n": 12,
+              "correct": 6
+            },
+            "web:procedure": {
+              "n": 12,
+              "correct": 3
+            },
+            "web:dynamic-environment": {
+              "n": 12,
+              "correct": 2
+            }
+          },
+          "strict_reference_agreement": 15,
+          "native_pass_strict_fail": [
+            "658fa827",
+            "60c7ca22"
+          ]
+        },
+        "relations": {
+          "total_request_seconds": 120.56480489962269,
+          "median_request_seconds": 1.7013256500358693,
+          "p95_request_seconds": 2.120060979970731,
+          "median_retrieval_seconds": 0.39584200002718717,
+          "median_pack_seconds": 0.582431250018999,
+          "median_selected_views": 78.0,
+          "exact_unknown": 1,
+          "literal_unknown": 2,
+          "cells": {
+            "enterprise:procedure": {
+              "n": 12,
+              "correct": 1
+            },
+            "enterprise:dynamic-environment": {
+              "n": 12,
+              "correct": 1
+            },
+            "enterprise:static-environment": {
+              "n": 12,
+              "correct": 2
+            },
+            "web:static-environment": {
+              "n": 12,
+              "correct": 6
+            },
+            "web:procedure": {
+              "n": 12,
+              "correct": 1
+            },
+            "web:dynamic-environment": {
+              "n": 12,
+              "correct": 2
+            }
+          },
+          "strict_reference_agreement": 12,
+          "native_pass_strict_fail": [
+            "77db204d"
+          ]
+        }
+      },
+      "versus_structure": {
+        "scoped": {
+          "gains": [
+            "78686f4e",
+            "aedd338d",
+            "0738c1ac",
+            "d5b9fda4",
+            "f23807ed"
+          ],
+          "regressions": [
+            "6a7808c5",
+            "65fbcbdf"
+          ],
+          "total_model_token_change": 0.004519581348960688,
+          "total_request_time_change": 0.09137227154753802
+        },
+        "relations": {
+          "gains": [
+            "3a2e9368",
+            "78686f4e",
+            "0738c1ac",
+            "d5b9fda4"
+          ],
+          "regressions": [
+            "658fa827",
+            "68107cba",
+            "9c32bca6",
+            "1e011eb5",
+            "65fbcbdf"
+          ],
+          "total_model_token_change": -0.007348115206113892,
+          "total_request_time_change": 0.7627329159966758
+        }
+      }
+    },
+    "qwen2.5-coder:7b": {
+      "arms": {
+        "structure": {
+          "total_request_seconds": 161.41425079945475,
+          "median_request_seconds": 2.3361380500136875,
+          "p95_request_seconds": 2.555662890023086,
+          "median_retrieval_seconds": 0.033822699973825365,
+          "median_pack_seconds": 0.17650634999154136,
+          "median_selected_views": 10.0,
+          "exact_unknown": 42,
+          "literal_unknown": 42,
+          "cells": {
+            "enterprise:procedure": {
+              "n": 12,
+              "correct": 3
+            },
+            "enterprise:dynamic-environment": {
+              "n": 12,
+              "correct": 1
+            },
+            "enterprise:static-environment": {
+              "n": 12,
+              "correct": 3
+            },
+            "web:static-environment": {
+              "n": 12,
+              "correct": 3
+            },
+            "web:procedure": {
+              "n": 12,
+              "correct": 3
+            },
+            "web:dynamic-environment": {
+              "n": 12,
+              "correct": 3
+            }
+          },
+          "strict_reference_agreement": 15,
+          "native_pass_strict_fail": [
+            "98b62f3d"
+          ]
+        },
+        "scoped": {
+          "total_request_seconds": 158.3112269998528,
+          "median_request_seconds": 2.4573001499520615,
+          "p95_request_seconds": 2.7560987499542535,
+          "median_retrieval_seconds": 0.14779195003211498,
+          "median_pack_seconds": 0.17587929998990148,
+          "median_selected_views": 12.0,
+          "exact_unknown": 43,
+          "literal_unknown": 43,
+          "cells": {
+            "enterprise:procedure": {
+              "n": 12,
+              "correct": 2
+            },
+            "enterprise:dynamic-environment": {
+              "n": 12,
+              "correct": 1
+            },
+            "enterprise:static-environment": {
+              "n": 12,
+              "correct": 3
+            },
+            "web:static-environment": {
+              "n": 12,
+              "correct": 5
+            },
+            "web:procedure": {
+              "n": 12,
+              "correct": 3
+            },
+            "web:dynamic-environment": {
+              "n": 12,
+              "correct": 2
+            }
+          },
+          "strict_reference_agreement": 15,
+          "native_pass_strict_fail": [
+            "98b62f3d"
+          ]
+        },
+        "relations": {
+          "total_request_seconds": 219.59463470091578,
+          "median_request_seconds": 3.083093299996108,
+          "p95_request_seconds": 3.7114503100223373,
+          "median_retrieval_seconds": 0.4086450500180945,
+          "median_pack_seconds": 0.5874183000414632,
+          "median_selected_views": 78.0,
+          "exact_unknown": 48,
+          "literal_unknown": 48,
+          "cells": {
+            "enterprise:procedure": {
+              "n": 12,
+              "correct": 2
+            },
+            "enterprise:dynamic-environment": {
+              "n": 12,
+              "correct": 0
+            },
+            "enterprise:static-environment": {
+              "n": 12,
+              "correct": 2
+            },
+            "web:static-environment": {
+              "n": 12,
+              "correct": 4
+            },
+            "web:procedure": {
+              "n": 12,
+              "correct": 0
+            },
+            "web:dynamic-environment": {
+              "n": 12,
+              "correct": 1
+            }
+          },
+          "strict_reference_agreement": 9,
+          "native_pass_strict_fail": []
+        }
+      },
+      "versus_structure": {
+        "scoped": {
+          "gains": [
+            "3a2e9368",
+            "0738c1ac",
+            "92642fe7",
+            "d5b9fda4"
+          ],
+          "regressions": [
+            "07ffeedf",
+            "9e05978c",
+            "17d63ad8",
+            "60c7ca22"
+          ],
+          "total_model_token_change": 0.004526748009469506,
+          "total_request_time_change": -0.019223976719733527
+        },
+        "relations": {
+          "gains": [
+            "17a03f9b",
+            "3a2e9368",
+            "0738c1ac",
+            "d5b9fda4"
+          ],
+          "regressions": [
+            "25b00876",
+            "2975030d",
+            "9c32bca6",
+            "9e05978c",
+            "b8cabd09",
+            "17d63ad8",
+            "1e011eb5",
+            "60c7ca22",
+            "98b62f3d",
+            "d16a18fe",
+            "edb69441"
+          ],
+          "total_model_token_change": -0.008417834966499282,
+          "total_request_time_change": 0.3604414332272672
+        }
+      }
+    }
+  },
+  "activation_qualified": false,
+  "timing": "Actual timed retrieval + compilation + local generation; warm indexes/models; excludes index building and model loading",
+  "qualification": "Descriptive development comparison on 72 previously inspected questions, not independent generalization or local-learning qualification",
+  "strict_diagnostic": "Post-hoc exact normalized phrase set/order agreement within the native extracted answer; choices retain native scoring. Can reject valid paraphrases; not semantic factuality or a replacement for native scores."
+}

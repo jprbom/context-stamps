@@ -4,6 +4,8 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 27 September 2026
 
+- Added bounded page ownership and ordered observation packets with explicit local container ancestry. An independent source audit verifies 1,065,198 retained occurrences; the representation remains lossy. Completed 432 local requests across two readers and three context treatments. Page filtering changes native credit 14→17 and 16→16 out of 72; relation packets fall to 13 and 9 and increase summed request time 76% and 36%. Both treatments remain inactive. Published full request timings, all paired outcomes, a stricter secondary reference-agreement diagnostic, retained preparation failure, research figure and local runbook. No weight training or autonomous improvement claim.
+
 - Added bounded structural observation views with source-line occurrences and deduplication across repeated states. Independent reconstruction covers 3,072,962 nonblank lines in 200 public trajectories. A fresh 288-call, two-reader development comparison retains small aggregate gains, six/three regressions and increased token use; no candidate activates. Added all predictions, native replay, failure review, research figure and RTX runbook. Eight new core tests bring the full local suite to 369 passing tests without skips.
 
 - Profiled and refined local trajectory search without changing any of 882 tested returned fragment lists. A selective query plan lowers measured median lookup time from 279 to 99 ms and p95 from 357 to 312 ms. Retained the first optimization's p95 regression, both paired lookup logs, exact tie-boundary tests and a separately pinned runner. No whole-workflow speedup is claimed.

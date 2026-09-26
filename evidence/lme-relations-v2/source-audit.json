@@ -1,0 +1,14 @@
+{
+  "checks": {
+    "members_crossing_nested_page_boundaries": 0,
+    "occurrences": 1065198,
+    "ordered_members": 40729,
+    "element": 365803,
+    "episodes": 200
+  },
+  "all_retained_occurrences_verified": true,
+  "complete_source_coverage": false,
+  "interpretation": "Checks retained text, source order, structural ancestor and page ownership; not visual layout, semantic sufficiency, causal effects or facts.",
+  "verifier_sha256": "0d748999f67cb1413c4a28b5871bce53a2ac19963f642199d73bcb1a25e212f7",
+  "index_sha256": "075263be2e90efef543aa1957bbcb8de730affd10ada2bc3cc9442d0e5bb417d"
+}

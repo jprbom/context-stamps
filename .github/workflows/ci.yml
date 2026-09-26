@@ -73,6 +73,10 @@ jobs:
       - run: python experiments/test_lme_structure.py -v
       - run: python experiments/test_lme_structure_evidence.py -v
       - run: python experiments/verify_lme_structure.py
+      - run: python experiments/test_lme_relations.py -v
+      - run: python experiments/test_lme_relation_evidence.py -v
+      - run: python experiments/verify_lme_relations.py
+      - run: python experiments/verify_relation_preparation.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py
@@ -93,6 +97,7 @@ jobs:
       - run: python examples/local_learning.py
       - run: python examples/local_trajectory_memory.py
       - run: python examples/structured_local_memory.py
+      - run: python examples/page_relational_memory.py
       - run: python examples/adaptive_acquisition.py --model evidence/acquisition-v1/mlp32-seed29.json
       - run: scqr encode examples/facets.json
       - run: python examples/local_slm.py --dry-run

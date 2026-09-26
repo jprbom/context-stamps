@@ -1,0 +1,16 @@
+{
+  "files": {
+    "registration.json": "9f4ac8f64c3b052c1db3f4fd042337eeb9442acc78624183a983ab5f78db0a8f",
+    "prepared.json": "c15e2daa60c2c722d6cfff5e8c1830d952ad57413d782a9123789d253679cdf6",
+    "index.json": "676a5b70cd0d8a7f5f24895b9d487abbf728244de9c93810d2c43843a0260491",
+    "superseded.json": "ef0535b3c79afcd115d2db363c027fc6b16ae9e3de2ec93d54d7075bc48781db"
+  },
+  "model_calls": 0,
+  "frozen_sources": {
+    "context_stamps/observation_packets.py": "81d45e32c95815b991696c4e84e81e18a9bcf1c8978ee1caf8840cf450679fed",
+    "experiments/lme_relations.py": "d70aeab8205046449a1fb922114272c0da53ce75b4f34e767e140b5c14f9eaf5"
+  },
+  "archive": "evidence/engineering-sources-v1/source-lme-relations-preparation-v1.json.gz",
+  "archive_sha256": "7ef2fa7a857e090795944bc2b8e7a21a1d6bc0537be730bc71adbcf25bbfcb9f",
+  "reason": "Local table/section ownership absent; corrected before model calls. Raw sources were frozen before editing."
+}

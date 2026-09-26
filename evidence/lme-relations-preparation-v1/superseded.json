@@ -1,0 +1,6 @@
+{
+  "status": "preparation only; no model calls",
+  "reason": "Ordered relation packets omitted the local table/section ancestor. Source archived before correction.",
+  "replacement": "../lme-relations-v2",
+  "preserve_preparation": true
+}

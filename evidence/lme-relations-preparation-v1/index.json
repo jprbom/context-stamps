@@ -1,0 +1,20 @@
+{
+  "counts": {
+    "ordered_members": 18145,
+    "source_occurrences": 1001089,
+    "element": 174529
+  },
+  "skipped_relation_episodes": [
+    {
+      "episode": "28e88ef7",
+      "reason": "too many identical occurrences"
+    },
+    {
+      "episode": "e471cc29",
+      "reason": "too many identical occurrences"
+    }
+  ],
+  "episodes": 200,
+  "bytes": 454025216,
+  "seconds": 24.017153099994175
+}
