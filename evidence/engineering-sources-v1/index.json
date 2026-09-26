@@ -143,6 +143,12 @@
       "sha256": "d1edd2559eec358f314d004b8311f3ade2d6e4324826e748018dd42b67371b08",
       "source_base_commit": "b17c392a08fca54a3a1f173d417ce5634e4c6e91",
       "worktree_dirty": true
+    },
+    {
+      "file": "source-monitor-cli-preparation.json.gz",
+      "sha256": "ed5d4d0287932ced903bbea9f615fa81a4ed0d71a41443fafa082383d003ef16",
+      "source_base_commit": "bdd3d406507121f15d0cbd0c68a59c4913f73863",
+      "worktree_dirty": false
     }
   ]
 }

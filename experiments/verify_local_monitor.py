@@ -4,14 +4,15 @@ import gzip
 import hashlib
 import json
 import math
+import sys
 import tempfile
 from pathlib import Path
 
 from source_evidence import verify_sources
 
-from examples.local_adaptation_cycle import fixture_report
-
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from examples.local_adaptation_cycle import fixture_report  # noqa: E402
 
 
 def same_record(left, right):

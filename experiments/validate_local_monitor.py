@@ -5,12 +5,14 @@ import gzip
 import hashlib
 import json
 import platform
+import sys
 import tempfile
 from pathlib import Path
 
-from examples.local_adaptation_cycle import fixture_report
-
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT))
+from examples.local_adaptation_cycle import fixture_report  # noqa: E402
+
 SOURCES = (
     "context_stamps/local_monitor.py", "context_stamps/local_learning.py", "context_stamps/local_policy.py",
     "context_stamps/decisions/calibration.py", "context_stamps/experience.py", "context_stamps/security.py",

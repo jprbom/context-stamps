@@ -22,3 +22,5 @@ python -m unittest discover -s tests -p test_local_monitor.py -v
 ```
 
 This reproduction needs only the installed core and Python standard library. It does not call a local or remote model. Simulation labels do not establish valid IID deployment samples, truthful verification, sustained model improvement, measured power savings or production reliability. Existing failed model candidates remain inactive.
+
+A later clean-shell check found that the new CLI scripts relied on a development `PYTHONPATH`. The scripts now explicitly locate this reviewed repository, matching existing experiment entry points. Windows and Linux replay pass with `PYTHONPATH` absent, and the regenerated fixture bytes are identical. `cli-validation.json` records this follow-up; the previous tool source remains archived.

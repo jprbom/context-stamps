@@ -1,0 +1,12 @@
+{
+  "change": "Explicit repository-root import for installed-clone command-line execution; library and fixture outcomes unchanged",
+  "windows_without_pythonpath": "pass",
+  "linux_without_pythonpath": "pass",
+  "fixture_reproduction_identical": true,
+  "source_hashes": {
+    "experiments/verify_local_monitor.py": "44c31eda4d382dddaf0065169c991aceffa2e805767144eaab0c642dec4d5e8a",
+    "experiments/validate_local_monitor.py": "0ab7463ff4694e99fcaf122aabfc3a1d795e9bd47ed62b39c396ecfd0eb06704",
+    "experiments/test_local_monitor_evidence.py": "68b4e58894026e02b37bdd05cb5196d309bdd23bcc90774a197430ba08120197"
+  },
+  "prior_ci_run": 36280363043
+}
