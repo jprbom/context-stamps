@@ -23,6 +23,12 @@
       "sha256": "8a78df09ec0c85e2ae8242d7bdc428ef9ebfbca6e4e481142b6f7fccc3e9a726",
       "source_base_commit": "8d1dc0016630b95d5c68ecab38aa45c0aa8320f8",
       "worktree_dirty": false
+    },
+    {
+      "file": "source-acquisition-initial.json.gz",
+      "sha256": "d98eb7792fe8119f4b06912268df4ee1b03b87b6e1be347a07f48d87c0db8d23",
+      "source_base_commit": "77ec54a763c695f5e775e720ff54358ee7f09588",
+      "worktree_dirty": true
     }
   ]
 }

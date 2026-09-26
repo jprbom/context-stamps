@@ -39,6 +39,7 @@ jobs:
       - run: python experiments/verify_execution.py
       - run: python experiments/verify_storage.py
       - run: python experiments/verify_incremental.py
+      - run: python experiments/verify_acquisition.py
       - run: python experiments/test_local_eval.py -v
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
@@ -57,6 +58,7 @@ jobs:
       - run: python examples/managed_decision.py
       - run: python examples/persistent_context.py
       - run: python examples/incremental_metrics.py
+      - run: python examples/adaptive_acquisition.py --model evidence/acquisition-v1/mlp32-seed29.json
       - run: scqr encode examples/facets.json
       - run: python examples/local_slm.py --dry-run
       - run: python benchmarks/retrieval.py --out results.json

@@ -1,0 +1,441 @@
+{
+  "schema": 1,
+  "source_hashes": {
+    "context_stamps/acquisition.py": "5b7644403bcf0f5595ff8ffe682d83c95f1d72aac633c45e007b85897f1862f4",
+    "experiments/profile_acquisition.py": "ede93c0e79e4cad6d4da3a2e38aa06c9f888f43f53e244c8f13f719d843e7566"
+  },
+  "model_sha256": "0b723c4a85661fed7769d11755bdbe90dd07471a37f6be1e94ca75d11f8005d2",
+  "initialize_seconds": 0.0011316000018268824,
+  "cases": [
+    {
+      "dataset": "scifact",
+      "query_id": "1"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "100"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1012"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1014"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1019"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1020"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1021"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1024"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1029"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1041"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1049"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1062"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1086"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1088"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1089"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1099"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1100"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1104"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1107"
+    },
+    {
+      "dataset": "scifact",
+      "query_id": "1110"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1008"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1018"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-102"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1028"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1039"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1050"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1066"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1088"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1098"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1109"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1119"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-112"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1130"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1141"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1151"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1161"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1172"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1183"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-1193"
+    },
+    {
+      "dataset": "nfcorpus",
+      "query_id": "PLAIN-12"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ahrtsdlgra-con01a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ahrtsdlgra-con02a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ahrtsdlgra-con03a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ahrtsdlgra-pro01a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ahrtsdlgra-pro02a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ahrtsdlgra-pro03a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ascidfakhba-con01a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ascidfakhba-con02a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ascidfakhba-con03a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ascidfakhba-con04a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ascidfakhba-pro01a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ascidfakhba-pro02a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ascidfakhba-pro03a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-ascidfakhba-pro04a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-cgeeghwmeo-con01a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-cgeeghwmeo-con02a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-cgeeghwmeo-con03a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-cgeeghwmeo-con04a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-cgeeghwmeo-pro01a"
+    },
+    {
+      "dataset": "arguana",
+      "query_id": "test-culture-cgeeghwmeo-pro02a"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "01273bd34dacfe9ef887b320f36934d2f9fa9b34"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "012e396b02aa584cb74a65ae14af355e7c897858"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "01d208b33561362f7714f714d3bc4a1f7aa1637c"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "0210b3fe6f7173c86936b5dd9261bc0be0c45652"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "0229829e9a1eed5769a2b5eccddcaa7cd9460b92"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "027e7780dbda48d99f3654e77b4a63063224950e"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "02c9fe33a5d8cb94373cea20a53f01e0a0e70f7f"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "030ff7012b92b805a60976f8dbd6a08c1cecebe6"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "031a0f18d46b8e006eb4262233f7734fe4505c21"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "033897d56c7cf4f084dec1fad072f1a6aca65c6e"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "03725753e46ee9b13cbdfa78c9b62700d4cc2956"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "038ee3d9e0a739752f4a270548ab8c97ed024633"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "03bd09f62445ee68095f20000342c1c76b57d7c9"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "03d23160e7066e5adab0d55779287e3c4982b9d5"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "0416f5d1564d1f2a597acac04e81b02b2eff67d2"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "045a50ec31973fee15ff967f18e016fae77fd1f3"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "0491b1a097378701dbbab2ce9dcc2e109a95d97e"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "04ca5de59edbdd49a9c0502c58331524d220bc8c"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "04e4034344bda5c97015ea634e6eb1b65ef3a898"
+    },
+    {
+      "dataset": "scidocs",
+      "query_id": "0553dbcc91c98d5e068f6532f0b071a7d219d67e"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10034"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10039"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10109"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10122"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10136"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10137"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10152"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10183"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10213"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10246"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10267"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "104"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10414"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10447"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10462"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10482"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10497"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10526"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10547"
+    },
+    {
+      "dataset": "fiqa",
+      "query_id": "10558"
+    }
+  ],
+  "prediction_parity_max_error": 0.0,
+  "warmup_calls": 300,
+  "seeds": [
+    7,
+    29,
+    61
+  ],
+  "repeats_per_case_method": 10,
+  "timing_sha256": "ec72df068882a06951f280482fbe6082c37cdafbfc93deda85a440516ec46718",
+  "summary": [
+    {
+      "method": "full-pool-order",
+      "samples": 3000,
+      "p50_ms": 0.1248,
+      "p95_ms": 0.4072
+    },
+    {
+      "method": "guarded-fallback",
+      "samples": 3000,
+      "p50_ms": 0.1283,
+      "p95_ms": 0.4227
+    },
+    {
+      "method": "eager-feature-control",
+      "samples": 3000,
+      "p50_ms": 0.51155,
+      "p95_ms": 1.6645
+    }
+  ],
+  "boundary": "Cached retrieval-score rows; whole local planner call, batch1, CPU only. Eager-feature control computes unused prefix features, without old model hashing overhead. Not a previous-version executable or end-to-end model latency. Initialization, retrieval, encoding, I/O and generation excluded."
+}

@@ -81,11 +81,14 @@
       "current_sources": [
         "context_stamps/runtime.py",
         "context_stamps/requirements.py",
-        "context_stamps/context_compiler.py"
+        "context_stamps/context_compiler.py",
+        "context_stamps/acquisition.py",
+        "experiments/train_acquisition.py",
+        "evidence/acquisition-v1/manifest.json"
       ],
       "status": "partial_implemented",
       "completion_proof": "Held-out correctness and risk/coverage at measured total cost against fixed retrieval and full context.",
-      "implementation_note": "Explicit evidence coverage only; learned sufficiency and adaptive acquisition remain."
+      "implementation_note": "Explicit coverage plus optional learned judged-pool prefix planning and whole-trajectory risk accounting. Six RTX fits and 3677 regression queries completed; no calibration scope passed, so full-pool fallback remains. Answer sufficiency, automatic materialization, genuine token/latency benefit and prospective qualification remain."
     },
     {
       "id": "EC05",
@@ -100,9 +103,10 @@
         "latency",
         "risk"
       ],
-      "current_sources": [],
-      "status": "not_started",
-      "completion_proof": "Dimensioned cost/value objective, hard authority constraints and matched-cost ablations."
+      "current_sources": ["context_stamps/acquisition.py", "evidence/acquisition-v1/manifest.json"],
+      "status": "partial_experiment",
+      "completion_proof": "Dimensioned cost/value objective, hard authority constraints and matched-cost ablations.",
+      "implementation_note": "Remaining/next-batch judged-gain heads trained as auxiliary signals, without authorization powers. They are relevance fractions, not measured economic value. Token, latency, risk coefficients and task-outcome labels remain."
     },
     {
       "id": "EC06",
@@ -335,9 +339,10 @@
         "staleness",
         "next context"
       ],
-      "current_sources": [],
-      "status": "not_started",
-      "completion_proof": "Separate labels/head losses, disjoint calibration and held-out task/cost gains with all head ablations."
+      "current_sources": ["context_stamps/acquisition.py", "experiments/train_acquisition.py", "evidence/acquisition-v1/MODEL_CARD.md"],
+      "status": "partial_experiment",
+      "completion_proof": "Separate labels/head losses, disjoint calibration and held-out task/cost gains with all head ablations.",
+      "implementation_note": "Three public-judgment heads with explicit labels/losses, linear/MLP controls and three seeds implemented. Failed calibration and transfer preserved. No reader correctness, missing-fact, conflict, staleness or decision heads qualified; prospective gains and head ablations remain."
     },
     {
       "id": "EC17",
@@ -442,5 +447,5 @@
     }
   ],
   "evidence_boundary": "Existing/draft sources do not prove the complete requirement. No 1.0 or universal capability claim.",
-  "latest_engineering_evidence": "evidence/enterprise-incremental-v1/local-cpu/manifest.json"
+  "latest_engineering_evidence": "evidence/acquisition-v1/engineering-v2/manifest.json"
 }

@@ -30,6 +30,8 @@ The follow-up controller-v2 adds FiQA calibration/evaluation and a separately ob
 
 ## Multimodal evaluation models
 
+The acquisition study retains public-data-derived small JSON predictors and trajectory evidence under its [CC BY-SA 4.0 attribution](../evidence/acquisition-v1/ATTRIBUTION.md). Its source, engineering tests and fictional example remain MIT. The learned policy failed qualification and is not a default retrieval route. External model weights and raw dataset texts are excluded.
+
 The runtime follow-up retains public-dataset-derived router parameters, rankings and timing evidence under the [runtime artifact attribution](../evidence/runtime-v1/ATTRIBUTION.md). Its fictional reader/metadata fixtures and original code remain MIT. The existing local Cortex 1.7B model is used only for inference on those fictional inputs; its weights, private training corpus, prompt template and filesystem paths are not published. Reader observations retain expected/parsed integer outputs and hashes rather than unconstrained text.
 
 The multimodal pilot uses pinned external model revisions for inference only. SD-Turbo retains its model-specific Stability AI license; MMS English TTS uses CC-BY-NC-4.0. The ModelScope video card contains inconsistent NC and NC-ND labels; treat redistribution and commercial use as unresolved until its terms are clarified. No weights or generated media from these models are included in this repository. Their use in a local research test does not make them part of the MIT-licensed core.

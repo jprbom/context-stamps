@@ -1,0 +1,77 @@
+{
+  "alpha": 0.05,
+  "architectures": [
+    0,
+    32
+  ],
+  "batch_size": 4096,
+  "calibration": [
+    "scifact-calibration",
+    "nfcorpus-calibration",
+    "fiqa-calibration"
+  ],
+  "calibration_rule": "One error per early-stopped query trajectory; one-sided Clopper-Pearson, alpha divided by all 12 selected-model threshold/scope pairs. Minimize mean retained candidates among passing thresholds per scope; absent or failing scope uses all candidates. IDs do not establish independent queries.",
+  "candidates": "Original v2 dense96/hybrid96/BM25-64 union, hybrid-score order, no positive injection.",
+  "controls": [
+    "fixed-8",
+    "fixed-32",
+    "fixed-128",
+    "full-pool",
+    "raw-selected-.90",
+    "risk-gated"
+  ],
+  "created_utc": "2026-09-26T15:04:18Z",
+  "data_manifest_sha256": "c2563d95534a1467a4d02d23921f6f051d8cbe571f9430b23bb63bfa7b734a39",
+  "data_status": "All datasets, including calibration and test, were previously used by this project. Disjoint for this fit, but regression/development evidence only; no untouched-final or production certification claim.",
+  "epochs": 80,
+  "feature_revision": "hybrid-prefix-33-v1",
+  "features": "33 prefix statistics from six available retrieval scores. Entire pool's retrieval scores available before planning. No query IDs, judgments, teacher, document embeddings or future payloads in features.",
+  "heads": [
+    "pool_completeness_score",
+    "remaining_judged_gain_fraction",
+    "next_batch_judged_gain_fraction"
+  ],
+  "learning_rate": 0.003,
+  "loss": "Binary cross entropy completeness + 0.25 * sum of squared remaining/next gain errors; each domain equally weighted, each query equally weighted within domain, each prefix equally weighted within query.",
+  "maximum_error": 0.05,
+  "release": "Opt-in experiment; existing qualified retrieval routes unchanged. Original code MIT; derived public-data coefficients/evidence CC BY-SA4 with attribution. No raw text or external pretrained weights published.",
+  "reporting": "Candidate counts and judged recall only. Selection-only batch1 CPU timing excludes retrieval, payload I/O, tokenizer, reader, network. No token/cost/end-to-end latency reduction inferred.",
+  "schema": 1,
+  "seeds": [
+    7,
+    29,
+    61
+  ],
+  "selection": "Each checkpoint selected by equal-domain tune loss, including epoch0. Select one architecture/seed by tune loss only. Freeze all weights before loading calibration/test. Report six training/tuning controls and selected-model regression; deploy none by default.",
+  "source_base": "77ec54a763c695f5e775e720ff54358ee7f09588",
+  "sources": {
+    "context_stamps/acquisition.py": "f2ffb5071d0341ec0de9a03e1fa43cf919becaba45fb0442749d506730dc0842",
+    "context_stamps/decisions/calibration.py": "cba2d81351c5b5212af361c8d82180731a7b934fe61c4e37b92af53ebb0182d7",
+    "experiments/profile_context_training.py": "12a9302dccbc2eedefb88688286f0080f8529702fdbc69b0e706038448315d41",
+    "experiments/train_acquisition.py": "401a64f3d2a72dc549204430d565eafaa0a342efe1888acc31ecb2c02c2ccced"
+  },
+  "target": "All nonzero judged relevance gain in the fixed candidate pool retained, with at least one judged-positive candidate. No-positive pools have completeness false and gain targets zero. Not answer sufficiency or global recall.",
+  "target_revision": "nonempty-judged-pool-retention-v1",
+  "test": [
+    "scifact-test",
+    "nfcorpus-test",
+    "arguana-test",
+    "scidocs-test",
+    "fiqa-test"
+  ],
+  "thresholds": [
+    0.8,
+    0.9,
+    0.95,
+    0.99
+  ],
+  "train": [
+    "scifact-train",
+    "nfcorpus-train"
+  ],
+  "tune": [
+    "scifact-tune",
+    "nfcorpus-tune"
+  ],
+  "weight_decay": 0.001
+}
