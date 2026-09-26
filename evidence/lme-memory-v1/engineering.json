@@ -1,0 +1,24 @@
+{
+  "core_tests": {
+    "python": "3.13.13",
+    "passed": 361,
+    "skipped": 0,
+    "log_sha256": "88d9fdd3ee2d210615641e55874da1bfd335e6949bea6357d5f5ed7068f3d0b9"
+  },
+  "experiment_tests": {
+    "windows": 10,
+    "wsl_native_and_trajectory": 10,
+    "wsl_policy_and_evidence": 9,
+    "note": "The initial WSL evidence replay lacked NumPy; installing the declared optional dependency in a separate venv resolved setup, with no code changes."
+  },
+  "ruff": "pass",
+  "bandit": "pass",
+  "historical_ruler_replay": "both experiments pass",
+  "sdist": {
+    "sha256": "3744d05b8fecb6baeddeef8042833cc6d4d5f64d38eacf2c46e376eaac1ab7ff",
+    "checks": "native score/policy replay, both search reports, five evidence tests pass from extracted source archive"
+  },
+  "expanded_secret_scan": "All 7727 flags manually/schema reviewed as generated public trace IDs, with no unreviewed findings; see expanded-scan-review.json",
+  "activation": "No candidate activated; no private production data or paid model calls used",
+  "repository_secret_scan": "0 findings after two exact path/value checksum exclusions; all 115 scanner controls pass"
+}

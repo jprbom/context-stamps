@@ -1,0 +1,1055 @@
+{
+  "schema": 1,
+  "data_revision": "f152293e235517d504809563c833d7190b8c713b",
+  "source_revision": "2cc8c540bdb87fe6761629b585e727e1c4704520",
+  "sources": {
+    "context_stamps/__init__.py": "56f97951a69206bcae4bfab64a481314046ff48c3b11bbff774346073837e3bb",
+    "context_stamps/__main__.py": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d",
+    "context_stamps/acquisition.py": "5b7644403bcf0f5595ff8ffe682d83c95f1d72aac633c45e007b85897f1862f4",
+    "context_stamps/activation.py": "9684e74cce435b313728052ebdb6d368d3352ce45354a50e719ee115127aa30e",
+    "context_stamps/audit.py": "f5936e495addf4d8379c8ff75e970cecb3fac9e3a1cb661489f4d7878aeaeef0",
+    "context_stamps/baselines.py": "782958d7bb8ccdaee3ee13bb43c3299ea9b2d9843f48606abb33c51c0a9786fb",
+    "context_stamps/cli.py": "cd1ed3864deed32bdda8e13f05523124df6a39b9bac237fb68c9dcd527bbda50",
+    "context_stamps/computation.py": "f346ac4ac389abbbf64cccfb65a58dab4100434c4e245b6f732f349de903fd7a",
+    "context_stamps/context_compiler.py": "7f50ae88fe8888cf5c5588e3894993b97db6b8071232224d422e738f79849f1c",
+    "context_stamps/context_state.py": "5cba496d754ec153e67a5d8babc39a4564a3c9396a8177d9cd84760fee7db851",
+    "context_stamps/contractive_controller.py": "f09eae0bc32b02eca61c798aa65cce77738b045143375e03a8fdc32a73b7f7df",
+    "context_stamps/contracts.py": "d8187ed9428a4d7da3b8b0e1bace688f7a1367ec62ffcff79679c3e39897733b",
+    "context_stamps/controller_quantization.py": "81e9ba7b5c6f9bc9180b9e3053a7817d17d20a82e5d6ade5882ff16b17d47924",
+    "context_stamps/decisions/__init__.py": "8ad62e2cdc380961675453aaf0120b0a83f7eb9b01e1d3e0c762bd842e3279fe",
+    "context_stamps/decisions/abstention.py": "8a7711e6f015161a3b0ebd5226a58dfeec8d3291f05f02d8e59ad9588fb912a2",
+    "context_stamps/decisions/batch.py": "d38050d5ac9a1c958d888dafb8cbb5ad3257fc1dc7a5ddbe6ad90c858d6e46bd",
+    "context_stamps/decisions/boolean.py": "937485da95cc93080255793e88964cf4554ca2faac221186f5cf978b190e71b5",
+    "context_stamps/decisions/calibration.py": "cba2d81351c5b5212af361c8d82180731a7b934fe61c4e37b92af53ebb0182d7",
+    "context_stamps/decisions/choice.py": "6f5d8e278263da8b2befaf09ce5adaef7853d05a14f73fe1b2d897f7d21aac2a",
+    "context_stamps/decisions/schema.py": "641f54ef11f08a5c5ad0180824ec03ac68c6cd6496c493351ba7773614e9df5a",
+    "context_stamps/decisions/score.py": "346e591c3b359189c48dd5500339952fba62bf0fc30220ad61d705bad930368f",
+    "context_stamps/efficient_reranker.py": "0664b121246e66122f754ef588e0b821b37679e6dcaebcbdaacff76838d30041",
+    "context_stamps/encoders.py": "cff7af891eb9a2822980c207525be803770cd596eefd95a99dea0c533dfca62d",
+    "context_stamps/execution.py": "d87a2027ac111e765bfa18dd2fabd9f62f67684b53b54fb0b3c84b15e5b78f49",
+    "context_stamps/experience.py": "d4e4333c43dff8fe30a06836f005141beb9a105da8dfe1fad39a28368e436a4b",
+    "context_stamps/expert_router.py": "920ed66593a55d5ffb9cd99a83b1daf530eed49862aaaec0bff20b141070a7fd",
+    "context_stamps/facet_compiler.py": "3ae1c4c06721e726ec38c850f57576f2b2c67d11e775cc8441b6eb1c0b0a4c66",
+    "context_stamps/facet_model.py": "74172d0ed169303037ee01c9fec3cf9edd1dc718d52095fd3f977b2ff362e421",
+    "context_stamps/facets.py": "59e3bec25908f0c221291de9708369d21c0cb32222234535c22c81efaea83190",
+    "context_stamps/guarded_activation.py": "ad397115e9bbdf73f8ce37b900fb8c8501152482da9e3dc90f36d14e350df7b8",
+    "context_stamps/hybrid.py": "a051b8db5ac7a37fa3aa662ae3f23d1595b82692dc1a6d284430b88481db76a0",
+    "context_stamps/incremental.py": "aeffe0249ff4f0777df368c52a4410844815a19e4b1df70a711e0440c5d89725",
+    "context_stamps/learning.py": "4d7b7de841d81b59db9c4d149b374b368992c456fadbd9dddf935936273d9f20",
+    "context_stamps/linear_policy.py": "2dade366c2250a13a84f1f0ea548c2808cae41972f0544d2fda51073613c5bd2",
+    "context_stamps/local_learning.py": "1930f3d1588b5903df194d8bd9ab32eb86f6ca5dfd1a830511e17881cdf4cedc",
+    "context_stamps/local_policy.py": "21429ed7397097727992f6c463c25ed35b85674c034548d6770a492b61ac0805",
+    "context_stamps/memory.py": "c5b3313dbc8b55e3c8485eb534acf4a125eab2bc0b81e535f575e5fd6d9f4626",
+    "context_stamps/models/__init__.py": "0f8300be667c8b7434a2c0ac208cfa155de748f41f7551d4f543f0938b7f7031",
+    "context_stamps/neural_controller.py": "401b7459abaeedc7c4a9f14e8a18fc6f319976fa54330b0537b1c6a84c28aef2",
+    "context_stamps/packed_index.py": "f8810b3719304bf4b38a0cc296287b0a297ef91f4cc0365b091c1f8e2e498d6e",
+    "context_stamps/pretrained.py": "ef5601da082ca2105ec3a24baaef0efd37ada837a3af3e8ccc949e5d1b900856",
+    "context_stamps/relation_map.py": "2e57cfca10050a12642e2ec5c324c8f2ea064cb505d3fb5a1534c25b8ab4fa7e",
+    "context_stamps/requirements.py": "a68a877ec4d7ee7381791644966c5747547a914b0faba48ce52c5fffa239acd7",
+    "context_stamps/residual_index.py": "ececb567598eaa57edda5ec20c2bb6bd4cb4f1c3d35443b6897c5ef0b3229b95",
+    "context_stamps/routing.py": "da991679341c1dcc6d407039a9de77be62429ecd268d4c7096b990947695b23a",
+    "context_stamps/runtime.py": "9e8fd6f70f6674f0c4c1c537d2f52e71ba249f65f94a6f8be441ec1e61b6d85a",
+    "context_stamps/security.py": "2e38aa395acf61abe39f5fa7b0b506996425afb136860969ec7df12fb52e9b34",
+    "context_stamps/selection.py": "1af31c766a0e8be5332966c6a3bdeb951683fbca069af62218acd2b573656607",
+    "context_stamps/server.py": "5a7f595a623cd96de4b939a1e042f4348cb4d86e505189b2add9289776df4c47",
+    "context_stamps/session.py": "b149e4c9a7ed60aa32dab899eef8744b9b6bc04dd797784f8727940c41a2b2bf",
+    "context_stamps/sources.py": "b0e0f8bc5e410b36635b7993fd8af01b45a1420229f7a45feccae07bf6a5f3d3",
+    "context_stamps/spherical.py": "9915046ca76802d589ebd1be9acb6a4e5418cb85afd1615c6a951a90de5b9cff",
+    "context_stamps/spherical_cli.py": "3bd78cdd827b615e9ab95d10d5171b11e2bccab6b5df95949e4bedf0d81e17ac",
+    "context_stamps/stamp256.py": "42a8aa474f55f09c4bc78820c4108432cdaf784620514a37375aaaa8d4d35059",
+    "context_stamps/state_store.py": "710ed6596ada17b355000b4266406ebcfbcef8f87b38413a3d2e6b7c5816e0ab",
+    "context_stamps/training.py": "f5734434d4230967ec2ea9ac2dce8554705948495e86be00b6f923f3fd47eaef",
+    "context_stamps/trajectory.py": "21495d0eec7cc45732bf0839ba89022697db1191d04430bf9591a88db32cf3a0",
+    "context_stamps/workflow.py": "a0fbaf563f7e60a2d42bd602b169300adf8ecce9f356ee88c58ae5d44dab83f3",
+    "context_stamps/working_set.py": "284c624f1841f32446413e0365f04fa7f4abeb2774a59790b1da36705ad74897",
+    "experiments/local_eval.py": "60084ecbdf5294102b374414c8ecd4d994f836dce1a5536cb08f264f51337912",
+    "experiments/longbench_eval.py": "c2b9b794632777e960c8316cf62a3e1d442fe43d71a33e01f58cd9387f4b8063",
+    "experiments/ruler_context.py": "b01220a389b65b17863b4c84e4c9d71a8a46424bbef4c016fab2b9506adb9230",
+    "experiments/ruler_local_eval.py": "2b2d58b4fd3b7b76d3d0e1f03aac7d6275f30f406beec69242a4112a9d5f09e1",
+    "experiments/ruler_native.py": "11446ed9a26c43c2f6a65384d098e32b62f22d439010d42866017b389dd692e0",
+    "stamps.py": "1eff83406ee64c45aba5916231f6af22404683ee93d9dfbf51ca44b53c1ee87f",
+    "experiments/lme_memory.py": "219fa77475cc94d666d195b97ec38bb13f8176afd5ffd7e95ffa5b7dcb179402"
+  },
+  "dataset_hashes": {
+    "questions.jsonl": "0a3ae5ebea938c24d7800e1e0b0828e08ae1646f939a53853b2b8cdc08e292b7",
+    "trajectories.jsonl": "363cec9a8e87aa8d9101ce4e600aadbf7031d674056ebe4f969e8424abc5f3c6",
+    "haystacks/lme_v2_small.json": "9b5301defb23a088a5f06e45ff8d5f35e569d78305a66d492046a9fff9b46593"
+  },
+  "scorer_sha256": "e95b0fa4ecacdea5adfcb4a3a82539523bc9d102866a1015aca6c29bdcc1805a",
+  "model": {
+    "name": "qwen2.5:1.5b",
+    "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+    "bytes": 986061892,
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen2",
+      "families": [
+        "qwen2"
+      ],
+      "parameter_size": "1.5B",
+      "quantization_level": "Q4_K_M"
+    },
+    "template_sha256": "eb4402837c7829a690fa845de4d7f3fd842c2adee476d5341da8a46ea9255175",
+    "parameters_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "license_sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "system_sha256": "66b9ea09bd5b7099cbb4fc820f31b575c0366fa439b08245566692c6784e281e"
+  },
+  "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+  "options": {
+    "temperature": 0,
+    "seed": 71,
+    "num_ctx": 32768,
+    "num_predict": 256
+  },
+  "arms": [
+    "none",
+    "state",
+    "linked"
+  ],
+  "train_ids": [
+    "00aa905a",
+    "057a2d4d",
+    "07fff330",
+    "0b50ca0d",
+    "0d07143c",
+    "0f8c85a6",
+    "10003186",
+    "11dac74b",
+    "15e5efa6",
+    "18f9d965",
+    "233f9f09",
+    "2721ca7f",
+    "2b1a8fc6",
+    "2ca2d443",
+    "2e67d04f",
+    "2ee130d2",
+    "3269a3c5",
+    "32909aa1",
+    "3a131a42",
+    "3a2e9368",
+    "3fd81278",
+    "4dffe641",
+    "4f92aa38",
+    "52dd33bb",
+    "58c34839",
+    "5d6b993a",
+    "609acb91",
+    "634973c3",
+    "679111c6",
+    "6f9cb5fc",
+    "70e79657",
+    "73cbefdc",
+    "75816b26",
+    "767e4106",
+    "7e32e4a2",
+    "86fa86eb",
+    "87711b62",
+    "882965b7",
+    "8955b988",
+    "8cb3280c",
+    "901b7d17",
+    "90dc7e66",
+    "91d0775e",
+    "97d5309a",
+    "9c24f41e",
+    "9c32bca6",
+    "a62de1f1",
+    "abadf765",
+    "ad903be2",
+    "b4dcf650",
+    "b54161f8",
+    "bdb825a3",
+    "bfb3bcc4",
+    "c60f4681",
+    "c80ca967",
+    "cf62efad",
+    "d1d8cf9f",
+    "d6da3938",
+    "d886b018",
+    "dd53ab77",
+    "e3a1d7f3",
+    "e7292dab",
+    "e823a94a",
+    "e83245c5",
+    "eab07e81",
+    "ecdb7d5e",
+    "eef545a0",
+    "f13eb38d",
+    "f61a096f",
+    "f928c075",
+    "f9f9cd61",
+    "fe41b553"
+  ],
+  "holdout_ids": [
+    "01307e07",
+    "025db8ef",
+    "05cce9b3",
+    "06a5a25f",
+    "06e965cf",
+    "0738c1ac",
+    "07ab3723",
+    "07b49858",
+    "07d86be1",
+    "07ffeedf",
+    "080b0218",
+    "0a4a47e6",
+    "0c0fdcd7",
+    "0c6b0c60",
+    "0cf979c4",
+    "0f970f01",
+    "0fe2c676",
+    "100ff132",
+    "10466872",
+    "106c321b",
+    "14a823df",
+    "17a03f9b",
+    "17d63ad8",
+    "19367bc7",
+    "19c641bd",
+    "1b43f7df",
+    "1bfd2eac",
+    "1cf04706",
+    "1defc293",
+    "1e011eb5",
+    "229675cd",
+    "237d2cc5",
+    "238c3621",
+    "23aecb38",
+    "23c3e290",
+    "25b00876",
+    "26a038ce",
+    "289aea4a",
+    "2975030d",
+    "2b96f402",
+    "2c45ecbb",
+    "2d4e08b9",
+    "2e90de97",
+    "30fab98c",
+    "31f146ba",
+    "32d04f31",
+    "32e719c2",
+    "36fe48ef",
+    "38726e61",
+    "3b375e30",
+    "3c0c1b19",
+    "3f366e15",
+    "401566e6",
+    "40758d8b",
+    "41a18e5c",
+    "41bb40df",
+    "4252cc1c",
+    "4266cb67",
+    "42a55762",
+    "4329b535",
+    "436c58d5",
+    "44c05e59",
+    "4755f316",
+    "48ab5c3d",
+    "499488a6",
+    "4c6d1eb7",
+    "4ca9f7d7",
+    "4d7dda89",
+    "4df5e6b4",
+    "4ed01379",
+    "50711c52",
+    "507a0fe8",
+    "521b124f",
+    "5387d23d",
+    "597645be",
+    "597ca614",
+    "5a85ca0f",
+    "5aaf0f61",
+    "5b249b5c",
+    "5c826b28",
+    "5cb7289b",
+    "5db4899c",
+    "5edd2533",
+    "5f100f22",
+    "60c7ca22",
+    "60f2b293",
+    "616c238d",
+    "631667c9",
+    "63a1b94b",
+    "658fa827",
+    "65fbcbdf",
+    "6652c337",
+    "668f7b74",
+    "674a6972",
+    "68107cba",
+    "691cd1da",
+    "6a23675f",
+    "6a2e74de",
+    "6a5bbcdb",
+    "6a73e32b",
+    "6a7808c5",
+    "6cb662d7",
+    "6cb8ce37",
+    "6d975a08",
+    "71e61e15",
+    "73297783",
+    "73b6738b",
+    "744dbdad",
+    "756a7434",
+    "762d34b8",
+    "77db204d",
+    "78686f4e",
+    "7a07e9a0",
+    "7bfbd5f1",
+    "7c8efee5",
+    "7ea13f14",
+    "820d56e2",
+    "82cdfcc3",
+    "83c35034",
+    "85251f36",
+    "85fc5722",
+    "876c720a",
+    "89439d62",
+    "8957a127",
+    "896017e0",
+    "8b09f378",
+    "8b2a9dd3",
+    "8c55d6bc",
+    "8e320e42",
+    "8f70bc0e",
+    "8f752563",
+    "90df8253",
+    "92642fe7",
+    "927c65a2",
+    "95ae824f",
+    "96497069",
+    "9680f077",
+    "984022b1",
+    "98b62f3d",
+    "99ae54d1",
+    "99b6e22f",
+    "99fa7c96",
+    "9c074855",
+    "9cae869c",
+    "9e05978c",
+    "a12b7094",
+    "a3a7b079",
+    "a42071db",
+    "a444cec8",
+    "a45edf3e",
+    "a482c0d9",
+    "a59d50f7",
+    "a7da9ab3",
+    "a7edfb7a",
+    "a92dff92",
+    "aa4a4b7b",
+    "aa64a8bd",
+    "aca57021",
+    "adddeaa5",
+    "aedd338d",
+    "aef57896",
+    "b2595523",
+    "b5a25676",
+    "b7cc4da2",
+    "b828a6b2",
+    "b8cabd09",
+    "b8d56b89",
+    "ba047686",
+    "bdf0e84b",
+    "be541aa6",
+    "bf98bb38",
+    "c0593d69",
+    "c0696888",
+    "c1c000eb",
+    "c36b0d68",
+    "c39f6edf",
+    "c3dbec17",
+    "c56e69ca",
+    "c6124506",
+    "c738b934",
+    "c7e367e2",
+    "c843c4ec",
+    "c9568c9b",
+    "c9c6a06a",
+    "ca8e070b",
+    "ccf29914",
+    "cdd0e687",
+    "d0d61088",
+    "d16a18fe",
+    "d3300354",
+    "d3d7ec75",
+    "d5b9fda4",
+    "d63e8a7f",
+    "d83c4bf7",
+    "dae9f7e9",
+    "dea446d0",
+    "deb008ed",
+    "e033e796",
+    "e334d5c6",
+    "e4d36b58",
+    "e71f7c92",
+    "e77d1287",
+    "e9bb843a",
+    "e9fde9fe",
+    "eb3cfd03",
+    "edb69441",
+    "edea0219",
+    "ee68431d",
+    "f0882f6e",
+    "f1d8a168",
+    "f1f9de44",
+    "f23807ed",
+    "f3496ca5",
+    "f35bac4a",
+    "f4b2b1fb",
+    "f93031d2",
+    "f9c65fe6",
+    "fe18a443",
+    "fec652a9",
+    "ff311d07",
+    "ff8f3a22",
+    "ffa4e57e"
+  ],
+  "features": [
+    "question_words",
+    "unique_terms",
+    "order_words",
+    "change_words",
+    "state_episodes",
+    "linked_episodes",
+    "change_share",
+    "path_share",
+    "shared_fragments",
+    "linked_tokens"
+  ],
+  "ridge": 10.0,
+  "failure_penalty": 20.0,
+  "cost_cap": 6400,
+  "exclusions": [
+    {
+      "id": "059974dd",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "109b334c",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "11cc7ac2",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "12286151",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "123b74fb",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "12f8cfd2",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "18b91103",
+      "reason": "image_required"
+    },
+    {
+      "id": "191184f3",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "19935d2d",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "247bf724",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "285db8ec",
+      "reason": "image_required"
+    },
+    {
+      "id": "2ad054b5",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "2f6a21cd",
+      "reason": "image_required"
+    },
+    {
+      "id": "2fab8b79",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "302bf60e",
+      "reason": "image_required"
+    },
+    {
+      "id": "329742b1",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "3a7a7880",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "3a836b31",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "3daef058",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "43d9c5d0",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "45d1e7f1",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "48a52262",
+      "reason": "image_required"
+    },
+    {
+      "id": "4964afed",
+      "reason": "image_required"
+    },
+    {
+      "id": "50bfa714",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "50d92f55",
+      "reason": "image_required"
+    },
+    {
+      "id": "571b841c",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "579557d8",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "57cd3560",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "5849c18b",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "5ca112bf",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "6c285a23",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "6e0759a2",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "6fdda2fc",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "71026f57",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "7351cbcc",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "7586cf7c",
+      "reason": "image_required"
+    },
+    {
+      "id": "7df9e2ff",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "823d133a",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "8bc6d989",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "8d0400e5",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "8e21c6e5",
+      "reason": "image_required"
+    },
+    {
+      "id": "93d0613b",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "99bc5d0d",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "9b34f55b",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "9ff0ffff",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "a58c5548",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "a667402d",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "a8959d04-abs",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "af2ebaed",
+      "reason": "image_required"
+    },
+    {
+      "id": "b15314c0",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "b82d0dd6",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "bdfef1b9",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "bf4f8b37",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "c35bfeed",
+      "reason": "image_required"
+    },
+    {
+      "id": "c4c0e117",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "cbcd74ae",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "ce1cdb2d",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "ce9aa351",
+      "reason": "image_required"
+    },
+    {
+      "id": "d0e556eb",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "d1f82e80",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "d72fb64d",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "dbe1a814",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "dc41b134",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "de0abc47",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "eb8cf28b",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "ebad58ed",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "ee5252a3",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "f02bec54",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "fa504f5e",
+      "reason": "image_required"
+    },
+    {
+      "id": "fb56a896",
+      "reason": "image_required"
+    },
+    {
+      "id": "01f6e679",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "0382ed92",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "0401f0c8",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "0574c69a",
+      "reason": "image_required"
+    },
+    {
+      "id": "07a0145f",
+      "reason": "image_required"
+    },
+    {
+      "id": "0a13e290",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "0ace674b",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "0af83ccc",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "0cd6dc43",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "196a68fb",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "1a89c3ac",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "1d864942",
+      "reason": "image_required"
+    },
+    {
+      "id": "1e77eb4b",
+      "reason": "image_required"
+    },
+    {
+      "id": "1fec75e5",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "21df0107",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "21f3228c",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "2408b115",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "25853d7f",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "25dc1d7d",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "2cc1b9ca",
+      "reason": "image_required"
+    },
+    {
+      "id": "358c13ce",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "3b8210a1",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "4121647c",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "42d13006",
+      "reason": "image_required"
+    },
+    {
+      "id": "4a4aad22",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "4b0c5275",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "4cb090a9",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "51764e11",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "549c0657",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "577ab4ee",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "57817b87",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "5d6ecdeb",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "626e401e",
+      "reason": "image_required"
+    },
+    {
+      "id": "6517165d",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "66ed4c72",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "6a7f0d24",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "6fc8c511",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "6feb33d4",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "7195f494",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "733699a5",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "7376c10d",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "77258cda",
+      "reason": "image_required"
+    },
+    {
+      "id": "7ebb0b95",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "81180ae9",
+      "reason": "image_required"
+    },
+    {
+      "id": "83a77f9d",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "84238c8f",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "866a0f2e",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "86f00073",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "89a20f48",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "8a8f6aac",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "8da5c407",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "910135bb",
+      "reason": "image_required"
+    },
+    {
+      "id": "914ab1d4",
+      "reason": "image_required"
+    },
+    {
+      "id": "922a0c56",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "97e1d977",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "98e6d369",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "9ed5a14d",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "a2673690",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "a2a71197",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "a363341d",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "aa8d21f5",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "b05cf470",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "b339209c",
+      "reason": "image_required"
+    },
+    {
+      "id": "bb7ebd5c",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "c216174c",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "c5dfa558",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "cdb47c5d",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "cdc46516",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "d47ca5c8",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "d7c94023",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "e532c01e",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "ea361b20",
+      "reason": "image_required"
+    },
+    {
+      "id": "eaba5c44",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "ecca89b2",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "ecd9dda3",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "edc22f24",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "ee75b921",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "eec85674",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "eff00409",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "f078f429",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "f2b221fd",
+      "reason": "image_required"
+    },
+    {
+      "id": "f43926d9",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "f90f2255",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "fc0dbc35",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "fc7d35d5",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "fd006924",
+      "reason": "remote_judge_required"
+    },
+    {
+      "id": "fdeddf71",
+      "reason": "image_required"
+    }
+  ],
+  "evaluation": "Development split within the same benchmark and shared histories; no independent deployment qualification",
+  "authorization": "Local reader only; no remote judge, paid API, tool execution or automatic activation"
+}

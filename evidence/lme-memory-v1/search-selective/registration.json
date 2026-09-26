@@ -1,0 +1,9 @@
+{
+  "index_sha256": "730712e63c1ecdfa5da93b7a3faabf328a82411fae4f033b203629c2e4300ea9",
+  "sqlite": "3.49.1",
+  "original_source_sha256": "219fa77475cc94d666d195b97ec38bb13f8176afd5ffd7e95ffa5b7dcb179402",
+  "optimized_source_sha256": "7a2978f8d747b3ccdc7c64426bae3354cfff7f0c0f1f11782238ee55455b863c",
+  "questions": 294,
+  "lookups": 882,
+  "design": "One paired lookup per question/channel; hash-randomized order; shared warm connection"
+}

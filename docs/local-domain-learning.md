@@ -138,6 +138,8 @@ Start with software maintenance and operational diagnostics, where bounded tool 
 
 Automatic improvement means this cycle can run locally when the host has authorized its data, limits and candidate types. It does not mean every update must be accepted, every model can learn from its own answers, or quality must increase on every possible task.
 
+The [local trajectory-memory path](local-trajectory-memory.md) adds observed-state, adjacent-change and action-order views plus a ridge context policy. The first LongMemEval-V2 text development comparison improves native credit from 50/222 for ordinary state retrieval to 54/222 for the fitted choice, with 15 gains and 11 regressions and 4.16% more model tokens. It remains inactive. The shared-history split is not independent retention, and successful CPU fitting does not qualify automatic deployment or a weight update.
+
 ## Bind the execution protocol
 
 The [typed-tool experiment](typed-tools-development.md) found an execution-relevant schema serialization defect on both local models. Include the exact ordered response-schema bytes, prompt/template, parser, decoder settings and tool versions in a policy environment binding. Sorting JSON for semantic identity must not erase order that changes constrained generation. Requalify when this protocol changes. Completion or artifact existence is not a training label: use an independent outcome verifier. Benchmark development traces remain excluded from training.

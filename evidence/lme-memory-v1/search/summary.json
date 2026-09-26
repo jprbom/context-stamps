@@ -1,0 +1,18 @@
+{
+  "lookups": 882,
+  "all_equal": true,
+  "arms": {
+    "optimized": {
+      "total_seconds": 197.22577199770603,
+      "median_seconds": 0.1120790500426665,
+      "p95_seconds": 0.6042370999930426
+    },
+    "original": {
+      "total_seconds": 271.50201299984474,
+      "median_seconds": 0.2923457000288181,
+      "p95_seconds": 0.48742729995865375
+    }
+  },
+  "records_sha256": "acb5fb0678c17c0a07b199c5405b77fe744080854608ba319c254e0d4cd80610",
+  "limitations": "Warm local search only; no model/whole-request speedup claim"
+}

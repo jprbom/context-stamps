@@ -66,6 +66,10 @@ jobs:
       - run: python experiments/test_ruler_local_learning.py -v
       - run: python experiments/test_ruler_learning_evidence.py -v
       - run: python experiments/verify_ruler_learning.py
+      - run: python experiments/test_lme_memory.py -v
+      - run: python experiments/test_lme_evidence.py -v
+      - run: python experiments/verify_lme_memory.py
+      - run: python experiments/verify_lme_search.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py
@@ -84,6 +88,7 @@ jobs:
       - run: python examples/persistent_context.py
       - run: python examples/incremental_metrics.py
       - run: python examples/local_learning.py
+      - run: python examples/local_trajectory_memory.py
       - run: python examples/adaptive_acquisition.py --model evidence/acquisition-v1/mlp32-seed29.json
       - run: scqr encode examples/facets.json
       - run: python examples/local_slm.py --dry-run

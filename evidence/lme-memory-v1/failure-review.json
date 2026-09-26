@@ -1,0 +1,3924 @@
+{
+  "status": "inactive",
+  "interpretation": "Native-credit development diagnosis, not semantic truth certification",
+  "assumptions_not_met": [
+    "independent retention population",
+    "complete deployed retrieval/policy/model resource measurements",
+    "adversarial and multimodal memory qualification",
+    "reliable local answer verification"
+  ],
+  "training_model_tokens": 830696,
+  "all_measured_model_tokens": 3458863,
+  "arms": {
+    "none": {
+      "gain_ids": [
+        "080b0218",
+        "73b6738b",
+        "85251f36",
+        "adddeaa5",
+        "19c641bd",
+        "44c05e59",
+        "dae9f7e9",
+        "fe18a443"
+      ],
+      "regression_ids": [
+        "41a18e5c",
+        "668f7b74",
+        "6a7808c5",
+        "71e61e15",
+        "8b09f378",
+        "9c074855",
+        "aedd338d",
+        "aef57896",
+        "c9568c9b",
+        "e9fde9fe",
+        "f0882f6e",
+        "f1d8a168",
+        "f1f9de44",
+        "ff311d07",
+        "06e965cf",
+        "0738c1ac",
+        "0fe2c676",
+        "31f146ba",
+        "3c0c1b19",
+        "436c58d5",
+        "5db4899c",
+        "60c7ca22",
+        "691cd1da",
+        "77db204d",
+        "820d56e2",
+        "896017e0",
+        "8c55d6bc",
+        "99ae54d1",
+        "a92dff92",
+        "b2595523",
+        "b8d56b89",
+        "c7e367e2",
+        "d5b9fda4",
+        "e9bb843a",
+        "edb69441",
+        "f93031d2",
+        "ffa4e57e"
+      ],
+      "cells": [
+        {
+          "domain": "enterprise",
+          "category": "dynamic-environment",
+          "n": 23,
+          "correct": 1
+        },
+        {
+          "domain": "enterprise",
+          "category": "procedure",
+          "n": 20,
+          "correct": 2
+        },
+        {
+          "domain": "enterprise",
+          "category": "static-environment",
+          "n": 62,
+          "correct": 7
+        },
+        {
+          "domain": "web",
+          "category": "dynamic-environment",
+          "n": 39,
+          "correct": 4
+        },
+        {
+          "domain": "web",
+          "category": "procedure",
+          "n": 30,
+          "correct": 2
+        },
+        {
+          "domain": "web",
+          "category": "static-environment",
+          "n": 48,
+          "correct": 5
+        }
+      ],
+      "exact_unknown": 15,
+      "phrase_presence_diagnostic": [
+        {
+          "id": "01307e07",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "025db8ef",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "080b0218",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0cf979c4",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0f970f01",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "106c321b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "14a823df",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "17a03f9b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "19367bc7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "1bfd2eac",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "229675cd",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "237d2cc5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "23c3e290",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "25b00876",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2975030d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2b96f402",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2d4e08b9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2e90de97",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "32d04f31",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "32e719c2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "38726e61",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "3b375e30",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "41a18e5c",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "42a55762",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4755f316",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4c6d1eb7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4df5e6b4",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4ed01379",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "50711c52",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5aaf0f61",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5b249b5c",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5f100f22",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "658fa827",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "668f7b74",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "68107cba",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6a7808c5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6cb8ce37",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "71e61e15",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "73b6738b",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "7a07e9a0",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "82cdfcc3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "83c35034",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "85251f36",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "85fc5722",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "876c720a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "89439d62",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8b09f378",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8b2a9dd3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8e320e42",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8f752563",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "90df8253",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "927c65a2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "95ae824f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "9680f077",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "9c074855",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a3a7b079",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a444cec8",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a45edf3e",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a482c0d9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a7edfb7a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "aa4a4b7b",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "aa64a8bd",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "adddeaa5",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "aedd338d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "aef57896",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "b7cc4da2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "bf98bb38",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c0593d69",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c0696888",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c1c000eb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c3dbec17",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c9568c9b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c9c6a06a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ca8e070b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d0d61088",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d3d7ec75",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d83c4bf7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e9fde9fe",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f0882f6e",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f1d8a168",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f1f9de44",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f3496ca5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f35bac4a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f4b2b1fb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ff311d07",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "05cce9b3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "06a5a25f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0738c1ac",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "07ab3723",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "07b49858",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "07d86be1",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0a4a47e6",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0c0fdcd7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0c6b0c60",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "10466872",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "17d63ad8",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "19c641bd",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "1b43f7df",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "238c3621",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "26a038ce",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "289aea4a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2c45ecbb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "31f146ba",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "36fe48ef",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "3c0c1b19",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "3f366e15",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "401566e6",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "41bb40df",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4266cb67",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4329b535",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "436c58d5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "44c05e59",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "499488a6",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4ca9f7d7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4d7dda89",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "521b124f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5387d23d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "597ca614",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5c826b28",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5cb7289b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5db4899c",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "60c7ca22",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "60f2b293",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "631667c9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "65fbcbdf",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6652c337",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "691cd1da",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6a23675f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6a5bbcdb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6a73e32b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6cb662d7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6d975a08",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "73297783",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "744dbdad",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "762d34b8",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "77db204d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "7c8efee5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "820d56e2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8957a127",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "896017e0",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8c55d6bc",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8f70bc0e",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "96497069",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "98b62f3d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "99ae54d1",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "99fa7c96",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a12b7094",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a42071db",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a59d50f7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a7da9ab3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a92dff92",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "b2595523",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "b5a25676",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "b8d56b89",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ba047686",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "bdf0e84b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c36b0d68",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c6124506",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c843c4ec",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d16a18fe",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d3300354",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d5b9fda4",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "deb008ed",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e4d36b58",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e71f7c92",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e77d1287",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e9bb843a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "edb69441",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "edea0219",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ee68431d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f23807ed",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f93031d2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "fec652a9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ffa4e57e",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        }
+      ],
+      "errors": []
+    },
+    "state": {
+      "gain_ids": [],
+      "regression_ids": [],
+      "cells": [
+        {
+          "domain": "enterprise",
+          "category": "dynamic-environment",
+          "n": 23,
+          "correct": 2
+        },
+        {
+          "domain": "enterprise",
+          "category": "procedure",
+          "n": 20,
+          "correct": 3
+        },
+        {
+          "domain": "enterprise",
+          "category": "static-environment",
+          "n": 62,
+          "correct": 15
+        },
+        {
+          "domain": "web",
+          "category": "dynamic-environment",
+          "n": 39,
+          "correct": 9
+        },
+        {
+          "domain": "web",
+          "category": "procedure",
+          "n": 30,
+          "correct": 7
+        },
+        {
+          "domain": "web",
+          "category": "static-environment",
+          "n": 48,
+          "correct": 14
+        }
+      ],
+      "exact_unknown": 1,
+      "phrase_presence_diagnostic": [
+        {
+          "id": "01307e07",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "025db8ef",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "080b0218",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0cf979c4",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0f970f01",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "106c321b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "14a823df",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "17a03f9b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "19367bc7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "1bfd2eac",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "229675cd",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "237d2cc5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "23c3e290",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "25b00876",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "2975030d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2b96f402",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2d4e08b9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2e90de97",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "32d04f31",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "32e719c2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "38726e61",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "3b375e30",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "41a18e5c",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "42a55762",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "4755f316",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4c6d1eb7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4df5e6b4",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "4ed01379",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "50711c52",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5aaf0f61",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "5b249b5c",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5f100f22",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "658fa827",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "668f7b74",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "68107cba",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6a7808c5",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6cb8ce37",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "71e61e15",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "73b6738b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "7a07e9a0",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "82cdfcc3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "83c35034",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "85251f36",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "85fc5722",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "876c720a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "89439d62",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8b09f378",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "8b2a9dd3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8e320e42",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8f752563",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "90df8253",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "927c65a2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "95ae824f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "9680f077",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "9c074855",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a3a7b079",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a444cec8",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a45edf3e",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a482c0d9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a7edfb7a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "aa4a4b7b",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "aa64a8bd",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "adddeaa5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "aedd338d",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "aef57896",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "b7cc4da2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "bf98bb38",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c0593d69",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c0696888",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c1c000eb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c3dbec17",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c9568c9b",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "c9c6a06a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ca8e070b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d0d61088",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d3d7ec75",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "d83c4bf7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e9fde9fe",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f0882f6e",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f1d8a168",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f1f9de44",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f3496ca5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f35bac4a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f4b2b1fb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "ff311d07",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "05cce9b3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "06a5a25f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0738c1ac",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "07ab3723",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "07b49858",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "07d86be1",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0a4a47e6",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "0c0fdcd7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0c6b0c60",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "10466872",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "17d63ad8",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "19c641bd",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "1b43f7df",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "238c3621",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "26a038ce",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "289aea4a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2c45ecbb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "31f146ba",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "36fe48ef",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "3c0c1b19",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "3f366e15",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "401566e6",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "41bb40df",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "4266cb67",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4329b535",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "436c58d5",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "44c05e59",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "499488a6",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4ca9f7d7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "4d7dda89",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "521b124f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5387d23d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "597ca614",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5c826b28",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5cb7289b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5db4899c",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "60c7ca22",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "60f2b293",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "631667c9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "65fbcbdf",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6652c337",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "691cd1da",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "6a23675f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6a5bbcdb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6a73e32b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6cb662d7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6d975a08",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "73297783",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "744dbdad",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "762d34b8",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "77db204d",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "7c8efee5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "820d56e2",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "8957a127",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "896017e0",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "8c55d6bc",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "8f70bc0e",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "96497069",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "98b62f3d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "99ae54d1",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "99fa7c96",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a12b7094",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a42071db",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a59d50f7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a7da9ab3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a92dff92",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "b2595523",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "b5a25676",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "b8d56b89",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "ba047686",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "bdf0e84b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c36b0d68",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c6124506",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c843c4ec",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "d16a18fe",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "d3300354",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d5b9fda4",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "deb008ed",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e4d36b58",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e71f7c92",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "e77d1287",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e9bb843a",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "edb69441",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "edea0219",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ee68431d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f23807ed",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f93031d2",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "fec652a9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ffa4e57e",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        }
+      ],
+      "errors": []
+    },
+    "linked": {
+      "gain_ids": [
+        "080b0218",
+        "0f970f01",
+        "106c321b",
+        "23c3e290",
+        "50711c52",
+        "78686f4e",
+        "7a07e9a0",
+        "85251f36",
+        "bf98bb38",
+        "f4b2b1fb",
+        "4252cc1c",
+        "65fbcbdf",
+        "8f70bc0e",
+        "ba047686",
+        "d16a18fe",
+        "dea446d0"
+      ],
+      "regression_ids": [
+        "668f7b74",
+        "c9568c9b",
+        "e9fde9fe",
+        "f1f9de44",
+        "ff311d07",
+        "0fe2c676",
+        "31f146ba",
+        "3c0c1b19",
+        "597ca614",
+        "5db4899c",
+        "820d56e2",
+        "99ae54d1",
+        "a92dff92",
+        "c7e367e2",
+        "e9bb843a",
+        "f93031d2"
+      ],
+      "cells": [
+        {
+          "domain": "enterprise",
+          "category": "dynamic-environment",
+          "n": 23,
+          "correct": 4
+        },
+        {
+          "domain": "enterprise",
+          "category": "procedure",
+          "n": 20,
+          "correct": 2
+        },
+        {
+          "domain": "enterprise",
+          "category": "static-environment",
+          "n": 62,
+          "correct": 19
+        },
+        {
+          "domain": "web",
+          "category": "dynamic-environment",
+          "n": 39,
+          "correct": 8
+        },
+        {
+          "domain": "web",
+          "category": "procedure",
+          "n": 30,
+          "correct": 3
+        },
+        {
+          "domain": "web",
+          "category": "static-environment",
+          "n": 48,
+          "correct": 14
+        }
+      ],
+      "exact_unknown": 0,
+      "phrase_presence_diagnostic": [
+        {
+          "id": "01307e07",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "025db8ef",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "080b0218",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0cf979c4",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0f970f01",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "106c321b",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "14a823df",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "17a03f9b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "19367bc7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "1bfd2eac",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "229675cd",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "237d2cc5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "23c3e290",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "25b00876",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "2975030d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2b96f402",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2d4e08b9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2e90de97",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "32d04f31",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "32e719c2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "38726e61",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "3b375e30",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "41a18e5c",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "42a55762",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "4755f316",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4c6d1eb7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4df5e6b4",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "4ed01379",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "50711c52",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5aaf0f61",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "5b249b5c",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5f100f22",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "658fa827",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "668f7b74",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "68107cba",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6a7808c5",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "6cb8ce37",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "71e61e15",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "73b6738b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "7a07e9a0",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "82cdfcc3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "83c35034",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "85251f36",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "85fc5722",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "876c720a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "89439d62",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8b09f378",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "8b2a9dd3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8e320e42",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8f752563",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "90df8253",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "927c65a2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "95ae824f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "9680f077",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "9c074855",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a3a7b079",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a444cec8",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a45edf3e",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a482c0d9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a7edfb7a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "aa4a4b7b",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "aa64a8bd",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "adddeaa5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "aedd338d",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "aef57896",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "b7cc4da2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "bf98bb38",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "c0593d69",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "c0696888",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c1c000eb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c3dbec17",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c9568c9b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "c9c6a06a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ca8e070b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d0d61088",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d3d7ec75",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "d83c4bf7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e9fde9fe",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f0882f6e",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f1d8a168",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f1f9de44",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f3496ca5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f35bac4a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f4b2b1fb",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "ff311d07",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "05cce9b3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "06a5a25f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0738c1ac",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "07ab3723",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "07b49858",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "07d86be1",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0a4a47e6",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "0c0fdcd7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0c6b0c60",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "10466872",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "17d63ad8",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "19c641bd",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "1b43f7df",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "238c3621",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "26a038ce",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "289aea4a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2c45ecbb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "31f146ba",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "36fe48ef",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "3c0c1b19",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "3f366e15",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "401566e6",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "41bb40df",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "4266cb67",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4329b535",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "436c58d5",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "44c05e59",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "499488a6",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4ca9f7d7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "4d7dda89",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "521b124f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5387d23d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "597ca614",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "5c826b28",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5cb7289b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5db4899c",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "60c7ca22",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "60f2b293",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "631667c9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "65fbcbdf",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "6652c337",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "691cd1da",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "6a23675f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6a5bbcdb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6a73e32b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6cb662d7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6d975a08",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "73297783",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "744dbdad",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "762d34b8",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "77db204d",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "7c8efee5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "820d56e2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "8957a127",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "896017e0",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "8c55d6bc",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "8f70bc0e",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "96497069",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "98b62f3d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "99ae54d1",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "99fa7c96",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a12b7094",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a42071db",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a59d50f7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a7da9ab3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a92dff92",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "b2595523",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "b5a25676",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "b8d56b89",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "ba047686",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "bdf0e84b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c36b0d68",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "c6124506",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c843c4ec",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d16a18fe",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "d3300354",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d5b9fda4",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "deb008ed",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e4d36b58",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e71f7c92",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "e77d1287",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e9bb843a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "edb69441",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "edea0219",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ee68431d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f23807ed",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f93031d2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "fec652a9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ffa4e57e",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        }
+      ],
+      "errors": []
+    },
+    "learned": {
+      "gain_ids": [
+        "080b0218",
+        "0f970f01",
+        "106c321b",
+        "23c3e290",
+        "50711c52",
+        "78686f4e",
+        "7a07e9a0",
+        "85251f36",
+        "bf98bb38",
+        "f4b2b1fb",
+        "4252cc1c",
+        "65fbcbdf",
+        "8f70bc0e",
+        "ba047686",
+        "d16a18fe"
+      ],
+      "regression_ids": [
+        "668f7b74",
+        "e9fde9fe",
+        "f1f9de44",
+        "ff311d07",
+        "0fe2c676",
+        "597ca614",
+        "5db4899c",
+        "99ae54d1",
+        "a92dff92",
+        "c7e367e2",
+        "f93031d2"
+      ],
+      "cells": [
+        {
+          "domain": "enterprise",
+          "category": "dynamic-environment",
+          "n": 23,
+          "correct": 4
+        },
+        {
+          "domain": "enterprise",
+          "category": "procedure",
+          "n": 20,
+          "correct": 3
+        },
+        {
+          "domain": "enterprise",
+          "category": "static-environment",
+          "n": 62,
+          "correct": 19
+        },
+        {
+          "domain": "web",
+          "category": "dynamic-environment",
+          "n": 39,
+          "correct": 9
+        },
+        {
+          "domain": "web",
+          "category": "procedure",
+          "n": 30,
+          "correct": 5
+        },
+        {
+          "domain": "web",
+          "category": "static-environment",
+          "n": 48,
+          "correct": 14
+        }
+      ],
+      "exact_unknown": 0,
+      "phrase_presence_diagnostic": [
+        {
+          "id": "01307e07",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "025db8ef",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "080b0218",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0cf979c4",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0f970f01",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "106c321b",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "14a823df",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "17a03f9b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "19367bc7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "1bfd2eac",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "229675cd",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "237d2cc5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "23c3e290",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "25b00876",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "2975030d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2b96f402",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2d4e08b9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2e90de97",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "32d04f31",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "32e719c2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "38726e61",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "3b375e30",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "41a18e5c",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "42a55762",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "4755f316",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4c6d1eb7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4df5e6b4",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "4ed01379",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "50711c52",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5aaf0f61",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "5b249b5c",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5f100f22",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "658fa827",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "668f7b74",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "68107cba",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6a7808c5",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "6cb8ce37",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "71e61e15",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "73b6738b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "7a07e9a0",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "82cdfcc3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "83c35034",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "85251f36",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "85fc5722",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "876c720a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "89439d62",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8b09f378",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "8b2a9dd3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8e320e42",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "8f752563",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "90df8253",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "927c65a2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "95ae824f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "9680f077",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "9c074855",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a3a7b079",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a444cec8",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a45edf3e",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a482c0d9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a7edfb7a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "aa4a4b7b",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "aa64a8bd",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "adddeaa5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "aedd338d",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "aef57896",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "b7cc4da2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "bf98bb38",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "c0593d69",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "c0696888",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c1c000eb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c3dbec17",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c9568c9b",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "c9c6a06a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ca8e070b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d0d61088",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d3d7ec75",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "d83c4bf7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e9fde9fe",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f0882f6e",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f1d8a168",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f1f9de44",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f3496ca5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f35bac4a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "f4b2b1fb",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "ff311d07",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "05cce9b3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "06a5a25f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0738c1ac",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "07ab3723",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "07b49858",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "07d86be1",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0a4a47e6",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "0c0fdcd7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "0c6b0c60",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "10466872",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "17d63ad8",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "19c641bd",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "1b43f7df",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "238c3621",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "26a038ce",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "289aea4a",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "2c45ecbb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "31f146ba",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "36fe48ef",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "3c0c1b19",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "3f366e15",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "401566e6",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "41bb40df",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "4266cb67",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4329b535",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "436c58d5",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "44c05e59",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "499488a6",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "4ca9f7d7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "4d7dda89",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "521b124f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5387d23d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "597ca614",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "5c826b28",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5cb7289b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "5db4899c",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "60c7ca22",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "60f2b293",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "631667c9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "65fbcbdf",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "6652c337",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "691cd1da",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "6a23675f",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6a5bbcdb",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6a73e32b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6cb662d7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "6d975a08",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "73297783",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "744dbdad",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "762d34b8",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "77db204d",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "7c8efee5",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "820d56e2",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "8957a127",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "896017e0",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "8c55d6bc",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "8f70bc0e",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "96497069",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "98b62f3d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "99ae54d1",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "99fa7c96",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a12b7094",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a42071db",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "a59d50f7",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a7da9ab3",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "a92dff92",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "b2595523",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "b5a25676",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "b8d56b89",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "ba047686",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "bdf0e84b",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c36b0d68",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "c6124506",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "c843c4ec",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d16a18fe",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "d3300354",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "d5b9fda4",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "deb008ed",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e4d36b58",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e71f7c92",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "e77d1287",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "e9bb843a",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "edb69441",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "edea0219",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ee68431d",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f23807ed",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "f93031d2",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": true
+        },
+        {
+          "id": "fec652a9",
+          "native_correct": false,
+          "reference_phrase_match_in_selected_text": false
+        },
+        {
+          "id": "ffa4e57e",
+          "native_correct": true,
+          "reference_phrase_match_in_selected_text": true
+        }
+      ],
+      "errors": []
+    }
+  },
+  "learned_choices": {
+    "linked": 174,
+    "state": 48
+  },
+  "all_truncations": [
+    {
+      "id": "8955b988",
+      "phase": "train",
+      "arm": "state",
+      "native_correct": false
+    },
+    {
+      "id": "4755f316",
+      "phase": "holdout",
+      "arm": "state",
+      "native_correct": false
+    },
+    {
+      "id": "f4b2b1fb",
+      "phase": "holdout",
+      "arm": "none",
+      "native_correct": false
+    },
+    {
+      "id": "07d86be1",
+      "phase": "holdout",
+      "arm": "linked",
+      "native_correct": false
+    },
+    {
+      "id": "4329b535",
+      "phase": "holdout",
+      "arm": "none",
+      "native_correct": false
+    }
+  ],
+  "regressions": [
+    {
+      "id": "668f7b74",
+      "domain": "enterprise",
+      "category": "static-environment",
+      "selected_arm": "linked",
+      "prediction": "Manage Attachments; More options",
+      "reference": "Update; Delete",
+      "baseline_prediction": "Update; Delete"
+    },
+    {
+      "id": "e9fde9fe",
+      "domain": "enterprise",
+      "category": "static-environment",
+      "selected_arm": "linked",
+      "prediction": "boxed{Class: Asset}",
+      "reference": "consumable",
+      "baseline_prediction": "boxed{Class: Asset | Class: Consumable | Class: Asset}"
+    },
+    {
+      "id": "f1f9de44",
+      "domain": "enterprise",
+      "category": "static-environment",
+      "selected_arm": "linked",
+      "prediction": "boxed{UNKNOWN}",
+      "reference": "true",
+      "baseline_prediction": "true"
+    },
+    {
+      "id": "ff311d07",
+      "domain": "enterprise",
+      "category": "static-environment",
+      "selected_arm": "linked",
+      "prediction": "Inquiry / Help",
+      "reference": "false",
+      "baseline_prediction": "false"
+    },
+    {
+      "id": "0fe2c676",
+      "domain": "web",
+      "category": "procedure",
+      "selected_arm": "linked",
+      "prediction": "\\boxed{B}",
+      "reference": "C",
+      "baseline_prediction": "\\boxed{C}"
+    },
+    {
+      "id": "597ca614",
+      "domain": "web",
+      "category": "static-environment",
+      "selected_arm": "linked",
+      "prediction": "\\boxed{Catalog, Sales, Customers}",
+      "reference": "Orders, Products",
+      "baseline_prediction": "\\boxed{Products, Orders, Pages}"
+    },
+    {
+      "id": "5db4899c",
+      "domain": "web",
+      "category": "static-environment",
+      "selected_arm": "linked",
+      "prediction": "boxed{Subscribe, Hide this forum}",
+      "reference": "Hidden forums, Trash",
+      "baseline_prediction": "The links that appear in the `Toolbox` on your profile page but not on the other user's profile page are:\n\n- Hidden forums\n- Trash"
+    },
+    {
+      "id": "99ae54d1",
+      "domain": "web",
+      "category": "procedure",
+      "selected_arm": "linked",
+      "prediction": "The link that opens the biography editor is located at the following URL: http://localhost:9080/user/MarvelsGrantMan136/edit_biography",
+      "reference": "Edit biography",
+      "baseline_prediction": "The link that opens the biography editor is \\boxed{'Edit biography'}."
+    },
+    {
+      "id": "a92dff92",
+      "domain": "web",
+      "category": "procedure",
+      "selected_arm": "linked",
+      "prediction": "\\boxed{click('100')}",
+      "reference": "Bans",
+      "baseline_prediction": "\\boxed{Bans}"
+    },
+    {
+      "id": "c7e367e2",
+      "domain": "web",
+      "category": "static-environment",
+      "selected_arm": "linked",
+      "prediction": "\\boxed{C}",
+      "reference": "B",
+      "baseline_prediction": "\\boxed{B}"
+    },
+    {
+      "id": "f93031d2",
+      "domain": "web",
+      "category": "dynamic-environment",
+      "selected_arm": "linked",
+      "prediction": "\\boxed{Pending}\nThe text shown next to the order number inside the parentheses after canceling an order that originally has the state \"pending\" is \"Pending\".",
+      "reference": "The order confirmation email was sent",
+      "baseline_prediction": "\\boxed{The order confirmation email was sent}"
+    }
+  ]
+}

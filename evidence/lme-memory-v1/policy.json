@@ -1,0 +1,1392 @@
+{
+  "policy": {
+    "binding": "3af1d1d640d9c057b2508195d0882008f454107e18a7e5b2ef5f4e2c5b652ddc",
+    "baseline_action": "state",
+    "candidate_action": "linked",
+    "coefficients": [
+      -0.12456305006852335,
+      0.014061008049199079,
+      -1.9313549585667404,
+      -0.6138491963154034,
+      -0.16241707688801724,
+      1.2443203923389785,
+      -0.19291556180870503,
+      1.2475405600338545,
+      -0.14275204798426594,
+      0.8276450800757164
+    ],
+    "intercept": 0.754080268969178
+  },
+  "fit_seconds": 0.12446099997032434,
+  "training_observations": [
+    {
+      "cluster_id": "057a2d4d",
+      "features": [
+        0.088,
+        0.3125,
+        1.0,
+        0.0,
+        0.125,
+        0.125,
+        0.2,
+        0.4,
+        0.2857142857142857,
+        0.9957682291666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5978,
+      "candidate_cost": 6126
+    },
+    {
+      "cluster_id": "0b50ca0d",
+      "features": [
+        0.202,
+        0.734375,
+        1.0,
+        1.0,
+        0.125,
+        0.0625,
+        0.25,
+        0.25,
+        0.2857142857142857,
+        0.8681640625
+      ],
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "baseline_cost": 6044,
+      "candidate_cost": 5340
+    },
+    {
+      "cluster_id": "0d07143c",
+      "features": [
+        0.084,
+        0.3125,
+        0.0,
+        1.0,
+        0.125,
+        0.125,
+        0.25,
+        0.25,
+        0.3333333333333333,
+        0.89306640625
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5540,
+      "candidate_cost": 5489
+    },
+    {
+      "cluster_id": "0f8c85a6",
+      "features": [
+        0.07,
+        0.25,
+        0.0,
+        0.0,
+        0.125,
+        0.25,
+        0.25,
+        0.5,
+        0.14285714285714285,
+        0.9798177083333334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5652,
+      "candidate_cost": 6029
+    },
+    {
+      "cluster_id": "233f9f09",
+      "features": [
+        0.152,
+        0.421875,
+        1.0,
+        0.0,
+        0.1875,
+        0.125,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.16666666666666666,
+        0.8444010416666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 6013,
+      "candidate_cost": 5194
+    },
+    {
+      "cluster_id": "2721ca7f",
+      "features": [
+        0.102,
+        0.421875,
+        1.0,
+        1.0,
+        0.0625,
+        0.25,
+        0.2,
+        0.4,
+        0.25,
+        0.986328125
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5679,
+      "candidate_cost": 6065
+    },
+    {
+      "cluster_id": "32909aa1",
+      "features": [
+        0.09,
+        0.28125,
+        1.0,
+        0.0,
+        0.0625,
+        0.0625,
+        0.25,
+        0.25,
+        0.2857142857142857,
+        0.9816080729166666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5887,
+      "candidate_cost": 6047
+    },
+    {
+      "cluster_id": "3a131a42",
+      "features": [
+        0.106,
+        0.421875,
+        0.0,
+        1.0,
+        0.0625,
+        0.0625,
+        0.25,
+        0.25,
+        0.3333333333333333,
+        0.95458984375
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5561,
+      "candidate_cost": 5867
+    },
+    {
+      "cluster_id": "3a2e9368",
+      "features": [
+        0.142,
+        0.453125,
+        1.0,
+        0.0,
+        0.125,
+        0.125,
+        0.6,
+        0.2,
+        0.14285714285714285,
+        0.9850260416666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 4813,
+      "candidate_cost": 6058
+    },
+    {
+      "cluster_id": "3fd81278",
+      "features": [
+        0.106,
+        0.359375,
+        0.0,
+        1.0,
+        0.0625,
+        0.1875,
+        0.25,
+        0.5,
+        0.16666666666666666,
+        0.9855143229166666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": true,
+      "baseline_cost": 6134,
+      "candidate_cost": 6063
+    },
+    {
+      "cluster_id": "4dffe641",
+      "features": [
+        0.144,
+        0.578125,
+        1.0,
+        1.0,
+        0.0625,
+        0.125,
+        0.25,
+        0.25,
+        0.3333333333333333,
+        0.8885091145833334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5663,
+      "candidate_cost": 5465
+    },
+    {
+      "cluster_id": "52dd33bb",
+      "features": [
+        0.3,
+        1.0,
+        0.0,
+        1.0,
+        0.0625,
+        0.125,
+        0.25,
+        0.25,
+        0.3333333333333333,
+        0.9422200520833334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 6091,
+      "candidate_cost": 5795
+    },
+    {
+      "cluster_id": "58c34839",
+      "features": [
+        0.186,
+        0.65625,
+        0.0,
+        0.0,
+        0.0625,
+        0.0625,
+        0.25,
+        0.25,
+        0.2857142857142857,
+        0.9261067708333334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 6015,
+      "candidate_cost": 5696
+    },
+    {
+      "cluster_id": "634973c3",
+      "features": [
+        0.102,
+        0.390625,
+        1.0,
+        0.0,
+        0.125,
+        0.0625,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.2,
+        0.8474934895833334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5102,
+      "candidate_cost": 5220
+    },
+    {
+      "cluster_id": "679111c6",
+      "features": [
+        0.11,
+        0.453125,
+        0.0,
+        1.0,
+        0.1875,
+        0.125,
+        0.25,
+        0.25,
+        0.3333333333333333,
+        0.9475911458333334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5146,
+      "candidate_cost": 5828
+    },
+    {
+      "cluster_id": "73cbefdc",
+      "features": [
+        0.278,
+        0.9375,
+        1.0,
+        1.0,
+        0.0625,
+        0.1875,
+        0.2857142857142857,
+        0.42857142857142855,
+        0.2,
+        0.9794921875
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5939,
+      "candidate_cost": 6024
+    },
+    {
+      "cluster_id": "75816b26",
+      "features": [
+        0.262,
+        0.546875,
+        0.0,
+        0.0,
+        0.125,
+        0.1875,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.2,
+        0.8623046875
+      ],
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "baseline_cost": 5247,
+      "candidate_cost": 5304
+    },
+    {
+      "cluster_id": "767e4106",
+      "features": [
+        0.084,
+        0.328125,
+        1.0,
+        0.0,
+        0.0625,
+        0.125,
+        0.25,
+        0.25,
+        0.3333333333333333,
+        0.9449869791666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5751,
+      "candidate_cost": 5829
+    },
+    {
+      "cluster_id": "7e32e4a2",
+      "features": [
+        0.158,
+        0.671875,
+        1.0,
+        1.0,
+        0.125,
+        0.1875,
+        0.2,
+        0.4,
+        0.2222222222222222,
+        0.9873046875
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5972,
+      "candidate_cost": 6072
+    },
+    {
+      "cluster_id": "87711b62",
+      "features": [
+        0.1,
+        0.359375,
+        1.0,
+        1.0,
+        0.0625,
+        0.25,
+        0.25,
+        0.5,
+        0.16666666666666666,
+        0.9855143229166666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5668,
+      "candidate_cost": 6072
+    },
+    {
+      "cluster_id": "882965b7",
+      "features": [
+        0.122,
+        0.59375,
+        1.0,
+        1.0,
+        0.0625,
+        0.25,
+        0.2,
+        0.6,
+        0.14285714285714285,
+        0.9889322916666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5475,
+      "candidate_cost": 6084
+    },
+    {
+      "cluster_id": "901b7d17",
+      "features": [
+        0.112,
+        0.328125,
+        0.0,
+        1.0,
+        0.125,
+        0.1875,
+        0.25,
+        0.25,
+        0.3333333333333333,
+        0.9427083333333334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5228,
+      "candidate_cost": 5797
+    },
+    {
+      "cluster_id": "9c24f41e",
+      "features": [
+        0.146,
+        0.46875,
+        0.0,
+        1.0,
+        0.125,
+        0.125,
+        0.25,
+        0.5,
+        0.14285714285714285,
+        0.990234375
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5951,
+      "candidate_cost": 6090
+    },
+    {
+      "cluster_id": "9c32bca6",
+      "features": [
+        0.08,
+        0.34375,
+        0.0,
+        0.0,
+        0.125,
+        0.25,
+        0.2,
+        0.4,
+        0.2857142857142857,
+        0.9607747395833334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5416,
+      "candidate_cost": 5905
+    },
+    {
+      "cluster_id": "ad903be2",
+      "features": [
+        0.088,
+        0.3125,
+        1.0,
+        0.0,
+        0.125,
+        0.25,
+        0.4,
+        0.4,
+        0.14285714285714285,
+        0.9908854166666666
+      ],
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "baseline_cost": 5371,
+      "candidate_cost": 6091
+    },
+    {
+      "cluster_id": "b54161f8",
+      "features": [
+        0.094,
+        0.359375,
+        1.0,
+        0.0,
+        0.0625,
+        0.0625,
+        0.25,
+        0.25,
+        0.3333333333333333,
+        0.9558919270833334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5768,
+      "candidate_cost": 5879
+    },
+    {
+      "cluster_id": "bdb825a3",
+      "features": [
+        0.086,
+        0.25,
+        0.0,
+        1.0,
+        0.125,
+        0.25,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.25,
+        0.9886067708333334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5099,
+      "candidate_cost": 6080
+    },
+    {
+      "cluster_id": "bfb3bcc4",
+      "features": [
+        0.39,
+        0.765625,
+        1.0,
+        0.0,
+        0.1875,
+        0.1875,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.2,
+        0.8527018229166666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5206,
+      "candidate_cost": 5245
+    },
+    {
+      "cluster_id": "c60f4681",
+      "features": [
+        0.284,
+        1.0,
+        1.0,
+        1.0,
+        0.125,
+        0.125,
+        0.3333333333333333,
+        0.16666666666666666,
+        0.375,
+        0.9938151041666666
+      ],
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "baseline_cost": 6022,
+      "candidate_cost": 6112
+    },
+    {
+      "cluster_id": "c80ca967",
+      "features": [
+        0.104,
+        0.40625,
+        0.0,
+        0.0,
+        0.0625,
+        0.125,
+        0.4,
+        0.2,
+        0.25,
+        0.9890950520833334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 6037,
+      "candidate_cost": 6082
+    },
+    {
+      "cluster_id": "cf62efad",
+      "features": [
+        0.072,
+        0.265625,
+        0.0,
+        0.0,
+        0.125,
+        0.25,
+        0.25,
+        0.5,
+        0.14285714285714285,
+        0.97998046875
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5652,
+      "candidate_cost": 6027
+    },
+    {
+      "cluster_id": "dd53ab77",
+      "features": [
+        0.132,
+        0.515625,
+        1.0,
+        0.0,
+        0.125,
+        0.125,
+        0.25,
+        0.25,
+        0.4,
+        0.98681640625
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 4843,
+      "candidate_cost": 6074
+    },
+    {
+      "cluster_id": "e7292dab",
+      "features": [
+        0.154,
+        0.671875,
+        0.0,
+        1.0,
+        0.125,
+        0.1875,
+        0.42857142857142855,
+        0.14285714285714285,
+        0.3,
+        0.9951171875
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 6058,
+      "candidate_cost": 6125
+    },
+    {
+      "cluster_id": "e823a94a",
+      "features": [
+        0.106,
+        0.53125,
+        0.0,
+        1.0,
+        0.125,
+        0.25,
+        0.2,
+        0.4,
+        0.25,
+        0.9921875
+      ],
+      "baseline_correct": false,
+      "candidate_correct": true,
+      "baseline_cost": 5977,
+      "candidate_cost": 6098
+    },
+    {
+      "cluster_id": "ecdb7d5e",
+      "features": [
+        0.384,
+        0.78125,
+        0.0,
+        1.0,
+        0.0625,
+        0.125,
+        0.25,
+        0.25,
+        0.3333333333333333,
+        0.9051106770833334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5330,
+      "candidate_cost": 5567
+    },
+    {
+      "cluster_id": "fe41b553",
+      "features": [
+        0.102,
+        0.40625,
+        0.0,
+        0.0,
+        0.0625,
+        0.1875,
+        0.4,
+        0.2,
+        0.2857142857142857,
+        0.9954427083333334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5557,
+      "candidate_cost": 6121
+    },
+    {
+      "cluster_id": "00aa905a",
+      "features": [
+        0.084,
+        0.25,
+        0.0,
+        0.0,
+        0.125,
+        0.4375,
+        0.25,
+        0.5,
+        0.2,
+        0.9825846354166666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": true,
+      "baseline_cost": 5341,
+      "candidate_cost": 6043
+    },
+    {
+      "cluster_id": "07fff330",
+      "features": [
+        0.16,
+        0.53125,
+        1.0,
+        0.0,
+        0.1875,
+        0.125,
+        0.2,
+        0.4,
+        0.2857142857142857,
+        0.9881184895833334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5838,
+      "candidate_cost": 6077
+    },
+    {
+      "cluster_id": "10003186",
+      "features": [
+        0.072,
+        0.296875,
+        1.0,
+        0.0,
+        0.1875,
+        0.125,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.2,
+        0.9845377604166666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 6022,
+      "candidate_cost": 6054
+    },
+    {
+      "cluster_id": "11dac74b",
+      "features": [
+        0.088,
+        0.34375,
+        0.0,
+        1.0,
+        0.1875,
+        0.1875,
+        0.2,
+        0.4,
+        0.2857142857142857,
+        0.9982096354166666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5936,
+      "candidate_cost": 6144
+    },
+    {
+      "cluster_id": "15e5efa6",
+      "features": [
+        0.078,
+        0.328125,
+        0.0,
+        0.0,
+        0.125,
+        0.4375,
+        0.14285714285714285,
+        0.5714285714285714,
+        0.25,
+        0.9889322916666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": true,
+      "baseline_cost": 4912,
+      "candidate_cost": 6095
+    },
+    {
+      "cluster_id": "18f9d965",
+      "features": [
+        0.09,
+        0.390625,
+        1.0,
+        1.0,
+        0.1875,
+        0.4375,
+        0.25,
+        0.5,
+        0.18181818181818182,
+        0.9967447916666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5541,
+      "candidate_cost": 6132
+    },
+    {
+      "cluster_id": "2b1a8fc6",
+      "features": [
+        0.094,
+        0.375,
+        1.0,
+        1.0,
+        0.0625,
+        0.125,
+        0.2,
+        0.4,
+        0.3333333333333333,
+        0.9881184895833334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 4850,
+      "candidate_cost": 6107
+    },
+    {
+      "cluster_id": "2ca2d443",
+      "features": [
+        0.178,
+        0.5625,
+        1.0,
+        1.0,
+        0.1875,
+        0.25,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.25,
+        0.9900716145833334
+      ],
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "baseline_cost": 5281,
+      "candidate_cost": 6089
+    },
+    {
+      "cluster_id": "2e67d04f",
+      "features": [
+        0.118,
+        0.46875,
+        1.0,
+        0.0,
+        0.3125,
+        0.3125,
+        0.2857142857142857,
+        0.2857142857142857,
+        0.25,
+        0.9835611979166666
+      ],
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "baseline_cost": 6001,
+      "candidate_cost": 6056
+    },
+    {
+      "cluster_id": "2ee130d2",
+      "features": [
+        0.106,
+        0.34375,
+        0.0,
+        1.0,
+        0.125,
+        0.125,
+        0.2857142857142857,
+        0.2857142857142857,
+        0.3333333333333333,
+        0.97119140625
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5932,
+      "candidate_cost": 5973
+    },
+    {
+      "cluster_id": "3269a3c5",
+      "features": [
+        0.112,
+        0.375,
+        1.0,
+        1.0,
+        0.125,
+        0.3125,
+        0.16666666666666666,
+        0.5,
+        0.25,
+        0.98681640625
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 6104,
+      "candidate_cost": 6073
+    },
+    {
+      "cluster_id": "4f92aa38",
+      "features": [
+        0.186,
+        0.65625,
+        0.0,
+        1.0,
+        0.125,
+        0.1875,
+        0.25,
+        0.5,
+        0.16666666666666666,
+        0.9671223958333334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5047,
+      "candidate_cost": 5953
+    },
+    {
+      "cluster_id": "5d6b993a",
+      "features": [
+        0.07,
+        0.28125,
+        1.0,
+        0.0,
+        0.0625,
+        0.375,
+        0.14285714285714285,
+        0.5714285714285714,
+        0.25,
+        0.9991861979166666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5217,
+      "candidate_cost": 6146
+    },
+    {
+      "cluster_id": "609acb91",
+      "features": [
+        0.15,
+        0.578125,
+        0.0,
+        1.0,
+        0.25,
+        0.125,
+        0.4,
+        0.2,
+        0.2857142857142857,
+        0.9996744791666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5920,
+      "candidate_cost": 6154
+    },
+    {
+      "cluster_id": "6f9cb5fc",
+      "features": [
+        0.1,
+        0.40625,
+        0.0,
+        1.0,
+        0.0625,
+        0.25,
+        0.14285714285714285,
+        0.5714285714285714,
+        0.25,
+        0.97705078125
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 4732,
+      "candidate_cost": 6009
+    },
+    {
+      "cluster_id": "70e79657",
+      "features": [
+        0.07,
+        0.25,
+        0.0,
+        0.0,
+        0.125,
+        0.125,
+        0.2857142857142857,
+        0.2857142857142857,
+        0.3333333333333333,
+        0.99169921875
+      ],
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "baseline_cost": 6053,
+      "candidate_cost": 6102
+    },
+    {
+      "cluster_id": "86fa86eb",
+      "features": [
+        0.086,
+        0.359375,
+        0.0,
+        1.0,
+        0.0625,
+        0.1875,
+        0.2,
+        0.4,
+        0.3333333333333333,
+        0.9983723958333334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5695,
+      "candidate_cost": 6140
+    },
+    {
+      "cluster_id": "8955b988",
+      "features": [
+        0.208,
+        0.734375,
+        1.0,
+        1.0,
+        0.0625,
+        0.375,
+        0.25,
+        0.5,
+        0.2222222222222222,
+        0.9879557291666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5187,
+      "candidate_cost": 6103
+    },
+    {
+      "cluster_id": "8cb3280c",
+      "features": [
+        0.092,
+        0.328125,
+        1.0,
+        0.0,
+        0.1875,
+        0.3125,
+        0.16666666666666666,
+        0.5,
+        0.25,
+        0.9915364583333334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 6142,
+      "candidate_cost": 6103
+    },
+    {
+      "cluster_id": "90dc7e66",
+      "features": [
+        0.15,
+        0.5,
+        0.0,
+        1.0,
+        0.0625,
+        0.1875,
+        0.2,
+        0.4,
+        0.3333333333333333,
+        0.9864908854166666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5013,
+      "candidate_cost": 6076
+    },
+    {
+      "cluster_id": "91d0775e",
+      "features": [
+        0.25,
+        0.546875,
+        0.0,
+        0.0,
+        0.25,
+        0.375,
+        0.14285714285714285,
+        0.5714285714285714,
+        0.2222222222222222,
+        0.9930013020833334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 6090,
+      "candidate_cost": 6107
+    },
+    {
+      "cluster_id": "97d5309a",
+      "features": [
+        0.11,
+        0.359375,
+        0.0,
+        0.0,
+        0.25,
+        0.1875,
+        0.2,
+        0.4,
+        0.2857142857142857,
+        0.984375
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 6128,
+      "candidate_cost": 6053
+    },
+    {
+      "cluster_id": "a62de1f1",
+      "features": [
+        0.072,
+        0.265625,
+        0.0,
+        1.0,
+        0.125,
+        0.1875,
+        0.2,
+        0.4,
+        0.3333333333333333,
+        0.9557291666666666
+      ],
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "baseline_cost": 4989,
+      "candidate_cost": 5878
+    },
+    {
+      "cluster_id": "abadf765",
+      "features": [
+        0.082,
+        0.28125,
+        1.0,
+        1.0,
+        0.125,
+        0.25,
+        0.2,
+        0.4,
+        0.3333333333333333,
+        0.99853515625
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5980,
+      "candidate_cost": 6141
+    },
+    {
+      "cluster_id": "b4dcf650",
+      "features": [
+        0.174,
+        0.65625,
+        0.0,
+        0.0,
+        0.125,
+        0.3125,
+        0.16666666666666666,
+        0.5,
+        0.2857142857142857,
+        0.9928385416666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 4776,
+      "candidate_cost": 6134
+    },
+    {
+      "cluster_id": "d1d8cf9f",
+      "features": [
+        0.092,
+        0.375,
+        0.0,
+        0.0,
+        0.125,
+        0.375,
+        0.14285714285714285,
+        0.5714285714285714,
+        0.25,
+        0.9918619791666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": true,
+      "baseline_cost": 5065,
+      "candidate_cost": 6096
+    },
+    {
+      "cluster_id": "d6da3938",
+      "features": [
+        0.076,
+        0.25,
+        1.0,
+        0.0,
+        0.125,
+        0.25,
+        0.16666666666666666,
+        0.5,
+        0.2857142857142857,
+        0.9798177083333334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5077,
+      "candidate_cost": 6028
+    },
+    {
+      "cluster_id": "d886b018",
+      "features": [
+        0.114,
+        0.375,
+        0.0,
+        0.0,
+        0.125,
+        0.375,
+        0.14285714285714285,
+        0.7142857142857143,
+        0.1111111111111111,
+        0.9951171875
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5605,
+      "candidate_cost": 6120
+    },
+    {
+      "cluster_id": "e3a1d7f3",
+      "features": [
+        0.066,
+        0.234375,
+        0.0,
+        0.0,
+        0.0625,
+        0.25,
+        0.4,
+        0.4,
+        0.16666666666666666,
+        0.9886067708333334
+      ],
+      "baseline_correct": true,
+      "candidate_correct": true,
+      "baseline_cost": 4591,
+      "candidate_cost": 6080
+    },
+    {
+      "cluster_id": "e83245c5",
+      "features": [
+        0.07,
+        0.3125,
+        0.0,
+        1.0,
+        0.25,
+        0.3125,
+        0.25,
+        0.375,
+        0.2727272727272727,
+        0.9685872395833334
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 6110,
+      "candidate_cost": 5958
+    },
+    {
+      "cluster_id": "eab07e81",
+      "features": [
+        0.08,
+        0.296875,
+        0.0,
+        0.0,
+        0.125,
+        0.125,
+        0.42857142857142855,
+        0.2857142857142857,
+        0.2,
+        0.99560546875
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5933,
+      "candidate_cost": 6123
+    },
+    {
+      "cluster_id": "eef545a0",
+      "features": [
+        0.108,
+        0.421875,
+        1.0,
+        1.0,
+        0.1875,
+        0.1875,
+        0.2,
+        0.4,
+        0.2857142857142857,
+        0.9860026041666666
+      ],
+      "baseline_correct": true,
+      "candidate_correct": false,
+      "baseline_cost": 6154,
+      "candidate_cost": 6083
+    },
+    {
+      "cluster_id": "f13eb38d",
+      "features": [
+        0.184,
+        0.703125,
+        1.0,
+        1.0,
+        0.1875,
+        0.1875,
+        0.5,
+        0.25,
+        0.16666666666666666,
+        0.9869791666666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 4993,
+      "candidate_cost": 6070
+    },
+    {
+      "cluster_id": "f61a096f",
+      "features": [
+        0.086,
+        0.359375,
+        1.0,
+        0.0,
+        0.1875,
+        0.3125,
+        0.16666666666666666,
+        0.5,
+        0.2857142857142857,
+        0.9274088541666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 4871,
+      "candidate_cost": 5704
+    },
+    {
+      "cluster_id": "f928c075",
+      "features": [
+        0.104,
+        0.328125,
+        0.0,
+        0.0,
+        0.125,
+        0.25,
+        0.25,
+        0.375,
+        0.3333333333333333,
+        0.9762369791666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 5357,
+      "candidate_cost": 6004
+    },
+    {
+      "cluster_id": "f9f9cd61",
+      "features": [
+        0.08,
+        0.21875,
+        1.0,
+        0.0,
+        0.1875,
+        0.25,
+        0.4,
+        0.2,
+        0.2857142857142857,
+        0.9918619791666666
+      ],
+      "baseline_correct": false,
+      "candidate_correct": false,
+      "baseline_cost": 6058,
+      "candidate_cost": 6102
+    }
+  ],
+  "active": false
+}

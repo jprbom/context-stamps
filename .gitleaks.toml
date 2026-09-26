@@ -192,3 +192,19 @@ condition = "AND"
 regexTarget = "match"
 paths = ['''(^|[\\/])evidence[\\/]ruler-local-learning-v1[\\/]registration\.json$''']
 regexes = ['''^tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"$''']
+
+[[allowlists]]
+description = "Exact public tokenizer checksum in LongMemEval development registration"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]lme-memory-v1[\\/]registration\.json$''']
+regexes = ['''^tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539"$''']
+
+[[allowlists]]
+description = "Exact checksum of public benchmark scoring references, not a credential"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]lme-memory-v1[\\/]prepared\.json$''']
+regexes = ['''^keys_sha256": "0024b11b6c7b3f37001bcceaece681452ee7831b362ca16dbe7dd42fb7c8718b"$''']

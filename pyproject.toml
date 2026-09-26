@@ -45,3 +45,7 @@ target-version = "py310"
 
 [tool.ruff.lint]
 select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.ruff.lint.per-file-ignores]
+# Preserve the exact reviewed upstream scorer bytes for native metric replay.
+"evidence/lme-memory-v1/upstream/qa_eval_metrics.py" = ["I001", "F401"]

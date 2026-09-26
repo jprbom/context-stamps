@@ -1,0 +1,76 @@
+{
+  "train": {
+    "none": {
+      "n": 72,
+      "correct": 6,
+      "errors": 0,
+      "truncated": 0,
+      "input_tokens": 12527,
+      "output_tokens": 587,
+      "generation_wall_seconds": 22.800500000128523,
+      "median_generation_seconds": 0.31042314996011555
+    },
+    "state": {
+      "n": 72,
+      "correct": 10,
+      "errors": 0,
+      "truncated": 1,
+      "input_tokens": 400529,
+      "output_tokens": 897,
+      "generation_wall_seconds": 47.702039199881256,
+      "median_generation_seconds": 0.6511635000351816
+    },
+    "linked": {
+      "n": 72,
+      "correct": 14,
+      "errors": 0,
+      "truncated": 0,
+      "input_tokens": 428634,
+      "output_tokens": 636,
+      "generation_wall_seconds": 48.462395000155084,
+      "median_generation_seconds": 0.6713712000055239
+    }
+  },
+  "holdout": {
+    "none": {
+      "n": 222,
+      "correct": 21,
+      "errors": 0,
+      "truncated": 2,
+      "input_tokens": 38217,
+      "output_tokens": 2800,
+      "generation_wall_seconds": 73.88929340057075,
+      "median_generation_seconds": 0.3051317999488674
+    },
+    "state": {
+      "n": 222,
+      "correct": 50,
+      "errors": 0,
+      "truncated": 1,
+      "input_tokens": 1248147,
+      "output_tokens": 2321,
+      "generation_wall_seconds": 141.77581600146368,
+      "median_generation_seconds": 0.6531948000774719
+    },
+    "linked": {
+      "n": 222,
+      "correct": 50,
+      "errors": 0,
+      "truncated": 1,
+      "input_tokens": 1321114,
+      "output_tokens": 2454,
+      "generation_wall_seconds": 152.5920971998712,
+      "median_generation_seconds": 0.6817670499440283
+    },
+    "learned": {
+      "n": 222,
+      "correct": 54,
+      "errors": 0,
+      "truncated": 0,
+      "input_tokens": 1300261,
+      "output_tokens": 2208,
+      "generation_wall_seconds": 149.87729819992092,
+      "median_generation_seconds": 0.6770802499959245
+    }
+  }
+}

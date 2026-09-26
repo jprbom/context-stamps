@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "files": {
+    "engineering.json": "294a670986cc1444954378728c583f01072274af68323ec4a1b81b1d6fc39188",
+    "expanded-scan-review.json": "89ec28fb80d73deec4095744a71dee945467c0e5176f6ec6caaea974e44c5c94",
+    "failure-review.json": "abd931c5742e4cccb19928413b1089ed560cf95e6fee7567dc1882657a7396b7",
+    "holdout-choices.json": "63231f725302610fa15a9955d174294405356225bef5d460c6725601684c027b",
+    "index.json": "7603f6377667d4fdaa02a837c5c2a8ddb6d9f173ae76d3273b57c7fd8b6be4c7",
+    "policy.json": "d45c3ed836c9cb341176b81ebb232a6562059986cfbebc58d8d457daf004a8d0",
+    "prepared.json": "7949bbe0b646e1a277853388e3821cd52af9ac65380035d53f014a612f0c4f41",
+    "README.md": "5ef89377c74040c236add457b343db1be3047470bad7d1bbe87c3c8bd9fdb7d6",
+    "records.json.gz": "63313fbedca20b0a2c70531d0342de5ab50170d8d879fe96ba5bcc763d8dec24",
+    "registration.json": "b2df04a59dedab2878030cab3a9e47cde099949babff4aeb9a6570631dea0be7",
+    "search/records.jsonl": "acb5fb0678c17c0a07b199c5405b77fe744080854608ba319c254e0d4cd80610",
+    "search/registration.json": "5caf2de1874f1a73363b797043d0617bd9e8253617445c37fc2896cde732e822",
+    "search/summary.json": "3c04a2e795ff33269d965c3618002acb689674c54654ce9f6f4ad469ba7ee72b",
+    "search-selective/records.jsonl": "8a7aa4863f2498408e3be1ae346948f1ad77d237df4978639d7c49786c206d88",
+    "search-selective/registration.json": "5caf2de1874f1a73363b797043d0617bd9e8253617445c37fc2896cde732e822",
+    "search-selective/selection.json": "ab7656bbd62f657345a1af286d3c3fac3ee9edd8c9f98c279615ef11511d7818",
+    "search-selective/summary.json": "98b353092aa3c633dc182b24f1e5976e8ec1d2ac319724d516e1ce115acf63ee",
+    "summary.json": "eda10e22a57237f5be69dee2cc767022975626a283a1c315915af44030ceb73e",
+    "upstream/LICENSE.txt": "1eb85fc97224598dad1852b5d6483bbcf0aa8608790dcc657a5a2a761ae9c8c6",
+    "upstream/qa_eval_metrics.py": "e95b0fa4ecacdea5adfcb4a3a82539523bc9d102866a1015aca6c29bdcc1805a"
+  },
+  "original_logs": {
+    "train": "b4d83ed33108798b167f3553e03df068bff850ece5fcccece5ae5aea2ca4a0dd",
+    "holdout": "557a512a113f5aea858346d3113c71aa36d101eb6e58e34afd74a1df9aeab166"
+  },
+  "expanded_bytes": 2753522,
+  "disclosure": "Short public-benchmark predictions/references and source identities; no raw histories, prompts or private records",
+  "tool_sources": {
+    "experiments/export_lme_memory.py": "ae5b1b37f613487f1b7b68f4acf848aa1bcdbb12c8f1e57bf077e7203eff8fc6",
+    "experiments/lme_memory.py": "219fa77475cc94d666d195b97ec38bb13f8176afd5ffd7e95ffa5b7dcb179402",
+    "experiments/lme_memory_optimized.py": "94675b0830ac0bdc5e672ddc9c6cf46410fbce5672b201a644f8c908971ac93f",
+    "experiments/lme_rank_fast.py": "7a2978f8d747b3ccdc7c64426bae3354cfff7f0c0f1f11782238ee55455b863c",
+    "experiments/lme_rank_selective.py": "264d81bbf6562a51ef231142577a3626933c12f0958d0bf6c284e0fc04721c3a",
+    "experiments/plot_lme_memory.py": "e683e37c5694822ec05c1019fee9919f2d1d2e6a02cc9ea6b5fa9dec92af5168",
+    "experiments/review_lme_memory.py": "cfdeabc5b94dcb949aed21987668cf6acc9f27843e3f42bfe69f500595d7ca56",
+    "experiments/test_lme_evidence.py": "b38ccd228ce6757212579e1f164ffcec6c2a708825ff9f920cff53e4efd89d40",
+    "experiments/test_lme_memory.py": "4669781ac306f93317150b7c8c125013cf3ce0a4763a1d81ad3d02cd8f44e318",
+    "experiments/verify_lme_memory.py": "7c8e8cd51b30ca7eff621baabc0b1e0dd7d0717da0a77c721350b5a47cd4aaad",
+    "experiments/verify_lme_search.py": "bbed1da674ed7a5e25ae3a344babc1c6c82119f1e96c7072e95cb2794160a814"
+  }
+}

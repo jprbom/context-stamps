@@ -1,0 +1,7 @@
+{
+  "strategy": "original for path; tie-preserving native-rank cursor for state/change",
+  "source_sha256": "264d81bbf6562a51ef231142577a3626933c12f0958d0bf6c284e0fc04721c3a",
+  "parent_source_sha256": "7a2978f8d747b3ccdc7c64426bae3354cfff7f0c0f1f11782238ee55455b863c",
+  "reason": "The first profile regressed on sparse path searches; no answer-quality labels used",
+  "qualification": "Same-query engineering remeasurement, not independent generalization"
+}
