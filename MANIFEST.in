@@ -32,3 +32,7 @@ recursive-include evidence/acquisition-v1 *.json.gz *.log
 recursive-include evidence/engineering-sources-v1 *.gz
 recursive-include evidence/general-learning-v1 *.log
 include evidence/local-adapter-v1/adapter/*.safetensors
+include evidence/mbpp-code-adapter-v1/adapter/*.safetensors
+recursive-include evidence/mbpp-training-v1 *.gz
+recursive-include evidence/humaneval-grader-v1 *.gz
+recursive-include evidence/mbpp-code-eval-v1 *.gz

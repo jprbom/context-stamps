@@ -52,6 +52,11 @@ jobs:
       - run: python experiments/verify_typed_terminal.py
       - run: python experiments/test_local_adapter.py -v
       - run: python experiments/verify_local_adapter.py
+      - run: python experiments/test_mbpp_training.py -v
+      - run: python experiments/test_code_learning.py -v
+      - run: python experiments/verify_code_training_data.py
+      - run: python experiments/verify_code_adapter.py
+      - run: python experiments/verify_code_eval.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py

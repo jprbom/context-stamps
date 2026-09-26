@@ -94,6 +94,10 @@ def main(executable):
         line = next(line for line in (ROOT / relative).read_text().splitlines()
                     if line.strip().startswith('"tokenization.json":'))
         checksum_cases.append((relative, line))
+        relative = Path('evidence/mbpp-code-adapter-v1/manifest.json')
+        line = next(line for line in (ROOT / relative).read_text().splitlines()
+                    if line.strip().startswith('"tokenization.json":'))
+        checksum_cases.append((relative, line))
         for relative, line in checksum_cases:
             control = scan / relative
             control.parent.mkdir(parents=True, exist_ok=True)

@@ -1,0 +1,21 @@
+{
+  "schema": 1,
+  "files": {
+    "HF_DATASET_CARD.md": "6377d5c76ba46b9e650daa6d5eb592e671c9b15586e39f23f50ed9bf2ac54cf6",
+    "plan.json": "f27744f63bb9d14b019dfaf003c21f63c042685e4416134d28c9b58a051b878d",
+    "README.md": "99b84e285f24cb2f7fb913c1ef2a3457f62b469113b3f31de6ea4d9284ccb0d6",
+    "records.json.gz": "af8741ae1089796348223bcf662cfe399ad7d43a22b402a4f626012f6294f026",
+    "source-training-rows.json.gz": "f764c5ba134e4e45809fa5c309d27cf970a190a9f3996def36150d698235fd13",
+    "source.json": "5953d43e8bf5cb359b7012c69ee1e9ad305bc62ed654b47c1fbc060914557468",
+    "summary.json": "9887d62472704c813790e113043b6fd9afb29fae21081a187d7e354257d6ba81",
+    "UPSTREAM_README.md": "02d63a4ffdad806c3c87b5ea2aa91e946f6eec0c2869643b09831650883f41be"
+  },
+  "sources": {
+    "experiments/mbpp_training_data.py": "1db4fc4e2bed8cd4a2cb4f6578fe85e592b8eae50e14b76631bead9bf561aaac",
+    "experiments/qualify_mbpp_training.py": "9b6514cd7e4e30d70b65da833ccc4e2940c1e8775082b04f0cc00d92aff43e80",
+    "experiments/verify_code_training_data.py": "1eb0f124ca067882b4f9e002ab4e57baaef6e5d50906cfbe1de5138293fb4802",
+    "experiments/test_mbpp_training.py": "8573488cb01762157dfcc478b3e22006ee2f6c66a2ccef1c76870c286f1fb54d"
+  },
+  "model_calls": 0,
+  "license": "CC BY 4.0 for MBPP records; see README.md for attribution"
+}

@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "files": {
+    "APACHE-2.0.txt": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "base.json": "7fcc1057e7176344da0817914bfc462f1ea9de5510456904f7e9c69f2efa06d4",
+    "loaded.json": "5b3080a86f765a9ffbd3613256c7ad9b66f13bd08b7beca14b239f0ccf8c57e5",
+    "MODEL_CARD.md": "2412a514ec430df50d4cd0595c4eeee2a6293f60f6025bd1efa2e37f5832b588",
+    "overlap-audit.json": "a1b7fa440c734df69e2fd606ecbf1d43985eb707258c9b7fabca386235dd9dbd",
+    "plan.json": "0a2f65fbdaad09b792cfc49367cf0db7d378657f8d17e943a67b4d2aa7d0ef87",
+    "tokenization.json": "3c4ddeaba7c749d9582759f5f3f75188443c6681bb4c034e2e4c731752118035",
+    "trained.json": "30eb1bc015bb69ab370229a98d9b15b970866d056eae5890f090ccd099ade9e7",
+    "training-data.json": "d77656472a8966f83be41f265703963e7d468f36a9aa7e21a014d4f0607222b0",
+    "training.jsonl": "e16e17205b7eabd96028d44a127d24bfa34bee84ea03677f31b1a2dec15e3aa3",
+    "adapter/adapter_config.json": "60f43a8a62277971c33e2e92bcd81ee926725d9cfa850bdc80861cec862e0cee",
+    "adapter/adapter_model.safetensors": "9684f212e77c718923a8bb5a8b16db9c7d85545678b3aa5f4e21dd5c30dbd983"
+  },
+  "sources": {
+    "experiments/verify_code_adapter.py": "3de23a772dfb0767f0405638b8a774d0bc2fb9e09ea0862660a6aa3c885e0b83",
+    "experiments/mbpp_adapter.py": "80621f701fa35707f5dc94d6f8a412aa203c5b0c55c71cba52370fc6179525e8",
+    "experiments/code_overlap_audit.py": "057479df8371d029795ef22313241dc29d0fb2641ac9255c4f9d11aec552d1d5",
+    "experiments/code_adapter_generate.py": "a60c317d4f7dbf9ab4a2b9765f2e2ab8a751a294604b17b056ab5352201661b4",
+    "experiments/grade_code_generation.py": "d64ece6d5ac1f742c62e1852e9da286831428b433644e3af25ec6e70468d39b1"
+  },
+  "activation": false,
+  "notes": "Training evidence; paired generation/grading are separate runs, not claimed here."
+}

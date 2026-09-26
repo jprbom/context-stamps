@@ -22,3 +22,9 @@ evidence/local-adapter-v1/added-dependency-audit.json -text whitespace=cr-at-eol
 evidence/local-adapter-v1/adapter/adapter_config.json -text whitespace=cr-at-eol
 # Preserve Matplotlib's generated path whitespace in the hashed figure.
 docs/assets/local-adapter-v1.svg -text whitespace=cr-at-eol,-blank-at-eol
+evidence/humaneval-grader-v1/tests-*.txt -text whitespace=cr-at-eol
+evidence/humaneval-grader-v1/dependency-audit.json -text whitespace=cr-at-eol
+evidence/mbpp-code-adapter-v1/adapter/adapter_config.json -text whitespace=cr-at-eol
+# Preserve upstream license/card bytes, including their trailing spaces.
+evidence/humaneval-grader-v1/HumanEvalPlus-LICENSE.txt -text whitespace=-blank-at-eol
+evidence/mbpp-training-v1/HF_DATASET_CARD.md -text whitespace=-blank-at-eol

@@ -89,6 +89,14 @@
       "sha256": "89c6f4153f015c48f96661bc3205debe42978db29aa879029e0af6a3149396bf",
       "source_base_commit": "d01f9534d0de3e3221bcfb6f1524688535af12f1",
       "worktree_dirty": true
+    },
+    {
+      "file": "humaneval-initial.json.gz",
+      "sha256": "343547757df79d551dd5843af19c5e688afab33e72de663d0a3d2e2e86dda1be"
+    },
+    {
+      "file": "code-eval-replay-initial.json.gz",
+      "sha256": "bbaae62ac63b6df5e89545be9c8a15a7bc2935d084cd5cf982a9cd5d3ccb97d9"
     }
   ]
 }

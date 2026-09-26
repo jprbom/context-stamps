@@ -33,3 +33,4 @@ evidence/controller-v1/results.json
 # Local model weights, training runs and private adaptation inputs.
 .local/
 !evidence/local-adapter-v1/adapter/adapter_model.safetensors
+!evidence/mbpp-code-adapter-v1/adapter/adapter_model.safetensors

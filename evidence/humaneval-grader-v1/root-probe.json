@@ -1,0 +1,66 @@
+{
+  "purpose": "Authored numerical diagnostic; never a model benchmark",
+  "image": "sha256:b2379da436355a5b4e04d76c846b32dc8419b15f526111ef386338526e9c3cf4",
+  "sources": {
+    "experiments/humaneval_root_probe.py": "3600b5328dde85221bad283c3fc4b7dfcc8db0de3e05f4e1d33972ead7a5e581",
+    "experiments/humaneval_local.py": "27c346e9b73d9cc6e4cf0ca31bdd447535ccca16c79e00734b8ce51b2b8a71fa",
+    "experiments/humaneval_guest.py": "01bbe58541066137e7d61eed7c37cb4926ea11faf1f0cabc5f8188640208d0bf",
+    "experiments/harbor_sandbox.py": "cdf13a56303be7aeecbd3bff155b6bba941cea6d2a5a4582801c506475a86c81"
+  },
+  "model_calls": 0,
+  "training_runs": 0,
+  "sandbox": {
+    "image_id": "sha256:b2379da436355a5b4e04d76c846b32dc8419b15f526111ef386338526e9c3cf4",
+    "user": "1000:1000",
+    "network_mode": "none",
+    "read_only": true,
+    "pids_limit": 64,
+    "memory_bytes": 1073741824,
+    "nano_cpus": 1000000000,
+    "cap_drop": [
+      "ALL"
+    ],
+    "security_opt": [
+      "no-new-privileges:true"
+    ],
+    "mounts": []
+  },
+  "execution": {
+    "stdout": "SCQR_HUMANEVAL_RESULT:{\"task_id\": \"HumanEval/32\", \"mode\": \"candidate\", \"code_sha256\": \"fccccbff8f97f13ddee9ee783ffd84cc57fec04f8e543f16f204106e2d2ca23a\", \"checks\": {\"base\": {\"status\": \"pass\", \"inputs\": 100, \"completed\": 100, \"passing\": 100, \"details_sha256\": \"80f93e8c7d0e1e083e6aab0b073011d858d092951eb4bb2d595cd43173e04704\", \"failed_indices\": [], \"oracle_seconds\": 0.00432474999979604, \"check_seconds\": 0.04675561700423714}, \"plus\": {\"status\": \"fail\", \"inputs\": 788, \"completed\": 120, \"passing\": 119, \"details_sha256\": \"330b164ec212a208d44d98e602cc2f28a608f7d6c4e86f5e13fc72ad0cac6831\", \"failed_indices\": [119], \"oracle_seconds\": 0.13720922300126404, \"check_seconds\": 0.01691371900960803}}, \"passed\": false}\n",
+    "stderr": "",
+    "return_code": 0,
+    "boundary_failure": null,
+    "command_seconds": 0.5379513199877692
+  },
+  "native": {
+    "task_id": "HumanEval/32",
+    "mode": "candidate",
+    "code_sha256": "fccccbff8f97f13ddee9ee783ffd84cc57fec04f8e543f16f204106e2d2ca23a",
+    "checks": {
+      "base": {
+        "status": "pass",
+        "inputs": 100,
+        "completed": 100,
+        "passing": 100,
+        "details_sha256": "80f93e8c7d0e1e083e6aab0b073011d858d092951eb4bb2d595cd43173e04704",
+        "failed_indices": [],
+        "oracle_seconds": 0.00432474999979604,
+        "check_seconds": 0.04675561700423714
+      },
+      "plus": {
+        "status": "fail",
+        "inputs": 788,
+        "completed": 120,
+        "passing": 119,
+        "details_sha256": "330b164ec212a208d44d98e602cc2f28a608f7d6c4e86f5e13fc72ad0cac6831",
+        "failed_indices": [
+          119
+        ],
+        "oracle_seconds": 0.13720922300126404,
+        "check_seconds": 0.01691371900960803
+      }
+    },
+    "passed": false
+  },
+  "containers_remaining": []
+}

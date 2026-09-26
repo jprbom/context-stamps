@@ -109,3 +109,11 @@ condition = "AND"
 regexTarget = "match"
 paths = ['''(^|[\\/])evidence[\\/]local-adapter-v1[\\/]manifest\.json$''']
 regexes = ['''^tokenization\.json": "dd0386717b722d8a9a88654f45ccf17633dbfade36e51eb601a44b6f5461adfa"$''']
+
+[[allowlists]]
+description = "Exact token-count inventory checksum for the public MBPP code-adapter experiment"
+targetRules = ["generic-api-key"]
+condition = "AND"
+regexTarget = "match"
+paths = ['''(^|[\\/])evidence[\\/]mbpp-code-adapter-v1[\\/]manifest\.json$''']
+regexes = ['''^tokenization\.json": "3c4ddeaba7c749d9582759f5f3f75188443c6681bb4c034e2e4c731752118035"$''']

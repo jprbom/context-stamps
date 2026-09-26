@@ -1,0 +1,13 @@
+test_changed_assistant_boundary_refuses_training (__main__.CodeLearningTests.test_changed_assistant_boundary_refuses_training) ... ok
+test_empty_or_duplicate_native_report_is_not_success (__main__.CodeLearningTests.test_empty_or_duplicate_native_report_is_not_success) ... ok
+test_loss_excludes_entire_prompt (__main__.CodeLearningTests.test_loss_excludes_entire_prompt) ... ok
+test_native_partial_test_vector_cannot_claim_pass (__main__.CodeLearningTests.test_native_partial_test_vector_cannot_claim_pass) ... ok
+test_overlap_filter_ignores_docstrings_not_behavior (__main__.CodeLearningTests.test_overlap_filter_ignores_docstrings_not_behavior) ... ok
+test_program_extraction_never_runs_code (__main__.CodeLearningTests.test_program_extraction_never_runs_code) ... ok
+test_reserved_ids_cannot_build_training_messages (__main__.CodeLearningTests.test_reserved_ids_cannot_build_training_messages) ... ok
+test_source_fetch_rejects_credentials_http_and_unreviewed_hosts (__main__.CodeLearningTests.test_source_fetch_rejects_credentials_http_and_unreviewed_hosts) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.002s
+
+OK
