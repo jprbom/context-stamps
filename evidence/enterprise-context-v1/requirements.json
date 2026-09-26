@@ -18,10 +18,12 @@
         "learning-audit"
       ],
       "current_sources": [
-        "context_stamps/runtime.py"
+        "context_stamps/runtime.py",
+        "examples/enterprise_decision.py"
       ],
-      "status": "partial_existing",
-      "completion_proof": "One integrated end-to-end task from authorized source state through sufficient compilation, decision and verifiable receipt."
+      "status": "partial_integrated",
+      "completion_proof": "One integrated end-to-end task from authorized source state through sufficient compilation, decision and verifiable receipt.",
+      "implementation_note": "Offline typed decision with an authorized compiled view and revocation rejection; seven planes are not complete."
     },
     {
       "id": "EC02",
@@ -54,9 +56,15 @@
         "probability distinct from arbitrary score",
         "external typed-decision control"
       ],
-      "current_sources": [],
-      "status": "not_started",
-      "completion_proof": "Typed decisions, calibrated scopes and missing/stale/revoked evidence cause safe abstention; batch parity and actual cost."
+      "current_sources": [
+        "context_stamps/decisions/schema.py",
+        "context_stamps/decisions/batch.py",
+        "context_stamps/decisions/calibration.py",
+        "tests/test_enterprise_context.py"
+      ],
+      "status": "partial_implemented",
+      "completion_proof": "Typed decisions, calibrated scopes and missing/stale/revoked evidence cause safe abstention; batch parity and actual cost.",
+      "implementation_note": "Typed batch API and scoped calibration mathematics tested; real provider calibration and matched controls remain."
     },
     {
       "id": "EC04",
@@ -69,10 +77,12 @@
       ],
       "current_sources": [
         "context_stamps/runtime.py",
-        "context_stamps/requirements.py"
+        "context_stamps/requirements.py",
+        "context_stamps/context_compiler.py"
       ],
-      "status": "partial_existing",
-      "completion_proof": "Held-out correctness and risk/coverage at measured total cost against fixed retrieval and full context."
+      "status": "partial_implemented",
+      "completion_proof": "Held-out correctness and risk/coverage at measured total cost against fixed retrieval and full context.",
+      "implementation_note": "Explicit evidence coverage only; learned sufficiency and adaptive acquisition remain."
     },
     {
       "id": "EC05",
@@ -108,10 +118,13 @@
       ],
       "current_sources": [
         "context_stamps/requirements.py",
-        "context_stamps/runtime.py"
+        "context_stamps/runtime.py",
+        "context_stamps/context_compiler.py",
+        "experiments/enterprise_state_validation.py"
       ],
-      "status": "partial_existing",
-      "completion_proof": "All ten stages integrated; exact small-instance control; larger-instance limits and model-specific tokenizer evidence."
+      "status": "partial_implemented",
+      "completion_proof": "All ten stages integrated; exact small-instance control; larger-instance limits and model-specific tokenizer evidence.",
+      "implementation_note": "Authorization, temporal validity, conflicts, closure, bounded exact/greedy selection, format/counter hooks and explicit coverage integrated. Learned value and faithful semantic compression remain."
     },
     {
       "id": "EC07",
@@ -178,10 +191,13 @@
         "event_time"
       ],
       "current_sources": [
-        "context_stamps/workflow.py"
+        "context_stamps/workflow.py",
+        "context_stamps/context_state.py",
+        "tests/test_enterprise_context.py"
       ],
-      "status": "partial_existing",
-      "completion_proof": "Bitemporal queries and late corrections without future leakage; current authorization for historical reads."
+      "status": "partial_implemented",
+      "completion_proof": "Bitemporal queries and late corrections without future leakage; current authorization for historical reads.",
+      "implementation_note": "In-memory validity/knowledge cutoffs, host transaction time and exact supersession tested; durable history and inverse supersession audit API remain."
     },
     {
       "id": "EC11",
@@ -200,10 +216,13 @@
       ],
       "current_sources": [
         "context_stamps/experience.py",
-        "tests/test_experience.py"
+        "tests/test_experience.py",
+        "context_stamps/context_state.py",
+        "tests/test_enterprise_context.py"
       ],
-      "status": "partial_draft",
-      "completion_proof": "Model output/assumption cannot satisfy verified fact or policy requirements; canonical nodes and receipts preserve the type."
+      "status": "partial_implemented",
+      "completion_proof": "Model output/assumption cannot satisfy verified fact or policy requirements; canonical nodes and receipts preserve the type.",
+      "implementation_note": "Ten explicit kinds and verified requirement restrictions; extraction and validation truth remain host-owned."
     },
     {
       "id": "EC12",
@@ -217,10 +236,13 @@
       ],
       "current_sources": [
         "context_stamps/workflow.py",
-        "context_stamps/requirements.py"
+        "context_stamps/requirements.py",
+        "context_stamps/context_compiler.py",
+        "tests/test_enterprise_context.py"
       ],
-      "status": "partial_existing",
-      "completion_proof": "Conflicts remain inspectable, temporal/authority resolution auditable, ambiguous claims abstain."
+      "status": "partial_implemented",
+      "completion_proof": "Conflicts remain inspectable, temporal/authority resolution auditable, ambiguous claims abstain.",
+      "implementation_note": "Declared same-name claim conflicts retained and resolved by explicit host policy or abstention; semantic contradiction extraction/graph remains."
     },
     {
       "id": "EC13",
@@ -234,9 +256,13 @@
         "STALE",
         "scope and expiry"
       ],
-      "current_sources": [],
-      "status": "not_started",
-      "completion_proof": "Known absence avoids redundant calls until expiry; denial does not leak hidden existence."
+      "current_sources": [
+        "context_stamps/context_state.py",
+        "tests/test_enterprise_context.py"
+      ],
+      "status": "partial_implemented",
+      "completion_proof": "Known absence avoids redundant calls until expiry; denial does not leak hidden existence.",
+      "implementation_note": "Typed negative knowledge, expiry and hidden-dependency filtering tested; tool acquisition/retry integration remains."
     },
     {
       "id": "EC14",
@@ -302,9 +328,12 @@
         "encoder/OCR lineage",
         "temporal scene/event graph"
       ],
-      "current_sources": [],
-      "status": "not_started",
-      "completion_proof": "Shared node contract and task metrics for each modality; prior media pilots do not establish this integration."
+      "current_sources": [
+        "context_stamps/context_state.py"
+      ],
+      "status": "partial_schema",
+      "completion_proof": "Shared node contract and task metrics for each modality; prior media pilots do not establish this integration.",
+      "implementation_note": "Canonical modality and external media digest contract only; media extraction/adapters and quality evaluations remain."
     },
     {
       "id": "EC18",
@@ -367,5 +396,6 @@
       "completion_proof": "Restart/race/revocation/security evidence, permitted exports, claim-to-evidence report and reproducible release."
     }
   ],
-  "evidence_boundary": "Existing/draft sources do not prove the complete requirement. No 1.0 or universal capability claim."
+  "evidence_boundary": "Existing/draft sources do not prove the complete requirement. No 1.0 or universal capability claim.",
+  "latest_engineering_evidence": "evidence/enterprise-state-v1/local-cpu/manifest.json"
 }

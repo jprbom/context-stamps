@@ -19,4 +19,5 @@ include evidence/controller-v2/*.json.gz
 include evidence/controller-v2/models/*.safetensors
 recursive-include evidence/runtime-v1 *.json.gz
 recursive-include evidence/enterprise-context-v1 *.log
+recursive-include evidence/enterprise-state-v1 *.log
 recursive-include evidence/general-learning-v1 *.log

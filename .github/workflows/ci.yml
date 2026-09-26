@@ -33,6 +33,7 @@ jobs:
       - run: python experiments/verify_controller_v2.py
       - run: python experiments/verify_runtime.py
       - run: python experiments/verify_enterprise_foundations.py
+      - run: python experiments/verify_enterprise_state.py
       - run: python stamps.py --demo
       - run: python examples/offline_memory.py
       - run: python examples/changing_evidence.py
@@ -45,6 +46,7 @@ jobs:
       - run: python examples/relation_aware_routing.py
       - run: python examples/computation_reuse.py
       - run: python examples/unified_context.py
+      - run: python examples/enterprise_decision.py
       - run: scqr encode examples/facets.json
       - run: python examples/local_slm.py --dry-run
       - run: python benchmarks/retrieval.py --out results.json

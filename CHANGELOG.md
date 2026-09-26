@@ -4,6 +4,8 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 26 September 2026
 
+- Added research interfaces for canonical temporal/epistemic state, finite negative knowledge, explicit conflict resolution and serialized-cost context compilation. Added typed batch decisions with scoped calibration, packet integrity bindings and mutation/revocation rejection. The 182-test CPU run and 80 synthetic compiler measurements retain their source hashes and limits; no new model-quality gain is claimed.
+
 - Added `ContextRuntime` for registered experts, exact dependency closure, tokenizer-backed budgets, bounded evidence recovery, outcome verification and source-bound computation reuse.
 - Added length-aware BERT reranking with a bounded passage-token cache. Preserved the first long-query truncation failure, fixed it through the pinned tokenizer and reran all five public collections. Whole-weight FP16/BF16 conversion remains experimental.
 - Trained a cost-aware ridge router using existing public training partitions; neither fusion scope qualified for cheaper exits. Added two local-reader workflow pilots, a fixed-budget synthetic facet ablation with an exact-metadata control, figures and offline evidence replay.

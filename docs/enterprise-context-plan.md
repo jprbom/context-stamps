@@ -13,10 +13,10 @@ This is the active implementation objective, superseding the earlier general-lea
 | Plane | Starting implementation | Work remaining |
 |---|---|---|
 | Ingestion | File observations, source identities and explicit facet compilation | Canonical modality adapters, typed provenance and verified extraction |
-| Context state | `ContextNode`, graph, versions, roles and relation bindings | Bitemporal history, epistemic types, negative knowledge, lifecycle and persistent authority |
+| Context state | In-memory canonical temporal versions, epistemic types, finite negative knowledge and current ACLs | Durable history, lifecycle management and persistent authority |
 | Context intelligence | Experimental rankers, exact requirements, failed cheap-route learner | Calibrated sufficiency/value/conflict/uncertainty and context-node attention |
-| Context compiler | Structured minimum-byte selection and runtime dependency closure | Unified authorization-first compiler, model profiles, faithful compression, actual tokenizer budgets and adaptive acquisition |
-| Decision/routing | Expert registration and verifier-controlled abstention | First-class Choice, Boolean and Score decisions, batch API and calibration certificates |
+| Context compiler | Authorization-first temporal compiler, conflict policy, exact bounded closure selection and token/byte budgets | Faithful semantic compression, learned value/sufficiency and adaptive acquisition |
+| Decision/routing | Choice/Boolean/Score batch API, verifier checks and scoped calibration certificates | Real held-out calibration, learned providers and matched external controls |
 | Model execution | Explicit host-owned callbacks and local reader pilots | Shared reader/VLM/tool contract, hard deadlines, side-effect execution semantics and measured portability |
 | Learning/audit | Experiment manifests, exact reuse and bounded in-memory outcomes | Durable reference-only events, prospective labels, policy candidate evaluation and immutable receipts |
 
@@ -107,4 +107,6 @@ Release proof requires reproducible CPU/RTX profiles, source/data/model hashes, 
 
 ## Immediate work
 
-The research worktree is isolated from the public main branch. CPU baseline reproduction is complete after correcting a path error in the new runner; the failed attempt remains recorded. The reference-only experience contracts now have ten tests. All 155 tests execute without skips in both the CPU-capable environment and a newly isolated CUDA environment; the latter also passes a CUDA calculation check. A short training-capacity probe uses only the existing public training partitions and selects batch 128 as an initial throughput setting for both existing controller variants. It does not qualify a new model or demonstrate sustained serving capacity. Next: implement canonical temporal/epistemic state and typed decisions, then the integrated compiler and durable audit path before training a new context model.
+The research worktree is isolated from the public main branch. The original two 155-test baseline records and failed runner attempt remain intact. The new [temporal state/compiler/decision layer](enterprise-state.md) passes all 182 tests without skips and records 80 synthetic compilation measurements. A complete offline example checks a research experiment and rejects reuse after revocation. These are engineering results; real decision calibration, learned sufficiency and public benchmark gains remain unproven.
+
+The earlier training-only RTX probe selected batch 128 for both existing controller variants. Use the GPU for training and numerical/performance qualification; keep state, preparation and routine verification on CPU. Next: durable reference-only audit and execution/cancellation semantics, then virtual memory/incremental computation and prospective datasets for a new context model. Preserve the failed student/router controls and all existing qualified retrieval routes.

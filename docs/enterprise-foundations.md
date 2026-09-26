@@ -45,4 +45,4 @@ python experiments/profile_context_training.py --work C:\path\to\prepared-work -
 python experiments/verify_enterprise_foundations.py
 ```
 
-Next requirements are canonical temporal/epistemic state, typed decisions, integrated sufficient-context compilation and durable audit. Larger context-model training follows verified workflow data and matched controls. Mainline retrieval behavior and all historical evidence remain unchanged by this increment.
+The subsequent [state/compiler/decision increment](enterprise-state.md) adds temporal and epistemic contracts, typed decisions and explicit evidence compilation. Durable audit and verified workflow data remain prerequisites for the larger context-model experiments. Mainline retrieval behavior and these historical foundation measurements remain unchanged.

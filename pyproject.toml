@@ -33,7 +33,7 @@ Repository = "https://github.com/jprbom/context-stamps"
 Issues = "https://github.com/jprbom/context-stamps/issues"
 
 [tool.setuptools]
-packages = ["context_stamps", "context_stamps.models"]
+packages = ["context_stamps", "context_stamps.models", "context_stamps.decisions"]
 py-modules = ["stamps"]
 
 [tool.setuptools.package-data]
