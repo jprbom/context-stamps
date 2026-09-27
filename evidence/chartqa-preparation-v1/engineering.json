@@ -1,0 +1,43 @@
+{
+  "python": "3.12.10",
+  "pillow": "12.3.0",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "tests": {
+    "command": "python -m unittest discover -s experiments -p test_chartqa_*.py -v",
+    "count": 30,
+    "exit_code": 0,
+    "inference": "mocked; zero actual model calls"
+  },
+  "prepared_file_hashes_verified": 172,
+  "metadata_fetch_replay": {
+    "files": 8,
+    "all_equal_to_initial": true,
+    "questions": 32719
+  },
+  "actual_model_calls": 0,
+  "image_bytes": 7018856,
+  "failures_retained": [
+    {
+      "phase": "Hub wildcard download",
+      "reason": "Wildcard treated as a literal Windows filename; explicit shard filenames succeeded."
+    },
+    {
+      "phase": "Parquet preparation",
+      "reason": "Windows Application Control blocked pyarrow native module; not retried or bypassed."
+    },
+    {
+      "phase": "Native preparation v1",
+      "reason": "Flat-name validation rejected legitimate punctuation in 17 publisher filenames; source URL encoding fixed before v2."
+    }
+  ],
+  "secret_scan_initial": {
+    "findings": 3,
+    "review": "All three were confirmed SHA-256 fingerprints of separate reference-answer files, not credentials. Public manifest uses filename/digest records; scanner rules unchanged."
+  },
+  "secret_scan_final": {
+    "findings": 0,
+    "bytes_scanned": 92319895,
+    "scanner": "gitleaks 8.30.1",
+    "rules_changed": false
+  }
+}

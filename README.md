@@ -12,6 +12,8 @@ The 32-byte capsule is a routing identity across eight bounded facets. It does n
 
 ## Start here
 
+The next [local visual-memory study](docs/chartqa-local-learning-draft.md) has prepared **160 ChartQA images / 366 questions** in separate training, validation and test cohorts. A source-bound extraction protocol, bounded rational arithmetic and reference-compatible scorer pass **30 experiment tests**; the scorer matches 21 authored reference canaries. This is preparation only: no ChartQA model result, trained routing policy or automatic improvement is claimed. [Preparation evidence and local commands](evidence/chartqa-preparation-v1/README.md).
+
 The [canonical media adapter](docs/media-evidence.md) now represents external image, audio and video sources, extracted views and temporal intervals with exact provenance and current access checks. **433 core tests pass without skips** in the full local environment. Run `python examples/media_context.py` for an offline WAV example. [Retained engineering evidence](evidence/media-v1/README.md) covers altered bytes, source revocation, durable restart and working-set dependency limits. This is ingestion support; multimodal model quality and token accounting remain unqualified.
 
 The [source-bound answer API](docs/source-bound-answers.md) checks exact model quotations against current authorized context. Its recorded revision passed **416 core tests without skips**. All [48 fictional interface requests](evidence/citations-v1/README.md) are retained: they expose lost valid answers and model-specific citation failures. An exact quote is not a correctness certificate. Run `python examples/source_bound_answer.py`. A frozen local TechQA reader/policy study is running; its result is pending.

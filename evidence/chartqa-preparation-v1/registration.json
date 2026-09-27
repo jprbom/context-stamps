@@ -1,0 +1,24 @@
+{
+  "counts": {
+    "test": 64,
+    "train": 64,
+    "val": 32
+  },
+  "decoded_pixel_gate": "selected cross-cohort equality aborts preparation; no silent replacement",
+  "input_manifest_sha256": "d972e652b30d3b72734522b000d6b2bf38aae7c926ce1636ff3c11ee01a35c68",
+  "maximum_questions": 4,
+  "minimum_questions": 2,
+  "model_calls": 0,
+  "parquet_reader_used": false,
+  "pillow": "12.3.0",
+  "purpose": "repeated-chart workflow subset, not full ChartQA leaderboard score",
+  "python": "3.12.10",
+  "revision": "044eabfc306abfe9340c5741f0093aefc5973d06",
+  "schema": 1,
+  "seed": 101,
+  "selection_group": "publisher Git blob identity",
+  "source_hashes": {
+    "chartqa_native_prepare.py": "d751fbcb1d87251d002a1efd273ee55bc8b0c8701dd47bfeb784525c5f92e76e",
+    "chartqa_prepare.py": "89272905aeaa962ecc48bb3349cf33fdc170146ac179a2002f6a8fd74a8fcff4"
+  }
+}

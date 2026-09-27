@@ -1,0 +1,143 @@
+{
+  "revision": "6fe25c1dc8151823ee3b479519d8d5948812fee4",
+  "files": {
+    "pix2struct/metrics.py": {
+      "url": "https://raw.githubusercontent.com/google-research/pix2struct/6fe25c1dc8151823ee3b479519d8d5948812fee4/pix2struct/metrics.py",
+      "sha256": "375d5970dd3c05f71b27934eabfa3e0a400c0eb459ba540a387e5c7ec6e8cecd"
+    },
+    "LICENSE": {
+      "url": "https://raw.githubusercontent.com/google-research/pix2struct/6fe25c1dc8151823ee3b479519d8d5948812fee4/LICENSE",
+      "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd"
+    }
+  },
+  "local_source_sha256": "de2f9a136fcb3a2091faba44c90d8a3c88ae8300269ec5a2134991afc1fbe2a8",
+  "canaries": [
+    {
+      "target": "100",
+      "prediction": "104.9",
+      "reference": true,
+      "local": true
+    },
+    {
+      "target": "100",
+      "prediction": "105",
+      "reference": true,
+      "local": true
+    },
+    {
+      "target": "100",
+      "prediction": "105.01",
+      "reference": false,
+      "local": false
+    },
+    {
+      "target": "-100",
+      "prediction": "-95",
+      "reference": true,
+      "local": true
+    },
+    {
+      "target": "-100",
+      "prediction": "-94",
+      "reference": false,
+      "local": false
+    },
+    {
+      "target": "25%",
+      "prediction": "0.25",
+      "reference": true,
+      "local": true
+    },
+    {
+      "target": "25%",
+      "prediction": "25",
+      "reference": false,
+      "local": false
+    },
+    {
+      "target": "25",
+      "prediction": "25%",
+      "reference": false,
+      "local": false
+    },
+    {
+      "target": "0",
+      "prediction": "0",
+      "reference": true,
+      "local": true
+    },
+    {
+      "target": "0",
+      "prediction": "0.0",
+      "reference": false,
+      "local": false
+    },
+    {
+      "target": "0%",
+      "prediction": "0",
+      "reference": false,
+      "local": false
+    },
+    {
+      "target": "BLUE",
+      "prediction": "blue",
+      "reference": true,
+      "local": true
+    },
+    {
+      "target": " blue ",
+      "prediction": "blue",
+      "reference": false,
+      "local": false
+    },
+    {
+      "target": "1,000",
+      "prediction": "1000",
+      "reference": false,
+      "local": false
+    },
+    {
+      "target": "1e3",
+      "prediction": "1000",
+      "reference": true,
+      "local": true
+    },
+    {
+      "target": " 2 ",
+      "prediction": "2",
+      "reference": true,
+      "local": true
+    },
+    {
+      "target": "two",
+      "prediction": "2",
+      "reference": false,
+      "local": false
+    },
+    {
+      "target": "1",
+      "prediction": "NaN",
+      "reference": false,
+      "local": false
+    },
+    {
+      "target": "NaN",
+      "prediction": "NaN",
+      "reference": false,
+      "local": false
+    },
+    {
+      "target": "inf",
+      "prediction": "inf",
+      "reference": false,
+      "local": false
+    },
+    {
+      "target": "Yes",
+      "prediction": "YES",
+      "reference": true,
+      "local": true
+    }
+  ],
+  "method": "Extract only the reviewed named function from the pinned trusted upstream source; no dependency imports."
+}

@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "record": "preparation only; no trained visual model or task scores",
+  "files": {
+    "engineering.json": "5fc5bf0cd7f356423add4444bd95bb519fb0e2562c5f9955edd15f11776eeeaf",
+    "pixel-overlap-audit.json": "d9d608830129ec889e5b7015f5bb3d31a21de80800cc3a8f65d8a6672fe6a732",
+    "prepared-manifest.json": "2254fe4b52e763efc5e3e2fd58763cc4ffd89a01388db3bc1de3ab7fa8d74737",
+    "README.md": "b0989a88d4290c0266a2ae4fc732422fb0d22b364cf83b84ab9f9f53b3e207a0",
+    "registration.json": "6e2abbff4a17f446ac78286f71521fdd6f63be3d7db37d27e078c67b8e4c4ca3",
+    "scorer-canaries.json": "ba9a9c7cf95d66699a4ece092e62ef40293fe42947af0cc3db3714f51bda3726",
+    "source-snapshots.json.gz": "45134c89e71a8f0995649be9d52a004e73f62afd8c002478b1bdccab43740f0f",
+    "tests.txt": "444eef053a8cb179e48bccb3bc637d4e5c2094971aa1b2ecf7e7906e46d455a7"
+  },
+  "source_lf_sha256": {
+    "experiments/chartqa_canary.py": "20fd9ff8720c4ac78cb26e6d879eb38b4ce22b9f362626089204200fa90a8776",
+    "experiments/chartqa_native_prepare.py": "d751fbcb1d87251d002a1efd273ee55bc8b0c8701dd47bfeb784525c5f92e76e",
+    "experiments/chartqa_prepare.py": "89272905aeaa962ecc48bb3349cf33fdc170146ac179a2002f6a8fd74a8fcff4",
+    "experiments/chartqa_protocol.py": "8a1e68e7c40fb15f1d82ff5f5dec753051765290ea03c8908399e7b906df737a",
+    "experiments/chartqa_quant.py": "78ab00c2e5a640c436b88a1e6943f7334632700e972ed28b3c17f1dfcb461a48",
+    "experiments/chartqa_score.py": "de2f9a136fcb3a2091faba44c90d8a3c88ae8300269ec5a2134991afc1fbe2a8",
+    "experiments/fetch_chartqa_native.py": "6b0a5ffe0a73b2d2827ff1b0475a50825ddc1fe328ce26bdac6511005ab4636e",
+    "experiments/test_chartqa_canary.py": "74041785a52875fbac742530aef1f911580748e4fbd190c84ea14395684646b5",
+    "experiments/test_chartqa_prepare.py": "6e86f3b7e2fe5869e7890e9a2e7d21c8266761181cb5e895a7d787322e7d378b",
+    "experiments/test_chartqa_protocol.py": "93824f42f9a91a3a8dfb1a62cd9d4dae52a2f6749cf9b51edc948136ded275db",
+    "experiments/test_chartqa_quant.py": "a86859f15f205582de7e5d871eae9b50000800aef3d76de60d9b4f7a98c8cb49",
+    "experiments/test_chartqa_score.py": "47199bfe60b61b688a92fe4dc5907be415abcd27ad85063f18bfbe0517cfecee",
+    "experiments/verify_chartqa_preparation.py": "fb1bde849ca3a18adc25d0b4a93ee3765e0fb621f5cd98b127e0d51e591f8e46"
+  }
+}

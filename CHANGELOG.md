@@ -4,6 +4,8 @@ All versions below are research releases or candidates. v0.5.0 is available from
 
 ## Development update after 0.5.0 — 27 September 2026
 
+- Prepared a source-pinned repeated-chart study with 160 images and 366 questions, separate keys and zero identical decoded images across selected cohorts. Added a bounded rational executor, source-bound local vision protocol, four-call authored canary runner and 30 experiment tests. The scorer matches 21 authored cases against a pinned reference function. No actual ChartQA model call, policy training or benefit is claimed; the local vision canary remains pending. Dataset bytes and keys remain external under their source terms.
+
 - Added canonical external media identities, extraction provenance, bounded spatial/temporal regions and overlapping temporal-order views. Seventeen targeted tests include durable restart, independent-writer revocation and dependency quotas; an offline authored WAV example and evidence replay use zero model calls. Model extractions remain unverified `MODEL_OUTPUT`. Multimodal quality, token accounting and qualified autonomous weight improvement remain open.
 
 - Added question-bound exact citation checks with current authorization, source-version checks and preserved evidence kinds. Fourteen new core tests bring the full local suite to 416 passing tests without skips. Retained all 48 fictional reader requests across two interfaces and two local models, including valid answers rejected for incomplete citations and the 1.5B revised citation-format failure. Offline replay covers every citation check. No semantic-verification, robustness or model-quality gain is claimed; TechQA learning remains in preparation.
