@@ -1,0 +1,17 @@
+{
+  "response": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-09-27T01:02:44.1589199Z",
+    "response": "{\n  \"citations\": [\n    {\n      \"source\": \"s0\",\n      \"quote\": \"Aster uses Birch cache.\"\n    }\n  ],\n  \"answer\": \"Birch cache\"\n}",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 614807100,
+    "load_duration": 10041500,
+    "prompt_eval_count": 164,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 63195000,
+    "eval_count": 51,
+    "eval_duration": 493149000
+  },
+  "wall_seconds": 0.7893028000835329
+}

@@ -1,0 +1,36 @@
+{
+  "model": {
+    "name": "qwen2.5:1.5b",
+    "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+    "bytes": 986061892,
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen2",
+      "families": [
+        "qwen2"
+      ],
+      "parameter_size": "1.5B",
+      "quantization_level": "Q4_K_M"
+    },
+    "template_sha256": "eb4402837c7829a690fa845de4d7f3fd842c2adee476d5341da8a46ea9255175",
+    "parameters_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "license_sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "system_sha256": "66b9ea09bd5b7099cbb4fc820f31b575c0366fa439b08245566692c6784e281e"
+  },
+  "options": {
+    "temperature": 0,
+    "seed": 83,
+    "num_ctx": 8192,
+    "num_predict": 512
+  },
+  "source_hashes": {
+    "experiments/citation_canaries.py": "7e03accd451d5bfd1f31f2def21739682a69727f706ddb43b6888de4722e46c6",
+    "experiments/cited_reader.py": "ef4e80a1183bb0374cc3440cc062b23cb850fd3cd1e2251651dd87cb5da01220",
+    "context_stamps/citations.py": "88374c131abdd375a9aeb9c2f2cab4098606c0dd7fb486826c4dbc39d09edf3e"
+  },
+  "tokenizer_sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+  "evidence_class": "fictional plumbing and token parity only",
+  "calls": 12,
+  "warmups": 1
+}

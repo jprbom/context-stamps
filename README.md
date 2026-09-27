@@ -12,6 +12,8 @@ The 32-byte capsule is a routing identity across eight bounded facets. It does n
 
 ## Start here
 
+The new [source-bound answer API](docs/source-bound-answers.md) checks exact model quotations against current authorized context. **416 core tests pass without skips** in the full local environment. All [48 fictional interface requests](evidence/citations-v1/README.md) are retained: they expose lost valid answers and model-specific citation failures. An exact quote is not a correctness certificate. Run `python examples/source_bound_answer.py`. The next local learning study is in preparation; no new model-quality gain is claimed.
+
 The latest [local relation-learning experiment](docs/multihop-local-learning.md) trains a **13-parameter context selector** and records **1,024 reader requests**. At six passages, it retains all required support in **38/64 answerable cases**, versus **17/64 for BM25** and **30/64 for a learned pointwise control**. Qwen2.5 1.5B exact answers are **10/64**, versus BM25 **8/64** and full context **12/64**; it still answers **27/64 unanswerable cases**. Answer-quality improvement is uncertain, and a post-hoc 7B coding reader does not resolve the gap. Lower cost than full context comes with quality loss. **Candidate inactive; no reader weights changed.** [Full results and failures](evidence/multihop-v1/README.md) · [Weights and model card](evidence/multihop-v1/MODEL_CARD.md) · `python experiments/verify_multihop.py`.
 
 ![Local relation selection, answer failures and request cost](docs/assets/multihop-v1.png)

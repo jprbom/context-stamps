@@ -134,6 +134,11 @@ def main(executable):
             line = next(line for line in (ROOT / relative).read_text(encoding='utf-8').splitlines()
                         if line.strip().startswith('"' + field + '":'))
             checksum_cases.append((relative, line))
+        for variant in ('original_small', 'original_modern', 'revised_small', 'revised_modern'):
+            relative = Path('evidence/citations-v1') / variant / 'registration.json'
+            line = next(line for line in (ROOT / relative).read_text(encoding='utf-8').splitlines()
+                        if line.strip().startswith('"tokenizer_sha256":'))
+            checksum_cases.append((relative, line))
         for relative, line in checksum_cases:
             control = scan / relative
             control.parent.mkdir(parents=True, exist_ok=True)

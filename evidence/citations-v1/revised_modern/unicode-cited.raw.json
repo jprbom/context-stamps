@@ -1,0 +1,17 @@
+{
+  "response": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-09-27T01:02:48.7927662Z",
+    "response": "{\n  \"citations\": [\n    {\n      \"source\": \"s0\",\n      \"quote\": \"The store label is café.\"\n    }\n  ],\n  \"answer\": \"café\"\n}",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 637773100,
+    "load_duration": 10312100,
+    "prompt_eval_count": 161,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 94297000,
+    "eval_count": 50,
+    "eval_duration": 476352000
+  },
+  "wall_seconds": 0.8089589000446722
+}

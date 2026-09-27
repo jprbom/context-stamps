@@ -1,0 +1,17 @@
+{
+  "response": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-09-27T01:02:45.7785423Z",
+    "response": "{\"answer\": null}",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 194204300,
+    "load_duration": 11085300,
+    "prompt_eval_count": 160,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 67428000,
+    "eval_count": 6,
+    "eval_duration": 49464000
+  },
+  "wall_seconds": 0.3614561000140384
+}

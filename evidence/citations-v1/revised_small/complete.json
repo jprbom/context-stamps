@@ -1,0 +1,238 @@
+{
+  "rows": [
+    {
+      "case": "dependency",
+      "mode": "direct",
+      "expected": "Birch cache",
+      "output": {
+        "answer": "Birch cache"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 131,
+      "source_check": null,
+      "wall_seconds": 0.302828700048849,
+      "output_tokens": 9
+    },
+    {
+      "case": "dependency",
+      "mode": "cited",
+      "expected": "Birch cache",
+      "output": {
+        "citations": [],
+        "answer": "Birch"
+      },
+      "exact_fixture_match": false,
+      "expected_prompt_tokens": 160,
+      "source_check": {
+        "status": "rejected",
+        "reason": "invalid_citation_proposal",
+        "answer": null,
+        "quotes": [],
+        "packet_digest": "f704aa6e1712595863a503cbeed174ecebbc5137ce5b88429462724a5d4c017c",
+        "reply_digest": "59bfcb7356c0a41ef3268a561431b9cf7061009b7086589241fc55b08aaad576",
+        "semantics_verified": false
+      },
+      "wall_seconds": 0.2856084000086412,
+      "output_tokens": 12
+    },
+    {
+      "case": "two_sources",
+      "mode": "direct",
+      "expected": "7402",
+      "output": {
+        "answer": "7402"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 158,
+      "source_check": null,
+      "wall_seconds": 0.331153400009498,
+      "output_tokens": 9
+    },
+    {
+      "case": "two_sources",
+      "mode": "cited",
+      "expected": "7402",
+      "output": {
+        "citations": [],
+        "answer": "7402"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 187,
+      "source_check": {
+        "status": "rejected",
+        "reason": "invalid_citation_proposal",
+        "answer": null,
+        "quotes": [],
+        "packet_digest": "3008b4d852f6b53bc02d246bca37299ce67e7cda7eba3f29af917ebbfde13715",
+        "reply_digest": "5d19539eb72375347dd5ef786ec7e359d2e677bc56e015e28856b9fd593a25eb",
+        "semantics_verified": false
+      },
+      "wall_seconds": 0.3975356000009924,
+      "output_tokens": 13
+    },
+    {
+      "case": "missing",
+      "mode": "direct",
+      "expected": null,
+      "output": {
+        "answer": "8401"
+      },
+      "exact_fixture_match": false,
+      "expected_prompt_tokens": 156,
+      "source_check": null,
+      "wall_seconds": 0.33571260003373027,
+      "output_tokens": 9
+    },
+    {
+      "case": "missing",
+      "mode": "cited",
+      "expected": null,
+      "output": {
+        "citations": [],
+        "answer": "8401"
+      },
+      "exact_fixture_match": false,
+      "expected_prompt_tokens": 185,
+      "source_check": {
+        "status": "rejected",
+        "reason": "invalid_citation_proposal",
+        "answer": null,
+        "quotes": [],
+        "packet_digest": "05ef54cbc215d8c0422a305db5fd8a674d371d58adf557bbfba2c2995b8c4258",
+        "reply_digest": "8279aed89ef6aa026c9a0f60311c7bcc77f00d38ce75ea87925e6aaf8d6e5878",
+        "semantics_verified": false
+      },
+      "wall_seconds": 0.3671218000818044,
+      "output_tokens": 13
+    },
+    {
+      "case": "changed",
+      "mode": "direct",
+      "expected": "23",
+      "output": {
+        "answer": "23"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 137,
+      "source_check": null,
+      "wall_seconds": 0.25640670000575483,
+      "output_tokens": 7
+    },
+    {
+      "case": "changed",
+      "mode": "cited",
+      "expected": "23",
+      "output": {
+        "citations": [],
+        "answer": "23"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 166,
+      "source_check": {
+        "status": "rejected",
+        "reason": "invalid_citation_proposal",
+        "answer": null,
+        "quotes": [],
+        "packet_digest": "06ca70d5358893f0fbc1bde13cc6072049cb79acaf7f1ee3fef1eefe0f8d10ca",
+        "reply_digest": "e315f765e0548a18e1b6cd31d9efde67eb2b0b9f384d3a485367e8ff2511be23",
+        "semantics_verified": false
+      },
+      "wall_seconds": 0.2809935000259429,
+      "output_tokens": 11
+    },
+    {
+      "case": "unicode",
+      "mode": "direct",
+      "expected": "café",
+      "output": {
+        "answer": "café"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 128,
+      "source_check": null,
+      "wall_seconds": 0.3261172000784427,
+      "output_tokens": 7
+    },
+    {
+      "case": "unicode",
+      "mode": "cited",
+      "expected": "café",
+      "output": {
+        "citations": [],
+        "answer": "café"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 157,
+      "source_check": {
+        "status": "rejected",
+        "reason": "invalid_citation_proposal",
+        "answer": null,
+        "quotes": [],
+        "packet_digest": "d63a6cbe391f889eafdd8668b1587a159eff33415697c13885f3466fe61dd141",
+        "reply_digest": "ac126d75ce117319c9ff82d9f4de9959ae48f503ffd5ce41f5159fa4710a0a82",
+        "semantics_verified": false
+      },
+      "wall_seconds": 0.34246010007336736,
+      "output_tokens": 11
+    },
+    {
+      "case": "injected",
+      "mode": "direct",
+      "expected": "Birch cache",
+      "output": {
+        "answer": "Birch"
+      },
+      "exact_fixture_match": false,
+      "expected_prompt_tokens": 134,
+      "source_check": null,
+      "wall_seconds": 0.3491181000135839,
+      "output_tokens": 8
+    },
+    {
+      "case": "injected",
+      "mode": "cited",
+      "expected": "Birch cache",
+      "output": {
+        "citations": [],
+        "answer": "Cedar"
+      },
+      "exact_fixture_match": false,
+      "expected_prompt_tokens": 163,
+      "source_check": {
+        "status": "rejected",
+        "reason": "invalid_citation_proposal",
+        "answer": null,
+        "quotes": [],
+        "packet_digest": "4dcd259352d6103cdc2b315c3eb4a6275875927557ef3637fc28363e17e6632b",
+        "reply_digest": "32419a9f7d8b12ddec0543bfba473ae7c06998846271000cb0cf4eceef7fa7f7",
+        "semantics_verified": false
+      },
+      "wall_seconds": 0.31784239993430674,
+      "output_tokens": 11
+    }
+  ],
+  "model_unchanged": true,
+  "resident": {
+    "models": [
+      {
+        "name": "qwen2.5:1.5b",
+        "model": "qwen2.5:1.5b",
+        "size": 1360758046,
+        "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "1.5B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-09-27T06:43:54.5241595+05:30",
+        "size_vram": 1360758046,
+        "context_length": 8192
+      }
+    ]
+  }
+}

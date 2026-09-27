@@ -1,0 +1,17 @@
+{
+  "response": {
+    "model": "qwen2.5:1.5b",
+    "created_at": "2026-09-27T01:03:50.9111539Z",
+    "response": "{\"answer\":\"Birch cache\"}",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 63326200,
+    "load_duration": 10880200,
+    "prompt_eval_count": 131,
+    "prompt_eval_cached_count": 91,
+    "prompt_eval_duration": 13413000,
+    "eval_count": 9,
+    "eval_duration": 35223000
+  },
+  "wall_seconds": 0.302828700048849
+}

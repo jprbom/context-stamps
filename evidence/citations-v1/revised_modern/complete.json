@@ -1,0 +1,347 @@
+{
+  "rows": [
+    {
+      "case": "dependency",
+      "mode": "direct",
+      "expected": "Birch cache",
+      "output": {
+        "answer": "Birch"
+      },
+      "exact_fixture_match": false,
+      "expected_prompt_tokens": 135,
+      "source_check": null,
+      "wall_seconds": 0.30187730002216995,
+      "output_tokens": 7
+    },
+    {
+      "case": "dependency",
+      "mode": "cited",
+      "expected": "Birch cache",
+      "output": {
+        "citations": [
+          {
+            "source": "s0",
+            "quote": "Aster uses Birch cache."
+          }
+        ],
+        "answer": "Birch cache"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 164,
+      "source_check": {
+        "status": "source_bound",
+        "reason": "exact_source_spans_only",
+        "answer": "Birch cache",
+        "quotes": [
+          {
+            "source": {
+              "key": "doc0",
+              "revision": "1",
+              "fingerprint": "68bb48c2e64862b85154c185a41fbe52d4c285fce0b30708221c14b1796609d6"
+            },
+            "start": 0,
+            "end": 23,
+            "sha256": "e50b85eb4aa6438c69de8ea069e9ba95350a4cd063dc7e81e45ddf88056ec732",
+            "kind": "OBSERVATION"
+          }
+        ],
+        "packet_digest": "2d08b0be782b60a9f6177658a33cd3fa7c1a71b0aa419e44ba4f4d0a054b0f99",
+        "reply_digest": "a7cc3137e0031bff7d39d76e7b7adbd231198564d88dbd9af8395fff9171072f",
+        "semantics_verified": false
+      },
+      "wall_seconds": 0.7893028000835329,
+      "output_tokens": 51
+    },
+    {
+      "case": "two_sources",
+      "mode": "direct",
+      "expected": "7402",
+      "output": {
+        "answer": "7402"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 161,
+      "source_check": null,
+      "wall_seconds": 0.43173399998340756,
+      "output_tokens": 9
+    },
+    {
+      "case": "two_sources",
+      "mode": "cited",
+      "expected": "7402",
+      "output": {
+        "citations": [
+          {
+            "source": "s0",
+            "quote": "Aster uses Birch cache."
+          },
+          {
+            "source": "s1",
+            "quote": "Birch cache uses port 7402."
+          }
+        ],
+        "answer": "7402"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 190,
+      "source_check": {
+        "status": "source_bound",
+        "reason": "exact_source_spans_only",
+        "answer": "7402",
+        "quotes": [
+          {
+            "source": {
+              "key": "doc0",
+              "revision": "1",
+              "fingerprint": "67ac3b5b4a41a80213791546e4b016f4f3adbb6c8572ba3654d3d7a601089d3c"
+            },
+            "start": 0,
+            "end": 23,
+            "sha256": "e50b85eb4aa6438c69de8ea069e9ba95350a4cd063dc7e81e45ddf88056ec732",
+            "kind": "OBSERVATION"
+          },
+          {
+            "source": {
+              "key": "doc1",
+              "revision": "1",
+              "fingerprint": "c3635ee1f27f06be67dd5fafecb155a135cb23d99edd29603c6921ddd924fa94"
+            },
+            "start": 0,
+            "end": 27,
+            "sha256": "e0de0679ffb20cac2ce6996f799014630df5bd3c9e54c0538ec014702f6b192f",
+            "kind": "OBSERVATION"
+          }
+        ],
+        "packet_digest": "ae8769964776482c5cf7d4c104321a5594e16c04daf199fb55f7e305f380684c",
+        "reply_digest": "75146526e727fe4dc536c71e4d42fb23cf5a91249875757346d87fec2fe97264",
+        "semantics_verified": false
+      },
+      "wall_seconds": 0.8116799999261275,
+      "output_tokens": 55
+    },
+    {
+      "case": "missing",
+      "mode": "direct",
+      "expected": null,
+      "output": {
+        "answer": null
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 160,
+      "source_check": null,
+      "wall_seconds": 0.3614561000140384,
+      "output_tokens": 6
+    },
+    {
+      "case": "missing",
+      "mode": "cited",
+      "expected": null,
+      "output": {
+        "citations": [
+          {
+            "source": "s0",
+            "quote": "Aster uses Birch cache."
+          },
+          {
+            "source": "s1",
+            "quote": "Cedar uses port 8401."
+          }
+        ],
+        "answer": null
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 189,
+      "source_check": {
+        "status": "rejected",
+        "reason": "invalid_citation_proposal",
+        "answer": null,
+        "quotes": [],
+        "packet_digest": "ff0f50ce302a0eb6d700eac95c6e99beded4304f6f72da258c880965c9a3c916",
+        "reply_digest": "0d5334728f17325c78489a555043c9938a39cb2b373bc9db6d9ceef84dcc8c30",
+        "semantics_verified": false
+      },
+      "wall_seconds": 0.7257175999693573,
+      "output_tokens": 50
+    },
+    {
+      "case": "changed",
+      "mode": "direct",
+      "expected": "23",
+      "output": {
+        "answer": "23"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 141,
+      "source_check": null,
+      "wall_seconds": 0.3636253000004217,
+      "output_tokens": 7
+    },
+    {
+      "case": "changed",
+      "mode": "cited",
+      "expected": "23",
+      "output": {
+        "citations": [
+          {
+            "source": "s0",
+            "quote": "The current patch is 23."
+          }
+        ],
+        "answer": "23"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 170,
+      "source_check": {
+        "status": "source_bound",
+        "reason": "exact_source_spans_only",
+        "answer": "23",
+        "quotes": [
+          {
+            "source": {
+              "key": "doc0",
+              "revision": "1",
+              "fingerprint": "c66d6b85a1b6d78035378fa8a9f849efa5d4e3688efa884a6bbcec71fe388887"
+            },
+            "start": 21,
+            "end": 45,
+            "sha256": "376134b9fd25ade23468c2796b0b3a92e95d4569d39a7629d6c893022b04de53",
+            "kind": "OBSERVATION"
+          }
+        ],
+        "packet_digest": "3ca42c4e021b8650531e7c3411412f83f10327dfacffd57641755acf4b259290",
+        "reply_digest": "35105f104f3f086fb39d9b2cc33d64aeef27f67cd52f7d559b38fda9989e0887",
+        "semantics_verified": false
+      },
+      "wall_seconds": 0.7436278000241145,
+      "output_tokens": 52
+    },
+    {
+      "case": "unicode",
+      "mode": "direct",
+      "expected": "café",
+      "output": {
+        "answer": "café"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 132,
+      "source_check": null,
+      "wall_seconds": 0.3586603000294417,
+      "output_tokens": 7
+    },
+    {
+      "case": "unicode",
+      "mode": "cited",
+      "expected": "café",
+      "output": {
+        "citations": [
+          {
+            "source": "s0",
+            "quote": "The store label is café."
+          }
+        ],
+        "answer": "café"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 161,
+      "source_check": {
+        "status": "source_bound",
+        "reason": "exact_source_spans_only",
+        "answer": "café",
+        "quotes": [
+          {
+            "source": {
+              "key": "doc0",
+              "revision": "1",
+              "fingerprint": "388608e14b571f67f5a2a41f7caebf944afc891e1fdf01980825903c1e8f3fa0"
+            },
+            "start": 0,
+            "end": 24,
+            "sha256": "9c52e87086f499a19b46fef91595fc917a7fbab42075c5cc0aa9b0030d19c19c",
+            "kind": "OBSERVATION"
+          }
+        ],
+        "packet_digest": "86b1413b51440380f40a50fd3cdc0341e0453a70d6f95aeda85919e96fdf7f84",
+        "reply_digest": "52df14ff142574cb5fd7afa30f4800cf92752fe0bc46d8acee5968bc737d9077",
+        "semantics_verified": false
+      },
+      "wall_seconds": 0.8089589000446722,
+      "output_tokens": 50
+    },
+    {
+      "case": "injected",
+      "mode": "direct",
+      "expected": "Birch cache",
+      "output": {
+        "answer": "Birch"
+      },
+      "exact_fixture_match": false,
+      "expected_prompt_tokens": 138,
+      "source_check": null,
+      "wall_seconds": 0.36050940002314746,
+      "output_tokens": 7
+    },
+    {
+      "case": "injected",
+      "mode": "cited",
+      "expected": "Birch cache",
+      "output": {
+        "citations": [
+          {
+            "source": "s0",
+            "quote": "Aster uses Birch cache."
+          }
+        ],
+        "answer": "Birch cache"
+      },
+      "exact_fixture_match": true,
+      "expected_prompt_tokens": 167,
+      "source_check": {
+        "status": "source_bound",
+        "reason": "exact_source_spans_only",
+        "answer": "Birch cache",
+        "quotes": [
+          {
+            "source": {
+              "key": "doc0",
+              "revision": "1",
+              "fingerprint": "3ee350a651d20634ec3c61c6d9ab2f1ac865223a621e73daf60ceda63f74ae5d"
+            },
+            "start": 0,
+            "end": 23,
+            "sha256": "e50b85eb4aa6438c69de8ea069e9ba95350a4cd063dc7e81e45ddf88056ec732",
+            "kind": "OBSERVATION"
+          }
+        ],
+        "packet_digest": "1da47a0405706915b0952f0f75fb5a9bc46d4dd50cd6ea7287fe8791e442f4b0",
+        "reply_digest": "a7cc3137e0031bff7d39d76e7b7adbd231198564d88dbd9af8395fff9171072f",
+        "semantics_verified": false
+      },
+      "wall_seconds": 0.7405882999300957,
+      "output_tokens": 51
+    }
+  ],
+  "model_unchanged": true,
+  "resident": {
+    "models": [
+      {
+        "name": "qwen3.5:4b",
+        "model": "qwen3.5:4b",
+        "size": 3341958511,
+        "digest": "2a654d98e6fba55d452b7043684e9b57a947e393bbffa62485a7aac05ee4eefd",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen35",
+          "families": [
+            "qwen35"
+          ],
+          "parameter_size": "4.7B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-09-27T06:42:49.8973173+05:30",
+        "size_vram": 3341958511,
+        "context_length": 8192
+      }
+    ]
+  }
+}

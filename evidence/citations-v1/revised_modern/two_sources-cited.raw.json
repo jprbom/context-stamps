@@ -1,0 +1,17 @@
+{
+  "response": {
+    "model": "qwen3.5:4b",
+    "created_at": "2026-09-27T01:02:45.4152679Z",
+    "response": "{\"citations\": [{\"source\": \"s0\", \"quote\": \"Aster uses Birch cache.\"}, {\"source\": \"s1\", \"quote\": \"Birch cache uses port 7402.\"}], \"answer\": \"7402\"}",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 649849400,
+    "load_duration": 12257800,
+    "prompt_eval_count": 190,
+    "prompt_eval_cached_count": 0,
+    "prompt_eval_duration": 79383000,
+    "eval_count": 55,
+    "eval_duration": 488335000
+  },
+  "wall_seconds": 0.8116799999261275
+}

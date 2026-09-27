@@ -1,0 +1,17 @@
+{
+  "response": {
+    "model": "qwen2.5:1.5b",
+    "created_at": "2026-09-27T01:03:53.8527871Z",
+    "response": "{\"citations\":[],\"answer\":\"café\"}",
+    "done": true,
+    "done_reason": "stop",
+    "total_duration": 95436400,
+    "load_duration": 6965000,
+    "prompt_eval_count": 157,
+    "prompt_eval_cached_count": 120,
+    "prompt_eval_duration": 13267000,
+    "eval_count": 11,
+    "eval_duration": 63009000
+  },
+  "wall_seconds": 0.34246010007336736
+}
