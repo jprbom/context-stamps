@@ -1,0 +1,5 @@
+{
+  "mode": "fixed_citation_check",
+  "active": false,
+  "reason": "no learned candidate met calibration preservation rule"
+}

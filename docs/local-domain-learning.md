@@ -6,7 +6,14 @@ The latest [local training study](multihop-local-learning.md) fits a 13-paramete
 
 Every supported local deployment should provide a bounded improvement path: verified memory updates, a small locally fitted context/routing policy, and optional adapter updates on capable hardware. This is a design requirement, not a claim that every present model already improves autonomously. Devices unable to train weights can still update memory and CPU policies. Successful training never activates a candidate by itself.
 
-The [visual-memory preparation](chartqa-local-learning-draft.md) gives the next concrete test of that path: reuse a model-extracted chart, execute a bounded numerical expression, then learn a small route from independently scored local training outcomes. The data, expression engine and response protocol are prepared; actual vision calls and policy training are pending. Correct arithmetic over a misread chart remains an incorrect answer. Neither a successful parser nor the model's own calculation can supply its independent training label.
+The subsequent [TechQA study](techqa-local-learning-draft.md) records 1,774 requests
+and fits three small abstention policies. All fail calibration; the fixed source
+check remains selected and inactive. On development, fewer false positives come
+with lower positive F1 and higher reader cost. Fitting and source binding alone
+have not produced useful local improvement. Missing evidence and quote-generation
+failures need to be addressed before loosening any acceptance gate.
+
+The [visual-memory preparation](chartqa-local-learning-draft.md) gives the next test: reuse an extracted chart, execute a bounded expression, then learn a small route from independently scored local training outcomes. The first actual authored canary exposes direct/memory answer-format failures while its numerical program returns the expected sum. Protocol correction and public-data training remain pending. Correct arithmetic over a misread chart remains an incorrect answer; the model's own calculation cannot supply its independent training label.
 
 The [canonical media adapter](media-evidence.md) extends that evidence path to image, audio and video sources. It preserves the extractor/model/settings identity, source region and dependency on the exact external bytes. Revoking the source also hides its derived views, including after a durable-store restart. An OCR result, caption or transcript stays unverified model output until an independent application check supports its use. This supplies lineage for future local learning; it does not train a perceptual model or establish an accuracy gain.
 

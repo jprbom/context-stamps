@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "files": {
+    "CDLA-Permissive-v1.0.pdf": "e12775d6b5bfdba0bb33fd691dab386f0c7573853fdc4785c40b39739f120d5f",
+    "contexts.json.gz": "be28e5e21ec2b48bff48071679760d36160055a58acd35d06107f39b75951ef4",
+    "data-protocol.json": "ed4484eb4cfd419351497161689df5975a2eb22c5470f5bf7680b8144476a1ab",
+    "DATA_README.txt": "c5a58ed7f2780fb2c4f2e06f8933ec4afbd06b5f29f6797c7857f3812f824060",
+    "engineering.json": "53113fe09a88e3594f9e49b612c909d1d672c7463b7986643f7d42491aa8e739",
+    "execution.json": "ffd0f0a38749b1b921c25c565914b3077c98aaeea78a1653ce71ed5cd8970191",
+    "failure-review.json": "faece80ea00bbf04d37de71d31aa0c179fbd7a183d5c868a110d498fcd68fc9f",
+    "historical-sources.json.gz": "359fa432e51817e372170da945980699d33afc068f44dd553b33f4bfc9b34ccb",
+    "native-canaries.json": "fd5381b4f3d0ad283bd7b3a4c53183ef4c6d19c6437b28201741441abd788871",
+    "per-question.json.gz": "ed9fcc9bc3769ec912ea26ffeff1e5774a4ee520a6eb781ddbf144cab15758d4",
+    "policy-registration.json": "4c16f558962de14898abaca5961c407357121155aabe19c4519ec9fb1914d237",
+    "predictions.json.gz": "eb0c39e9a10c43100f5c4c8292492a74abec85e7f5d836e61f04c64e6d52d301",
+    "reader-records.json.gz": "f3cd8c44e77f874e6f0691b25dd0f552331ab4551c14bff835b29549c8b842d3",
+    "reader-registration.json": "472f189b289df7db16369a6a919cea6c76716e5bf2c227912462e97325c64501",
+    "README.md": "9b0d12a1ab40ef78859aa4838a62a69e0cb9b8e118c9b48503954f9d48fffa10",
+    "ridge-1.json": "e81cdc9f1d15bceb46c438ac03f0c6c984da85e1b0f16d1f6bf924b4b6638ee7",
+    "ridge-10.json": "0c7821c2f47c026e4ff0c2194f64bd789e2b3de54de7aea4e30fe0f71622b4ba",
+    "ridge-100.json": "56853d00f558b4f89278fc37db54d1d0cbae2f3d2215d3a076dc41093bd70211",
+    "selection.json": "9c6f3fa21e9cbeb2105f814d44844e456198c5f858db10d82fd83b9d7a6f3d1c",
+    "summary.json": "6acb15ff2b8f96a690830a4d6167ad13d748a8f052210b089e7315a0bb63523e",
+    "targets.json.gz": "a0a7644e9efb47ff1ad578e3f2ee38bf934e6985e64d26dd3461d872c95f0c8c",
+    "techqa-fit-citation-audit-v1.json.gz": "57f5e2d4238089461ce1b8833170c4d6878bc1f07c09a7cd636e4f81ffb8f052",
+    "techqa-fit-failure-audit-v1.json.gz": "ae78087bca3e650dbd1d83cab9d14015032e9984d544d2d210eb6c11a3765603",
+    "tests.txt": "677b9bdea7cfc0b984ac6af83154fa4cf7334cfb7c737c95e8e5a61aed1832fb",
+    "training.json": "f5f9e12ab864c0f91186522ba4545862de3a65218ee2a7c493a0f83e221099a4"
+  },
+  "scope": "Native metric, recorded policy and cost replay; no activation or semantic verification claim.",
+  "figures": {
+    "docs/assets/techqa-local-v1.png": "40b4ee0f264ab220da164bc09b1689b29130eb40dfdb13643953948805cadf65",
+    "docs/assets/techqa-local-v1.svg": "dfd4ab4818afb5318c28e191599d5ca3cde1266201e758b8f476fb8496a43534"
+  }
+}

@@ -1,0 +1,421 @@
+{
+  "model": "modern",
+  "trained_for": "modern",
+  "cross_model_diagnostic": false,
+  "metrics": {
+    "direct_raw": {
+      "QA_F1": 8.653599737222237,
+      "IR_Precision": 20.322580645161292,
+      "Total_Questions": 310,
+      "HasAns_QA_F1": 13.641349490868084,
+      "HasAns_IR_Precision": 36.25,
+      "HasAns_Total_Questions": 160,
+      "HasAns_Top_1_QA_F1": 13.641349490868084,
+      "HasAns_Top_1_IR_Precision": 36.25,
+      "HasAns_Top_1_Total_Questions": 160,
+      "positive_count": 160,
+      "negative_count": 150,
+      "answered_count": 301,
+      "positive_f1": 0.13641349490868082,
+      "false_positive_count": 145,
+      "abstained_positive_count": 4,
+      "answered_f1": 0.07251215676208947
+    },
+    "direct_exact_span": {
+      "QA_F1": 24.78263199528676,
+      "IR_Precision": 36.45161290322581,
+      "Total_Questions": 310,
+      "HasAns_QA_F1": 13.641349490868084,
+      "HasAns_IR_Precision": 36.25,
+      "HasAns_Total_Questions": 160,
+      "HasAns_Top_1_QA_F1": 13.641349490868084,
+      "HasAns_Top_1_IR_Precision": 36.25,
+      "HasAns_Top_1_Total_Questions": 160,
+      "positive_count": 160,
+      "negative_count": 150,
+      "answered_count": 212,
+      "positive_f1": 0.13641349490868082,
+      "false_positive_count": 95,
+      "abstained_positive_count": 43,
+      "answered_f1": 0.10295358106315533
+    },
+    "cited_raw": {
+      "QA_F1": 9.980764767659455,
+      "IR_Precision": 19.35483870967742,
+      "Total_Questions": 310,
+      "HasAns_QA_F1": 11.212731737340196,
+      "HasAns_IR_Precision": 29.375,
+      "HasAns_Total_Questions": 160,
+      "HasAns_Top_1_QA_F1": 11.212731737340196,
+      "HasAns_Top_1_IR_Precision": 29.375,
+      "HasAns_Top_1_Total_Questions": 160,
+      "positive_count": 160,
+      "negative_count": 150,
+      "answered_count": 287,
+      "positive_f1": 0.11212731737340195,
+      "false_positive_count": 137,
+      "abstained_positive_count": 10,
+      "answered_f1": 0.06251000271687913
+    },
+    "cited_checked": {
+      "QA_F1": 42.05026568884717,
+      "IR_Precision": 47.096774193548384,
+      "Total_Questions": 310,
+      "HasAns_QA_F1": 7.097389772141388,
+      "HasAns_IR_Precision": 16.875,
+      "HasAns_Total_Questions": 160,
+      "HasAns_Top_1_QA_F1": 7.097389772141388,
+      "HasAns_Top_1_IR_Precision": 16.875,
+      "HasAns_Top_1_Total_Questions": 160,
+      "positive_count": 160,
+      "negative_count": 150,
+      "answered_count": 79,
+      "positive_f1": 0.07097389772141385,
+      "false_positive_count": 31,
+      "abstained_positive_count": 112,
+      "answered_f1": 0.1437446029800787
+    },
+    "learned_gate": {
+      "QA_F1": 42.05026568884717,
+      "IR_Precision": 47.096774193548384,
+      "Total_Questions": 310,
+      "HasAns_QA_F1": 7.097389772141388,
+      "HasAns_IR_Precision": 16.875,
+      "HasAns_Total_Questions": 160,
+      "HasAns_Top_1_QA_F1": 7.097389772141388,
+      "HasAns_Top_1_IR_Precision": 16.875,
+      "HasAns_Top_1_Total_Questions": 160,
+      "positive_count": 160,
+      "negative_count": 150,
+      "answered_count": 79,
+      "positive_f1": 0.07097389772141385,
+      "false_positive_count": 31,
+      "abstained_positive_count": 112,
+      "answered_f1": 0.1437446029800787
+    },
+    "abstain_all": {
+      "QA_F1": 48.38709677419355,
+      "IR_Precision": 48.38709677419355,
+      "Total_Questions": 310,
+      "HasAns_QA_F1": 0.0,
+      "HasAns_IR_Precision": 0.0,
+      "HasAns_Total_Questions": 160,
+      "HasAns_Top_1_QA_F1": 0.0,
+      "HasAns_Top_1_IR_Precision": 0.0,
+      "HasAns_Top_1_Total_Questions": 160,
+      "positive_count": 160,
+      "negative_count": 150,
+      "answered_count": 0,
+      "positive_f1": 0.0,
+      "false_positive_count": 0,
+      "abstained_positive_count": 160,
+      "answered_f1": null
+    }
+  },
+  "contrasts": {
+    "cited_raw__minus__direct_raw": {
+      "mean": 0.013271650304372192,
+      "descriptive_95_percentile": [
+        -0.015428694848470242,
+        0.042617555337065696
+      ],
+      "gains": 20,
+      "losses": 15
+    },
+    "cited_checked__minus__direct_exact_span": {
+      "mean": 0.17267633693560416,
+      "descriptive_95_percentile": [
+        0.11663337720036661,
+        0.22777224198570042
+      ],
+      "gains": 75,
+      "losses": 23
+    },
+    "learned_gate__minus__cited_checked": {
+      "mean": 0.0,
+      "descriptive_95_percentile": [
+        0.0,
+        0.0
+      ],
+      "gains": 0,
+      "losses": 0
+    }
+  },
+  "costs": {
+    "direct": {
+      "input_tokens": 1172866,
+      "output_tokens": 11672,
+      "request_wall_seconds": 505.7263497991953,
+      "request_wall_median": 1.5344299000571482,
+      "request_wall_p95": 2.3770726550195835,
+      "processing_seconds": 0.5018977005966008,
+      "errors": 0,
+      "truncations": 0,
+      "raw_proposals": 301,
+      "model_calls": 310
+    },
+    "cited": {
+      "input_tokens": 1181856,
+      "output_tokens": 78421,
+      "request_wall_seconds": 1177.9868738002842,
+      "request_wall_median": 3.7054504500119947,
+      "request_wall_p95": 6.299992220004788,
+      "processing_seconds": 0.5382517994148657,
+      "errors": 1,
+      "truncations": 1,
+      "raw_proposals": 286,
+      "model_calls": 310
+    }
+  },
+  "selection": {
+    "mode": "fixed_citation_check",
+    "active": false,
+    "reason": "no learned candidate met calibration preservation rule"
+  },
+  "support_diagnostic": {
+    "answerable": 160,
+    "complete_gold_span_selected": 81,
+    "gold_doc_selected": 100
+  },
+  "bootstrap": {
+    "unit": "normalized question cluster",
+    "clusters": 308,
+    "replicates": 5000,
+    "seed": 83,
+    "scope": "descriptive; shared documents still prevent an IID guarantee"
+  },
+  "native_label_integrity": {
+    "answer_text_span_mismatches": 11,
+    "development_keys_modified": false,
+    "numeric_offset_strings_preserved": true,
+    "primary_metric": "native character offsets"
+  },
+  "input_duplicate_audit": {
+    "withheld_training_questions": [
+      {
+        "id": "TRAIN_Q042",
+        "question_hash": "8b2c2e2f256bd63d6cd5e048242ce49c14ee58264ef7518d3ba2195e97d0a877",
+        "matching_development_ids": [
+          "DEV_Q225"
+        ]
+      },
+      {
+        "id": "TRAIN_Q047",
+        "question_hash": "7e25f2a3925ba501e89b4058c49182914f7223b7f2439752220ab920937f5557",
+        "matching_development_ids": [
+          "DEV_Q156"
+        ]
+      },
+      {
+        "id": "TRAIN_Q056",
+        "question_hash": "f0384981f0b9c21f7262aebed65a4d5092831775c3bcaed50b50b0dbd77f60fe",
+        "matching_development_ids": [
+          "DEV_Q155"
+        ]
+      },
+      {
+        "id": "TRAIN_Q067",
+        "question_hash": "3ec3993c42982f7313ce45a2314b609e4bc90b70a9523f41d47dd64ce6b2fe40",
+        "matching_development_ids": [
+          "DEV_Q038"
+        ]
+      },
+      {
+        "id": "TRAIN_Q076",
+        "question_hash": "01bed7c79f1f6bd4dccc7218b7834d66d6b3d0c2ab2749c114bc129eeefdc3e3",
+        "matching_development_ids": [
+          "DEV_Q179"
+        ]
+      },
+      {
+        "id": "TRAIN_Q107",
+        "question_hash": "b77a68850fe0b9bd250eb01e9d53997fd2c80ce5f9adeb9cff21fe10eaa2f967",
+        "matching_development_ids": [
+          "DEV_Q160"
+        ]
+      },
+      {
+        "id": "TRAIN_Q138",
+        "question_hash": "90ac1a209638415c5406aa5db10ed8fb61972bdfd2969e072e1f7af3bdba3607",
+        "matching_development_ids": [
+          "DEV_Q298"
+        ]
+      },
+      {
+        "id": "TRAIN_Q156",
+        "question_hash": "1dc41d78b2567d0658d79c3d8198b03a75d967a94471ddec03a9e65c4c5f6433",
+        "matching_development_ids": [
+          "DEV_Q195"
+        ]
+      },
+      {
+        "id": "TRAIN_Q160",
+        "question_hash": "ef32d7d7a707d9d1351bc32f1b42c23ff6ed6d04b8cefc7ebd560673bcee3765",
+        "matching_development_ids": [
+          "DEV_Q165"
+        ]
+      },
+      {
+        "id": "TRAIN_Q189",
+        "question_hash": "f2f59eb7154f7786f2a8f3a061853e083d5612cba6ccca5bf45fd4a1a10b61a6",
+        "matching_development_ids": [
+          "DEV_Q290"
+        ]
+      },
+      {
+        "id": "TRAIN_Q206",
+        "question_hash": "1517d1876acbd6ea9e59451bbcc3e645382ec60115e2148bc0f6a61b6c77ae1a",
+        "matching_development_ids": [
+          "DEV_Q129"
+        ]
+      },
+      {
+        "id": "TRAIN_Q210",
+        "question_hash": "d33756b6ff785bc8816765a15fd7f400c4a6a499900a970b59838a7aa8604572",
+        "matching_development_ids": [
+          "DEV_Q189"
+        ]
+      },
+      {
+        "id": "TRAIN_Q228",
+        "question_hash": "7695f1f1217c395885e88ddefc6e6054d76a41b7a2b46e17d513b4d78bfd6b5a",
+        "matching_development_ids": [
+          "DEV_Q300"
+        ]
+      },
+      {
+        "id": "TRAIN_Q238",
+        "question_hash": "e09818372cc575de770dab94e325c8af178ff109451c8274d8de650f51e215a0",
+        "matching_development_ids": [
+          "DEV_Q082"
+        ]
+      },
+      {
+        "id": "TRAIN_Q248",
+        "question_hash": "e2df6d4b99866288c72a420dc35548310bfd06a470d96ef85e027a9cef0b830c",
+        "matching_development_ids": [
+          "DEV_Q276"
+        ]
+      },
+      {
+        "id": "TRAIN_Q285",
+        "question_hash": "f3efb9a5126ea53239231f6e351b5ce3b52dd801f5b40628ae863fed15f0996c",
+        "matching_development_ids": [
+          "DEV_Q094"
+        ]
+      },
+      {
+        "id": "TRAIN_Q286",
+        "question_hash": "c8e31accb75c04b2288def9bdcfa8900441a30d0643b1c6ff54494eea62a34fc",
+        "matching_development_ids": [
+          "DEV_Q240"
+        ]
+      },
+      {
+        "id": "TRAIN_Q299",
+        "question_hash": "cbe53903b76d73960fd2cc997d4306a95d29ea04e911216e2f4a49e0df9d1372",
+        "matching_development_ids": [
+          "DEV_Q014"
+        ]
+      },
+      {
+        "id": "TRAIN_Q333",
+        "question_hash": "fe7ef2b0d58f899b64288eb61950a0a685326c0950394ea44782f4cbb29c41e4",
+        "matching_development_ids": [
+          "DEV_Q228"
+        ]
+      },
+      {
+        "id": "TRAIN_Q341",
+        "question_hash": "72ab8c6a2ae5ac784c6193a205f0518f28bba11320cfc8fb010b0e69f358903d",
+        "matching_development_ids": [
+          "DEV_Q226"
+        ]
+      },
+      {
+        "id": "TRAIN_Q489",
+        "question_hash": "82067278c5134391f469445d0e68f48268b87707115da6c4990fcf2ec55cf33e",
+        "matching_development_ids": [
+          "DEV_Q029"
+        ]
+      },
+      {
+        "id": "TRAIN_Q507",
+        "question_hash": "5f79ea158111dd260d57a0f2f7c8f20c681a6a44e281f3e3da9af1d5e70c8cfe",
+        "matching_development_ids": [
+          "DEV_Q303"
+        ]
+      },
+      {
+        "id": "TRAIN_Q559",
+        "question_hash": "b408c62038a02a54d693ab22718e254408770b844a3e7a04dfa4f022314d38cb",
+        "matching_development_ids": [
+          "DEV_Q180"
+        ]
+      }
+    ],
+    "grouped_training_duplicates": {
+      "7e2b6faf649aa36cbcb5eeb53b03d1aea5a2dcf2b8b725854e52c2be4739a52e": [
+        "TRAIN_Q022",
+        "TRAIN_Q340"
+      ],
+      "549277878c71814a672b4303711e62dd1c93af4af4cc9f33a6606c48ddcfc6f9": [
+        "TRAIN_Q024",
+        "TRAIN_Q505"
+      ],
+      "271d5231fc5423b71ffaa26c0737cc0811dce4636878d04166da00933a463e1e": [
+        "TRAIN_Q112",
+        "TRAIN_Q342"
+      ],
+      "44df19fbafebd97feec608c037235ab9d3ba1793b43c99c4086c8713cf9362d1": [
+        "TRAIN_Q358",
+        "TRAIN_Q398"
+      ],
+      "d38f69ee96db832af52b395ff4e742be67dc9fbbec42b375c01da4bec5d95f77": [
+        "TRAIN_Q373",
+        "TRAIN_Q516"
+      ],
+      "daf53aa1392a6b79722819767af90bd6a982cfde6a4188dc3df32ea1d5ae9906": [
+        "TRAIN_Q402",
+        "TRAIN_Q551"
+      ],
+      "f4bc06cc1d4711daf0208fe965967b82dfa6d48193dd38a0f9f9174108d446a5": [
+        "TRAIN_Q455",
+        "TRAIN_Q593"
+      ]
+    },
+    "development_duplicate_groups": {
+      "27228dbe1c393561077c09edece03e16e5cd15cf3f7383cb605127cc46a244c3": [
+        "DEV_Q146",
+        "DEV_Q264"
+      ],
+      "e51c952ead6baa529cbed5b0a3fbd21c5bfc0a2f29df676d4eb33637728e4627": [
+        "DEV_Q164",
+        "DEV_Q215"
+      ]
+    }
+  },
+  "compile_seconds_shared": 33.337864699191414,
+  "policy_decision_seconds": 0.0,
+  "policy_feature_construction_excluded": false,
+  "int16_gate_flips": null,
+  "policy_activation": false,
+  "base_weights_changed": false,
+  "limitations": [
+    "public native development split",
+    "shared documents; bootstrap descriptive, not IID significance",
+    "unknown base-model pretraining exposure",
+    "no retention/device qualification",
+    "post-generation gate cannot reduce the already incurred reader token cost",
+    "exact quotes do not establish semantic entailment"
+  ],
+  "evidence_hashes": {
+    "data_manifest": "42b2bdef2c884a14851171478dde48a1623f8aebbdd2966f5963ef8de62acde7",
+    "reader_plan": "472f189b289df7db16369a6a919cea6c76716e5bf2c227912462e97325c64501",
+    "completed_run": "0e0f759e2a2a714ea3e1162baf1059c64e7a4da4a6ce6a097d2e21b76cb97224",
+    "trained": "f5f9e12ab864c0f91186522ba4545862de3a65218ee2a7c493a0f83e221099a4",
+    "analysis_source": "e76dbee98fa300c675896755ad4c9eaf4f504b7cc0e3f2b18fc6b1a143f79aa7",
+    "reference_projection_sha256": "0848b4af18d183b9e5c948a4505277bfb1757d067c8a735bcd3c6ba74482c701"
+  },
+  "original_summary_sha256": "803902dc28aba644ef6d1a1e89725bbed545c7f592dae64bfa56396914ab0fa3"
+}

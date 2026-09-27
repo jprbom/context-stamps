@@ -1,0 +1,33 @@
+{
+  "source_hashes": {
+    "train_techqa_policy.py": "085faea8583c0dc08702b85531652be190ee6e48868245588732533df9fd16c6",
+    "techqa_policy.py": "a6ed8b081f136c8424cf1162130ea321ef1e032ff7674788016e0c23469d8b99",
+    "techqa_native.py": "3e009a6508fa7050decbd6dc01ba84523d016397c056b18a6684da7994eacfc5",
+    "techqa_context.py": "c341f998a6ae615c2445617d574dc31fd63648e10998dae068409ef06ab5d517"
+  },
+  "data_manifest": "42b2bdef2c884a14851171478dde48a1623f8aebbdd2966f5963ef8de62acde7",
+  "reader_registration": "472f189b289df7db16369a6a919cea6c76716e5bf2c227912462e97325c64501",
+  "completed_runs": {
+    "fit": "afabd53be4c1f212ed60db7d5c5930812451da87f3e04ccc975ea9cf8fa96a3f",
+    "calibration": "767e5482daef378c2749e058e78f7b04f9b6c9b2f2b32e650b57690263a1bec9"
+  },
+  "model": "modern",
+  "ridges": [
+    1.0,
+    10.0,
+    100.0
+  ],
+  "thresholds": [
+    -0.2,
+    0.0,
+    0.2,
+    0.4,
+    0.6,
+    0.8
+  ],
+  "eligible_fit": 129,
+  "minimum_fit": 20,
+  "development_keys_opened": false,
+  "selection": "preserve calibration positive F1 exactly; reduce false-positive count and improve native F1; otherwise retain fixed citation check",
+  "active": false
+}

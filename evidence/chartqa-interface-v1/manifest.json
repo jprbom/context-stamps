@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "files": {
+    "authored-chart.png": "5adbac75f07ae741698583200462a19b18f271977190ffbae424586d9b792152",
+    "probe-records.json.gz": "83a9d589d4c8bf32be519b2f23e3b70553c6e7eac7896ffe25c220b83e20b125",
+    "README.md": "cb9dda42c1f5796dcac37f4eaa311fd42ba13cb62031166de86748d58cb18b00",
+    "records.json.gz": "dbc7bf682ba24d1f95b864206c4f4b5b6e0555cb44b2de8eb6d9c9a604819056"
+  },
+  "actual_calls": 4,
+  "passed": false,
+  "dataset_questions": 0,
+  "probe_actual_calls": 24
+}

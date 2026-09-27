@@ -1,0 +1,316 @@
+{
+  "data_complete_sha256": "ed99c4cc60de959043714b5da88f080d9e535d353ab1b173c67619f47c06e5f6",
+  "documents_sha256": "69261b5f4436d70379fd7172a8d97062c93f5d433c386d196937d198c66bf75a",
+  "files": [
+    {
+      "file": "calibration.inputs.json",
+      "sha256": "542528c65fc46f0a7722763404a176e03d7a757861431f2b1e794595b1404463"
+    },
+    {
+      "file": "calibration.keys.json",
+      "sha256": "4e2223d050b9f934ff7cd8d5e97d381de9075e751c5a45f5ed1557c1ce7cbfce"
+    },
+    {
+      "file": "development.inputs.json",
+      "sha256": "e91221c8b842ab88efb544c10af975e5e0045b644b8634edb5f2eb8f499b05be"
+    },
+    {
+      "file": "development.keys.json",
+      "sha256": "0848b4af18d183b9e5c948a4505277bfb1757d067c8a735bcd3c6ba74482c701"
+    },
+    {
+      "file": "fit.inputs.json",
+      "sha256": "5280a3131fbf426e8da7f3006b54e9a66e5db6a3bfb52d8903bf78b96b037a53"
+    },
+    {
+      "file": "fit.keys.json",
+      "sha256": "7cff9c0eabed934b45c8b62925007459c050c158b5323f6dda5298ea81691a03"
+    },
+    {
+      "file": "label-integrity-audit.json",
+      "sha256": "323b213d1f2d16333ddcbd0faf0a634ee68ff2f8464e8e123799f3d50fb19ebe"
+    },
+    {
+      "file": "native-canaries.json",
+      "sha256": "1e80fe71c919a3c9c225d7d7468652a3d5d1960b0c44037c38d71ca68cc51305"
+    },
+    {
+      "file": "registration.json",
+      "sha256": "a5867ad74176f23f2c6389ca8e2dd997bac8aab08251efdaee04d060658ed940"
+    }
+  ],
+  "split_rule": "group normalized questions; withhold native training questions matching dev; hash(techqa-group-split-83 + NUL + group hash); fill 400 fit with whole groups, remaining calibration; retain native 310 dev",
+  "statistics": {
+    "fit": {
+      "questions": 400,
+      "candidate_documents": 15011,
+      "candidate_counts": {
+        "50": 400
+      },
+      "maximum_question_characters": 1765
+    },
+    "calibration": {
+      "questions": 177,
+      "candidate_documents": 7759,
+      "candidate_counts": {
+        "50": 177
+      },
+      "maximum_question_characters": 1442
+    },
+    "development": {
+      "questions": 310,
+      "candidate_documents": 12355,
+      "candidate_counts": {
+        "50": 307,
+        "49": 3
+      },
+      "maximum_question_characters": 1728
+    }
+  },
+  "overlap": {
+    "fit__calibration": {
+      "candidate_documents": 2619,
+      "normalized_questions": 0
+    },
+    "fit__development": {
+      "candidate_documents": 3379,
+      "normalized_questions": 0
+    },
+    "calibration__development": {
+      "candidate_documents": 1842,
+      "normalized_questions": 0
+    }
+  },
+  "fit_label_statistics": {
+    "answerable": 295,
+    "answer_chars_min": 34,
+    "answer_chars_median": 256,
+    "answer_chars_max": 1805,
+    "answer_chars_above4096": 0
+  },
+  "duplicate_audit": {
+    "withheld_training_questions": [
+      {
+        "id": "TRAIN_Q042",
+        "question_hash": "8b2c2e2f256bd63d6cd5e048242ce49c14ee58264ef7518d3ba2195e97d0a877",
+        "matching_development_ids": [
+          "DEV_Q225"
+        ]
+      },
+      {
+        "id": "TRAIN_Q047",
+        "question_hash": "7e25f2a3925ba501e89b4058c49182914f7223b7f2439752220ab920937f5557",
+        "matching_development_ids": [
+          "DEV_Q156"
+        ]
+      },
+      {
+        "id": "TRAIN_Q056",
+        "question_hash": "f0384981f0b9c21f7262aebed65a4d5092831775c3bcaed50b50b0dbd77f60fe",
+        "matching_development_ids": [
+          "DEV_Q155"
+        ]
+      },
+      {
+        "id": "TRAIN_Q067",
+        "question_hash": "3ec3993c42982f7313ce45a2314b609e4bc90b70a9523f41d47dd64ce6b2fe40",
+        "matching_development_ids": [
+          "DEV_Q038"
+        ]
+      },
+      {
+        "id": "TRAIN_Q076",
+        "question_hash": "01bed7c79f1f6bd4dccc7218b7834d66d6b3d0c2ab2749c114bc129eeefdc3e3",
+        "matching_development_ids": [
+          "DEV_Q179"
+        ]
+      },
+      {
+        "id": "TRAIN_Q107",
+        "question_hash": "b77a68850fe0b9bd250eb01e9d53997fd2c80ce5f9adeb9cff21fe10eaa2f967",
+        "matching_development_ids": [
+          "DEV_Q160"
+        ]
+      },
+      {
+        "id": "TRAIN_Q138",
+        "question_hash": "90ac1a209638415c5406aa5db10ed8fb61972bdfd2969e072e1f7af3bdba3607",
+        "matching_development_ids": [
+          "DEV_Q298"
+        ]
+      },
+      {
+        "id": "TRAIN_Q156",
+        "question_hash": "1dc41d78b2567d0658d79c3d8198b03a75d967a94471ddec03a9e65c4c5f6433",
+        "matching_development_ids": [
+          "DEV_Q195"
+        ]
+      },
+      {
+        "id": "TRAIN_Q160",
+        "question_hash": "ef32d7d7a707d9d1351bc32f1b42c23ff6ed6d04b8cefc7ebd560673bcee3765",
+        "matching_development_ids": [
+          "DEV_Q165"
+        ]
+      },
+      {
+        "id": "TRAIN_Q189",
+        "question_hash": "f2f59eb7154f7786f2a8f3a061853e083d5612cba6ccca5bf45fd4a1a10b61a6",
+        "matching_development_ids": [
+          "DEV_Q290"
+        ]
+      },
+      {
+        "id": "TRAIN_Q206",
+        "question_hash": "1517d1876acbd6ea9e59451bbcc3e645382ec60115e2148bc0f6a61b6c77ae1a",
+        "matching_development_ids": [
+          "DEV_Q129"
+        ]
+      },
+      {
+        "id": "TRAIN_Q210",
+        "question_hash": "d33756b6ff785bc8816765a15fd7f400c4a6a499900a970b59838a7aa8604572",
+        "matching_development_ids": [
+          "DEV_Q189"
+        ]
+      },
+      {
+        "id": "TRAIN_Q228",
+        "question_hash": "7695f1f1217c395885e88ddefc6e6054d76a41b7a2b46e17d513b4d78bfd6b5a",
+        "matching_development_ids": [
+          "DEV_Q300"
+        ]
+      },
+      {
+        "id": "TRAIN_Q238",
+        "question_hash": "e09818372cc575de770dab94e325c8af178ff109451c8274d8de650f51e215a0",
+        "matching_development_ids": [
+          "DEV_Q082"
+        ]
+      },
+      {
+        "id": "TRAIN_Q248",
+        "question_hash": "e2df6d4b99866288c72a420dc35548310bfd06a470d96ef85e027a9cef0b830c",
+        "matching_development_ids": [
+          "DEV_Q276"
+        ]
+      },
+      {
+        "id": "TRAIN_Q285",
+        "question_hash": "f3efb9a5126ea53239231f6e351b5ce3b52dd801f5b40628ae863fed15f0996c",
+        "matching_development_ids": [
+          "DEV_Q094"
+        ]
+      },
+      {
+        "id": "TRAIN_Q286",
+        "question_hash": "c8e31accb75c04b2288def9bdcfa8900441a30d0643b1c6ff54494eea62a34fc",
+        "matching_development_ids": [
+          "DEV_Q240"
+        ]
+      },
+      {
+        "id": "TRAIN_Q299",
+        "question_hash": "cbe53903b76d73960fd2cc997d4306a95d29ea04e911216e2f4a49e0df9d1372",
+        "matching_development_ids": [
+          "DEV_Q014"
+        ]
+      },
+      {
+        "id": "TRAIN_Q333",
+        "question_hash": "fe7ef2b0d58f899b64288eb61950a0a685326c0950394ea44782f4cbb29c41e4",
+        "matching_development_ids": [
+          "DEV_Q228"
+        ]
+      },
+      {
+        "id": "TRAIN_Q341",
+        "question_hash": "72ab8c6a2ae5ac784c6193a205f0518f28bba11320cfc8fb010b0e69f358903d",
+        "matching_development_ids": [
+          "DEV_Q226"
+        ]
+      },
+      {
+        "id": "TRAIN_Q489",
+        "question_hash": "82067278c5134391f469445d0e68f48268b87707115da6c4990fcf2ec55cf33e",
+        "matching_development_ids": [
+          "DEV_Q029"
+        ]
+      },
+      {
+        "id": "TRAIN_Q507",
+        "question_hash": "5f79ea158111dd260d57a0f2f7c8f20c681a6a44e281f3e3da9af1d5e70c8cfe",
+        "matching_development_ids": [
+          "DEV_Q303"
+        ]
+      },
+      {
+        "id": "TRAIN_Q559",
+        "question_hash": "b408c62038a02a54d693ab22718e254408770b844a3e7a04dfa4f022314d38cb",
+        "matching_development_ids": [
+          "DEV_Q180"
+        ]
+      }
+    ],
+    "grouped_training_duplicates": {
+      "7e2b6faf649aa36cbcb5eeb53b03d1aea5a2dcf2b8b725854e52c2be4739a52e": [
+        "TRAIN_Q022",
+        "TRAIN_Q340"
+      ],
+      "549277878c71814a672b4303711e62dd1c93af4af4cc9f33a6606c48ddcfc6f9": [
+        "TRAIN_Q024",
+        "TRAIN_Q505"
+      ],
+      "271d5231fc5423b71ffaa26c0737cc0811dce4636878d04166da00933a463e1e": [
+        "TRAIN_Q112",
+        "TRAIN_Q342"
+      ],
+      "44df19fbafebd97feec608c037235ab9d3ba1793b43c99c4086c8713cf9362d1": [
+        "TRAIN_Q358",
+        "TRAIN_Q398"
+      ],
+      "d38f69ee96db832af52b395ff4e742be67dc9fbbec42b375c01da4bec5d95f77": [
+        "TRAIN_Q373",
+        "TRAIN_Q516"
+      ],
+      "daf53aa1392a6b79722819767af90bd6a982cfde6a4188dc3df32ea1d5ae9906": [
+        "TRAIN_Q402",
+        "TRAIN_Q551"
+      ],
+      "f4bc06cc1d4711daf0208fe965967b82dfa6d48193dd38a0f9f9174108d446a5": [
+        "TRAIN_Q455",
+        "TRAIN_Q593"
+      ]
+    },
+    "development_duplicate_groups": {
+      "27228dbe1c393561077c09edece03e16e5cd15cf3f7383cb605127cc46a244c3": [
+        "DEV_Q146",
+        "DEV_Q264"
+      ],
+      "e51c952ead6baa529cbed5b0a3fbd21c5bfc0a2f29df676d4eb33637728e4627": [
+        "DEV_Q164",
+        "DEV_Q215"
+      ]
+    }
+  },
+  "label_integrity": {
+    "answer_text_span_mismatches": 11,
+    "development_keys_modified": false,
+    "numeric_offset_strings_preserved": true,
+    "primary_metric": "native character offsets"
+  },
+  "input_corrections": {
+    "body_field": "QUESTION_TEXT (README says QUESTION_BODY)",
+    "repeated_candidate_id_cases": 2,
+    "action": "deduplicate candidate references only; retain every question"
+  },
+  "source_hashes": {
+    "techqa_prepare.py": "8f26b9a7933edca725dd5ffbd53611190062eaa5628e6ff4681dab7155db02a4",
+    "techqa_context.py": "c341f998a6ae615c2445617d574dc31fd63648e10998dae068409ef06ab5d517",
+    "techqa_native.py": "3e009a6508fa7050decbd6dc01ba84523d016397c056b18a6684da7994eacfc5"
+  },
+  "claim_scope": "native public development split; shared candidate documents; unknown base-model pretraining overlap",
+  "data_license": "CDLA-Permissive-1.0",
+  "labels_used_for_selection": false,
+  "original_manifest_sha256": "42b2bdef2c884a14851171478dde48a1623f8aebbdd2966f5963ef8de62acde7"
+}

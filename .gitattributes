@@ -53,3 +53,6 @@ docs/assets/multihop-v1.svg -text whitespace=cr-at-eol,-blank-at-eol
 evidence/multihop-v1/download.json -text whitespace=cr-at-eol
 evidence/multihop-v1/native-canaries.json -text whitespace=cr-at-eol
 docs/MUSIQUE-LICENSE.txt -text whitespace=-blank-at-eol,-blank-at-eof
+# Publisher RST underlines and whitespace are retained as original notice bytes.
+evidence/techqa-local-v1/DATA_README.txt -text conflict-marker-size=128 whitespace=cr-at-eol,-blank-at-eol,-space-before-tab,-blank-at-eof
+docs/assets/techqa-local-v1.svg -text whitespace=cr-at-eol,-blank-at-eol

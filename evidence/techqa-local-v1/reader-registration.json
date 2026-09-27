@@ -1,0 +1,104 @@
+{
+  "models": {
+    "small": {
+      "name": "qwen2.5:1.5b",
+      "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+      "bytes": 986061892,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen2",
+        "families": [
+          "qwen2"
+        ],
+        "parameter_size": "1.5B",
+        "quantization_level": "Q4_K_M"
+      },
+      "template_sha256": "eb4402837c7829a690fa845de4d7f3fd842c2adee476d5341da8a46ea9255175",
+      "parameters_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "license_sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "system_sha256": "66b9ea09bd5b7099cbb4fc820f31b575c0366fa439b08245566692c6784e281e"
+    },
+    "modern": {
+      "name": "qwen3.5:4b",
+      "digest": "2a654d98e6fba55d452b7043684e9b57a947e393bbffa62485a7aac05ee4eefd",
+      "bytes": 3389983735,
+      "details": {
+        "parent_model": "",
+        "format": "gguf",
+        "family": "qwen35",
+        "families": [
+          "qwen35"
+        ],
+        "parameter_size": "4.7B",
+        "quantization_level": "Q4_K_M"
+      },
+      "template_sha256": "b507b9c2f6ca642bffcd06665ea7c91f235fd32daeefdf875a0f938db05fb315",
+      "parameters_sha256": "ca0b0a53ea0ebb617fd0c6d8d2b69bf4b2c65fb8a1af62c7ed69507993cf3ca7",
+      "license_sha256": "7339fa418c9ad3e8e12e74ad0fd26a9cc4be8703f9c110728a992b193be85cb2",
+      "system_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "options": {
+    "temperature": 0,
+    "seed": 83,
+    "num_ctx": 8192,
+    "num_predict": 1024
+  },
+  "tokenizer_hashes": {
+    "small": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+    "modern": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+  },
+  "source_hashes": {
+    "experiments/techqa_reader.py": "9acf579853c3433c81fc03202e073305bb8f2f066345620452bb713769c83169",
+    "experiments/techqa_context.py": "c341f998a6ae615c2445617d574dc31fd63648e10998dae068409ef06ab5d517",
+    "experiments/techqa_generation.py": "cb8f1a29f4d3585fa988c75c95e7cc32dce1c8fd6247dfa648890dffe70655da",
+    "experiments/cited_reader.py": "ef4e80a1183bb0374cc3440cc062b23cb850fd3cd1e2251651dd87cb5da01220",
+    "experiments/local_eval.py": "60084ecbdf5294102b374414c8ecd4d994f836dce1a5536cb08f264f51337912",
+    "experiments/ruler_native.py": "11446ed9a26c43c2f6a65384d098e32b62f22d439010d42866017b389dd692e0",
+    "context_stamps/citations.py": "88374c131abdd375a9aeb9c2f2cab4098606c0dd7fb486826c4dbc39d09edf3e",
+    "context_stamps/context_state.py": "5cba496d754ec153e67a5d8babc39a4564a3c9396a8177d9cd84760fee7db851",
+    "context_stamps/security.py": "2e38aa395acf61abe39f5fa7b0b506996425afb136860969ec7df12fb52e9b34"
+  },
+  "data_manifest": "42b2bdef2c884a14851171478dde48a1623f8aebbdd2966f5963ef8de62acde7",
+  "policy_source_hashes": {
+    "techqa_policy.py": "a6ed8b081f136c8424cf1162130ea321ef1e032ff7674788016e0c23469d8b99",
+    "train_techqa_policy.py": "085faea8583c0dc08702b85531652be190ee6e48868245588732533df9fd16c6",
+    "techqa_native.py": "3e009a6508fa7050decbd6dc01ba84523d016397c056b18a6684da7994eacfc5",
+    "eval_techqa.py": "e76dbee98fa300c675896755ad4c9eaf4f504b7cc0e3f2b18fc6b1a143f79aa7"
+  },
+  "input_hashes": {
+    "fit": "5280a3131fbf426e8da7f3006b54e9a66e5db6a3bfb52d8903bf78b96b037a53",
+    "calibration": "542528c65fc46f0a7722763404a176e03d7a757861431f2b1e794595b1404463",
+    "development": "e91221c8b842ab88efb544c10af975e5e0045b644b8634edb5f2eb8f499b05be"
+  },
+  "ollama_version": {
+    "version": "0.34.2"
+  },
+  "prompt_budget": 7000,
+  "windows": {
+    "width_words": 200,
+    "stride_words": 150,
+    "maximum_selected": 8
+  },
+  "modes": [
+    "direct",
+    "cited"
+  ],
+  "key_files_opened": false,
+  "hypothesis": "source binding and learned abstention may reduce unsupported outputs; preserve positive answer quality",
+  "controls": [
+    "direct exact-span",
+    "cited raw",
+    "cited checked",
+    "abstain all"
+  ],
+  "phase_calls": {
+    "fit": 800,
+    "calibration": 354,
+    "development": 620
+  },
+  "primary_training_model": "modern",
+  "no_candidate_activation": true,
+  "resource_scope": "shared CPU compilation, response processing, actual loopback request latency and tokens; no energy/edge-device claim"
+}

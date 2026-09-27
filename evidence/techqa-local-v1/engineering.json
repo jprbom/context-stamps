@@ -1,0 +1,22 @@
+{
+  "tests": {
+    "command": "python -m unittest discover -s experiments -p test_techqa_*.py -v",
+    "passed": 21
+  },
+  "replay": {
+    "reader_records": 1774,
+    "development_questions": 310,
+    "independent_ridge_refits": 3,
+    "calibration_settings_rejected": 18,
+    "GPU_calls": 0
+  },
+  "secret_scan": {
+    "version": "gitleaks 8.30.1",
+    "bytes_scanned": 92490747,
+    "findings": 0,
+    "rules_changed": false
+  },
+  "core_changes": false,
+  "core_note": "433-test core unchanged; new experiment checks and independent evidence replay added. CI covers full suite.",
+  "resource_note": "CPU preparation/tests ran during the GPU study; no isolated latency, energy or edge-device claim."
+}

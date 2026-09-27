@@ -2,6 +2,16 @@
 
 By Prashant Jagtap. No ChartQA model result or learned improvement is claimed yet.
 
+The later [actual authored interface canary](../evidence/chartqa-interface-v1/README.md)
+made four local calls and failed. Extraction supplies the three fixture values and
+the arithmetic program returns 60, but direct/memory replies contain invalid answer
+strings inside valid JSON. A 24-call comparison of four authored questions retains
+all baseline, schema-grounded and JSON-only outcomes. Schema grounding improves
+contract-correct answers from 1/4 to 3/4 for direct vision and 2/4 to 3/4 for memory,
+but neither passes every case. Six JSON-only numeric answers are rejected by the
+original string-only contract; a prospective typed-scalar protocol is needed.
+These authored checks do not use ChartQA questions or train a model.
+
 The intended application is repeated analysis of a chart on a local small model.
 The experiment will compare reading the image for every question with reusing a
 source-bound extraction, then test whether bounded numerical operations improve
@@ -133,7 +143,7 @@ is saved before parsing. The expected sum is declared before generation. A faile
 call is retained, never retried automatically; an existing resident workload blocks
 the canary without eviction. The model digest, server, font, source files and exact
 requests are recorded. This is an interface check, not training or a benchmark.
-**No actual vision canary has run for this preparation record.** Passing it would
+**No actual vision canary had run when the preparation record was frozen.** Passing it would
 only permit registering the public-data comparison; it would not qualify a model.
 
 The first Hub download command treated a wildcard as a literal filename and

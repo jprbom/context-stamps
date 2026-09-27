@@ -1,0 +1,18 @@
+{
+  "scope": "Descriptive, after frozen native development scoring; not used to fit or select a candidate.",
+  "positive_lost_all_native_overlap": 19,
+  "positive_gained_overlap": 4,
+  "positive_f1_gains": 7,
+  "positive_f1_losses": 19,
+  "negative_gains": 68,
+  "negative_losses": 4,
+  "failed_calls": [
+    {
+      "phase": "development",
+      "id": "DEV_Q129",
+      "mode": "cited",
+      "error": "JSONDecodeError: Unterminated string starting at: line 17 column 16 (char 2357)",
+      "truncated": true
+    }
+  ]
+}

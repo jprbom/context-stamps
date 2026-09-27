@@ -1,0 +1,26 @@
+test_allowlist_ignores_targets (test_techqa_context.TechQAContextTests.test_allowlist_ignores_targets) ... ok
+test_bm25_ranking_tie_stable (test_techqa_context.TechQAContextTests.test_bm25_ranking_tie_stable) ... ok
+test_duplicate_candidates_deduplicated_and_extra_fields_rejected (test_techqa_context.TechQAContextTests.test_duplicate_candidates_deduplicated_and_extra_fields_rejected) ... ok
+test_exact_unicode_and_quote_offsets (test_techqa_context.TechQAContextTests.test_exact_unicode_and_quote_offsets) ... ok
+test_grouped_split_withholds_dev_duplicates_and_never_splits_groups (test_techqa_context.TechQAContextTests.test_grouped_split_withholds_dev_duplicates_and_never_splits_groups) ... ok
+test_native_text_alias_and_conflicting_bodies (test_techqa_context.TechQAContextTests.test_native_text_alias_and_conflicting_bodies) ... ok
+test_question_title_body_deduplication (test_techqa_context.TechQAContextTests.test_question_title_body_deduplication) ... ok
+test_windows_cover_body_and_preserve_exact_offsets (test_techqa_context.TechQAContextTests.test_windows_cover_body_and_preserve_exact_offsets) ... ok
+test_compilation_failure_kept_and_acceptance_requires_complete_binding (test_techqa_evidence.EvidenceTests.test_compilation_failure_kept_and_acceptance_requires_complete_binding) ... ok
+test_explicit_abstention_differs_from_missing_or_invalid (test_techqa_evidence.EvidenceTests.test_explicit_abstention_differs_from_missing_or_invalid) ... ok
+test_failed_raw_answer_cannot_be_credited_as_abstention (test_techqa_evidence.EvidenceTests.test_failed_raw_answer_cannot_be_credited_as_abstention) ... ok
+test_native_canaries_are_replayed_independently (test_techqa_evidence.EvidenceTests.test_native_canaries_are_replayed_independently) ... ok
+test_quality_and_false_positives_are_separate (test_techqa_evidence.EvidenceTests.test_quality_and_false_positives_are_separate) ... ok
+test_span_overlap_and_wrong_document (test_techqa_evidence.EvidenceTests.test_span_overlap_and_wrong_document) ... ok
+test_fit_numerically_matches_verified_signal (test_techqa_policy.TechQAPolicyTests.test_fit_numerically_matches_verified_signal) ... ok
+test_fixed_input_output_features (test_techqa_policy.TechQAPolicyTests.test_fixed_input_output_features) ... ok
+test_small_nonfinite_or_out_of_range_outcomes_fail (test_techqa_policy.TechQAPolicyTests.test_small_nonfinite_or_out_of_range_outcomes_fail) ... ok
+test_sparse_constant_data_stays_finite (test_techqa_policy.TechQAPolicyTests.test_sparse_constant_data_stays_finite) ... ok
+test_admission_requires_source_binding_scope_and_complete_output (test_techqa_training.TechQATrainingTests.test_admission_requires_source_binding_scope_and_complete_output) ... ok
+test_run_and_labels_are_hash_bound (test_techqa_training.TechQATrainingTests.test_run_and_labels_are_hash_bound) ... ok
+test_training_cannot_open_development_keys (test_techqa_training.TechQATrainingTests.test_training_cannot_open_development_keys) ... ok
+
+----------------------------------------------------------------------
+Ran 21 tests in 0.023s
+
+OK

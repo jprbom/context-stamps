@@ -1,0 +1,60 @@
+{
+  "completions": {
+    "fit": {
+      "records": 800,
+      "completion_sha256": "afabd53be4c1f212ed60db7d5c5930812451da87f3e04ccc975ea9cf8fa96a3f",
+      "invocation_seconds": 2175.9258508000057
+    },
+    "calibration": {
+      "records": 354,
+      "completion_sha256": "767e5482daef378c2749e058e78f7b04f9b6c9b2f2b32e650b57690263a1bec9",
+      "invocation_seconds": 947.0843354000244
+    },
+    "development": {
+      "records": 620,
+      "completion_sha256": "0e0f759e2a2a714ea3e1162baf1059c64e7a4da4a6ce6a097d2e21b76cb97224",
+      "invocation_seconds": 1696.616475100047
+    }
+  },
+  "warmups": {
+    "fit": {
+      "wall_seconds": 7.210841499967501,
+      "input_tokens": 122,
+      "output_tokens": 6,
+      "record_sha256": "b52e3378f10423e1cd5a707fd3424784ecee685b2dd365023a60f7d7987bce30"
+    },
+    "calibration": {
+      "wall_seconds": 9.278929599910043,
+      "input_tokens": 122,
+      "output_tokens": 6,
+      "record_sha256": "b54fd4c478fd2819e1b6a70d9e34ec76b6a1f906ed85e084c3294ceee657cadf"
+    },
+    "development": {
+      "wall_seconds": 9.954540399950929,
+      "input_tokens": 122,
+      "output_tokens": 6,
+      "record_sha256": "b2919cbfb072e2859f1e0523ae08dc6dc9903e1fa715eae2d55f9cce456b12dc"
+    }
+  },
+  "measured_requests": 1774,
+  "actual_warmup_requests": 3,
+  "source_hashes": {
+    "experiments/techqa_reader.py": "9acf579853c3433c81fc03202e073305bb8f2f066345620452bb713769c83169",
+    "experiments/techqa_context.py": "c341f998a6ae615c2445617d574dc31fd63648e10998dae068409ef06ab5d517",
+    "experiments/techqa_generation.py": "cb8f1a29f4d3585fa988c75c95e7cc32dce1c8fd6247dfa648890dffe70655da",
+    "experiments/cited_reader.py": "ef4e80a1183bb0374cc3440cc062b23cb850fd3cd1e2251651dd87cb5da01220",
+    "experiments/local_eval.py": "60084ecbdf5294102b374414c8ecd4d994f836dce1a5536cb08f264f51337912",
+    "experiments/ruler_native.py": "11446ed9a26c43c2f6a65384d098e32b62f22d439010d42866017b389dd692e0",
+    "context_stamps/citations.py": "88374c131abdd375a9aeb9c2f2cab4098606c0dd7fb486826c4dbc39d09edf3e",
+    "context_stamps/context_state.py": "5cba496d754ec153e67a5d8babc39a4564a3c9396a8177d9cd84760fee7db851",
+    "context_stamps/security.py": "2e38aa395acf61abe39f5fa7b0b506996425afb136860969ec7df12fb52e9b34",
+    "experiments/techqa_policy.py": "a6ed8b081f136c8424cf1162130ea321ef1e032ff7674788016e0c23469d8b99",
+    "experiments/train_techqa_policy.py": "085faea8583c0dc08702b85531652be190ee6e48868245588732533df9fd16c6",
+    "experiments/techqa_native.py": "3e009a6508fa7050decbd6dc01ba84523d016397c056b18a6684da7994eacfc5",
+    "experiments/eval_techqa.py": "e76dbee98fa300c675896755ad4c9eaf4f504b7cc0e3f2b18fc6b1a143f79aa7"
+  },
+  "scope": "Source-span predictions, typed check outcomes, fit features and costs. Raw prompts/replies and corpus remain external.",
+  "source_binding_replay": "Requires separately downloaded original corpus and raw local requests; not certified by offset replay.",
+  "no_energy_or_edge_measurement": true,
+  "provider_charges_usd": 0
+}
