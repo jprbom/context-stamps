@@ -1,0 +1,112 @@
+{
+  "program-v3": {
+    "answers_per_arm": 15,
+    "calls": 48,
+    "correct": {
+      "direct": 15,
+      "memory": 15,
+      "program": 14
+    },
+    "costs": {
+      "direct": {
+        "calls": 15,
+        "input_tokens": 7249,
+        "output_tokens": 100,
+        "wall_seconds": 7.988543900195509
+      },
+      "extract": {
+        "calls": 3,
+        "input_tokens": 1641,
+        "output_tokens": 706,
+        "wall_seconds": 8.160044200019911
+      },
+      "memory": {
+        "calls": 15,
+        "input_tokens": 5434,
+        "output_tokens": 117,
+        "wall_seconds": 6.642288999981247
+      },
+      "program": {
+        "calls": 15,
+        "input_tokens": 8884,
+        "output_tokens": 226,
+        "wall_seconds": 7.991206700215116
+      }
+    },
+    "failures": [
+      {
+        "answer": "33",
+        "case": "absent",
+        "chart": "new-position",
+        "correct": false,
+        "error": null,
+        "expected": null,
+        "mode": "program",
+        "wall_seconds": 0.652062900015153
+      }
+    ],
+    "model_calls_in_replay": 0,
+    "passed": false,
+    "protocol": "typed-json-program-v3"
+  },
+  "scalar-v2": {
+    "answers_per_arm": 10,
+    "calls": 32,
+    "correct": {
+      "direct": 10,
+      "memory": 10,
+      "program": 8
+    },
+    "costs": {
+      "direct": {
+        "calls": 10,
+        "input_tokens": 4832,
+        "output_tokens": 66,
+        "wall_seconds": 5.0681432001292706
+      },
+      "extract": {
+        "calls": 2,
+        "input_tokens": 1094,
+        "output_tokens": 492,
+        "wall_seconds": 12.915507399942726
+      },
+      "memory": {
+        "calls": 10,
+        "input_tokens": 3677,
+        "output_tokens": 83,
+        "wall_seconds": 4.113316000206396
+      },
+      "program": {
+        "calls": 10,
+        "input_tokens": 5117,
+        "output_tokens": 170,
+        "wall_seconds": 5.403261599713005
+      }
+    },
+    "failures": [
+      {
+        "answer": null,
+        "case": "lookup",
+        "chart": "earlier",
+        "correct": false,
+        "error": "ValueError: binary operation requires two arguments",
+        "expected": "20",
+        "mode": "program",
+        "wall_seconds": 0.6629308999981731
+      },
+      {
+        "answer": null,
+        "case": "lookup",
+        "chart": "fresh",
+        "correct": false,
+        "error": "ValueError: binary operation requires two arguments",
+        "expected": "7",
+        "mode": "program",
+        "wall_seconds": 0.530497599975206
+      }
+    ],
+    "model_calls_in_replay": 0,
+    "passed": false,
+    "protocol": "typed-json-v2"
+  }
+}

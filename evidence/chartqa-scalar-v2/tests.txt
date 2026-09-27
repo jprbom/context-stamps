@@ -1,0 +1,42 @@
+{"canary_passed": true, "answers": {"direct": "60", "memory": "60", "program": "60"}, "model_unchanged": true}
+test_complete_fixture_retains_raw_records_and_is_not_a_benchmark (test_chartqa_canary.CanaryTests.test_complete_fixture_retains_raw_records_and_is_not_a_benchmark) ... ok
+test_existing_workload_prevents_generation_and_output_mutation (test_chartqa_canary.CanaryTests.test_existing_workload_prevents_generation_and_output_mutation) ... ok
+test_transport_failure_is_retained_without_retry (test_chartqa_canary.CanaryTests.test_transport_failure_is_retained_without_retry) ... ok
+test_duplicate_questions_do_not_create_a_repeated_task_group (test_chartqa_prepare.PreparationTests.test_duplicate_questions_do_not_create_a_repeated_task_group) ... ok
+test_encoding_changes_do_not_hide_identical_pixels (test_chartqa_prepare.PreparationTests.test_encoding_changes_do_not_hide_identical_pixels) ... ok
+test_invalid_counts_and_duplicate_ids_fail (test_chartqa_prepare.PreparationTests.test_invalid_counts_and_duplicate_ids_fail) ... ok
+test_malformed_images_and_resource_bounds_fail (test_chartqa_prepare.PreparationTests.test_malformed_images_and_resource_bounds_fail) ... ok
+test_member_allowlist_rejects_traversal_before_file_access (test_chartqa_prepare.PreparationTests.test_member_allowlist_rejects_traversal_before_file_access) ... ok
+test_native_png_names_are_url_encoded_and_hash_bound (test_chartqa_prepare.PreparationTests.test_native_png_names_are_url_encoded_and_hash_bound) ... ok
+test_selection_ignores_reference_labels_and_iteration_order (test_chartqa_prepare.PreparationTests.test_selection_ignores_reference_labels_and_iteration_order) ... ok
+test_shared_images_are_withheld_from_earlier_cohorts (test_chartqa_prepare.PreparationTests.test_shared_images_are_withheld_from_earlier_cohorts) ... ok
+test_answer_or_explicit_abstention_no_repair (test_chartqa_protocol.ProtocolTests.test_answer_or_explicit_abstention_no_repair) ... ok
+test_extraction_limits_and_complete_inputs (test_chartqa_protocol.ProtocolTests.test_extraction_limits_and_complete_inputs) ... ok
+test_partial_or_foreign_responses_and_missing_usage_rejected (test_chartqa_protocol.ProtocolTests.test_partial_or_foreign_responses_and_missing_usage_rejected) ... ok
+test_program_executes_only_bounded_expression (test_chartqa_protocol.ProtocolTests.test_program_executes_only_bounded_expression) ... ok
+test_prompts_preserve_evidence_and_schema_order (test_chartqa_protocol.ProtocolTests.test_prompts_preserve_evidence_and_schema_order) ... ok
+test_same_memory_used_for_text_and_arithmetic (test_chartqa_protocol.ProtocolTests.test_same_memory_used_for_text_and_arithmetic) ... ok
+test_source_binding_remains_unverified_and_revocation_invalidates (test_chartqa_protocol.ProtocolTests.test_source_binding_remains_unverified_and_revocation_invalidates) ... ok
+test_transport_fixed_to_loopback_and_foreign_model_refused (test_chartqa_protocol.ProtocolTests.test_transport_fixed_to_loopback_and_foreign_model_refused) ... ok
+test_decimal_arithmetic_is_exact_before_rendering (test_chartqa_quant.QuantTests.test_decimal_arithmetic_is_exact_before_rendering) ... ok
+test_expression_and_rational_resource_bounds (test_chartqa_quant.QuantTests.test_expression_and_rational_resource_bounds) ... ok
+test_incompatible_units_zero_division_and_ties_abstain (test_chartqa_quant.QuantTests.test_incompatible_units_zero_division_and_ties_abstain) ... ok
+test_json_duplicates_nonfinite_size_and_nesting_are_rejected (test_chartqa_quant.QuantTests.test_json_duplicates_nonfinite_size_and_nesting_are_rejected) ... ok
+test_nested_comparison_retains_cell_and_question_references (test_chartqa_quant.QuantTests.test_nested_comparison_retains_cell_and_question_references) ... ok
+test_ratio_percentage_extrema_and_labels (test_chartqa_quant.QuantTests.test_ratio_percentage_extrema_and_labels) ... ok
+test_unknown_values_are_not_imputed (test_chartqa_quant.QuantTests.test_unknown_values_are_not_imputed) ... ok
+test_untrusted_program_cannot_supply_code_or_arbitrary_answers (test_chartqa_quant.QuantTests.test_untrusted_program_cannot_supply_code_or_arbitrary_answers) ... ok
+test_invalid_types_and_extra_fields_fail (test_chartqa_scalar.ScalarTests.test_invalid_types_and_extra_fields_fail) ... ok
+test_lookup_instruction_keeps_executor_strict (test_chartqa_scalar.ScalarTests.test_lookup_instruction_keeps_executor_strict) ... ok
+test_metadata_checks_survive_projection (test_chartqa_scalar.ScalarTests.test_metadata_checks_survive_projection) ... ok
+test_numbers_keep_type_and_zero_metric_semantics (test_chartqa_scalar.ScalarTests.test_numbers_keep_type_and_zero_metric_semantics) ... ok
+test_same_contract_for_both_answer_arms (test_chartqa_scalar.ScalarTests.test_same_contract_for_both_answer_arms) ... ok
+test_strings_are_not_repaired (test_chartqa_scalar.ScalarTests.test_strings_are_not_repaired) ... ok
+test_abstention_and_reference_validation (test_chartqa_score.ScorerTests.test_abstention_and_reference_validation) ... ok
+test_declared_reference_edge_cases (test_chartqa_score.ScorerTests.test_declared_reference_edge_cases) ... ok
+test_native_exact_metric_is_separate (test_chartqa_score.ScorerTests.test_native_exact_metric_is_separate) ... ok
+
+----------------------------------------------------------------------
+Ran 36 tests in 0.080s
+
+OK

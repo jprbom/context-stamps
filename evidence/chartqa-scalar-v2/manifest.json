@@ -1,0 +1,14 @@
+{
+  "evidence_class": "authored_interface_development_not_model_learning",
+  "files": {
+    "README.md": "db8e3d8647ecc526ad94ad0e4cc9eb6abba11a5fbd66446e571d62d6c310bfad",
+    "earlier.png": "5adbac75f07ae741698583200462a19b18f271977190ffbae424586d9b792152",
+    "fresh.png": "5fb2f06d36386fa339e167bdc54567ac1afbb77bc976ee0fc73f8965ec9bf902",
+    "new-position.png": "c38570e0712853634a19675452c2649866bc1563ed215392b65b870408997ad1",
+    "program-v3.json.gz": "defad421747d5139f32de4f93b064f89b3fbc66e0ccbf30eb9870b5ab210b93c",
+    "scalar-v2.json.gz": "cf631fc34ebe2d003225d6cd1227b99a95a0c1cba50932b73e7e431dccf67dae",
+    "summary.json": "73c875d5de04ab71fdf42a04338ff0199d07aac6ce451936ce26fd771fdb95e9",
+    "tests.txt": "5008d5d1ae003115f5d4cae3118265300d617c39407af719e5c7e13a57ef074a"
+  },
+  "measured_calls": 80
+}

@@ -32,6 +32,8 @@ The next text experiment will improve evidence selection and test choosing exist
 
 The broader aim is a locally improving domain system: verified memory, small routing policies and optional weight updates, with independent outcomes, retention tests, resource accounting and rollback. Training completion is only one step in that process.
 
+The visual interface work reinforces that point. After fixing numeric-answer handling and cell-lookup instructions, the latest authored check gets 15/15 direct answers, 15/15 memory answers and 14/15 numerical programs. The failed program calculates a number for a category absent from the chart. Execution is valid; the answer is unsupported. Charging extraction also makes memory more expensive on these small fixtures. These are development checks, not a ChartQA result or learned improvement. They show why a locally improving system needs an independent outcome check before turning experience into training labels.
+
 Code, native target-offset projections, fitted policies, all scored outcomes, cost records and an independent replay are in the research branch. Raw corpus and prompts remain external. No autonomous improvement or universal superiority is claimed from this result.
 
 https://github.com/jprbom/context-stamps/tree/research/enterprise-context

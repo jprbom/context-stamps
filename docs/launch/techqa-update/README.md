@@ -2,9 +2,9 @@
 
 By Prashant Jagtap. Prepared for review; nothing has been posted or sent.
 
-- [LinkedIn article](linkedin-article.md): 7,404 characters.
+- [LinkedIn article](linkedin-article.md): 7,999 characters.
 - [LinkedIn post](linkedin-post.md): 923 characters; replace the article-link placeholder after publishing the article.
-- [X article](x-article.md): 3,310 characters.
+- [X article](x-article.md): 3,932 characters.
 - [X post](x-post.md): 260 literal characters, including the full repository link.
 - [PNG research figure](../../assets/techqa-local-v1.png) and [SVG](../../assets/techqa-local-v1.svg).
 

@@ -89,7 +89,9 @@ Second, the reader often fails even when the relevant span is present. The train
 
 The wider local-learning design remains: collect authorised observations, obtain independent outcomes, fit a candidate, evaluate fresh tasks and retained skills, measure the complete cost, then either keep the current version or promote with monitoring and rollback.
 
-I am also preparing a visual-memory experiment that separates image extraction from bounded arithmetic. Its first authored interface checks exposed response-format failures, so the public-data comparison remains pending correction. A calculation can be exact while the extracted chart values are wrong; these require separate checks.
+I am also preparing a visual-memory experiment that separates image extraction from bounded arithmetic. After correcting numeric-answer handling and lookup instructions, the latest check gets 15/15 direct answers, 15/15 memory answers and 14/15 program answers across three authored charts. The remaining program returns a valid calculation for a category absent from the chart. Charging extraction also makes the memory treatment more expensive on these small examples. These are interface checks, not ChartQA benchmark scores or model training.
+
+Every supported local deployment should be able to improve from its own verified experience: memory and small CPU policies on modest devices, with optional adapter training on capable hardware. The failed chart program explains why the model's own output cannot be its training judge. An update must preserve older skills and justify its complete operating cost before activation.
 
 ## What is available now
 

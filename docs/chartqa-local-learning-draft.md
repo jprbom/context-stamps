@@ -9,8 +9,18 @@ strings inside valid JSON. A 24-call comparison of four authored questions retai
 all baseline, schema-grounded and JSON-only outcomes. Schema grounding improves
 contract-correct answers from 1/4 to 3/4 for direct vision and 2/4 to 3/4 for memory,
 but neither passes every case. Six JSON-only numeric answers are rejected by the
-original string-only contract; a prospective typed-scalar protocol is needed.
+original string-only contract.
 These authored checks do not use ChartQA questions or train a model.
+
+The [next two prospective checks](../evidence/chartqa-scalar-v2/README.md) record
+another 80 requests. The typed-scalar interface accepts numbers without repairing
+strings; it gets 10/10 direct and memory answers on two charts, but its program
+route fails two lookups. An explicit lookup instruction fixes these. On three
+charts the final interface gets 15/15 direct, 15/15 memory and 14/15 program
+answers. The remaining program produces 33 for an absent category. Neither run
+passes its all-cases acceptance gate. Extraction-inclusive costs exceed direct
+reading on these fixtures. Public-data training remains pending a separate
+question-to-evidence check; every failed request and historical score is retained.
 
 The intended application is repeated analysis of a chart on a local small model.
 The experiment will compare reading the image for every question with reusing a
@@ -63,10 +73,11 @@ vision support. The implemented protocol uses the local chat endpoint, the same
 model for all three answer methods, a 16,384-token context limit, temperature zero,
 seed 101 and non-thinking output. Extraction allows 4,096 output tokens; each
 answer/program allows 1,024. JSON schema field order is preserved. These settings
-are development choices, not a qualified run registration. The actual vision
-interface still needs the separate four-call authored canary and a frozen study.
-No paid provider or model-based external judge is planned. The current TechQA
-experiment keeps exclusive use of the GPU until it finishes.
+are development choices, not a qualified public-data run registration. The
+authored checks now use a typed JSON scalar contract for both direct and memory
+answers; extraction still uses its original schema. A frozen public-data study
+remains to be registered. No paid provider or external model judge is used.
+TechQA and the authored checks have finished; no GPU workload is left running.
 
 The policy must use information available before choosing a query-time route.
 Answers, correctness labels and competing-arm outputs cannot be routing features.
@@ -88,8 +99,8 @@ A successful expression has `execution_verified=True` and
 model extracted the right values or selected the right cells. Such outputs cannot
 become local training labels merely because the arithmetic passes.
 
-Thirty experiment tests pass: eight preparation, eight numerical, three scoring,
-eight source-bound protocol and three canary-lifecycle tests. Inference in the
+Thirty-six experiment tests pass: eight preparation, eight numerical, three scoring,
+eight source-bound protocol, three canary-lifecycle and six typed-scalar tests. Inference in the
 lifecycle tests is mocked; these tests make **zero actual model calls**. Early tests caught
 sentence punctuation in question constants and JSON nesting beyond the intended
 bound; both were corrected before any model measurement. These are component
@@ -130,7 +141,7 @@ python -m unittest discover -s experiments -p 'test_chartqa_*.py' -v
 python experiments/verify_chartqa_preparation.py
 ```
 
-After the existing GPU workload finishes, the Windows interface canary can run
+With no competing GPU workload, the original Windows interface canary can run
 against the separately installed local `qwen3.5:4b` model:
 
 ```powershell
