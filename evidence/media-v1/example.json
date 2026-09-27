@@ -1,0 +1,39 @@
+[
+  {
+    "bytes": 8044,
+    "nodes": 4,
+    "extraction_kinds": [
+      "DERIVED_RESULT",
+      "DERIVED_RESULT"
+    ],
+    "timeline": [
+      {
+        "interval_ms": [
+          0,
+          125
+        ],
+        "ref": {
+          "fingerprint": "9cb5ab3444108d61de4aac25ac2cbde9490d1aab036a78def13c4505fa22f4cd",
+          "key": "first-segment",
+          "revision": "3a0f632789df6740bdf00b6ef4b4c43cd52d9f48aa72b7e5c4425f5f091f5abe"
+        }
+      },
+      {
+        "interval_ms": [
+          100,
+          250
+        ],
+        "ref": {
+          "fingerprint": "70792a11d88a6466fda8206f67aea1897983084231fd0f5e4f4aa5cd3bf6e1a3",
+          "key": "second-segment",
+          "revision": "9a92a5f60d622a31f781dd18b84caeda8f05df3699ddf45cec22b4ad302ba18e"
+        }
+      }
+    ],
+    "model_calls": 0
+  },
+  {
+    "visible_after_source_revocation": 0,
+    "old_resolution_current": false
+  }
+]

@@ -52,6 +52,7 @@ jobs:
       - run: python experiments/test_multihop_evidence.py -v
       - run: python experiments/verify_multihop.py
       - run: python experiments/verify_citations.py
+      - run: python experiments/verify_media.py
       - run: python examples/source_bound_answer.py
       - run: python experiments/test_terminal_pilot.py -v
       - run: python experiments/verify_terminal_pilot.py

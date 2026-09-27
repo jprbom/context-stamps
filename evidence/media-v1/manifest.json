@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "evidence_class": "authored_media_engineering_not_model_quality",
+  "model_calls": 0,
+  "targeted_tests": 17,
+  "core_tests": 433,
+  "core_skips": 0,
+  "files": {
+    "example.json": "2e43638a16aa35eb871cd6ad22f09947faf6388a1629a6f559057e01edea6a46",
+    "core-tests.txt": "b577ba802bbb1799dfe3ab373f76f634d6cf2db894e892538c782628fc65087e"
+  },
+  "source_hashes": {
+    "context_stamps/media_evidence.py": "1827a74cfc82e75924cf6eadada8b23a929cf377574aa5cd2ba9051f495759c3",
+    "context_stamps/context_state.py": "5cba496d754ec153e67a5d8babc39a4564a3c9396a8177d9cd84760fee7db851",
+    "context_stamps/security.py": "2e38aa395acf61abe39f5fa7b0b506996425afb136860969ec7df12fb52e9b34",
+    "context_stamps/state_store.py": "710ed6596ada17b355000b4266406ebcfbcef8f87b38413a3d2e6b7c5816e0ab",
+    "context_stamps/working_set.py": "284c624f1841f32446413e0365f04fa7f4abeb2774a59790b1da36705ad74897",
+    "context_stamps/audit.py": "f5936e495addf4d8379c8ff75e970cecb3fac9e3a1cb661489f4d7878aeaeef0",
+    "context_stamps/experience.py": "d4e4333c43dff8fe30a06836f005141beb9a105da8dfe1fad39a28368e436a4b",
+    "tests/test_media_evidence.py": "21ed365aa1a78900863808dc3a8cb6e50dd5a697d016523c7133beb610f72735",
+    "examples/media_context.py": "1aec2e214a52193cecf415ddd54d7750f758527f9eb6097f5dfb054317493e58",
+    "experiments/verify_media.py": "18ea95ca331357d9e4d8efc02aceb272da887dc7c63dbb1efaeb97b0229644a9"
+  }
+}

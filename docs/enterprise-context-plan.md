@@ -16,7 +16,7 @@ This is the active implementation objective, superseding the earlier general-lea
 
 | Plane | Starting implementation | Work remaining |
 |---|---|---|
-| Ingestion | File observations, source identities and explicit facet compilation | Canonical modality adapters, typed provenance and verified extraction |
+| Ingestion | File/trajectory observations and canonical external image/audio/video identities with extraction lineage and spatial/temporal regions | Real extractor integration, verified extraction and model-specific multimodal token accounting |
 | Context state | Durable signed temporal history, current ACLs, inverse supersession lineage and bounded working sets | Retention holds, permitted deletion/export, catalogue scaling and host identity integration |
 | Context intelligence | Experimental rankers, exact requirements, failed cheap-route and judged-pool acquisition learners | Calibrated answer sufficiency/value/conflict/uncertainty and context-node attention |
 | Context compiler | Authorization-first temporal compiler, conflict policy, exact bounded closure selection, token/byte budgets and optional exact batched packing | Faithful semantic compression, learned value/sufficiency, adaptive acquisition and target-device resource qualification |
@@ -115,11 +115,13 @@ For every experiment record per-task success, false acceptance, abstention, evid
 
 The expanded evaluation programme adds matched local open-weight and frontier-model runs. Use the same model and agent scaffold with and without the runtime to isolate its effect; comparisons between different models are a separate analysis. Start locally. Frontier runs are preparation-only: no paid provider calls are authorized. Review established harnesses, including Harbor/Cline Bench for coding agents and Inspect for model/task evaluation, before adding adapters. Preserve native task scoring, sandbox code execution, freeze development and final evaluation partitions, and never repeatedly tune against a final test set. Label pilot subsets and unsupported context lengths explicitly. Model revisions and task licenses must be checked before each registered run.
 
-The [evaluation programme](evaluation-programme.md) records the harness decisions, paired protocol, metrics, local runner and current setup failure. No new native model benchmark has completed yet.
+The [evaluation programme](evaluation-programme.md) records harness decisions and paired protocols. Completed local studies above retain their native scores, failures and limited scopes; frontier comparisons and deployment qualification remain outstanding. The initial Inspect setup failure remains recorded alongside subsequent successful local benchmark paths.
 
 Release proof requires reproducible CPU/RTX profiles, source/data/model hashes, security/isolation tests, independent reruns, a claim-to-evidence map, source/model/data notices and owner attribution. Public documentation must distinguish implemented APIs, measured local results and unproven research targets. No universal-superiority or AGI claim follows from this programme.
 
 ## Immediate work
+
+Current continuation: the [media adapter](media-evidence.md) adds shared context-state support for external images, audio and video, with an offline WAV replay and durable-store integration tests. It does not verify perceptual meaning. The frozen TechQA reader/policy study is running on the local RTX; no outcome or candidate qualification is claimed before completion. Preserve every measured failure and keep all model candidates inactive until their quality, retention and device gates pass.
 
 The [structural-memory follow-up](structured-local-memory.md) now retains recorded UI ancestry and every source occurrence. All 3.07 million source lines are covered across views, but the 72-question, two-reader development comparison still has low answer credit, new regressions and increased model-token use. Both candidates remain inactive. Page ownership, selected-evidence adequacy, label/table relationships, action transitions and independent retention are the next gaps. The full local core suite now passes 369 tests; this is partial ingestion/evaluation progress, not completion of the seven-plane objective.
 

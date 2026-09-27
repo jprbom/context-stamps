@@ -1,0 +1,5 @@
+Command: python -m unittest discover -s tests -q
+Environment: CPython 3.13.13, Windows, optional core dependencies installed
+Completion summary (not the full diagnostic log):
+Ran 433 tests in 16.096s
+OK
