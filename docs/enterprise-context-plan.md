@@ -2,6 +2,8 @@
 
 By Prashant Jagtap
 
+Latest measured addition: [local relation learning](multihop-local-learning.md), a 13-parameter selector with 1,024 measured reader requests. Complete-support selection improves, while reliable answer gains, abstention, retention and device qualification remain open. The seven-plane objective is still incomplete; this candidate is inactive.
+
 This is the active implementation objective, superseding the earlier general-learning programme. The runtime owns versioned enterprise context; interchangeable models consume compiled views. A 256-bit stamp is a routing/control reference. Detailed evidence, permissions, relationships and computation inputs remain externally available and independently verifiable.
 
 **Target:** given a task, select fresh, authorized, sufficient context within a declared economic budget, execute an appropriate decision/tool/model, and provide a receipt explaining the evidence and computation used.

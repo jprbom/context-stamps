@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "name": "diffusion",
+  "features": [
+    "bm25",
+    "query_coverage",
+    "title_coverage",
+    "idf_overlap",
+    "title_in_query",
+    "query_in_text",
+    "log_length",
+    "out_degree",
+    "in_degree",
+    "max_tf",
+    "query_length",
+    "title_length"
+  ],
+  "steps": 4,
+  "weights": [
+    1.4891626834869385,
+    -5.984956741333008,
+    9.447465896606445,
+    1.990717887878418,
+    -0.011537850834429264,
+    0.0,
+    9.224150657653809,
+    2.7017838954925537,
+    -2.2506303787231445,
+    -1.0766440629959106,
+    -0.00032849085982888937,
+    -4.965691566467285
+  ],
+  "alpha": 0.5321635603904724,
+  "epoch": 200
+}

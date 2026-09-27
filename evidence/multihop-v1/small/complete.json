@@ -1,0 +1,27 @@
+{
+  "records": 512,
+  "sha256": "0669e18960e8894692ef712e18ee544e4970a5224ccb72df6dfd1f08446ffb88",
+  "resident": {
+    "models": [
+      {
+        "name": "qwen2.5:1.5b",
+        "model": "qwen2.5:1.5b",
+        "size": 1166236712,
+        "digest": "65ec06548149b04c096a120e4a6da9d4017ea809c91734ea5631e89f96ddc57b",
+        "details": {
+          "parent_model": "",
+          "format": "gguf",
+          "family": "qwen2",
+          "families": [
+            "qwen2"
+          ],
+          "parameter_size": "1.5B",
+          "quantization_level": "Q4_K_M"
+        },
+        "expires_at": "2026-09-27T05:48:44.0429914+05:30",
+        "size_vram": 1166236712,
+        "context_length": 4096
+      }
+    ]
+  }
+}

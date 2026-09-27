@@ -1,0 +1,22 @@
+{
+  "seed": 71,
+  "source_hashes": {
+    "experiments/multihop_data.py": "ec4617ebfb4a69141d5a1ee84fc5426f11f17cf5b2c0da09fbc48cd460de4106",
+    "experiments/relation_ranker.py": "f04853c9e47901eed54e41dfc5f6c085d24e239b6221d374b08316940aa28765",
+    "experiments/train_relation_ranker.py": "421fb249a0acd6adaeb84093f37e1fa3ca383afc5aec8bd2de9d15282ade677e"
+  },
+  "prepared_sha256": "caed0b5ab94af30f81d748c0c605797a283a8ae85b475b04f15cd309450a7fe4",
+  "epochs": 240,
+  "batch": 64,
+  "optimizer": "Adam",
+  "lr": 0.03,
+  "weight_l2": 0.001,
+  "checkpoint": "lowest validation support cross entropy among epochs 20,40,...,240",
+  "validation_scope": "calibration partition used for model selection, not probability certification",
+  "heldout_keys_opened": false,
+  "device": "NVIDIA GeForce RTX 5080 Laptop GPU",
+  "packages": {
+    "torch": "2.11.0+cu128",
+    "numpy": "2.4.6"
+  }
+}

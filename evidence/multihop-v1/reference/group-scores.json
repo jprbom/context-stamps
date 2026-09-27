@@ -1,0 +1,1802 @@
+{
+  "full": {
+    "2hop__10017_18974": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__286268_97805": {
+      "f1": 0.4,
+      "em": 0,
+      "grouped_f1": 0.4,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__131818_161450": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__12039_11957": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__210639_147339_51423": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__857493_17335": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 1.0,
+      "complete_pair": 1,
+      "complete_support": 1
+    },
+    "3hop1__389761_567566_84283": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__686395_141338": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__198459_61845": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__57638_88526": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop2__57233_106716_56883": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__24648_192417": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__417937_158105": {
+      "f1": 0.14285714285714288,
+      "em": 0,
+      "grouped_f1": 0.14285714285714288,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__121145_561444": {
+      "f1": 0.8,
+      "em": 0,
+      "grouped_f1": 0.0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__315246_88622": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__475808_71302": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__815205_590407": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__132472_684936": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__140786_2053_52946": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 1.0,
+      "complete_pair": 1,
+      "complete_support": 1
+    },
+    "2hop__123104_77615": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop2__90098_76623_10557": {
+      "f1": 0.6666666666666666,
+      "em": 0,
+      "grouped_f1": 0.0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__127821_157828_162309": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "4hop1__105773_457883_650651_7262": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__574419_270105": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__145282_21711": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__145194_160545_60577": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__84847_148696": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 0.0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__852122_150107": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__671542_665330_47686": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__726892_131968": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__524212_831637_91775": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "4hop2__71753_73205_70784_79935": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__95970_152907": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__109185_720914_27537": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__156658_155922": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__333020_69048": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__412633_15781": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 1.0,
+      "complete_pair": 1,
+      "complete_support": 1
+    },
+    "2hop__256553_617289": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__776377_857193": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__144317_120065": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "4hop3__426860_88460_30152_20999": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__427249_20057": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__5658_25002": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__126188_396277": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 1.0,
+      "complete_pair": 1,
+      "complete_support": 1
+    },
+    "2hop__107905_110222": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__78873_461854": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__464479_70131": {
+      "f1": 0.7272727272727273,
+      "em": 0,
+      "grouped_f1": 0.7272727272727273,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__700093_455653": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "4hop1__88342_75218_128008_87812": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__3737_13529": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__316374_82341": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__857_846_7888": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__145427_106426_157788": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__73796_87694_124169": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 1.0,
+      "complete_pair": 1,
+      "complete_support": 1
+    },
+    "2hop__89764_827343": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__65576_80026": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 0.0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__223823_29898": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__998_25855": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__161273_92673": {
+      "f1": 0.3333333333333333,
+      "em": 0,
+      "grouped_f1": 0.3333333333333333,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__152700_141308": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__849534_122868": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__51074_75184": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 0.0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__58168_38663": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__149983_108549": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    }
+  },
+  "bm25": {
+    "2hop__10017_18974": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__286268_97805": {
+      "f1": 0.4,
+      "em": 0,
+      "grouped_f1": 0.4,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__131818_161450": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__12039_11957": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__210639_147339_51423": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__857493_17335": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 1.0,
+      "complete_pair": 1,
+      "complete_support": 0
+    },
+    "3hop1__389761_567566_84283": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__686395_141338": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__198459_61845": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__57638_88526": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop2__57233_106716_56883": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 1.0,
+      "complete_pair": 1,
+      "complete_support": 1
+    },
+    "2hop__24648_192417": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__417937_158105": {
+      "f1": 0.2105263157894737,
+      "em": 0,
+      "grouped_f1": 0.2105263157894737,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__121145_561444": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__315246_88622": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__475808_71302": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__815205_590407": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__132472_684936": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop1__140786_2053_52946": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 1.0,
+      "complete_pair": 1,
+      "complete_support": 1
+    },
+    "2hop__123104_77615": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop2__90098_76623_10557": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop1__127821_157828_162309": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "4hop1__105773_457883_650651_7262": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__574419_270105": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__145282_21711": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop1__145194_160545_60577": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__84847_148696": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__852122_150107": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop1__671542_665330_47686": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__726892_131968": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop1__524212_831637_91775": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "4hop2__71753_73205_70784_79935": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__95970_152907": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop1__109185_720914_27537": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__156658_155922": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__333020_69048": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__412633_15781": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__256553_617289": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__776377_857193": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__144317_120065": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "4hop3__426860_88460_30152_20999": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__427249_20057": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__5658_25002": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__126188_396277": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__107905_110222": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__78873_461854": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__464479_70131": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__700093_455653": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "4hop1__88342_75218_128008_87812": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__3737_13529": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__316374_82341": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__857_846_7888": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop1__145427_106426_157788": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop1__73796_87694_124169": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 1.0,
+      "complete_pair": 1,
+      "complete_support": 1
+    },
+    "2hop__89764_827343": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__65576_80026": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__223823_29898": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__998_25855": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__161273_92673": {
+      "f1": 0.3333333333333333,
+      "em": 0,
+      "grouped_f1": 0.3333333333333333,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__152700_141308": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__849534_122868": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__51074_75184": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__58168_38663": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__149983_108549": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    }
+  },
+  "pointwise": {
+    "2hop__10017_18974": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__286268_97805": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__131818_161450": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__12039_11957": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__210639_147339_51423": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__857493_17335": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__389761_567566_84283": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__686395_141338": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__198459_61845": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__57638_88526": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop2__57233_106716_56883": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__24648_192417": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__417937_158105": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__121145_561444": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__315246_88622": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__475808_71302": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__815205_590407": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__132472_684936": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__140786_2053_52946": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__123104_77615": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop2__90098_76623_10557": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop1__127821_157828_162309": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "4hop1__105773_457883_650651_7262": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__574419_270105": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__145282_21711": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop1__145194_160545_60577": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__84847_148696": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__852122_150107": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__671542_665330_47686": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__726892_131968": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__524212_831637_91775": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "4hop2__71753_73205_70784_79935": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__95970_152907": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__109185_720914_27537": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__156658_155922": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__333020_69048": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__412633_15781": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__256553_617289": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__776377_857193": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__144317_120065": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "4hop3__426860_88460_30152_20999": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__427249_20057": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__5658_25002": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__126188_396277": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__107905_110222": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__78873_461854": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__464479_70131": {
+      "f1": 0.7272727272727273,
+      "em": 0,
+      "grouped_f1": 0.7272727272727273,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__700093_455653": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "4hop1__88342_75218_128008_87812": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__3737_13529": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__316374_82341": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__857_846_7888": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop1__145427_106426_157788": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__73796_87694_124169": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 1.0,
+      "complete_pair": 1,
+      "complete_support": 0
+    },
+    "2hop__89764_827343": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__65576_80026": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__223823_29898": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__998_25855": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__161273_92673": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__152700_141308": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__849534_122868": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__51074_75184": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__58168_38663": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__149983_108549": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    }
+  },
+  "diffusion": {
+    "2hop__10017_18974": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__286268_97805": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__131818_161450": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__12039_11957": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__210639_147339_51423": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__857493_17335": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__389761_567566_84283": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__686395_141338": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__198459_61845": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__57638_88526": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop2__57233_106716_56883": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__24648_192417": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__417937_158105": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__121145_561444": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__315246_88622": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__475808_71302": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__815205_590407": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__132472_684936": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__140786_2053_52946": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__123104_77615": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop2__90098_76623_10557": {
+      "f1": 0.6666666666666666,
+      "em": 0,
+      "grouped_f1": 0.0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__127821_157828_162309": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "4hop1__105773_457883_650651_7262": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__574419_270105": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__145282_21711": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop1__145194_160545_60577": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__84847_148696": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__852122_150107": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__671542_665330_47686": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__726892_131968": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__524212_831637_91775": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "4hop2__71753_73205_70784_79935": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__95970_152907": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__109185_720914_27537": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__156658_155922": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__333020_69048": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__412633_15781": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__256553_617289": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__776377_857193": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__144317_120065": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "4hop3__426860_88460_30152_20999": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__427249_20057": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__5658_25002": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__126188_396277": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__107905_110222": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 1.0,
+      "complete_pair": 1,
+      "complete_support": 1
+    },
+    "2hop__78873_461854": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__464479_70131": {
+      "f1": 0.7272727272727273,
+      "em": 0,
+      "grouped_f1": 0.7272727272727273,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__700093_455653": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "4hop1__88342_75218_128008_87812": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__3737_13529": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__316374_82341": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__857_846_7888": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "3hop1__145427_106426_157788": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "3hop1__73796_87694_124169": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 1.0,
+      "complete_pair": 1,
+      "complete_support": 1
+    },
+    "2hop__89764_827343": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__65576_80026": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__223823_29898": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__998_25855": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__161273_92673": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__152700_141308": {
+      "f1": 0.5,
+      "em": 0,
+      "grouped_f1": 0.5,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__849534_122868": {
+      "f1": 1.0,
+      "em": 1,
+      "grouped_f1": 1.0,
+      "complete_pair": 1,
+      "complete_support": 1
+    },
+    "2hop__51074_75184": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    },
+    "2hop__58168_38663": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 0
+    },
+    "2hop__149983_108549": {
+      "f1": 0,
+      "em": 0,
+      "grouped_f1": 0,
+      "complete_pair": 0,
+      "complete_support": 1
+    }
+  }
+}

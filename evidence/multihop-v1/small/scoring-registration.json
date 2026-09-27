@@ -1,0 +1,21 @@
+{
+  "scorer_sha256": "038551e7b7641ca6ccb7e49a2b8864d00efff65518f8bb2ed9b2bebc24cf50de",
+  "generation_sha256": "0669e18960e8894692ef712e18ee544e4970a5224ccb72df6dfd1f08446ffb88",
+  "native_sources": {
+    "evaluate_v1.0.py": "f5fe66ae61dbea5172cba9d428d9924a5811f3457edc945fc1d81369c30e74b7",
+    "metrics/answer.py": "10368f619b4d5ef5d83748c05a96c0afd332a14ab5c010740c98d58dfaefe974",
+    "metrics/group.py": "b7bff5d19b426a353e50ad07db125fdb6fdd2660a229e1b11752b63e4ebd9087",
+    "metrics/group_answer_sufficiency.py": "6fd72646055b736cfae474eba58f7d4823ee8f539c0746bb87dd5c8208d7abcc",
+    "metrics/group_support_sufficiency.py": "ab6f9aa92243190b891d28a1787781029bd808616e347cbf325526bffcc10820",
+    "metrics/metric.py": "c858d1bfda2f0b005065e87a402cd2f82154eb7eed5916845ae130759cc3a299",
+    "metrics/support.py": "ac16c0daf458a6a4d6db97682c2340fe5b5936a947bf32c04dc3bf16406077c6"
+  },
+  "abstention": "strip whitespace and case-fold; exact UNKNOWN only",
+  "grouping": "64 source-separated answerable/unanswerable question pairs",
+  "primary_candidate": "diffusion",
+  "controls": [
+    "full",
+    "bm25",
+    "pointwise"
+  ]
+}

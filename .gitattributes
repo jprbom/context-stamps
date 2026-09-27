@@ -48,3 +48,8 @@ evidence/lme-relations-v2/core-tests.txt whitespace=-blank-at-eol
 docs/assets/batched-packing-v1.svg -text whitespace=cr-at-eol,-blank-at-eol
 evidence/batched-packing-v1/core-tests.txt whitespace=-blank-at-eol
 evidence/local-monitor-v1/core-tests.txt whitespace=-blank-at-eol
+docs/assets/multihop-v1.svg -text whitespace=cr-at-eol,-blank-at-eol
+# Keep the native canary and download records byte-identical across clones.
+evidence/multihop-v1/download.json -text whitespace=cr-at-eol
+evidence/multihop-v1/native-canaries.json -text whitespace=cr-at-eol
+docs/MUSIQUE-LICENSE.txt -text whitespace=-blank-at-eol,-blank-at-eof

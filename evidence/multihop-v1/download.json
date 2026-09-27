@@ -1,0 +1,45 @@
+{
+  "url": "https://drive.usercontent.google.com/download?id=1tGdADlNjWFaHLeZZGShh2IRcpO6Lv24h&export=download&confirm=t",
+  "bytes": 272049578,
+  "sha256": "98f839bf2fd5319f5c688aed77901a6d5c30b3b9f9f691ab9a8ecafb045ee0cd",
+  "download_seconds": 97.86219889996573,
+  "source_revision": "922ac98f19a201998dbdae6d7f2887a5258dbdeb",
+  "members": [
+    {
+      "name": "data/",
+      "bytes": 0
+    },
+    {
+      "name": "data/.DS_Store",
+      "bytes": 6148
+    },
+    {
+      "name": "data/musique_full_v1.0_train.jsonl",
+      "bytes": 476696984
+    },
+    {
+      "name": "data/dev_test_singlehop_questions_v1.0.json",
+      "bytes": 915921
+    },
+    {
+      "name": "data/musique_ans_v1.0_test.jsonl",
+      "bytes": 28366572
+    },
+    {
+      "name": "data/musique_full_v1.0_dev.jsonl",
+      "bytes": 59422562
+    },
+    {
+      "name": "data/musique_ans_v1.0_train.jsonl",
+      "bytes": 241046755
+    },
+    {
+      "name": "data/musique_full_v1.0_test.jsonl",
+      "bytes": 55558292
+    },
+    {
+      "name": "data/musique_ans_v1.0_dev.jsonl",
+      "bytes": 30439728
+    }
+  ]
+}

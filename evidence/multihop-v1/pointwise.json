@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "name": "pointwise",
+  "features": [
+    "bm25",
+    "query_coverage",
+    "title_coverage",
+    "idf_overlap",
+    "title_in_query",
+    "query_in_text",
+    "log_length",
+    "out_degree",
+    "in_degree",
+    "max_tf",
+    "query_length",
+    "title_length"
+  ],
+  "steps": 4,
+  "weights": [
+    1.5284373760223389,
+    -6.159704685211182,
+    7.877980709075928,
+    1.650957703590393,
+    0.07203219085931778,
+    0.0,
+    9.309501647949219,
+    -0.9022896885871887,
+    0.6836838126182556,
+    -1.0390772819519043,
+    -6.78660289850086e-05,
+    -5.434658527374268
+  ],
+  "alpha": 0.0,
+  "epoch": 120
+}

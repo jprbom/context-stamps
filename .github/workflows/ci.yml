@@ -48,6 +48,9 @@ jobs:
       - run: python experiments/verify_local_learning.py
       - run: python experiments/test_local_monitor_evidence.py -v
       - run: python experiments/verify_local_monitor.py
+      - run: python experiments/test_relation_ranker.py -v
+      - run: python experiments/test_multihop_evidence.py -v
+      - run: python experiments/verify_multihop.py
       - run: python experiments/test_terminal_pilot.py -v
       - run: python experiments/verify_terminal_pilot.py
       - run: python experiments/verify_terminal_reference.py

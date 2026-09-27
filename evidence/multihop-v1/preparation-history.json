@@ -1,0 +1,14 @@
+{
+  "first_failure": {
+    "stage": "source-partition preparation",
+    "error": "only 487 training groups remain after prior-corpus, evaluation-source and calibration-source exclusions; requested 1024",
+    "model_calls": 0,
+    "source_sha256": "f66f04d1e15018c69302123e2f6236ebe9dd24cbac9a4c2765f8ba39fb542437"
+  },
+  "superseded_reader": {
+    "reason": "Before any model call, measured maximum complete input of 3712 tokens allowed a 4096-token context with the fixed 128-token output cap; avoid reserving 16384 tokens. All arms keep identical prompts.",
+    "model_calls": 0
+  },
+  "archive": "evidence/engineering-sources-v1/source-multihop-preparation-v1.json.gz",
+  "archive_sha256": "b1daadaa659444b8eb672f5848b6290237a60ad6d2538294d495eefb1dbd8a4f"
+}

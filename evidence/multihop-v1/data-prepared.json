@@ -1,0 +1,42 @@
+{
+  "files": {
+    "calibration-inputs.jsonl": "4edf6992c467f8a12180424366cf7babb6680eaf63e76d7b5f69e36f251f64fa",
+    "calibration-keys.jsonl": "26d80a2677075b5252723a3c0d7a04ed80f657e8929acea041ef44c5a1f6478e",
+    "evaluation-inputs.jsonl": "89422635bdccdb67ebccdefbe01e2330e65f95649989bfee1ec381805b946e7d",
+    "evaluation-keys.jsonl": "1f425d2cefd2c4c88c948432c7acebb6c5a221da75697a4b3fa749149904f769",
+    "training-inputs.jsonl": "32c10e3008e2e1c7e0f8f5b505dca20f2bc688d550de57469086d9340326b71c",
+    "training-keys.jsonl": "4c99be2b79d0d22b034ea227353ad96bbf1079106bcf4e6af40b12e97b0cd4a0"
+  },
+  "audit": {
+    "native_groups": {
+      "train": 19938,
+      "dev": 2417
+    },
+    "no_prior_overlap_groups": {
+      "train": 5646,
+      "dev": 688
+    },
+    "selected_groups": {
+      "training": 400,
+      "calibration": 64,
+      "evaluation": 64
+    },
+    "overlap": {
+      "training:calibration": {
+        "titles": 0,
+        "texts": 0,
+        "seeds": 0
+      },
+      "training:evaluation": {
+        "titles": 0,
+        "texts": 0,
+        "seeds": 0
+      },
+      "calibration:evaluation": {
+        "titles": 0,
+        "texts": 0,
+        "seeds": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "model": {
+    "name": "qwen2.5-coder:7b",
+    "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+    "bytes": 4683087561,
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "qwen2",
+      "families": [
+        "qwen2"
+      ],
+      "parameter_size": "7.6B",
+      "quantization_level": "Q4_K_M"
+    },
+    "template_sha256": "1e65450c30670713aa47fe23e8b9662bdf4065e81cc8e3cbfaa98924fcc0d320",
+    "parameters_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "license_sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "system_sha256": "66b9ea09bd5b7099cbb4fc820f31b575c0366fa439b08245566692c6784e281e"
+  },
+  "options": {
+    "temperature": 0,
+    "seed": 71,
+    "num_ctx": 4096,
+    "num_predict": 128
+  },
+  "arms": [
+    "full",
+    "bm25",
+    "pointwise",
+    "diffusion"
+  ],
+  "inputs": "89422635bdccdb67ebccdefbe01e2330e65f95649989bfee1ec381805b946e7d",
+  "prepared": "caed0b5ab94af30f81d748c0c605797a283a8ae85b475b04f15cd309450a7fe4",
+  "trained": {
+    "pointwise.json": "584c566e1f9ec14ad595d03d8c228fa8127a45a875bc966d4e9922478f52e57c",
+    "diffusion.json": "16b27045a0baf0b167bdf7e50bd5d951ea9d81609b0c7e9e79ee1019931547e3",
+    "training.json": "06caff773eb8b018212036948397ff8750c9ca25ec0bea9ce8f8b10a2d21d460"
+  },
+  "tokenizer": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+  "source_hashes": {
+    "experiments/multihop_reader.py": "31fcb88d8356a40f385a51dd8190f32fefb11caca9e96f5787614def4a804593",
+    "experiments/relation_ranker.py": "f04853c9e47901eed54e41dfc5f6c085d24e239b6221d374b08316940aa28765",
+    "experiments/multihop_data.py": "ec4617ebfb4a69141d5a1ee84fc5426f11f17cf5b2c0da09fbc48cd460de4106",
+    "experiments/local_eval.py": "60084ecbdf5294102b374414c8ecd4d994f836dce1a5536cb08f264f51337912",
+    "experiments/ruler_local_eval.py": "2b2d58b4fd3b7b76d3d0e1f03aac7d6275f30f406beec69242a4112a9d5f09e1",
+    "experiments/ruler_native.py": "11446ed9a26c43c2f6a65384d098e32b62f22d439010d42866017b389dd692e0",
+    "context_stamps/context_state.py": "5cba496d754ec153e67a5d8babc39a4564a3c9396a8177d9cd84760fee7db851",
+    "context_stamps/security.py": "2e38aa395acf61abe39f5fa7b0b506996425afb136860969ec7df12fb52e9b34",
+    "experiments/multihop_reference.py": "19ed1a782e2d8a3f0827159409918679a7ba989d90f5a44aabc51c4fd1670bdf"
+  },
+  "selected_per_compact_arm": 6,
+  "key_files_opened": false,
+  "planned_cases": 128,
+  "planned_calls": 512,
+  "primary": "native answer F1 and grouped answer+sufficiency; full/BM25/pointwise controls",
+  "resource_scope": "CPU compilation and actual nonstreamed model request wall/tokens; no energy or complete process-tree peak claim"
+}

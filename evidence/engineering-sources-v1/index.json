@@ -149,6 +149,12 @@
       "sha256": "ed5d4d0287932ced903bbea9f615fa81a4ed0d71a41443fafa082383d003ef16",
       "source_base_commit": "bdd3d406507121f15d0cbd0c68a59c4913f73863",
       "worktree_dirty": false
+    },
+    {
+      "file": "source-multihop-preparation-v1.json.gz",
+      "sha256": "b1daadaa659444b8eb672f5848b6290237a60ad6d2538294d495eefb1dbd8a4f",
+      "source_base_commit": "15b725489b5f4a49c3ae86dc982afd647f270dba",
+      "worktree_dirty": true
     }
   ]
 }

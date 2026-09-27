@@ -2,6 +2,8 @@
 
 By Prashant Jagtap
 
+The latest [local training study](multihop-local-learning.md) fits a 13-parameter relation selector on 400 public training cases, then records 1,024 requests across two local readers and four controls. Selection improves on the reserved subset; reliable answering, abstention and retention remain unresolved. This actual local training result complements the simulated lifecycle example below. It does not qualify automatic updates or activate the candidate.
+
 Every supported local deployment should provide a bounded improvement path: verified memory updates, a small locally fitted context/routing policy, and optional adapter updates on capable hardware. This is a design requirement, not a claim that every present model already improves autonomously. Devices unable to train weights can still update memory and CPU policies. Successful training never activates a candidate by itself.
 
 The [local regression monitor](local-regression-monitor.md) now adds a persistent post-promotion check. Prospectively reserved outcomes feed separate failure/deadline statistics for each cohort. A durable alarm can roll back the expected active candidate, including after a restart. The complete local cycle is available as an explicitly simulated example; no previously failed model candidate has been promoted.

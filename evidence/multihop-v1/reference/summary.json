@@ -1,0 +1,280 @@
+{
+  "arms": {
+    "full": {
+      "native": {
+        "answer_f1": 0.204,
+        "answer_em": 0.125,
+        "support_f1": 0.207,
+        "group_answer_sufficiency_f1": 0.134,
+        "group_support_sufficiency_f1": 0.045
+      },
+      "native_support_interpretation": "support F1 of selected context, not model-selected citations",
+      "answerable_cases": 64,
+      "unanswerable_cases": 64,
+      "exact_answers": 8,
+      "answer_f1": 0.20422077922077922,
+      "complete_support": 64,
+      "unanswerable_false_positives": 11,
+      "complete_pairs": 5,
+      "truncations": 0,
+      "errors": 0,
+      "input_tokens": 292466,
+      "output_tokens": 375,
+      "generation_wall_seconds": 107.18904750002548,
+      "compile_seconds": 0.5031301996205002,
+      "total_model_tokens": 292841,
+      "median_request_seconds": 0.8121289000264369,
+      "p95_request_seconds": 1.155595920025371
+    },
+    "bm25": {
+      "native": {
+        "answer_f1": 0.093,
+        "answer_em": 0.062,
+        "support_f1": 0.332,
+        "group_answer_sufficiency_f1": 0.093,
+        "group_support_sufficiency_f1": 0.09
+      },
+      "native_support_interpretation": "support F1 of selected context, not model-selected citations",
+      "answerable_cases": 64,
+      "unanswerable_cases": 64,
+      "exact_answers": 4,
+      "answer_f1": 0.09287280701754386,
+      "complete_support": 17,
+      "unanswerable_false_positives": 4,
+      "complete_pairs": 4,
+      "truncations": 0,
+      "errors": 0,
+      "input_tokens": 95029,
+      "output_tokens": 317,
+      "generation_wall_seconds": 52.20550409948919,
+      "compile_seconds": 0.29145650018472224,
+      "total_model_tokens": 95346,
+      "median_request_seconds": 0.3986585499951616,
+      "p95_request_seconds": 0.5302866500453092
+    },
+    "pointwise": {
+      "native": {
+        "answer_f1": 0.066,
+        "answer_em": 0.016,
+        "support_f1": 0.397,
+        "group_answer_sufficiency_f1": 0.066,
+        "group_support_sufficiency_f1": 0.085
+      },
+      "native_support_interpretation": "support F1 of selected context, not model-selected citations",
+      "answerable_cases": 64,
+      "unanswerable_cases": 64,
+      "exact_answers": 1,
+      "answer_f1": 0.06605113636363637,
+      "complete_support": 30,
+      "unanswerable_false_positives": 5,
+      "complete_pairs": 1,
+      "truncations": 0,
+      "errors": 0,
+      "input_tokens": 108878,
+      "output_tokens": 300,
+      "generation_wall_seconds": 49.98767330136616,
+      "compile_seconds": 0.30711529997643083,
+      "total_model_tokens": 109178,
+      "median_request_seconds": 0.3953039500047453,
+      "p95_request_seconds": 0.6028563900152221
+    },
+    "diffusion": {
+      "native": {
+        "answer_f1": 0.108,
+        "answer_em": 0.047,
+        "support_f1": 0.432,
+        "group_answer_sufficiency_f1": 0.097,
+        "group_support_sufficiency_f1": 0.108
+      },
+      "native_support_interpretation": "support F1 of selected context, not model-selected citations",
+      "answerable_cases": 64,
+      "unanswerable_cases": 64,
+      "exact_answers": 3,
+      "answer_f1": 0.10771780303030302,
+      "complete_support": 38,
+      "unanswerable_false_positives": 4,
+      "complete_pairs": 3,
+      "truncations": 0,
+      "errors": 0,
+      "input_tokens": 108076,
+      "output_tokens": 306,
+      "generation_wall_seconds": 50.25942119967658,
+      "compile_seconds": 0.29692799993790686,
+      "total_model_tokens": 108382,
+      "median_request_seconds": 0.410177499987185,
+      "p95_request_seconds": 0.5362100450380239
+    }
+  },
+  "paired_comparisons": {
+    "full": {
+      "f1": {
+        "mean": -0.09650297619047618,
+        "percentile95": [
+          -0.20052455357142857,
+          -0.0027492559523810056
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "em": {
+        "mean": -0.078125,
+        "percentile95": [
+          -0.171875,
+          0.0
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "grouped_f1": {
+        "mean": -0.03712797619047619,
+        "percentile95": [
+          -0.1234375,
+          0.043229166666666666
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "complete_pair": {
+        "mean": -0.03125,
+        "percentile95": [
+          -0.109375,
+          0.046875
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "complete_support": {
+        "mean": -0.40625,
+        "percentile95": [
+          -0.53125,
+          -0.28125
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "exact_answer_gains": [
+        "2hop__107905_110222",
+        "2hop__849534_122868"
+      ],
+      "exact_answer_regressions": [
+        "2hop__126188_396277",
+        "2hop__412633_15781",
+        "2hop__51074_75184",
+        "2hop__65576_80026",
+        "2hop__84847_148696",
+        "2hop__857493_17335",
+        "3hop1__140786_2053_52946"
+      ]
+    },
+    "bm25": {
+      "f1": {
+        "mean": 0.014844996012759171,
+        "percentile95": [
+          -0.0663150418660287,
+          0.09548357755183408
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "em": {
+        "mean": -0.015625,
+        "percentile95": [
+          -0.07851562499999987,
+          0.046875
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "grouped_f1": {
+        "mean": 0.0044283293460925036,
+        "percentile95": [
+          -0.07630189643141945,
+          0.08286109449760765
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "complete_pair": {
+        "mean": -0.015625,
+        "percentile95": [
+          -0.07851562499999987,
+          0.046875
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "complete_support": {
+        "mean": 0.328125,
+        "percentile95": [
+          0.171875,
+          0.484375
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "exact_answer_gains": [
+        "2hop__107905_110222",
+        "2hop__849534_122868"
+      ],
+      "exact_answer_regressions": [
+        "2hop__857493_17335",
+        "3hop1__140786_2053_52946",
+        "3hop2__57233_106716_56883"
+      ]
+    },
+    "pointwise": {
+      "f1": {
+        "mean": 0.041666666666666664,
+        "percentile95": [
+          0.0,
+          0.09375
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "em": {
+        "mean": 0.03125,
+        "percentile95": [
+          0.0,
+          0.078125
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "grouped_f1": {
+        "mean": 0.03125,
+        "percentile95": [
+          0.0,
+          0.078125
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "complete_pair": {
+        "mean": 0.03125,
+        "percentile95": [
+          0.0,
+          0.078125
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "complete_support": {
+        "mean": 0.125,
+        "percentile95": [
+          0.03125,
+          0.21875
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "exact_answer_gains": [
+        "2hop__107905_110222",
+        "2hop__849534_122868"
+      ],
+      "exact_answer_regressions": []
+    }
+  },
+  "candidate_active": false,
+  "boundary": "One filtered development subset and reader. No retention, power, complete process-tree memory or edge qualification."
+}

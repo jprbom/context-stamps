@@ -12,6 +12,12 @@ The 32-byte capsule is a routing identity across eight bounded facets. It does n
 
 ## Start here
 
+The latest [local relation-learning experiment](docs/multihop-local-learning.md) trains a **13-parameter context selector** and records **1,024 reader requests**. At six passages, it retains all required support in **38/64 answerable cases**, versus **17/64 for BM25** and **30/64 for a learned pointwise control**. Qwen2.5 1.5B exact answers are **10/64**, versus BM25 **8/64** and full context **12/64**; it still answers **27/64 unanswerable cases**. Answer-quality improvement is uncertain, and a post-hoc 7B coding reader does not resolve the gap. Lower cost than full context comes with quality loss. **Candidate inactive; no reader weights changed.** [Full results and failures](evidence/multihop-v1/README.md) · [Weights and model card](evidence/multihop-v1/MODEL_CARD.md) · `python experiments/verify_multihop.py`.
+
+![Local relation selection, answer failures and request cost](docs/assets/multihop-v1.png)
+
+[Vector research figure](docs/assets/multihop-v1.svg)
+
 The [local adaptation cycle](docs/local-regression-monitor.md) now includes persistent outcome monitoring and guarded rollback. It learns a small policy on CPU, evaluates separate adaptation/retention cohorts, then monitors verified failures and deadlines. A complete simulated example exercises promotion, deterioration, restart and rollback; **402 core tests pass**. This adds deployment controls, not a new model-quality result. No trained model candidate is activated. Run `python examples/local_adaptation_cycle.py`.
 
 The latest [CPU compiler comparison](evidence/batched-packing-v1/README.md) adds optional exact batched packing. Across **432 pairs / 864 compilations**, all 216 prompts, token counts and selected sources match the frozen baseline. Median compilation falls **206→107 ms**, **284→219 ms** and **873→595 ms** for structural, page-filtered and relation contexts. Process CPU time rises **18%, 13% and 4%**. This is a latency tradeoff; it does not fix answer-quality failures or demonstrate whole-model/edge-device gains. [Library API and runnable local-tokenizer example](docs/batched-context-packing.md).

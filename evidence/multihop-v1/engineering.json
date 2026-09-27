@@ -1,0 +1,36 @@
+{
+  "core_tests": {
+    "count": 402,
+    "skipped": 0,
+    "passed": true,
+    "full_local_log_sha256": "df2444e8ab08099c7a6f88da05822d88aa6088267074bed993003888f52451e9"
+  },
+  "experiment_tests": {
+    "selector_boundary": 7,
+    "evidence_and_download": 11,
+    "windows": true,
+    "linux": true
+  },
+  "native_canaries": 9,
+  "source_selection_and_score_replay": {
+    "windows": true,
+    "linux": true
+  },
+  "security": {
+    "bandit_core": "passed",
+    "scanner_positive_controls": 185,
+    "repository_scan": "passed",
+    "expanded_new_evidence_and_source_archive_scan": "passed",
+    "reviewed_false_positives": "Known public input/checksum SHA256 values, plus three exact scanner chunk fragments of those public digests; path-and-match exclusions only."
+  },
+  "model_requests": 1024,
+  "warmups": 2,
+  "candidate_active": false,
+  "boundary": "Engineering checks do not establish a reliable model gain, target-edge safety or absence of all vulnerabilities.",
+  "package_replay": {
+    "source_distribution": true,
+    "separate_installed_wheel_environment": true,
+    "custom_pythonpath": false,
+    "experiment_tests": 18
+  }
+}

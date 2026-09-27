@@ -125,6 +125,15 @@ def main(executable):
             line = next(line for line in (ROOT / relative).read_text().splitlines()
                         if line.strip().startswith('"' + key + '":'))
             checksum_cases.append((relative, line))
+        for filename, field in (
+                ('targets.json', 'key'), ('training.json', 'key'),
+                ('small/case-scores.json', 'key'), ('reference/case-scores.json', 'key'),
+                ('data-prepared.json', 'calibration-keys.jsonl'),
+                ('small/registration.json', 'tokenizer'), ('reference/registration.json', 'tokenizer')):
+            relative = Path('evidence/multihop-v1') / filename
+            line = next(line for line in (ROOT / relative).read_text(encoding='utf-8').splitlines()
+                        if line.strip().startswith('"' + field + '":'))
+            checksum_cases.append((relative, line))
         for relative, line in checksum_cases:
             control = scan / relative
             control.parent.mkdir(parents=True, exist_ok=True)

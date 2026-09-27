@@ -1,0 +1,298 @@
+{
+  "arms": {
+    "full": {
+      "native": {
+        "answer_f1": 0.255,
+        "answer_em": 0.188,
+        "support_f1": 0.207,
+        "group_answer_sufficiency_f1": 0.089,
+        "group_support_sufficiency_f1": 0.06
+      },
+      "native_support_interpretation": "support F1 of selected context, not model-selected citations",
+      "answerable_cases": 64,
+      "unanswerable_cases": 64,
+      "exact_answers": 12,
+      "answer_f1": 0.2548899291497976,
+      "complete_support": 64,
+      "unanswerable_false_positives": 35,
+      "complete_pairs": 4,
+      "truncations": 0,
+      "errors": 0,
+      "input_tokens": 292466,
+      "output_tokens": 783,
+      "generation_wall_seconds": 53.36478949955199,
+      "compile_seconds": 0.5078564996365458,
+      "total_model_tokens": 293249,
+      "median_request_seconds": 0.40606815001228824,
+      "p95_request_seconds": 0.5314960050047375
+    },
+    "bm25": {
+      "native": {
+        "answer_f1": 0.193,
+        "answer_em": 0.125,
+        "support_f1": 0.332,
+        "group_answer_sufficiency_f1": 0.1,
+        "group_support_sufficiency_f1": 0.103
+      },
+      "native_support_interpretation": "support F1 of selected context, not model-selected citations",
+      "answerable_cases": 64,
+      "unanswerable_cases": 64,
+      "exact_answers": 8,
+      "answer_f1": 0.19319331983805668,
+      "complete_support": 17,
+      "unanswerable_false_positives": 29,
+      "complete_pairs": 5,
+      "truncations": 1,
+      "errors": 0,
+      "input_tokens": 95029,
+      "output_tokens": 762,
+      "generation_wall_seconds": 37.44764099980239,
+      "compile_seconds": 0.29290210001636297,
+      "total_model_tokens": 95791,
+      "median_request_seconds": 0.2844728500349447,
+      "p95_request_seconds": 0.3795738399610854
+    },
+    "pointwise": {
+      "native": {
+        "answer_f1": 0.174,
+        "answer_em": 0.109,
+        "support_f1": 0.397,
+        "group_answer_sufficiency_f1": 0.077,
+        "group_support_sufficiency_f1": 0.082
+      },
+      "native_support_interpretation": "support F1 of selected context, not model-selected citations",
+      "answerable_cases": 64,
+      "unanswerable_cases": 64,
+      "exact_answers": 7,
+      "answer_f1": 0.17441770508395832,
+      "complete_support": 30,
+      "unanswerable_false_positives": 30,
+      "complete_pairs": 3,
+      "truncations": 0,
+      "errors": 0,
+      "input_tokens": 108878,
+      "output_tokens": 582,
+      "generation_wall_seconds": 36.19298589997925,
+      "compile_seconds": 0.31368830031715333,
+      "total_model_tokens": 109460,
+      "median_request_seconds": 0.2751811500056647,
+      "p95_request_seconds": 0.38041877003852276
+    },
+    "diffusion": {
+      "native": {
+        "answer_f1": 0.221,
+        "answer_em": 0.156,
+        "support_f1": 0.432,
+        "group_answer_sufficiency_f1": 0.108,
+        "group_support_sufficiency_f1": 0.119
+      },
+      "native_support_interpretation": "support F1 of selected context, not model-selected citations",
+      "answerable_cases": 64,
+      "unanswerable_cases": 64,
+      "exact_answers": 10,
+      "answer_f1": 0.22129270508395832,
+      "complete_support": 38,
+      "unanswerable_false_positives": 27,
+      "complete_pairs": 5,
+      "truncations": 0,
+      "errors": 0,
+      "input_tokens": 108076,
+      "output_tokens": 641,
+      "generation_wall_seconds": 36.41420910006855,
+      "compile_seconds": 0.3096289996756241,
+      "total_model_tokens": 108717,
+      "median_request_seconds": 0.2743868000106886,
+      "p95_request_seconds": 0.3842629449733067
+    }
+  },
+  "paired_comparisons": {
+    "full": {
+      "f1": {
+        "mean": -0.03359722406583926,
+        "percentile95": [
+          -0.1564139992408907,
+          0.09175416732345514
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "em": {
+        "mean": -0.03125,
+        "percentile95": [
+          -0.15625,
+          0.09375
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "grouped_f1": {
+        "mean": 0.019125026271542663,
+        "percentile95": [
+          -0.05168633748423707,
+          0.09303641564207646
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "complete_pair": {
+        "mean": 0.015625,
+        "percentile95": [
+          -0.046875,
+          0.078125
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "complete_support": {
+        "mean": -0.40625,
+        "percentile95": [
+          -0.53125,
+          -0.28125
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "exact_answer_gains": [
+        "2hop__156658_155922",
+        "2hop__475808_71302",
+        "2hop__574419_270105",
+        "2hop__849534_122868",
+        "3hop1__140786_2053_52946",
+        "3hop2__90098_76623_10557",
+        "4hop1__88342_75218_128008_87812"
+      ],
+      "exact_answer_regressions": [
+        "2hop__123104_77615",
+        "2hop__427249_20057",
+        "2hop__58168_38663",
+        "2hop__65576_80026",
+        "2hop__84847_148696",
+        "3hop1__210639_147339_51423",
+        "3hop1__671542_665330_47686",
+        "3hop1__73796_87694_124169",
+        "3hop2__57233_106716_56883"
+      ]
+    },
+    "bm25": {
+      "f1": {
+        "mean": 0.028099385245901644,
+        "percentile95": [
+          -0.07453018271857922,
+          0.1316959101775956
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "em": {
+        "mean": 0.03125,
+        "percentile95": [
+          -0.078125,
+          0.140625
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "grouped_f1": {
+        "mean": 0.008307718579234976,
+        "percentile95": [
+          -0.07291666666666666,
+          0.09011526639344247
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "complete_pair": {
+        "mean": 0.0,
+        "percentile95": [
+          -0.078125,
+          0.078125
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "complete_support": {
+        "mean": 0.328125,
+        "percentile95": [
+          0.171875,
+          0.484375
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "exact_answer_gains": [
+        "2hop__156658_155922",
+        "2hop__475808_71302",
+        "2hop__574419_270105",
+        "2hop__776377_857193",
+        "2hop__849534_122868",
+        "3hop1__140786_2053_52946",
+        "3hop2__90098_76623_10557"
+      ],
+      "exact_answer_regressions": [
+        "2hop__198459_61845",
+        "2hop__84847_148696",
+        "2hop__998_25855",
+        "3hop1__73796_87694_124169",
+        "3hop2__57233_106716_56883"
+      ]
+    },
+    "pointwise": {
+      "f1": {
+        "mean": 0.046875,
+        "percentile95": [
+          -0.015624999999999997,
+          0.11458333333333334
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "em": {
+        "mean": 0.046875,
+        "percentile95": [
+          -0.015625,
+          0.109375
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "grouped_f1": {
+        "mean": 0.03125,
+        "percentile95": [
+          0.0,
+          0.07291666666666667
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "complete_pair": {
+        "mean": 0.03125,
+        "percentile95": [
+          0.0,
+          0.078125
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "complete_support": {
+        "mean": 0.125,
+        "percentile95": [
+          0.03125,
+          0.21875
+        ],
+        "unit": "one source-separated question pair",
+        "resamples": 5000
+      },
+      "exact_answer_gains": [
+        "2hop__574419_270105",
+        "2hop__776377_857193",
+        "2hop__849534_122868",
+        "3hop1__140786_2053_52946"
+      ],
+      "exact_answer_regressions": [
+        "2hop__95970_152907"
+      ]
+    }
+  },
+  "candidate_active": false,
+  "boundary": "One filtered development subset and reader. No retention, power, complete process-tree memory or edge qualification."
+}

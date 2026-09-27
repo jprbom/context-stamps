@@ -1,0 +1,6 @@
+{
+  "reason": "Diagnose reader limitations after small-reader analysis; no selector update",
+  "previous_analysis_sha256": "f38f3b17e61514b9fdf75066adffdb0b3ecc52f399cba745391db87af2066fe9",
+  "prospective_model_selection": false,
+  "fresh_additional_questions": false
+}

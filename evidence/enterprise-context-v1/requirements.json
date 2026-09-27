@@ -318,14 +318,16 @@
         "graph",
         "temporal/policy/authority inputs",
         "sparse importance weights",
-        "smaller controls before 50M–500M experiments",
+        "smaller controls before 50M\u2013500M experiments",
         "no foundation attention modification initially"
       ],
       "current_sources": [
-        "context_stamps/contractive_controller.py"
+        "context_stamps/contractive_controller.py",
+        "experiments/relation_ranker.py"
       ],
       "status": "partial_existing_experiment",
-      "completion_proof": "New graph/time/policy model beats matched simpler controls on verified tasks; existing attention did not earn promotion."
+      "completion_proof": "New graph/time/policy model beats matched simpler controls on verified tasks; existing attention did not earn promotion.",
+      "implementation_note": "Four-step query-restarted lexical graph diffusion now has an actual thirteen-parameter local fit and a pointwise control. Complete-support selection is 38/64 versus BM25 17/64 at six passages. Learned mass is not calibrated sufficiency or internal transformer attention; reliable end-to-end quality remains unresolved."
     },
     {
       "id": "EC16",
@@ -345,11 +347,12 @@
       "current_sources": [
         "context_stamps/acquisition.py",
         "experiments/train_acquisition.py",
-        "evidence/acquisition-v1/MODEL_CARD.md"
+        "evidence/acquisition-v1/MODEL_CARD.md",
+        "evidence/multihop-v1/MODEL_CARD.md"
       ],
       "status": "partial_experiment",
       "completion_proof": "Separate labels/head losses, disjoint calibration and held-out task/cost gains with all head ablations.",
-      "implementation_note": "Three public-judgment heads with explicit labels/losses, linear/MLP controls and three seeds implemented. Failed calibration and transfer preserved. No reader correctness, missing-fact, conflict, staleness or decision heads qualified; prospective gains and head ablations remain."
+      "implementation_note": "Single-head source selection is measured; jointly calibrated sufficiency, uncertainty, conflict, value and next-context heads remain unimplemented/unqualified. Small-reader false positives remain 27/64; no new trained model is activated."
     },
     {
       "id": "EC17",
@@ -376,9 +379,9 @@
       "id": "EC18",
       "requirement": "Reproducible RTX and interchangeable model stack",
       "features": [
-        "0.5B–3B context/decision candidate",
-        "7B–14B quantized general candidate",
-        "3B–8B VLM candidate",
+        "0.5B\u20133B context/decision candidate",
+        "7B\u201314B quantized general candidate",
+        "3B\u20138B VLM candidate",
         "profile before residency",
         "CPU supporting work",
         "maximize measured GPU throughput",
@@ -392,11 +395,12 @@
         "evidence/enterprise-context-v1/gpu-capacity.json",
         "experiments/profile_context_precision.py",
         "evidence/enterprise-gpu-v1/capacity.json",
-        "docs/local-domain-learning.md"
+        "docs/local-domain-learning.md",
+        "docs/multihop-local-learning.md"
       ],
       "status": "partial_measured",
       "completion_proof": "Pinned licensed candidates, complete task and resource accounting, no simultaneous-model fit assumption.",
-      "implementation_note": "Two local environments, initial batch sweep and eight longer precision/capacity windows. BF16 is not a uniform speedup; new context/decision/VLM candidates and held-out qualification remain."
+      "implementation_note": "Two actual local FP32 ranker fits and 1024 loopback reader requests are retained with data/model/source pins, tokenizer parity and CPU metric replay. Torch allocation and serial request timing are partial resource measurements, not energy or target-edge qualification."
     },
     {
       "id": "EC19",
@@ -430,11 +434,12 @@
         "experiments/verify_terminal_reference.py",
         "experiments/terminal_tools.py",
         "experiments/verify_typed_terminal.py",
-        "evidence/terminal-typed-v1/manifest.json"
+        "evidence/terminal-typed-v1/manifest.json",
+        "evidence/multihop-v1/manifest.json"
       ],
       "status": "partial_existing",
       "completion_proof": "Licenses/revisions/native scoring, prospective task IDs, contamination/length audit and matched strong controls.",
-      "implementation_note": "Expanded to model-alone versus runtime-assisted open-weight/frontier pairs, coding-agent harness comparisons and quality/cost/latency/resource accounting. Start locally; frontier preparation only, no paid calls authorized. Established harness and license review precede execution. LongBench v2 native-prompt/parser development controls completed: 30 calls on ten short tasks across six domains; full 4/10, BM25 4/10, no context 3/10. No runtime treatment or frontier ranking. Harbor 0.23.0 isolated command/task boundary and two native Terminal-Bench 2.1 graders qualified. Qwen2.5 1.5B corrected development baseline fails both tasks (0/2); initial failed attempt retained. Six calls, exact input-token parity, no benchmark training or runtime treatment. Sixteen terminal-boundary tests and data-only replay added. A pinned Qwen2.5-Coder 7B stronger reference now passes 1/2, with both 12-step budgets exhausted. Its 24 additional calls replay offline. Runtime treatment and real local adaptation remain. Typed tools now have 11 unit boundary tests, 12 live file probes and retained regressions. Matched schema canaries on both models improve from 0/3 to 3/3 after preserving union discriminator order. Corrected task runs remain 0/2 per model; no promotion or training benefit."
+      "implementation_note": "MuSiQue Full development experiment added: 400 source-separated training groups, 64 calibration groups and 64 reserved evaluation pairs after known prior-corpus overlap exclusion. Four controls and two readers; the second is post-hoc on the same questions. Full native submission, prospective independent replication and frontier calls remain absent."
     },
     {
       "id": "EC20",
@@ -477,17 +482,19 @@
         "experiments/local_adapter_train.py",
         "experiments/verify_local_adapter.py",
         "evidence/local-adapter-v1/manifest.json",
-        "docs/local-adapter-rtx.md"
+        "docs/local-adapter-rtx.md",
+        "docs/local-regression-monitor.md"
       ],
       "status": "partial_implemented",
       "completion_proof": "Restart/race/revocation/security evidence, permitted exports, claim-to-evidence report and reproducible release.",
-      "implementation_note": "Transactional audit, managed dispatch/cancellation/reconciliation and durable signed context integrated with crash/race/revocation tests. Parent callback cancellation, descendant containment, retention/deletion, export policy and independent replication remain. Local Beta-smoothed policy fitting and transactional promotion registry now have simulated adaptation, rejection and rollback evidence. No automatic SLM-weight update, automatic drift detection, signed promotion-audit integration or device-level benefit qualified. An actual local 1.5B LoRA fixture fit now completes and reloads: 144 training rows, 544768 parameters, 27.73 seconds. Held-out fixture rows improve 12/72 to 52/72 with one new failure; exact rule is 72/72. Adapter remains inactive; no qualified autonomous weight updates or domain competence."
+      "implementation_note": "Protected adaptation/retention cohorts, durable prospective regression monitoring and guarded rollback are now implemented and tested. The latest complete core suite is 402 tests without skips. Real learned candidates remain inactive; qualified autonomous weight updates, signed promotion-audit integration, full device cost and complete retention/export policy remain open."
     }
   ],
   "evidence_boundary": "Existing/draft sources do not prove the complete requirement. No 1.0 or universal capability claim.",
-  "latest_engineering_evidence": "evidence/local-learning-v1/engineering.json",
+  "latest_engineering_evidence": "evidence/local-monitor-v1/manifest.json",
   "previous_objective_sha256": "66552f64c1621f8e95b3f0623fae6dcfaa1c5031e833ed2568d4c1a23b06d4ed",
   "primary_application_objective": "Small domain models that operate and improve locally within explicit correctness, latency, memory, energy and cost limits.",
   "capability_boundary": "Domain AGI is an ambition, not an achieved or tested capability. Simulated local-policy adaptation is not qualified SLM weight improvement or edge deployment.",
-  "adaptation_contract": "Verified memory updates; statistical context-policy proposals; fresh paired evaluation with persistent error-budget accounting; reversible activation. Model-weight adaptation and automatic drift detection remain unqualified."
+  "adaptation_contract": "Verified memory and local context-policy proposals; protected adaptation/retention cohorts; prospective paired evaluation and persistent budgets; monitored reversible activation. Qualified unattended weight learning remains open.",
+  "latest_model_evidence": "evidence/multihop-v1/manifest.json"
 }

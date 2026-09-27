@@ -1,0 +1,3518 @@
+{
+  "preparation_seconds": 1.0547070000320673,
+  "training_answerable_tasks": 400,
+  "models": {
+    "pointwise": {
+      "parameters": 12,
+      "training_seconds": 4.892930499976501,
+      "peak_torch_allocated_bytes": 70549504,
+      "history": [
+        {
+          "epoch": 20,
+          "validation_loss": 2.2484288215637207,
+          "alpha": 0.0
+        },
+        {
+          "epoch": 40,
+          "validation_loss": 2.1831464767456055,
+          "alpha": 0.0
+        },
+        {
+          "epoch": 60,
+          "validation_loss": 2.1623148918151855,
+          "alpha": 0.0
+        },
+        {
+          "epoch": 80,
+          "validation_loss": 2.152069568634033,
+          "alpha": 0.0
+        },
+        {
+          "epoch": 100,
+          "validation_loss": 2.1517386436462402,
+          "alpha": 0.0
+        },
+        {
+          "epoch": 120,
+          "validation_loss": 2.1511826515197754,
+          "alpha": 0.0
+        },
+        {
+          "epoch": 140,
+          "validation_loss": 2.15280818939209,
+          "alpha": 0.0
+        },
+        {
+          "epoch": 160,
+          "validation_loss": 2.1525707244873047,
+          "alpha": 0.0
+        },
+        {
+          "epoch": 180,
+          "validation_loss": 2.153578996658325,
+          "alpha": 0.0
+        },
+        {
+          "epoch": 200,
+          "validation_loss": 2.151322364807129,
+          "alpha": 0.0
+        },
+        {
+          "epoch": 220,
+          "validation_loss": 2.1542043685913086,
+          "alpha": 0.0
+        },
+        {
+          "epoch": 240,
+          "validation_loss": 2.1519603729248047,
+          "alpha": 0.0
+        }
+      ],
+      "selected": {
+        "loss": 2.1511826515197754,
+        "epoch": 120,
+        "weights": [
+          1.5284373760223389,
+          -6.159704685211182,
+          7.877980709075928,
+          1.650957703590393,
+          0.07203219085931778,
+          0.0,
+          9.309501647949219,
+          -0.9022896885871887,
+          0.6836838126182556,
+          -1.0390772819519043,
+          -6.78660289850086e-05,
+          -5.434658527374268
+        ],
+        "alpha": 0.0
+      },
+      "parity_max_abs": 1.7630534132617726e-07
+    },
+    "diffusion": {
+      "parameters": 13,
+      "training_seconds": 4.793325199978426,
+      "peak_torch_allocated_bytes": 70551040,
+      "history": [
+        {
+          "epoch": 20,
+          "validation_loss": 2.1288390159606934,
+          "alpha": 0.5092024207115173
+        },
+        {
+          "epoch": 40,
+          "validation_loss": 2.052661418914795,
+          "alpha": 0.5159196853637695
+        },
+        {
+          "epoch": 60,
+          "validation_loss": 2.0240001678466797,
+          "alpha": 0.5316954851150513
+        },
+        {
+          "epoch": 80,
+          "validation_loss": 2.0068228244781494,
+          "alpha": 0.5230132937431335
+        },
+        {
+          "epoch": 100,
+          "validation_loss": 2.0043106079101562,
+          "alpha": 0.5395429134368896
+        },
+        {
+          "epoch": 120,
+          "validation_loss": 2.0024821758270264,
+          "alpha": 0.5361871719360352
+        },
+        {
+          "epoch": 140,
+          "validation_loss": 2.0042529106140137,
+          "alpha": 0.528755247592926
+        },
+        {
+          "epoch": 160,
+          "validation_loss": 2.0035905838012695,
+          "alpha": 0.5328066945075989
+        },
+        {
+          "epoch": 180,
+          "validation_loss": 2.0046541690826416,
+          "alpha": 0.5270323157310486
+        },
+        {
+          "epoch": 200,
+          "validation_loss": 2.000370979309082,
+          "alpha": 0.5321635603904724
+        },
+        {
+          "epoch": 220,
+          "validation_loss": 2.0076189041137695,
+          "alpha": 0.5215096473693848
+        },
+        {
+          "epoch": 240,
+          "validation_loss": 2.0021090507507324,
+          "alpha": 0.5270181894302368
+        }
+      ],
+      "selected": {
+        "loss": 2.000370979309082,
+        "epoch": 200,
+        "weights": [
+          1.4891626834869385,
+          -5.984956741333008,
+          9.447465896606445,
+          1.990717887878418,
+          -0.011537850834429264,
+          0.0,
+          9.224150657653809,
+          2.7017838954925537,
+          -2.2506303787231445,
+          -1.0766440629959106,
+          -0.00032849085982888937,
+          -4.965691566467285
+        ],
+        "alpha": 0.5321635603904724
+      },
+      "parity_max_abs": 1.6945678904534134e-07
+    }
+  },
+  "validation": {
+    "bm25": {
+      "tasks": 64,
+      "complete_support_rate": 0.375,
+      "support_f1": 0.3684895833333333,
+      "rows": [
+        {
+          "key": "3e4dcd54a3d39c4fd4fc9108060750257e2c1cf2721a984f347400f6678f3e33",
+          "selected": [
+            1,
+            2,
+            3,
+            7,
+            13,
+            19
+          ],
+          "gold": [
+            3,
+            13
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "7c1c1d7de6cf9c062c00a2eac44fb8331cb4944c4b0da4230cec11e9075518b5",
+          "selected": [
+            0,
+            3,
+            6,
+            13,
+            18,
+            19
+          ],
+          "gold": [
+            0,
+            3,
+            6
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "e788fb385db1255f52ce86e800ca67627cc30d2896090ad08ce488ec839fcedb",
+          "selected": [
+            6,
+            7,
+            8,
+            14,
+            16,
+            17
+          ],
+          "gold": [
+            2,
+            4,
+            17
+          ],
+          "complete": false,
+          "f1": 0.2222222222222222
+        },
+        {
+          "key": "51b0699cc4f44530e3458b67a49dc071f49b6a273d6b6b420a1f5c79b3a6fdd0",
+          "selected": [
+            0,
+            3,
+            8,
+            11,
+            12,
+            13
+          ],
+          "gold": [
+            3,
+            8,
+            11
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "4e286a94a9a1291d75c3aada63f996c79d0c8fafb12710b601a3e08840713014",
+          "selected": [
+            0,
+            2,
+            4,
+            6,
+            18,
+            19
+          ],
+          "gold": [
+            0,
+            6,
+            18
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "8fef4a2f951ab79b1be27932288c86ca7d6f8f7025f5f6c69e6a2045f0b696b5",
+          "selected": [
+            3,
+            4,
+            8,
+            9,
+            11,
+            13
+          ],
+          "gold": [
+            5,
+            13
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "973ca48e79b685e6d280e00835519f758c7e1cbe43b987dd9ed8d6617e7def32",
+          "selected": [
+            0,
+            8,
+            9,
+            13,
+            15,
+            18
+          ],
+          "gold": [
+            0,
+            4
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "3f212a19b30fb96cf5754b35684422a77113b817e9248c63afdf6dc32305f423",
+          "selected": [
+            0,
+            1,
+            5,
+            8,
+            15,
+            18
+          ],
+          "gold": [
+            6,
+            13,
+            15
+          ],
+          "complete": false,
+          "f1": 0.2222222222222222
+        },
+        {
+          "key": "7aadd548e6c2c1eaa7b9e0dd2b6b9c3f7eff070b925dc8cce6647b5c42a1bd13",
+          "selected": [
+            4,
+            5,
+            8,
+            11,
+            12,
+            15
+          ],
+          "gold": [
+            1,
+            15
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "a76196ab8c6bdebe13578d2e1e8a9b492f1a19cf48b6f065f2cc1a78c4a97a90",
+          "selected": [
+            9,
+            11,
+            12,
+            14,
+            17,
+            18
+          ],
+          "gold": [
+            0,
+            12
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "3623a02c020042de0a416d8ab96f5ec8d397f5578cb499378f328eb318bc206e",
+          "selected": [
+            1,
+            5,
+            8,
+            14,
+            16,
+            19
+          ],
+          "gold": [
+            5,
+            10
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "bb4483604fdb34ffb56d78543ec68ede51ba3f2e747fa45cb663d351fccb2a7f",
+          "selected": [
+            0,
+            6,
+            7,
+            11,
+            15,
+            18
+          ],
+          "gold": [
+            12,
+            18
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "eccfca5a401ed36e92553e5170b074aff46bbc2fe2d8b3190e7c0bbbd3a3f7a4",
+          "selected": [
+            1,
+            10,
+            11,
+            16,
+            17,
+            19
+          ],
+          "gold": [
+            3,
+            19
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "33c44c4a26f9b8e5faff6afdaea40d0e1e335ddcde254dc2160f47b40e0cf17e",
+          "selected": [
+            0,
+            6,
+            8,
+            12,
+            15,
+            17
+          ],
+          "gold": [
+            8,
+            12,
+            18
+          ],
+          "complete": false,
+          "f1": 0.4444444444444444
+        },
+        {
+          "key": "d72c3f0ba7d4b3c004a13ca510ff4c9c7984059afa297173daa57ba797e6c690",
+          "selected": [
+            0,
+            1,
+            10,
+            14,
+            15,
+            17
+          ],
+          "gold": [
+            6,
+            14,
+            17
+          ],
+          "complete": false,
+          "f1": 0.4444444444444444
+        },
+        {
+          "key": "94f738e39f492bebd14ef4edc3294349f6a41763f7ac0b28b405adf430f36ffb",
+          "selected": [
+            0,
+            2,
+            6,
+            14,
+            15,
+            18
+          ],
+          "gold": [
+            0,
+            12
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "893fa492a73f8d56be32fcf3d7548d332163a82db1f42cc65ad3e2e49df4d187",
+          "selected": [
+            3,
+            4,
+            5,
+            12,
+            14,
+            17
+          ],
+          "gold": [
+            3,
+            17
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "ce95387a22ad08e2ef1a3c67d8708817fcf6e7eed447b9e646c49a8598786a22",
+          "selected": [
+            0,
+            4,
+            7,
+            9,
+            14,
+            17
+          ],
+          "gold": [
+            0,
+            7,
+            9
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "dd87147e379b9634ca960c8299295c3087267e4bf6f7122e7125326995fcd7e7",
+          "selected": [
+            7,
+            9,
+            11,
+            15,
+            18,
+            19
+          ],
+          "gold": [
+            0,
+            1,
+            11,
+            19
+          ],
+          "complete": false,
+          "f1": 0.4
+        },
+        {
+          "key": "82bf355ed513684475d80fc4d5e7fe632e61eb49b38d87147d60a0ea4648d073",
+          "selected": [
+            0,
+            2,
+            7,
+            8,
+            11,
+            16
+          ],
+          "gold": [
+            7,
+            8
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "1fa55c6bd417cfe23966c668cc9c65af3acd51e67ef3a11e752ca9f860a748b0",
+          "selected": [
+            1,
+            3,
+            5,
+            10,
+            16,
+            19
+          ],
+          "gold": [
+            4,
+            5
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "f682d122bea99d724d6c8b85728d9528d801dc29f9a1e4c94ae9646eb4ec55f5",
+          "selected": [
+            0,
+            7,
+            9,
+            10,
+            13,
+            15
+          ],
+          "gold": [
+            0,
+            2
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "0b321dfa2adb1e04b2265c6757bbb6b3f8861f7d3eac0f3ee485f21496af836f",
+          "selected": [
+            0,
+            1,
+            10,
+            12,
+            15,
+            18
+          ],
+          "gold": [
+            14,
+            15
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "9bc8858d6784552dc5efb2efaf1be26116da8d31035f6459d79758c3b0d0a4bb",
+          "selected": [
+            0,
+            2,
+            9,
+            11,
+            12,
+            15
+          ],
+          "gold": [
+            9,
+            17
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "681c7b0ad0a97bc1f16a8d1599f13c26905102502ac61fc58e7fd22d70cfe024",
+          "selected": [
+            1,
+            5,
+            7,
+            9,
+            14,
+            19
+          ],
+          "gold": [
+            4,
+            19
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "9e7f4c2fd78a39be20d8384668e5ac7ea80dad55a5ec4cef30e6b2d44ed7d4d2",
+          "selected": [
+            3,
+            6,
+            8,
+            15,
+            17,
+            18
+          ],
+          "gold": [
+            6,
+            10
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "033a2296e54320a9aa5e16f91ccdf103dc6e73e75d374e6dbcd0d0a003e7ac61",
+          "selected": [
+            0,
+            2,
+            6,
+            9,
+            16,
+            17
+          ],
+          "gold": [
+            9,
+            16
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "4c2f98ae907b4bbbb8b6f63e53d9fbf905a0581dea809245deed58ea5934bf9c",
+          "selected": [
+            0,
+            9,
+            13,
+            15,
+            16,
+            19
+          ],
+          "gold": [
+            2,
+            13
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "7d19e42e3db620872e7a8b42a70cd0c0de56c17d20cfd2ba86ed70e5c32c9b57",
+          "selected": [
+            5,
+            12,
+            13,
+            14,
+            18,
+            19
+          ],
+          "gold": [
+            2,
+            18
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "210af5d09c0037bb7a2e6a3d14a7d8837a7d4dc450812e97733e84287d04d257",
+          "selected": [
+            4,
+            5,
+            6,
+            10,
+            11,
+            14
+          ],
+          "gold": [
+            4,
+            14
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "c805dfb0eb3eb5be88d8dbc5f47a5a0e6de4c7dca5018f03a92d8ef142798654",
+          "selected": [
+            2,
+            3,
+            9,
+            10,
+            13,
+            18
+          ],
+          "gold": [
+            6,
+            10
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "8caaed055667d044743a293577245c3a7ce048663b0b7a9b376f2a2ac0ad6df4",
+          "selected": [
+            1,
+            3,
+            4,
+            12,
+            13,
+            17
+          ],
+          "gold": [
+            6,
+            12,
+            15
+          ],
+          "complete": false,
+          "f1": 0.2222222222222222
+        },
+        {
+          "key": "f7d633d4e255cd9d7b0f067c46ff2ffd524a853beb54886538fff2cf19767867",
+          "selected": [
+            0,
+            2,
+            7,
+            10,
+            15,
+            17
+          ],
+          "gold": [
+            4,
+            15
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "a652b0d988f97585db5e797ea992f3097995802fb1190e5455f1949cbefe28f8",
+          "selected": [
+            0,
+            6,
+            11,
+            12,
+            15,
+            18
+          ],
+          "gold": [
+            0,
+            17
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "0a943b1816aa8e3e4d947ed4bf2069b60d00896614d82d7828b836169fd79ac2",
+          "selected": [
+            4,
+            6,
+            11,
+            12,
+            13,
+            15
+          ],
+          "gold": [
+            8,
+            11
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "d3177bc2f15230bc0c92eb3dd2db0d9f9cd5ba95681ec2cd554ca4f065c4b19d",
+          "selected": [
+            1,
+            5,
+            8,
+            11,
+            17,
+            19
+          ],
+          "gold": [
+            11,
+            17
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "df51c3d72de6b76940e858cd2c58a1d4be672e8b50d5497691b900199e6418f4",
+          "selected": [
+            0,
+            4,
+            5,
+            7,
+            8,
+            15
+          ],
+          "gold": [
+            7,
+            8
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "7ae59260df260903596c08af231c324d5be4eab6faa05632ca262b23910381ec",
+          "selected": [
+            1,
+            4,
+            8,
+            11,
+            17,
+            18
+          ],
+          "gold": [
+            4,
+            18
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "c6d2404239735ab5e36e3e40ff6719ef3958a071984a90e26224cf205935b78b",
+          "selected": [
+            5,
+            8,
+            9,
+            11,
+            15,
+            17
+          ],
+          "gold": [
+            0,
+            11
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "ceba73be6cd0a768ae424d4c80924e401e1e3de498a9a050201c06b2cc8119bd",
+          "selected": [
+            4,
+            7,
+            9,
+            12,
+            17,
+            19
+          ],
+          "gold": [
+            12,
+            17
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "7a1a42c1cf9b07672171819fdc417e203c7b41ac0a00dd5c610f7bb9003ad320",
+          "selected": [
+            6,
+            9,
+            10,
+            12,
+            17,
+            18
+          ],
+          "gold": [
+            6,
+            16
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "5f43e387e814c447cea6da659d67f5a198cc23df5c95af356d7aeebc3401d98a",
+          "selected": [
+            1,
+            3,
+            5,
+            9,
+            10,
+            16
+          ],
+          "gold": [
+            1,
+            12
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "fe3db9ca17304d94790cb1d68cb9c7bd5bd67326c866d52987a822eb59937696",
+          "selected": [
+            0,
+            2,
+            4,
+            12,
+            16,
+            18
+          ],
+          "gold": [
+            2,
+            18
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "e554598d4e22c17a0c629c472bda40a2793a3cd34735049ff12d3654cc8474ba",
+          "selected": [
+            5,
+            7,
+            9,
+            12,
+            14,
+            18
+          ],
+          "gold": [
+            7,
+            14
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "cf12775c6ba22aca5ade6e559bedbefef18f9a4e6aa990ec9f7d3604fead887f",
+          "selected": [
+            2,
+            6,
+            11,
+            12,
+            13,
+            18
+          ],
+          "gold": [
+            12,
+            15
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "5e4d98b102668e9052a81062bc5d5bde3f925fadbf35096087ec6db7df47199a",
+          "selected": [
+            0,
+            2,
+            7,
+            10,
+            13,
+            17
+          ],
+          "gold": [
+            6,
+            13
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "d81ecd870aa2da9f264fca507e6a6f919c3ae903fcb24d8be8cbf35dcdd7da3e",
+          "selected": [
+            2,
+            3,
+            4,
+            5,
+            8,
+            11
+          ],
+          "gold": [
+            3,
+            4
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "eda0cccadc9f31a444f34c1cca00c7359185b751d437eb56ab9851b7baebdbea",
+          "selected": [
+            5,
+            7,
+            9,
+            10,
+            11,
+            13
+          ],
+          "gold": [
+            8,
+            19
+          ],
+          "complete": false,
+          "f1": 0.0
+        },
+        {
+          "key": "c1b8119bdddd8c7078a7b119362dddcbd494b10bf682b66fa898fb5fa011ba41",
+          "selected": [
+            1,
+            3,
+            4,
+            11,
+            12,
+            15
+          ],
+          "gold": [
+            3,
+            12
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "932e99f5876579429b678407f54b5e45524562b50f655a722a910c298b264c4a",
+          "selected": [
+            0,
+            3,
+            9,
+            11,
+            15,
+            18
+          ],
+          "gold": [
+            0,
+            6,
+            9,
+            15
+          ],
+          "complete": false,
+          "f1": 0.6
+        },
+        {
+          "key": "0a5cb90f60aa1d31f51b262aa694c4fdb5d5b15eaafd573d761da5e18e892733",
+          "selected": [
+            5,
+            8,
+            9,
+            10,
+            12,
+            19
+          ],
+          "gold": [
+            9,
+            12
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "44240f2f16864b4cdca26504f7af01b9c66ee6c3adb18202979b99399a4c458d",
+          "selected": [
+            2,
+            5,
+            12,
+            13,
+            17,
+            19
+          ],
+          "gold": [
+            2,
+            10
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "59aa9372c063793218c096aed4a01530c732f81f43919df3396554c161e3bcc9",
+          "selected": [
+            0,
+            3,
+            4,
+            5,
+            10,
+            17
+          ],
+          "gold": [
+            5,
+            19
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "3967ff51d8d7b30e5133ce8e00c00680349eec4e5eeaceac13e6e819236c0e03",
+          "selected": [
+            4,
+            7,
+            9,
+            14,
+            15,
+            16
+          ],
+          "gold": [
+            2,
+            16,
+            17
+          ],
+          "complete": false,
+          "f1": 0.2222222222222222
+        },
+        {
+          "key": "1083434d57f1efeb007ddcbea2073c30c3a4ee008423394c16db08bd10c0d03f",
+          "selected": [
+            1,
+            5,
+            7,
+            11,
+            15,
+            16
+          ],
+          "gold": [
+            4,
+            11
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "0e8010ade7ec469cf9c0a50ce35f2d69d76cba514c71ca64990e86cc873f78e3",
+          "selected": [
+            4,
+            7,
+            10,
+            11,
+            13,
+            18
+          ],
+          "gold": [
+            4,
+            10
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "f3109c2030f2f60f8175bfcdc8915069a7edb2c39ec42e1b51a87978d8aa1b63",
+          "selected": [
+            1,
+            3,
+            8,
+            10,
+            13,
+            16
+          ],
+          "gold": [
+            8,
+            16
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "a93490e9cff63d9d8190ce3e9756f9d4bc27611bbd3cea219331f34464350990",
+          "selected": [
+            1,
+            4,
+            6,
+            10,
+            12,
+            13
+          ],
+          "gold": [
+            4,
+            6
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "08ef58a970523d0535395a45fd6d908a9d9b49d17cb1b623259fb35382a22a2a",
+          "selected": [
+            1,
+            2,
+            4,
+            5,
+            10,
+            13
+          ],
+          "gold": [
+            4,
+            10,
+            18
+          ],
+          "complete": false,
+          "f1": 0.4444444444444444
+        },
+        {
+          "key": "46d8a407139eb8f0deab5c4d48e80c90ea7d6480b877ff39d11ca303609d5a06",
+          "selected": [
+            1,
+            4,
+            10,
+            12,
+            14,
+            18
+          ],
+          "gold": [
+            4,
+            9,
+            12
+          ],
+          "complete": false,
+          "f1": 0.4444444444444444
+        },
+        {
+          "key": "8ecb18c7d5694551db5c4c8d2bf9d39c36f975d755e3c91546231def09bf9cbd",
+          "selected": [
+            0,
+            1,
+            6,
+            7,
+            16,
+            19
+          ],
+          "gold": [
+            1,
+            7
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "25d4b682bf5f7d582511ebd1612acec66585592c4254d932258f0ee87fd72df8",
+          "selected": [
+            2,
+            3,
+            5,
+            6,
+            9,
+            18
+          ],
+          "gold": [
+            2,
+            5
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "ea62ecf3ff21872872c7b03b8a3245582fd08854eefa0af26fd63004e9d3a3a8",
+          "selected": [
+            4,
+            5,
+            6,
+            7,
+            10,
+            11
+          ],
+          "gold": [
+            6,
+            13
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "529ada885ca2c0de3770b424a1ab3d7cab579443d8488b94bb42df501615b0db",
+          "selected": [
+            0,
+            2,
+            3,
+            4,
+            5,
+            12
+          ],
+          "gold": [
+            0,
+            2
+          ],
+          "complete": true,
+          "f1": 0.5
+        }
+      ]
+    },
+    "pointwise": {
+      "tasks": 64,
+      "complete_support_rate": 0.546875,
+      "support_f1": 0.4193576388888889,
+      "rows": [
+        {
+          "key": "3e4dcd54a3d39c4fd4fc9108060750257e2c1cf2721a984f347400f6678f3e33",
+          "selected": [
+            3,
+            7,
+            13,
+            16,
+            17,
+            19
+          ],
+          "gold": [
+            3,
+            13
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "7c1c1d7de6cf9c062c00a2eac44fb8331cb4944c4b0da4230cec11e9075518b5",
+          "selected": [
+            0,
+            3,
+            6,
+            13,
+            18,
+            19
+          ],
+          "gold": [
+            0,
+            3,
+            6
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "e788fb385db1255f52ce86e800ca67627cc30d2896090ad08ce488ec839fcedb",
+          "selected": [
+            2,
+            3,
+            7,
+            8,
+            16,
+            17
+          ],
+          "gold": [
+            2,
+            4,
+            17
+          ],
+          "complete": false,
+          "f1": 0.4444444444444444
+        },
+        {
+          "key": "51b0699cc4f44530e3458b67a49dc071f49b6a273d6b6b420a1f5c79b3a6fdd0",
+          "selected": [
+            3,
+            8,
+            11,
+            12,
+            13,
+            18
+          ],
+          "gold": [
+            3,
+            8,
+            11
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "4e286a94a9a1291d75c3aada63f996c79d0c8fafb12710b601a3e08840713014",
+          "selected": [
+            0,
+            1,
+            6,
+            9,
+            18,
+            19
+          ],
+          "gold": [
+            0,
+            6,
+            18
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "8fef4a2f951ab79b1be27932288c86ca7d6f8f7025f5f6c69e6a2045f0b696b5",
+          "selected": [
+            3,
+            8,
+            9,
+            13,
+            17,
+            19
+          ],
+          "gold": [
+            5,
+            13
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "973ca48e79b685e6d280e00835519f758c7e1cbe43b987dd9ed8d6617e7def32",
+          "selected": [
+            0,
+            7,
+            10,
+            15,
+            17,
+            19
+          ],
+          "gold": [
+            0,
+            4
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "3f212a19b30fb96cf5754b35684422a77113b817e9248c63afdf6dc32305f423",
+          "selected": [
+            0,
+            6,
+            8,
+            10,
+            13,
+            18
+          ],
+          "gold": [
+            6,
+            13,
+            15
+          ],
+          "complete": false,
+          "f1": 0.4444444444444444
+        },
+        {
+          "key": "7aadd548e6c2c1eaa7b9e0dd2b6b9c3f7eff070b925dc8cce6647b5c42a1bd13",
+          "selected": [
+            1,
+            4,
+            8,
+            11,
+            15,
+            19
+          ],
+          "gold": [
+            1,
+            15
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "a76196ab8c6bdebe13578d2e1e8a9b492f1a19cf48b6f065f2cc1a78c4a97a90",
+          "selected": [
+            9,
+            11,
+            12,
+            14,
+            17,
+            18
+          ],
+          "gold": [
+            0,
+            12
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "3623a02c020042de0a416d8ab96f5ec8d397f5578cb499378f328eb318bc206e",
+          "selected": [
+            5,
+            8,
+            10,
+            12,
+            14,
+            16
+          ],
+          "gold": [
+            5,
+            10
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "bb4483604fdb34ffb56d78543ec68ede51ba3f2e747fa45cb663d351fccb2a7f",
+          "selected": [
+            0,
+            3,
+            7,
+            13,
+            15,
+            18
+          ],
+          "gold": [
+            12,
+            18
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "eccfca5a401ed36e92553e5170b074aff46bbc2fe2d8b3190e7c0bbbd3a3f7a4",
+          "selected": [
+            6,
+            9,
+            12,
+            17,
+            18,
+            19
+          ],
+          "gold": [
+            3,
+            19
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "33c44c4a26f9b8e5faff6afdaea40d0e1e335ddcde254dc2160f47b40e0cf17e",
+          "selected": [
+            3,
+            6,
+            8,
+            10,
+            12,
+            17
+          ],
+          "gold": [
+            8,
+            12,
+            18
+          ],
+          "complete": false,
+          "f1": 0.4444444444444444
+        },
+        {
+          "key": "d72c3f0ba7d4b3c004a13ca510ff4c9c7984059afa297173daa57ba797e6c690",
+          "selected": [
+            4,
+            8,
+            14,
+            15,
+            16,
+            17
+          ],
+          "gold": [
+            6,
+            14,
+            17
+          ],
+          "complete": false,
+          "f1": 0.4444444444444444
+        },
+        {
+          "key": "94f738e39f492bebd14ef4edc3294349f6a41763f7ac0b28b405adf430f36ffb",
+          "selected": [
+            0,
+            5,
+            10,
+            12,
+            14,
+            19
+          ],
+          "gold": [
+            0,
+            12
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "893fa492a73f8d56be32fcf3d7548d332163a82db1f42cc65ad3e2e49df4d187",
+          "selected": [
+            0,
+            3,
+            4,
+            9,
+            14,
+            17
+          ],
+          "gold": [
+            3,
+            17
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "ce95387a22ad08e2ef1a3c67d8708817fcf6e7eed447b9e646c49a8598786a22",
+          "selected": [
+            0,
+            7,
+            9,
+            11,
+            14,
+            19
+          ],
+          "gold": [
+            0,
+            7,
+            9
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "dd87147e379b9634ca960c8299295c3087267e4bf6f7122e7125326995fcd7e7",
+          "selected": [
+            1,
+            6,
+            8,
+            11,
+            13,
+            15
+          ],
+          "gold": [
+            0,
+            1,
+            11,
+            19
+          ],
+          "complete": false,
+          "f1": 0.4
+        },
+        {
+          "key": "82bf355ed513684475d80fc4d5e7fe632e61eb49b38d87147d60a0ea4648d073",
+          "selected": [
+            3,
+            5,
+            6,
+            8,
+            17,
+            18
+          ],
+          "gold": [
+            7,
+            8
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "1fa55c6bd417cfe23966c668cc9c65af3acd51e67ef3a11e752ca9f860a748b0",
+          "selected": [
+            3,
+            4,
+            5,
+            10,
+            11,
+            18
+          ],
+          "gold": [
+            4,
+            5
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "f682d122bea99d724d6c8b85728d9528d801dc29f9a1e4c94ae9646eb4ec55f5",
+          "selected": [
+            0,
+            2,
+            9,
+            13,
+            15,
+            17
+          ],
+          "gold": [
+            0,
+            2
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "0b321dfa2adb1e04b2265c6757bbb6b3f8861f7d3eac0f3ee485f21496af836f",
+          "selected": [
+            9,
+            12,
+            14,
+            15,
+            18,
+            19
+          ],
+          "gold": [
+            14,
+            15
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "9bc8858d6784552dc5efb2efaf1be26116da8d31035f6459d79758c3b0d0a4bb",
+          "selected": [
+            0,
+            2,
+            9,
+            13,
+            14,
+            18
+          ],
+          "gold": [
+            9,
+            17
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "681c7b0ad0a97bc1f16a8d1599f13c26905102502ac61fc58e7fd22d70cfe024",
+          "selected": [
+            1,
+            4,
+            5,
+            9,
+            11,
+            14
+          ],
+          "gold": [
+            4,
+            19
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "9e7f4c2fd78a39be20d8384668e5ac7ea80dad55a5ec4cef30e6b2d44ed7d4d2",
+          "selected": [
+            4,
+            6,
+            10,
+            11,
+            17,
+            18
+          ],
+          "gold": [
+            6,
+            10
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "033a2296e54320a9aa5e16f91ccdf103dc6e73e75d374e6dbcd0d0a003e7ac61",
+          "selected": [
+            0,
+            7,
+            9,
+            10,
+            16,
+            17
+          ],
+          "gold": [
+            9,
+            16
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "4c2f98ae907b4bbbb8b6f63e53d9fbf905a0581dea809245deed58ea5934bf9c",
+          "selected": [
+            0,
+            2,
+            8,
+            13,
+            15,
+            19
+          ],
+          "gold": [
+            2,
+            13
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "7d19e42e3db620872e7a8b42a70cd0c0de56c17d20cfd2ba86ed70e5c32c9b57",
+          "selected": [
+            0,
+            3,
+            9,
+            14,
+            18,
+            19
+          ],
+          "gold": [
+            2,
+            18
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "210af5d09c0037bb7a2e6a3d14a7d8837a7d4dc450812e97733e84287d04d257",
+          "selected": [
+            1,
+            4,
+            6,
+            10,
+            12,
+            13
+          ],
+          "gold": [
+            4,
+            14
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "c805dfb0eb3eb5be88d8dbc5f47a5a0e6de4c7dca5018f03a92d8ef142798654",
+          "selected": [
+            0,
+            3,
+            7,
+            8,
+            13,
+            18
+          ],
+          "gold": [
+            6,
+            10
+          ],
+          "complete": false,
+          "f1": 0.0
+        },
+        {
+          "key": "8caaed055667d044743a293577245c3a7ce048663b0b7a9b376f2a2ac0ad6df4",
+          "selected": [
+            1,
+            3,
+            4,
+            6,
+            12,
+            13
+          ],
+          "gold": [
+            6,
+            12,
+            15
+          ],
+          "complete": false,
+          "f1": 0.4444444444444444
+        },
+        {
+          "key": "f7d633d4e255cd9d7b0f067c46ff2ffd524a853beb54886538fff2cf19767867",
+          "selected": [
+            3,
+            4,
+            7,
+            10,
+            11,
+            15
+          ],
+          "gold": [
+            4,
+            15
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "a652b0d988f97585db5e797ea992f3097995802fb1190e5455f1949cbefe28f8",
+          "selected": [
+            0,
+            4,
+            5,
+            9,
+            12,
+            17
+          ],
+          "gold": [
+            0,
+            17
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "0a943b1816aa8e3e4d947ed4bf2069b60d00896614d82d7828b836169fd79ac2",
+          "selected": [
+            5,
+            6,
+            11,
+            12,
+            13,
+            15
+          ],
+          "gold": [
+            8,
+            11
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "d3177bc2f15230bc0c92eb3dd2db0d9f9cd5ba95681ec2cd554ca4f065c4b19d",
+          "selected": [
+            3,
+            12,
+            16,
+            17,
+            18,
+            19
+          ],
+          "gold": [
+            11,
+            17
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "df51c3d72de6b76940e858cd2c58a1d4be672e8b50d5497691b900199e6418f4",
+          "selected": [
+            0,
+            4,
+            7,
+            8,
+            10,
+            14
+          ],
+          "gold": [
+            7,
+            8
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "7ae59260df260903596c08af231c324d5be4eab6faa05632ca262b23910381ec",
+          "selected": [
+            0,
+            1,
+            4,
+            9,
+            14,
+            17
+          ],
+          "gold": [
+            4,
+            18
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "c6d2404239735ab5e36e3e40ff6719ef3958a071984a90e26224cf205935b78b",
+          "selected": [
+            4,
+            11,
+            12,
+            15,
+            18,
+            19
+          ],
+          "gold": [
+            0,
+            11
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "ceba73be6cd0a768ae424d4c80924e401e1e3de498a9a050201c06b2cc8119bd",
+          "selected": [
+            0,
+            7,
+            8,
+            12,
+            17,
+            19
+          ],
+          "gold": [
+            12,
+            17
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "7a1a42c1cf9b07672171819fdc417e203c7b41ac0a00dd5c610f7bb9003ad320",
+          "selected": [
+            4,
+            6,
+            7,
+            8,
+            14,
+            16
+          ],
+          "gold": [
+            6,
+            16
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "5f43e387e814c447cea6da659d67f5a198cc23df5c95af356d7aeebc3401d98a",
+          "selected": [
+            0,
+            1,
+            4,
+            5,
+            6,
+            14
+          ],
+          "gold": [
+            1,
+            12
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "fe3db9ca17304d94790cb1d68cb9c7bd5bd67326c866d52987a822eb59937696",
+          "selected": [
+            0,
+            2,
+            4,
+            12,
+            16,
+            18
+          ],
+          "gold": [
+            2,
+            18
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "e554598d4e22c17a0c629c472bda40a2793a3cd34735049ff12d3654cc8474ba",
+          "selected": [
+            0,
+            4,
+            8,
+            10,
+            12,
+            14
+          ],
+          "gold": [
+            7,
+            14
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "cf12775c6ba22aca5ade6e559bedbefef18f9a4e6aa990ec9f7d3604fead887f",
+          "selected": [
+            3,
+            5,
+            7,
+            9,
+            14,
+            15
+          ],
+          "gold": [
+            12,
+            15
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "5e4d98b102668e9052a81062bc5d5bde3f925fadbf35096087ec6db7df47199a",
+          "selected": [
+            0,
+            2,
+            6,
+            7,
+            10,
+            13
+          ],
+          "gold": [
+            6,
+            13
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "d81ecd870aa2da9f264fca507e6a6f919c3ae903fcb24d8be8cbf35dcdd7da3e",
+          "selected": [
+            3,
+            4,
+            8,
+            10,
+            11,
+            12
+          ],
+          "gold": [
+            3,
+            4
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "eda0cccadc9f31a444f34c1cca00c7359185b751d437eb56ab9851b7baebdbea",
+          "selected": [
+            3,
+            7,
+            9,
+            11,
+            13,
+            15
+          ],
+          "gold": [
+            8,
+            19
+          ],
+          "complete": false,
+          "f1": 0.0
+        },
+        {
+          "key": "c1b8119bdddd8c7078a7b119362dddcbd494b10bf682b66fa898fb5fa011ba41",
+          "selected": [
+            3,
+            4,
+            6,
+            10,
+            12,
+            14
+          ],
+          "gold": [
+            3,
+            12
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "932e99f5876579429b678407f54b5e45524562b50f655a722a910c298b264c4a",
+          "selected": [
+            0,
+            6,
+            9,
+            11,
+            15,
+            18
+          ],
+          "gold": [
+            0,
+            6,
+            9,
+            15
+          ],
+          "complete": true,
+          "f1": 0.8
+        },
+        {
+          "key": "0a5cb90f60aa1d31f51b262aa694c4fdb5d5b15eaafd573d761da5e18e892733",
+          "selected": [
+            1,
+            3,
+            9,
+            10,
+            12,
+            19
+          ],
+          "gold": [
+            9,
+            12
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "44240f2f16864b4cdca26504f7af01b9c66ee6c3adb18202979b99399a4c458d",
+          "selected": [
+            7,
+            10,
+            13,
+            15,
+            18,
+            19
+          ],
+          "gold": [
+            2,
+            10
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "59aa9372c063793218c096aed4a01530c732f81f43919df3396554c161e3bcc9",
+          "selected": [
+            3,
+            4,
+            5,
+            17,
+            18,
+            19
+          ],
+          "gold": [
+            5,
+            19
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "3967ff51d8d7b30e5133ce8e00c00680349eec4e5eeaceac13e6e819236c0e03",
+          "selected": [
+            2,
+            3,
+            4,
+            7,
+            16,
+            17
+          ],
+          "gold": [
+            2,
+            16,
+            17
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "1083434d57f1efeb007ddcbea2073c30c3a4ee008423394c16db08bd10c0d03f",
+          "selected": [
+            3,
+            5,
+            11,
+            14,
+            15,
+            18
+          ],
+          "gold": [
+            4,
+            11
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "0e8010ade7ec469cf9c0a50ce35f2d69d76cba514c71ca64990e86cc873f78e3",
+          "selected": [
+            4,
+            10,
+            13,
+            14,
+            16,
+            18
+          ],
+          "gold": [
+            4,
+            10
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "f3109c2030f2f60f8175bfcdc8915069a7edb2c39ec42e1b51a87978d8aa1b63",
+          "selected": [
+            7,
+            8,
+            9,
+            15,
+            16,
+            19
+          ],
+          "gold": [
+            8,
+            16
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "a93490e9cff63d9d8190ce3e9756f9d4bc27611bbd3cea219331f34464350990",
+          "selected": [
+            1,
+            4,
+            6,
+            11,
+            12,
+            13
+          ],
+          "gold": [
+            4,
+            6
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "08ef58a970523d0535395a45fd6d908a9d9b49d17cb1b623259fb35382a22a2a",
+          "selected": [
+            1,
+            3,
+            4,
+            5,
+            10,
+            18
+          ],
+          "gold": [
+            4,
+            10,
+            18
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "46d8a407139eb8f0deab5c4d48e80c90ea7d6480b877ff39d11ca303609d5a06",
+          "selected": [
+            4,
+            9,
+            12,
+            15,
+            16,
+            19
+          ],
+          "gold": [
+            4,
+            9,
+            12
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "8ecb18c7d5694551db5c4c8d2bf9d39c36f975d755e3c91546231def09bf9cbd",
+          "selected": [
+            0,
+            1,
+            6,
+            13,
+            16,
+            19
+          ],
+          "gold": [
+            1,
+            7
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "25d4b682bf5f7d582511ebd1612acec66585592c4254d932258f0ee87fd72df8",
+          "selected": [
+            2,
+            3,
+            5,
+            14,
+            15,
+            18
+          ],
+          "gold": [
+            2,
+            5
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "ea62ecf3ff21872872c7b03b8a3245582fd08854eefa0af26fd63004e9d3a3a8",
+          "selected": [
+            6,
+            10,
+            12,
+            15,
+            16,
+            19
+          ],
+          "gold": [
+            6,
+            13
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "529ada885ca2c0de3770b424a1ab3d7cab579443d8488b94bb42df501615b0db",
+          "selected": [
+            0,
+            2,
+            10,
+            13,
+            15,
+            18
+          ],
+          "gold": [
+            0,
+            2
+          ],
+          "complete": true,
+          "f1": 0.5
+        }
+      ]
+    },
+    "diffusion": {
+      "tasks": 64,
+      "complete_support_rate": 0.640625,
+      "support_f1": 0.4454861111111111,
+      "rows": [
+        {
+          "key": "3e4dcd54a3d39c4fd4fc9108060750257e2c1cf2721a984f347400f6678f3e33",
+          "selected": [
+            3,
+            5,
+            13,
+            16,
+            17,
+            19
+          ],
+          "gold": [
+            3,
+            13
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "7c1c1d7de6cf9c062c00a2eac44fb8331cb4944c4b0da4230cec11e9075518b5",
+          "selected": [
+            0,
+            3,
+            6,
+            13,
+            18,
+            19
+          ],
+          "gold": [
+            0,
+            3,
+            6
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "e788fb385db1255f52ce86e800ca67627cc30d2896090ad08ce488ec839fcedb",
+          "selected": [
+            2,
+            4,
+            7,
+            8,
+            16,
+            17
+          ],
+          "gold": [
+            2,
+            4,
+            17
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "51b0699cc4f44530e3458b67a49dc071f49b6a273d6b6b420a1f5c79b3a6fdd0",
+          "selected": [
+            3,
+            8,
+            11,
+            12,
+            13,
+            18
+          ],
+          "gold": [
+            3,
+            8,
+            11
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "4e286a94a9a1291d75c3aada63f996c79d0c8fafb12710b601a3e08840713014",
+          "selected": [
+            0,
+            1,
+            6,
+            9,
+            18,
+            19
+          ],
+          "gold": [
+            0,
+            6,
+            18
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "8fef4a2f951ab79b1be27932288c86ca7d6f8f7025f5f6c69e6a2045f0b696b5",
+          "selected": [
+            3,
+            8,
+            9,
+            13,
+            17,
+            19
+          ],
+          "gold": [
+            5,
+            13
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "973ca48e79b685e6d280e00835519f758c7e1cbe43b987dd9ed8d6617e7def32",
+          "selected": [
+            0,
+            4,
+            10,
+            15,
+            17,
+            19
+          ],
+          "gold": [
+            0,
+            4
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "3f212a19b30fb96cf5754b35684422a77113b817e9248c63afdf6dc32305f423",
+          "selected": [
+            6,
+            12,
+            13,
+            14,
+            17,
+            18
+          ],
+          "gold": [
+            6,
+            13,
+            15
+          ],
+          "complete": false,
+          "f1": 0.4444444444444444
+        },
+        {
+          "key": "7aadd548e6c2c1eaa7b9e0dd2b6b9c3f7eff070b925dc8cce6647b5c42a1bd13",
+          "selected": [
+            1,
+            4,
+            8,
+            12,
+            15,
+            19
+          ],
+          "gold": [
+            1,
+            15
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "a76196ab8c6bdebe13578d2e1e8a9b492f1a19cf48b6f065f2cc1a78c4a97a90",
+          "selected": [
+            9,
+            11,
+            12,
+            14,
+            17,
+            18
+          ],
+          "gold": [
+            0,
+            12
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "3623a02c020042de0a416d8ab96f5ec8d397f5578cb499378f328eb318bc206e",
+          "selected": [
+            5,
+            8,
+            10,
+            12,
+            14,
+            16
+          ],
+          "gold": [
+            5,
+            10
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "bb4483604fdb34ffb56d78543ec68ede51ba3f2e747fa45cb663d351fccb2a7f",
+          "selected": [
+            0,
+            3,
+            7,
+            13,
+            15,
+            18
+          ],
+          "gold": [
+            12,
+            18
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "eccfca5a401ed36e92553e5170b074aff46bbc2fe2d8b3190e7c0bbbd3a3f7a4",
+          "selected": [
+            6,
+            11,
+            12,
+            17,
+            18,
+            19
+          ],
+          "gold": [
+            3,
+            19
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "33c44c4a26f9b8e5faff6afdaea40d0e1e335ddcde254dc2160f47b40e0cf17e",
+          "selected": [
+            3,
+            6,
+            8,
+            10,
+            12,
+            18
+          ],
+          "gold": [
+            8,
+            12,
+            18
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "d72c3f0ba7d4b3c004a13ca510ff4c9c7984059afa297173daa57ba797e6c690",
+          "selected": [
+            4,
+            8,
+            14,
+            15,
+            16,
+            17
+          ],
+          "gold": [
+            6,
+            14,
+            17
+          ],
+          "complete": false,
+          "f1": 0.4444444444444444
+        },
+        {
+          "key": "94f738e39f492bebd14ef4edc3294349f6a41763f7ac0b28b405adf430f36ffb",
+          "selected": [
+            0,
+            5,
+            10,
+            12,
+            14,
+            19
+          ],
+          "gold": [
+            0,
+            12
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "893fa492a73f8d56be32fcf3d7548d332163a82db1f42cc65ad3e2e49df4d187",
+          "selected": [
+            0,
+            3,
+            4,
+            9,
+            14,
+            17
+          ],
+          "gold": [
+            3,
+            17
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "ce95387a22ad08e2ef1a3c67d8708817fcf6e7eed447b9e646c49a8598786a22",
+          "selected": [
+            0,
+            7,
+            9,
+            11,
+            14,
+            17
+          ],
+          "gold": [
+            0,
+            7,
+            9
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "dd87147e379b9634ca960c8299295c3087267e4bf6f7122e7125326995fcd7e7",
+          "selected": [
+            1,
+            6,
+            8,
+            11,
+            15,
+            19
+          ],
+          "gold": [
+            0,
+            1,
+            11,
+            19
+          ],
+          "complete": false,
+          "f1": 0.6
+        },
+        {
+          "key": "82bf355ed513684475d80fc4d5e7fe632e61eb49b38d87147d60a0ea4648d073",
+          "selected": [
+            3,
+            5,
+            6,
+            8,
+            17,
+            18
+          ],
+          "gold": [
+            7,
+            8
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "1fa55c6bd417cfe23966c668cc9c65af3acd51e67ef3a11e752ca9f860a748b0",
+          "selected": [
+            3,
+            4,
+            5,
+            10,
+            11,
+            18
+          ],
+          "gold": [
+            4,
+            5
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "f682d122bea99d724d6c8b85728d9528d801dc29f9a1e4c94ae9646eb4ec55f5",
+          "selected": [
+            0,
+            2,
+            9,
+            13,
+            15,
+            17
+          ],
+          "gold": [
+            0,
+            2
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "0b321dfa2adb1e04b2265c6757bbb6b3f8861f7d3eac0f3ee485f21496af836f",
+          "selected": [
+            9,
+            12,
+            14,
+            15,
+            18,
+            19
+          ],
+          "gold": [
+            14,
+            15
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "9bc8858d6784552dc5efb2efaf1be26116da8d31035f6459d79758c3b0d0a4bb",
+          "selected": [
+            0,
+            2,
+            9,
+            13,
+            14,
+            18
+          ],
+          "gold": [
+            9,
+            17
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "681c7b0ad0a97bc1f16a8d1599f13c26905102502ac61fc58e7fd22d70cfe024",
+          "selected": [
+            1,
+            4,
+            5,
+            9,
+            14,
+            19
+          ],
+          "gold": [
+            4,
+            19
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "9e7f4c2fd78a39be20d8384668e5ac7ea80dad55a5ec4cef30e6b2d44ed7d4d2",
+          "selected": [
+            4,
+            6,
+            10,
+            11,
+            17,
+            18
+          ],
+          "gold": [
+            6,
+            10
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "033a2296e54320a9aa5e16f91ccdf103dc6e73e75d374e6dbcd0d0a003e7ac61",
+          "selected": [
+            0,
+            6,
+            9,
+            10,
+            16,
+            17
+          ],
+          "gold": [
+            9,
+            16
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "4c2f98ae907b4bbbb8b6f63e53d9fbf905a0581dea809245deed58ea5934bf9c",
+          "selected": [
+            0,
+            2,
+            8,
+            13,
+            15,
+            19
+          ],
+          "gold": [
+            2,
+            13
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "7d19e42e3db620872e7a8b42a70cd0c0de56c17d20cfd2ba86ed70e5c32c9b57",
+          "selected": [
+            2,
+            3,
+            9,
+            14,
+            18,
+            19
+          ],
+          "gold": [
+            2,
+            18
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "210af5d09c0037bb7a2e6a3d14a7d8837a7d4dc450812e97733e84287d04d257",
+          "selected": [
+            4,
+            6,
+            9,
+            10,
+            12,
+            13
+          ],
+          "gold": [
+            4,
+            14
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "c805dfb0eb3eb5be88d8dbc5f47a5a0e6de4c7dca5018f03a92d8ef142798654",
+          "selected": [
+            0,
+            3,
+            7,
+            8,
+            10,
+            13
+          ],
+          "gold": [
+            6,
+            10
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "8caaed055667d044743a293577245c3a7ce048663b0b7a9b376f2a2ac0ad6df4",
+          "selected": [
+            1,
+            3,
+            4,
+            12,
+            13,
+            18
+          ],
+          "gold": [
+            6,
+            12,
+            15
+          ],
+          "complete": false,
+          "f1": 0.2222222222222222
+        },
+        {
+          "key": "f7d633d4e255cd9d7b0f067c46ff2ffd524a853beb54886538fff2cf19767867",
+          "selected": [
+            2,
+            3,
+            4,
+            7,
+            10,
+            15
+          ],
+          "gold": [
+            4,
+            15
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "a652b0d988f97585db5e797ea992f3097995802fb1190e5455f1949cbefe28f8",
+          "selected": [
+            0,
+            4,
+            5,
+            9,
+            12,
+            17
+          ],
+          "gold": [
+            0,
+            17
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "0a943b1816aa8e3e4d947ed4bf2069b60d00896614d82d7828b836169fd79ac2",
+          "selected": [
+            5,
+            6,
+            11,
+            12,
+            13,
+            15
+          ],
+          "gold": [
+            8,
+            11
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "d3177bc2f15230bc0c92eb3dd2db0d9f9cd5ba95681ec2cd554ca4f065c4b19d",
+          "selected": [
+            1,
+            12,
+            16,
+            17,
+            18,
+            19
+          ],
+          "gold": [
+            11,
+            17
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "df51c3d72de6b76940e858cd2c58a1d4be672e8b50d5497691b900199e6418f4",
+          "selected": [
+            0,
+            4,
+            7,
+            8,
+            10,
+            14
+          ],
+          "gold": [
+            7,
+            8
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "7ae59260df260903596c08af231c324d5be4eab6faa05632ca262b23910381ec",
+          "selected": [
+            0,
+            1,
+            4,
+            9,
+            14,
+            17
+          ],
+          "gold": [
+            4,
+            18
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "c6d2404239735ab5e36e3e40ff6719ef3958a071984a90e26224cf205935b78b",
+          "selected": [
+            4,
+            6,
+            11,
+            15,
+            18,
+            19
+          ],
+          "gold": [
+            0,
+            11
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "ceba73be6cd0a768ae424d4c80924e401e1e3de498a9a050201c06b2cc8119bd",
+          "selected": [
+            0,
+            7,
+            8,
+            12,
+            17,
+            19
+          ],
+          "gold": [
+            12,
+            17
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "7a1a42c1cf9b07672171819fdc417e203c7b41ac0a00dd5c610f7bb9003ad320",
+          "selected": [
+            4,
+            6,
+            7,
+            8,
+            14,
+            16
+          ],
+          "gold": [
+            6,
+            16
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "5f43e387e814c447cea6da659d67f5a198cc23df5c95af356d7aeebc3401d98a",
+          "selected": [
+            0,
+            1,
+            4,
+            6,
+            12,
+            14
+          ],
+          "gold": [
+            1,
+            12
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "fe3db9ca17304d94790cb1d68cb9c7bd5bd67326c866d52987a822eb59937696",
+          "selected": [
+            0,
+            2,
+            4,
+            12,
+            16,
+            18
+          ],
+          "gold": [
+            2,
+            18
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "e554598d4e22c17a0c629c472bda40a2793a3cd34735049ff12d3654cc8474ba",
+          "selected": [
+            0,
+            4,
+            5,
+            8,
+            12,
+            14
+          ],
+          "gold": [
+            7,
+            14
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "cf12775c6ba22aca5ade6e559bedbefef18f9a4e6aa990ec9f7d3604fead887f",
+          "selected": [
+            2,
+            5,
+            7,
+            9,
+            14,
+            15
+          ],
+          "gold": [
+            12,
+            15
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "5e4d98b102668e9052a81062bc5d5bde3f925fadbf35096087ec6db7df47199a",
+          "selected": [
+            0,
+            2,
+            6,
+            7,
+            10,
+            17
+          ],
+          "gold": [
+            6,
+            13
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "d81ecd870aa2da9f264fca507e6a6f919c3ae903fcb24d8be8cbf35dcdd7da3e",
+          "selected": [
+            3,
+            4,
+            8,
+            10,
+            11,
+            12
+          ],
+          "gold": [
+            3,
+            4
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "eda0cccadc9f31a444f34c1cca00c7359185b751d437eb56ab9851b7baebdbea",
+          "selected": [
+            3,
+            7,
+            9,
+            12,
+            13,
+            15
+          ],
+          "gold": [
+            8,
+            19
+          ],
+          "complete": false,
+          "f1": 0.0
+        },
+        {
+          "key": "c1b8119bdddd8c7078a7b119362dddcbd494b10bf682b66fa898fb5fa011ba41",
+          "selected": [
+            3,
+            4,
+            5,
+            6,
+            12,
+            14
+          ],
+          "gold": [
+            3,
+            12
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "932e99f5876579429b678407f54b5e45524562b50f655a722a910c298b264c4a",
+          "selected": [
+            0,
+            6,
+            9,
+            11,
+            15,
+            18
+          ],
+          "gold": [
+            0,
+            6,
+            9,
+            15
+          ],
+          "complete": true,
+          "f1": 0.8
+        },
+        {
+          "key": "0a5cb90f60aa1d31f51b262aa694c4fdb5d5b15eaafd573d761da5e18e892733",
+          "selected": [
+            1,
+            3,
+            9,
+            10,
+            12,
+            19
+          ],
+          "gold": [
+            9,
+            12
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "44240f2f16864b4cdca26504f7af01b9c66ee6c3adb18202979b99399a4c458d",
+          "selected": [
+            2,
+            10,
+            13,
+            15,
+            18,
+            19
+          ],
+          "gold": [
+            2,
+            10
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "59aa9372c063793218c096aed4a01530c732f81f43919df3396554c161e3bcc9",
+          "selected": [
+            4,
+            5,
+            10,
+            17,
+            18,
+            19
+          ],
+          "gold": [
+            5,
+            19
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "3967ff51d8d7b30e5133ce8e00c00680349eec4e5eeaceac13e6e819236c0e03",
+          "selected": [
+            2,
+            3,
+            4,
+            7,
+            16,
+            17
+          ],
+          "gold": [
+            2,
+            16,
+            17
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "1083434d57f1efeb007ddcbea2073c30c3a4ee008423394c16db08bd10c0d03f",
+          "selected": [
+            3,
+            5,
+            6,
+            11,
+            15,
+            18
+          ],
+          "gold": [
+            4,
+            11
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "0e8010ade7ec469cf9c0a50ce35f2d69d76cba514c71ca64990e86cc873f78e3",
+          "selected": [
+            4,
+            10,
+            13,
+            14,
+            16,
+            18
+          ],
+          "gold": [
+            4,
+            10
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "f3109c2030f2f60f8175bfcdc8915069a7edb2c39ec42e1b51a87978d8aa1b63",
+          "selected": [
+            7,
+            8,
+            9,
+            15,
+            16,
+            19
+          ],
+          "gold": [
+            8,
+            16
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "a93490e9cff63d9d8190ce3e9756f9d4bc27611bbd3cea219331f34464350990",
+          "selected": [
+            1,
+            4,
+            6,
+            11,
+            12,
+            13
+          ],
+          "gold": [
+            4,
+            6
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "08ef58a970523d0535395a45fd6d908a9d9b49d17cb1b623259fb35382a22a2a",
+          "selected": [
+            1,
+            4,
+            5,
+            9,
+            10,
+            18
+          ],
+          "gold": [
+            4,
+            10,
+            18
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "46d8a407139eb8f0deab5c4d48e80c90ea7d6480b877ff39d11ca303609d5a06",
+          "selected": [
+            4,
+            9,
+            12,
+            15,
+            16,
+            19
+          ],
+          "gold": [
+            4,
+            9,
+            12
+          ],
+          "complete": true,
+          "f1": 0.6666666666666666
+        },
+        {
+          "key": "8ecb18c7d5694551db5c4c8d2bf9d39c36f975d755e3c91546231def09bf9cbd",
+          "selected": [
+            0,
+            1,
+            6,
+            13,
+            16,
+            19
+          ],
+          "gold": [
+            1,
+            7
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "25d4b682bf5f7d582511ebd1612acec66585592c4254d932258f0ee87fd72df8",
+          "selected": [
+            2,
+            3,
+            5,
+            14,
+            15,
+            18
+          ],
+          "gold": [
+            2,
+            5
+          ],
+          "complete": true,
+          "f1": 0.5
+        },
+        {
+          "key": "ea62ecf3ff21872872c7b03b8a3245582fd08854eefa0af26fd63004e9d3a3a8",
+          "selected": [
+            6,
+            7,
+            10,
+            12,
+            16,
+            19
+          ],
+          "gold": [
+            6,
+            13
+          ],
+          "complete": false,
+          "f1": 0.25
+        },
+        {
+          "key": "529ada885ca2c0de3770b424a1ab3d7cab579443d8488b94bb42df501615b0db",
+          "selected": [
+            0,
+            2,
+            6,
+            10,
+            13,
+            18
+          ],
+          "gold": [
+            0,
+            2
+          ],
+          "complete": true,
+          "f1": 0.5
+        }
+      ]
+    }
+  },
+  "candidate": "diffusion",
+  "candidate_active": false,
+  "requires_reader_evaluation": true
+}
