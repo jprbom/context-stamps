@@ -20,6 +20,14 @@ a 4.17 MiB adapter; the base fingerprint is unchanged. These are training
 measurements. Model-quality comparisons are separate, and activation remains
 disabled.
 
+A [conservative second candidate](../evidence/mbpp-conservative-adapter-v2/MODEL_CARD.md)
+used the same qualified training records, one epoch and a fivefold lower learning
+rate. It completed 92 steps in 39.09 seconds on the local RTX; the base remained
+unchanged and the 4.17 MiB adapter remains inactive. The first HumanEval+
+comparison informed this recipe, so a repeated HumanEval+ run is development
+evidence, not an untouched test. Neither adapter establishes a Context Stamps
+benefit merely by training.
+
 ## Learning contract
 
 1. Record the task, authorized context, model/runtime versions and an independent
@@ -104,6 +112,18 @@ The [full paired comparison](../evidence/mbpp-code-comparison-v1/README.md)
 reports all 164 HumanEval+ tasks, including output failures and regressions.
 It is separate from the immutable training record and does not activate the
 adapter. Replay it with `python experiments/verify_full_code_eval.py`.
+
+The conservative recipe can be trained with the same command, substituting
+`experiments/mbpp_conservative_adapter.py` and a fresh output path. Its frozen
+configuration and source hashes are in its training record. Do not select a
+checkpoint or activate it from training loss. Its [complete paired development
+comparison](../evidence/mbpp-conservative-comparison-v2/README.md) shows
+64/164 native passes versus 49/164 for the contemporaneous base, but 12 new
+failures, 26.4% more generated tokens and 58.9% more summed batch time. A new
+independent coding-task partition, older-skill retention check and a same-model
+with/without verified-context comparison remain necessary before claiming a
+useful local update. The [next protocol](coding-context-evaluation-plan.md)
+specifies those controls.
 
 ## Evaluate separately
 

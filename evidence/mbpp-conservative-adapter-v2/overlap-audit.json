@@ -1,0 +1,7 @@
+{
+  "dataset_sha256": "272720b90ac375502c8ed23cd791c2a93dfb22a911641a494da74a426c09f101",
+  "excluded_task_ids": [],
+  "method": "Full AST equality after removing docstrings; preserves names, imports and computation",
+  "limitations": "Does not detect renamed, structurally different or semantic equivalents; pretraining contamination unknown",
+  "heldout_reference_use": "Decontamination only; no held-out labels, tests or solutions enter training"
+}

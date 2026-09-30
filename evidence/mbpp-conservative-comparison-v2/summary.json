@@ -1,0 +1,115 @@
+{
+  "tasks": 164,
+  "activation": false,
+  "provider_charges_usd": 0,
+  "models": {
+    "base": {
+      "correct_combined": 49,
+      "outcome_stages": {
+        "base_tests": 91,
+        "output_format": 20,
+        "passed": 49,
+        "additional_tests": 4
+      },
+      "format_failures": {
+        "missing_function": 18,
+        "ambiguous_fences": 2
+      },
+      "truncated_generations": 0,
+      "execution_errors": [],
+      "execution_boundary_failures": [],
+      "input_tokens": 27260,
+      "generated_tokens": 10192,
+      "generation_batches": 41,
+      "total_batch_generation_seconds": 257.534405599974,
+      "batch_p50_seconds": 5.189846999994188,
+      "batch_p95_seconds": 12.64736080000148,
+      "generated_tokens_per_generation_second": 39.5752947116167,
+      "peak_torch_cuda_bytes": 3263282688
+    },
+    "adapter": {
+      "correct_combined": 64,
+      "outcome_stages": {
+        "passed": 64,
+        "base_tests": 92,
+        "additional_tests": 5,
+        "output_format": 3
+      },
+      "format_failures": {
+        "missing_function": 3
+      },
+      "truncated_generations": 0,
+      "execution_errors": [],
+      "execution_boundary_failures": [],
+      "input_tokens": 27260,
+      "generated_tokens": 12882,
+      "generation_batches": 41,
+      "total_batch_generation_seconds": 409.3301760000177,
+      "batch_p50_seconds": 8.613128299999516,
+      "batch_p95_seconds": 20.295833299998776,
+      "generated_tokens_per_generation_second": 31.470926785518603,
+      "peak_torch_cuda_bytes": 3263278080
+    }
+  },
+  "paired": {
+    "gained": 27,
+    "regressed": 12,
+    "delta": 0.09146341463414634,
+    "paired_bootstrap_95_interval": [
+      0.018292682926829267,
+      0.16463414634146342
+    ],
+    "exact_two_sided_mcnemar_p": 0.023702702470473014,
+    "interpretation": "Descriptive task-level resampling. Assumes independent tasks; related tasks and four development-smoke tasks limit inference. Not an activation gate."
+  },
+  "gained_tasks": [
+    "HumanEval/0",
+    "HumanEval/3",
+    "HumanEval/4",
+    "HumanEval/6",
+    "HumanEval/8",
+    "HumanEval/12",
+    "HumanEval/15",
+    "HumanEval/18",
+    "HumanEval/20",
+    "HumanEval/29",
+    "HumanEval/42",
+    "HumanEval/58",
+    "HumanEval/63",
+    "HumanEval/73",
+    "HumanEval/80",
+    "HumanEval/82",
+    "HumanEval/89",
+    "HumanEval/94",
+    "HumanEval/97",
+    "HumanEval/113",
+    "HumanEval/127",
+    "HumanEval/128",
+    "HumanEval/138",
+    "HumanEval/139",
+    "HumanEval/150",
+    "HumanEval/151",
+    "HumanEval/162"
+  ],
+  "regressed_tasks": [
+    "HumanEval/5",
+    "HumanEval/48",
+    "HumanEval/54",
+    "HumanEval/57",
+    "HumanEval/68",
+    "HumanEval/69",
+    "HumanEval/81",
+    "HumanEval/104",
+    "HumanEval/117",
+    "HumanEval/152",
+    "HumanEval/155",
+    "HumanEval/158"
+  ],
+  "limitations": [
+    "One generic SFT control, one base model, one training seed and greedy decoding",
+    "No stamp-memory treatment, domain-retention result, production workload, frontier comparison or edge-device measurement",
+    "Benchmark task 32 has a retained reference/oracle numerical limitation; it remains in the denominator",
+    "Batch generation time is not per-request latency, time to first token or end-to-end workflow cost",
+    "No energy measurement; no automatic activation or domain-wide competence claim"
+  ]
+}

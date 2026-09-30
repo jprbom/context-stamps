@@ -1,0 +1,12 @@
+{
+  "rows": 368,
+  "epochs": 1,
+  "seconds": 39.091314000004786,
+  "peak_allocated_cuda_bytes": 7879181312,
+  "frozen_base_unchanged": true,
+  "adapter_sha256": "1d1db2050272d1067cbc25cdd883a23573db5327e503b4b666f9d0503a65f8eb",
+  "adapter_bytes": 4372840,
+  "activation": false,
+  "benchmark_results": null,
+  "energy_joules": null
+}

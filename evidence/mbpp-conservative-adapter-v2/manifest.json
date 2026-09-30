@@ -1,0 +1,24 @@
+{
+  "schema": 1,
+  "files": {
+    "APACHE-2.0.txt": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+    "base.json": "7fcc1057e7176344da0817914bfc462f1ea9de5510456904f7e9c69f2efa06d4",
+    "loaded.json": "5779945388b27c9787f02f75e038d6dec1243b7905911a20a6f8d7985f138232",
+    "MODEL_CARD.md": "c0164fcb9bffce96db6eab587622408ef71f84abbe1deb8b75de9d93fca7b2b3",
+    "overlap-audit.json": "a1b7fa440c734df69e2fd606ecbf1d43985eb707258c9b7fabca386235dd9dbd",
+    "plan.json": "1023f60c83ec6924b3f1e4fe73982da4c6727bc15693c390c658a87968c4ebba",
+    "tokenization.json": "3c4ddeaba7c749d9582759f5f3f75188443c6681bb4c034e2e4c731752118035",
+    "trained.json": "b95b037abfa609ac2884b6ff44486fcbe29e186f02a0d3d776f4806fa5cdce06",
+    "training-data.json": "d77656472a8966f83be41f265703963e7d468f36a9aa7e21a014d4f0607222b0",
+    "training.jsonl": "a416ba88b91d046d8c7aa2155647cefb73a9254180e332946127706a72bbeece",
+    "adapter/adapter_config.json": "60f43a8a62277971c33e2e92bcd81ee926725d9cfa850bdc80861cec862e0cee",
+    "adapter/adapter_model.safetensors": "1d1db2050272d1067cbc25cdd883a23573db5327e503b4b666f9d0503a65f8eb"
+  },
+  "sources": {
+    "experiments/verify_conservative_code_adapter.py": "94076ab89a19018c4b1bd22cb5d52f8f447b2f42ded70c917679915bb52524e2",
+    "experiments/mbpp_conservative_adapter.py": "362984eba9b2867e2bdb52b2b73807b4064df0eea7f9c6ee815a528e50d330f9",
+    "experiments/seal_conservative_training.py": "d560aa4bc05d6f5a27702f1071033f7c983f2d2e716381d78f669534125fbc09"
+  },
+  "activation": false,
+  "notes": "Training record only. HumanEval+ was inspected during candidate design; repeated results are development evidence."
+}
