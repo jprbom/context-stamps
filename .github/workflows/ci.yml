@@ -80,6 +80,7 @@ jobs:
       - run: python experiments/test_code_statistics.py -v
       - run: python experiments/verify_full_code_eval.py
       - run: python experiments/verify_conservative_code_eval.py
+      - run: python experiments/verify_repoqa_context.py
       - run: python experiments/test_ruler_context.py -v
       - run: python experiments/test_ruler_evidence.py -v
       - run: python experiments/verify_ruler_development.py

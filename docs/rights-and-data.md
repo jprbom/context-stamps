@@ -43,6 +43,15 @@ generated commands and native grader reports; raw task trees, reference solution
 and model weights remain outside Git. These evaluation-only tasks and traces are
 excluded from local training. Authored harness code remains MIT.
 
+The [RepoQA-derived localization study](../evidence/repoqa-localization-v1/README.md)
+uses the separately obtained [RepoQA release](https://github.com/evalplus/repoqa_release)
+at a pinned commit and archive checksum. Its source contains snapshots of
+third-party repositories whose original licenses must be respected. No source
+code, benchmark descriptions or model weights are republished here. Only
+aggregate results, source identities, numeric rankings, timing records,
+authored runner code and a chart are committed. The released evidence does not
+license the underlying repositories or qualify a coding model.
+
 The acquisition study retains public-data-derived small JSON predictors and trajectory evidence under its [CC BY-SA 4.0 attribution](../evidence/acquisition-v1/ATTRIBUTION.md). Its source, engineering tests and fictional example remain MIT. The learned policy failed qualification and is not a default retrieval route. External model weights and raw dataset texts are excluded.
 
 The runtime follow-up retains public-dataset-derived router parameters, rankings and timing evidence under the [runtime artifact attribution](../evidence/runtime-v1/ATTRIBUTION.md). Its fictional reader/metadata fixtures and original code remain MIT. The existing local Cortex 1.7B model is used only for inference on those fictional inputs; its weights, private training corpus, prompt template and filesystem paths are not published. Reader observations retain expected/parsed integer outputs and hashes rather than unconstrained text.

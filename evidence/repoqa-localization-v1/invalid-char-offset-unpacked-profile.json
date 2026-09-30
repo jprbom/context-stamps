@@ -1,0 +1,125 @@
+{
+  "stamp_index_s": [
+    {
+      "repo": "psf/black",
+      "stamp_encode_s": 0.2442525999940699
+    },
+    {
+      "repo": "python-poetry/poetry",
+      "stamp_encode_s": 0.2768467999994755
+    },
+    {
+      "repo": "locustio/locust",
+      "stamp_encode_s": 0.3810639000002993
+    },
+    {
+      "repo": "pyg-team/pytorch_geometric",
+      "stamp_encode_s": 1.3759943999975803
+    },
+    {
+      "repo": "openai/openai-python",
+      "stamp_encode_s": 0.40507090000028256
+    },
+    {
+      "repo": "mlc-ai/mlc-llm",
+      "stamp_encode_s": 0.46448940000118455
+    },
+    {
+      "repo": "reactive-python/reactpy",
+      "stamp_encode_s": 0.13442460000078427
+    },
+    {
+      "repo": "marshmallow-code/marshmallow",
+      "stamp_encode_s": 0.09896840000146767
+    },
+    {
+      "repo": "ethereum/web3.py",
+      "stamp_encode_s": 0.4104665999984718
+    },
+    {
+      "repo": "Ciphey/Ciphey",
+      "stamp_encode_s": 0.06809380000049714
+    }
+  ],
+  "protocol": "Unpacked bit-array implementation before packed XOR/popcount optimization",
+  "summary": {
+    "train": {
+      "queries": 40,
+      "methods": {
+        "dense": {
+          "top1": 17,
+          "top5": 29,
+          "top10": 30,
+          "mrr": 0.555938,
+          "median_lookup_ms": 0.2435
+        },
+        "tfidf": {
+          "top1": 11,
+          "top5": 18,
+          "top10": 18,
+          "mrr": 0.356759,
+          "median_lookup_ms": 0.6114
+        },
+        "stamp": {
+          "top1": 3,
+          "top5": 12,
+          "top10": 16,
+          "mrr": 0.167005,
+          "median_lookup_ms": 2.5448
+        }
+      }
+    },
+    "validation": {
+      "queries": 30,
+      "methods": {
+        "dense": {
+          "top1": 14,
+          "top5": 21,
+          "top10": 22,
+          "mrr": 0.572762,
+          "median_lookup_ms": 0.0566
+        },
+        "tfidf": {
+          "top1": 7,
+          "top5": 11,
+          "top10": 12,
+          "mrr": 0.297162,
+          "median_lookup_ms": 0.4226
+        },
+        "stamp": {
+          "top1": 3,
+          "top5": 11,
+          "top10": 15,
+          "mrr": 0.237139,
+          "median_lookup_ms": 2.2222
+        }
+      }
+    },
+    "final": {
+      "queries": 30,
+      "methods": {
+        "dense": {
+          "top1": 11,
+          "top5": 22,
+          "top10": 24,
+          "mrr": 0.511817,
+          "median_lookup_ms": 0.0476
+        },
+        "tfidf": {
+          "top1": 9,
+          "top5": 11,
+          "top10": 13,
+          "mrr": 0.34434,
+          "median_lookup_ms": 0.6127
+        },
+        "stamp": {
+          "top1": 5,
+          "top5": 10,
+          "top10": 13,
+          "mrr": 0.261364,
+          "median_lookup_ms": 3.0318
+        }
+      }
+    }
+  }
+}

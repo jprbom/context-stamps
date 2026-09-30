@@ -1,0 +1,282 @@
+{
+  "status": "exploratory validation only; no untouched final run",
+  "source_sha256": "c050a2ad90a7df89d9dc1f1c3b3b20683edd20a56293b35fcaae43dec115d681",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "train_repositories": [
+    "psf/black",
+    "python-poetry/poetry",
+    "locustio/locust",
+    "pyg-team/pytorch_geometric"
+  ],
+  "validation_repositories": [
+    "openai/openai-python",
+    "mlc-ai/mlc-llm",
+    "reactive-python/reactpy"
+  ],
+  "training_rows": 4000,
+  "selection_seed": 20260930,
+  "itq_iterations": 12,
+  "fit_seconds": 0.3896842999965884,
+  "learned_family_sha256": "b97b7dd3773bbb2e11cd46248f67ac0e5ecda8312a492e91dfd8de1d09ed926c",
+  "summary": {
+    "dense": {
+      "top1": 14,
+      "top10": 22,
+      "mrr": 0.578318
+    },
+    "gaussian256": {
+      "top1": 5,
+      "top10": 15,
+      "mrr": 0.262233
+    },
+    "itq256": {
+      "top1": 9,
+      "top10": 20,
+      "mrr": 0.458833
+    }
+  },
+  "rows": [
+    {
+      "id": "openai/openai-python:0",
+      "ranks": {
+        "gaussian256": 22,
+        "itq256": 1,
+        "dense": 2
+      }
+    },
+    {
+      "id": "openai/openai-python:1",
+      "ranks": {
+        "gaussian256": 11,
+        "itq256": 3,
+        "dense": 2
+      }
+    },
+    {
+      "id": "openai/openai-python:2",
+      "ranks": {
+        "gaussian256": 17,
+        "itq256": 15,
+        "dense": 13
+      }
+    },
+    {
+      "id": "openai/openai-python:3",
+      "ranks": {
+        "gaussian256": 1,
+        "itq256": 2,
+        "dense": 1
+      }
+    },
+    {
+      "id": "openai/openai-python:4",
+      "ranks": {
+        "gaussian256": 3,
+        "itq256": 2,
+        "dense": 1
+      }
+    },
+    {
+      "id": "openai/openai-python:5",
+      "ranks": {
+        "gaussian256": 18,
+        "itq256": 3,
+        "dense": 3
+      }
+    },
+    {
+      "id": "openai/openai-python:6",
+      "ranks": {
+        "gaussian256": 6,
+        "itq256": 2,
+        "dense": 3
+      }
+    },
+    {
+      "id": "openai/openai-python:7",
+      "ranks": {
+        "gaussian256": 3,
+        "itq256": 1,
+        "dense": 1
+      }
+    },
+    {
+      "id": "openai/openai-python:8",
+      "ranks": {
+        "gaussian256": 4,
+        "itq256": 1,
+        "dense": 1
+      }
+    },
+    {
+      "id": "openai/openai-python:9",
+      "ranks": {
+        "gaussian256": 6,
+        "itq256": 2,
+        "dense": 1
+      }
+    },
+    {
+      "id": "mlc-ai/mlc-llm:0",
+      "ranks": {
+        "gaussian256": 33,
+        "itq256": 127,
+        "dense": 16
+      }
+    },
+    {
+      "id": "mlc-ai/mlc-llm:1",
+      "ranks": {
+        "gaussian256": 75,
+        "itq256": 81,
+        "dense": 115
+      }
+    },
+    {
+      "id": "mlc-ai/mlc-llm:2",
+      "ranks": {
+        "gaussian256": 15,
+        "itq256": 16,
+        "dense": 1
+      }
+    },
+    {
+      "id": "mlc-ai/mlc-llm:3",
+      "ranks": {
+        "gaussian256": 42,
+        "itq256": 3,
+        "dense": 3
+      }
+    },
+    {
+      "id": "mlc-ai/mlc-llm:4",
+      "ranks": {
+        "gaussian256": 44,
+        "itq256": 57,
+        "dense": 70
+      }
+    },
+    {
+      "id": "mlc-ai/mlc-llm:5",
+      "ranks": {
+        "gaussian256": 64,
+        "itq256": 35,
+        "dense": 102
+      }
+    },
+    {
+      "id": "mlc-ai/mlc-llm:6",
+      "ranks": {
+        "gaussian256": 165,
+        "itq256": 162,
+        "dense": 67
+      }
+    },
+    {
+      "id": "mlc-ai/mlc-llm:7",
+      "ranks": {
+        "gaussian256": 112,
+        "itq256": 100,
+        "dense": 104
+      }
+    },
+    {
+      "id": "mlc-ai/mlc-llm:8",
+      "ranks": {
+        "gaussian256": 147,
+        "itq256": 21,
+        "dense": 9
+      }
+    },
+    {
+      "id": "mlc-ai/mlc-llm:9",
+      "ranks": {
+        "gaussian256": 29,
+        "itq256": 176,
+        "dense": 24
+      }
+    },
+    {
+      "id": "reactive-python/reactpy:0",
+      "ranks": {
+        "gaussian256": 1,
+        "itq256": 1,
+        "dense": 1
+      }
+    },
+    {
+      "id": "reactive-python/reactpy:1",
+      "ranks": {
+        "gaussian256": 4,
+        "itq256": 3,
+        "dense": 2
+      }
+    },
+    {
+      "id": "reactive-python/reactpy:2",
+      "ranks": {
+        "gaussian256": 1,
+        "itq256": 1,
+        "dense": 1
+      }
+    },
+    {
+      "id": "reactive-python/reactpy:3",
+      "ranks": {
+        "gaussian256": 6,
+        "itq256": 2,
+        "dense": 1
+      }
+    },
+    {
+      "id": "reactive-python/reactpy:4",
+      "ranks": {
+        "gaussian256": 4,
+        "itq256": 1,
+        "dense": 1
+      }
+    },
+    {
+      "id": "reactive-python/reactpy:5",
+      "ranks": {
+        "gaussian256": 80,
+        "itq256": 3,
+        "dense": 2
+      }
+    },
+    {
+      "id": "reactive-python/reactpy:6",
+      "ranks": {
+        "gaussian256": 1,
+        "itq256": 1,
+        "dense": 1
+      }
+    },
+    {
+      "id": "reactive-python/reactpy:7",
+      "ranks": {
+        "gaussian256": 8,
+        "itq256": 3,
+        "dense": 1
+      }
+    },
+    {
+      "id": "reactive-python/reactpy:8",
+      "ranks": {
+        "gaussian256": 1,
+        "itq256": 1,
+        "dense": 1
+      }
+    },
+    {
+      "id": "reactive-python/reactpy:9",
+      "ranks": {
+        "gaussian256": 3,
+        "itq256": 1,
+        "dense": 1
+      }
+    }
+  ],
+  "decision": "Do not activate or query the prior final cohort regardless of validation outcome."
+}

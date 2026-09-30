@@ -1,12 +1,37 @@
 # Coding-domain context and local learning: next evaluation
 
-By Prashant Jagtap. Research protocol; the comparisons below have not run.
+By Prashant Jagtap. Research protocol and current status, 30 September 2026.
 
 The first MBPP adapter did not improve aggregate HumanEval+ correctness and
-increased generation cost. A smaller second adapter is a retention experiment,
-not the Context Stamps contribution. The next useful test must isolate what the
-context system contributes to a coding task with missing, changing repository
-information.
+increased generation cost. A smaller second adapter improved that development
+set but was tuned after reviewing its failures; neither is the Context Stamps
+contribution. A [fresh repository-disjoint localization study](../evidence/repoqa-localization-v1/README.md)
+then found **13/30 dense versus 5/30 stamp top-1** on held-out Python
+repositories. That result tests a compact routing path only. It is not a
+code-editing, authorized compiler, reader, or agent-workflow result. The
+compact route remains inactive.
+
+## What the completed localization gate changes
+
+The study pinned the RepoQA source release and MiniLM encoder, indexed 11,164
+functions from ten repositories, and held three repositories aside for final
+measurement. It compared identical candidate sets under dense, TF–IDF and
+256-bit multi-facet routing. The stamp stores 32 bytes per function but missed
+more targets and was slower at this small-scale warm lookup in the measured
+implementation. The runner and all 100 per-query rankings are published
+without redistributing repository source code or raw descriptions.
+
+The validation gate failed before any fit of a new CPU selector or reader
+adapter. Fitting on this failed route would spend training budget without
+evidence that the information needed by a coding reader survived retrieval.
+No new model was activated. The inspected final cohort cannot be reused as an
+untouched test for a revised stamp. The next candidate must address candidate
+recall on train/validation, then use a new final group.
+
+An exploratory [train-only ITQ quantizer follow-up](../evidence/repoqa-localization-v1/README.md)
+raised validation top-1 to 9/30 for a 256-bit *single semantic* code, versus
+14/30 dense. This is a quantization diagnostic, not the four-facet design or
+a final-set gain. It was stopped before the inspected final repositories.
 
 ## Task unit and controls
 
