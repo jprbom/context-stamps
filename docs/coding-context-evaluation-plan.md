@@ -41,6 +41,17 @@ Faiss lookups were slower than flat dense at this scale. The result merits a
 new preregistered, independently held-out larger-corpus trial; it does not
 qualify deployment or justify changing the default route.
 
+That follow-up has now been run on a [new CodeSearchNet Python-derived cohort](../evidence/codesearchnet-quantization-v1/README.md).
+Thirty held-out repositories supplied 90 exact-function queries, with
+docstrings removed from indexed code. Dense reached **52/90 top-1**; ordinary
+32-byte PQ reached **50/90**, OPQ **51/90**, and a validation-selected
+query-weighted PQ **47/90**. All compact routes were slower in measured warm
+CPU lookup. The query-weighted route also needed about **1.57 MB** of shared
+codebook and transform storage, which exceeded the per-function vector saving
+for every selected repository. The validation gain did not generalize, so no
+compact semantic route qualifies. The cohort is now inspected and cannot be
+reused as an untouched test for another tuned candidate.
+
 ## Task unit and controls
 
 Use public, redistributable repositories with pinned commits and independent
