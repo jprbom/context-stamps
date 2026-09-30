@@ -20,7 +20,16 @@ Validation, before the test run:
 
 These times include query matrix multiplication where applicable and FAISS search, but exclude encoding and index construction. The dense index stores 384 float32 values (1,536 bytes) per candidate; the table's dense overhead is only its serialized empty-index header. Quantization reduces per-candidate vector bytes by 48×, but dense is faster and more accurate on this validation cohort. For a repository with only 50–1,000 candidates, shared codebooks and transforms can erase much of the storage saving. No compact route is activated from these results.
 
-Reproduce with Python, PyTorch, sentence-transformers, FAISS CPU, NumPy, and PyArrow. Download the three Python Parquet files at the hashes in `manifest.json` outside the Git checkout. Then run `experiments/codesearchnet_quantization.py` in order with `prepare`, `embed`, and `fit`. Pass `--source` as the directory containing `python-train.parquet`, `python-validation.parquet`, and `python-test.parquet`; pass `--cache` as a private directory outside Git. `embed` uses a CUDA device. `fit --run-test` adds the held-out test results. The supplied `validation.json` is the checkpoint before that first test run.
+Reproduce with Python, CUDA PyTorch, sentence-transformers, FAISS CPU, NumPy, and PyArrow 21. Download the Python train, validation, and test Parquet files from [the CodeSearchNet dataset](https://huggingface.co/datasets/code-search-net/code_search_net) outside the Git checkout. Name them `python-train.parquet`, `python-validation.parquet`, and `python-test.parquet`. Verify their hashes against `manifest.json`. Install the repository's `experiment` extra plus `pyarrow==21.0.0` in a CUDA-capable environment, then run from the repository root:
+
+```text
+python experiments/codesearchnet_quantization.py prepare --source PATH_TO_PARQUET_DIRECTORY --cache PATH_TO_PRIVATE_CACHE
+python experiments/codesearchnet_quantization.py embed --source PATH_TO_PARQUET_DIRECTORY --cache PATH_TO_PRIVATE_CACHE
+python experiments/codesearchnet_quantization.py fit --source PATH_TO_PARQUET_DIRECTORY --cache PATH_TO_PRIVATE_CACHE --out evidence/codesearchnet-quantization-v1/results.json --run-test
+python experiments/analyze_codesearchnet_quantization.py evidence/codesearchnet-quantization-v1/results.json evidence/codesearchnet-quantization-v1/analysis.json
+```
+
+`embed` uses a CUDA device; training and warm lookup use CPU FAISS. The supplied `validation.json` is the committed checkpoint before the first test run.
 
 The first held-out test compared those same predeclared routes, with no post-test retuning:
 
