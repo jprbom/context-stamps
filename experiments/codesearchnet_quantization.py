@@ -22,7 +22,6 @@ import numpy as np
 import pyarrow.parquet as pq
 from sentence_transformers import SentenceTransformer
 
-
 MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 REVISION = "1110a243fdf4706b3f48f1d95db1a4f5529b4d41"
 SOURCE_SHA = {
@@ -77,7 +76,8 @@ def clean(code, description):
         rendered = ast.unparse(tree)
     except (SyntaxError, ValueError, TypeError, RecursionError):
         return None
-    normalized = lambda s: re.sub(r"\s+", " ", s).strip().casefold()
+    def normalized(s):
+        return re.sub(r"\s+", " ", s).strip().casefold()
     if len(normalized(description)) < 20 or len(normalized(description)) > 400:
         return None
     if normalized(description) in normalized(rendered):

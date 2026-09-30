@@ -22,6 +22,20 @@ These times include query matrix multiplication where applicable and FAISS searc
 
 Reproduce with Python, PyTorch, sentence-transformers, FAISS CPU, NumPy, and PyArrow. Download the three Python Parquet files at the hashes in `manifest.json` outside the Git checkout. Then run `experiments/codesearchnet_quantization.py` in order with `prepare`, `embed`, and `fit`. Pass `--source` as the directory containing `python-train.parquet`, `python-validation.parquet`, and `python-test.parquet`; pass `--cache` as a private directory outside Git. `embed` uses a CUDA device. `fit --run-test` adds the held-out test results. The supplied `validation.json` is the checkpoint before that first test run.
 
-The single held-out test will compare the predeclared routes. It is not a license to tune on the test set. If the query-weighted route fails to improve dense top-1, MRR, and latency jointly, we will leave it research-only. The next research step would be supervised matching-aware quantization on training pairs, with a new untouched repository cohort for qualification.
+The first held-out test compared those same predeclared routes, with no post-test retuning:
+
+| Route | Top 1 / 90 | Top 10 / 90 | MRR | Warm lookup median, ms/query | Shared overhead | Candidates needed to offset overhead |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Dense float32 | 52 | 82 | 0.6934 | 0.0119 | 45 B index header | — |
+| PQ, 32 B | 50 | 81 | 0.6742 | 0.0270 | 393,302 B | 262 |
+| OPQ, 32 B | 51 | 82 | 0.6789 | 0.0873 | 983,197 B | 654 |
+| Query-weighted PQ, exponent 0.25, 32 B | 47 | 80 | 0.6530 | 0.0873 | 1,572,950 B | 1,046 |
+| Query-weighted PQ, exponent 0.5, 32 B | 39 | 79 | 0.5903 | 0.0907 | 1,572,950 B | 1,046 |
+
+The validation-favored query-weighted route regressed on the untouched test. Across the 30 test repositories, its top-1 difference from dense is −5/90, with a repository-cluster bootstrap 95% interval of −13.3 to +2.2 percentage points. Ordinary PQ is −2/90, interval −7.8 to +3.3 points. These intervals do not establish superiority or equivalence. The 0.5-exponent route has a clearly negative interval. Exact rank improves for 8 queries and worsens for 25 with the 0.25-exponent route. See `results.json` for per-repository ranks and `analysis.json` for the paired intervals.
+
+The storage break-even column compares the shared quantizer overhead with 1,536 versus 32 vector bytes per candidate; it excludes identifiers, metadata, full source, encoder weights, and query representation. The 1,046-candidate threshold for query-weighted PQ exceeds every selected test repository's 1,000-candidate maximum. Its larger transform also increases CPU lookup latency. At these repository sizes, query-aware covariance weighting is not a useful default.
+
+All compact routes remain research-only. These data answer a narrower question than the project goal: whether a 256-bit semantic vector code improves exact code-function localization over the same encoder's dense vectors. They do not evaluate the spherical multi-facet stamp's relation map, context activation, agent workflow, model attention, code patch success, or edge-device energy. A supervised matching-aware quantizer could be trained on the training pairs, but it needs a new untouched cohort and paired latency/storage gates before it can be called an improvement.
 
 Copyright (c) 2026 Prashant Jagtap. Repository code is MIT-licensed; third-party dataset licenses remain with their respective owners.

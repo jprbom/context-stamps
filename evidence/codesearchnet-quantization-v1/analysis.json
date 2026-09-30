@@ -1,0 +1,131 @@
+{
+  "seed": 20260930,
+  "bootstrap_replicates": 10000,
+  "unit": "repository",
+  "splits": {
+    "validation": {
+      "pq32": {
+        "top1_delta_fraction": -0.044444,
+        "top1_delta_95pct_cluster_bootstrap": [
+          -0.133333,
+          0.033333
+        ],
+        "mrr_delta": -0.025877,
+        "mrr_delta_95pct_cluster_bootstrap": [
+          -0.07762,
+          0.020914
+        ],
+        "rank_improved": 8,
+        "rank_worsened": 15,
+        "storage_break_even_candidates_excluding_metadata_and_encoder": 262
+      },
+      "opq32": {
+        "top1_delta_fraction": -0.055556,
+        "top1_delta_95pct_cluster_bootstrap": [
+          -0.155556,
+          0.033333
+        ],
+        "mrr_delta": -0.024417,
+        "mrr_delta_95pct_cluster_bootstrap": [
+          -0.079105,
+          0.027052
+        ],
+        "rank_improved": 13,
+        "rank_worsened": 16,
+        "storage_break_even_candidates_excluding_metadata_and_encoder": 654
+      },
+      "query_weighted_pq32_alpha0.25": {
+        "top1_delta_fraction": -0.022222,
+        "top1_delta_95pct_cluster_bootstrap": [
+          -0.1,
+          0.055556
+        ],
+        "mrr_delta": -0.016193,
+        "mrr_delta_95pct_cluster_bootstrap": [
+          -0.062302,
+          0.027131
+        ],
+        "rank_improved": 9,
+        "rank_worsened": 14,
+        "storage_break_even_candidates_excluding_metadata_and_encoder": 1046
+      },
+      "query_weighted_pq32_alpha0.5": {
+        "top1_delta_fraction": -0.122222,
+        "top1_delta_95pct_cluster_bootstrap": [
+          -0.233333,
+          -0.0
+        ],
+        "mrr_delta": -0.09033,
+        "mrr_delta_95pct_cluster_bootstrap": [
+          -0.171833,
+          -0.009064
+        ],
+        "rank_improved": 11,
+        "rank_worsened": 27,
+        "storage_break_even_candidates_excluding_metadata_and_encoder": 1046
+      }
+    },
+    "test": {
+      "pq32": {
+        "top1_delta_fraction": -0.022222,
+        "top1_delta_95pct_cluster_bootstrap": [
+          -0.077778,
+          0.033333
+        ],
+        "mrr_delta": -0.019188,
+        "mrr_delta_95pct_cluster_bootstrap": [
+          -0.055692,
+          0.017231
+        ],
+        "rank_improved": 18,
+        "rank_worsened": 20,
+        "storage_break_even_candidates_excluding_metadata_and_encoder": 262
+      },
+      "opq32": {
+        "top1_delta_fraction": -0.011111,
+        "top1_delta_95pct_cluster_bootstrap": [
+          -0.066667,
+          0.044444
+        ],
+        "mrr_delta": -0.014487,
+        "mrr_delta_95pct_cluster_bootstrap": [
+          -0.045287,
+          0.017308
+        ],
+        "rank_improved": 12,
+        "rank_worsened": 21,
+        "storage_break_even_candidates_excluding_metadata_and_encoder": 654
+      },
+      "query_weighted_pq32_alpha0.25": {
+        "top1_delta_fraction": -0.055556,
+        "top1_delta_95pct_cluster_bootstrap": [
+          -0.133333,
+          0.022222
+        ],
+        "mrr_delta": -0.040358,
+        "mrr_delta_95pct_cluster_bootstrap": [
+          -0.083576,
+          0.004212
+        ],
+        "rank_improved": 8,
+        "rank_worsened": 25,
+        "storage_break_even_candidates_excluding_metadata_and_encoder": 1046
+      },
+      "query_weighted_pq32_alpha0.5": {
+        "top1_delta_fraction": -0.144444,
+        "top1_delta_95pct_cluster_bootstrap": [
+          -0.211111,
+          -0.066667
+        ],
+        "mrr_delta": -0.103017,
+        "mrr_delta_95pct_cluster_bootstrap": [
+          -0.149294,
+          -0.056075
+        ],
+        "rank_improved": 13,
+        "rank_worsened": 31,
+        "storage_break_even_candidates_excluding_metadata_and_encoder": 1046
+      }
+    }
+  }
+}

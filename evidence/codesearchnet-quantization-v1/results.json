@@ -1,0 +1,2058 @@
+{
+  "method": "frozen CodeSearchNet Python derived task",
+  "source_manifest": {
+    "dataset": "code-search-net/code_search_net",
+    "task": "derived repo-local function localization",
+    "seed": 20260930,
+    "model": "sentence-transformers/all-MiniLM-L6-v2",
+    "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+    "splits": {
+      "train": {
+        "clean_train_pairs": 13215,
+        "repositories": 4585,
+        "source_sha256": "ad9e3a4ab10c2c1d8926d2b26ca2bfcc3aadda1477ba29a933391f93806b9fed",
+        "prepared_sha256": "40b35f59a3aa8a45fb2d9486d8841cce32b9972edb8da68d70dd1ebef2df7bf3"
+      },
+      "validation": {
+        "clean_functions": 17897,
+        "eligible_repositories": 665,
+        "selected_repositories": [
+          "Ex-Mente/auxi.0",
+          "inspirehep/harvesting-kit",
+          "quantopian/pyfolio",
+          "aleju/imgaug",
+          "aio-libs/aioftp",
+          "pingali/dgit",
+          "ManiacalLabs/BiblioPixel",
+          "VingtCinq/python-mailchimp",
+          "gamechanger/dusty",
+          "urschrei/pyzotero",
+          "fumitoh/modelx",
+          "Becksteinlab/GromacsWrapper",
+          "mwgielen/jackal",
+          "koalalorenzo/python-digitalocean",
+          "mwickert/scikit-dsp-comm",
+          "ARMmbed/yotta",
+          "joelfrederico/SciSalt",
+          "linkedin/naarad",
+          "tensorforce/tensorforce",
+          "doraemonext/wechat-python-sdk",
+          "EmbodiedCognition/pagoda",
+          "spdx/tools-python",
+          "Jammy2211/PyAutoLens",
+          "kisom/pypcapfile",
+          "pybel/pybel-tools",
+          "kata198/indexedredis",
+          "chrislit/abydos",
+          "ansible/tower-cli",
+          "dereneaton/ipyrad",
+          "Parsl/parsl"
+        ],
+        "selected_queries": 90,
+        "selected_candidates": 3063,
+        "source_sha256": "22eaacb46ed7e74d582409b85692ef63f5a43e99f9395c2eb736b5c8451422bb",
+        "prepared_sha256": "fc7c4fe7a90ee24d65c9fc1c87a3e6f7b7f2b50e85834fce32c03c69c5ed752e"
+      },
+      "test": {
+        "clean_functions": 17555,
+        "eligible_repositories": 660,
+        "selected_repositories": [
+          "apache/airflow",
+          "rocky/python3-trepan",
+          "urinieto/msaf",
+          "singularityhub/sregistry-cli",
+          "streamlink/streamlink",
+          "OpenKMIP/PyKMIP",
+          "neurosynth/neurosynth",
+          "xtuml/pyxtuml",
+          "gholt/swiftly",
+          "dagster-io/dagster",
+          "openergy/oplus",
+          "bloomreach/s4cmd",
+          "UCBerkeleySETI/blimpy",
+          "assemblerflow/flowcraft",
+          "SmokinCaterpillar/pypet",
+          "intel-analytics/BigDL",
+          "tnkteja/myhelp",
+          "vaexio/vaex",
+          "agile-geoscience/striplog",
+          "deepmipt/DeepPavlov",
+          "tensorflow/probability",
+          "RRZE-HPC/kerncraft",
+          "nvdv/vprof",
+          "pyca/pyopenssl",
+          "trec-kba/streamcorpus-pipeline",
+          "Nic30/hwt",
+          "chrisjrn/registrasion",
+          "elliterate/capybara.py",
+          "Qiskit/qiskit-terra",
+          "bolt-project/bolt"
+        ],
+        "selected_queries": 90,
+        "selected_candidates": 4716,
+        "source_sha256": "3167e79ee7f081d825bf97b96d3a6b2d96428b00f6a98125be943384d8afae5f",
+        "prepared_sha256": "3cdaf6e0cb97539fe4faf7135fe1be5ce9be1857f537cdd265ccd45b893bcf34"
+      }
+    }
+  },
+  "faiss_version": "1.12.0",
+  "threads": 4,
+  "opq_fit_seconds": 11.283150299997942,
+  "query_weighted_fit_seconds": {
+    "query_weighted_pq32_alpha0.25": 1.1035185000000638,
+    "query_weighted_pq32_alpha0.5": 1.1180730000050971
+  },
+  "codebook_bytes": {
+    "dense": 45,
+    "pq32": 393302,
+    "opq32": 983197,
+    "query_weighted_pq32_alpha0.25": 1572950,
+    "query_weighted_pq32_alpha0.5": 1572950
+  },
+  "validation": {
+    "summary": {
+      "dense": {
+        "n": 90,
+        "top1": 63,
+        "top10": 88,
+        "mrr": 0.807257
+      },
+      "pq32": {
+        "n": 90,
+        "top1": 59,
+        "top10": 89,
+        "mrr": 0.78138
+      },
+      "opq32": {
+        "n": 90,
+        "top1": 58,
+        "top10": 88,
+        "mrr": 0.78284
+      },
+      "query_weighted_pq32_alpha0.25": {
+        "n": 90,
+        "top1": 61,
+        "top10": 86,
+        "mrr": 0.791064
+      },
+      "query_weighted_pq32_alpha0.5": {
+        "n": 90,
+        "top1": 52,
+        "top10": 87,
+        "mrr": 0.716926
+      }
+    },
+    "warm_lookup_median_ms_per_query": {
+      "dense": 0.011367,
+      "pq32": 0.027183,
+      "opq32": 0.0864,
+      "query_weighted_pq32_alpha0.25": 0.087267,
+      "query_weighted_pq32_alpha0.5": 0.087617
+    },
+    "rows": [
+      {
+        "repo": "Ex-Mente/auxi.0",
+        "candidates": 140,
+        "ranks": {
+          "dense": [
+            1,
+            20,
+            2
+          ],
+          "pq32": [
+            1,
+            2,
+            2
+          ],
+          "opq32": [
+            1,
+            18,
+            2
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            13,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "inspirehep/harvesting-kit",
+        "candidates": 142,
+        "ranks": {
+          "dense": [
+            1,
+            3,
+            1
+          ],
+          "pq32": [
+            1,
+            3,
+            1
+          ],
+          "opq32": [
+            1,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            2,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "quantopian/pyfolio",
+        "candidates": 51,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "aleju/imgaug",
+        "candidates": 95,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            3
+          ],
+          "pq32": [
+            1,
+            1,
+            5
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            3,
+            4
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      {
+        "repo": "aio-libs/aioftp",
+        "candidates": 54,
+        "ranks": {
+          "dense": [
+            2,
+            1,
+            1
+          ],
+          "pq32": [
+            2,
+            1,
+            1
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            2,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            2,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "pingali/dgit",
+        "candidates": 58,
+        "ranks": {
+          "dense": [
+            1,
+            7,
+            6
+          ],
+          "pq32": [
+            1,
+            9,
+            6
+          ],
+          "opq32": [
+            1,
+            5,
+            5
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            5,
+            13
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            10,
+            5
+          ]
+        }
+      },
+      {
+        "repo": "ManiacalLabs/BiblioPixel",
+        "candidates": 134,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            2
+          ],
+          "pq32": [
+            1,
+            1,
+            2
+          ],
+          "opq32": [
+            1,
+            1,
+            3
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            2
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "VingtCinq/python-mailchimp",
+        "candidates": 73,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            1,
+            1,
+            3
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "repo": "gamechanger/dusty",
+        "candidates": 82,
+        "ranks": {
+          "dense": [
+            2,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            2,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            2,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            4,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "urschrei/pyzotero",
+        "candidates": 60,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            10
+          ],
+          "pq32": [
+            1,
+            1,
+            4
+          ],
+          "opq32": [
+            1,
+            1,
+            10
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            13
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            3
+          ]
+        }
+      },
+      {
+        "repo": "fumitoh/modelx",
+        "candidates": 76,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            2,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            2,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "Becksteinlab/GromacsWrapper",
+        "candidates": 111,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "mwgielen/jackal",
+        "candidates": 80,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            3
+          ],
+          "pq32": [
+            1,
+            1,
+            3
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            3
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            3
+          ]
+        }
+      },
+      {
+        "repo": "koalalorenzo/python-digitalocean",
+        "candidates": 88,
+        "ranks": {
+          "dense": [
+            1,
+            2,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            1,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "mwickert/scikit-dsp-comm",
+        "candidates": 69,
+        "ranks": {
+          "dense": [
+            1,
+            2,
+            1
+          ],
+          "pq32": [
+            1,
+            2,
+            1
+          ],
+          "opq32": [
+            1,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            2,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            6,
+            2,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "ARMmbed/yotta",
+        "candidates": 90,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            5
+          ],
+          "pq32": [
+            2,
+            2,
+            6
+          ],
+          "opq32": [
+            1,
+            1,
+            8
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            10
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            9
+          ]
+        }
+      },
+      {
+        "repo": "joelfrederico/SciSalt",
+        "candidates": 72,
+        "ranks": {
+          "dense": [
+            1,
+            3,
+            4
+          ],
+          "pq32": [
+            1,
+            2,
+            5
+          ],
+          "opq32": [
+            2,
+            2,
+            2
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            2,
+            3
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            5
+          ]
+        }
+      },
+      {
+        "repo": "linkedin/naarad",
+        "candidates": 95,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            2
+          ],
+          "pq32": [
+            1,
+            2,
+            2
+          ],
+          "opq32": [
+            1,
+            2,
+            2
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            2,
+            2
+          ]
+        }
+      },
+      {
+        "repo": "tensorforce/tensorforce",
+        "candidates": 152,
+        "ranks": {
+          "dense": [
+            1,
+            2,
+            2
+          ],
+          "pq32": [
+            1,
+            3,
+            1
+          ],
+          "opq32": [
+            1,
+            1,
+            2
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            3,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "doraemonext/wechat-python-sdk",
+        "candidates": 57,
+        "ranks": {
+          "dense": [
+            2,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            5,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            3,
+            1,
+            2
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            10,
+            2,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "EmbodiedCognition/pagoda",
+        "candidates": 59,
+        "ranks": {
+          "dense": [
+            1,
+            4,
+            1
+          ],
+          "pq32": [
+            1,
+            8,
+            1
+          ],
+          "opq32": [
+            1,
+            5,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            8,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            6,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "spdx/tools-python",
+        "candidates": 216,
+        "ranks": {
+          "dense": [
+            4,
+            2,
+            1
+          ],
+          "pq32": [
+            3,
+            2,
+            1
+          ],
+          "opq32": [
+            3,
+            2,
+            2
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            4,
+            3,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            3,
+            2,
+            2
+          ]
+        }
+      },
+      {
+        "repo": "Jammy2211/PyAutoLens",
+        "candidates": 148,
+        "ranks": {
+          "dense": [
+            1,
+            13,
+            2
+          ],
+          "pq32": [
+            1,
+            14,
+            2
+          ],
+          "opq32": [
+            1,
+            24,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            2,
+            25,
+            2
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            2,
+            31,
+            2
+          ]
+        }
+      },
+      {
+        "repo": "kisom/pypcapfile",
+        "candidates": 55,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            5,
+            1,
+            2
+          ],
+          "opq32": [
+            2,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            3,
+            1,
+            2
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            3,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "pybel/pybel-tools",
+        "candidates": 213,
+        "ranks": {
+          "dense": [
+            1,
+            3,
+            1
+          ],
+          "pq32": [
+            1,
+            3,
+            1
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            3,
+            19,
+            2
+          ]
+        }
+      },
+      {
+        "repo": "kata198/indexedredis",
+        "candidates": 55,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            2
+          ],
+          "pq32": [
+            1,
+            1,
+            2
+          ],
+          "opq32": [
+            1,
+            1,
+            2
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            2
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            2,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "chrislit/abydos",
+        "candidates": 74,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            3,
+            1
+          ],
+          "opq32": [
+            1,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            8,
+            4
+          ]
+        }
+      },
+      {
+        "repo": "ansible/tower-cli",
+        "candidates": 62,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "dereneaton/ipyrad",
+        "candidates": 278,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            2,
+            1,
+            1
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            28,
+            1,
+            5
+          ]
+        }
+      },
+      {
+        "repo": "Parsl/parsl",
+        "candidates": 124,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            3,
+            1
+          ],
+          "opq32": [
+            1,
+            3,
+            2
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            2,
+            5
+          ]
+        }
+      }
+    ]
+  },
+  "test": {
+    "summary": {
+      "dense": {
+        "n": 90,
+        "top1": 52,
+        "top10": 82,
+        "mrr": 0.693353
+      },
+      "pq32": {
+        "n": 90,
+        "top1": 50,
+        "top10": 81,
+        "mrr": 0.674166
+      },
+      "opq32": {
+        "n": 90,
+        "top1": 51,
+        "top10": 82,
+        "mrr": 0.678866
+      },
+      "query_weighted_pq32_alpha0.25": {
+        "n": 90,
+        "top1": 47,
+        "top10": 80,
+        "mrr": 0.652995
+      },
+      "query_weighted_pq32_alpha0.5": {
+        "n": 90,
+        "top1": 39,
+        "top10": 79,
+        "mrr": 0.590337
+      }
+    },
+    "warm_lookup_median_ms_per_query": {
+      "dense": 0.01185,
+      "pq32": 0.027,
+      "opq32": 0.087267,
+      "query_weighted_pq32_alpha0.25": 0.087283,
+      "query_weighted_pq32_alpha0.5": 0.090683
+    },
+    "rows": [
+      {
+        "repo": "apache/airflow",
+        "candidates": 589,
+        "ranks": {
+          "dense": [
+            5,
+            5,
+            5
+          ],
+          "pq32": [
+            8,
+            10,
+            10
+          ],
+          "opq32": [
+            4,
+            6,
+            6
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            6,
+            13,
+            5
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            3,
+            8,
+            4
+          ]
+        }
+      },
+      {
+        "repo": "rocky/python3-trepan",
+        "candidates": 169,
+        "ranks": {
+          "dense": [
+            1,
+            2,
+            1
+          ],
+          "pq32": [
+            1,
+            2,
+            1
+          ],
+          "opq32": [
+            1,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            6,
+            4,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "urinieto/msaf",
+        "candidates": 104,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "repo": "singularityhub/sregistry-cli",
+        "candidates": 214,
+        "ranks": {
+          "dense": [
+            5,
+            4,
+            94
+          ],
+          "pq32": [
+            7,
+            8,
+            84
+          ],
+          "opq32": [
+            6,
+            5,
+            97
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            4,
+            4,
+            109
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            5,
+            4,
+            116
+          ]
+        }
+      },
+      {
+        "repo": "streamlink/streamlink",
+        "candidates": 125,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "OpenKMIP/PyKMIP",
+        "candidates": 107,
+        "ranks": {
+          "dense": [
+            1,
+            46,
+            4
+          ],
+          "pq32": [
+            1,
+            37,
+            3
+          ],
+          "opq32": [
+            1,
+            37,
+            5
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            50,
+            7
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            4,
+            45,
+            19
+          ]
+        }
+      },
+      {
+        "repo": "neurosynth/neurosynth",
+        "candidates": 52,
+        "ranks": {
+          "dense": [
+            1,
+            2,
+            1
+          ],
+          "pq32": [
+            1,
+            2,
+            4
+          ],
+          "opq32": [
+            1,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            2,
+            2,
+            2
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            2,
+            9
+          ]
+        }
+      },
+      {
+        "repo": "xtuml/pyxtuml",
+        "candidates": 160,
+        "ranks": {
+          "dense": [
+            4,
+            2,
+            18
+          ],
+          "pq32": [
+            3,
+            2,
+            12
+          ],
+          "opq32": [
+            3,
+            2,
+            7
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            4,
+            3,
+            20
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            2,
+            7,
+            25
+          ]
+        }
+      },
+      {
+        "repo": "gholt/swiftly",
+        "candidates": 50,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            2,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            3,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "dagster-io/dagster",
+        "candidates": 56,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            2,
+            1,
+            1
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            2,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "openergy/oplus",
+        "candidates": 55,
+        "ranks": {
+          "dense": [
+            2,
+            1,
+            3
+          ],
+          "pq32": [
+            2,
+            1,
+            3
+          ],
+          "opq32": [
+            2,
+            1,
+            2
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            2,
+            1,
+            3
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            2,
+            1,
+            3
+          ]
+        }
+      },
+      {
+        "repo": "bloomreach/s4cmd",
+        "candidates": 76,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "UCBerkeleySETI/blimpy",
+        "candidates": 101,
+        "ranks": {
+          "dense": [
+            1,
+            2,
+            2
+          ],
+          "pq32": [
+            1,
+            2,
+            3
+          ],
+          "opq32": [
+            1,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            7,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "assemblerflow/flowcraft",
+        "candidates": 110,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            2,
+            1,
+            1
+          ],
+          "opq32": [
+            2,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            2,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "SmokinCaterpillar/pypet",
+        "candidates": 313,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            4
+          ],
+          "pq32": [
+            1,
+            1,
+            3
+          ],
+          "opq32": [
+            1,
+            1,
+            8
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            2,
+            1,
+            5
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            2,
+            1,
+            13
+          ]
+        }
+      },
+      {
+        "repo": "intel-analytics/BigDL",
+        "candidates": 90,
+        "ranks": {
+          "dense": [
+            1,
+            3,
+            3
+          ],
+          "pq32": [
+            1,
+            2,
+            4
+          ],
+          "opq32": [
+            1,
+            3,
+            5
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            3,
+            4
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            2,
+            3
+          ]
+        }
+      },
+      {
+        "repo": "tnkteja/myhelp",
+        "candidates": 169,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            19
+          ],
+          "pq32": [
+            1,
+            1,
+            23
+          ],
+          "opq32": [
+            1,
+            2,
+            19
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            2,
+            1,
+            18
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            3,
+            1,
+            11
+          ]
+        }
+      },
+      {
+        "repo": "vaexio/vaex",
+        "candidates": 124,
+        "ranks": {
+          "dense": [
+            12,
+            3,
+            7
+          ],
+          "pq32": [
+            14,
+            5,
+            4
+          ],
+          "opq32": [
+            14,
+            5,
+            3
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            23,
+            3,
+            11
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            26,
+            2,
+            10
+          ]
+        }
+      },
+      {
+        "repo": "agile-geoscience/striplog",
+        "candidates": 61,
+        "ranks": {
+          "dense": [
+            1,
+            4,
+            1
+          ],
+          "pq32": [
+            1,
+            2,
+            1
+          ],
+          "opq32": [
+            1,
+            5,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            5,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            2,
+            5,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "deepmipt/DeepPavlov",
+        "candidates": 153,
+        "ranks": {
+          "dense": [
+            2,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            3,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            2,
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "repo": "tensorflow/probability",
+        "candidates": 394,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            8
+          ],
+          "pq32": [
+            1,
+            1,
+            7
+          ],
+          "opq32": [
+            1,
+            1,
+            8
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            10
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            3,
+            1,
+            18
+          ]
+        }
+      },
+      {
+        "repo": "RRZE-HPC/kerncraft",
+        "candidates": 110,
+        "ranks": {
+          "dense": [
+            1,
+            5,
+            1
+          ],
+          "pq32": [
+            2,
+            14,
+            1
+          ],
+          "opq32": [
+            3,
+            4,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            2,
+            5,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            2,
+            7,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "nvdv/vprof",
+        "candidates": 51,
+        "ranks": {
+          "dense": [
+            10,
+            1,
+            2
+          ],
+          "pq32": [
+            5,
+            1,
+            1
+          ],
+          "opq32": [
+            11,
+            1,
+            3
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            4
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            3,
+            1,
+            3
+          ]
+        }
+      },
+      {
+        "repo": "pyca/pyopenssl",
+        "candidates": 159,
+        "ranks": {
+          "dense": [
+            51,
+            79,
+            2
+          ],
+          "pq32": [
+            36,
+            69,
+            3
+          ],
+          "opq32": [
+            34,
+            103,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            35,
+            73,
+            2
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            33,
+            70,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "trec-kba/streamcorpus-pipeline",
+        "candidates": 73,
+        "ranks": {
+          "dense": [
+            6,
+            1,
+            1
+          ],
+          "pq32": [
+            7,
+            1,
+            1
+          ],
+          "opq32": [
+            4,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            5,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            6,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "Nic30/hwt",
+        "candidates": 249,
+        "ranks": {
+          "dense": [
+            1,
+            36,
+            1
+          ],
+          "pq32": [
+            1,
+            22,
+            1
+          ],
+          "opq32": [
+            1,
+            48,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            46,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            2,
+            28,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "chrisjrn/registrasion",
+        "candidates": 94,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            2
+          ],
+          "pq32": [
+            1,
+            1,
+            4
+          ],
+          "opq32": [
+            1,
+            1,
+            7
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            3
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            4
+          ]
+        }
+      },
+      {
+        "repo": "elliterate/capybara.py",
+        "candidates": 77,
+        "ranks": {
+          "dense": [
+            1,
+            2,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            1
+          ],
+          "opq32": [
+            1,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            2,
+            2,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            2,
+            2,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "Qiskit/qiskit-terra",
+        "candidates": 576,
+        "ranks": {
+          "dense": [
+            1,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            1,
+            2
+          ],
+          "opq32": [
+            1,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            1,
+            1,
+            5
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            1,
+            1,
+            1
+          ]
+        }
+      },
+      {
+        "repo": "bolt-project/bolt",
+        "candidates": 55,
+        "ranks": {
+          "dense": [
+            2,
+            1,
+            1
+          ],
+          "pq32": [
+            1,
+            2,
+            1
+          ],
+          "opq32": [
+            3,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.25": [
+            2,
+            1,
+            1
+          ],
+          "query_weighted_pq32_alpha0.5": [
+            4,
+            1,
+            1
+          ]
+        }
+      }
+    ]
+  }
+}
