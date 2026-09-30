@@ -1,0 +1,14 @@
+{
+  "core_tests": 447,
+  "evidence_class": "authored_api_checks_not_model_or_device_benchmark",
+  "files": {
+    "core-tests.txt": "a9f8e6cd8fecf59cd780a53aa2aa08d84bd9f4183fc88071143461c97d06f2af",
+    "example.json": "b07543f66b36b5d60f2f815a6745eaa770e08a2404c5169466bd302d4aac1644"
+  },
+  "source_hashes": {
+    "context_stamps/numerical_tasks.py": "ba3e7130085ba4645cb79b16669e341dc05ddc2b53a9b72b88602745c497998a",
+    "examples/numerical_tasks.py": "e0a37c7eae262b7d21055197be6b3f251d019fe87de4dd7d987c79d36ee0b861",
+    "tests/test_numerical_tasks.py": "8bdf8d49030b191591275b97e8e824e389ad2d784b8d1df35726f041a8b0cac5"
+  },
+  "targeted_tests": 14
+}

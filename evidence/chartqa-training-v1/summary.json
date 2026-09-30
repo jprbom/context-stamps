@@ -1,0 +1,283 @@
+{
+  "candidate_active": false,
+  "cells": {
+    "arithmetic": {
+      "direct": 16,
+      "memory": 11,
+      "program": 12,
+      "questions": 24
+    },
+    "extreme": {
+      "direct": 13,
+      "memory": 6,
+      "program": 4,
+      "questions": 18
+    },
+    "other": {
+      "direct": 66,
+      "memory": 46,
+      "program": 32,
+      "questions": 81
+    },
+    "relative": {
+      "direct": 17,
+      "memory": 16,
+      "program": 3,
+      "questions": 20
+    }
+  },
+  "cohort": "ChartQA public TRAIN subset; 64 charts, 143 questions, 2-4 questions per chart",
+  "controls": {
+    "cv_selected_fixed": {
+      "abstentions": 11,
+      "charts": 64,
+      "complete_charts": 39,
+      "correct": 112,
+      "costs": {
+        "calls": 143,
+        "processing_seconds": 0.018293400877155364,
+        "tokens": 84405,
+        "wall_seconds": 92.16432650003117
+      },
+      "errors": 5,
+      "extractions_charged": 0,
+      "questions": 143,
+      "stripped_exact": 94,
+      "subgroup": {
+        "0": {
+          "correct": 40,
+          "questions": 54
+        },
+        "1": {
+          "correct": 72,
+          "questions": 89
+        }
+      }
+    },
+    "direct": {
+      "abstentions": 11,
+      "charts": 64,
+      "complete_charts": 39,
+      "correct": 112,
+      "costs": {
+        "calls": 143,
+        "processing_seconds": 0.018293400877155364,
+        "tokens": 84405,
+        "wall_seconds": 92.16432650003117
+      },
+      "errors": 5,
+      "extractions_charged": 0,
+      "questions": 143,
+      "stripped_exact": 94,
+      "subgroup": {
+        "0": {
+          "correct": 40,
+          "questions": 54
+        },
+        "1": {
+          "correct": 72,
+          "questions": 89
+        }
+      }
+    },
+    "fixed_rule": {
+      "abstentions": 16,
+      "charts": 64,
+      "complete_charts": 29,
+      "correct": 99,
+      "costs": {
+        "calls": 178,
+        "processing_seconds": 0.06680489960126579,
+        "tokens": 157246,
+        "wall_seconds": 426.85667119931895
+      },
+      "errors": 4,
+      "extractions_charged": 35,
+      "questions": 143,
+      "stripped_exact": 82,
+      "subgroup": {
+        "0": {
+          "correct": 35,
+          "questions": 54
+        },
+        "1": {
+          "correct": 64,
+          "questions": 89
+        }
+      }
+    },
+    "memory": {
+      "abstentions": 33,
+      "charts": 64,
+      "complete_charts": 21,
+      "correct": 79,
+      "costs": {
+        "calls": 207,
+        "processing_seconds": 0.09190810041036457,
+        "tokens": 207561,
+        "wall_seconds": 650.6269153981702
+      },
+      "errors": 6,
+      "extractions_charged": 64,
+      "questions": 143,
+      "stripped_exact": 68,
+      "subgroup": {
+        "0": {
+          "correct": 28,
+          "questions": 54
+        },
+        "1": {
+          "correct": 51,
+          "questions": 89
+        }
+      }
+    },
+    "program": {
+      "abstentions": 54,
+      "charts": 64,
+      "complete_charts": 13,
+      "correct": 51,
+      "costs": {
+        "calls": 207,
+        "processing_seconds": 0.09708289918489754,
+        "tokens": 241129,
+        "wall_seconds": 661.3369434977649
+      },
+      "errors": 8,
+      "extractions_charged": 64,
+      "questions": 143,
+      "stripped_exact": 39,
+      "subgroup": {
+        "0": {
+          "correct": 18,
+          "questions": 54
+        },
+        "1": {
+          "correct": 33,
+          "questions": 89
+        }
+      }
+    }
+  },
+  "cost_accounting": "Each selected query plus extraction/build once per chart if a dependent route is used; warmup, idle power and model load excluded",
+  "cv": {
+    "10.0": {
+      "abstentions": 11,
+      "charts": 64,
+      "complete_charts": 39,
+      "correct": 112,
+      "costs": {
+        "calls": 143,
+        "processing_seconds": 0.018293400877155364,
+        "tokens": 84405,
+        "wall_seconds": 92.16432650003117
+      },
+      "errors": 5,
+      "extractions_charged": 0,
+      "questions": 143,
+      "stripped_exact": 94,
+      "subgroup": {
+        "0": {
+          "correct": 40,
+          "questions": 54
+        },
+        "1": {
+          "correct": 72,
+          "questions": 89
+        }
+      }
+    },
+    "2.0": {
+      "abstentions": 11,
+      "charts": 64,
+      "complete_charts": 39,
+      "correct": 112,
+      "costs": {
+        "calls": 143,
+        "processing_seconds": 0.018293400877155364,
+        "tokens": 84405,
+        "wall_seconds": 92.16432650003117
+      },
+      "errors": 5,
+      "extractions_charged": 0,
+      "questions": 143,
+      "stripped_exact": 94,
+      "subgroup": {
+        "0": {
+          "correct": 40,
+          "questions": 54
+        },
+        "1": {
+          "correct": 72,
+          "questions": 89
+        }
+      }
+    },
+    "50.0": {
+      "abstentions": 11,
+      "charts": 64,
+      "complete_charts": 39,
+      "correct": 112,
+      "costs": {
+        "calls": 143,
+        "processing_seconds": 0.018293400877155364,
+        "tokens": 84405,
+        "wall_seconds": 92.16432650003117
+      },
+      "errors": 5,
+      "extractions_charged": 0,
+      "questions": 143,
+      "stripped_exact": 94,
+      "subgroup": {
+        "0": {
+          "correct": 40,
+          "questions": 54
+        },
+        "1": {
+          "correct": 72,
+          "questions": 89
+        }
+      }
+    }
+  },
+  "dataset_license": "ChartQA upstream GPL-3.0; dataset bytes are not redistributed here",
+  "dataset_revision": "044eabfc306abfe9340c5741f0093aefc5973d06",
+  "fold_group": "chart image; 16 evaluation charts per fold",
+  "folds": 4,
+  "independent_validation_complete": false,
+  "limitations": [
+    "Training-only exploratory diagnostics; no untouched validation or test score.",
+    "The direct route wins on this cohort; no learned visual route qualifies.",
+    "Base reader weights were unchanged; fitted CPU policies are not a fine-tuned model.",
+    "Near-duplicate images and base-model pretraining exposure cannot be ruled out.",
+    "No peak memory, energy, target-device latency, or production scale measurement."
+  ],
+  "model_calls": 493,
+  "model_unchanged": true,
+  "owner": "Prashant Jagtap",
+  "paired_comparisons": {
+    "all_arms_wrong": 28,
+    "any_arm_correct": 115,
+    "memory_loses_direct": 34,
+    "memory_rescues_direct": 1,
+    "program_loses_direct": 63,
+    "program_rescues_direct": 2
+  },
+  "paired_records": 429,
+  "policy_candidates": 3,
+  "policy_diagnostics_sha256": "c09245a569a9c1511f4e86a0c3e6e554e80df653150e805621343908cbe87ca5",
+  "reader_completion_sha256": "a9576a64947d8506cf7730e76493a32393a2e3f2785ff1789683be20e8c9302a",
+  "reader_model": {
+    "digest": "2a654d98e6fba55d452b7043684e9b57a947e393bbffa62485a7aac05ee4eefd",
+    "name": "qwen3.5:4b"
+  },
+  "reader_protocol": "typed-json-program-v3",
+  "reader_quantization": "Q4_K_M",
+  "reader_registration_sha256": "2d826355571cc7a2376616251d5dc499a8873cd4729674e89fe79a2fccd4c728",
+  "reader_run_seconds": 841.0803059999598,
+  "retained_fold_policies": 12,
+  "schema": 1,
+  "scorer": "native relaxed 5% numeric tolerance or stripped string match; exact also recorded",
+  "selected_penalty": null,
+  "summary_source_sha256": "2a4c008053ad7efa966151266778d18f92b61c4e98e112b80b2d8c86fcc48a24"
+}

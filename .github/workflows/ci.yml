@@ -58,6 +58,9 @@ jobs:
       - run: python experiments/verify_chartqa_preparation.py
       - run: python experiments/verify_chartqa_interface.py
       - run: python experiments/verify_chartqa_scalar.py
+      - run: python experiments/verify_chartqa_training_public.py
+      - run: python experiments/verify_numerical.py
+      - run: python examples/numerical_tasks.py
       - run: python -m unittest discover -s experiments -p 'test_techqa_*.py' -v
       - run: python experiments/verify_techqa.py
       - run: python examples/source_bound_answer.py

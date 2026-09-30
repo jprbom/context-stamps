@@ -1,0 +1,17 @@
+{
+  "answer": "0.3",
+  "exact_rational": [
+    3,
+    10
+  ],
+  "example": "authored typed tasks; not model or device evaluation",
+  "execution_verified": true,
+  "language_interpretation_verified": false,
+  "missing_answer": null,
+  "missing_status": "selector_not_in_view",
+  "model_calls": 0,
+  "revoked_answer": null,
+  "revoked_status": "unavailable_context",
+  "source_semantics_verified": false,
+  "unit": "V"
+}

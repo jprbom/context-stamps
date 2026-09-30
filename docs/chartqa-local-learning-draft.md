@@ -1,6 +1,16 @@
-# Local visual memory and arithmetic — preparation draft
+# Local visual memory and arithmetic — training diagnostic and preparation record
 
-By Prashant Jagtap. No ChartQA model result or learned improvement is claimed yet.
+By Prashant Jagtap. A complete **TRAIN-only** result is now retained in the
+[aggregate evidence](../evidence/chartqa-training-v1/README.md). On 64 charts and
+143 questions, the unchanged local Qwen3.5 4B reader scored 112/143 direct,
+79/143 with extracted memory and 51/143 with extracted memory plus a program.
+Four chart-group folds of the predeclared CPU policy all selected direct; no
+candidate qualified. Validation and test remain unopened. This is not a
+leaderboard score or evidence of a visual-memory improvement.
+
+The following preparation history and protocol explain how that result was
+collected. Statements about a run being pending refer to the time the plan was
+frozen; the aggregate evidence above is the current outcome.
 
 The later [actual authored interface canary](../evidence/chartqa-interface-v1/README.md)
 made four local calls and failed. Extraction supplies the three fixture values and
@@ -19,16 +29,16 @@ route fails two lookups. An explicit lookup instruction fixes these. On three
 charts the final interface gets 15/15 direct, 15/15 memory and 14/15 program
 answers. The remaining program produces 33 for an absent category. Neither run
 passes its all-cases acceptance gate. Extraction-inclusive costs exceed direct
-reading on these fixtures. Public-data training remains pending a separate
-question-to-evidence check; every failed request and historical score is retained.
+reading on these fixtures. That failure motivated the separate public-data
+question-to-evidence check; every failed request and historical score was retained.
 
 The intended application is repeated analysis of a chart on a local small model.
-The experiment will compare reading the image for every question with reusing a
+The training experiment compared reading the image for every question with reusing a
 source-bound extraction, then test whether bounded numerical operations improve
 answers over a reader working from that same extraction. Extraction can be wrong
 and can cost more than rereading the image; both effects must remain in the result.
 
-## Data that are ready
+## Dataset and split
 
 The publisher's [ChartQA release](https://github.com/vis-nlp/ChartQA) is pinned to
 `044eabfc306abfe9340c5741f0093aefc5973d06`. Its code/data notices declare GPL-3.0;
@@ -57,7 +67,7 @@ All 172 prepared files pass their recorded hashes. The selected images occupy
 reference answers are copied separately. No ground-truth data table or chart
 annotation enters the proposed reader context.
 
-## Planned comparison
+## Comparison design
 
 1. **Direct vision control:** the same local model receives the complete image
    and each question.
@@ -65,19 +75,20 @@ annotation enters the proposed reader context.
    colours and units as unverified model output, then answer from that memory.
 3. **Numerical treatment:** use the same extraction, ask for a bounded expression
    over explicit cell IDs and execute supported operations locally.
-4. **Learned choice:** fit a small policy on training outcomes and select its
-   settings on validation only. Freeze it before scoring the selected test cases.
+4. **Learned choice:** fit the predeclared small policy on training outcomes and
+   diagnose its selection in four chart-group folds. Validation and test remain
+   reserved for a later frozen candidate, if one first passes training controls.
 
-The installed `qwen3.5:4b` is a possible common reader; the local server advertises
+The installed `qwen3.5:4b` was the common reader; the local server advertises
 vision support. The implemented protocol uses the local chat endpoint, the same
 model for all three answer methods, a 16,384-token context limit, temperature zero,
 seed 101 and non-thinking output. Extraction allows 4,096 output tokens; each
 answer/program allows 1,024. JSON schema field order is preserved. These settings
-are development choices, not a qualified public-data run registration. The
+were frozen for the TRAIN diagnostic, not qualified for deployment. The
 authored checks now use a typed JSON scalar contract for both direct and memory
 answers; extraction still uses its original schema. A frozen public-data study
-remains to be registered. No paid provider or external model judge is used.
-TechQA and the authored checks have finished; no GPU workload is left running.
+is registered in the linked TRAIN diagnostic. No paid provider or external model
+judge was used.
 
 The policy must use information available before choosing a query-time route.
 Answers, correctness labels and competing-arm outputs cannot be routing features.
@@ -166,5 +177,5 @@ filenames; the corrected version URL-encodes publisher names, rejects path
 separators and checks each downloaded PNG against its pinned source identity.
 Both failed preparation sources and logs remain retained locally.
 
-This document is a preparation record. It does not register a complete model
-experiment or announce a ChartQA result.
+This document retains the preparation record and links the completed TRAIN-only
+result above. It does not announce a held-out ChartQA score or qualified model.

@@ -2,7 +2,14 @@
 
 All versions below are research releases or candidates. v0.5.0 is available from the public source repository; no PyPI release is announced here.
 
+## Development update after 0.5.0 — 30 September 2026
+
+- Completed the source-pinned ChartQA TRAIN diagnostic: 64 charts, 143 questions and 493 local Qwen3.5 4B calls. Direct image answers scored 112/143; extracted memory 79/143; extracted memory plus a program 51/143. Extraction-inclusive token and summed request-time costs increased. Three CPU policy variants and 12 chart-group fold policies selected the direct route; no candidate qualified or activated. Published only aggregate evidence and source/run hashes, while GPL-3.0 dataset bytes, keys and raw responses remain outside the repository. Validation and test remain unopened, and reader weights did not change.
+- Installed the new numerical-task wheel into an isolated Python target and replayed its authored example against the packaged module. It matched the recorded exact-rational result and made zero model calls.
+
 ## Development update after 0.5.0 — 27 September 2026
+
+- Added host-declared numerical tasks with exact multi-coordinate selection, bounded rational operations, source/task binding and current authorization checks. Missing subjects, ambiguous series, tied extrema, unit mismatches and unknown values cannot silently produce a substituted computation. Fourteen new tests bring the full core suite to 447 passing tests without skips; the wheel builds and an isolated installation reproduces the recorded example. Source perception and natural-language interpretation remain unverified. Added a separate training-only ChartQA collection and CPU-policy recipe; it does not alter earlier failed canaries or activate a model.
 
 - Corrected the experimental visual interface to preserve typed numeric answers and give explicit existing-expression lookup examples. Retained all 80 new authored calls: the final check gets 15/15 direct, 15/15 memory and 14/15 program answers, with a valid calculation for an absent category as the remaining failure. Complete extraction-inclusive costs do not improve on direct reading here. Added six scalar-contract tests and offline replay of both run versions; no public-data score, weight change or candidate activation.
 
