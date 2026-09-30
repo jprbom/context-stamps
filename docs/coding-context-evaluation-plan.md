@@ -33,6 +33,14 @@ raised validation top-1 to 9/30 for a 256-bit *single semantic* code, versus
 14/30 dense. This is a quantization diagnostic, not the four-facet design or
 a final-set gain. It was stopped before the inspected final repositories.
 
+An additional 32-byte product-quantization diagnostic tied dense at **14/30
+validation top-1**, with **21/30 versus 22/30 top-10** and lower MRR. It uses
+a float query and a shared 393 KB codebook, so it is not the binary stamp and
+may be unattractive for a small single-repository edge index. Repeated warm
+Faiss lookups were slower than flat dense at this scale. The result merits a
+new preregistered, independently held-out larger-corpus trial; it does not
+qualify deployment or justify changing the default route.
+
 ## Task unit and controls
 
 Use public, redistributable repositories with pinned commits and independent

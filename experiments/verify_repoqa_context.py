@@ -73,6 +73,28 @@ def verify(path):
         assert {r["id"]: r["ranks"]["dense"] for r in followup["rows"]} == {
             r["id"]: r["dense_rank"] for r in records if r["split"] == "validation"
         }
+    ablation_path = Path(path).with_name("quantization-ablation.json")
+    if ablation_path.exists():
+        ablation = json.loads(ablation_path.read_text(encoding="utf-8"))
+        assert ablation["source_sha256"] == SOURCE_SHA256
+        assert ablation["training_repositories"] == list(SPLITS["train"])
+        assert ablation["validation_repositories"] == list(SPLITS["validation"])
+        assert ablation["pq_config"]["code_bytes"] == 32
+        assert len(ablation["rows"]) == 30
+        assert len(ablation["warm_lookup_timings"]) == 3
+        assert {r["id"] for r in ablation["rows"]} == {
+            r["id"] for r in records if r["split"] == "validation"
+        }
+        for method in ("dense", "itq224_task32", "pq32"):
+            ranks = [r["ranks"][method] for r in ablation["rows"]]
+            assert all(isinstance(rank, int) and rank > 0 for rank in ranks)
+            metrics = ablation["summary"][method]
+            assert metrics["top1"] == sum(rank == 1 for rank in ranks)
+            assert metrics["top10"] == sum(rank <= 10 for rank in ranks)
+            assert metrics["mrr"] == round(sum(1 / rank for rank in ranks) / len(ranks), 6)
+        assert {r["id"]: r["ranks"]["dense"] for r in ablation["rows"]} == {
+            r["id"]: r["dense_rank"] for r in records if r["split"] == "validation"
+        }
     return dict(repositories=10, tasks=len(records), functions=sum(r["functions"] for r in data["index"]),
                 replay="passed")
 

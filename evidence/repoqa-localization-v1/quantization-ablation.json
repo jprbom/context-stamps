@@ -1,0 +1,352 @@
+{
+  "status": "exploratory validation only; no final-set use",
+  "source_sha256": "c050a2ad90a7df89d9dc1f1c3b3b20683edd20a56293b35fcaae43dec115d681",
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "revision": "1110a243fdf4706b3f48f1d95db1a4f5529b4d41",
+  "training_repositories": [
+    "psf/black",
+    "python-poetry/poetry",
+    "locustio/locust",
+    "pyg-team/pytorch_geometric"
+  ],
+  "validation_repositories": [
+    "openai/openai-python",
+    "mlc-ai/mlc-llm",
+    "reactive-python/reactpy"
+  ],
+  "train_functions": 6849,
+  "itq_training_rows": 4000,
+  "itq_sample_seed": 20260930,
+  "itq_fit_s": 0.6890053999959491,
+  "itq_bits": {
+    "semantic": 224,
+    "task": 32
+  },
+  "itq_iterations": 12,
+  "pq_config": {
+    "dimensions": 384,
+    "subquantizers": 32,
+    "bits_per_subquantizer": 8,
+    "metric": "inner_product",
+    "code_bytes": 32,
+    "codebook_bytes": 393302,
+    "fit_s": 1.550958299994818,
+    "faiss_version": "1.15.1",
+    "threads": 4,
+    "clustering_seed": 1234,
+    "min_points_per_centroid": 16
+  },
+  "summary": {
+    "dense": {
+      "top1": 14,
+      "top10": 22,
+      "mrr": 0.578318
+    },
+    "itq224_task32": {
+      "top1": 5,
+      "top10": 17,
+      "mrr": 0.32828
+    },
+    "pq32": {
+      "top1": 14,
+      "top10": 21,
+      "mrr": 0.526904
+    }
+  },
+  "rows": [
+    {
+      "id": "openai/openai-python:0",
+      "ranks": {
+        "dense": 2,
+        "itq224_task32": 10,
+        "pq32": 16
+      },
+      "pq_target_score": 0.24896126985549927
+    },
+    {
+      "id": "openai/openai-python:1",
+      "ranks": {
+        "dense": 2,
+        "itq224_task32": 41,
+        "pq32": 9
+      },
+      "pq_target_score": 0.30903181433677673
+    },
+    {
+      "id": "openai/openai-python:2",
+      "ranks": {
+        "dense": 13,
+        "itq224_task32": 12,
+        "pq32": 7
+      },
+      "pq_target_score": 0.3237444758415222
+    },
+    {
+      "id": "openai/openai-python:3",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 2,
+        "pq32": 1
+      },
+      "pq_target_score": 0.3106875419616699
+    },
+    {
+      "id": "openai/openai-python:4",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 2,
+        "pq32": 1
+      },
+      "pq_target_score": 0.384235143661499
+    },
+    {
+      "id": "openai/openai-python:5",
+      "ranks": {
+        "dense": 3,
+        "itq224_task32": 3,
+        "pq32": 3
+      },
+      "pq_target_score": 0.3351927697658539
+    },
+    {
+      "id": "openai/openai-python:6",
+      "ranks": {
+        "dense": 3,
+        "itq224_task32": 34,
+        "pq32": 9
+      },
+      "pq_target_score": 0.29589328169822693
+    },
+    {
+      "id": "openai/openai-python:7",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 2,
+        "pq32": 1
+      },
+      "pq_target_score": 0.3382444381713867
+    },
+    {
+      "id": "openai/openai-python:8",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 4,
+        "pq32": 5
+      },
+      "pq_target_score": 0.2687523365020752
+    },
+    {
+      "id": "openai/openai-python:9",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 2,
+        "pq32": 1
+      },
+      "pq_target_score": 0.3016868829727173
+    },
+    {
+      "id": "mlc-ai/mlc-llm:0",
+      "ranks": {
+        "dense": 16,
+        "itq224_task32": 29,
+        "pq32": 20
+      },
+      "pq_target_score": 0.3338657319545746
+    },
+    {
+      "id": "mlc-ai/mlc-llm:1",
+      "ranks": {
+        "dense": 115,
+        "itq224_task32": 88,
+        "pq32": 169
+      },
+      "pq_target_score": 0.30168619751930237
+    },
+    {
+      "id": "mlc-ai/mlc-llm:2",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 14,
+        "pq32": 2
+      },
+      "pq_target_score": 0.43226301670074463
+    },
+    {
+      "id": "mlc-ai/mlc-llm:3",
+      "ranks": {
+        "dense": 3,
+        "itq224_task32": 5,
+        "pq32": 18
+      },
+      "pq_target_score": 0.2982446551322937
+    },
+    {
+      "id": "mlc-ai/mlc-llm:4",
+      "ranks": {
+        "dense": 70,
+        "itq224_task32": 16,
+        "pq32": 159
+      },
+      "pq_target_score": 0.326445072889328
+    },
+    {
+      "id": "mlc-ai/mlc-llm:5",
+      "ranks": {
+        "dense": 102,
+        "itq224_task32": 61,
+        "pq32": 113
+      },
+      "pq_target_score": 0.3287695050239563
+    },
+    {
+      "id": "mlc-ai/mlc-llm:6",
+      "ranks": {
+        "dense": 67,
+        "itq224_task32": 11,
+        "pq32": 65
+      },
+      "pq_target_score": 0.32745662331581116
+    },
+    {
+      "id": "mlc-ai/mlc-llm:7",
+      "ranks": {
+        "dense": 104,
+        "itq224_task32": 53,
+        "pq32": 159
+      },
+      "pq_target_score": 0.3310295045375824
+    },
+    {
+      "id": "mlc-ai/mlc-llm:8",
+      "ranks": {
+        "dense": 9,
+        "itq224_task32": 63,
+        "pq32": 6
+      },
+      "pq_target_score": 0.4601289629936218
+    },
+    {
+      "id": "mlc-ai/mlc-llm:9",
+      "ranks": {
+        "dense": 24,
+        "itq224_task32": 350,
+        "pq32": 32
+      },
+      "pq_target_score": 0.30317962169647217
+    },
+    {
+      "id": "reactive-python/reactpy:0",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 2,
+        "pq32": 1
+      },
+      "pq_target_score": 0.37102583050727844
+    },
+    {
+      "id": "reactive-python/reactpy:1",
+      "ranks": {
+        "dense": 2,
+        "itq224_task32": 9,
+        "pq32": 1
+      },
+      "pq_target_score": 0.2874637842178345
+    },
+    {
+      "id": "reactive-python/reactpy:2",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 1,
+        "pq32": 1
+      },
+      "pq_target_score": 0.24615441262722015
+    },
+    {
+      "id": "reactive-python/reactpy:3",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 17,
+        "pq32": 1
+      },
+      "pq_target_score": 0.2672293186187744
+    },
+    {
+      "id": "reactive-python/reactpy:4",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 1,
+        "pq32": 1
+      },
+      "pq_target_score": 0.2901420295238495
+    },
+    {
+      "id": "reactive-python/reactpy:5",
+      "ranks": {
+        "dense": 2,
+        "itq224_task32": 3,
+        "pq32": 1
+      },
+      "pq_target_score": 0.26584646105766296
+    },
+    {
+      "id": "reactive-python/reactpy:6",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 1,
+        "pq32": 1
+      },
+      "pq_target_score": 0.3169344663619995
+    },
+    {
+      "id": "reactive-python/reactpy:7",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 2,
+        "pq32": 1
+      },
+      "pq_target_score": 0.34401366114616394
+    },
+    {
+      "id": "reactive-python/reactpy:8",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 1,
+        "pq32": 1
+      },
+      "pq_target_score": 0.28321993350982666
+    },
+    {
+      "id": "reactive-python/reactpy:9",
+      "ranks": {
+        "dense": 1,
+        "itq224_task32": 1,
+        "pq32": 1
+      },
+      "pq_target_score": 0.3667345643043518
+    }
+  ],
+  "warm_lookup_timings": [
+    {
+      "repo": "openai/openai-python",
+      "candidates": 929,
+      "queries": 10,
+      "pq_median_ms": 0.06774499997845851,
+      "flat_dense_median_ms": 0.03880000003846362
+    },
+    {
+      "repo": "mlc-ai/mlc-llm",
+      "candidates": 981,
+      "queries": 10,
+      "pq_median_ms": 0.06933999975444749,
+      "flat_dense_median_ms": 0.051464999705785885
+    },
+    {
+      "repo": "reactive-python/reactpy",
+      "candidates": 334,
+      "queries": 10,
+      "pq_median_ms": 0.018044999524136074,
+      "flat_dense_median_ms": 0.009624999802326784
+    }
+  ],
+  "limitations": "The 32-byte figures exclude the shared PQ codebook, full source/resolver, metadata and encoder weights. Validation was already inspected; this does not qualify a route. Query encoding excluded from lookup times."
+}

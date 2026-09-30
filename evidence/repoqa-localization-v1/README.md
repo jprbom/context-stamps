@@ -64,6 +64,37 @@ and family digest are in `quantizer-followup.json`; coefficients can be
 recomputed from the separately obtained source. It was **not run on the
 previously inspected final group**. No compact route was activated.
 
+### Follow-up: where the 256 bits work harder
+
+A further train-only quantization ablation kept the **same 32-byte candidate
+budget** and unchanged dense reference. It used the four training repositories
+to fit two alternatives, then measured the already-inspected validation
+repositories. A 224-bit semantic ITQ view plus 32-bit task ITQ view reached
+**5/30 top-1 and 17/30 top-10**. The extra task view still hurts relative to
+the single-view 256-bit ITQ diagnostic above (**9/30 and 20/30**). This is
+evidence against reserving task bits for this query-to-code pairing; it does
+not rule out useful task facets on another task distribution.
+
+A **32-byte product-quantization code** with a float query and shared learned
+codebook reached **14/30 top-1 and 21/30 top-10**, versus dense **14/30 and
+22/30**. It exchanged two rank-1 wins for two losses; MRR was **0.5269 versus
+0.5783**. Product quantization is an *alternative compressed semantic index*,
+not the current binary spherical stamp or a four-facet relationship capsule.
+It needs a **393,302-byte shared codebook** in addition to 32 bytes per
+function. On the three validation repositories, repeated warm CPU Faiss
+lookups were slower than a Faiss flat dense index: median per-query ranges
+**0.049–0.114 ms PQ** versus **0.018–0.069 ms dense**. These are post-embedding
+index lookups, not end-to-end query latency; index construction and source
+resolution are separate. Small repositories may not amortize the codebook.
+The complete 30-query ablation and per-repository timings are in
+`quantization-ablation.json`. Validation was already inspected, and the final
+group was not reused; this is a development finding, **not a qualification or
+claim of superiority**.
+The methods follow established [iterative quantization](https://slazebni.cs.illinois.edu/publications/cvpr11_small_code.pdf)
+and [product-quantization with asymmetric lookup](https://openaccess.thecvf.com/content_cvpr_2013/papers/Ge_Optimized_Product_Quantization_2013_CVPR_paper.pdf)
+ideas. The tested application to these coding queries is the project-specific
+engineering question; these algorithms are not claimed as new inventions.
+
 Reproduce with a separately obtained [RepoQA release](https://github.com/evalplus/repoqa_release)
 at commit `e3a571033de99d0b9dcaccd25577a75d4b1c70b1` and archive SHA-256
 `c050a2ad90a7df89d9dc1f1c3b3b20683edd20a56293b35fcaae43dec115d681`:
@@ -75,6 +106,9 @@ python experiments/repoqa_context_localization.py `
 python experiments/verify_repoqa_context.py
 python experiments/plot_repoqa_context.py
 python experiments/repoqa_quantizer_followup.py `
+  --source ..\repoqa-source-v1\repoqa-2024-06-23.json.gz `
+  --cache ..\repoqa-local-cache-v1
+python experiments/repoqa_quantization_ablation.py `
   --source ..\repoqa-source-v1\repoqa-2024-06-23.json.gz `
   --cache ..\repoqa-local-cache-v1
 ```

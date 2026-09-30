@@ -80,6 +80,8 @@ The first [repository-disjoint code-localization test](evidence/repoqa-localizat
 
 A train-only ITQ follow-up improves a **single-view** 256-bit semantic code to **9/30 validation top-1**, versus **14/30 dense**. It does not restore the multi-facet candidate, was not run on the inspected final cohort, and remains inactive.
 
+A separate **32-byte product-quantization** diagnostic ties dense at **14/30 validation top-1**, but trails at top-10 and MRR. Its shared codebook adds about 393 KB and its warm CPU lookups were slower than flat dense at the measured repository sizes. This is an alternative compressed semantic index, not the spherical multi-facet stamp; validation was already inspected, so no deployment claim follows. [Methods, per-repository results and run commands](evidence/repoqa-localization-v1/README.md).
+
 ![Repository-disjoint localization and routing-vector size](docs/assets/repoqa-context-localization-v1.png)
 
 The local learning modules fit small statistical context policies and persist frozen evaluation rounds, repeated-experiment risk accounting, activation and rollback. New registries require **separate adaptation and retention cohorts**, so success on new tasks cannot dilute older-skill failures. The full local core suite now passes 447 tests without skips, including source integrity, policy learning and monitor recovery checks. Run `python examples/local_learning.py` for the original, explicitly simulated legacy example, or follow the [measured policy-learning experiment](docs/ruler-local-learning.md). The [requirement register](evidence/enterprise-context-v1/requirements.json) separates implemented components from unfinished work. This is a development programme, not a 1.0 or AGI capability claim.
