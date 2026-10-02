@@ -62,4 +62,7 @@ Reproduce the evidence and timing profile:
 python experiments/codesearchnet_residual.py test --cache PATH_TO_PRIVATE_CACHE --out evidence/codesearchnet-residual-v1
 python experiments/analyze_codesearchnet_residual.py evidence/codesearchnet-residual-v1/results.json evidence/codesearchnet-residual-v1/analysis.json
 python experiments/profile_codesearchnet_residual.py --cache PATH_TO_PRIVATE_CACHE --out evidence/codesearchnet-residual-v1/latency-profile-1thread.json --threads 1
+python experiments/verify_codesearchnet_residual.py --directory evidence/codesearchnet-residual-v1 --cohort evidence/codesearchnet-matching-v1/cohort.json
 ```
+
+The final verifier replays all published top-1, top-10, MRR@20 and byte totals from per-repository records without downloading the benchmark source.
