@@ -33,7 +33,7 @@ Both adapters trained for six epochs on 585 repositories and 6,315 usable query�
 
 The primary PQ-trained route missed the top-1 threshold by four queries and the MRR threshold by 0.0286. It improved the exact rank for nine queries and worsened it for 18 relative to dense. The float-trained adapter performed better with both dense and PQ, but its PQ route also missed the predeclared top-1 gate and increased lookup time. This is not evidence that quantization-aware training helps. The PQ seed differs from the earlier study, explaining the 58 rather than 59 unadapted PQ top-1 count on the same development cohort.
 
-**Stop:** the new 40-repository cohort has not been embedded, ranked or scored. It remains available for a genuinely revised, predeclared architecture. No route is activated. Warm timings include adapter computation and FAISS search, but exclude the common encoder and index construction; they are small-batch local CPU measurements, not device-wide latency or energy figures.
+**Stop:** this experiment did not embed, rank or score the new 40-repository cohort. It was subsequently opened for a separately preregistered [precision-residual study](../codesearchnet-residual-v1/README.md). No matching-aware route is activated. Warm timings include adapter computation and FAISS search, but exclude the common encoder and index construction; they are small-batch local CPU measurements, not device-wide latency or energy figures.
 
 The paired repository bootstrap in `analysis.json` puts the primary route's top-1 difference from dense at −4.4 percentage points, with a 95% interval from −11.1 to +2.2 points. This does not establish equivalence. Reproduce the validation run using the pinned embeddings and raw data prepared for the earlier study:
 

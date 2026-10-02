@@ -1,0 +1,339 @@
+{
+  "protocol": "50 repeats per repository; alternating order; three-query batches; warm FAISS search only",
+  "threads": 4,
+  "queries": 120,
+  "candidates": 4504,
+  "test_vectors_sha256": "8cfaa4ab36891d6b0c3dbdb6dcab5c735fa9fe1320e1a3399c07f1df4a735a9f",
+  "per_query_batch_time_ms": {
+    "dense": {
+      "median": 0.216,
+      "p95": 0.59981
+    },
+    "sq8": {
+      "median": 0.221483,
+      "p95": 0.623703
+    }
+  },
+  "by_repository": [
+    {
+      "repo": "Clinical-Genomics/scout",
+      "candidates": 441,
+      "median_ms_per_query": {
+        "dense": 0.230817,
+        "sq8": 0.26785
+      }
+    },
+    {
+      "repo": "Azure/azure-sdk-for-python",
+      "candidates": 263,
+      "median_ms_per_query": {
+        "dense": 0.247967,
+        "sq8": 0.282583
+      }
+    },
+    {
+      "repo": "h2oai/h2o-3",
+      "candidates": 308,
+      "median_ms_per_query": {
+        "dense": 0.267667,
+        "sq8": 0.2904
+      }
+    },
+    {
+      "repo": "inveniosoftware/invenio-migrator",
+      "candidates": 58,
+      "median_ms_per_query": {
+        "dense": 0.25005,
+        "sq8": 0.238367
+      }
+    },
+    {
+      "repo": "zomux/deepy",
+      "candidates": 101,
+      "median_ms_per_query": {
+        "dense": 0.18115,
+        "sq8": 0.225
+      }
+    },
+    {
+      "repo": "LionelAuroux/pyrser",
+      "candidates": 144,
+      "median_ms_per_query": {
+        "dense": 0.202967,
+        "sq8": 0.234633
+      }
+    },
+    {
+      "repo": "authomatic/authomatic",
+      "candidates": 52,
+      "median_ms_per_query": {
+        "dense": 0.17435,
+        "sq8": 0.232583
+      }
+    },
+    {
+      "repo": "mental32/spotify.py",
+      "candidates": 60,
+      "median_ms_per_query": {
+        "dense": 0.220333,
+        "sq8": 0.240617
+      }
+    },
+    {
+      "repo": "oscarbranson/latools",
+      "candidates": 98,
+      "median_ms_per_query": {
+        "dense": 0.220783,
+        "sq8": 0.225233
+      }
+    },
+    {
+      "repo": "its-rigs/Trolly",
+      "candidates": 66,
+      "median_ms_per_query": {
+        "dense": 0.2026,
+        "sq8": 0.236383
+      }
+    },
+    {
+      "repo": "dopefishh/pympi",
+      "candidates": 54,
+      "median_ms_per_query": {
+        "dense": 0.20235,
+        "sq8": 0.207233
+      }
+    },
+    {
+      "repo": "connectordb/connectordb-python",
+      "candidates": 55,
+      "median_ms_per_query": {
+        "dense": 0.2451,
+        "sq8": 0.219467
+      }
+    },
+    {
+      "repo": "rwl/godot",
+      "candidates": 97,
+      "median_ms_per_query": {
+        "dense": 0.2387,
+        "sq8": 0.245367
+      }
+    },
+    {
+      "repo": "boundary/pulse-api-cli",
+      "candidates": 65,
+      "median_ms_per_query": {
+        "dense": 0.213233,
+        "sq8": 0.27875
+      }
+    },
+    {
+      "repo": "chaoss/grimoirelab-perceval",
+      "candidates": 259,
+      "median_ms_per_query": {
+        "dense": 0.238933,
+        "sq8": 0.27065
+      }
+    },
+    {
+      "repo": "ekmmetering/ekmmeters",
+      "candidates": 69,
+      "median_ms_per_query": {
+        "dense": 0.201333,
+        "sq8": 0.239867
+      }
+    },
+    {
+      "repo": "iotaledger/iota.lib.py",
+      "candidates": 75,
+      "median_ms_per_query": {
+        "dense": 0.223717,
+        "sq8": 0.2332
+      }
+    },
+    {
+      "repo": "3DLIRIOUS/MeshLabXML",
+      "candidates": 63,
+      "median_ms_per_query": {
+        "dense": 0.248883,
+        "sq8": 0.224467
+      }
+    },
+    {
+      "repo": "not-na/peng3d",
+      "candidates": 107,
+      "median_ms_per_query": {
+        "dense": 0.2187,
+        "sq8": 0.188633
+      }
+    },
+    {
+      "repo": "mdgoldberg/sportsref",
+      "candidates": 94,
+      "median_ms_per_query": {
+        "dense": 0.22255,
+        "sq8": 0.220817
+      }
+    },
+    {
+      "repo": "jazzband/django-ddp",
+      "candidates": 70,
+      "median_ms_per_query": {
+        "dense": 0.245233,
+        "sq8": 0.2253
+      }
+    },
+    {
+      "repo": "AkihikoITOH/capybara",
+      "candidates": 392,
+      "median_ms_per_query": {
+        "dense": 0.2096,
+        "sq8": 0.227517
+      }
+    },
+    {
+      "repo": "celiao/tmdbsimple",
+      "candidates": 55,
+      "median_ms_per_query": {
+        "dense": 0.196333,
+        "sq8": 0.2289
+      }
+    },
+    {
+      "repo": "idlesign/django-sitetree",
+      "candidates": 53,
+      "median_ms_per_query": {
+        "dense": 0.160817,
+        "sq8": 0.187717
+      }
+    },
+    {
+      "repo": "solvebio/solvebio-python",
+      "candidates": 53,
+      "median_ms_per_query": {
+        "dense": 0.158983,
+        "sq8": 0.204983
+      }
+    },
+    {
+      "repo": "reingart/gui2py",
+      "candidates": 111,
+      "median_ms_per_query": {
+        "dense": 0.22145,
+        "sq8": 0.19265
+      }
+    },
+    {
+      "repo": "iotile/typedargs",
+      "candidates": 52,
+      "median_ms_per_query": {
+        "dense": 0.217283,
+        "sq8": 0.2353
+      }
+    },
+    {
+      "repo": "treycucco/pyebnf",
+      "candidates": 74,
+      "median_ms_per_query": {
+        "dense": 0.220883,
+        "sq8": 0.230617
+      }
+    },
+    {
+      "repo": "neurodata/ndio",
+      "candidates": 66,
+      "median_ms_per_query": {
+        "dense": 0.214333,
+        "sq8": 0.25
+      }
+    },
+    {
+      "repo": "tmontaigu/pylas",
+      "candidates": 59,
+      "median_ms_per_query": {
+        "dense": 0.2018,
+        "sq8": 0.2263
+      }
+    },
+    {
+      "repo": "open-mmlab/mmcv",
+      "candidates": 56,
+      "median_ms_per_query": {
+        "dense": 0.237917,
+        "sq8": 0.279017
+      }
+    },
+    {
+      "repo": "SectorLabs/django-postgres-extra",
+      "candidates": 70,
+      "median_ms_per_query": {
+        "dense": 0.215367,
+        "sq8": 0.224667
+      }
+    },
+    {
+      "repo": "chrisrink10/basilisp",
+      "candidates": 214,
+      "median_ms_per_query": {
+        "dense": 0.206917,
+        "sq8": 0.242617
+      }
+    },
+    {
+      "repo": "LLNL/scraper",
+      "candidates": 61,
+      "median_ms_per_query": {
+        "dense": 0.216617,
+        "sq8": 0.22195
+      }
+    },
+    {
+      "repo": "ibm-watson-iot/iot-python",
+      "candidates": 78,
+      "median_ms_per_query": {
+        "dense": 0.225767,
+        "sq8": 0.286467
+      }
+    },
+    {
+      "repo": "quantopian/pgcontents",
+      "candidates": 75,
+      "median_ms_per_query": {
+        "dense": 0.22595,
+        "sq8": 0.263233
+      }
+    },
+    {
+      "repo": "lepture/flask-oauthlib",
+      "candidates": 85,
+      "median_ms_per_query": {
+        "dense": 0.204017,
+        "sq8": 0.249417
+      }
+    },
+    {
+      "repo": "funilrys/PyFunceble",
+      "candidates": 155,
+      "median_ms_per_query": {
+        "dense": 0.254933,
+        "sq8": 0.262783
+      }
+    },
+    {
+      "repo": "neherlab/treetime",
+      "candidates": 87,
+      "median_ms_per_query": {
+        "dense": 0.229133,
+        "sq8": 0.297933
+      }
+    },
+    {
+      "repo": "yandex/yandex-tank",
+      "candidates": 109,
+      "median_ms_per_query": {
+        "dense": 0.214383,
+        "sq8": 0.249683
+      }
+    }
+  ]
+}

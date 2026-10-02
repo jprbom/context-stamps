@@ -55,11 +55,19 @@ reused as an untouched test for another tuned candidate.
 A preregistered [matching-aware follow-up](../evidence/codesearchnet-matching-v1/README.md)
 trained a rank-16 query adapter against quantized document reconstructions on
 6,315 training pairs. It reached **59/90 top-1** on the existing validation
-repositories, versus **63/90 dense**, and did not pass its quality gate. Its
-new 40-repository, 120-query cohort remains untouched. Lower training loss
+repositories, versus **63/90 dense**, and did not pass its quality gate. It
+did not open the new 40-repository, 120-query cohort. Lower training loss
 alone was not enough to repair quantization. The next useful design should
 keep the 32-byte stamp as a handle and test a separately stored, more precise
 residual or verified workflow path with full memory and latency accounting.
+
+The [precision-residual test](../evidence/codesearchnet-residual-v1/README.md)
+has since opened that cohort: SQ8 direct and dense both reached **81/120 top-1**,
+with SQ8 using about one quarter of the pooled vector-index bytes. A 32-byte
+PQ route with SQ8 reranking also tied top-1 but was much slower. An extended
+CPU profile found no stable SQ8 latency advantage. This establishes a narrower
+storage-versus-latency option for a host-owned index, not a self-contained
+32-byte memory or a verified coding-agent outcome. The cohort is now inspected.
 
 ## Task unit and controls
 
