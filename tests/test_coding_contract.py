@@ -101,6 +101,31 @@ class CodingContractTests(unittest.TestCase):
         self.assertEqual(index.activate_data((bytes(range(32)), bytes(reversed(range(32)))),
                                              role="other", root=self.root).status, "insufficient")
 
+    def test_binary_schema_requires_opt_in(self):
+        (self.root / "users.parquet").write_bytes(b"untrusted binary")
+        contract = compile_coding_contract(self.root, ("users.parquet",), ("out.json",),
+                                           runtime_root="/data")
+        with self.assertRaisesRegex(ValueError, "opt-in"):
+            contract.data_schema_hints(self.root)
+        index = CodingSchemaIndex(contract)
+        index.bind(bytes(32), "users.parquet", roles=frozenset({"reader"}))
+        self.assertEqual(index.activate_data((bytes(32),), role="reader", root=self.root).status,
+                         "insufficient")
+        opted_in = CodingSchemaIndex(contract, allow_parquet=True)
+        opted_in.bind(bytes(32), "users.parquet", roles=frozenset({"reader"}))
+        self.assertEqual(opted_in.activate_data((bytes(32),), role="reader", root=self.root).status,
+                         "insufficient")
+
+    def test_multi_source_stamp_validation(self):
+        (self.root / "input.csv").write_text("x\n1\n", encoding="utf-8")
+        contract = compile_coding_contract(self.root, ("input.csv",), ("out.json",),
+                                           runtime_root="/data")
+        index = CodingSchemaIndex(contract)
+        with self.assertRaisesRegex(ValueError, "32 stamp bytes"):
+            index.activate_data(([],), role="reader", root=self.root)
+        with self.assertRaisesRegex(ValueError, "distinct stamps"):
+            index.activate_data((bytes(32), bytes(32)), role="reader", root=self.root)
+
 
 if __name__ == "__main__":
     unittest.main()

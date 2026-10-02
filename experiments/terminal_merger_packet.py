@@ -45,14 +45,14 @@ def build(source: Path, out: Path):
     if not contract.verify(root):
         raise ValueError("source revision mismatch")
     started = time.perf_counter()
-    schema = contract.data_schema_hints(root)
+    schema = contract.data_schema_hints(root, allow_parquet=True)
     encoder = HashingEncoder(64)
     codec = structured_256_codec(encoder, seed=20261002)
-    index = CodingSchemaIndex(contract)
+    index = CodingSchemaIndex(contract, allow_parquet=True)
     stamps = []
     manifest = {}
     for item in contract.sources:
-        view = contract.data_schema_hints(root, selected=(item.relative,))
+        view = contract.data_schema_hints(root, selected=(item.relative,), allow_parquet=True)
         facets = {"semantic": view, "task": instruction, "entity": item.relative,
                   "relation": "input to merged dataset", "temporal": REVISION,
                   "authority": "pinned public task", "policy": "offline role-scoped coding",

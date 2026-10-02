@@ -1,6 +1,6 @@
 # Coding-domain context and local learning: next evaluation
 
-By Prashant Jagtap. Research protocol and current status, 30 September 2026.
+By Prashant Jagtap. Research protocol and current status, 2 October 2026.
 
 The first MBPP adapter did not improve aggregate HumanEval+ correctness and
 increased generation cost. A smaller second adapter improved that development
@@ -98,7 +98,19 @@ isolated verifier remains the outcome check. The inspected-task replay script
 `experiments/terminal_modern_contract.py` gives the same contract and the same
 three source files to direct and stamp arms under one complete-prompt ceiling.
 
-Keep quantization in the next coding milestone as a **measured retrieval route**.
+The subsequent [minimal-schema development test](../evidence/terminal-coding-schema-development-v1/README.md)
+passed one already inspected native task with the exact CSV header in either
+direct or stamp-bound form. The identical view gave identical model prompts and
+responses; there was no stamp-specific quality gain. The [predeclared next task](../evidence/terminal-coding-schema-fresh-v1/README.md)
+failed native grading in all four frozen arms, including direct full source and
+both schema views. Later runtime repair and generic pattern tuning also failed.
+This removes any basis for claiming a general coding gain from the development
+pass. A successful baseline model/task pair is now a prerequisite for a useful
+paired context comparison. The 30B local model did not fit the current GPU/host
+memory; its attempted load is not a benchmark result.
+
+Keep quantization in the next coding milestone as a **measured retrieval route**,
+after a capable direct-context coding baseline has passed fresh native tasks.
 The first candidate is a 32-byte multi-facet coarse key with a host-held SQ8
 residual. Compare direct dense, direct SQ8, and stamp-to-SQ8, each with the same
 eligibility, source revision, role filter, path contract and final prompt budget.

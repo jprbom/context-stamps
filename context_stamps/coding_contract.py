@@ -101,7 +101,8 @@ class CodingPathContract:
             lines.append(f"{item.runtime}: {json.dumps(header, ensure_ascii=False)}")
         return "\n".join(lines)
 
-    def data_schema_hints(self, root: str | Path, *, selected: tuple[str, ...] | None = None) -> str:
+    def data_schema_hints(self, root: str | Path, *, selected: tuple[str, ...] | None = None,
+                          allow_parquet: bool = False) -> str:
         """Bounded CSV/JSON/Parquet field names; rows and values remain private.
 
         Parquet requires optional pyarrow. This is a projection of source bytes,
@@ -132,6 +133,8 @@ class CodingPathContract:
                 names = sorted({str(key) for record in records for key in record})
                 fields = [(name, "unknown") for name in names]
             elif suffix == ".parquet":
+                if not allow_parquet:
+                    raise ValueError("Parquet parsing requires explicit trusted-source opt-in")
                 try:
                     import pyarrow as pa
                     import pyarrow.parquet as pq
@@ -190,8 +193,9 @@ class CodingSchemaIndex:
     role independently before invoking ``activate``.
     """
 
-    def __init__(self, contract: CodingPathContract):
+    def __init__(self, contract: CodingPathContract, *, allow_parquet: bool = False):
         self.contract = contract
+        self.allow_parquet = allow_parquet
         self._bindings: dict[bytes, tuple[str, frozenset[str]]] = {}
 
     def bind(self, stamp: bytes, source: str, *, roles: frozenset[str]):
@@ -227,19 +231,22 @@ class CodingSchemaIndex:
                       root: str | Path) -> SchemaActivation:
         """Resolve an all-or-nothing multi-source schema view."""
         identifier(role)
-        if not isinstance(stamps, tuple) or not 1 <= len(stamps) <= 32 or len(set(stamps)) != len(stamps):
+        if not isinstance(stamps, tuple) or not 1 <= len(stamps) <= 32:
+            raise ValueError("one to 32 distinct stamps required")
+        if any(not isinstance(stamp, bytes) or len(stamp) != 32 for stamp in stamps):
+            raise ValueError("exactly 32 stamp bytes required")
+        if len(set(stamps)) != len(stamps):
             raise ValueError("one to 32 distinct stamps required")
         selected = []
         for stamp in stamps:
-            if not isinstance(stamp, bytes) or len(stamp) != 32:
-                raise ValueError("exactly 32 stamp bytes required")
             entry = self._bindings.get(stamp)
             if entry is None or role not in entry[1]:
                 return SchemaActivation("insufficient", "", None)
             selected.append(entry[0])
         try:
-            text = self.contract.data_schema_hints(root, selected=tuple(selected))
-        except (OSError, ValueError, UnicodeError, csv.Error):
+            text = self.contract.data_schema_hints(root, selected=tuple(selected),
+                                                   allow_parquet=self.allow_parquet)
+        except Exception:  # Optional binary parsers have their own exception hierarchy.
             return SchemaActivation("insufficient", "", None)
         return SchemaActivation("complete", text, None)
 

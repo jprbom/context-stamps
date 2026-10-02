@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "task": "modernize-scientific-stack",
+  "task_status": "inspected development",
+  "benchmark_revision": "7131e4375048a0e408a8fb404b5f499d726b695b",
+  "model": "qwen2.5-coder:7b",
+  "native_controls": {"empty_passed": false, "reference_passed": true},
+  "runs": [
+    {
+      "name": "four_arm_schema_probe",
+      "external_plan_sha256": "6e10ea41107a332a42b23b816f00cbe7d1a15aa16463d5dda394286bcc15f739",
+      "external_summary_sha256": "c26932f1fdfca8cb1136b1e03c7e09f2d7855e56b5aab61ca7215f45f0bb4eb9",
+      "arms": {
+        "contract_only": {"native_passed": false, "input_tokens": 606},
+        "schema_only": {"native_passed": true, "input_tokens": 638},
+        "direct": {"native_passed": false, "input_tokens": 4048},
+        "stamp": {"native_passed": false, "input_tokens": 4848}
+      }
+    },
+    {
+      "name": "stamp_bound_schema_replay",
+      "external_plan_sha256": "f2a125df6869be150877658917d8f9a1285ca04cb2dac96cace3e111888e8bb1",
+      "external_summary_sha256": "199a76217e8c70b834216699eafa57a4e4bd1820d7740dca024c9cccde1a5a5",
+      "stamp_schema_route_seconds": 0.0009519000013824552,
+      "direct_and_stamp_schema_prompt_identical": true,
+      "direct_and_stamp_schema_response_identical": true,
+      "arms": {
+        "schema_only": {"native_passed": true, "input_tokens": 638},
+        "stamp_schema": {"native_passed": true, "input_tokens": 638},
+        "direct": {"native_passed": false, "input_tokens": 4048}
+      }
+    }
+  ],
+  "frontier_calls": 0,
+  "benchmark_training": false,
+  "limitations": "same inspected task, no stamp-specific model gain, one model and seed, no edge latency test"
+}
