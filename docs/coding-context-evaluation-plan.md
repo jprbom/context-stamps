@@ -52,6 +52,15 @@ for every selected repository. The validation gain did not generalize, so no
 compact semantic route qualifies. The cohort is now inspected and cannot be
 reused as an untouched test for another tuned candidate.
 
+A preregistered [matching-aware follow-up](../evidence/codesearchnet-matching-v1/README.md)
+trained a rank-16 query adapter against quantized document reconstructions on
+6,315 training pairs. It reached **59/90 top-1** on the existing validation
+repositories, versus **63/90 dense**, and did not pass its quality gate. Its
+new 40-repository, 120-query cohort remains untouched. Lower training loss
+alone was not enough to repair quantization. The next useful design should
+keep the 32-byte stamp as a handle and test a separately stored, more precise
+residual or verified workflow path with full memory and latency accounting.
+
 ## Task unit and controls
 
 Use public, redistributable repositories with pinned commits and independent

@@ -1,0 +1,78 @@
+{
+  "split": "inspected validation only",
+  "bootstrap_unit": "repository",
+  "replicates": 10000,
+  "seed": 20261002,
+  "routes": {
+    "pq32": {
+      "top1_delta": -0.055556,
+      "top1_delta_95pct_cluster_bootstrap": [
+        -0.122222,
+        0.011111
+      ],
+      "mrr_delta": -0.033818,
+      "mrr_delta_95pct_cluster_bootstrap": [
+        -0.072522,
+        0.003362
+      ],
+      "ranks_improved": 8,
+      "ranks_worsened": 15
+    },
+    "float_adapter_dense": {
+      "top1_delta": 0.011111,
+      "top1_delta_95pct_cluster_bootstrap": [
+        -0.022222,
+        0.044444
+      ],
+      "mrr_delta": 0.010697,
+      "mrr_delta_95pct_cluster_bootstrap": [
+        -0.013632,
+        0.035848
+      ],
+      "ranks_improved": 11,
+      "ranks_worsened": 5
+    },
+    "float_adapter_pq32": {
+      "top1_delta": -0.022222,
+      "top1_delta_95pct_cluster_bootstrap": [
+        -0.088889,
+        0.033333
+      ],
+      "mrr_delta": -0.008103,
+      "mrr_delta_95pct_cluster_bootstrap": [
+        -0.048476,
+        0.033466
+      ],
+      "ranks_improved": 12,
+      "ranks_worsened": 13
+    },
+    "pq_adapter_dense": {
+      "top1_delta": 0.0,
+      "top1_delta_95pct_cluster_bootstrap": [
+        -0.044444,
+        0.044444
+      ],
+      "mrr_delta": 0.005984,
+      "mrr_delta_95pct_cluster_bootstrap": [
+        -0.017548,
+        0.030479
+      ],
+      "ranks_improved": 8,
+      "ranks_worsened": 4
+    },
+    "pq_adapter_pq32": {
+      "top1_delta": -0.044444,
+      "top1_delta_95pct_cluster_bootstrap": [
+        -0.111111,
+        0.022222
+      ],
+      "mrr_delta": -0.028553,
+      "mrr_delta_95pct_cluster_bootstrap": [
+        -0.070114,
+        0.013795
+      ],
+      "ranks_improved": 9,
+      "ranks_worsened": 18
+    }
+  }
+}
