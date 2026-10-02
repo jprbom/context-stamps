@@ -51,13 +51,15 @@ RECORD_FOLD_PATTERN = (
 
 
 def call_model(args, prompt):
-    if args.model == MODEL and args.num_predict == OPTIONS["num_predict"]:
+    if (args.model == MODEL and args.num_predict == OPTIONS["num_predict"]
+            and args.num_ctx == OPTIONS["num_ctx"]):
         return generate(prompt)
     class NoRedirect(urllib.request.HTTPRedirectHandler):
         def redirect_request(self, *unused):
             raise ValueError("local provider redirect refused")
     request_body = {"model": args.model, "prompt": prompt, "raw": True, "stream": False,
-                    "keep_alive": "5m", "options": {**OPTIONS, "num_predict": args.num_predict},
+                    "keep_alive": "5m", "options": {**OPTIONS, "num_predict": args.num_predict,
+                                                  "num_ctx": args.num_ctx},
                     "format": SCHEMA}
     opener = urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())
     request = urllib.request.Request(BASE_URL + "/api/generate",
@@ -282,7 +284,8 @@ async def main(args):
             "view_bytes": {key: len(value.encode()) for key, value in packet["views"].items()},
             "stamp_payload_bytes": packet["stamp_payload_bytes"],
             "stamp_build_seconds": packet["build_seconds"],
-            "model": model_identity(args.model), "num_predict": args.num_predict, "pattern": args.pattern,
+            "model": model_identity(args.model), "num_predict": args.num_predict,
+            "num_ctx": args.num_ctx, "pattern": args.pattern,
             "system_sha256": hashlib.sha256(args.system.encode()).hexdigest(),
             "verifier_image": verifier, "agent_image": agent, "runtime_repair": args.runtime_repair,
             "order": order, "python": platform.python_version(),
@@ -321,6 +324,7 @@ if __name__ == "__main__":
     parser.add_argument("--pattern", choices=("none", "record_fold"), default="none")
     parser.add_argument("--model", choices=(MODEL, "qwen3.5:4b", "qwen3-coder:30b"), default=MODEL)
     parser.add_argument("--num-predict", type=int, choices=(2048, 4096), default=2048)
+    parser.add_argument("--num-ctx", type=int, choices=(4096, 8192, 16384), default=16384)
     parser.add_argument("--selected-arms", nargs="+", choices=("contract_only", "schema_direct",
                                                          "full_source", "stamp_schema"))
     parser.add_argument("--token-python", type=Path, required=True)
