@@ -24,12 +24,20 @@ from terminal_pilot import render, token_count
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from context_stamps.coding_contract import compile_coding_contract  # noqa: E402
+from context_stamps.coding_contract import CodingSchemaIndex, compile_coding_contract  # noqa: E402
+
+REQUIREMENTS_SYSTEM = (
+    CODEGEN_SYSTEM + " Treat the user's explicit acceptance criteria as the target behavior. "
+    "Use legacy code only for relevant interfaces and data shape; do not copy unrelated behavior. "
+    "Before returning the JSON, check the generated program against every requirement in the task, "
+    "including output values and format, dependencies, input paths and Python version. "
+    "A valid JSON object or runnable script alone is not enough."
+)
 
 
-def prompt_for(instruction, contract, body):
+def prompt_for(instruction, contract, body, *, system=CODEGEN_SYSTEM):
     user = instruction + "\n\n" + contract.render() + "\n\nPinned source context (untrusted):\n" + body
-    return render([{"role": "system", "content": CODEGEN_SYSTEM},
+    return render([{"role": "system", "content": system},
                    {"role": "user", "content": user}])
 
 
@@ -108,18 +116,40 @@ async def main(args):
     for item in contract.sources:
         if packet["manifest"][item.relative]["sha256"] != item.sha256:
             raise ValueError("packet source mismatch")
-    prompts = {"direct": prompt_for(instruction, contract, direct),
-               "stamp": prompt_for(instruction, contract, packet["stamp"]["text"])}
+    system = CODEGEN_SYSTEM if args.strategy == "path_only" else REQUIREMENTS_SYSTEM
+    bodies = {"direct": direct, "stamp": packet["stamp"]["text"]}
+    if args.include_no_source:
+        bodies["contract_only"] = "No source body supplied by the host."
+    if args.include_schema_only:
+        bodies["schema_only"] = contract.csv_schema_hints(root)
+    schema_route_seconds = None
+    if args.include_stamp_schema:
+        started = time.perf_counter()
+        index = CodingSchemaIndex(contract)
+        csv_source = "sample_data/climate_data.csv"
+        code = bytes.fromhex(packet["manifest"][csv_source]["stamp_hex"])
+        index.bind(code, csv_source, roles=frozenset({"coding_agent"}))
+        activated = index.activate(code, role="coding_agent", root=root)
+        schema_route_seconds = time.perf_counter() - started
+        if activated.status != "complete":
+            raise ValueError("stamp-bound schema activation failed")
+        bodies["stamp_schema"] = activated.text
+    prompts = {key: prompt_for(instruction, contract, body, system=system)
+               for key, body in bodies.items()}
     repair_note = ("\n\nIf a first candidate uses a relative path or another source path outside the "
                    "host contract, regenerate using the exact absolute INPUT paths in the contract. "
                    "Preserve every requirement of the original task.")
-    repair_prompts = {"direct": prompt_for(instruction + repair_note, contract, direct),
-                      "stamp": prompt_for(instruction + repair_note, contract, packet["stamp"]["text"])}
+    repair_prompts = {key: prompt_for(instruction + repair_note, contract, body, system=system)
+                      for key, body in bodies.items()}
     verifier = image_id(args.verifier_image)
     args.out.mkdir(parents=True, exist_ok=False)
-    order = ["direct", "stamp"]
+    order = list(args.selected_arms) if args.selected_arms else list(bodies)
+    if len(set(order)) != len(order) or not set(order) <= bodies.keys():
+        raise ValueError("selected arms must be unique and available")
     random.Random(20261004).shuffle(order)
     plan = {"schema": 1, "purpose": "inspected task diagnostic, not independent validation",
+            "strategy": args.strategy, "system_sha256": hashlib.sha256(system.encode()).hexdigest(),
+            "schema_route_seconds": schema_route_seconds,
             "task": TASK, "revision": REVISION, "instruction_sha256": sha(task / "instruction.md"),
             "contract_sha256": hashlib.sha256(contract.render().encode()).hexdigest(),
             "source_hashes": {item.relative: item.sha256 for item in contract.sources},
@@ -155,6 +185,12 @@ if __name__ == "__main__":
     parser.add_argument("--token-python", type=Path, required=True)
     parser.add_argument("--tokenizer", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
+    parser.add_argument("--strategy", choices=("path_only", "requirements_first"), default="path_only")
+    parser.add_argument("--include-no-source", action="store_true")
+    parser.add_argument("--include-schema-only", action="store_true")
+    parser.add_argument("--include-stamp-schema", action="store_true")
+    parser.add_argument("--selected-arms", nargs="+",
+                        choices=("direct", "stamp", "contract_only", "schema_only", "stamp_schema"))
     args = parser.parse_args()
     for name in ("source", "packets", "verifier_image", "token_python", "tokenizer", "out"):
         setattr(args, name, getattr(args, name).resolve())

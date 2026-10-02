@@ -12,7 +12,7 @@ import subprocess
 from pathlib import Path
 
 REVISION = "7131e4375048a0e408a8fb404b5f499d726b695b"
-TASKS = ("fix-code-vulnerability", "modernize-scientific-stack")
+TASKS = ("fix-code-vulnerability", "modernize-scientific-stack", "multi-source-data-merger")
 ROOT = Path(__file__).resolve().parents[1]
 
 

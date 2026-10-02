@@ -2,7 +2,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from context_stamps import compile_coding_contract
+from context_stamps import CodingSchemaIndex, compile_coding_contract
 
 
 class CodingContractTests(unittest.TestCase):
@@ -23,8 +23,12 @@ class CodingContractTests(unittest.TestCase):
         self.assertEqual(contract.check_static_paths("p='/app/input/data.csv'\n"),
                          ("/app/input/data.csv",))
         self.assertEqual(contract.check_static_paths("p='input/data.csv'\n"), ("input/data.csv",))
+        self.assertIn('"x"', contract.csv_schema_hints(self.root))
+        self.assertNotIn("1", contract.csv_schema_hints(self.root).split(": ")[-1])
         source.write_text("x\n2\n", encoding="utf-8")
         self.assertFalse(contract.verify(self.root))
+        with self.assertRaisesRegex(ValueError, "stale"):
+            contract.csv_schema_hints(self.root)
 
     def test_bad_source_paths(self):
         for path in ("../secret", "/tmp/secret", "a//b", "a/./b", "a\\b"):
@@ -53,6 +57,49 @@ class CodingContractTests(unittest.TestCase):
         self.assertEqual(contract.check_static_paths("x = get_path()\n"), ())
         with self.assertRaisesRegex(ValueError, "overlaps"):
             compile_coding_contract(self.root, ("in.py",), ("in.py",), runtime_root="/app")
+
+    def test_schema_activation_is_exact_role_bound_and_current(self):
+        source = self.root / "data.csv"
+        source.write_text("station_id,temperature\n101,1\n", encoding="utf-8")
+        contract = compile_coding_contract(self.root, ("data.csv",), ("out.py",), runtime_root="/app")
+        index = CodingSchemaIndex(contract)
+        stamp = bytes(range(32))
+        index.bind(stamp, "data.csv", roles=frozenset({"coding_agent"}))
+        good = index.activate(stamp, role="coding_agent", root=self.root)
+        self.assertEqual(good.status, "complete")
+        self.assertIn("station_id", good.text)
+        self.assertNotIn("101", good.text)
+        self.assertEqual(index.activate(stamp, role="reader", root=self.root).status, "insufficient")
+        self.assertEqual(index.activate(bytes(32), role="coding_agent", root=self.root).status,
+                         "insufficient")
+        with self.assertRaisesRegex(ValueError, "collision"):
+            index.bind(stamp, "data.csv", roles=frozenset({"coding_agent"}))
+        source.write_text("station_id,temperature\n102,2\n", encoding="utf-8")
+        self.assertEqual(index.activate(stamp, role="coding_agent", root=self.root).status,
+                         "insufficient")
+
+    def test_data_schema_hints_exclude_values(self):
+        (self.root / "users.json").write_text('[{"userId":101,"email":"private@example.org"}]',
+                                              encoding="utf-8")
+        (self.root / "users.csv").write_text("station_id,temperature\n101,25\n", encoding="utf-8")
+        contract = compile_coding_contract(self.root, ("users.json", "users.csv"), ("out.json",),
+                                           runtime_root="/data", output_root="/app")
+        view = contract.data_schema_hints(self.root)
+        self.assertIn("userId", view)
+        self.assertIn("station_id", view)
+        self.assertNotIn("private@example.org", view)
+        self.assertNotIn("101", view)
+        self.assertNotIn("25", view)
+        self.assertNotIn("users.csv", contract.data_schema_hints(self.root, selected=("users.json",)))
+        index = CodingSchemaIndex(contract)
+        index.bind(bytes(range(32)), "users.json", roles=frozenset({"reader"}))
+        index.bind(bytes(reversed(range(32))), "users.csv", roles=frozenset({"reader"}))
+        activated = index.activate_data((bytes(range(32)), bytes(reversed(range(32)))),
+                                        role="reader", root=self.root)
+        self.assertEqual(activated.status, "complete")
+        self.assertEqual(activated.text, view)
+        self.assertEqual(index.activate_data((bytes(range(32)), bytes(reversed(range(32)))),
+                                             role="other", root=self.root).status, "insufficient")
 
 
 if __name__ == "__main__":
