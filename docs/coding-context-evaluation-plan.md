@@ -109,6 +109,14 @@ pass. A successful baseline model/task pair is now a prerequisite for a useful
 paired context comparison. The 30B local model did not fit the current GPU/host
 memory; its attempted load is not a benchmark result.
 
+A later [public-input invariant probe](../evidence/terminal-coding-invariants-development-v1/README.md)
+detects silent record omissions in an isolated generated artifact without
+consulting hidden verifier tests. One 4B program exited successfully but
+returned only two of four public-input IDs; the next repair crashed. Another
+three-attempt run failed native grading before the checker could execute.
+This supports adding declared output checks to the agent loop, but no native
+pass-rate gain has been shown. It is post-inspection development evidence.
+
 Keep quantization in the next coding milestone as a **measured retrieval route**,
 after a capable direct-context coding baseline has passed fresh native tasks.
 The [precision-layer diagnostic](../evidence/coding-precision-decision-v1/README.md)

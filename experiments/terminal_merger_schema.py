@@ -10,10 +10,12 @@ import asyncio
 import base64
 import hashlib
 import json
+import math
 import os
 import platform
 import random
 import shlex
+import shutil
 import subprocess
 import sys
 import time
@@ -88,7 +90,7 @@ def counted_generate(args, prompt):
 
 
 async def install(sandbox, path, raw):
-    if path not in {"/app/merge.py", "/app/oracle.sh"} or not 0 < len(raw) <= 250000:
+    if path not in {"/app/merge.py", "/app/oracle.sh", "/app/public_record_invariants.py"} or not 0 < len(raw) <= 250000:
         raise ValueError("artifact outside bounded contract")
     for start in range(0, len(raw), 3500):
         encoded = base64.b64encode(raw[start:start + 3500]).decode("ascii")
@@ -99,7 +101,15 @@ async def install(sandbox, path, raw):
             raise ValueError("bounded artifact transfer failed")
 
 
-async def grade(folder, verifier, *, code=None, solution=None):
+def require_disk_headroom(folder, minimum_free_gb):
+    if not math.isfinite(minimum_free_gb) or minimum_free_gb < 0 or minimum_free_gb > 100:
+        raise ValueError("bounded disk headroom required")
+    if shutil.disk_usage(folder.parent).free < minimum_free_gb * 1024 ** 3:
+        raise OSError("insufficient host disk headroom for another isolated run")
+
+
+async def grade(folder, verifier, *, code=None, solution=None, minimum_free_gb=0):
+    require_disk_headroom(folder, minimum_free_gb)
     sandbox = ResearchSandbox(folder / "sandbox", image=verifier)
     try:
         profile = await sandbox.start()
@@ -162,7 +172,8 @@ async def run_arm(args, arm, instruction, contract, view, verifier):
             break
     if code is not None and not violations:
         (folder / "merge.py").write_text(code, encoding="utf-8", newline="\n")
-    graded = await grade(folder / "grade", verifier, code=code if not violations else None)
+    graded = await grade(folder / "grade", verifier, code=code if not violations else None,
+                         minimum_free_gb=args.min_free_gb)
     write_json(folder / "grade.json", graded)
     result = {"arm": arm, "native_passed": graded["passed"], "submitted": code is not None and not violations,
               "attempts": attempts, "input_tokens": sum(x["input_tokens"] for x in attempts),
@@ -174,17 +185,41 @@ async def run_arm(args, arm, instruction, contract, view, verifier):
     return result
 
 
-async def execute_candidate(folder, image, code):
+async def execute_candidate(folder, image, code, *, public_invariants=False, minimum_free_gb=0):
     """Run only model code in an agent image that contains no verifier tests."""
+    require_disk_headroom(folder, minimum_free_gb)
     sandbox = ResearchSandbox(folder / "sandbox", image=image)
     try:
         profile = await sandbox.start()
         await install(sandbox, "/app/merge.py", code.encode("utf-8"))
         result = await sandbox.execute("python /app/merge.py", timeout=180)
+        invariant = None
+        if public_invariants and result["return_code"] == 0 and not result["boundary_failure"]:
+            checker = Path(__file__).with_name("public_record_invariants.py")
+            await install(sandbox, "/app/public_record_invariants.py", checker.read_bytes())
+            command = ("python /app/public_record_invariants.py"
+                       " --source /data/source_a/users.json id"
+                       " --source /data/source_b/users.csv user_id"
+                       " --source /data/source_c/users.parquet userId"
+                       " --output /app/merged_users.parquet --report /app/conflicts.json"
+                       " --required-column user_id --required-column name"
+                       " --required-column email --required-column created_date")
+            checked = await sandbox.execute(command, timeout=60)
+            if checked["return_code"] == 0 and not checked["boundary_failure"]:
+                try:
+                    invariant = json.loads(checked["stdout"])
+                except (ValueError, TypeError):
+                    invariant = {"status": "unavailable", "reason": "invalid_checker_output"}
+            else:
+                invariant = {"status": "unavailable", "reason": "checker_execution_failed"}
+            if not isinstance(invariant, dict) or invariant.get("status") not in {
+                    "complete", "incomplete", "unavailable"}:
+                invariant = {"status": "unavailable", "reason": "invalid_checker_output"}
         return {"profile": profile, "return_code": result["return_code"],
                 "boundary_failure": result["boundary_failure"],
                 "seconds": result["command_seconds"],
-                "stderr_tail": result["stderr"][-1800:], "stdout_tail": result["stdout"][-600:]}
+                "stderr_tail": result["stderr"][-1800:], "stdout_tail": result["stdout"][-600:],
+                "public_invariant": invariant}
     finally:
         await sandbox.stop()
 
@@ -226,16 +261,23 @@ async def run_arm_repair(args, arm, instruction, contract, view, agent, verifier
         if violations:
             feedback = "Disallowed literal paths: " + json.dumps(violations)
             continue
-        runtime = await execute_candidate(folder / f"local-{index}", agent, code)
+        runtime = await execute_candidate(folder / f"local-{index}", agent, code,
+                                          public_invariants=args.public_invariants,
+                                          minimum_free_gb=args.min_free_gb)
         write_json(folder / f"local-{index}.json", runtime)
         attempt["local_return_code"] = runtime["return_code"]
         attempt["local_seconds"] = runtime["seconds"]
-        if runtime["return_code"] == 0 and not runtime["boundary_failure"]:
+        if (runtime["return_code"] == 0 and not runtime["boundary_failure"]
+                and (not args.public_invariants or
+                     runtime["public_invariant"].get("status") == "complete")):
             break
-        feedback = runtime["stderr_tail"] or "Local program exited nonzero."
+        feedback = (runtime["stderr_tail"] or
+                    (json.dumps(runtime["public_invariant"]) if runtime["public_invariant"]
+                     else "Local program exited nonzero."))
     if code is not None and not violations:
         (folder / "merge.py").write_text(code, encoding="utf-8", newline="\n")
-    graded = await grade(folder / "grade", verifier, code=code if not violations else None)
+    graded = await grade(folder / "grade", verifier, code=code if not violations else None,
+                         minimum_free_gb=args.min_free_gb)
     write_json(folder / "grade.json", graded)
     result = {"arm": arm, "native_passed": graded["passed"], "submitted": code is not None and not violations,
               "attempts": attempts, "input_tokens": sum(x["input_tokens"] for x in attempts),
@@ -288,12 +330,18 @@ async def main(args):
             "num_ctx": args.num_ctx, "pattern": args.pattern,
             "system_sha256": hashlib.sha256(args.system.encode()).hexdigest(),
             "verifier_image": verifier, "agent_image": agent, "runtime_repair": args.runtime_repair,
+            "public_invariants": args.public_invariants,
+            "public_checker_sha256": (sha(Path(__file__).with_name("public_record_invariants.py"))
+                                      if args.public_invariants else None),
+            "minimum_free_gb": args.min_free_gb,
             "order": order, "python": platform.python_version(),
             "frontier_calls": 0, "benchmark_training": False}
     write_json(args.out / "plan.json", plan)
-    controls = {"empty": await grade(args.out / "negative", verifier),
+    controls = {"empty": await grade(args.out / "negative", verifier,
+                                       minimum_free_gb=args.min_free_gb),
                 "oracle": await grade(args.out / "positive", verifier,
-                                      solution=(task / "solution" / "solve.sh").read_bytes())}
+                                      solution=(task / "solution" / "solve.sh").read_bytes(),
+                                      minimum_free_gb=args.min_free_gb)}
     write_json(args.out / "controls.json", controls)
     if controls["empty"]["passed"] or not controls["oracle"]["passed"]:
         raise ValueError("native grader controls failed")
@@ -321,6 +369,8 @@ if __name__ == "__main__":
     parser.add_argument("--verifier-image", type=Path, required=True)
     parser.add_argument("--agent-image", type=Path)
     parser.add_argument("--runtime-repair", action="store_true")
+    parser.add_argument("--public-invariants", action="store_true")
+    parser.add_argument("--min-free-gb", type=float, default=1.5)
     parser.add_argument("--pattern", choices=("none", "record_fold"), default="none")
     parser.add_argument("--model", choices=(MODEL, "qwen3.5:4b", "qwen3-coder:30b"), default=MODEL)
     parser.add_argument("--num-predict", type=int, choices=(2048, 4096), default=2048)
@@ -336,6 +386,8 @@ if __name__ == "__main__":
             setattr(args, key, getattr(args, key).resolve())
     if args.runtime_repair and args.agent_image is None:
         parser.error("--runtime-repair requires --agent-image")
+    if args.public_invariants and not args.runtime_repair:
+        parser.error("--public-invariants requires --runtime-repair")
     if os.environ.get("HARBOR_TELEMETRY") != "off":
         parser.error("HARBOR_TELEMETRY=off is required")
     asyncio.run(main(args))

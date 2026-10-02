@@ -96,6 +96,8 @@ An [inspected-task schema diagnostic](evidence/terminal-coding-schema-developmen
 
 The [coding precision-layer decision](evidence/coding-precision-decision-v1/README.md) tested certified SQ8 refinement on the already inspected public-code embedding caches. It returned the same exact top-10 lists as dense, but its required full-vector backing store raised total bytes and its sequential CPU sweeps were slower. Group-wise scaling made only a small reduction in possible refinements. For small in-memory code indexes, flat dense remains the default; a larger trained quantizer is deferred until a capable direct-context coding baseline and a real device cost gate exist.
 
+An optional [public-input invariant checker](evidence/terminal-coding-invariants-development-v1/README.md) now catches missing, extra or duplicate record IDs and malformed report counts before a generated data-merge program is considered locally complete. On the inspected merger task it found an executable 4B program that omitted two of four users; the next repair crashed, and disk headroom stopped the run before native grading. A separate three-attempt development probe failed native grading. This detects an agent-loop blind spot but does **not** establish a coding gain; the direct baseline and stamp comparison remain unqualified.
+
 ![Selected native coding task: model input tokens and failed outcomes](docs/assets/terminal-coding-development-v1.png)
 
 ![Repository-disjoint localization and routing-vector size](docs/assets/repoqa-context-localization-v1.png)
