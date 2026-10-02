@@ -23,3 +23,13 @@ python experiments/codesearchnet_residual.py train --cache PATH_TO_PRIVATE_CACHE
 ```
 
 The `test` phase is guarded by the validation gate. Copyright (c) 2026 Prashant Jagtap. Repository code is MIT-licensed; third-party source and model terms remain with their owners.
+
+## Committed validation checkpoint before first fresh test
+
+| Route | Top 1 / 90 | Top 10 / 90 | MRR@20 | Warm lookup median, ms/query | Shared index bytes |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| Dense float32 | 63 | 88 | 0.807257 | 0.007983 | 45 |
+| SQ8 direct | 63 | 88 | 0.807328 | 0.007367 | 3,153 |
+| PQ32 → SQ8 top 20 | 63 | 88 | 0.807650 | 0.628033 | 396,455 |
+
+Both compressed routes met the predeclared *quality* gate. The selection rule chose PQ32 → SQ8 on its slightly higher MRR@20. Its lookup time is about 79 times dense's in this local implementation, so it does **not** meet a deployment latency gate. SQ8 direct stores 384 bytes per function and showed near-identical ranking and timing to dense on validation, with much smaller shared overhead. These are development results; the new cohort has not yet been read.
