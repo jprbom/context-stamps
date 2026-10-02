@@ -69,6 +69,26 @@ CPU profile found no stable SQ8 latency advantage. This establishes a narrower
 storage-versus-latency option for a host-owned index, not a self-contained
 32-byte memory or a verified coding-agent outcome. The cohort is now inspected.
 
+A subsequent [native coding-context development gate](../evidence/terminal-coding-development-v1/README.md)
+used two selected Terminal-Bench 2.1 tasks. A broad vulnerability prompt caused
+dense and 256-bit routes to disagree in the top three, so context injection
+abstained before model calls. On a second task with an explicit source file and
+two declared dependencies, Qwen2.5-Coder 7B failed the native verifier with
+both direct-file and relation-closure context. The closure used more model input
+tokens in both the 16-step shell-agent comparison and a one-shot code-generation
+diagnostic. The former exposed repeated failed shell commands; the latter
+exposed an incorrect input path even when the correct file was present in the
+packet. These tasks are now inspected development data. Do not fit to their
+reference solutions or treat their verifier failures as a final-set gain.
+
+Before another quantizer fit, add a host-verified, concise file/path contract
+and a fail-fast action loop. Compare it with the same contract available to a
+strong direct-file baseline, so any observed gain can be attributed to context
+routing or relationship activation rather than extra instructions. Freeze new
+task families and a model of sufficient coding competence before inspecting
+their native outcomes. Count full packet tokens, index construction, repeated
+tool observations, agent wall time and native pass rate; retain regressions.
+
 ## Task unit and controls
 
 Use public, redistributable repositories with pinned commits and independent

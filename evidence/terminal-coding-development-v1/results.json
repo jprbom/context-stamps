@@ -1,0 +1,262 @@
+{
+  "schema": 1,
+  "purpose": "selected development coding tasks; no full benchmark or deployment claim",
+  "fix_preflight": {
+    "task": "fix-code-vulnerability",
+    "revision": "7131e4375048a0e408a8fb404b5f499d726b695b",
+    "functions": 402,
+    "index_bytes": {
+      "dense_float32": 617472,
+      "stamp_payload": 12864
+    },
+    "agreement": {
+      "top3_overlap": 0,
+      "top10_overlap": 2,
+      "route_status": "abstain",
+      "meaning": "disagreement is a veto, agreement alone is not relevance proof"
+    },
+    "packets_sha256": "9110438b9e019785a3739205a01dcb0ee7f094241537a59df1c8f85d1d56a5ec"
+  },
+  "modern_context": {
+    "task": "modernize-scientific-stack",
+    "files": 3,
+    "stamp_payload_bytes": 96,
+    "baseline_packet_bytes": 3578,
+    "closure_packet_bytes": 5633,
+    "packets_sha256": "c2876204d2f1a5cbf41439c3a6d785228c9ddff070c37aed0d9b9ed1a239faa2"
+  },
+  "agent_attempt_1": {
+    "task": "modernize-scientific-stack",
+    "task_revision": "7131e4375048a0e408a8fb404b5f499d726b695b",
+    "model": {
+      "name": "qwen2.5-coder:7b",
+      "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364"
+    },
+    "order": [
+      "stamp",
+      "baseline"
+    ],
+    "verifier_image": "sha256:9eabf8c40c9f6b95a8dc3cff28e58fcd2441bbd13b63a713c015be61f0e4a00b",
+    "empty_control_passed": false,
+    "oracle_control_passed": true,
+    "model_unchanged": true,
+    "rows": [
+      {
+        "arm": "stamp",
+        "status": "step_budget_exhausted",
+        "passed": false,
+        "steps": 16,
+        "input_tokens": 56054,
+        "output_tokens": 567,
+        "model_seconds": 26.1106678,
+        "agent_elapsed_seconds": 61.881448300002376,
+        "artifact_present": {
+          "analyze_climate_modern.py": false,
+          "requirements.txt": false,
+          "pyproject.toml": false
+        }
+      },
+      {
+        "arm": "baseline",
+        "status": "step_budget_exhausted",
+        "passed": false,
+        "steps": 16,
+        "input_tokens": 39073,
+        "output_tokens": 562,
+        "model_seconds": 8.6948083,
+        "agent_elapsed_seconds": 42.909564300003694,
+        "artifact_present": {
+          "analyze_climate_modern.py": false,
+          "requirements.txt": false,
+          "pyproject.toml": false
+        }
+      }
+    ],
+    "plan_sha256": "22f084d7c4d3fff8c2a99695f2d0438cc946b8d3dec2073cca334af600bec27f",
+    "summary_sha256": "1ec81cecbd980035e314d43225585070b885b89a8c33ee9da44c69ba83740ff1",
+    "controls_sha256": "0eea60d3442b3cc17a54372021e8ec8c41c7f24a7a5e6ed1e088c80441e70f96"
+  },
+  "agent_attempt_2": {
+    "task": "modernize-scientific-stack",
+    "task_revision": "7131e4375048a0e408a8fb404b5f499d726b695b",
+    "model": {
+      "name": "qwen2.5-coder:7b",
+      "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364"
+    },
+    "order": [
+      "stamp",
+      "baseline"
+    ],
+    "verifier_image": "sha256:9eabf8c40c9f6b95a8dc3cff28e58fcd2441bbd13b63a713c015be61f0e4a00b",
+    "empty_control_passed": false,
+    "oracle_control_passed": true,
+    "model_unchanged": true,
+    "rows": [
+      {
+        "arm": "stamp",
+        "status": "step_budget_exhausted",
+        "passed": false,
+        "steps": 16,
+        "input_tokens": 56555,
+        "output_tokens": 672,
+        "model_seconds": 8.839142,
+        "agent_elapsed_seconds": 40.687659799994435,
+        "artifact_present": {
+          "analyze_climate_modern.py": true,
+          "requirements.txt": true,
+          "pyproject.toml": false
+        }
+      },
+      {
+        "arm": "baseline",
+        "status": "step_budget_exhausted",
+        "passed": false,
+        "steps": 16,
+        "input_tokens": 49172,
+        "output_tokens": 477,
+        "model_seconds": 8.2935771,
+        "agent_elapsed_seconds": 54.32268599999952,
+        "artifact_present": {
+          "analyze_climate_modern.py": false,
+          "requirements.txt": true,
+          "pyproject.toml": false
+        }
+      }
+    ],
+    "plan_sha256": "4343c49e2fa730a1b647a285d4a3b0591b7863b92ae5813af6465c79b1aa1c40",
+    "summary_sha256": "ea69ed6a641a65bd3c0fd0f983f6a66633d5c7d10ac3753ab00f8561cf138846",
+    "controls_sha256": "2161980be949395b99bae484fb221b4f00ea58b0dc0fb2c2c43fff9c2e1f2824"
+  },
+  "agent_attempt_3": {
+    "task": "modernize-scientific-stack",
+    "task_revision": "7131e4375048a0e408a8fb404b5f499d726b695b",
+    "model": {
+      "name": "qwen2.5-coder:7b",
+      "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364"
+    },
+    "order": [
+      "stamp",
+      "baseline"
+    ],
+    "verifier_image": "sha256:9eabf8c40c9f6b95a8dc3cff28e58fcd2441bbd13b63a713c015be61f0e4a00b",
+    "empty_control_passed": false,
+    "oracle_control_passed": true,
+    "model_unchanged": true,
+    "rows": [
+      {
+        "arm": "stamp",
+        "status": "repeated_failure_loop",
+        "passed": false,
+        "steps": 12,
+        "input_tokens": 46412,
+        "output_tokens": 1720,
+        "model_seconds": 30.0376231,
+        "agent_elapsed_seconds": 58.82159709997359,
+        "artifact_present": {
+          "analyze_climate_modern.py": true,
+          "requirements.txt": true,
+          "pyproject.toml": true
+        }
+      },
+      {
+        "arm": "baseline",
+        "status": "repeated_failure_loop",
+        "passed": false,
+        "steps": 9,
+        "input_tokens": 18670,
+        "output_tokens": 319,
+        "model_seconds": 5.4678772,
+        "agent_elapsed_seconds": 30.67461149999872,
+        "artifact_present": {
+          "analyze_climate_modern.py": true,
+          "requirements.txt": true,
+          "pyproject.toml": false
+        }
+      }
+    ],
+    "plan_sha256": "9a8a0cbd3e5e8a2de0abbcf6c27cd7bc7b2562d72d9c202ccc24df2f814e3fb8",
+    "summary_sha256": "b5f7fd0345a0a978f03152ec6ca30ee7f278d624f41beec485525848ea58fae0",
+    "controls_sha256": "ed34f23b49a62ca6cf426d4079dcebf3b6170842f84bea791b4c3552c42ba14d"
+  },
+  "code_generation": {
+    "task": "modernize-scientific-stack",
+    "task_revision": "7131e4375048a0e408a8fb404b5f499d726b695b",
+    "model": {
+      "name": "qwen2.5-coder:7b",
+      "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364"
+    },
+    "order": [
+      "stamp",
+      "baseline"
+    ],
+    "verifier_image": "sha256:9eabf8c40c9f6b95a8dc3cff28e58fcd2441bbd13b63a713c015be61f0e4a00b",
+    "empty_control_passed": false,
+    "oracle_control_passed": true,
+    "model_unchanged": true,
+    "rows": [
+      {
+        "arm": "stamp",
+        "passed": false,
+        "input_tokens": 2220,
+        "output_tokens": 479,
+        "model_seconds": 7.541591,
+        "request_seconds": 7.942680100008147,
+        "valid": true
+      },
+      {
+        "arm": "baseline",
+        "passed": false,
+        "input_tokens": 1171,
+        "output_tokens": 501,
+        "model_seconds": 7.2418701,
+        "request_seconds": 7.628387700009625,
+        "valid": true
+      }
+    ],
+    "plan_sha256": "1b8a883bdedc071980337779319ecdc368d23d139f9b8dbbf8086c7ec57f2587",
+    "summary_sha256": "b2ed44bfaa6725b6191560c835a72bb23311f36f7eec7c8e66ce43448d9691a0",
+    "controls_sha256": "3b75f4a3d8e524754a70df5e9ef7db3d9d19f5c9ab4fe4b4080f84542f3fb7ad"
+  },
+  "code_generation_replay": {
+    "task": "modernize-scientific-stack",
+    "task_revision": "7131e4375048a0e408a8fb404b5f499d726b695b",
+    "model": {
+      "name": "qwen2.5-coder:7b",
+      "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364"
+    },
+    "order": [
+      "stamp",
+      "baseline"
+    ],
+    "verifier_image": "sha256:9eabf8c40c9f6b95a8dc3cff28e58fcd2441bbd13b63a713c015be61f0e4a00b",
+    "empty_control_passed": false,
+    "oracle_control_passed": true,
+    "model_unchanged": true,
+    "rows": [
+      {
+        "arm": "stamp",
+        "passed": false,
+        "input_tokens": 2220,
+        "output_tokens": 479,
+        "model_seconds": 7.3440554,
+        "request_seconds": 7.747844099998474,
+        "valid": true
+      },
+      {
+        "arm": "baseline",
+        "passed": false,
+        "input_tokens": 1171,
+        "output_tokens": 501,
+        "model_seconds": 6.7139879,
+        "request_seconds": 7.103778299991973,
+        "valid": true
+      }
+    ],
+    "plan_sha256": "8d01c927fbc73dcbc71cdb2fd476335d9c8eff65377b1182d5ddff71292e9f93",
+    "summary_sha256": "14b598467f46c9df687ce6dfa4665c9909ffa73b0486dd4d2024d1fbd7deb587",
+    "controls_sha256": "68d822741044c4604048f9600c23bca337ba6a8a13fc26d03a573ec85205a9fd"
+  },
+  "frontier_calls": 0,
+  "benchmark_training": false,
+  "raw_materials_published": false
+}
