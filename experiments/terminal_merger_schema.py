@@ -17,12 +17,13 @@ import shlex
 import subprocess
 import sys
 import time
+import urllib.request
 from pathlib import Path
 
 from harbor_sandbox import ResearchSandbox
-from local_eval import model_identity
+from local_eval import BASE_URL, model_identity
 from terminal_coding_pair import image_id, sha, write_json
-from terminal_modern_codegen import generate
+from terminal_modern_codegen import OPTIONS, SCHEMA, generate
 from terminal_modern_pair import MODEL, REVISION
 from terminal_pilot import render, token_count
 
@@ -47,6 +48,41 @@ RECORD_FOLD_PATTERN = (
     "higher-priority value for each field, and record each distinct lower-priority conflict. "
     "Avoid assuming pandas merge suffixes exist on join keys. Keep output serialization separate from the fold."
 )
+
+
+def call_model(args, prompt):
+    if args.model == MODEL and args.num_predict == OPTIONS["num_predict"]:
+        return generate(prompt)
+    class NoRedirect(urllib.request.HTTPRedirectHandler):
+        def redirect_request(self, *unused):
+            raise ValueError("local provider redirect refused")
+    request_body = {"model": args.model, "prompt": prompt, "raw": True, "stream": False,
+                    "keep_alive": "5m", "options": {**OPTIONS, "num_predict": args.num_predict},
+                    "format": SCHEMA}
+    opener = urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())
+    request = urllib.request.Request(BASE_URL + "/api/generate",
+                                     data=json.dumps(request_body, ensure_ascii=False, separators=(",", ":")).encode(),
+                                     headers={"Content-Type": "application/json"})
+    with opener.open(request, timeout=600) as response:
+        raw = response.read(1024 * 1024 + 1)
+    if len(raw) > 1024 * 1024:
+        raise ValueError("oversized local provider response")
+    return json.loads(raw)
+
+
+def counted_generate(args, prompt):
+    counted = token_count(prompt, args.token_python, args.tokenizer) if args.model == MODEL else None
+    if counted is not None and counted["tokens"] > 15000:
+        raise ValueError("complete prompt limit exceeded")
+    started = time.perf_counter()
+    response = call_model(args, prompt)
+    elapsed = time.perf_counter() - started
+    observed = response.get("prompt_eval_count")
+    if type(observed) is not int or observed > 15000 or observed < 0:
+        raise ValueError("invalid server prompt count")
+    if counted is not None and observed != counted["tokens"]:
+        raise ValueError("tokenizer/server token count mismatch")
+    return response, observed, elapsed
 
 
 async def install(sandbox, path, raw):
@@ -104,14 +140,7 @@ async def run_arm(args, arm, instruction, contract, view, verifier):
     violations = None
     for repair in (False, True):
         prompt = prompt_for(instruction, contract.render(), view, repair=repair, system=args.system)
-        counted = token_count(prompt, args.token_python, args.tokenizer)
-        if counted["tokens"] > 15000:
-            raise ValueError("complete prompt limit exceeded")
-        started = time.perf_counter()
-        response = generate(prompt)
-        elapsed = time.perf_counter() - started
-        if response.get("prompt_eval_count") != counted["tokens"]:
-            raise ValueError("tokenizer/server token count mismatch")
+        response, input_tokens, elapsed = counted_generate(args, prompt)
         code, violations = None, None
         if response.get("done") and response.get("done_reason") != "length":
             try:
@@ -123,7 +152,7 @@ async def run_arm(args, arm, instruction, contract, view, verifier):
                     violations = contract.check_static_paths(code)
             except (ValueError, SyntaxError, TypeError):
                 pass
-        attempts.append({"input_tokens": counted["tokens"], "output_tokens": response.get("eval_count"),
+        attempts.append({"input_tokens": input_tokens, "output_tokens": response.get("eval_count"),
                          "request_seconds": elapsed, "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(),
                          "response_sha256": hashlib.sha256(response.get("response", "").encode()).hexdigest(),
                          "path_violations": violations, "valid_code": code is not None})
@@ -172,14 +201,7 @@ async def run_arm_repair(args, arm, instruction, contract, view, agent, verifier
                      "Return a complete corrected program that still satisfies the original request.\n"
                      "CODE:\n" + (code or "") + "\nFEEDBACK:\n" + feedback)
         prompt = render([{"role": "system", "content": args.system}, {"role": "user", "content": user}])
-        counted = token_count(prompt, args.token_python, args.tokenizer)
-        if counted["tokens"] > 15000:
-            raise ValueError("complete prompt limit exceeded")
-        started = time.perf_counter()
-        response = generate(prompt)
-        elapsed = time.perf_counter() - started
-        if response.get("prompt_eval_count") != counted["tokens"]:
-            raise ValueError("tokenizer/server token count mismatch")
+        response, input_tokens, elapsed = counted_generate(args, prompt)
         code, violations = None, None
         if response.get("done") and response.get("done_reason") != "length":
             try:
@@ -191,7 +213,7 @@ async def run_arm_repair(args, arm, instruction, contract, view, agent, verifier
                     violations = contract.check_static_paths(code)
             except (ValueError, SyntaxError, TypeError):
                 pass
-        attempt = {"input_tokens": counted["tokens"], "output_tokens": response.get("eval_count"),
+        attempt = {"input_tokens": input_tokens, "output_tokens": response.get("eval_count"),
                    "request_seconds": elapsed, "prompt_sha256": hashlib.sha256(prompt.encode()).hexdigest(),
                    "response_sha256": hashlib.sha256(response.get("response", "").encode()).hexdigest(),
                    "path_violations": violations, "valid_code": code is not None}
@@ -248,7 +270,9 @@ async def main(args):
     agent = image_id(args.agent_image) if args.runtime_repair else None
     if agent == verifier:
         raise ValueError("agent image must not contain verifier tests")
-    order = list(packet["views"])
+    order = list(args.selected_arms) if args.selected_arms else list(packet["views"])
+    if len(set(order)) != len(order) or not set(order) <= packet["views"].keys():
+        raise ValueError("selected arms must be unique and available")
     random.Random(20261005).shuffle(order)
     args.out.mkdir(parents=True, exist_ok=False)
     plan = {"schema": 1, "task": TASK, "task_revision": REVISION,
@@ -258,7 +282,7 @@ async def main(args):
             "view_bytes": {key: len(value.encode()) for key, value in packet["views"].items()},
             "stamp_payload_bytes": packet["stamp_payload_bytes"],
             "stamp_build_seconds": packet["build_seconds"],
-            "model": model_identity(MODEL), "pattern": args.pattern,
+            "model": model_identity(args.model), "num_predict": args.num_predict, "pattern": args.pattern,
             "system_sha256": hashlib.sha256(args.system.encode()).hexdigest(),
             "verifier_image": verifier, "agent_image": agent, "runtime_repair": args.runtime_repair,
             "order": order, "python": platform.python_version(),
@@ -281,7 +305,7 @@ async def main(args):
             rows[arm] = await run_arm(args, arm, instruction, contract, packet["views"][arm], verifier)
         write_json(args.out / "partial.json", rows)
     write_json(args.out / "summary.json", {"rows": rows,
-               "model_unchanged": model_identity(MODEL) == plan["model"],
+               "model_unchanged": model_identity(args.model) == plan["model"],
                "limitations": "one task family, no training, same prompt for direct and stamp schema"})
     print(json.dumps({key: {"native_passed": value["native_passed"],
                             "input_tokens": value["input_tokens"]} for key, value in rows.items()}, indent=2))
@@ -295,6 +319,10 @@ if __name__ == "__main__":
     parser.add_argument("--agent-image", type=Path)
     parser.add_argument("--runtime-repair", action="store_true")
     parser.add_argument("--pattern", choices=("none", "record_fold"), default="none")
+    parser.add_argument("--model", choices=(MODEL, "qwen3.5:4b", "qwen3-coder:30b"), default=MODEL)
+    parser.add_argument("--num-predict", type=int, choices=(2048, 4096), default=2048)
+    parser.add_argument("--selected-arms", nargs="+", choices=("contract_only", "schema_direct",
+                                                         "full_source", "stamp_schema"))
     parser.add_argument("--token-python", type=Path, required=True)
     parser.add_argument("--tokenizer", type=Path, required=True)
     parser.add_argument("--out", type=Path, required=True)
