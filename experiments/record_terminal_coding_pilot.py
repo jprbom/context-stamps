@@ -65,24 +65,26 @@ def main(args):
               "agent_attempt_1": summarize_run(args.agent_v1),
               "agent_attempt_2": summarize_run(args.agent_v2),
               "agent_attempt_3": summarize_run(args.agent_v3),
+              "agent_final_source": summarize_run(args.agent_final),
               "code_generation": summarize_run(args.codegen),
               "code_generation_replay": summarize_run(args.codegen_v2),
+              "code_generation_final_source": summarize_run(args.codegen_final),
               "frontier_calls": 0, "benchmark_training": False,
               "raw_materials_published": False}
     args.out.parent.mkdir(parents=True, exist_ok=True)
     args.out.write_text(json.dumps(record, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     print(json.dumps({"veto": record["fix_preflight"]["agreement"],
-                      "agent_v3": record["agent_attempt_3"]["rows"],
-                      "codegen_v2": record["code_generation_replay"]["rows"]}, indent=2))
+                      "agent_final": record["agent_final_source"]["rows"],
+                      "codegen_final": record["code_generation_final_source"]["rows"]}, indent=2))
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     for name in ("fix_packets", "modern_packets", "agent_v1", "agent_v2", "agent_v3",
-                 "codegen", "codegen_v2", "out"):
+                 "agent_final", "codegen", "codegen_v2", "codegen_final", "out"):
         parser.add_argument("--" + name.replace("_", "-"), type=Path, required=True)
     args = parser.parse_args()
     for name in ("fix_packets", "modern_packets", "agent_v1", "agent_v2", "agent_v3",
-                 "codegen", "codegen_v2", "out"):
+                 "agent_final", "codegen", "codegen_v2", "codegen_final", "out"):
         setattr(args, name, getattr(args, name).resolve())
     main(args)

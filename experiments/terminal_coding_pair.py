@@ -21,7 +21,7 @@ import time
 from pathlib import Path
 
 from harbor_sandbox import ResearchSandbox, docker
-from local_eval import local_api, model_identity
+from local_eval import model_identity
 from terminal_pilot import CONFIG, MAX_INPUT, generate, parse_action, render, token_count
 
 TASK = "fix-code-vulnerability"
@@ -96,7 +96,7 @@ async def collect_files(sandbox, directory, names):
                     + "ok=p.exists() and not p.is_symlink() and stat.S_ISREG(p.lstat().st_mode) "
                     + "and p.stat().st_size<=250000;"
                     + "raw=p.read_bytes() if ok else b'';"
-                    + f"print(json.dumps({{'ok':ok,'size':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),"
+                    + "print(json.dumps({'ok':ok,'size':len(raw),'sha256':hashlib.sha256(raw).hexdigest(),"
                     + f"'data':base64.b64encode(raw[{offset}:{offset + 3500}]).decode()}}))")
             result = await sandbox.execute("python -I -c " + shlex.quote(code))
             if result["return_code"] or result["boundary_failure"]:

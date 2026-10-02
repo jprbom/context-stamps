@@ -21,6 +21,7 @@ sys.path.insert(0, str(ROOT))
 
 import numpy as np  # noqa: E402
 from sentence_transformers import SentenceTransformer  # noqa: E402
+
 from stamps import Family, HashingEncoder, _planes  # noqa: E402
 
 MODEL = "sentence-transformers/all-MiniLM-L6-v2"

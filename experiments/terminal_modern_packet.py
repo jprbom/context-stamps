@@ -15,9 +15,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from stamps import HashingEncoder  # noqa: E402
 from context_stamps.stamp256 import structured_256_codec  # noqa: E402
 from context_stamps.workflow import ContextGraph, ContextNode  # noqa: E402
+from stamps import HashingEncoder  # noqa: E402
 
 FILES = ("analyze_climate.py", "config.ini", "sample_data/climate_data.csv")
 SOURCE = "analyze_climate.py"

@@ -15,7 +15,7 @@
       "route_status": "abstain",
       "meaning": "disagreement is a veto, agreement alone is not relevance proof"
     },
-    "packets_sha256": "9110438b9e019785a3739205a01dcb0ee7f094241537a59df1c8f85d1d56a5ec"
+    "packets_sha256": "e9e954cd73f19d522ce1d9e60d428e3bfe84196e13423788c97100e31b497ca8"
   },
   "modern_context": {
     "task": "modernize-scientific-stack",
@@ -23,7 +23,7 @@
     "stamp_payload_bytes": 96,
     "baseline_packet_bytes": 3578,
     "closure_packet_bytes": 5633,
-    "packets_sha256": "c2876204d2f1a5cbf41439c3a6d785228c9ddff070c37aed0d9b9ed1a239faa2"
+    "packets_sha256": "89c750ff0a9a6d39320b0421387c1924b95685fcf8cff2880ad1e982a0180517"
   },
   "agent_attempt_1": {
     "task": "modernize-scientific-stack",
@@ -178,6 +178,57 @@
     "summary_sha256": "b5f7fd0345a0a978f03152ec6ca30ee7f278d624f41beec485525848ea58fae0",
     "controls_sha256": "ed34f23b49a62ca6cf426d4079dcebf3b6170842f84bea791b4c3552c42ba14d"
   },
+  "agent_final_source": {
+    "task": "modernize-scientific-stack",
+    "task_revision": "7131e4375048a0e408a8fb404b5f499d726b695b",
+    "model": {
+      "name": "qwen2.5-coder:7b",
+      "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364"
+    },
+    "order": [
+      "stamp",
+      "baseline"
+    ],
+    "verifier_image": "sha256:9eabf8c40c9f6b95a8dc3cff28e58fcd2441bbd13b63a713c015be61f0e4a00b",
+    "empty_control_passed": false,
+    "oracle_control_passed": true,
+    "model_unchanged": true,
+    "rows": [
+      {
+        "arm": "stamp",
+        "status": "repeated_failure_loop",
+        "passed": false,
+        "steps": 9,
+        "input_tokens": 32013,
+        "output_tokens": 340,
+        "model_seconds": 31.9315709,
+        "agent_elapsed_seconds": 91.77504569999292,
+        "artifact_present": {
+          "analyze_climate_modern.py": false,
+          "requirements.txt": true,
+          "pyproject.toml": false
+        }
+      },
+      {
+        "arm": "baseline",
+        "status": "agent_done",
+        "passed": false,
+        "steps": 8,
+        "input_tokens": 17670,
+        "output_tokens": 562,
+        "model_seconds": 30.1948338,
+        "agent_elapsed_seconds": 67.59112639998784,
+        "artifact_present": {
+          "analyze_climate_modern.py": true,
+          "requirements.txt": true,
+          "pyproject.toml": false
+        }
+      }
+    ],
+    "plan_sha256": "d68312e48b9c63818b878a9c122146d113b2015a1de9cfe5e75faba4ff16a098",
+    "summary_sha256": "ff9356fe327ab13514b3c62ced1c05d69062cfb3788897c866365d694852bd67",
+    "controls_sha256": "b0ace4a5cb6dd0ffdf9115e525b18c42678b7b6b5dfa6b45c6861fb3591b6576"
+  },
   "code_generation": {
     "task": "modernize-scientific-stack",
     "task_revision": "7131e4375048a0e408a8fb404b5f499d726b695b",
@@ -255,6 +306,45 @@
     "plan_sha256": "8d01c927fbc73dcbc71cdb2fd476335d9c8eff65377b1182d5ddff71292e9f93",
     "summary_sha256": "14b598467f46c9df687ce6dfa4665c9909ffa73b0486dd4d2024d1fbd7deb587",
     "controls_sha256": "68d822741044c4604048f9600c23bca337ba6a8a13fc26d03a573ec85205a9fd"
+  },
+  "code_generation_final_source": {
+    "task": "modernize-scientific-stack",
+    "task_revision": "7131e4375048a0e408a8fb404b5f499d726b695b",
+    "model": {
+      "name": "qwen2.5-coder:7b",
+      "digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364"
+    },
+    "order": [
+      "stamp",
+      "baseline"
+    ],
+    "verifier_image": "sha256:9eabf8c40c9f6b95a8dc3cff28e58fcd2441bbd13b63a713c015be61f0e4a00b",
+    "empty_control_passed": false,
+    "oracle_control_passed": true,
+    "model_unchanged": true,
+    "rows": [
+      {
+        "arm": "stamp",
+        "passed": false,
+        "input_tokens": 2220,
+        "output_tokens": 479,
+        "model_seconds": 28.0656454,
+        "request_seconds": 28.833768000011332,
+        "valid": true
+      },
+      {
+        "arm": "baseline",
+        "passed": false,
+        "input_tokens": 1171,
+        "output_tokens": 501,
+        "model_seconds": 31.0843304,
+        "request_seconds": 31.81600559997605,
+        "valid": true
+      }
+    ],
+    "plan_sha256": "070c07fcf10a4214c22127a624fdf83448fd638327ae98095819ae127ab99a7b",
+    "summary_sha256": "a666c993dc1ac8e3a3b0e46a82b36d9f53c2d90737bc78f4c83513c7ba7497a8",
+    "controls_sha256": "e5946d8ccbefacd06eea45bb6bb3ff0574c62aa7fc5ad0207a2844f389ada057"
   },
   "frontier_calls": 0,
   "benchmark_training": false,
