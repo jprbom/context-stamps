@@ -1,0 +1,99 @@
+{
+  "schema": 1,
+  "scope": "already inspected CodeSearchNet-derived vectors",
+  "runtime": "local CPU, sequential queries, warm loaded arrays",
+  "cohorts": {
+    "validation": {
+      "cache_sha256": "a99029438a1daf595797a82fccf7e5d603a6bb2993d92e8a04c3776b726be638",
+      "rows": 3063,
+      "queries": 90,
+      "dimensions": 384,
+      "dense_vector_bytes": 4704768,
+      "verified_sq8_index_bytes": 1323216,
+      "verified_sq8_with_backing_bytes": 6027984,
+      "verified_sq8_mean_refined": 13.733333333333333,
+      "all_exact_top10": true,
+      "three_full_sweep_seconds": {
+        "dense": [
+          0.0590375000028871,
+          0.08738300000550225,
+          0.060571599984541535
+        ],
+        "verified_sq8": [
+          0.23294270000769757,
+          0.3353171000198927,
+          0.26456989999860525
+        ]
+      },
+      "grouped_scale_diagnostic": [
+        {
+          "groups": 1,
+          "mean_residual_norm": 0.007228554144514532,
+          "mean_possible_refinements": 13.688888888888888,
+          "max_possible_refinements": 26,
+          "extra_float32_scale_bytes": 0
+        },
+        {
+          "groups": 4,
+          "mean_residual_norm": 0.00626403270855992,
+          "mean_possible_refinements": 13.122222222222222,
+          "max_possible_refinements": 24,
+          "extra_float32_scale_bytes": 36756
+        },
+        {
+          "groups": 16,
+          "mean_residual_norm": 0.005099277999846383,
+          "mean_possible_refinements": 12.622222222222222,
+          "max_possible_refinements": 21,
+          "extra_float32_scale_bytes": 183780
+        }
+      ]
+    },
+    "test": {
+      "cache_sha256": "3aec4ed768f15785aaf60dea65b4402bfff2e2f70442d1ccb29c690a1a731818",
+      "rows": 4716,
+      "queries": 90,
+      "dimensions": 384,
+      "dense_vector_bytes": 7243776,
+      "verified_sq8_index_bytes": 2037312,
+      "verified_sq8_with_backing_bytes": 9281088,
+      "verified_sq8_mean_refined": 13.2,
+      "all_exact_top10": true,
+      "three_full_sweep_seconds": {
+        "dense": [
+          0.16800889998557977,
+          0.24815420000231825,
+          0.2835398000024725
+        ],
+        "verified_sq8": [
+          0.6809439999924507,
+          0.7149195999954827,
+          0.8293547000212129
+        ]
+      },
+      "grouped_scale_diagnostic": [
+        {
+          "groups": 1,
+          "mean_residual_norm": 0.007264663652742162,
+          "mean_possible_refinements": 13.188888888888888,
+          "max_possible_refinements": 22,
+          "extra_float32_scale_bytes": 0
+        },
+        {
+          "groups": 4,
+          "mean_residual_norm": 0.006273391679289801,
+          "mean_possible_refinements": 12.6,
+          "max_possible_refinements": 22,
+          "extra_float32_scale_bytes": 56592
+        },
+        {
+          "groups": 16,
+          "mean_residual_norm": 0.005090187822908485,
+          "mean_possible_refinements": 12.011111111111111,
+          "max_possible_refinements": 17,
+          "extra_float32_scale_bytes": 282960
+        }
+      ]
+    }
+  }
+}

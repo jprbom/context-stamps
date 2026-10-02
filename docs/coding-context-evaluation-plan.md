@@ -111,6 +111,12 @@ memory; its attempted load is not a benchmark result.
 
 Keep quantization in the next coding milestone as a **measured retrieval route**,
 after a capable direct-context coding baseline has passed fresh native tasks.
+The [precision-layer diagnostic](../evidence/coding-precision-decision-v1/README.md)
+rejects certified SQ8 as a default for the current small in-memory code corpus:
+the exact float32 backing store makes its total bytes exceed dense, and its
+observed local scan is slower. Adding group-wise scales tightens bounds only
+slightly. This does not rule out direct SQ8 or optimized PQ at a larger scale,
+but it makes a small-corpus quantizer fit a poor next step.
 The first candidate is a 32-byte multi-facet coarse key with a host-held SQ8
 residual. Compare direct dense, direct SQ8, and stamp-to-SQ8, each with the same
 eligibility, source revision, role filter, path contract and final prompt budget.
