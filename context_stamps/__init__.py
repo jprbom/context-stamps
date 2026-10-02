@@ -3,6 +3,7 @@
 from stamps import Family, HashingEncoder, Stamp, content_digest, hamming, similarity, stamp_vector
 
 from .activation import StampSchema, activate
+from .coding_contract import CodingPathContract, SourcePath, compile_coding_contract
 from .facet_compiler import CompiledFacets, FacetCompiler, FacetEvidence
 from .facet_model import FacetModel
 from .facets import FacetQuery
@@ -26,6 +27,9 @@ from .workflow import ContextGraph, ContextNode
 
 __version__ = "0.5.0"
 __all__ = [
+    "CodingPathContract",
+    "SourcePath",
+    "compile_coding_contract",
     "ContextExpert",
     "ContextRuntime",
     "RuntimeBudget",

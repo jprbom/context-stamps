@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "task": "modernize-scientific-stack",
+  "task_status": "inspected development",
+  "benchmark_revision": "7131e4375048a0e408a8fb404b5f499d726b695b",
+  "instruction_sha256": "179e412b92ea80826c2ad045295b3c80dbd0466ee3612f44c1a81cc9c41b771b",
+  "contract_sha256": "2b82c3c8712e91cadb33b32e4a6f703d576afefb7e25760e486fd78ee630402c",
+  "external_plan_sha256": "f6848abbe06a94d911ad357f4250d562cf1764378c072d686f1dd57a00bc172a",
+  "external_summary_sha256": "88529bb64c68c9dbe69dd4a34f2d66eb2b55436f2a1e875a2eb8362e5dde299e",
+  "model": "qwen2.5-coder:7b",
+  "model_digest": "dae161e27b0e90dd1856c8bb3209201fd6736d8eb66298e75ed87571486f4364",
+  "order": ["stamp", "direct"],
+  "grader_controls": {"empty_passed": false, "reference_passed": true},
+  "arms": {
+    "direct": {
+      "first_input_tokens": 1935,
+      "repair_input_tokens": 1971,
+      "input_tokens_total": 3906,
+      "output_tokens_total": 962,
+      "first_static_path_violations": 2,
+      "final_static_path_violations": 0,
+      "native_passed": false,
+      "model_request_seconds_total": 13.523977900011232
+    },
+    "stamp": {
+      "first_input_tokens": 2335,
+      "repair_input_tokens": 2371,
+      "input_tokens_total": 4706,
+      "output_tokens_total": 789,
+      "first_static_path_violations": 2,
+      "final_static_path_violations": 0,
+      "native_passed": false,
+      "model_request_seconds_total": 11.044526399986353
+    }
+  },
+  "frontier_calls": 0,
+  "benchmark_training": false,
+  "limitations": "one inspected task, one seed, unequal packet lengths, no native pass or generalization evidence"
+}

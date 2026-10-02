@@ -89,6 +89,30 @@ task families and a model of sufficient coding competence before inspecting
 their native outcomes. Count full packet tokens, index construction, repeated
 tool observations, agent wall time and native pass rate; retain regressions.
 
+The path-contract implementation is `context_stamps.coding_contract`. It binds
+an explicit source allowlist to on-disk SHA-256 revisions, renders exact runtime
+input/output paths, and catches disallowed *literal* `/app/...` paths in Python
+syntax before submission. It does not verify computed paths, file permissions,
+program correctness or the contents of a 256-bit stamp. Native execution in an
+isolated verifier remains the outcome check. The inspected-task replay script
+`experiments/terminal_modern_contract.py` gives the same contract and the same
+three source files to direct and stamp arms under one complete-prompt ceiling.
+
+Keep quantization in the next coding milestone as a **measured retrieval route**.
+The first candidate is a 32-byte multi-facet coarse key with a host-held SQ8
+residual. Compare direct dense, direct SQ8, and stamp-to-SQ8, each with the same
+eligibility, source revision, role filter, path contract and final prompt budget.
+Use a deterministic retrieval-margin rule: if quantized scores cannot separate
+the kth candidate from a competitor under a proven residual-error bound, fetch
+the exact vectors or abstain. The existing `ResidualIndex` implements conservative
+SQ8 bounds and exact refinement; the next experiment should log how often that
+fallback fires. Try lower precision or learned bit allocation only on training
+repositories, with full shared-codebook, backing-store, update and resolver
+costs. Admit a smaller route only if fresh-task native pass rate is at least the
+strong direct baseline and observed p95 end-to-end latency, full tokens or total
+edge storage improve without a material regression. A 256-bit route must never
+be described as storing the source, residual or authorization itself.
+
 ## Task unit and controls
 
 Use public, redistributable repositories with pinned commits and independent
